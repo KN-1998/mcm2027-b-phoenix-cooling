@@ -1,0 +1,127 @@
+菲尼克斯移动降温枢纽题目交接包
+题意译文 · 建模任务 · 数据与论文 · 团队交接
+用途：供队友快速建立共同题意、分配前期准备工作，并区分题面事实、公开资料与建模假设。整理日期：2026-11-16。
+题目身份：给定文本标题为“2027 MCM/ICM TRAINING — PRACTICE Problem B”。这是训练/练习题文本，不是已确认的COMAP正式2027赛题。文中12个规划区、8个候选点和250人次/日均为题目虚构参数。
+一页速览
+一句话：在现有高温救助网络之上，规划有限数量的移动降温枢纽，既要覆盖高需求地区，也要考虑交通可达性、设施类型、开放时段、容量、迁移损失、公平性和突发故障。
+基础测试规模：12个代表性规划区、8个候选移动枢纽地点；枢纽每天最多250人次。均为练习题假设，不是官方分区、站点或实测能力。
+五项交付：①现有网络缺口与未满足需求；②枢纽数量/选址/分配；③七天热浪固定与动态部署对比；④故障和不确定性压力测试；⑤2027—2031分阶段策略。
+必须守住的边界：饮水站≠冷却中心；人次≠独立人数/同时容量；县级死亡统计≠市级结果或设施因果效果；合成地点≠官方规划。
+建议的主指标：未满足需求总量 + 最差高需求区覆盖 + 运营成本/中断时间；同时做权重与需求预测敏感性分析。
+题目译文
+题名与副标题
+2027年数学建模竞赛训练题。问题B：让菲尼克斯保持凉爽。副标题：移动式降温枢纽能否让高温救助更公平、更有韧性？
+背景
+亚利桑那州菲尼克斯位于美国西南部的索诺兰沙漠。在持续的夏季高温期间，获得安全、凉爽的室内空间可能是一项关键的公共卫生服务。但高温暴露和逃离高温的能力并非均匀分布。住房、年龄、收入、行动能力和当地交通条件的差异，可能让部分居民面临更大障碍。
+菲尼克斯并非从零开始。马里科帕政府协会（MAG）协调区域高温救助网络，包括冷却中心、避暑中心、饮水站和其他合作地点。这些服务不能互相替代：提供饮用水的地点不一定提供空调空间或休息场所。网络地图和参与站点可能在夏季期间变化。马里科帕县发布高温相关疾病和死亡监测数据，但县级总体结果不能被误当作菲尼克斯市级结果。
+菲尼克斯市2026年《高温响应计划》包含扩大凉爽空间可及性的措施，例如延长部分设施开放时间。固定地点和固定时段仍可能留下地理位置或一天中不同时段的服务缺口。增加移动服务可能填补缺口，但移动、人员配置和供电消耗资源，设备运输途中也可能无法服务。
+假设菲尼克斯市正在考虑一个虚构的2027—2031年移动式降温枢纽（MCH）计划。每个枢纽可在获批地点提供临时制冷或遮阴空间及饮用水，并在条件或需求变化时迁移。市政府向建模团队提出一个看似简单的问题：当最热地点不一定最难到达、也不一定聚集最脆弱人群时，有限的移动降温资源应投向哪里？
+挑战
+建立一个由数据支撑的模型，并为菲尼克斯提出有依据的建议。以现有高温救助站点为基线，把移动枢纽视为补充而非替代。可管理的测试案例为12个代表性规划区、8个候选移动枢纽点，且单个枢纽每天最多服务250人次。这些是假设，不是官方区界、获批站点或测得的运营能力。若缺少可匹配观测数据，可聚合公开数据，或构造并明确记录合成的规划区—站点网络。
+1. 找出现有网络的缺口
+描述各规划区的高温暴露、潜在降温需求及现有服务可及性。考虑设施类型、开放时间、出行时间或距离，以及潜在脆弱人群差异。建立易解释的未满足降温需求指标，并说明哪些部分可由观测数据校准、哪些部分依赖假设。
+2. 设计公平的移动降温网络
+决定购置多少枢纽、放在哪里，以及居民或区级需求如何分配给设施。在预算、可达性、服务能力、利用率和公平性之间权衡。检验平均可及性改善是否会让高需求区落后，并判断新增一个枢纽何时只带来很小的额外收益。
+3. 应对七天热浪
+假设严重热浪连续七天，且需求随地区和日期变化。制定部署与迁移计划，纳入布置时间、行程时间、开放时间、人员配置及服务中断。用一致假设比较固定地点方案和动态方案，并识别何时值得迁移、何时不值得。
+4. 规划中断与不确定性
+假设一个主要固定冷却中心因电力故障停用，同时两个低收入且交通不便地区的需求急升。要求在24小时内重新分配移动资源，并计入可行响应时间。测试设备故障、道路/公交中断和需求预测误差，并评估效率、公平性、可靠性之间的权衡。
+5. 提出五年策略
+为2027—2031年提出分阶段投资和运营计划。说明预算、热浪强度和社区需求变化时，车队、站点及部署政策如何调整。列出触发计划修订的实际信号，并区分稳健结论与对假设敏感的结论。
+提交要求
+提交英文数学建模报告，不超过25页。应包括一页摘要、模型定义、数据和假设、数值比较、验证或合理性检查、不确定性分析、可执行建议；另附一页致菲尼克斯市议会的信，说明部署数量、地点和时机，以及决策者应了解的局限。题面没有说明信函是否计入25页，排版时建议把全部页面控制在上限内，或向赛事组织方确认。
+饮水站不一定是冷却中心。
+每日访问人次不等于同时容纳人数，也不等于去重后的服务人数。
+高温相关死亡记录本身不能证明某个冷却设施的因果作用。
+模拟规划区/候选站点不得描述为菲尼克斯官方规划区或正式站点。
+清楚区分观测数据、公开发布的计划和假设情景。
+题意拆解与建议模型
+这是一个离散选址—分配—调度问题，叠加公平性、设施容量与鲁棒性分析。不要把它缩减成单纯的热岛制图或温度预测。决策目标是改善高温救助服务，而热暴露只是需求评估的一部分。
+推荐的模型对象
+索引：规划区 i=1…12，候选点 j=1…8，热浪日 t=1…7，既有站点 k。
+需求：D(i,t)，由热暴露、人口/脆弱性、历史使用或合理情景组合而来。明确标记观测项与假设项。
+可达性：区到站点的步行/公交/驾车时间或距离；按站点类型与开放时段设置可服务资格，不能把水站一概当作室内避暑空间。
+决策：购置枢纽数量与候选点选择；每天部署点；需求流向各站点的分配；迁移和服务时间。
+约束：购置/运营预算、每台枢纽每日250人次上限、开闭时间、人员与供电、移动距离/时间、24小时响应要求；参数缺失时需给上下界或情景。
+推荐的评价方式
+主方案可采用小规模混合整数规划或枚举/启发式搜索。目标函数可惩罚未满足需求、过长出行、运营成本、迁移中断和区域不公平；同时单独报告平均覆盖率与高需求区最低覆盖率/最差未满足率。若把多个目标加权求和，必须解释权重并做敏感性分析；也可先设高需求区最低服务底线，再优化总成本。
+必须做的比较
+基准：现有网络，不增加MCH。
+静态：固定候选地点和固定开放安排。
+动态：允许七天内迁移，完整计入行程、设置和停服时间。
+中断：固定中心停电 + 两个低收入低交通可达区需求上升；报告24小时内可达成的实际响应。
+稳健性：设备故障、道路/公交中断、需求高低偏差、成本/预算变化；看方案排序是否改变。
+数据台账
+优先使用可追溯的官方数据。若无法获得同一空间/时间尺度的观测，不要伪装成精准估计；构造合成网络时，应给出生成规则、边界范围和至少一组替代情景。
+研究论文与往届论文
+Prioritizing urban heat adaptation infrastructure based on multiple outcomes: Comfort, health, and energy (PNAS, 2025)。用途：Phoenix等城市、多干预、多结果比较；借鉴目标指标和权衡分析。 来源：https://pmc.ncbi.nlm.nih.gov/articles/PMC12087966/
+Evidence-based guidance on reflective pavement for urban heat mitigation in Arizona (Nature Communications, 2023)。用途：反射路面的实测与多种热暴露指标；注意辐射热与副作用。 来源：https://www.nature.com/articles/s41467-023-36972-5
+Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods (2015)。用途：Phoenix住宅区树木与凉屋顶情景分析。 来源：https://repository.library.noaa.gov/view/noaa/59535
+Microclimate impacts of neighborhood redesign in a desert community using ENVI-met and MaRTy (Urban Climate, 2023)。用途：Phoenix街区设计、微气候模型和观测校验。 来源：https://doi.org/10.1016/j.uclim.2023.101702
+Growing shade: Daytime cooling ecosystem services of common street trees in Phoenix。用途：Phoenix树种与行人热舒适实测。 来源：https://globalfutures.asu.edu/caplter/wp-content/uploads/sites/33/2024/06/Elser-etal.pdf
+MCM优秀论文建议先按方法而不是题材找：2023 B可参考空间资源分配/多方权衡；2024 B可参考搜救动态调度与不确定性；2025 B可参考容量约束与多利益相关方目标；2026 B可参考长期投资和系统容量。COMAP结果页列获奖队伍，部分学生论文/评委评论可能需Mathmodels会员；可从往届资源页和学校图书馆入口核验全文。
+队友分工与交接清单
+交接会议待确认事项
+12区如何定义：是否采用普查区聚合，还是只作为合成代表区？
+服务可达性以步行、公交、驾车还是混合方式为主？如何表示无车居民？
+250人次/日是单枢纽容量上限；不同设施可否共享需求、是否有等待/排队？
+购置与运营预算、单枢纽数量、班次和可迁移速度由何处取值？若无数据，采用哪些情景上下界？
+公平底线选择哪一种：最差区未满足率、脆弱人群覆盖率，还是分位数差距？
+最终报告的25页上限是否包含致市议会信？保守做法是将信函也计入总页数。
+来源索引
+[官方竞赛身份核验] COMAP 2027 MCM/ICM 规则与正式题目发布时间
+https://contest.comap.com/undergraduate/contests/mcm/instructions.php
+用途/边界：正式题目在竞赛开始时发布；本附件自称 PRACTICE，因此作为训练题使用。
+[现有网络] MAG Heat Relief Network
+https://azmag.gov/Programs/Community-Initiatives/Heat-Relief-Network
+用途/边界：区域站点类型及年度网络地图；按实际使用年份重新核验。
+[现行政策] City of Phoenix 2026 Heat Response Plan
+https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/2026%20Heat%20Response%20Plan.pdf
+用途/边界：冷却空间、饮水、延长开放时间等政策背景。
+[健康数据] Maricopa County Heat Surveillance
+https://www.maricopa.gov/1858/Heat-Surveillance
+用途/边界：县级热相关疾病/死亡与相关报告；不得直接解释为市级因果效果。
+[空间数据] Phoenix Shade Study ArcGIS MapServer
+https://maps.phoenix.gov/pub/rest/services/public/Shade_Study_Data_CMO_OHR/MapServer
+用途/边界：树冠、Tree Equity及社会经济相关图层；核对年份、空间单位和许可。
+[气象] National Weather Service Phoenix Local Climate
+https://www.weather.gov/psr/local_climate
+用途/边界：Phoenix历史气候与观测入口。
+[遥感] USGS Landsat Data Access
+https://www.usgs.gov/landsat-missions/landsat-data-access
+用途/边界：地表温度/土地覆盖候选数据；地表温度不等同人体热暴露。
+[论文] Prioritizing urban heat adaptation infrastructure based on multiple outcomes: Comfort, health, and energy (PNAS, 2025)
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12087966/
+用途/边界：Phoenix等城市、多干预、多结果比较；借鉴目标指标和权衡分析。
+[论文] Evidence-based guidance on reflective pavement for urban heat mitigation in Arizona (Nature Communications, 2023)
+https://www.nature.com/articles/s41467-023-36972-5
+用途/边界：反射路面的实测与多种热暴露指标；注意辐射热与副作用。
+[论文] Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods (2015)
+https://repository.library.noaa.gov/view/noaa/59535
+用途/边界：Phoenix住宅区树木与凉屋顶情景分析。
+[论文] Microclimate impacts of neighborhood redesign in a desert community using ENVI-met and MaRTy (Urban Climate, 2023)
+https://doi.org/10.1016/j.uclim.2023.101702
+用途/边界：Phoenix街区设计、微气候模型和观测校验。
+[论文] Growing shade: Daytime cooling ecosystem services of common street trees in Phoenix
+https://globalfutures.asu.edu/caplter/wp-content/uploads/sites/33/2024/06/Elser-etal.pdf
+用途/边界：Phoenix树种与行人热舒适实测。
+[MCM往届] 2023 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/
+用途/边界：马赛马拉旅游/野生动物资源管理；空间资源分配和政策权衡。
+[MCM往届] 2024 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/
+用途/边界：深海潜水器搜救；动态调度、响应时间和不确定性。
+[MCM往届] 2025 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/
+用途/边界：Juneau可持续旅游；容量、多方目标和敏感性分析。
+[MCM往届] 2026 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/
+用途/边界：月球殖民运输；长期投资、系统容量和情景比较。
+[优秀论文入口] COMAP Previous Contests and Resources
+https://www.contest.comap.com/undergraduate/contests/mcm/previous-contests.php
+用途/边界：查询往届题目、论文与评论；部分Student Papers/Commentary可能需要Mathmodels会员。
+交付前核验
+所有数值都标明来源、年份、单位和空间尺度；合成数据明确标为合成。
+固定站和移动枢纽的服务类别、时段与容量口径一致。
+动态方案把迁移/布置/停服时间计入，和固定方案用同一资源与预算比较。
+展示平均效果，也展示最差或高需求区表现；说明参数变化下建议是否稳健。

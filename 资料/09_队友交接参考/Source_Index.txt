@@ -1,0 +1,70 @@
+菲尼克斯移动降温枢纽题目来源索引
+整理日期：2026-11-16
+
+[官方竞赛身份核验] COMAP 2027 MCM/ICM 规则与正式题目发布时间
+https://contest.comap.com/undergraduate/contests/mcm/instructions.php
+用途/边界：正式题目在竞赛开始时发布；本附件自称 PRACTICE，因此作为训练题使用。
+
+[现有网络] MAG Heat Relief Network
+https://azmag.gov/Programs/Community-Initiatives/Heat-Relief-Network
+用途/边界：区域站点类型及年度网络地图；按实际使用年份重新核验。
+
+[现行政策] City of Phoenix 2026 Heat Response Plan
+https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/2026%20Heat%20Response%20Plan.pdf
+用途/边界：冷却空间、饮水、延长开放时间等政策背景。
+
+[健康数据] Maricopa County Heat Surveillance
+https://www.maricopa.gov/1858/Heat-Surveillance
+用途/边界：县级热相关疾病/死亡与相关报告；不得直接解释为市级因果效果。
+
+[空间数据] Phoenix Shade Study ArcGIS MapServer
+https://maps.phoenix.gov/pub/rest/services/public/Shade_Study_Data_CMO_OHR/MapServer
+用途/边界：树冠、Tree Equity及社会经济相关图层；核对年份、空间单位和许可。
+
+[气象] National Weather Service Phoenix Local Climate
+https://www.weather.gov/psr/local_climate
+用途/边界：Phoenix历史气候与观测入口。
+
+[遥感] USGS Landsat Data Access
+https://www.usgs.gov/landsat-missions/landsat-data-access
+用途/边界：地表温度/土地覆盖候选数据；地表温度不等同人体热暴露。
+
+[论文] Prioritizing urban heat adaptation infrastructure based on multiple outcomes: Comfort, health, and energy (PNAS, 2025)
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12087966/
+用途/边界：Phoenix等城市、多干预、多结果比较；借鉴目标指标和权衡分析。
+
+[论文] Evidence-based guidance on reflective pavement for urban heat mitigation in Arizona (Nature Communications, 2023)
+https://www.nature.com/articles/s41467-023-36972-5
+用途/边界：反射路面的实测与多种热暴露指标；注意辐射热与副作用。
+
+[论文] Urban forestry and cool roofs: Assessment of heat mitigation strategies in Phoenix residential neighborhoods (2015)
+https://repository.library.noaa.gov/view/noaa/59535
+用途/边界：Phoenix住宅区树木与凉屋顶情景分析。
+
+[论文] Microclimate impacts of neighborhood redesign in a desert community using ENVI-met and MaRTy (Urban Climate, 2023)
+https://doi.org/10.1016/j.uclim.2023.101702
+用途/边界：Phoenix街区设计、微气候模型和观测校验。
+
+[论文] Growing shade: Daytime cooling ecosystem services of common street trees in Phoenix
+https://globalfutures.asu.edu/caplter/wp-content/uploads/sites/33/2024/06/Elser-etal.pdf
+用途/边界：Phoenix树种与行人热舒适实测。
+
+[MCM往届] 2023 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/
+用途/边界：马赛马拉旅游/野生动物资源管理；空间资源分配和政策权衡。
+
+[MCM往届] 2024 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/
+用途/边界：深海潜水器搜救；动态调度、响应时间和不确定性。
+
+[MCM往届] 2025 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/
+用途/边界：Juneau可持续旅游；容量、多方目标和敏感性分析。
+
+[MCM往届] 2026 MCM Problem B results
+https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/
+用途/边界：月球殖民运输；长期投资、系统容量和情景比较。
+
+[优秀论文入口] COMAP Previous Contests and Resources
+https://www.contest.comap.com/undergraduate/contests/mcm/previous-contests.php
+用途/边界：查询往届题目、论文与评论；部分Student Papers/Commentary可能需要Mathmodels会员。

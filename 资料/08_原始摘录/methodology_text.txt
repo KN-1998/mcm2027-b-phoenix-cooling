@@ -1,0 +1,1141 @@
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       1 
+ 
+ 
+ 
+Maricopa County 
+Department of  
+Public Health Heat 
+Surveillance 
+Methodology, 2025 
+Maricopa County  
+Department of Public Health  
+Epidemiology & Informatics Division 
+January 2026 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       2 
+Table of Contents 
+Purpose and Scope .............................................................................................................................................. 3 
+Recommendations for Use ................................................................................................................................. 3 
+History and Rationale .......................................................................................................................................... 3 
+Heat Surveillance Methodology .......................................................................................................................... 4 
+Seasonality ...................................................................................................................................................... 4 
+Key Definitions ................................................................................................................................................ 4 
+Process Summary ........................................................................................................................................... 5 
+Phase 1: Data Sources, Data Extraction, and Potential Heat-Related Case Identification and 
+Classification ................................................................................................................................................... 5 
+1.1 Data Sources and Potential Case Identification ................................................................................. 5 
+1.2 Case Compilation and Database Development .................................................................................. 7 
+1.3 Heat-Related Death Case Classification ............................................................................................. 7 
+Phase 2: Standardize Circumstantial Data .................................................................................................... 8 
+2.1 Preliminary Investigative Report (PIR) Request .................................................................................. 8 
+2.2 Standardizing PIR Data Entry Using SharePoint ................................................................................. 8 
+2.3 Circumstantial Variable Classification ................................................................................................ 9 
+Phase 3: Link, Analyze, and Report Heat-Related Illnesses and Heat-Related Deaths ............................. 10 
+3.1 Identify and Classify Heat-Related Illness (HRI) Cases ................................................................... 10 
+3.2 Additional Heat-Related Illness Surveillance .................................................................................... 10 
+3.3 Merge Heat-Related Illness Data with Heat-Related Death Data ..................................................... 11 
+3.4 Stratification and Analysis of Heat-Related Illness and Death Data ............................................... 11 
+3.5 Special Considerations for Using the Heat-Related Death Database ............................................. 12 
+3.6 Dashboard Integration and Public Access ........................................................................................ 12 
+Quality Assurance ......................................................................................................................................... 13 
+Timeline of Surveillance Activities and Data Availability ............................................................................ 15 
+Limitations ..................................................................................................................................................... 15 
+Anticipated Changes for 2026 ...................................................................................................................... 16 
+Acknowledgements ........................................................................................................................................... 17 
+Additional Information ....................................................................................................................................... 17 
+References ......................................................................................................................................................... 18 
+Appendices ........................................................................................................................................................ 19 
+Appendix A. MCDPH Heat-Related Death Database Data Dictionary ........................................................ 19 
+Appendix B. Variables Extracted from Preliminary Investigative Reports (PIRs) for MCDPH Heat 
+Surveillance ................................................................................................................................................... 21 
+Appendix C. Preliminary Investigative Report SharePoint Data Entry Form .............................................. 21 
+Appendix D. MCDPH Population Denominator Sources ............................................................................. 24 
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       3 
+Purpose and Scope 
+ 
+The purpose of this document is to clearly outline the operational workflows, case definitions, 
+classification criteria, and analytic processes used to identify, classify, and report heat-related 
+illness (morbidity) and death (mortality) in Maricopa County. It is designed to serve as a reference 
+for a diverse audience, including Maricopa County Department of Public Health (MCDPH) staff, 
+epidemiologists, public health professionals, external partners, and policymakers seeking 
+replicable or adaptable models for their jurisdictions.  
+While it provides a brief historical context, its primary emphasis is on current practice. This 
+document is not a seasonal summary, formal protocol, or operational guide, nor does it represent 
+methods used by the Maricopa County Office of the Medical Examiner or address internal 
+infrastructure or funding. This document also mentions but does not cover in detail the 
+production of our annual and multi-year reports. 
+  
+Recommendations for Use 
+ 
+Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat sur veillance data collecte d through the methodology ou tlined in thi s paper a re used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat su rvei llance data coll ected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats. Heat survei lla nce data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat surveillance data 
+collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats
+.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat surv eil lance da ta collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveil lance d ata collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat su rveilla nce data co llected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.related health threats.Heat surveillance data collected through the methodology outlined in this paper are used to support multiple applications, including the generation of internal and external dashboards, weekly and annual reports, and annual heat response operations, including activation of the Incident Command System. In addition, the data are used for statistical modeling and spatial analysis to support real-time public health decision-making during periods of extreme heat. Although the methods outlined are specific to Maricopa County, the general structure may be adapted for use in other jurisdictions facing similar heat-related health threats.
+ 
+History and Rationale 
+ 
+Maricopa County, home to more than 4.5 million residents,1 is the fourth-largest county in the 
+United States by population. The region’s extreme summer temperatures place both residents and 
+visitors at elevated risk for heat-related illness and death. 
+MCDPH launched its heat surveillance program in 2006 in collaboration with the Maricopa County 
+Office of the Medical Examiner (OME), following a 2005 heatwave that claimed 45 lives, 35 of 
+them within nine consecutive days. Since then, the system has expanded to integrate multiple 
+data streams and automated processes, providing real-time data that guides public health action. 
+The case definition applies year-round, though most surveillance activities occur during the 
+annual heat season (May–October). 
+Since its inception, the surveillance system has continued to evolve through key milestones. 
+Weekly and annual heat reports became publicly available starting in 2007. In 2012, MCDPH 
+incorporated air conditioning and energy use data from OME Preliminary Investigative Reports 
+(PIRs) to better capture contributing factors in heat-related deaths. In 2024, the system underwent 
+full-scale modernization, replacing static reports and manual processes with automated 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       4 
+workflows, a public-facing interactive dashboard, and enhanced data management systems to 
+improve efficiency and usability. (See Figure 1 for a visual overview of key milestones.) MCDPH 
+methodology supports internal consistency and offers a replicable framework for external 
+partners. 
+ 
+ 
+Heat Surveillance Methodology 
+ 
+Seasonality 
+ 
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanc ed he at s urveilla nce se ason typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The e nhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations .The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations .The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations .The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations. The en hanced h eat surveillanc e seas on typ ica lly runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The e nhanc ed h eat surveilla nce season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.The enhanced heat surveillance season typically runs from May through October, coinciding with increased high and average daily temperatures (heat season). During this time, heat-related illnesses and deaths are tracked and monitored daily. Outside this window, public health does not routinely report heat-related illnesses; however, heat-related deaths are monitored year-round. These data are used to inform emergency and non-emergency operations outside the typical season. Historical case data show that deaths have occurred as early as March and as late as November. MCDPH reviews and classifies these cases to ensure they are incorporated into annual datasets even when not captured during enhanced heat surveillance operations.
+Key Definitions 
+ 
+• 
+Environmental heat: heat generated by natural outdoor conditions (e.g., sun exposure, 
+ambient temperature, humidity). Excludes artificial sources (e.g., stoves, industrial 
+equipment).  
+• 
+Heat-caused deaths: Deaths in which environmental heat directly caused the death, 
+indicated in Part I (primary cause) of the death certificate (see Figure 3). 
+• 
+Heat-contributed deaths: Deaths in which environmental heat contributed to the 
+sequence of conditions leading to death but was not the direct cause, noted in Part II 
+(contributing causes) of the death certificate (see Figure 3). 
+• 
+Heat season: Period when enhanced heat surveillance is conducted, extreme high 
+temperatures are expected, and community heat relief resources are available (May-
+October). 
+• 
+Heat surveillance: Active monitoring of heat-related deaths and illnesses.  
+Figure 1. Key Milestones in MCDPH’s Heat Surveillance System (2006-2024). 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       5 
+o Enhanced surveillance: Conducted May through October; involves daily 
+monitoring of illnesses and deaths, real-time data collection, data quality checks, 
+and routine dashboard updates.  
+o Standard surveillance: Conducted outside the heat season with less frequent data 
+processing and reporting. 
+ 
+Process Summary 
+ 
+The Maricopa County heat surveillance system follows a structured three-phase process: 
+1) Extract data and identify/classify cases  
+2) Standardize circumstantial variables 
+3) Link heat-related illness and heat-related deaths for integrated analysis and reporting.  
+ 
+The following sections detail each component and describe the full process flow from data 
+collection to public dissemination. This methodology ensures consistent, timely monitoring 
+during the heat season and supports real-time public health response. 
+ 
+Phase 1: Data Sources, Data Extraction, and Potential Heat-
+Related Case Identification and Classification 
+ 
+1.1 Data Sources and Potential Case Identification 
+Heat-related death and heat-related illness surveillance in Maricopa County is based on data 
+obtained from the following sources:  
+ 
+• 
+Maricopa County Office of the Medical Examiner (OME): The OME investigates deaths that 
+are sudden, unexpected, violent, suspicious, or accidental (see Arizona Revised Statute 11-
+5935). As part of these investigations, the OME identifies potential heat-related deaths, which 
+MCDPH uses to report cases under investigation. For each case, the OME completes a 
+Preliminary Investigative Report (PIR) containing investigative details and conducts a full 
+medicolegal death investigation, including toxicology testing for potential substance-related 
+deaths. 
+ 
+Prior to 2024, the OME provided MCDPH with potential heat-related deaths in Excel format, 
+including demographics, preliminary circumstances, and cause of death details. Beginning in 
+2024, MCDPH gained access to an internal OME Power BI dashboard, which contains the 
+same information and allows direct data download by MCDPH heat surveillance staff.  
+ 
+• 
+MCDPH and Arizona Department of Health Services (ADHS) Office of Vital Registration 
+(OVR): All Maricopa County death certificates are registered in the Arizona Department of 
+Health Services electronic death registration system (EDRS), also known as Database 
+Application for Vital Events (DAVE), which is shared across counties. OVR provides MCDPH’s 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       6 
+Division of Epidemiology and Informatics with daily extracts for all decedents who were 
+Maricopa County residents or who died in the county.  
+ 
+To identify additional potential heat-related deaths not investigated by the OME, MCDPH 
+surveillance staff run daily queries of EDRS records. These searches scan Parts I and II of 
+death certificates using key terms (e.g., heat stroke, hyperthermia) and relevant ICD-10 codes 
+(e.g., X30, T67.X). 
+ 
+Figure 2 illustrates the filters applied to daily death certificate extracts. This process is 
+separate from case classification, which occurs only after the OME finalizes the cause of the 
+death.  
+ 
+Key Phrases: 
+Heat exposure | Environ | Exhaustion | Sun | Heat Stress | Heat Stroke | Hyperthermia 
+ICD-10 Codes: 
+X30: Exposure to excessive natural heat 
+T67.X: Effects of heat and light 
+P810: Environmental hyperthermia of newborn 
+ 
+• 
+Syndromic Surveillance (NSSP ESSENCE): Heat-related illness data are obtained from the 
+Centers for Disease Control and Prevention’s (CDC) National Syndromic Surveillance Program 
+(NSSP ESSENCE),6 which provides near real-time hospital and emergency department visit 
+data, including patient chief complaints. Facilitated by the Arizona Department of Health 
+Services, participating hospitals and urgent care facilities in Maricopa County share 
+anonymized data with NSSP ESSENCE, of note, excluding Phoenix Children’s Hospital and the 
+Veterans Administration Medical Center. These data are used to monitor heat-related illness 
+and are integrated later in the process (see Phase 3). For details on ESSENCE variables, refer 
+to the NSSP ESSENCE Data Dictionary.7  
+ 
+• 
+Less common data sources: Heat-related deaths or information about potential heat deaths 
+may also be identified through external sources, such as media reports or hospital 
+notifications. Additional deaths may come from hospitals via Human Remains Release Forms 
+(HRRFs). The heat surveillance team also monitors local news coverage of potential heat 
+deaths and extreme heat events using internal communications tracking systems maintained 
+by the MCDPH Communications Team. Relevant media-reported information is manually 
+entered into the open-text notes field within the heat surveillance system using the PIR data 
+entry form (Phase 3).  
+ 
+Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. Figure 2. Key Phrases and ICD-10 codes used to screen death certificates for potential environmental heat-related deaths. 
+Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). 
+Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). 
+Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla"). Search terms may need to be shortened to capture multiple variations of the same word or to account for common misspellings (e.g., "Environ" captures "environment," "environmental," and "environmentla").  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       7 
+1.2 Case Compilation and Database Development 
+Data from the sources described in Section 1.1 are merged to create the MCDPH Heat-Related 
+Death Database (Figure 3), housed on a secure server managed by the MCDPH Division of 
+Epidemiology and Informatics.  
+ 
+To be included, deaths must either:  
+1) Have an activated, OME heat attribute (criteria for being listed on the OME Power BI 
+dashboard), or 
+2) Have a primary or contributing cause of death in the Database Application for Vital 
+Events (DAVE), Arizona’s electronic death registration system (EDRS), that includes 
+one of the terms in Figure 2.  
+ 
+The SAS program uses identifying variables to compile records and reduce duplication. Records 
+are primarily merged using the Medical Examiner case number, death certificate number or a 
+combination of full name and date of birth. The database is updated daily during the enhanced 
+heat surveillance season and maintained by the Division of Epidemiology and Informatics. A data 
+dictionary outlining key variable definitions is included in Appendix A.  
+ 
+As OME or OVR records are updated, new information overwrites older data automatically, and 
+new information is saved over the older information during the merging process; updates 
+therefore occur automatically. See the Quality Assurance section for additional details. 
+ 
+Figure 3. Classify Cases and Extract Data 
+Note: Final classification is not immediate. Confirmation of heat-related death status is based on the Office of the Medical Examiner’s 
+full investigation, which typically takes up to 90 days to complete, and some may take longer. Classifications may change as 
+investigative results are finalized. 
+ 
+ 
+1.3 Heat-Related Death Case Classification 
+Classifying a case from under-investigation to a confirmed or ruled out case may take 90 days or 
+longer. To ensure consistency, all heat-related deaths are categorized using standardized MCDPH 
+definitions (Figure 4). Both heat-caused and heat-contributed deaths are tracked. For example, a 
+death with hyperthermia due to environmental heat exposure listed in Part I is classified as heat-
+caused, while a death listing heat exposure in Part II alongside a drug overdose is classified as 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       8 
+heat-contributed. Other jurisdictions may report only heat-caused deaths, which should be noted 
+when comparing methods. This guides how each case is reviewed and classified by MCDPH.  
+ 
+Figure 4. Classification of heat-caused and heat-contributed deaths. 
+Heat-caused deaths are those in which 
+environmental heat was directly involved in 
+the sequence of conditions causing deaths. 
+These are deaths where environmental heat 
+terms were indicated in Part I1 of the death 
+certificate, causes of death (diseases or 
+conditions in the direct sequence causing 
+death), for cause of death variables (cod_a, 
+cod_b, cod_c, or cod_d). County of death: 
+Maricopa 
+Heat-contributed deaths are those in which 
+environmental heat contributed to the deaths 
+but was not in the sequence of conditions 
+causing the deaths. These are cases where 
+environmental heat terms were mentioned in 
+Part II2 of the death certificate causes of death 
+(diseases and conditions contributing but not 
+directly resulting in the death sequence), but 
+not in any of the Part I death variables (cod_a, 
+cod_b, cod_c, or cod_d). County of death: 
+Maricopa. 
+ 
+Case classification occurs after a cause of death is determined. As causes of death are submitted 
+to vital registration, the SAS program described in section 1.2 automatically extracts relevant Part 
+I and Part II information and classifies the case as heat-caused or heat-contributed.  
+ 
+Under-investigation cases with a completed cause of death that do not meet criteria for heat-
+caused or heat-contributed are initially ruled out and excluded from analyses. Before final 
+exclusion, each cause of death is manually reviewed to ensure correct classification.  
+ 
+Phase 2: Standardize Circumstantial Data 
+ 
+2.1 Preliminary Investigative Report (PIR) Request  
+Once a death is confirmed as heat-related by the OME, MCDPH staff access the OME Preliminary 
+Investigative Report (PIR) via an online 
+ application to extract relevant data. PIRs provide details beyond the death certificate, capturing 
+environmental, behavioral, and situational risk factors at the time of death. 
+ 
+Circumstantial details extracted include housing status, air conditioning availability and 
+functionality, location of death (indoor vs. outdoors), substance use indicators, medical history 
+and comorbidities, and activity at the time of injury (e.g., hiking, biking, working). A list of variables 
+extracted from the PIR for heat surveillance purposes is included in Appendix B. Data from PIRs 
+are integrated into the MCDPH Heat-Related Death Database in Phase 3. 
+ 
+2.2 Standardizing PIR Data Entry Using SharePoint 
+Previously, PIR data were entered manually into Excel spreadsheets, often as free text, making 
+standardization and data cleaning time-consuming and error prone. The current process uses a 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       9 
+SharePoint Entry Form with multiple-choice fields for each variable of interest (see Appendix C), 
+ensuring consistent data and reducing variability from free-text entries. 
+  
+Aside from saving OME data to MCDPH servers, this is the only manual data entry step in the 
+surveillance workflow; all other steps, including exporting the heat death database, merging data 
+sources, and case classification, are automated. The SharePoint form automatically exports 
+responses to Excel, which are then imported into SAS and merged with heat-related death records 
+(Figure 5). 
+ 
+Figure 5. PIR Data Standardization Flowchart. 
+Note: If information from the PIR is unavailable for a given field, the SharePoint form allows the entry to be coded as “unknown” until 
+additional documentation is obtained. This eliminates introducing assumptions during the initial data capture. 
+ 
+2.3 Circumstantial Variable Classification 
+As previously mentioned, MCDPH does not confirm the cause of death or determine whether a 
+death is heat-related. MCDPH staff extract only relevant information from the PIRs for 
+surveillance purposes.  
+ 
+Additional classifications: 
+ 
+Substance-involved heat-related deaths 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       10 
+MCDPH uses cause-of-death fields and toxicology data to identify cases involving drugs or 
+alcohol, which are defined as those where the death certificate includes an ICD-10 code for drug 
+overdose (X40–X44, X60–X64, X85, or Y10–Y14) or acute alcohol poisoning (X45, X65, or Y15). 
+MCDPH uses these codes in combination with OME toxicology data and PIR information to 
+monitor patterns of drug- or alcohol-involved heat-related deaths. However, not all drugs detected 
+in toxicology necessarily played a causal or contributory role in the deaths; some deaths may not 
+have complete toxicology results, and OME determines whether substance use contributed to 
+death.  
+ 
+Indoor deaths are further classified according to the cooling environment. If an air conditioning 
+(A/C) unit was present but inoperable, broken, or could not be turned on despite the presence of 
+electricity, the case is categorized as nonfunctioning. If the A/C unit was working but intentionally 
+turned off for some reason at the time of the OME scene inspection, it is marked as functioning 
+but off. If the A/C unit could not operate due to a power shutoff, regardless of whether it was 
+functioning or nonfunctioning, the case is designated as having no electricity.  
+ 
+Homelessness is determined using the listed address and corroborating information in PIRs and 
+case notes. If no fixed address is listed, or the location is known to be a shelter, government 
+agency, business, or intersection, the decedent is classified as experiencing homelessness. 
+Cases are also classified as experiencing homelessness if there is an indication on the death 
+certificate. If the address is listed as out of jurisdiction, then time spent in Arizona, as provided 
+by the death certificate, is taken into consideration.  
+ 
+ 
+Phase 3: Link, Analyze, and Report Heat-Related Illnesses and 
+Heat-Related Deaths 
+ 
+3.1 Identify and Classify Heat-Related Illness (HRI) Cases  
+During the heat season (May–October), MCDPH conducts syndromic surveillance for heat-related 
+illness using NSSP ESSENCE data and the Heat-Related Illness v2 case definition.8 
+ 
+As part of the modernization efforts, MCDPH developed an automated R program that retrieves 
+HRI cases, demographic variables of HRI cases, and temperature metrics directly from ESSENCE 
+and integrates them into the surveillance workflow. The dataset has also been expanded to 
+capture contextual factors, including whether the visits involved occupational exposure, 
+recreational activity, or substance use.  
+ 
+ 
+3.2 Additional Heat-Related Illness Surveillance  
+In addition to near real-time syndromic surveillance, MCDPH periodically produces annual and 
+multi-year HRI reports using hospital discharge data. For these reports, cases are identified using 
+the National Environmental Public Health Tracking Network heat-related illness definition.9  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       11 
+ 
+3.3 Merge Heat-Related Illness Data with Heat-Related Death Data  
+After heat-related illness data are extracted from ESSENCE, daily summary counts are then linked 
+to heat-related deaths data by date in the Heat Surveillance Data Table and are tabulated for 
+summary and visualization purposes as described in section 3.3 (Figure 6). 
+ 
+Deaths are counted by date of death, and illnesses are counted by date of illness or hospital visit; 
+individuals may appear in both datasets if there is evidence of heat illness before their death.  
+ 
+This merged dataset supports the weekly updating of MCDPH’s public-facing Power BI 
+dashboard, used by internal staff and the general public.   
+ 
+Figure 6. Heat-Related Illness (Morbidity) and Heat-Related Death (Mortality) Integration 
+Workflow. 
+  
+3.4 Stratification and Analysis of Heat-Related Illness and Death Data 
+ 
+After merging, the records are then stratified by key demographic variables, including age group, 
+sex, and race/ethnicity. MCDPH typically presents counts instead of rates for surveillance reports, 
+because heat-related deaths and illnesses definitions include anyone who visited a Maricopa 
+County hospital or died in Maricopa County, regardless of residency status.  
+However, when comparing across populations or jurisdictions and over time, MCDPH calculates 
+heat-related illness or heat-related death rates using the formula:  
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       12 
+Rate = (Number of HRI cases ÷ Population) x 100,000. 
+ 
+Rates are calculated only for annual reports and are limited to Maricopa County residents. 
+Population denominators are sourced from the American Community Survey (ACS) 5-year 
+estimates, table DP05.10 Rates are stratified by sex, age groups, race and ethnicity, and housing 
+status, such as whether the individual was experiencing homelessness. Additional stratifications 
+include the type of hospital visit, whether it was an emergency department visit or inpatient 
+admission, the length of the hospital stay, and the activity involved at the time of illness, such as 
+working outdoors, walking, or resting indoors without access to cooling.  
+ 
+The data are analyzed for both real-time surveillance and for MCDPH’s more detailed annual or 
+multi-year heat-related illness reports, which offer expanded analyses of emergency department 
+and inpatient data. These reports help contextualize seasonal trends and assess risk profiles by 
+exploring patient demographics, comorbidities (such as chronic illness or substance use), 
+housing conditions, illness location, and exposure-related behaviors (e.g., occupational or 
+recreational activity, access to air conditioning, or recent substance use).  
+ 
+3.5 Special Considerations for Using the Heat-Related Death Database 
+The following considerations are applied when managing and reporting data from the Heat-
+Related Deaths Database to ensure accuracy, consistency and appropriate interpretation: 
+ 
+• 
+Case inclusion: The dataset includes all heat deaths that occurred in Maricopa County, 
+regardless of decedents’ residency. 
+o When calculating rates, use resident deaths only as the numerator, to align with 
+the census data in the rate denominators. 
+• 
+Risk factor and demographic analyses: Should be filtered to confirmed cases, 
+excluding those under investigation or ruled out. 
+• 
+Geographic analyses: Always use the location of injury (where a decedent was found 
+deceased, or found prior to being transported by Emergency Services and later passed 
+away in a healthcare facility).  
+• 
+Temporal consistency: Data inclusion protocols have evolved over time. Before 
+reporting out, verify whether variables were available for the entire year under 
+consideration. 
+• 
+Small numbers: Exclude data with counts less than 5. 
+ 
+3.6 Dashboard Integration and Public Access 
+MCDPH maintains a public-facing Power BI dashboard that publishes weekly surveillance 
+summaries during the heat season (see Figure 7 for a screenshot). The dashboard pulls data 
+directly from the master datasets generated in Phase 3.2, with filters linked to variables 
+standardized through the PIR SharePoint entry process and syndromic surveillance integration. 
+This dashboard provides interactive visualizations of heat-related illness and death, including 
+breakdowns by demographic, geographic, and circumstantial characteristics. Users can filter 
+charts by population group, timeframe, or location to explore patterns and drill down into specific 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       13 
+trends; however, raw data cannot be downloaded.  This protects decedents’ confidentiality while 
+allowing partners to filter data in ways that are most meaningful to their work.   
+ 
+The dashboard was developed in response to recurring requests from internal users and external 
+partners, with the goal of improving public access to timely, actionable information while reducing 
+the burden of data requests. The visualization supports emergency planners, healthcare 
+providers, and community organizations by helping them align efforts and prepare more 
+effectively for extreme heat events. In 2025, the MCDPH Heat-Related Deaths Dashboard earned 
+a Model Practice Award from the National Association of County and City Health Officials 
+(NACCHO). 
+ 
+Figure 7. Screenshot of the Weekly Heat Surveillance Power BI Dashboard. 
+ 
+Quality Assurance 
+ 
+Ensuring the accuracy and consistency of surveillance data is a central component of MCDPH’s 
+methodology. As part of its modernization efforts, MCDPH implemented an automated quality 
+control program within SAS that flags discrepancies in case classification, coding 
+inconsistencies, and updates to existing records. For example, when a case status changes from 
+under investigation to confirmed heat-related deaths, the system generates a prompt for review 
+to ensure the change aligns with established definitions and supporting evidence. (See Figure 8 
+for an overview of the Quality Control Program.) 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       14 
+ 
+All flagged records are reviewed by a trained epidemiologist who compares PIR data, death 
+certificate language, and the Medical Examiner’s annual report. This review verifies that case 
+classifications are supported by available data and consistent with internal guidelines. If 
+inconsistencies or errors are detected, records are manually corrected by MCDPH staff in the 
+heat-related death database and SAS programs before inclusion in dashboards or public 
+reporting. 
+ 
+Figure 8. Overview of Quality Control Program. 
+ 
+MCDPH also maintains a case log of all cases reported by OME on a yearly basis, regardless of 
+whether the case was eventually ruled out as a heat-related death, in order to track updates over 
+time. Cases in the existing Heat Deaths Database for the current year are compiled regardless of 
+whether they eventually become “confirmed” or “ruled out”. This enables retrospective audits and 
+long-term trend validation. This process supports both real-time surveillance reliability and 
+continuous system improvement, as it helps identify recurring issues, refine automated search 
+terms, and strengthen data entry protocols. 
+ 
+Although automation has significantly reduced manual workload, quality assurance remains a 
+hybrid process, combining rule-based system checks with human expertise. This blended model 
+ensures high data fidelity while allowing the system to adapt to emerging conditions, changes in 
+reporting standards, or newly-identified risk patterns. 
+ 
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       15 
+Timeline of Surveillance Activities and Data Availability 
+ 
+To improve transparency and replicability, the following timeline outlines the typical sequence 
+and duration of surveillance activities during the enhanced surveillance period (e.g., heat season). 
+It also reflects the average length associated with a case becoming confirmed, which can impact 
+real-time classification of heat-related deaths. While certain processes, such as hospital data 
+pulls, dashboard updates, and vital records searches, occur on a daily or weekly basis, others, like 
+death certificate finalization and PIR completion, follow less predictable timelines. On average, it 
+takes up to 90 days for OME to finalize all components of a case and make a determination 
+regarding whether a death is heat-related. These lag times are accounted for in MCDPH’s 
+classification workflow and retrospective validation efforts. Figure 9 shows a typical sequence of 
+surveillance activities from initial case intake through weekly reporting. 
+ 
+Figure 9. Timeline of Heat Surveillance Activities. 
+ 
+ 
+ 
+Limitations 
+ 
+This surveillance methodology is subject to several limitations that may affect the completeness, 
+accuracy, and timeliness of reported data. First, the system relies heavily on the quality and 
+availability of data from the Maricopa County Office of the Medical Examiner (OME) and the 
+MCDPH Office of Vital Registration. These primary data streams may occasionally contain 
+missing or delayed information, particularly during periods of high caseloads or overlapping 
+emergencies. For all OME data, it can take up to 90 days for most cases to be fully confirmed and 
+for all surveillance variables to become available.  
+ 
+The availability of Preliminary Investigative Reports (PIRs) is another constraint. While PIRs offer 
+valuable circumstantial details and are readily accessible, they may not contain all of the 
+information needed at the time of initial case identification. This delay can impact the ability to 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       16 
+fully classify deaths or understand contextual factors such as air conditioning status or housing 
+type until several weeks after initial identification. 
+ 
+Although MCDPH has automated many parts of the data workflow, manual review remains 
+essential for cases that are ambiguous or contain conflicting information. These cases require 
+an epidemiologist's review, and as a result, classification decisions may be delayed or revised as 
+more information becomes available. 
+ 
+Population estimates used for rate calculations, particularly those related to people experiencing 
+homelessness, also present challenges. These estimates are derived from American Community 
+Survey (ACS) 5-year estimates, Table DP05. To learn more about how to use ACS data, visit the 
+U.S. Census Bureau’s Guidance for Data Users.11 A reference table of population denominator 
+sources by subgroup is provided in Appendix D to support transparency and replicability of rate 
+calculations. 
+ 
+In addition, while syndromic surveillance (NSSP ESSENCE) offers near real-time data for hospital-
+based illness, it does not capture heat-related illness among individuals who do not seek medical 
+care within a hospital or emergency department. This may lead to underreporting of less severe 
+cases or those treated outside of traditional healthcare settings. 
+ 
+Finally, there may be jurisdictional variability in how heat-related illness and death are 
+documented, classified, and reported, which can limit the comparability of Maricopa County’s 
+surveillance data with those from other regions. 
+ 
+Anticipated Changes for 2026 
+ 
+As part of the heat surveillance modernization initiative, the following items are anticipated to be 
+in place for the 2026 surveillance season: 
+1) All heat surveillance data moved to the MCDPH data lake house 
+2) Automated queries of daily vital records extract 
+3) Use of an additional OME data source to replace the manual data entry of PIRs. 
+ 
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       17 
+Acknowledgements 
+ 
+The Maricopa County Department of Public Health gratefully thanks the following partners for 
+their long collaboration and service to our community. Without them, this work would not be 
+possible: 
+ 
+Maricopa County Office of the Medical Examiner (OME) 
+Maricopa County Office of Vital Registration 
+Arizona Department of Health Services Office of Vital Records 
+ 
+Additional Information 
+ 
+Additional resources, including MCDPH’s interactive surveillance tools and published reports, can 
+be accessed online. These materials provide supplemental context and are designed to support 
+users seeking historical trends, summarized findings, or ongoing updates during the heat season. 
+ 
+More information about MCDPH’s heat surveillance activities, including the weekly Power BI 
+dashboard, annual mortality reports, and multi-year heat-related illness reports, can be found at: 
+Heat Reports | Maricopa County, AZ 
+ 
+To request data, please submit a data request form through the Maricopa County Public Health 
+website: Create Request - Data Request Application. A staff member from the Climate and Health 
+team will contact you to discuss your request.  
+ 
+You may also contact the Climate and Health Epidemiology Team through  
+email: climateandhealth@maricopa.gov 
+ 
+Primary Author: Britney Green, Senior Analysis Epidemiologist  
+ 
+Contributing Authors: Aaron Gettel, Melanie Rubio, Nicole M. Jarrett 
+ 
+To cite this paper, please use: Green, B., Rubio, M., Jarrett, N. M., Gettel, A. (2025). Maricopa 
+County 
+Department 
+of 
+Public 
+Health 
+Surveillance 
+Methodology, 
+2025. 
+https://www.maricopa.gov/DocumentCenter/View/114869/Heat-Methodology-White-Paper-
+PDF 
+ 
+This paper will be reviewed for accuracy by the MCDPH Health and Climate Team on an annual 
+basis and updated accordingly. 
+ 
+For all media inquiries, please contact phpio@maricopa.gov 
+ 
+ 
+ 
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       18 
+References 
+ 
+1. United States Census Bureau. QuickFacts Maricopa County, Arizona. Available from: 
+https://www.census.gov/quickfacts/fact/table/maricopacountyarizona/PST045222 
+2. National Weather Service, Phoenix, Arizona. Extreme Temperatures. Available from: 
+https://www.weather.gov/psr/ExtremeTemps 
+3. National Oceanic and Atmospheric Administration. Extreme heat: A media resource guide. 
+2024. Available from: https://www.noaa.gov/media-advisory/extreme-heat-media-resource-
+guide 
+4. MAPAZ Dashboard. Why Has Arizona’s Heat-Related Death Rate Increased Tenfold in 
+Twenty Years?. 2024. Available from: 
+https://www.mapazdashboard.arizona.edu/sites/default/files/2024-08/Heat-
+Related%20Deaths%20White%20Paper.pdf 
+5. Arizona Revised Statute 11-593. Available from: https://www.azleg.gov/ars/11/00593.html 
+6. Centers for Disease Control and Prevention. ESSENCE. National Syndromic Surveillance 
+Program (NSSP). 2024. Available from: https://www.cdc.gov/nssp/php/onboarding-
+toolkits/essence.html 
+7. Centers for Disease Control and Prevention. NSSP ESSENCE Data Dictionary. National 
+Syndromic Surveillance Program. Available from: 
+https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.cdc.gov%2Fnss
+p%2Fbiosense%2Fdocs%2FNSSP-Data-Dictionary-508.xlsx&wdOrigin=BROWSELINK 
+8. National Syndromic Surveillance Program. Heat Related Illness v2. Knowledge Repository. 
+Available from: https://knowledgerepository.syndromicsurveillance.org/heat-related-illness-
+v2 
+9. Arizona Department of Health Services. AZ Environmental Public Health Tracking: Helping 
+Arizonans learn about environmental hazards. Available from: 
+https://www.azdhs.gov/preparedness/epidemiology-disease-control/environmental-
+health/environmental-public-health-tracking/index.php#indicators 
+10. U.S. Census Bureau. DP05: ASC Demographic and Housing Estimates. American 
+Community Survey 5-year Estimates. 2023. Available from: 
+https://data.census.gov/table?q=DP05 
+11. U.S. Census Bureau. Understanding and using ASC data: What all data users need to know. 
+2020. Available from: https://www.census.gov/programs-
+surveys/acs/guidance/estimates.html 
+12. Iverson SA, Gettel A, Bezold CP, et al. Heat-Associated Mortality in a Hot Climate: Maricopa 
+County, Arizona, 2006-2016. Public Health Reports®. 2020;135(5):631-639. 
+doi:10.1177/0033354920938006 
+https://journals.sagepub.com/doi/full/10.1177/0033354920938006  
+13. White JR, Berisha V, Lane K, Ménager H, Gettel A, Braun CR. Evaluation of a Novel Syndromic 
+Surveillance Query for Heat-Related Illness Using Hospital Data From Maricopa County, 
+Arizona, 2015. Public Health Reports®. 2017;132(1_suppl):31S-39S. 
+doi:10.1177/0033354917706517 
+https://journals.sagepub.com/doi/10.1177/0033354917706517?icid=int.sj-full-text.similar-
+articles.1  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       19 
+Appendices 
+ 
+Appendix A. MCDPH Heat-Related Death Database Data 
+Dictionary 
+  
+Variable 
+Description 
+Data Source 
+MEDICAL_EXAMINER_RE
+CORD_NO 
+Unique case number given by the Medical 
+Examiner 
+EDRS 
+DEATH_CERTIFICATE_NU
+MBER 
+Unique case number listed on birth certificate 
+EDRS 
+CLASSIFICATION 
+Whether death is Under Investigation, Heat Caused, 
+Heat Contributed, Ruled Out 
+EDRS 
+YEAR 
+Year of death 
+EDRS 
+DEATH_DATE 
+Date of death 
+EDRS 
+DEATH_TYPE 
+How the death date was calculated 
+EDRS 
+DEATH_WEEK 
+MMWR Week of the death 
+EDRS 
+DEATH_DAY 
+Day of death 
+EDRS 
+DEATH_MONTH 
+Month of death 
+EDRS 
+REPORT_SOURCE 
+Where death came from (EDRS vs. OME) 
+Both 
+NAME 
+Full name of decedent 
+EDRS 
+DOB 
+Decedent date of birth 
+EDRS 
+AGE 
+Decedent age 
+EDRS 
+AGEGROUP 
+Decedent age group 
+EDRS 
+SEX 
+Decedent Sex 
+EDRS 
+RACE 
+Decedent Race/Ethnicity 
+EDRS 
+LIVING_SITUATION 
+Living situation during time of death 
+PIR 
+OCCUPATION 
+Decedent Occupation 
+EDRS 
+INDUSTRY 
+Decedent Industry 
+EDRS 
+EDUCATION 
+Decedent Education Level 
+EDRS 
+MARITAL_STATUS 
+Decedent Marital Status 
+EDRS 
+PREGNANT 
+Decedent Pregnancy History 
+EDRS 
+RESIDENCE_ADDRESS 
+Residence Address 
+EDRS 
+RESIDENCE_CITY 
+Residence City 
+EDRS 
+RESIDENCE_ZIP 
+Residence Zip Code 
+EDRS 
+RESIDENCE_COUNTY 
+Residence County 
+EDRS 
+RESIDENCE_STATE 
+Residence State 
+EDRS 
+TIME_IN_AZ 
+Duration of time in AZ 
+EDRS 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       20 
+TIME_IN_AZ_UNITS 
+Duration of time in AZ units (weeks, months) 
+EDRS 
+COD_A 
+Cause of death line A 
+EDRS 
+COD_B 
+Cause of death line B 
+EDRS 
+COD_C 
+Cause of death line C 
+EDRS 
+COD_D 
+Cause of death line D 
+EDRS 
+CDC_II 
+Part II of the death certificate that collects other 
+significant conditions contributing to death but not 
+resulting in the underlying cause given in Part 1. 
+EDRS 
+CDC_INJURYDESC 
+Description of how injury occurred 
+EDRS 
+WORK_RELATED 
+Whether the death occurred at work 
+EDRS 
+RECREATIONAL 
+Whether the death was related to a recreational 
+activity 
+PIR 
+TOBACCO 
+Whether the decedent consumed tobacco 
+EDRS 
+DRUG_USE 
+Whether the decedent had a history of drug 
+use/evidence of drugs on the scene 
+PIR 
+DRUGS_DC 
+Whether drugs were listed in the cause of death 
+EDRS 
+ALCOHOL_USE 
+Whether the decedent had a history of alcohol 
+use/evidence of alcohol on the scene 
+PIR 
+ALCOHOL_DC 
+Whether alcohol was listed in the cause of death 
+EDRS 
+WELFARE_CHECK 
+Whether the decedent was discovered during a 
+welfare check 
+PIR 
+MEDICATIONS 
+What medications the decedent was regularly 
+taking 
+PIR 
+MEDICAL_HISTORY 
+Medical history of decedent 
+PIR 
+HEALTH_EQUITY_PIR 
+Whether the decedent was a member of the health 
+equity community groups 
+PIR 
+PREV_HRI 
+Whether the decedent previously had heat related 
+illness symptoms prior to death 
+PIR 
+INJURY_DATE 
+Date that the heat injury that led to death occurred 
+EDRS 
+INJURY_PLACE 
+Place where heat injury occurred 
+PIR 
+INJURY_PLACEDESC 
+Description of injury location 
+EDRS 
+POI_IN_OUT 
+If the place of injury was indoors or outdoors 
+PIR 
+ROOMAIRTEMP 
+If indoors, temperature of building where death 
+occurred 
+PIR 
+AC_STATUS 
+If indoors, whether AC was present 
+PIR 
+AC_WHY 
+If AC was present, why it was not cooling decedent 
+PIR 
+INJURY_ADDRESS 
+Injury location address 
+EDRS 
+INJURY_CITY 
+Injury location city 
+EDRS 
+INJURY_ZIP 
+Injury location zip code 
+EDRS 
+INJURY_COUNTY 
+Injury location county 
+EDRS 
+INJURY_STATE 
+Injury location state 
+EDRS 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       21 
+INJURY_LAT 
+Injury location latitude 
+EDRS 
+INJURY_LON 
+injury location longitude 
+EDRS 
+POD_IN_OUT 
+If the place of death was indoors or outdoors 
+PIR 
+DEATH_PLACE 
+Place where death occurred 
+PIR 
+DEATH_PLACEDESC 
+Description of death location 
+EDRS 
+DEATH_ADDRESS 
+Death address 
+EDRS 
+DEATH_ZIP 
+Death location zip code 
+EDRS 
+DEATH_CITY 
+Death location city 
+EDRS 
+DEATH_COUNTY 
+Death location state 
+EDRS 
+DEATH_STATE 
+Death location country 
+EDRS 
+NOTES 
+Any information to note surrounding case 
+PIR 
+ 
+Abbreviations: EDRS, Electronic Death Registry System; PIR, Preliminary Investigative Reports. Both EDRS and PIR are produced by 
+the Maricopa County Office of the Medical Examiner. EDRS contains death certificate data. 
+ 
+Appendix B. Variables Extracted from Preliminary Investigative 
+Reports (PIRs) for MCDPH Heat Surveillance 
+ 
+The following variables are commonly extracted from PIRs to support heat surveillance: 
+ 
+• 
+Age, race/ethnicity, and sex 
+• 
+Address and location of death 
+• 
+Address and location of injury 
+• 
+Medical history and comorbidities 
+• 
+Circumstances of death (e.g., indoors/outdoors, presence and status of A/C) 
+• 
+Description of the death scene 
+• 
+Condition of the body at discovery 
+• 
+Homelessness status (Y/N) 
+ 
+Note: Exact fields may vary depending on case circumstances and available documentation. 
+ 
+Appendix C. Preliminary Investigative Report SharePoint Data 
+Entry Form 
+ 
+*= Required  
+1. Does the decedent have a medical examiner record number?*  
+a. Yes  
+b. No (skip to question 3)  
+2. Enter decedent's medical examiner record number (format: ##-#####) *  
+a. After completion, the form goes to question 4  
+3. Enter the decedent's death certificate number *  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       22 
+4. What is the decedents living situation at the time of death? *  
+a. Living Independently  
+b. Homeless  
+c. Co-Habitating  
+d. Unknown  
+e. Unknown (not homeless)  
+5. At the time of death, was the decedent outdoor or indoors? A common situation is 
+that a decedent was found outdoors and passed away at the hospital. For this 
+example, the decedent was indoor at the time of death. *  
+a. Indoor  
+b. Outdoor (skip to question 7)  
+c. Unknown (skip to question 8)  
+6. What specific "Indoor location did the decedent pass away at? *  
+a. House  
+b. Apartment/Condo  
+c. Mobile  
+d. Townhouse  
+e. RV/Trailer  
+f. Hospital  
+g. Care Facility  
+h. Shed (used for shelter)  
+i. 
+Unknown  
+7. What specific "Outdoor location did the decedent pass away at? *  
+a. Urban Area  
+b. Car  
+c. Residence  
+d. Desert Area  
+e. Abandon Building  
+f. Shed  
+g. Park  
+h. Other/Unknown  
+8. Prior to death, did the heat injury that resulted in death occur indoor or outdoor? If 
+a person was found deceased outside, it is assumed that the decedent was injured 
+outside. If a person was found deceased inside and the PIR did not indicate outside 
+activity then it is assumed the heat injury occurred indoors *  
+a. Indoor  
+b. Outdoor (skip to question 13)  
+c. Unknown (skip to question 14)  
+9. What specific "Indoor location did the decedent get injured at? *  
+a. House  
+b. Apartment/Condo  
+c. Mobile  
+d. RV/Trailer  
+e. Townhouse  
+f. Hospital  
+g. Care Facility  
+h. Shed (used for shelter)  
+i. 
+Unknown  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       23 
+10. What was the air temperature of the decedent's residence/shelter at time of 
+Medical Examiner’s Office investigation? If the temperature is unknown, then leave 
+blank and if the temperature is an estimated range, then enter the median number. 
+  
+11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner*11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner*11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner*
+11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner* *11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner*11. Did the decedents residence/shelter have an air conditioner? This includes both window units and central air conditioner*
+a. Yes  
+b. No (skip to question 13)  
+c. Unknown (skip to question 13)  
+12. If there was an air conditioner, what was the reason why the residence/shelters air 
+conditioner was not being used? *  
+a. Turned Off  
+b. Non-Functioning  
+c. No Electricity  
+d. Unknown  
+13. What specific "Outdoor location did the decedent get injured at? *  
+a. Urban Area  
+b. Car  
+c. Residence  
+d. Desert Area  
+e. Abandoned Building  
+f. Shed  
+g. Park  
+h. Other/Unknown  
+14. Did the decedents heat illness occur while doing a recreational activity such as 
+hiking, walking, or sports? If there is no indication, then answer “No”. *  
+a. Yes  
+b. No  
+15. Is there any indication that the decedent was an alcoholic or alcohol was found 
+near the decedent? *  
+a. Yes  
+b. No  
+c. Unknown  
+16. Is there any indication that the decedent used drugs regularly or drugs were found 
+near the decedent? *  
+a. Yes  
+b. No  
+c. Unknown  
+17. What are the medications the decedent regularly took or were prescribed to the 
+decedent? If there are no medications indicated on the PIR, then leave blank. If more 
+than one drug, please list all medications and add a comma after each drug except the 
+last.  
+ 
+18. Is there indication that the decedent experienced a heat illness and recovered prior 
+to this injury?  
+a. Yes  
+b. No  
+c. Unknown  
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       24 
+19. Was the decedent found via a welfare check? A welfare check is when 
+police/EMS/neighbor is called to check on the decedent  
+a. Yes  
+b. No  
+c. Unknown  
+20. What was the decedent's medical history significant of? If none is listed, leave 
+blank  
+ 
+21. Are any of MCDPH’s Health Equity priority populations mentioned in the PIR? If 
+more than one priority population is indicated in the PIR, please select “Other” and list 
+all priority populations. Please add a comma after each priority population except the 
+last.  
+a. LGBTQIA+  
+b. Refugee  
+c. Physical Disability  
+d. Mental Disability  
+e. Unknown  
+f. Other  
+22. Any additional notes:  
+ 
+23. Did the PIR indicate any pets were also found deceased?  
+a. Yes  
+b. No (form ends)  
+24. Please indicate the type of pet and number found, separated by a comma.  
+ 
+Appendix D. MCDPH Population Denominator Sources 
+ 
+Population Group 
+Source 
+Notes 
+General Population 
+ACS 5-Year Estimates, Table DP05 
+Used for overall rate calculations 
+Age Groups 
+ACS 5-Year Estimates, Table DP05 
+Stratified by standard census age 
+brackets 
+Sex 
+ACS 5-Year Estimates, Table DP05 
+Male and female rates used in 
+stratified analyses 
+Race and Ethnicity 
+ACS 5-Year Estimates, Table DP05 
+Based on self-identified or recorded 
+race/ethnicity 
+People Experiencing 
+Homelessness 
+Local PIT Count and Case Notes 
+from OME and PIRs 
+Estimates may vary due to incomplete 
+or variable reporting 
+ 
+ 
+ 
+ 
+Maricopa County • Department of Public Health • Epidemiology & Informatics • January 2026       25 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Maricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealth
+Maricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/Public HealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealth
+Maricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealthMaricopa County - Department of Public Health - Epidemiology & Informatics Division - Maricopa.gov/PublicHealth
+Maricopa.gov/PublicHealth 

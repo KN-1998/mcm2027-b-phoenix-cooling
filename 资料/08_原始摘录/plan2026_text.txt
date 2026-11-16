@@ -1,0 +1,1290 @@
+ 
+ 
+ 
+ 
+Attachment A 
+ 
+ 
+ 
+City of Phoenix 2026 
+Heat Response Plan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 2 
+ 
+ 
+Table of Contents 
+Executive Summary 
+3 
+Purpose and Planning Process 
+4 
+Weather and Climate Assessment 
+6 
+Health Assessment 
+8 
+Heat Response Programs and Services 
+10 
+Table of Strategies and Actions 
+11 
+Strategy 1: Equip First Responders for Effective Heat Response 
+12 
+Strategy 2: Provide Publicly Accessible Cool Space and Drinking Water 
+13 
+Strategy 3: Support Cool and Safe Homes 
+17 
+Strategy 4: Support Cool and Safe Mobility and Recreation 
+19 
+Strategy 5: Implement Heat Safety Measures for Workers 
+20 
+Strategy 6: Educate the Community and Engage with Partners 
+21 
+Acknowledgements 
+23 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 3 
+ 
+ 
+Executive Summary 
+ 
+The Heat Response Plan details the programs and services that Phoenix delivers to residents 
+and visitors to prevent illness, death, and other serious and immediate adverse health outcomes 
+associated with indoor and outdoor heat exposure. Extreme heat impacts the health and quality 
+of life of many community members, with thousands of heat-related illnesses and hundreds of 
+heat-related fatalities reported annually in Maricopa County. Preliminary reporting shows 425 
+heat-related fatalities in Maricopa County in 2025, indicating that significant public health 
+challenges persist. However, this total represents a reduction of approximately 30% from the prior 
+year and would mark the second consecutive year of declines after more than a decade of 
+consistent increases. The City of Phoenix’s Heat Response Plan is revised annually to ensure 
+that Phoenix’s approach is adapted to meet evolving community needs in the pursuit of 
+continued improvements in heat-related public health indicators. 
+ 
+The 2026 Heat Response Plan contains 23 specific heat response actions for which the City 
+holds a leadership role, organized into six broad strategies: 
+ 
+1. Equip first responders for effective heat response. 
+ 
+2. Provide publicly accessible cool space and drinking water. 
+ 
+3. Support cool and safe home environments. 
+ 
+4. Support cool and safe mobility and recreation. 
+ 
+5. Implement heat safety measures for workers. 
+ 
+6. Educate the community and engage with partners. 
+ 
+Notable updates to the plan for 2026 include: 
+ 
+1. Modifications to the locations and operations of the 24/7 heat respite center and extended 
+hour cooling centers 
+ 
+2. Building new heat-focused educational resources for City of Phoenix employees 
+ 
+3. Restructuring the City’s heat relief assistance program for community partners  
+ 
+4. Expanding outreach efforts to mobile home and senior living communities in partnership 
+with the Red Cross 
+ 
+ 
+The 2026 plan draws from lessons learned over the past several years, with expanded services, 
+data-driven adjustments, and stronger partnerships, ensuring enhanced coordination, accessibility, 
+and outreach to protect residents during extreme heat events. 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 4 
+ 
+ 
+Purpose and Planning Process 
+ 
+The City of Phoenix Heat Response Plan outlines programs and services intended to protect 
+public health and quality of life from the threats of hot weather. Extreme heat is a leading cause 
+of weather-related deaths in the United States and exerts a significant public health burden in 
+Phoenix. The most acute impacts include heat-caused and heat-related fatalities, as well as 
+heat-related illnesses that require emergency medical service and hospital care. Many other 
+health challenges are also known to be related to prolonged, frequent, or severe heat exposure 
+but are not systematically documented. These challenges include cases of heat illness that are 
+unreported, disrupted sleep patterns, and anxiety over high electricity bills. 
+ 
+While everyone is potentially vulnerable to heat-related illness, certain communities account for 
+a disproportionately high share of the public health burden of extreme heat. Public health 
+reports in Arizona point to people experiencing homelessness and substance users at especially 
+high risk of adverse heat-related health outcomes. Studies also show that rates of heat-related 
+illness and/or death are higher in communities that have lower incomes, lower quality housing, a 
+higher prevalence of elderly individuals, a higher prevalence of people of color, and other 
+indicators of social vulnerability. 
+ 
+Managing the public health risks associated with extreme heat is an integral component of 
+hazard preparedness for the City of Phoenix owing to its geographic positioning in the Sonoran 
+Desert. Prolonged, hot summers are a part of the regional climate. However, the experience of 
+summer heat is highly variable between different neighborhoods in Phoenix and between 
+individual residents. Historical development patterns and varying topography across Phoenix 
+lead to neighborhood-to-neighborhood air temperature differences of 10°F or more on summer 
+days. Personal heat exposure is even more variable depending on daily activity patterns and 
+access to air-conditioned spaces. Over time, the severity of summer heat in Phoenix is being 
+amplified beyond background conditions by urban development and global-scale climate 
+change. Summer daytime and nighttime temperatures have increased in the City of Phoenix for 
+several decades and temperatures are projected to continue to rise. 
+ 
+To address the significant, inequitable, and growing public health risks associated with extreme 
+heat, the Phoenix City Council unanimously passed the City’s first Heat Response Plan in 2022. 
+This document is the fourth annual update to the Heat Response Plan. 
+ 
+The process to update the Heat Response Plan began in late summer 2025 and was 
+coordinated by an Executive Heat Response Leadership team. This team is comprised of senior 
+staff from Emergency Management, Fire, Public Health, Homeless Solutions, Library, and Heat 
+Response and Mitigation. The Executive Heat Response Leadership team initiated several 
+different types of program evaluation to identify opportunities for improvement toward the goal 
+of preventing heat-associated illness and deaths. Those evaluation activities included a formal 
+after-action analysis of the City’s enhanced efforts during summer 2025 and review of 
+operations with city departments and regional stakeholders that operate programs and services 
+relevant to the heat response mission. 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 5 
+ 
+ 
+The 2026 Heat Response Plan contains 23 specific heat response actions for which the City 
+holds a leadership role, organized into six broad strategies: 
+ 
+1. Equip first responders for effective heat response. 
+ 
+2. Provide publicly accessible cool space and drinking water. 
+ 
+3. Support cool and safe home environments. 
+ 
+4. Support cool and safe mobility and recreation. 
+ 
+5. Implement heat safety measures for workers. 
+ 
+6. Educate the community and engage with partners. 
+ 
+The goal of the Heat Response Plan is to enhance public health and community resilience by 
+alleviating adverse effects of heat. Key performance indicators include: 
+ 
+• 
+Heat-related mortality: Strive for year-over-year reductions in the number of fatalities 
+attributed to heat exposure in the City of Phoenix 
+ 
+• 
+Heat-related illnesses: Strive for year-over-year reductions in the number and severity of 
+medical service calls related to heat exposure in the City of Phoenix. 
+ 
+Confirmed heat-related deaths in Phoenix for the 2025 heat season were approximately 30% 
+lower than totals reported for 2024, marking the second consecutive year of declines. 
+Emergency calls for service for heat-related illnesses to the Phoenix Fire Department increased 
+by approximately 25% from 2024 to 2025.  
+ 
+The City of Phoenix also implements and invests in a wide range of other programs and 
+services that support the goals of the Heat Response Plan but are not specifically activated or 
+emphasized for the heat season, and as such are not listed as actions in this document. 
+Examples of those related initiatives include: 
+• 
+Investments in affordable housing units and shelter beds 
+• 
+Operation of housing repair and weatherization programs 
+• 
+Installation of shade structures at transit stops and in the public right of way 
+• 
+Increases in urban tree canopy  
+• 
+Actions proposed in the Shade Phoenix Plan, Energy Access Plan, Climate Action 
+Plan, and other municipal plans.  
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 6 
+ 
+ 
+Weather and Climate Assessment 
+ 
+The City of Phoenix Heat Response Plan defines May through September as the operational 
+season for heat response efforts. In 2025, programs operated during this time period as planned 
+with no early activation or extension of programming timelines.  
+Heat Season 2025 Review 
+ 
+The 2025 Heat Season was among the most severe in Phoenix’s history. By many metrics, the 
+2025 heat season ranked 4th hottest all-time, behind only 2024, 2023, and 2020. Temperatures 
+at Phoenix Sky Harbor Airport hit at least 110°F on 37 days and there were 31 days with 
+National Weather Service Extreme Heat Warnings in effect. Daily highs exceeding 115°F were 
+recorded five times, including a seasonal high of 118°F on July 9 and August 7. Nighttime 
+temperatures failed to drop below 90°F at Sky Harbor on 23 days, including a seasonal high 
+overnight low of 95°F on July 10. August was the hottest month of the summer and was the 
+month with temperatures farthest above the climatological average, with daytime highs 
+exceeding normals by more than 4°F. The figure below shows daily high temperatures from the 
+2025 heat season as compared to climatological normals, and the table provides a month-by-
+month summary of daily average high and low temperatures. 
+ 
+ 
+ 
+Month 
+2025 
+Avg. High 
+Normal 
+Avg. High* 
+2025 
+Rank** 
+2025 
+Avg. Low 
+Normal 
+Avg. Low* 
+2025 
+Rank** 
+May 
+95.6°F 
+94.5°F 
+34 
+71.2°F 
+69.5°F 
+12 
+June 
+106.2°F 
+104.2°F 
+16 
+80.9°F 
+78.6°F 
+10 
+July 
+107.6°F 
+106.5°F 
+12 
+86.2°F 
+84.5°F 
+8 
+August 
+109.3°F 
+105.1°F 
+4 
+87.1°F 
+83.6°F 
+5 
+September 
+100.5°F 
+100.4°F 
+30 
+79.8°F 
+78.1°F 
+5 
+Heat Season 
+(May – Sept.) 
+103.8°F 
+102.1°F 
+6 
+81.1°F 
+78.9°F 
+3 
+*per the official 1991–2020 U.S. Climate Normals adopted by the National Oceanic and Atmospheric Administration 
+**out of 130 recorded years; 1 indicates hottest on record 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 7 
+ 
+ 
+Climate Data for Planning 
+ 
+The table below presents weekly averages, ranges, and probabilities of exceedance based on 
+2016–2025 observations from Phoenix Sky Harbor Airport. Statistics are based on the previous 
+ten years rather than the official 30-year normals established by the National Oceanic and 
+Atmospheric Administration to ensure that the most recent observations are used and to 
+acknowledge non- stationarity in regional temperature trends. Data are presented for each week 
+of the 2026 Heat Season starting on May 1; October data are included to support decision-
+making regarding potential extensions of the operational period beyond September 30.  
+ 
+Week 
+Date 
+Daily High Temperatures 
+Daily Low Temperatures 
+Average 
+(°F) 
+Highest 
+(°F) 
+100°F or 
+above* 
+110°F or 
+above* 
+Average 
+(°F) 
+Highest 
+(°F) 
+90°F or 
+above* 
+1 
+5/1 
+92.7 
+108 
+19% 
+0% 
+67.0 
+76 
+0% 
+2 
+5/8 
+93.5 
+106 
+30% 
+0% 
+68.3 
+81 
+0% 
+3 
+5/15 
+95.4 
+105 
+31% 
+0% 
+70.8 
+82 
+0% 
+4 
+5/22 
+96.1 
+108 
+36% 
+0% 
+70.2 
+79 
+0% 
+5 
+5/29 
+101.1 
+113 
+67% 
+6% 
+75.1 
+87 
+0% 
+6 
+6/5 
+104.9 
+115 
+86% 
+13% 
+78.8 
+87 
+0% 
+7 
+6/12 
+106.4 
+118 
+89% 
+31% 
+79.7 
+91 
+9% 
+8 
+6/19 
+108.1 
+119 
+94% 
+37% 
+82.1 
+92 
+11% 
+9 
+6/26 
+108.2 
+116 
+97% 
+40% 
+83.9 
+95 
+13% 
+10 
+7/3 
+109.9 
+118 
+100% 
+57% 
+86.5 
+95 
+26% 
+11 
+7/10 
+109.7 
+118 
+96% 
+59% 
+88.0 
+95 
+43% 
+12 
+7/17 
+108.2 
+119 
+97% 
+34% 
+87.3 
+97 
+37% 
+13 
+7/24 
+107.2 
+119 
+87% 
+51% 
+85.7 
+95 
+31% 
+14 
+7/31 
+108.1 
+118 
+91% 
+49% 
+85.9 
+93 
+31% 
+15 
+8/7 
+106.5 
+118 
+91% 
+27% 
+85.3 
+94 
+21% 
+16 
+8/14 
+106.4 
+117 
+86% 
+33% 
+84.0 
+93 
+19% 
+17 
+8/21 
+105.4 
+115 
+89% 
+27% 
+83.3 
+92 
+11% 
+18 
+8/28 
+106.1 
+117 
+90% 
+19% 
+84.6 
+93 
+10% 
+19 
+9/4 
+105.4 
+116 
+87% 
+21% 
+83.5 
+93 
+4% 
+20 
+9/11 
+103.2 
+113 
+71% 
+4% 
+80.0 
+90 
+1% 
+21 
+9/18 
+99.2 
+109 
+53% 
+0% 
+76.6 
+85 
+0% 
+22 
+9/25 
+98.0 
+117 
+49% 
+7% 
+74.5 
+88 
+0% 
+ 
+10/2 
+95.9 
+113 
+29% 
+6% 
+71.4 
+86 
+0% 
+ 
+10/9 
+92.0 
+108 
+19% 
+0% 
+68.6 
+81 
+0% 
+ 
+10/16 
+90.7 
+105 
+11% 
+0% 
+66.0 
+75 
+0% 
+ 
+10/23 
+88.3 
+100 
+3% 
+0% 
+63.6 
+76 
+0% 
+*Probabilities of exceedance indicate the percent of days within the given week that temperatures have reached the 
+indicated temperature over the past decade. 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 8 
+ 
+ 
+Health Assessment 
+ 
+Heat-related deaths are tracked in Maricopa County by the Maricopa Department of Public 
+Health (MCDPH), in partnership with the Maricopa County Office of the Medical Examiner. 
+Heat-related deaths include those that are directly attributable to heat exposure (heat-caused 
+deaths) and those where heat played a contributing role but was not the primary cause of death 
+(heat-contributed deaths). The Maricopa County heat-health system is widely recognized as a 
+national and international best practice. Heat-related deaths have been recorded using 
+consistent methods since 2006. 
+ 
+Heat-related deaths have increased considerably in Maricopa County since 2014. Particularly 
+large year-over-year increases were evident from 2015 to 2016 (+83%), 2019 to 2020 (+62%), 
+and 2021 to 2022 (+25%). Another large increase is evident from 2022 to 2023, with an 
+increase of more than 47% to the record high of 625 cases in Maricopa County that was 
+recorded that year. However, heat-related deaths have declined in Maricopa County for each 
+of the last two years, including a decline of approximately 30% from the 608 cases confirmed in 
+2024 to 425 confirmed cases in 2025 (as of 12/31/2025; 9 cases remain under investigation). 
+declined in Maricopa County from 2023 to 2024. City-specific totals for 2025 will be released by 
+MCDPH at later date.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 9 
+ 
+ 
+MCDPH produces comprehensive annual reports that detail key risk factors and characteristics 
+of heat-associated deaths, including demographic information, details about housing status, air 
+conditioning availability, and indications of drug/alcohol use. The preliminary report for the 2025 
+heat season has not yet been released, but the current MCDPH Dashboard shows that county-
+wide risk factors for heat-related death remain generally consistent with prior years. Among the 
+key metrics as of December 31, 2025:  
+ 
+• 
+52% of reported deaths were heat-caused and 48% were considered heat-contributed. 
+Heat-caused deaths are those in which heat was directly involved in the sequence of 
+conditions causing deaths. 
+  
+• 
+74% of heat-related deaths were among males.  
+ 
+• 
+58% of heat-related deaths were among persons 35–64 years of age 
+ 
+• 
+73% of heat-related deaths had an outdoor place of injury 
+ 
+• 
+Among indoor heat-related deaths, 89% occurred in a home where air conditioning was 
+present, but was turned off or not functioning 
+ 
+• 
+People experiencing homelessness accounted for 48% of heat-related deaths  
+ 
+• 
+Substance use was involved in 64% of deaths; this ratio is a modest increase from the 
+prior three-year average of 57%  
+ 
+Another key lesson learned from MCDPH and Arizona State University (ASU) analysis of heat- 
+associated death and illness data is that serious health impacts from heat are not confined to 
+only the hottest summer days. While the hottest days do bring the highest risk of heat- 
+associated death and illness, cases begin to be seen at temperatures that would be considered 
+mild by most Phoenicians. In 2025, 37% of heat-related deaths in Maricopa County occurred on 
+days with the HeatRisk was designated by the National Weather Service as Major or Extreme, 
+and 63% of deaths occurred on days when the HeatRisk was designated as Moderate, Minor, or 
+None. These findings imply that a seasonal approach to heat management, rather than one only 
+focused on intermittent “heat waves” is necessary.  
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 10 
+ 
+ 
+Heat Response Programs and Services 
+ 
+In 2026, the City of Phoenix will take the lead or play a significant role in operating 23 heat 
+response programs and services. This comprehensive portfolio comprises a mix of ongoing 
+programs continuing from previous years, revised existing programs, and new initiatives. The 
+responsibility and support for these programs and services, encompassing budget and staffing 
+needs, are distributed across more than 15 different City departments and functions. While 
+many actions in the plan continually evolve and improve from year to year, there are four 
+notable updates for 2026: 
+ 
+1. Modifications to the locations and operations of the 24/7 heat respite center and extended 
+hour cooling centers (Actions 2.2 and 2.3) 
+ 
+2. Building new heat-focused educational resources for City of Phoenix employees (Action 2.8) 
+ 
+3. Restructuring the City’s heat relief assistance program for community partners (Action 2.9) 
+ 
+4. Expanding outreach efforts to mobile home and senior living communities in partnership 
+with the Red Cross (Action 3.4) 
+ 
+The subsequent pages feature an inventory of all programs and services organized by strategy, 
+presented in table format. Following the table, a short narrative is provided for each action to 
+provide a more complete perspective of the components of the Heat Response Plan.  
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 11 
+ 
+ 
+Strategies 
+Actions (* denotes actions with notable updates for 2026) 
+Lead Depts. 
+Equip First 
+Responders for 
+Effective Heat 
+Response 
+1.1 Activate summer heat protocols including cold immersion techniques 
+FIRE 
+1.2 Equip Homeless Outreach Teams with Cooling Resources 
+OHS, OHRM, 
+OPH 
+Provide 
+Publicly 
+Accessible 
+Cool Space 
+and 
+Drinking 
+Water 
+2.1 Designate City Facilities as Heat Relief Network Cooling Centers 
+LIB, OHRM 
+*2.2 Offer Extended Hours at City of Phoenix Cooling Centers 
+LIB, OHS, OEM, 
+OHRM, OPH 
+*2.3 Operate a 24/7 Respite and Navigation Center 
+OHS, OEM, 
+OHRM, OPH 
+2.4 Designate City Facilities as Heat Relief Network Hydration Stations 
+PRD, HSD, 
+OHRM 
+2.5 Operate Safe Outdoor Space 
+OHS 
+2.6 Provide Shade and Cooled Rest Areas at The Key Campus 
+OHS 
+2.7 Expand Smart Chilled Drinking Water in Public Spaces Initiative 
+INNOV 
+*2.8 Improve Heat Response Educational Resources for City Employees  
+OHRM, HR 
+*2.9 Provide Heat Relief Supplies to Community Partners 
+OHRM 
+Support Cool 
+and Safe 
+Homes 
+3.1 Promote and Enforce Cooling Ordinance for Rental Housing Units 
+NSD, HSD, 
+COMMS 
+3.2 Provide Emergency Utility Assistance 
+HSD 
+3.3 Offer Low-flow Water Services Program 
+WSD 
+*3.4 Deploy Heat Outreach Teams to Mobile Home and Senior Communities 
+OHRM 
+Support Cool 
+and Safe 
+Mobility and 
+Recreation 
+4.1 Deploy Outreach Teams to Select Trailheads 
+PRD, OHRM, 
+FIRE 
+4.2 Close Select Trailheads on Extreme Heat Warning Days  
+PRD 
+4.3 Attend Community Events to Share Heat Safety Resources 
+OHRM 
+Implement 
+Heat Safety 
+Measures for 
+Workers 
+5.1 Annually Update Heat Safety Plans in City Departments 
+HR 
+5.2 Promote and Enforce Heat Safety Ordinance for City Contractors 
+FIN, LAW, HR, 
+OHRM 
+Educate the 
+Community 
+and Engage 
+with Partners 
+6.1 Operate a Comprehensive Heat Response Public Education Campaign 
+COMMS 
+6.2 Improve Engagement Strategies for People Who Use Substances 
+OPH, OHRM, 
+OHS, COMMS 
+6.3 Participate in Cross-Agency Work Groups and Research Initiatives 
+OHRM, OEM 
+ 
+Department key: OHRM – Office of Heat Response and Mitigation; COMMS – Communications; VOL – Volunteer Programs; OAC – 
+Arts and Culture; HSD – Human Services; HR – Human Resources; NSD – Neighborhood Services; OPH – Public Health, OEM – 
+Office of Emergency Management; PWD – Public Works Department; PRD – Parks and Recreation Department; WSD – Water 
+Services Department; PTD – Public Transit Department; LRT – Light Rail Transit; OHS – Office of Homeless Solutions; FIN – 
+Finance Department; INNOV – Office of Innovation. 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 12 
+ 
+ 
+ Activate Summer Heat Protocols Including Cold Immersion Techniques 
+Action 1.1 
+ Equip Homeless Outreach Teams with Cooling Resources 
+Action 1.2 
+ 
+ 
+The City of Phoenix Fire Department continues to respond to all heat-related calls in which the 
+safety, health, or lives of residents are threatened during our summer months. The Fire 
+Department's life-saving measures for heat emergencies include ice and cold-water immersion, 
+chilled intravenous therapy, and other innovative strategies to reduce case severity. The Fire 
+Department Heat Stress Management Standard Operating Procedure (MP 206.19) provides a 
+robust framework for minimizing the effects of heat stress on first responders, which would 
+have a cascading adverse impact on the community. The framework focuses on health 
+assessments, rest, hydration, and temperature regulation for personnel exposed to high 
+temperatures. Protective directives are implemented when temperatures exceed 105°F, 
+deploying additional resources and implementing enhanced rehabilitation measures. Training 
+exposures comply with ADOSH guidelines, further ensuring personnel's well-being. 
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+FIRE 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/fire/publications/standard-operating-procedures 
+ 
+The Office of Homeless Solutions deploys outreach teams year-round for proactive engagement 
+with people experiencing homelessness and to assist in providing transportation and connection 
+to homeless services. During the heat season, outreach teams are equipped with heat relief kits 
+to distribute to community members in need, including water, hats, cooling towels, and other 
+essential supplies. Staff also receive information about publicly available cooling resources to 
+share during their engagements. In the 2025 heat season, 1,579 people benefitted from this 
+program, which is supported by a three-year grant from the Gila River Indian Community.    
+ 
+TARGET POPULATION 
+PEOPLE EXPERIENCING HOMELESSNESS 
+LEAD DEPARTMENT(S) 
+OHS, OHRM 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+ 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 13 
+ 
+ 
+ Designate City facilities as Heat Relief Network Cooling Centers 
+Action 2.1 
+ Offer Extended Hours at City of Phoenix Cooling Centers 
+Action 2.2 
+ 
+ 
+The regional Heat Relief Network is coordinated by the Maricopa Association of Governments 
+(MAG) and consists of Respite Centers, Cooling Centers, Hydration Stations, and Donation 
+Sites. Cooling Centers are indoor, air-conditioned locations that also offer hydration. 17 City of 
+Phoenix Library locations served as Cooling Centers throughout the 2025 Heat Season and the 
+City will continue this commitment in 2025. All participating City facilities are listed on a publicly 
+accessible web map and directory hosted by MAG. 
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+LIBRARY, OHRM 
+RESOURCES / MORE INFO. 
+https://azmag.gov/Programs/Heat-Relief-Network 
+ 
+Updated for 2026. Participating facilities in the regional Heat Relief Network typically provide 
+services coincident with their normal hours of business operation. This model creates gaps in 
+network availability, particularly in the late afternoon and evening hours, as well as on 
+weekends. To address this deficiency, the City of Phoenix will extend the hours of one Cooling 
+Center—Cholla Library—to 9pm each day of the week and add capacity from noon to 9pm on 
+Sundays throughout the heat season. This location was selected to address elevated heat-
+health risks along the I-17 corridor north of downtown Phoenix, as a complement to the City’s 
+investment in heat respite locations in the downtown core. Similar to the 2025 heat season, full 
+library services will be offered at Cholla Library during the extended operating hours, with 
+additional staffing support provided by Community Bridges, Inc. 
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+LIB, OHS, OEM, OHRM, OPH 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 14 
+ 
+ 
+ Operate the Safe Outdoor Space 
+ Action 2.5 
+ Designate City Facilities as Heat Relief Network Hydration Stations 
+   Action 2.4 
+ 
+Updated for 2026. To further improve the capacity of the regional Heat Relief Network, the City 
+of Phoenix will operate one 24/7 Heat Respite and Navigation Center for the entire heat season 
+as well as a second site with afternoon and evening hours. These locations will serve as safe, 
+cool indoor spaces for refuge from the heat and provide water. They will also provide resources 
+for people experiencing homelessness including navigation and transportation, to help people 
+access a wide range of other City of Phoenix services. The locations were chosen based on 
+analysis of public health and community vulnerability data as well as operational capabilities. 
+This year, the City will again offer 24/7 heat respite at 20 W. Jackson St. and additional 
+availability at the Justa Center, located at 1001 W. Jefferson St. Both locations are in downtown 
+Phoenix in the primary hotspot for heat-related 911 calls citywide. Both of these sites will have 
+staffing and security support from the Office of Homeless Solutions, Community Bridges, Inc., 
+and the Phoenix Police Department.  
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+OHS, OEM, OHRM, OPH 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+The regional Heat Relief Network is coordinated by the Maricopa Association of Governments 
+(MAG) and consists of Respite Centers, Cooling Centers, Hydration Stations, and Donation 
+Sites. Hydration Stations are indoor or outdoor locations that offer bottled water and may offer 
+other heat relief resources. All City of Phoenix senior centers, community centers, and swimming 
+pools served as Hydration Stations during the 2025 Heat Season and the City will continue this 
+commitment in 2026. All participating City facilities are listed on a publicly accessible web map 
+and directory hosted by MAG. 
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+PRD, HSD, OHRM 
+RESOURCES / MORE INFO. 
+https://azmag.gov/Programs/Heat-Relief-Network 
+ 
+The Safe Outdoor Space at 1537 W. Jackson St. is a key component in the city’s strategy to 
+address homelessness around the Key Campus. It is designed as an alternative for those not 
+yet ready for indoor shelter and provides a safer, shaded environment with essential services to 
+aid individuals in ending their homelessness. The unique property offers both outdoor and 
+cooled indoor spaces. The operation of the Safe Outdoor Space aligns with recommendations 
+from the 2020 Strategies to Address Homelessness Plan. 
+ 
+TARGET POPULATION 
+PEOPLE EXPERIENCING HOMELESSNESS 
+LEAD DEPARTMENT(S) 
+OHS 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ Operate 24/7 and Extended Hour Respite and Navigation Centers 
+Action 2.3 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 15 
+ 
+ 
+ Provide Shade and Cooled Rest areas at The Key Campus 
+Action 2.6 
+ Expand Smart Drinking Water in Public Spaces Initiative 
+ Action 2.7 
+ Improve Heat Response Educational Resources for City Employees 
+Action 2.8 
+ 
+Multiple City of Phoenix investments made over the past several years are providing shade and 
+cooled space to individuals experiencing homelessness at the Key Campus. These investments 
+include shade structures and evaporative coolers that are activated on the Campus during the 
+heat season. Phoenix coordinated and funded the construction of a cooling tower at the center 
+of the Campus that became operational in 2025. 
+ 
+TARGET POPULATION 
+PEOPLE EXPERIENCING HOMELESSNESS 
+LEAD DEPARTMENT(S) 
+OHS 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+Access to chilled drinking water is a fundamental need for health and well-being. This project 
+expands access to chilled drinking water in high-density areas of the city, with locations near 
+public transportation stops and hubs, City buildings, and public spaces. The project takes a 
+data-driven approach to understand the needs of the Phoenix community and identify optimal 
+locations. Each unit has a remote monitoring system to provide usage data and alerts for 
+system issues and potential leaks. The initiative includes partners, including Downtown 
+Phoenix Inc. and HandsOn Greater Phoenix, as well as community members to support the 
+upkeep and sustainability of each unit.  As of early 2026, 11 units have been installed with four 
+additional units to be installed later in the calendar year. To date, the initiative has delivered the 
+equivalent of more than 270,000 single-use plastic bottles of water to residents, without the 
+plastic waste. The project won an IDC North America Smart Cities Award in 2025.   
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+OFFICE OF INNOVATION 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/administration/departments/innovation/chilled-
+drinking-water-initiative.html 
+ 
+Updated for 2026. A new training program is being developed for staff members who support 
+City of Phoenix Heat Relief Network sites. The training, which will be delivered through the 
+PHXYou platform, will help build employee awareness of the full suite of heat relief programs 
+and resources available to the public. This content includes information about programs and 
+tools offered by city departments as well as local partners. The training program is being 
+collaboratively developed with input from ten city departments. A pilot version of the training 
+program will be launched for the 2026 heat season, with feedback from the pilot used to 
+enhance the program for widespread implementation in 2027. This action is supported by a 
+FEMA Building Resilient Infrastructure and Communities Grant.  
+TARGET POPULATION 
+EMPLOYEES 
+LEAD DEPARTMENT(S) 
+OHRM, HR 
+RESOURCES / MORE INFO. 
+N/A 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 16 
+ 
+ 
+ Provide Heat Relief Grants to Community Partners 
+Action 2.9 
+ 
+Updated for 2026. Dozens of community organizations participate in the regional Heat Relief 
+Network, expanding options available for city residents to access cool space, drinking water, 
+and important programs and services. These organizations participate in regional heat relief 
+efforts on a voluntary basis, often absorbing additional costs to do so with no or very limited 
+financial resources. The City of Phoenix has been offering heat relief assistance programs to 
+these organizations since 2022. Last year, 18 local organizations received supplies including 
+hats, electrolytes, sunscreen, resumable water bottles, and lip balm with a total allocation of 
+more than $100,000. In 2026, the heat relief assistance program is being restructured with new 
+formal contracts for a heat relief supply provider and distribution manager to improve program 
+efficiency. All participating organizations must be registered with the regional Heat Relief 
+Network with operations in the City of Phoenix.   
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+OHRM 
+RESOURCES / MORE INFO. 
+N/A 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 17 
+ 
+ 
+ Promote and Enforce Cooling Ordinance for Rental Housing Unit                      Action 3.1 
+ Provide Emergency Utility Assistance 
+Action 3.2 
+ 
+ 
+ 
+The Neighborhood Services Department enforces the City’s cooling ordinance, which sets 
+minimum temperature requirements for cooling systems in all single- and multi-family rental 
+housing units. Each unit must be able to safely cool all livable rooms to 86°F when using 
+evaporative cooling and 82°F when using air conditioning. The Human Services Department 
+oversees a Landlord-Tenant education program that helps parties understand their rights and 
+responsibilities concerning this ordinance and the Arizona Residential Landlord-Tenant Act. The 
+City actively promotes these and related programs throughout the heat season. In 2025, 
+Neighborhood Services completed 200 service calls related to enforcement of the cooling 
+ordinance. 
+ 
+TARGET POPULATION 
+RENTERS 
+LEAD DEPARTMENT(S) 
+NSD, HSD, COMMS 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/nsdsite/Documents/NPD%20Documents/Cooling%20Ordinance%2 
+0Flyer.pdf 
+ 
+The Human Services Department operates the City’s utility assistance program for residents, 
+which aids in covering costs for electricity, water, and gas services. Assistance is provided 
+through federal, state, and local utility assistance funding initiatives. Funding is provided on a 
+first-come, first-served basis; however, those who meet emergency criteria will be prioritized for 
+consideration if funding is available. Priority will be given to households with children under 24 
+months, individuals aged 60 and older, or those with special medical needs. The Human 
+Services Department staff offer case management services, education, and utility provider 
+coordination to help residents to effectively manage their finances, enroll in appropriate utility 
+plans, and advocate to prevent disconnection or facilitate reconnection of utility services when 
+appropriate.  
+The utility assistance program operates year-round and is promoted as a heat response 
+strategy during the heat season. In 2025, 59% of financial assistance was provided during the 
+heat season and 57% of total households were served during the heat season, with the most 
+assistance provided and households served occurring in September.  
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+HSD 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/humanservices 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 18 
+ 
+ 
+ Deploy Heat Outreach Teams to Mobile Home and Senior Communities              Action 3.4 
+ 
+The Water Services Department is continuing its innovative Low-Flow Water Service Program. 
+This program provides a vital lifeline for customers experiencing difficulty paying their water 
+bills, offering essential water services for up to three months. By ensuring continued access to 
+water for basic needs, such as hydration, while residents work to resolve challenges with bill 
+payment, the City strives to alleviate financial burdens during the heat season.  
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+WSD 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/waterservices 
+ 
+ 
+Updated action for 2026. The City will partner with the Red Cross and the Arizona Mobile and 
+Manufactured Homeowners Association to coordinate a volunteer-led outreach program for 
+residents of mobile and manufactured homes as well as seniors. The partnership will focus on 
+educating residents about available resources and promoting heat safety. In 2025, this effort 
+included five outreach campaigns that engaged 445 residents, with the support of 38 
+participating volunteers. Staff and partners are seeking to expand efforts for 2026 in 
+coordination with the Neighborhood Services and Human Services Departments and Offices of 
+Public Health and Sustainability.  
+ 
+TARGET POPULATION 
+MOBILE HOME RESIDENTS, SENIORS 
+LEAD DEPARTMENT(S) 
+OHRM 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+ 
+ Offer Low-Flow Water Service Program 
+Action 3.3 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 19 
+ 
+ 
+ Deploy Outreach Teams to Select Trailheads 
+Action 4.1 
+ Close Select Trailheads on Extreme Heat Warning Days 
+Action 4.2 
+ 
+ 
+From May through September, the City of Phoenix supports the “Take a Hike. Do it 
+Right.” campaign with outreach teams deployed to promote safe hiking practices and reduce 
+heat-related illnesses and rescues. Volunteers from the Community Emergency Response 
+Team (CERT) and Park Stewards are stationed every Saturday and Sunday from 7–10 a.m. at 
+entrances to trails that have higher rates of heat-related illnesses and/or those where rescue 
+operations are more technically complex, including trails at Camelback Mountain, Piestewa 
+Peak, and South Mountain. Volunteers provide heat safety education, hydration resources, and 
+distribute cooling supplies such as water, electrolytes, and towels. Last year, 265 volunteers 
+contributed more than 800 service hours and recorded 17,300 engagements. The program 
+also made new infrastructure investments in 2025 to make ice immediately accessible at select 
+locations to support Phoenix Fire during mountain rescues. 
+ 
+TARGET POPULATION 
+HIKERS 
+LEAD DEPARTMENT(S) 
+PRD 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+The Parks and Recreation Board established the Trail Heat Safety Program in 2021 to reduce 
+risks for hikers and first responders during extreme heat. The program restricts access to select 
+trails when the National Weather Service issues an Extreme Heat Warning. In March 2025, the 
+board expanded the program to restrict access to three trails at South Mountain Park / 
+Preserve: Holbert Trail, Mormon Trail, Hau ‘pal Loop Trail, and the National Trail from Pima 
+Canyon Trailhead, while keeping more than 100 miles of trails open.  
+ 
+TARGET POPULATION 
+HIKERS 
+LEAD DEPARTMENT(S) 
+PRD 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/parks/trails/take-a-hike-do-it-right to receive alerts 
+ 
+ 
+The Office of Heat Response and Mitigation will help raise awareness of heat response 
+initiatives by supporting requests to participate in community gatherings and outreach events 
+throughout the heat season. Staff will provide an information booth and engage with attendees 
+to raise awareness about heat safety measures, distribute educational materials, and provide 
+guidance on accessing community cooling resources. 
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+OHRM 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+ Attend Community Events to Share Heat Safety Resources 
+Action 4.3 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 20 
+ 
+ 
+ Annually Update Heat Safety Plans in City Departments                                      Action 5.1 
+ Promote and Enforce Heat Safety Ordinance for City Contractors 
+Action 5.2 
+ 
+ 
+The Human Resources Safety & Worker’s Compensation Division has developed written Heat 
+Injury and Illness Prevention Plans with departments whose employees face heat safety 
+dangers during their work duties. These plans work to minimize or eliminate employee 
+exposures to heat related hazards that may lead to serious injuries, illnesses or death. The 
+plans outline each department’s safety controls and policies to mitigate heat-related hazards, 
+procedures to follow should a heat-related illness or injury occur and training to ensure 
+employees are familiar with their department’s plan.  
+ 
+TARGET POPULATION 
+CITY EMPLOYEES 
+LEAD DEPARTMENT(S) 
+HR 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+In April 2024, the City Council adopted a heat safety ordinance that applies to businesses that 
+have contractual, leasing, or licensing relationships with the City of Phoenix. The ordinance 
+requires these businesses to have compliant heat safety plans that ensure appropriate measures 
+to protect employees are in place. At the time of ordinance adoption, the City Council also directed 
+staff to create an advisory committee to guide the implementation of the ordinance. 
+The advisory committee was formed in early summer 2024 and submitted recommendations to the 
+City Manager in September 2025 to guide the implementation of the ordinance into the future. 
+ 
+TARGET POPULATION 
+WORKERS 
+LEAD DEPARTMENT(S) 
+HR, LAW, FINANCE, OHRM 
+RESOURCES / MORE INFO. 
+N/A 
+ 
+ 
+ 
+ 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 21 
+ 
+ 
+ Operate a Comprehensive Heat Response Public Education Campaign 
+Action 6.1 
+ Improve Engagement Strategies for People Who Use Substances 
+Action 6.2 
+ 
+ 
+The City will continue to increase the reach of public messaging related to heat response in 
+2026 through a comprehensive multimedia public education campaign. The goal of the 
+campaign is to maximize community awareness of heat safety information and available 
+resources. The campaign includes both print and digital channels and is updated each year. 
+Resources are made available in both English and Spanish and target heat-vulnerable 
+populations as well as the community at large. In 2025, thousands of pamphlets were distributed 
+to community partners, multiple newsletters included heat safety information, resources were 
+promoted on bus shelters and billboards as well as other advertising venues, and more than 
+300,000 impressions were earned on social media. Additionally, staff will proactively pursue 
+media coverage and participate in requested media interviews to further build public awareness 
+of heat safety strategies and resources. In 2025, the Communications Office coordinated more 
+than 100 stories from local, national, and international outlets related to the City’s Heat 
+Response Plan and programs.   
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+COMMS 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/pio/summer 
+ 
+ 
+The Office of Public Health, in partnership with the Communications Office and Offices of Heat 
+Response and Mitigation and Homeless Solutions, will continue efforts to improve heat related 
+outcomes for people who use drugs and alcohol. Substance use was a factor in approximately 57% 
+of heat-related fatalities across Maricopa County between 2022 and 2024. Efforts in 2026 will 
+include the continuation of heat outreach and expanding education on the risks of substance use 
+and heat as well as overdose signs, symptoms, and response. Training modules for staff and 
+volunteers supporting heat relief sites as well as the public will be updated and published. In 
+addition, staff will develop and implement heat risk messaging and communication tools in 
+partnership with overdose and disease prevention agencies supporting people who use 
+drugs. Existing partnerships that will be leveraged for this work are the City’s Public Health and 
+Harm Reduction Working Group, Health Advisory Executive Committee, Community Mental Health, 
+Wellness, Public Health, and Safety Task Force, and the Phoenix Substance Use Coalition 
+Collaborative. 
+ 
+TARGET POPULATION 
+SUBSTANCE USERS 
+LEAD DEPARTMENT(S) 
+OPH, OHRM, OHS, COMMS 
+RESOURCES / MORE INFO. 
+https://www.phoenix.gov/healthsite/Pages/Naloxone.aspx 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 22 
+ 
+ 
+ Participate in Cross-Agency Work Groups and Research Initiatives 
+Action 6.3 
+ 
+The City will continue to participate in and lead heat response initiatives across a wide range of 
+governance scales to ensure that resources are deployed as effectively as possible. Phoenix 
+was a member of multiple county- and state-level coordination teams in the 2025 heat season 
+and participated in pre- and post-season statewide meetings coordinated by the Arizona 
+Department of Health Services. City staff will continue to serve on the steering committee for the 
+Arizona Heat Resilience Research and Data Work Group, which meets monthly throughout the 
+year. Staff are also actively engaged with the Ten Across Network, which facilitates peer-to-peer 
+learning among sustainability and resilient professionals across the American Sun Belt. Staff will 
+also facilitate the City’s engagement with research initiatives that offer high potential for 
+benefitting regional heat response efforts.  
+ 
+TARGET POPULATION 
+CITYWIDE 
+LEAD DEPARTMENT(S) 
+OHRM 
+ 
+ 
+      City of Phoenix 2026 Heat Response Plan DRAFT (2.13.2026) | 23 
+ 
+ 
+Acknowledgments 
+ 
+The City of Phoenix appreciates the efforts of all community partners who are working to reduce 
+the adverse impacts of extreme heat. The organizations listed below participate in actions listed 
+in the Heat Response Plan, have provided guidance on the City’s heat response strategies, or 
+have published plans and reports from which the Heat Response Plan draws content and 
+inspiration. 
+City of Phoenix Mayor and Council Offices 
+Office of Mayor Kate Gallego 
+Office of Ann O’Brien, District 1  
+Office of Jim Waring, District 2 
+Office of Debra Stark, District 3 
+Office of Laura Pastor, District 4 
+Office of Betty Guardado, District 5 
+Office of Kevin Robinson District 6 
+Office of Anna Hernandez, District 7  
+Office of Vice Mayor Kesha Hodge Washington, District 8 
+City of Phoenix Departments and Functions 
+Arts & Culture, Aviation, City Manager’s Office, Communications, Environmental Programs, 
+Fire, Heat Response and Mitigation, Emergency Management, Homeless Solutions, Housing, 
+Human Resources, Human Services, Innovation, Library, Light Rail Transit, Neighborhood 
+Services, Parks and Recreation, Police, Public Health, Public Transit, Public 
+Works, Sustainability, Volunteer Programs, and Water Services. 
+ 
+Local, Regional, and National Partners 
+AllThrive365, Arizona Department of Health Services, Arizona Faith Network, Arizona Heat 
+Resilience Work Group, Arizona Public Service, Arizona State University, Bloomberg Associates, 
+C40 Cool Cities Network, Centers for Disease Control and Prevention, Community Bridges, 
+Inc., Crisis Response Network, Healthy Giving Council, Justa Center, Keys to Change, 
+Maricopa Association of Governments, Maricopa County Department of Emergency 
+Management, Maricopa County Department of Public Health, National Oceanic and 
+Atmospheric Administration, National Weather Service Phoenix Forecast Office, Nature 
+Conservancy Arizona Healthy Cities Program, Phoenix Community Emergency Response 
+Team, Phoenix Parks Foundation, Phoenix Parks Stewards, Phoenix Revitalization 
+Corporation, Red Cross, Salt River Project, Sustainable Cities Network, UMOM, University of 
+Arizona, Valley Metro, and Valley of the Sun United Way. 
+ 
+Funding Partners 
+The City of Phoenix Heat Response initiatives benefit from financial resources made available 
+through grant programs offered by the Gila River Indian Community, Maricopa County Department 
+of Public Health, and Federal Emergency Management Agency.  

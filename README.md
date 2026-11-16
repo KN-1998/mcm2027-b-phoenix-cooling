@@ -31,9 +31,15 @@ Phoenix, AZ。2027–2031 年移动降温枢纽（MCH）规划。测试规模：
 3. 记录的 heat-related deaths ≠ 某设施的因果效应
 4. 模拟的区/候选点 ≠ 官方 Phoenix 规划 designation
 
+## 先读这两份
+
+- **`资料/00_数据主表.md`** —— 所有数据源、本地文件、访问状态、用途与边界（已下载 4 份官方 PDF）
+- **`handoff/MODELER_HANDOFF_2026-11-16.md`** —— 建模交接：五问映射、四条不可混、模型骨架、给编程手的第一批任务
+
 ## 目录
 
 ```
+资料/             数据主表 + 官方计划/健康/文献（含队友交接参考）
 problem/          题面 PDF
 PRACTICE_NOTES/   A 题经验（教训/合同模板/合规/验证）+ AI 政策 + 参考论文
 modeling/         模型合同（待写：MODEL_SPEC / DECISIONS / params）
