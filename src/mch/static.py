@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
-from .hours import availability_table
+from .hours import PERIODS, availability_table, capacity_in_period, split_demand
 from .assign import solve_assignment
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
@@ -63,22 +63,41 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
             availability: Optional[Dict[str, float]] = None,
             downtime: Optional[Dict[str, float]] = None,
             override: Optional[float] = None,
-            solver: str = "lp") -> Solution:
+            solver: str = "lp",
+            mode: str = "period") -> Solution:
     """需求优先贪心：按 (需求 × 权重) 从大到小分配，每区取最近且有余量的站点。"""
     weights = weights or {}
     dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
     order = sorted(inst.districts, key=lambda d: -(dem[d.id] * weights.get(d.id, 1.0)))
 
     dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
-    cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
 
-    if solver == "lp":
-        out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem)
-        raw = out["served"]
-        by_site: Dict[str, float] = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
-        lp_status = out["status"]
+    if mode == "period":
+        # P1-2：按时段显式分配。容量 = 日容量 x 该时段营业重叠小时 / 营业时长。
+        cap_daily = _effective_capacity(inst, sites, capacity, None, downtime, override)
+        raw = {d.id: 0.0 for d in inst.districts}
+        by_site: Dict[str, float] = {s.id: 0.0 for s in sites}
+        by_period: Dict[str, float] = {}
+        for h in PERIODS:
+            cap_h = {s.id: capacity_in_period(s, cap_daily.get(s.id, 0.0), h) for s in sites}
+            dem_h = {d.id: split_demand(dem[d.id])[h] for d in inst.districts}
+            out = solve_assignment(inst, sites, day, max_minutes, cap_h, dem_h)
+            for d, v in out["served"].items():
+                raw[d] += v
+            for sid, v in out["by_site"].items():
+                by_site[sid] += v
+            by_period[h] = round(sum(out["served"].values()), 3)
+        lp_status = "period-lp"
     else:
-        raw, by_site, lp_status = _greedy_fill(inst, sites, dem, max_minutes, cap_eff)
+        cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
+        if solver == "lp":
+            out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem)
+            raw = out["served"]
+            by_site = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
+            lp_status = out["status"]
+        else:
+            raw, by_site, lp_status = _greedy_fill(inst, sites, dem, max_minutes, cap_eff)
+        by_period = {}
     served: Dict[Tuple[str, int], float] = {(d, day): raw.get(d, 0.0) for d in dem}
 
     srv = {d.id: served.get((d.id, day), 0.0) for d in inst.districts}
@@ -86,6 +105,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     m.update(equity_summary(dem, srv))
     util = utilization(by_site, {s.id: (s.capacity or capacity) for s in sites})
     m["utilization_mean"] = round(sum(util.values()) / len(util), 4) if util else 0.0
+    if by_period:
+        m["served_by_period"] = by_period
     if availability is None:
         m["availability_applied"] = True
     return Solution(chosen=[s.id for s in sites if s.kind == "candidate_mch"],

@@ -23,7 +23,7 @@ class TestLpAssignment(unittest.TestCase):
              Site("S2", "S2", "cooling", "A", 0, 0, 10, 0, 24)]
         inst = Instance(D, S, {("A", "S1"): 1, ("A", "S2"): 2, ("B", "S1"): 1, ("B", "S2"): 999},
                         {("A", 0): 10.0, ("B", 0): 9.0}, 1)
-        sol = _assign(inst, _active_sites(inst, ()), 0, 30.0, 250.0)
+        sol = _assign(inst, _active_sites(inst, ()), 0, 30.0, 250.0, mode="daily")
         self.assertAlmostEqual(sum(sol.served.values()), 19.0, places=6)
 
     def test_nonnegative_and_bounded(self):
@@ -32,6 +32,15 @@ class TestLpAssignment(unittest.TestCase):
         sol = _assign(inst, _active_sites(inst, ()), 0, 30.0, 250.0)
         self.assertLessEqual(sol.served[("A", 0)], 10.0 + 1e-9)
         self.assertLessEqual(sol.served[("A", 0)], 5.0 + 1e-9)
+
+    def test_period_mode_not_better_than_daily(self):
+        """P1-2：显式时段不会比"日容量"更宽松（关门即损失容量）。"""
+        D = [_d("A")]
+        S = [Site("S1", "S1", "cooling", "A", 0, 0, 10, 9, 17)]   # 只白天开
+        inst = Instance(D, S, {("A", "S1"): 1}, {("A", 0): 10.0}, 1)
+        daily = _assign(inst, _active_sites(inst, ()), 0, 30.0, 250.0, mode="daily")
+        period = _assign(inst, _active_sites(inst, ()), 0, 30.0, 250.0, mode="period")
+        self.assertLessEqual(sum(period.served.values()), sum(daily.served.values()) + 1e-9)
 
 
 @unittest.skipUnless(HAVE, "run tools/build_data.py first")

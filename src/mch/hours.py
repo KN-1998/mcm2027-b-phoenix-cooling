@@ -55,3 +55,32 @@ def availability_table(inst: Instance) -> Dict[str, float]:
 def period_mix(inst: Instance) -> Dict[str, Dict[str, float]]:
     """每个站点覆盖的时段，便于论文列表。"""
     return {s.id: {p: period_covered(s, p) for p in PERIODS} for s in inst.sites}
+
+# ---------------------------------------------------------------------------
+# P1-2 修正：时段容量按"营业时长内的吞吐率"计算，而不是把日容量乘需求占比
+# ---------------------------------------------------------------------------
+
+def window_length(site: Site) -> float:
+    return ((site.close_hour - site.open_hour) if site.open_hour <= site.close_hour
+            else 24.0 - site.open_hour + site.close_hour)
+
+
+def overlap_hours(site: Site, period: str) -> float:
+    p0, p1 = PERIODS[period]
+    return _overlap(site.open_hour, site.close_hour, p0, p1)
+
+
+def capacity_in_period(site: Site, daily_capacity: float, period: str) -> float:
+    """该站在该时段最多能服务的人次。
+
+    吞吐率 = 日容量 / 营业时长（小时），再乘该时段的营业重叠小时数。
+    关门 => 0；全日营业 => 日容量 x 时段占比（与需求占比一致时才不产生偏差）。
+    """
+    L = window_length(site)
+    if L <= 0 or daily_capacity <= 0:
+        return 0.0
+    return daily_capacity * overlap_hours(site, period) / L
+
+
+def split_demand(total: float) -> Dict[str, float]:
+    return {h: total * DEMAND_SHARE[h] for h in PERIODS}
