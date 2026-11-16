@@ -1,0 +1,13 @@
+﻿district_id,district_name,villages_mapped,population,pct_65plus,pct_no_vehicle,median_income_usd,canopy_pct,heat_exposure_index,vulnerability,lat,lon,source,note
+D01,Central City,Central City,74346,0.11,0.24,48000,0.14,0.82,0.6378,33.4484,-112.074,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D02,Encanto,Encanto,93532,0.13,0.17,52000,0.18,0.74,0.5749,33.47,-112.1,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D03,Alhambra-North Mountain,Alhambra; North Mountain,170276,0.15,0.16,47000,0.15,0.78,0.6107,33.54,-112.12,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D04,Camelback East,Camelback East,155887,0.12,0.09,76000,0.21,0.62,0.3765,33.5,-111.99,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D05,Deer Valley,Deer Valley,189462,0.1,0.05,92000,0.17,0.52,0.2421,33.69,-112.12,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D06,Desert View,Desert View,117515,0.09,0.07,78000,0.12,0.61,0.3148,33.78,-112.0,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D07,Estrella,Estrella,103125,0.08,0.05,88000,0.1,0.57,0.2384,33.4,-112.3,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D08,Laveen,Laveen,86337,0.09,0.09,74000,0.09,0.66,0.3524,33.35,-112.17,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D09,Maryvale,Maryvale,197856,0.09,0.21,39000,0.08,0.91,0.6287,33.49,-112.19,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D10,North Gateway-Rio Vista,North Gateway; Rio Vista,112718,0.11,0.04,96000,0.14,0.5,0.2251,33.82,-112.1,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D11,Paradise Valley,Paradise Valley,159484,0.17,0.06,105000,0.24,0.46,0.2692,33.59,-111.95,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages
+D12,South Mountain-Ahwatukee,South Mountain; Ahwatukee Foothills,189462,0.13,0.06,88000,0.13,0.6,0.3034,33.34,-112.05,SYNTHETIC_ESTIMATE,12 districts are CONTEST fictions aggregated from Phoenix's 15 urban villages

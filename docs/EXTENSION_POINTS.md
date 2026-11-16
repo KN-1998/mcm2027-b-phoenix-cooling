@@ -8,8 +8,8 @@
 | **EXT-01** | `src/mch/schema.py` `SERVICE_RANK` | 4 类站点 + 候选点，按服务等级排 | 加"夜间开放/可带宠物/需预约"等属性 → 改 `eligibility()` | 分配资格、Q2/Q3 全覆盖 |
 | **EXT-02** | `schema.District.extra` | 预留 dict | 加语言障碍、独居、慢性病率等 | 需求权重 |
 | **EXT-03** | `schema.eligibility()` | 行程阈值 + 服务等级 | 加时间窗、开门时段、排队 | 全部分配结果 |
-| **EXT-04** | `synthetic.build_instance()` | 合成 12×8 网络 | 实现 `loaders.load_real_instance()`，返回同一 `Instance` | 全流程 |
-| **EXT-05** | `access.build_minutes()` | 直线距离 × 速度 | 接 GTFS（公交）/ OSM 路网（步行/驾车），返回分钟 | 可达矩阵 |
+| **EXT-04** | `mch/loaders.load_instance()` | **已实现**：从 `data/processed/*.csv` 载入 | 把 CSV 换成真实 ACS/GTFS 导出的同名表即可 | 全流程 |
+| **EXT-05** | `data/processed/access.csv` + `tools/build_data.py` | 直线 × 1.35 绕行 ÷ 速度 | 用 GTFS/OSM 生成同名列的 CSV，保留 `walk_min/transit_min/drive_min` | 可达矩阵 |
 | **EXT-06** | `demand.RATE_BASE` | 0.004 人次/人/日（ASSUME） | 用 D3 逐周到访量反推 + 敏感性 | 需求规模 |
 | **EXT-07** | `demand.vulnerability()` | 65+/无车/低收入 等权 | 改权重或换 CDC SVI 指标 | 需求分布与公平 |
 | **EXT-08** | `equity.py` | Gini / 最差未满足率 / 最小覆盖 | 加 Atkinson、Theil、分位比 | Q2/Q5 结论 |

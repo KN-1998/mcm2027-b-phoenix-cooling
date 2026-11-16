@@ -16,6 +16,8 @@ from ..mch import dynamic as dyn
 from ..mch.disruption import run_disruption
 from ..mch.policy import five_year_plan
 from ..mch.static import solve_static, sweep_p
+from ..mch.diagnostics import access_gap
+from ..mch.loaders import load_instance
 from ..mch.synthetic import build_instance
 from ..mch.validate import run_all
 
@@ -26,15 +28,21 @@ def main(argv=None) -> int:
     ap.add_argument("--max-minutes", type=float, default=30.0)
     ap.add_argument("--capacity", type=float, default=250.0)
     ap.add_argument("--seed", type=int, default=2027)
+    ap.add_argument("--data", choices=["csv", "synthetic"], default="csv")
+    ap.add_argument("--scenario", default="base", choices=["low", "base", "high"])
+    ap.add_argument("--access-mode", default="walk_min", choices=["walk_min", "transit_min", "drive_min"])
     ap.add_argument("--out", required=True)
     a = ap.parse_args(argv)
 
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
 
-    inst = build_instance(seed=a.seed)
-    demand_mod.fill_demand(inst)
-    inst = demand_mod.calibrate(inst, target_total_daily=3000.0)  # 量级对齐 2025 周报告的到访人次
+    if a.data == "csv":
+        inst = load_instance(scenario=a.scenario, access_mode=a.access_mode)
+    else:
+        inst = build_instance(seed=a.seed)
+        demand_mod.fill_demand(inst)
+        inst = demand_mod.calibrate(inst, target_total_daily=292.8)  # 2025 全季平均人次/日
 
     problems = run_all(inst, p=a.p)
     if problems:
@@ -57,7 +65,8 @@ def main(argv=None) -> int:
     summary = {
         "instance": {"districts": len(inst.districts), "sites": len(inst.sites),
                      "candidates": len(inst.candidate_sites()), "days": inst.horizon_days,
-                     "note": inst.meta.get("note")},
+                     "note": inst.meta.get("note"), "data": a.data, "scenario": a.scenario, "access_mode": a.access_mode},
+        "q1_access_gap": access_gap(inst, a.max_minutes),
         "q1_baseline_no_mch": q1.metrics,
         "q2_static": {"chosen": q2.chosen, **q2.metrics},
         "q3_dynamic": [{"day": s.day, "chosen": s.chosen, **s.metrics} for s in days],
@@ -69,6 +78,9 @@ def main(argv=None) -> int:
         w = csv.DictWriter(f, fieldnames=list(curve[0].keys()))
         w.writeheader(); w.writerows(curve)
 
+    gap = access_gap(inst, a.max_minutes)
+    print("=== Q1 access gaps (no indoor cooling within threshold) ===")
+    print("  districts:", gap["zero_access_districts"])
     print("=== Q1 无 MCH 基线 ===")
     print(json.dumps(q1.metrics, ensure_ascii=False))
     print("=== Q2 p=%d ===" % a.p)

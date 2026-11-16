@@ -1,0 +1,22 @@
+﻿site_id,site_name,kind,district_id,lat,lon,capacity_visits_per_day,open_hour,close_hour,source,note
+C01,Central City Cooling Center,cooling,D01,33.4484,-112.074,0,9,17,PLAN_2026,capacity 0 = not published
+C02,Encanto Cooling Center,cooling,D02,33.47,-112.1,0,9,17,PLAN_2026,capacity 0 = not published
+C03,North Mountain Cooling Center,cooling,D03,33.54,-112.12,0,9,17,PLAN_2026,capacity 0 = not published
+C04,Camelback East Cooling Center,cooling,D04,33.5,-111.99,0,9,17,PLAN_2026,capacity 0 = not published
+C05,Deer Valley Cooling Center,cooling,D05,33.69,-112.12,0,9,17,PLAN_2026,capacity 0 = not published
+C06,Desert View Cooling Center,cooling,D06,33.78,-112.0,0,9,17,PLAN_2026,capacity 0 = not published
+C07,South Mountain Cooling Center,cooling,D12,33.34,-112.05,0,9,17,PLAN_2026,capacity 0 = not published
+C08,Maryvale Cooling Center,cooling,D09,33.49,-112.19,0,9,17,PLAN_2026,capacity 0 = not published
+H01,Laveen Hydration Station,hydration,D08,33.35,-112.17,0,10,16,PLAN_2026,capacity 0 = not published
+H02,Estrella Hydration Station,hydration,D07,33.4,-112.3,0,10,16,PLAN_2026,capacity 0 = not published
+H03,Rio Vista Hydration Station,hydration,D10,33.82,-112.1,0,10,16,PLAN_2026,capacity 0 = not published
+H04,Paradise Valley Hydration Station,hydration,D11,33.59,-111.95,0,10,16,PLAN_2026,capacity 0 = not published
+R01,24/7 Respite & Navigation Center,respite,D01,33.4484,-112.074,120,0,24,PLAN_2026,capacity 0 = not published
+MCH-1,Central City MCH,candidate_mch,D01,33.452,-112.068,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-2,Encanto MCH,candidate_mch,D02,33.474,-112.094,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-3,Maryvale MCH,candidate_mch,D09,33.494,-112.186,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-4,South Mountain MCH,candidate_mch,D12,33.345,-112.056,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-5,Camelback East MCH,candidate_mch,D04,33.505,-111.995,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-6,Deer Valley MCH,candidate_mch,D05,33.695,-112.115,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-7,Laveen MCH,candidate_mch,D08,33.355,-112.165,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+MCH-8,Desert View MCH,candidate_mch,D06,33.775,-112.005,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt

@@ -18,3 +18,7 @@
 - [建模手] 框架落地：`src/mch/`（schema/synthetic/access/demand/equity/metrics/static/dynamic/disruption/policy/validate）+ `src/exp/run_pipeline.py`；6 项测试通过；端到端出数（Q1–Q5）。
 - [建模手] 扩展点标注完成：`[EXT-01]`–`[EXT-15]`，索引 `docs/EXTENSION_POINTS.md`；`docs/MODEL_CONTRACT.md` 骨架。
 - [基建] 新建仓库 https://github.com/KN-1998/mcm2027-b-phoenix-cooling ，已邀请 shaoshuiyu0222、EveyGA（push 权限）。
+- [建模手] 四张核心数据表落地：`districts.csv`(12) / `sites.csv`(21) / `access.csv`(252) / `demand.csv`(252)；生成脚本 `tools/build_data.py`；字典 `data/DATA_DICTIONARY.md`。
+- [建模手] 需求用 2025 周报标定：全季 44,508 人次、峰值周日均 561.3 人次/日；模型峰值日 = 561.3 ✅。
+- [建模手] 新增 `diagnostics.access_gap`：**零可达区 D07/D08/D10/D11**（30 分钟步行）；边际收益在 p=3 归零。
+- [建模手] 修正 Q5 规则：改为"边际收益 ≥5 人次/日 且 ≥2% 才增购"，避免在结构性不可达区上无限加购。

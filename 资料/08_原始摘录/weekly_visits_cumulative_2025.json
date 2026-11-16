@@ -1,0 +1,182 @@
+[
+ {
+  "as_of": "5/21/25",
+  "cum_visits": 1779,
+  "cum_calls": 67,
+  "page": 5,
+  "days": 20,
+  "increment": 1779,
+  "per_day": 89.0
+ },
+ {
+  "as_of": "5/28/25",
+  "cum_visits": 2795,
+  "cum_calls": 109,
+  "page": 7,
+  "days": 7,
+  "increment": 1016,
+  "per_day": 145.1
+ },
+ {
+  "as_of": "6/4/25",
+  "cum_visits": 3628,
+  "cum_calls": 143,
+  "page": 9,
+  "days": 7,
+  "increment": 833,
+  "per_day": 119.0
+ },
+ {
+  "as_of": "6/11/25",
+  "cum_visits": 4591,
+  "cum_calls": 248,
+  "page": 11,
+  "days": 7,
+  "increment": 963,
+  "per_day": 137.6
+ },
+ {
+  "as_of": "6/18/25",
+  "cum_visits": 5700,
+  "cum_calls": 372,
+  "page": 13,
+  "days": 7,
+  "increment": 1109,
+  "per_day": 158.4
+ },
+ {
+  "as_of": "6/25/25",
+  "cum_visits": 6833,
+  "cum_calls": 469,
+  "page": 15,
+  "days": 7,
+  "increment": 1133,
+  "per_day": 161.9
+ },
+ {
+  "as_of": "7/2/25",
+  "cum_visits": 7905,
+  "cum_calls": 613,
+  "page": 17,
+  "days": 7,
+  "increment": 1072,
+  "per_day": 153.1
+ },
+ {
+  "as_of": "7/9/25",
+  "cum_visits": 9045,
+  "cum_calls": 760,
+  "page": 19,
+  "days": 7,
+  "increment": 1140,
+  "per_day": 162.9
+ },
+ {
+  "as_of": "7/16/25",
+  "cum_visits": 10280,
+  "cum_calls": 865,
+  "page": 21,
+  "days": 7,
+  "increment": 1235,
+  "per_day": 176.4
+ },
+ {
+  "as_of": "7/23/25",
+  "cum_visits": 12838,
+  "cum_calls": 922,
+  "page": 23,
+  "days": 7,
+  "increment": 2558,
+  "per_day": 365.4
+ },
+ {
+  "as_of": "7/30/25",
+  "cum_visits": 14220,
+  "cum_calls": 1001,
+  "page": 25,
+  "days": 7,
+  "increment": 1382,
+  "per_day": 197.4
+ },
+ {
+  "as_of": "8/6/25",
+  "cum_visits": 16977,
+  "cum_calls": 1168,
+  "page": 27,
+  "days": 7,
+  "increment": 2757,
+  "per_day": 393.9
+ },
+ {
+  "as_of": "8/13/25",
+  "cum_visits": 20534,
+  "cum_calls": 1341,
+  "page": 29,
+  "days": 7,
+  "increment": 3557,
+  "per_day": 508.1
+ },
+ {
+  "as_of": "8/20/25",
+  "cum_visits": 23529,
+  "cum_calls": 1416,
+  "page": 31,
+  "days": 7,
+  "increment": 2995,
+  "per_day": 427.9
+ },
+ {
+  "as_of": "8/27/25",
+  "cum_visits": 27169,
+  "cum_calls": 1531,
+  "page": 33,
+  "days": 7,
+  "increment": 3640,
+  "per_day": 520.0
+ },
+ {
+  "as_of": "9/3/25",
+  "cum_visits": 30705,
+  "cum_calls": 1621,
+  "page": 35,
+  "days": 7,
+  "increment": 3536,
+  "per_day": 505.1
+ },
+ {
+  "as_of": "9/10/25",
+  "cum_visits": 34634,
+  "cum_calls": 1665,
+  "page": 37,
+  "days": 7,
+  "increment": 3929,
+  "per_day": 561.3
+ },
+ {
+  "as_of": "9/17/25",
+  "cum_visits": 38529,
+  "cum_calls": 1712,
+  "page": 39,
+  "days": 7,
+  "increment": 3895,
+  "per_day": 556.4
+ },
+ {
+  "as_of": "9/24/25",
+  "cum_visits": 42297,
+  "cum_calls": 1745,
+  "page": 41,
+  "days": 7,
+  "increment": 3768,
+  "per_day": 538.3
+ },
+ {
+  "as_of": "9/30/25",
+  "cum_visits": 44508,
+  "cum_calls": 1764,
+  "page": 43,
+  "days": 6,
+  "increment": 2211,
+  "per_day": 368.5
+ }
+]
