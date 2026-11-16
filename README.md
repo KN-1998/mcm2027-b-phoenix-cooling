@@ -4,7 +4,8 @@
 运行：`python -m src.exp.run_pipeline --p 3 --out results/run_demo`
 生成数据：`python tools/build_data.py`（写 `data/processed/` 四张表）
 跑通全流程：`python -m src.exp.run_pipeline --p 3 --data csv --out results/run_csv`
-数据字典：`data/DATA_DICTIONARY.md`（每个字段的单位、来源、生成规则、已知限制）
+数据字典：`data/DATA_DICTIONARY.md`
+论文可用事实表（带页码与原文）：`资料/08_原始摘录/FACTS.md`（每个字段的单位、来源、生成规则、已知限制）
 测试：`python -m pytest tests -q`
 **扩展点索引：`docs/EXTENSION_POINTS.md`（代码里用 `[EXT-nn]` 标注）**
 
