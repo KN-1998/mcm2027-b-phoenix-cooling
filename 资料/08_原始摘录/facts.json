@@ -46,7 +46,7 @@
  },
  {
   "id": "F06",
-  "fact": "2026 plan contains 23 actions in eight strategies",
+  "fact": "2026 plan contains 23 actions organized into SIX broad strategies",
   "doc": "plan2026",
   "file": "资料\\01_官方计划\\Phoenix_Heat_Response_Plan_2026.pdf",
   "page": 3,
@@ -103,8 +103,8 @@
   "fact": "Peak week daily average 561.3 visits (Sep 4-10)",
   "doc": "weekly",
   "file": "资料\\03_健康与暴露\\Phoenix_Weekly_Heat_Reports_2025.pdf",
-  "page": 37,
-  "quote": "cumulative 34,634 (p37) minus cumulative 30,705 (p33) = 3,929 visits in 9/4-9/10; /7 = 561.3/day",
+  "page": 35,
+  "quote": "cumulative 30,705 on p35 (not p33); 34,634 (p37) - 30,705 = 3,929 visits in 9/4-9/10; /7 = 561.3/day",
   "status": "DERIVED"
  },
  {

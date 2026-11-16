@@ -14,6 +14,7 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
 from .hours import availability_table
+from .assign import solve_assignment
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
 from .schema import COOLING, Instance, Site
@@ -35,47 +36,50 @@ def _active_sites(inst: Instance, chosen: Sequence[str], exclude: Sequence[str] 
     return sites
 
 
+def _effective_capacity(inst: Instance, sites: List[Site], capacity: float,
+                       availability: Optional[Dict[str, float]] = None,
+                       downtime: Optional[Dict[str, float]] = None,
+                       override: Optional[float] = None) -> Dict[str, float]:
+    """逐站有效容量。
+
+    优先级：站点自带 capacity > 0 用它，否则用 capacity（CLI 缺省）。
+    再乘开放时段份额与停服折减（均为 1.0 表示不受影响）。
+    """
+    avail = availability if availability is not None else availability_table(inst)
+    out = {}
+    for s in sites:
+        if override is not None:
+            base = float(override)                       # 显式覆盖（容量敏感性分析用）
+        elif s.capacity and s.capacity > 0:
+            base = float(s.capacity)                     # 站点自带（CSV/题面）
+        else:
+            base = float(capacity)                       # 缺省
+        out[s.id] = base * float(avail.get(s.id, 1.0)) * float((downtime or {}).get(s.id, 1.0))
+    return out
+
+
 def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
             capacity: float, weights: Optional[Dict[str, float]] = None,
-            availability: Optional[Dict[str, float]] = None) -> Solution:
+            availability: Optional[Dict[str, float]] = None,
+            downtime: Optional[Dict[str, float]] = None,
+            override: Optional[float] = None,
+            solver: str = "lp") -> Solution:
     """需求优先贪心：按 (需求 × 权重) 从大到小分配，每区取最近且有余量的站点。"""
     weights = weights or {}
     dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
     order = sorted(inst.districts, key=lambda d: -(dem[d.id] * weights.get(d.id, 1.0)))
 
-    # EXT-14：开放时段 -> 有效容量（关门的时段不能服务）
-    avail = availability if availability is not None else availability_table(inst)
-    remaining = {}
-    for s in sites:
-        cap = s.capacity if s.capacity and s.capacity > 0 else capacity
-        remaining[s.id] = float(cap) * float(avail.get(s.id, 1.0))
+    dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
+    cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
 
-    served: Dict[Tuple[str, int], float] = {}
-    by_site: Dict[str, float] = {s.id: 0.0 for s in sites}
-
-    for d in order:
-        need = dem[d.id]
-        if need <= 0:
-            served[(d.id, day)] = 0.0
-            continue
-        opts = []
-        for s in sites:
-            t = inst.access.get((d.id, s.id))
-            if t is None or t > max_minutes or remaining[s.id] <= 0:
-                continue
-            opts.append((t, s))
-        opts.sort(key=lambda x: x[0])
-        left = need
-        for t, s in opts:
-            if left <= 0:
-                break
-            take = min(left, remaining[s.id])
-            if take <= 0:
-                continue
-            remaining[s.id] -= take
-            by_site[s.id] += take
-            left -= take
-        served[(d.id, day)] = need - left
+    if solver == "lp":
+        out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem)
+        raw = out["served"]
+        by_site: Dict[str, float] = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
+        lp_status = out["status"]
+    else:
+        raw, by_site, lp_status = _greedy_fill(inst, sites, dem, max_minutes, cap_eff)
+    served: Dict[Tuple[str, int], float] = {(d, day): raw.get(d, 0.0) for d in dem}
 
     srv = {d.id: served.get((d.id, day), 0.0) for d in inst.districts}
     m = totals(dem, srv)
@@ -91,7 +95,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
 def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
                  capacity: float = 250.0, day: int = 0,
                  exclude_sites: Sequence[str] = (),
-                 weights: Optional[Dict[str, float]] = None) -> Solution:
+                 weights: Optional[Dict[str, float]] = None,
+                 override: Optional[float] = None) -> Solution:
     """返回 p 个候选点的最优组合（按 未满足总量 → Gini → 最差区 字典序）。"""
     cands = [s.id for s in inst.candidate_sites() if s.id not in set(exclude_sites)]
     if p > len(cands):
@@ -100,7 +105,7 @@ def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
     best: Optional[Solution] = None
     for combo in itertools.combinations(cands, p):
         sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
-                      capacity, weights)
+                      capacity, weights, override=override)
         key = (sol.metrics["unmet_total"], sol.metrics["gini_coverage"],
                sol.metrics["worst_unmet_ratio"])
         if best is None or key < (best.metrics["unmet_total"], best.metrics["gini_coverage"],
@@ -139,7 +144,8 @@ def solve_static_milp(*args, **kwargs):  # pragma: no cover - 可选路径
 def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
                       max_minutes: float = 30.0, capacity: float = 250.0,
                       day: int = 0, exclude_sites: Sequence[str] = (),
-                      weights: Optional[Dict[str, float]] = None) -> Solution:
+                      weights: Optional[Dict[str, float]] = None,
+                      override: Optional[float] = None) -> Solution:
     """在 max_i (U_i/D_i) <= equity_cap 的可行组合里，最小化总未满足量。
 
     若无组合可行，退化为"最小化最差区未满足率"（max-min），并在 metrics 里标记
@@ -153,7 +159,7 @@ def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
     infeasible = []
     for combo in itertools.combinations(cands, p):
         sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
-                      capacity, weights)
+                      capacity, weights, override=override)
         worst = sol.metrics["worst_unmet_ratio"]
         sol.metrics["equity_cap"] = equity_cap
         sol.metrics["equity_cap_met"] = bool(worst <= equity_cap + 1e-9)

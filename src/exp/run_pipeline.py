@@ -6,7 +6,7 @@
 """
 from __future__ import annotations
 
-import argparse
+import argparse, copy
 import csv
 import json
 from pathlib import Path
@@ -57,7 +57,8 @@ def main(argv=None) -> int:
     # Q3 动态
     days = dyn.solve_dynamic(inst, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
     # Q4 中断
-    q4 = run_disruption(inst, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
+    inst_for_q4 = copy.deepcopy(inst)   # 情景隔离：Q4 的冲击不得污染 Q5
+    q4 = run_disruption(inst_for_q4, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
     # Q5 五年
     q5 = five_year_plan(inst, p_start=max(1, a.p - 1), p_max=8,
                         max_minutes=a.max_minutes, capacity=a.capacity)

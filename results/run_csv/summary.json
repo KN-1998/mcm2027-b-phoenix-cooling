@@ -1,7 +1,7 @@
 {
   "instance": {
     "districts": 12,
-    "sites": 21,
+    "sites": 22,
     "candidates": 8,
     "days": 7,
     "note": "12 districts / 8 candidates are CONTEST fictions",
@@ -14,8 +14,7 @@
     "zero_access_districts": [
       "D07",
       "D08",
-      "D10",
-      "D11"
+      "D10"
     ],
     "reachable_counts": {
       "D01": 2,
@@ -28,55 +27,58 @@
       "D08": 0,
       "D09": 1,
       "D10": 0,
-      "D11": 0,
+      "D11": 1,
       "D12": 1
     },
     "note": "hydration stations do not count as cooling capacity"
   },
   "q1_baseline_no_mch": {
     "demand_total": 431.6,
-    "served_total": 335.0,
-    "unmet_total": 96.6,
-    "coverage_rate": 0.776182,
+    "served_total": 206.3,
+    "unmet_total": 225.3,
+    "coverage_rate": 0.477989,
     "coverage_min": 0.0,
-    "coverage_mean": 0.666667,
-    "gini_coverage": 0.333333,
+    "coverage_mean": 0.473072,
+    "gini_coverage": 0.387087,
     "worst_unmet_ratio": 1.0,
-    "utilization_mean": 0.1489
+    "utilization_mean": 0.3819,
+    "availability_applied": true
   },
   "q2_static": {
     "chosen": [
-      "MCH-1",
-      "MCH-2",
-      "MCH-7"
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
     ],
     "demand_total": 431.6,
-    "served_total": 356.6,
-    "unmet_total": 75.0,
-    "coverage_rate": 0.826228,
+    "served_total": 301.1,
+    "unmet_total": 130.5,
+    "coverage_rate": 0.697637,
     "coverage_min": 0.0,
-    "coverage_mean": 0.75,
-    "gini_coverage": 0.25,
+    "coverage_mean": 0.697631,
+    "gini_coverage": 0.225628,
     "worst_unmet_ratio": 1.0,
-    "utilization_mean": 0.1189
+    "utilization_mean": 0.2953,
+    "availability_applied": true
   },
   "q3_dynamic": [
     {
       "day": 0,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
       ],
       "demand_total": 431.6,
-      "served_total": 356.6,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.826228,
+      "served_total": 301.1,
+      "unmet_total": 130.5,
+      "coverage_rate": 0.697637,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.697631,
+      "gini_coverage": 0.225628,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2305,
+      "utilization_mean": 0.2953,
+      "availability_applied": true,
       "downtime_applied": 0.5,
       "move_penalty": 0.0,
       "n_changed": 3
@@ -84,194 +86,204 @@
     {
       "day": 1,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
       ],
       "demand_total": 453.4,
-      "served_total": 374.6,
-      "unmet_total": 78.8,
-      "coverage_rate": 0.826202,
+      "served_total": 308.6,
+      "unmet_total": 144.8,
+      "coverage_rate": 0.680635,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.638774,
+      "gini_coverage": 0.297046,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1249,
+      "utilization_mean": 0.2703,
+      "availability_applied": true,
+      "downtime_applied": 0.5,
       "move_penalty": 0.0,
-      "n_changed": 0
+      "n_changed": 2
     },
     {
       "day": 2,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
       ],
       "demand_total": 509.3,
-      "served_total": 420.8,
-      "unmet_total": 88.5,
-      "coverage_rate": 0.826232,
+      "served_total": 330.0,
+      "unmet_total": 179.3,
+      "coverage_rate": 0.647948,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.605296,
+      "gini_coverage": 0.319395,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1403,
+      "utilization_mean": 0.278,
+      "availability_applied": true,
       "move_penalty": 0.0,
       "n_changed": 0
     },
     {
       "day": 3,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
       ],
       "demand_total": 561.3,
-      "served_total": 463.8,
-      "unmet_total": 97.5,
-      "coverage_rate": 0.826296,
+      "served_total": 350.0,
+      "unmet_total": 211.3,
+      "coverage_rate": 0.623552,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.580187,
+      "gini_coverage": 0.337825,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1546,
+      "utilization_mean": 0.2852,
+      "availability_applied": true,
       "move_penalty": 0.0,
       "n_changed": 0
     },
     {
       "day": 4,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
       ],
       "demand_total": 526.9,
-      "served_total": 435.4,
-      "unmet_total": 91.5,
-      "coverage_rate": 0.826343,
+      "served_total": 336.8,
+      "unmet_total": 190.1,
+      "coverage_rate": 0.63921,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.596335,
+      "gini_coverage": 0.325825,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1451,
+      "utilization_mean": 0.2805,
+      "availability_applied": true,
       "move_penalty": 0.0,
       "n_changed": 0
     },
     {
       "day": 5,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
       ],
       "demand_total": 466.2,
-      "served_total": 385.3,
-      "unmet_total": 80.9,
-      "coverage_rate": 0.826469,
+      "served_total": 313.5,
+      "unmet_total": 152.7,
+      "coverage_rate": 0.672458,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.630486,
+      "gini_coverage": 0.30236,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1284,
+      "utilization_mean": 0.2721,
+      "availability_applied": true,
       "move_penalty": 0.0,
       "n_changed": 0
     },
     {
       "day": 6,
       "chosen": [
-        "MCH-1",
-        "MCH-2",
-        "MCH-7"
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
       ],
       "demand_total": 410.2,
-      "served_total": 339.0,
-      "unmet_total": 71.2,
-      "coverage_rate": 0.826426,
+      "served_total": 294.0,
+      "unmet_total": 116.2,
+      "coverage_rate": 0.716724,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.716844,
+      "gini_coverage": 0.21492,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.113,
+      "utilization_mean": 0.2926,
+      "availability_applied": true,
+      "downtime_applied": 0.5,
       "move_penalty": 0.0,
-      "n_changed": 0
+      "n_changed": 2
     }
   ],
   "q4_disruption": {
     "baseline": {
       "demand_total": 431.6,
-      "served_total": 356.6,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.826228,
+      "served_total": 301.1,
+      "unmet_total": 130.5,
+      "coverage_rate": 0.697637,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.697631,
+      "gini_coverage": 0.225628,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1189
+      "utilization_mean": 0.2953,
+      "availability_applied": true
     },
     "after_disruption": {
       "demand_total": 536.56,
-      "served_total": 461.56,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "served_total": 356.26,
+      "unmet_total": 180.3,
+      "coverage_rate": 0.66397,
       "coverage_min": 0.0,
-      "coverage_mean": 0.75,
-      "gini_coverage": 0.25,
+      "coverage_mean": 0.671098,
+      "gini_coverage": 0.243269,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.1678
+      "utilization_mean": 0.3856,
+      "availability_applied": true
     },
     "shock_districts": [
       "D09",
       "D03"
     ],
     "down_site": "R01",
-    "delta_unmet": 0.0,
+    "delta_unmet": 49.8,
     "response_hours": 24.0
   },
   "q5_plan": [
     {
       "year": 2027,
       "hubs": 2,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "unmet_total": 152.1,
+      "coverage_rate": 0.64759,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 0.0,
-      "add_hub": false
+      "next_hub_gain": 21.6,
+      "add_hub": true
     },
     {
       "year": 2028,
-      "hubs": 2,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "hubs": 3,
+      "unmet_total": 130.5,
+      "coverage_rate": 0.697637,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 0.0,
-      "add_hub": false
+      "next_hub_gain": 20.8,
+      "add_hub": true
     },
     {
       "year": 2029,
-      "hubs": 2,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "hubs": 4,
+      "unmet_total": 109.7,
+      "coverage_rate": 0.745829,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 0.0,
-      "add_hub": false
+      "next_hub_gain": 16.2,
+      "add_hub": true
     },
     {
       "year": 2030,
-      "hubs": 2,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "hubs": 5,
+      "unmet_total": 93.5,
+      "coverage_rate": 0.783364,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 0.0,
-      "add_hub": false
+      "next_hub_gain": 15.7,
+      "add_hub": true
     },
     {
       "year": 2031,
-      "hubs": 2,
-      "unmet_total": 75.0,
-      "coverage_rate": 0.860221,
+      "hubs": 6,
+      "unmet_total": 77.8,
+      "coverage_rate": 0.819741,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 0.0,
-      "add_hub": false
+      "next_hub_gain": 7.4,
+      "add_hub": true
     }
   ]
 }
