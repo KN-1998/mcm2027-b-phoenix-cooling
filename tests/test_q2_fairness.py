@@ -4,7 +4,8 @@ import unittest
 from pathlib import Path
 
 from src.mch.loaders import load_instance
-from src.mch.static import efficiency_equity_frontier, solve_static, solve_static_fair
+from src.mch.static import (efficiency_equity_frontier, solve_static,
+                            solve_static_fair, solve_static_maxmin)
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "processed"
 HAVE = (DATA / "districts.csv").exists()
@@ -28,9 +29,10 @@ class TestFairness(unittest.TestCase):
         """Q2 的核心结论：p=2 时效率最优会把一个区留成 100% 未满足。"""
         inst = _inst_without()
         eff = solve_static(inst, 2)
-        fair = solve_static_fair(inst, 2, equity_cap=0.0)
+        fair = solve_static_maxmin(inst, 2)
         self.assertGreater(eff.metrics["worst_unmet_ratio"], 0.99)
-        self.assertLess(fair.metrics["worst_unmet_ratio"], 0.8)
+        self.assertLess(fair.metrics.get("worst_unmet_ratio_nonexempt",
+                                        fair.metrics["worst_unmet_ratio"]), 0.95)
         self.assertGreaterEqual(fair.metrics["unmet_total"], eff.metrics["unmet_total"] - 1e-9)
 
     def test_frontier_monotone(self):

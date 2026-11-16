@@ -7,7 +7,7 @@
 """
 from __future__ import annotations
 
-from typing import Dict, List
+from typing import Dict, List, Optional, Sequence
 
 from .schema import COOLING, RESPITE, Instance
 from .static import Solution
@@ -29,13 +29,16 @@ def feasible_sites(inst: Instance, district_id: str, max_minutes: float,
 
 
 def attribute_unmet(inst: Instance, sol: Solution, day: int = 0,
-                    max_minutes: float = 30.0, capacity: float = 250.0) -> Dict[str, object]:
+                    max_minutes: float = 30.0, capacity: float = 250.0,
+                    active_sites: Optional[Sequence[str]] = None) -> Dict[str, object]:
     rows = []
     for d in inst.districts:
         dem = inst.demand.get((d.id, day), 0.0)
         served = sol.served.get((d.id, day), 0.0)
         unmet = max(0.0, dem - served)
         feas = feasible_sites(inst, d.id, max_minutes)
+        if active_sites is not None:
+            feas = [x for x in feas if x in set(active_sites)]
         if unmet <= 1e-9:
             reason = "served"
         elif not feas:

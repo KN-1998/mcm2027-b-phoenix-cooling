@@ -15,9 +15,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "processed"; OUT.mkdir(parents=True, exist_ok=True)
 
-OBS = {"season_mean_visits_per_day": 292.8, "peak_week_visits_per_day": 561.3,
+OBS = {"season_mean_visits_per_day": 292.8,
+       "peak_week_visits_total": 3929,          # 9/4-9/10 观测（34,634 - 30,705）
+       "peak_week_visits_per_day": 561.3,       # = 3929 / 7，派生量
        "season_total_visits": 44508,
-       "source": "Phoenix 2025 Weekly Heat Reports (city respite + extended-hour centers, 5/1-9/30/2025)"}
+       "source": "Phoenix 2025 Weekly Heat Reports p35/p37; 39,929? no: 34,634-30,705=3,929"}
 
 DISTRICTS = [
  ("D01","Central City","Central City",62000,0.11,0.24,48000,0.14,0.82,33.4484,-112.0740),
@@ -91,12 +93,16 @@ def main():
                       for s in EXISTING]
     with (OUT/"sites.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.writer(f); w.writerow(["site_id","site_name","kind","district_id","lat","lon",
-            "capacity_visits_per_day","open_hour","close_hour","source","note"])
+            "capacity_visits_per_day","open_hour","close_hour",
+            "source_kind","source_location","source_capacity","source_hours","note"])
         for s in EXISTING_FIXED:
-            w.writerow([s[0],s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],"PLAN_2026","capacity 0 = not published"])
+            w.writerow([s[0],s[1],s[2],s[3],s[4],s[5],s[6],s[7],s[8],
+                        "PLAN","SYNTHETIC(centroid)","ASSUME","ASSUME",
+                        "facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions"])
         for c in CANDIDATES:
-            w.writerow([c[0],c[1],"candidate_mch",c[2],c[3],c[4],MCH_CAP,9,19,"CONTEST",
-                "8 candidate sites are CONTEST fictions; 250 visits/day per prompt"])
+            w.writerow([c[0],c[1],"candidate_mch",c[2],c[3],c[4],MCH_CAP,9,19,
+                        "CONTEST","CONTEST","CONTEST","CONTEST",
+                        "8 candidate sites and 250 visits/day are CONTEST fictions"])
     sites=[(s[0],s[4],s[5]) for s in EXISTING_FIXED]+[(c[0],c[3],c[4]) for c in CANDIDATES]
     with (OUT/"access.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.writer(f); w.writerow(["district_id","site_id","km","walk_min","transit_min","drive_min","source"])
@@ -106,15 +112,18 @@ def main():
                 w.writerow([d[0],sid,km,round(km/SPEED["walk"]*60,1),
                             round(km/SPEED["transit"]*60+TRANSIT_WAIT,1),
                             round(km/SPEED["drive"]*60,1),"ESTIMATE_LINEAR"])
-    peak=max(sum(raw_demand(d,day) for d in DISTRICTS) for day in range(7))
-    k=OBS["peak_week_visits_per_day"]/peak
+    # P1-5：观测锚点是"峰值周总量 3,929 人次"，不是峰值日均 561.3。
+    # 让模拟 7 天的总量 = 3,929；日均自然成为 561.3，但不再把"峰值日"钉在周均上。
+    week_total = sum(sum(raw_demand(d,day) for d in DISTRICTS) for day in range(7))
+    k = OBS["peak_week_visits_total"] / week_total
     with (OUT/"demand.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.writer(f); w.writerow(["scenario","district_id","day","demand_visits","heat_exposure","vulnerability","note"])
         for name,mult in (("low",0.5),("base",1.0),("high",2.0)):
             for d in DISTRICTS:
                 for day in range(7):
                     w.writerow([name,d[0],day,round(raw_demand(d,day)*k*mult,1),d[8],vuln(d[4],d[5],d[6]),
-                                "calibrated to 2025 observed peak week; multiplier %s" % mult])
+                                "POTENTIAL_DEMAND",
+                                "D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x%.1f" % mult])
     json.dump(OBS, open(OUT/"calibration.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"OK: 12 区 / {len(EXISTING)+len(CANDIDATES)} 站点 / {len(DISTRICTS)*len(sites)} 链接 / 需求标定 k={k:.6f}")
 

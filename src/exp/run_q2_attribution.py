@@ -30,7 +30,8 @@ def main(argv=None) -> int:
     detail = {}
     for th in ths:
         sol = solve_static(inst, a.p, max_minutes=th, capacity=a.capacity)
-        att = attribute_unmet(inst, sol, 0, th, a.capacity)
+        active = [x.id for x in inst.fixed_sites()] + list(sol.chosen)
+        att = attribute_unmet(inst, sol, 0, th, a.capacity, active_sites=active)
         detail[str(th)] = att
         rows.append({"threshold_minutes": th, "p": a.p,
                      **{("unmet_" + k): v for k, v in att["by_reason"].items()},

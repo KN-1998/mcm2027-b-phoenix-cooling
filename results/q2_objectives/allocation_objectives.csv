@@ -1,0 +1,17 @@
+﻿p,strategy,served_total,worst_excl_structural,t_star,chosen
+1,efficiency,410.8,1.0,,MCH-3
+1,max_min,410.8,1.0,1.0,MCH-3
+2,efficiency,411.5,1.0,,"MCH-3,MCH-4"
+2,max_min,411.5,1.0,1.0,"MCH-3,MCH-4"
+3,efficiency,437.2,1.0,,"MCH-3,MCH-4,MCH-8"
+3,max_min,437.2,1.0,1.0,"MCH-3,MCH-4,MCH-8"
+4,efficiency,462.5,0.256,,"MCH-3,MCH-4,MCH-7,MCH-8"
+4,max_min,462.5,0.256,0.256,"MCH-3,MCH-4,MCH-7,MCH-8"
+5,efficiency,462.5,0.256,,"MCH-3,MCH-4,MCH-5,MCH-7,MCH-8"
+5,max_min,462.5,0.256,0.256,"MCH-3,MCH-4,MCH-5,MCH-7,MCH-8"
+6,efficiency,462.5,0.256,,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+6,max_min,462.5,0.256,0.256,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+7,efficiency,462.5,0.256,,"MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+7,max_min,462.5,0.256,0.256,"MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+8,efficiency,462.5,0.256,,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+8,max_min,462.5,0.256,0.256,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"

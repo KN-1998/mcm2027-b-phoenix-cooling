@@ -32,3 +32,23 @@ def access_gap(inst: Instance, max_minutes: float = 30.0) -> Dict[str, object]:
     return {"threshold_minutes": max_minutes, "zero_access_districts": zero,
             "reachable_counts": counts,
             "note": "hydration stations do not count as cooling capacity"}
+
+
+def structural_set(inst: Instance, max_minutes: float = 30.0) -> List[str]:
+    """无论选哪些候选点都服务不到的区（固定站点 + 全部候选点都超出阈值）。
+
+    这一类区的缺口不能靠"多买车/换位置"解决，只能靠新增站点或交通/外展。
+    """
+    out = []
+    for d in inst.districts:
+        ok = False
+        for s in inst.sites:
+            if s.kind not in INDOOR:
+                continue
+            t = inst.access.get((d.id, s.id))
+            if t is not None and t <= max_minutes:
+                ok = True
+                break
+        if not ok:
+            out.append(d.id)
+    return out

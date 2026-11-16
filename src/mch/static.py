@@ -64,7 +64,9 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
             downtime: Optional[Dict[str, float]] = None,
             override: Optional[float] = None,
             solver: str = "lp",
-            mode: str = "period") -> Solution:
+            mode: str = "period",
+            equity_cap: Optional[float] = None,
+            equity_exempt: Sequence[str] = ()) -> Solution:
     """需求优先贪心：按 (需求 × 权重) 从大到小分配，每区取最近且有余量的站点。"""
     weights = weights or {}
     dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
@@ -81,7 +83,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
         for h in PERIODS:
             cap_h = {s.id: capacity_in_period(s, cap_daily.get(s.id, 0.0), h) for s in sites}
             dem_h = {d.id: split_demand(dem[d.id])[h] for d in inst.districts}
-            out = solve_assignment(inst, sites, day, max_minutes, cap_h, dem_h)
+            out = solve_assignment(inst, sites, day, max_minutes, cap_h, dem_h,
+                                   equity_cap=equity_cap, equity_exempt=equity_exempt)
             for d, v in out["served"].items():
                 raw[d] += v
             for sid, v in out["by_site"].items():
@@ -91,7 +94,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     else:
         cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
         if solver == "lp":
-            out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem)
+            out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem,
+                                   equity_cap=equity_cap, equity_exempt=equity_exempt)
             raw = out["served"]
             by_site = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
             lp_status = out["status"]
@@ -105,6 +109,10 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     m.update(equity_summary(dem, srv))
     util = utilization(by_site, {s.id: (s.capacity or capacity) for s in sites})
     m["utilization_mean"] = round(sum(util.values()) / len(util), 4) if util else 0.0
+    ex = set(equity_exempt or ())
+    ratios = [(dem[d.id] - srv.get(d.id, 0.0)) / dem[d.id]
+              for d in inst.districts if dem[d.id] > 0 and d.id not in ex]
+    m["worst_unmet_ratio_nonexempt"] = round(max(ratios), 6) if ratios else 0.0
     if by_period:
         m["served_by_period"] = by_period
     if availability is None:
@@ -117,7 +125,8 @@ def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
                  capacity: float = 250.0, day: int = 0,
                  exclude_sites: Sequence[str] = (),
                  weights: Optional[Dict[str, float]] = None,
-                 override: Optional[float] = None) -> Solution:
+                 override: Optional[float] = None,
+                 mode: str = "period") -> Solution:
     """返回 p 个候选点的最优组合（按 未满足总量 → Gini → 最差区 字典序）。"""
     cands = [s.id for s in inst.candidate_sites() if s.id not in set(exclude_sites)]
     if p > len(cands):
@@ -126,7 +135,7 @@ def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
     best: Optional[Solution] = None
     for combo in itertools.combinations(cands, p):
         sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
-                      capacity, weights, override=override)
+                      capacity, weights, override=override, mode=mode)
         key = (sol.metrics["unmet_total"], sol.metrics["gini_coverage"],
                sol.metrics["worst_unmet_ratio"])
         if best is None or key < (best.metrics["unmet_total"], best.metrics["gini_coverage"],
@@ -166,7 +175,8 @@ def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
                       max_minutes: float = 30.0, capacity: float = 250.0,
                       day: int = 0, exclude_sites: Sequence[str] = (),
                       weights: Optional[Dict[str, float]] = None,
-                      override: Optional[float] = None) -> Solution:
+                      override: Optional[float] = None,
+                      mode: str = "period") -> Solution:
     """在 max_i (U_i/D_i) <= equity_cap 的可行组合里，最小化总未满足量。
 
     若无组合可行，退化为"最小化最差区未满足率"（max-min），并在 metrics 里标记
@@ -179,18 +189,27 @@ def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
     feasible = []
     infeasible = []
     for combo in itertools.combinations(cands, p):
-        sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
-                      capacity, weights, override=override)
-        worst = sol.metrics["worst_unmet_ratio"]
+        act = _active_sites(inst, combo, exclude_sites)
+        # 物理上不可达的区（任何激活站点都在阈值外）豁免 ε 约束，单独报告
+        exempt = [d.id for d in inst.districts
+                  if all((inst.access.get((d.id, s.id)) is None
+                          or inst.access[(d.id, s.id)] > max_minutes) for s in act)]
+        sol = _assign(inst, act, day, max_minutes,
+                      capacity, weights, override=override, equity_cap=equity_cap,
+                      equity_exempt=exempt, mode=mode)
+        worst = sol.metrics.get("worst_unmet_ratio_nonexempt", sol.metrics["worst_unmet_ratio"])
         sol.metrics["equity_cap"] = equity_cap
         sol.metrics["equity_cap_met"] = bool(worst <= equity_cap + 1e-9)
+        sol.metrics["equity_exempt"] = list(exempt)
         (feasible if worst <= equity_cap + 1e-9 else infeasible).append(sol)
 
     if feasible:
         return min(feasible, key=lambda s: (s.metrics["unmet_total"], s.metrics["gini_coverage"]))
     if not infeasible:
         raise AssertionError("没有候选组合")
-    return min(infeasible, key=lambda s: (s.metrics["worst_unmet_ratio"], s.metrics["unmet_total"]))
+    return min(infeasible, key=lambda s: (s.metrics.get("worst_unmet_ratio_nonexempt",
+                                                         s.metrics["worst_unmet_ratio"]),
+                                           s.metrics["unmet_total"]))
 
 
 def efficiency_equity_frontier(inst: Instance, p: int, caps: Sequence[float] = (0.1, 0.2, 0.3, 0.5, 0.75, 1.0),
@@ -210,3 +229,27 @@ def efficiency_equity_frontier(inst: Instance, p: int, caps: Sequence[float] = (
             "chosen": ",".join(sol.chosen),
         })
     return rows
+
+def solve_static_maxmin(inst: Instance, p: int, max_minutes: float = 30.0,
+                        capacity: float = 250.0, day: int = 0,
+                        iterations: int = 8, **kw) -> Solution:
+    """max-min：先找能达到的最小"最差未满足率"，再在该约束下最小化总未满足。
+
+    做法：对 ε 二分可行域（ε 越小越难满足）。
+    """
+    lo, hi = 0.0, 1.0
+    best_feasible = None
+    for _ in range(iterations):
+        mid = (lo + hi) / 2.0
+        sol = solve_static_fair(inst, p, equity_cap=mid, max_minutes=max_minutes,
+                                capacity=capacity, day=day, **kw)
+        if sol.metrics.get("equity_cap_met"):
+            best_feasible = sol
+            hi = mid
+        else:
+            lo = mid
+    if best_feasible is None:
+        return solve_static_fair(inst, p, equity_cap=1.0, max_minutes=max_minutes,
+                                 capacity=capacity, day=day, **kw)
+    return solve_static_fair(inst, p, equity_cap=hi, max_minutes=max_minutes,
+                             capacity=capacity, day=day, **kw)

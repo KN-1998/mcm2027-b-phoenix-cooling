@@ -20,12 +20,13 @@ class TestCsvData(unittest.TestCase):
         self.assertEqual(len(inst.districts), 12)
         self.assertEqual(len(inst.candidate_sites()), 8)
 
-    def test_calibration_peak(self):
-        """峰值日全城合计应等于观测峰值周日均 561.3。"""
+    def test_calibration_week_total(self):
+        """P1-5：锚点是峰值周总量 3,929；日均应等于 561.3。"""
         inst = load_instance(scenario="base")
         totals = {day: sum(inst.demand[(d.id, day)] for d in inst.districts) for day in range(inst.horizon_days)}
-        peak = max(totals.values())
-        self.assertAlmostEqual(peak, 561.3, delta=1.0)
+        self.assertAlmostEqual(sum(totals.values()), 3929.0, delta=2.0)
+        self.assertAlmostEqual(sum(totals.values()) / inst.horizon_days, 561.3, delta=1.0)
+        self.assertGreater(max(totals.values()), 561.3 * 1.05)
 
     def test_access_gap_present(self):
         inst = load_instance()

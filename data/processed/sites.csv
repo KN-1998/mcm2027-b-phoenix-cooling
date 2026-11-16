@@ -1,23 +1,23 @@
-﻿site_id,site_name,kind,district_id,lat,lon,capacity_visits_per_day,open_hour,close_hour,source,note
-C01,Central City Cooling Center,cooling,D01,33.4484,-112.074,50,9,17,PLAN_2026,capacity 0 = not published
-C02,Encanto Cooling Center,cooling,D02,33.47,-112.1,50,9,17,PLAN_2026,capacity 0 = not published
-C03,North Mountain Cooling Center,cooling,D03,33.54,-112.12,50,9,17,PLAN_2026,capacity 0 = not published
-C04,Camelback East Cooling Center,cooling,D04,33.5,-111.99,50,9,17,PLAN_2026,capacity 0 = not published
-C05,Deer Valley Cooling Center,cooling,D05,33.69,-112.12,50,9,17,PLAN_2026,capacity 0 = not published
-C06,Desert View Cooling Center,cooling,D06,33.78,-112.0,50,9,17,PLAN_2026,capacity 0 = not published
-C07,South Mountain Cooling Center,cooling,D12,33.34,-112.05,50,9,17,PLAN_2026,capacity 0 = not published
-C08,Maryvale Cooling Center,cooling,D09,33.49,-112.19,50,9,17,PLAN_2026,capacity 0 = not published
-C09,Paradise Valley Cooling Center,cooling,D11,33.59,-111.95,50,9,17,PLAN_2026,capacity 0 = not published
-H01,Laveen Hydration Station,hydration,D08,33.35,-112.17,0,10,16,PLAN_2026,capacity 0 = not published
-H02,Estrella Hydration Station,hydration,D07,33.4,-112.3,0,10,16,PLAN_2026,capacity 0 = not published
-H03,Rio Vista Hydration Station,hydration,D10,33.82,-112.1,0,10,16,PLAN_2026,capacity 0 = not published
-H04,Ahwatukee Hydration Station,hydration,D12,33.34,-112.05,0,10,16,PLAN_2026,capacity 0 = not published
-R01,24/7 Respite & Navigation Center,respite,D01,33.4484,-112.074,120,0,24,PLAN_2026,capacity 0 = not published
-MCH-1,Central City MCH,candidate_mch,D01,33.452,-112.068,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-2,Encanto MCH,candidate_mch,D02,33.474,-112.094,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-3,Maryvale MCH,candidate_mch,D09,33.494,-112.186,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-4,South Mountain MCH,candidate_mch,D12,33.345,-112.056,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-5,Camelback East MCH,candidate_mch,D04,33.505,-111.995,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-6,Deer Valley MCH,candidate_mch,D05,33.695,-112.115,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-7,Estrella Gap MCH,candidate_mch,D07,33.401,-112.296,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
-MCH-8,North Gateway Gap MCH,candidate_mch,D10,33.818,-112.102,250,9,19,CONTEST,8 candidate sites are CONTEST fictions; 250 visits/day per prompt
+﻿site_id,site_name,kind,district_id,lat,lon,capacity_visits_per_day,open_hour,close_hour,source_kind,source_location,source_capacity,source_hours,note
+C01,Central City Cooling Center,cooling,D01,33.4484,-112.074,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C02,Encanto Cooling Center,cooling,D02,33.47,-112.1,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C03,North Mountain Cooling Center,cooling,D03,33.54,-112.12,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C04,Camelback East Cooling Center,cooling,D04,33.5,-111.99,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C05,Deer Valley Cooling Center,cooling,D05,33.69,-112.12,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C06,Desert View Cooling Center,cooling,D06,33.78,-112.0,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C07,South Mountain Cooling Center,cooling,D12,33.34,-112.05,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C08,Maryvale Cooling Center,cooling,D09,33.49,-112.19,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+C09,Paradise Valley Cooling Center,cooling,D11,33.59,-111.95,50,9,17,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+H01,Laveen Hydration Station,hydration,D08,33.35,-112.17,0,10,16,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+H02,Estrella Hydration Station,hydration,D07,33.4,-112.3,0,10,16,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+H03,Rio Vista Hydration Station,hydration,D10,33.82,-112.1,0,10,16,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+H04,Ahwatukee Hydration Station,hydration,D12,33.34,-112.05,0,10,16,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+R01,24/7 Respite & Navigation Center,respite,D01,33.4484,-112.074,120,0,24,PLAN,SYNTHETIC(centroid),ASSUME,ASSUME,facility type is official (2026 plan p13); coordinates/capacity/hours are synthetic assumptions
+MCH-1,Central City MCH,candidate_mch,D01,33.452,-112.068,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-2,Encanto MCH,candidate_mch,D02,33.474,-112.094,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-3,Maryvale MCH,candidate_mch,D09,33.494,-112.186,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-4,South Mountain MCH,candidate_mch,D12,33.345,-112.056,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-5,Camelback East MCH,candidate_mch,D04,33.505,-111.995,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-6,Deer Valley MCH,candidate_mch,D05,33.695,-112.115,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-7,Estrella Gap MCH,candidate_mch,D07,33.401,-112.296,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions
+MCH-8,North Gateway Gap MCH,candidate_mch,D10,33.818,-112.102,250,9,19,CONTEST,CONTEST,CONTEST,CONTEST,8 candidate sites and 250 visits/day are CONTEST fictions

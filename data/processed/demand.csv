@@ -1,253 +1,253 @@
 ﻿scenario,district_id,day,demand_visits,heat_exposure,vulnerability,note
-low,D01,0,13.2,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,1,13.8,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,2,15.5,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,3,17.1,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,4,16.0,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,5,14.2,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D01,6,12.5,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,0,14.9,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,1,15.7,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,2,17.6,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,3,19.4,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,4,18.2,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,5,16.1,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D02,6,14.2,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,0,28.7,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,1,30.2,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,2,33.9,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,3,37.4,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,4,35.1,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,5,31.0,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D03,6,27.3,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,0,19.4,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,1,20.3,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,2,22.9,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,3,25.2,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,4,23.6,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,5,20.9,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D04,6,18.4,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,0,19.1,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,1,20.1,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,2,22.6,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,3,24.9,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,4,23.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,5,20.7,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D05,6,18.2,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,0,13.7,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,1,14.4,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,2,16.2,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,3,17.8,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,4,16.7,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,5,14.8,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D06,6,13.0,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,0,10.8,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,1,11.3,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,2,12.8,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,3,14.0,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,4,13.2,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,5,11.7,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D07,6,10.3,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,0,10.8,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,1,11.4,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,2,12.8,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,3,14.1,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,4,13.2,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,5,11.7,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D08,6,10.3,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,0,36.9,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,1,38.7,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,2,43.5,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,3,47.9,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,4,45.0,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,5,39.8,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D09,6,35.0,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,0,11.0,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,1,11.5,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,2,13.0,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,3,14.3,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,4,13.4,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,5,11.9,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D10,6,10.4,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,0,15.7,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,1,16.5,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,2,18.5,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,3,20.4,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,4,19.2,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,5,17.0,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D11,6,14.9,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,0,21.7,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,1,22.8,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,2,25.6,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,3,28.2,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,4,26.4,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,5,23.4,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-low,D12,6,20.6,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 0.5
-base,D01,0,26.3,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,1,27.6,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,2,31.0,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,3,34.2,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,4,32.1,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,5,28.4,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D01,6,25.0,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,0,29.9,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,1,31.4,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,2,35.3,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,3,38.9,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,4,36.5,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,5,32.3,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D02,6,28.4,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,0,57.5,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,1,60.3,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,2,67.8,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,3,74.7,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,4,70.1,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,5,62.1,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D03,6,54.6,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,0,38.7,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,1,40.7,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,2,45.7,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,3,50.4,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,4,47.3,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,5,41.8,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D04,6,36.8,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,0,38.2,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,1,40.2,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,2,45.1,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,3,49.7,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,4,46.7,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,5,41.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D05,6,36.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,0,27.4,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,1,28.8,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,2,32.3,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,3,35.6,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,4,33.4,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,5,29.6,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D06,6,26.0,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,0,21.6,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,1,22.7,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,2,25.5,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,3,28.1,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,4,26.4,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,5,23.3,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D07,6,20.5,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,0,21.6,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,1,22.7,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,2,25.5,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,3,28.1,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,4,26.4,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,5,23.4,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D08,6,20.6,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,0,73.7,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,1,77.4,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,2,87.0,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,3,95.9,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,4,90.0,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,5,79.6,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D09,6,70.1,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,0,22.0,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,1,23.1,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,2,25.9,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,3,28.6,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,4,26.8,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,5,23.7,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D10,6,20.9,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,0,31.4,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,1,33.0,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,2,37.1,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,3,40.8,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,4,38.3,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,5,33.9,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D11,6,29.8,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,0,43.3,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,1,45.5,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,2,51.1,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,3,56.3,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,4,52.9,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,5,46.8,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-base,D12,6,41.2,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 1.0
-high,D01,0,52.6,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,1,55.2,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,2,62.1,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,3,68.4,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,4,64.2,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,5,56.8,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D01,6,50.0,0.82,0.6378,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,0,59.8,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,1,62.8,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,2,70.5,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,3,77.7,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,4,72.9,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,5,64.6,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D02,6,56.8,0.74,0.5749,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,0,114.9,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,1,120.7,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,2,135.6,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,3,149.4,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,4,140.2,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,5,124.1,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D03,6,109.2,0.78,0.6107,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,0,77.5,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,1,81.4,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,2,91.4,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,3,100.7,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,4,94.5,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,5,83.7,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D04,6,73.6,0.62,0.3765,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,0,76.5,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,1,80.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,2,90.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,3,99.4,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,4,93.3,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,5,82.6,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D05,6,72.7,0.52,0.2421,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,0,54.8,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,1,57.5,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,2,64.6,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,3,71.2,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,4,66.8,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,5,59.2,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D06,6,52.0,0.61,0.3148,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,0,43.2,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,1,45.4,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,2,51.0,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,3,56.2,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,4,52.7,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,5,46.7,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D07,6,41.1,0.57,0.2384,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,0,43.3,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,1,45.5,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,2,51.1,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,3,56.3,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,4,52.8,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,5,46.8,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D08,6,41.1,0.66,0.3524,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,0,147.5,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,1,154.9,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,2,174.0,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,3,191.7,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,4,179.9,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,5,159.3,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D09,6,140.1,0.91,0.6287,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,0,44.0,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,1,46.2,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,2,51.9,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,3,57.2,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,4,53.6,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,5,47.5,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D10,6,41.8,0.5,0.2251,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,0,62.8,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,1,65.9,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,2,74.1,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,3,81.6,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,4,76.6,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,5,67.8,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D11,6,59.7,0.46,0.2692,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,0,86.7,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,1,91.0,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,2,102.3,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,3,112.7,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,4,105.8,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,5,93.6,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
-high,D12,6,82.4,0.6,0.3034,calibrated to 2025 observed peak week; multiplier 2.0
+low,D01,0,15.4,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,1,16.1,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,2,18.1,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,3,20.0,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,4,18.8,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,5,16.6,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D01,6,14.6,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,0,17.5,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,1,18.4,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,2,20.6,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,3,22.7,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,4,21.3,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,5,18.9,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D02,6,16.6,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,0,33.6,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,1,35.3,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,2,39.7,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,3,43.7,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,4,41.0,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,5,36.3,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D03,6,31.9,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,0,22.7,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,1,23.8,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,2,26.7,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,3,29.5,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,4,27.6,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,5,24.5,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D04,6,21.5,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,0,22.4,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,1,23.5,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,2,26.4,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,3,29.1,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,4,27.3,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,5,24.2,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D05,6,21.2,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,0,16.0,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,1,16.8,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,2,18.9,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,3,20.8,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,4,19.5,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,5,17.3,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D06,6,15.2,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,0,12.6,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,1,13.3,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,2,14.9,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,3,16.4,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,4,15.4,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,5,13.7,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D07,6,12.0,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,0,12.7,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,1,13.3,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,2,14.9,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,3,16.5,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,4,15.4,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,5,13.7,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D08,6,12.0,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,0,43.1,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,1,45.3,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,2,50.9,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,3,56.1,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,4,52.6,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,5,46.6,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D09,6,41.0,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,0,12.9,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,1,13.5,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,2,15.2,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,3,16.7,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,4,15.7,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,5,13.9,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D10,6,12.2,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,0,18.4,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,1,19.3,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,2,21.7,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,3,23.9,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,4,22.4,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,5,19.8,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D11,6,17.4,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,0,25.3,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,1,26.6,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,2,29.9,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,3,33.0,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,4,30.9,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,5,27.4,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+low,D12,6,24.1,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x0.5"
+base,D01,0,30.8,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,1,32.3,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,2,36.3,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,3,40.0,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,4,37.5,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,5,33.2,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D01,6,29.2,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,0,35.0,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,1,36.7,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,2,41.3,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,3,45.4,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,4,42.6,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,5,37.8,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D02,6,33.2,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,0,67.2,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,1,70.6,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,2,79.3,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,3,87.4,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,4,82.0,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,5,72.6,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D03,6,63.9,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,0,45.3,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,1,47.6,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,2,53.5,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,3,58.9,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,4,55.3,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,5,48.9,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D04,6,43.0,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,0,44.7,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,1,47.0,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,2,52.8,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,3,58.2,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,4,54.6,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,5,48.3,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D05,6,42.5,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,0,32.0,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,1,33.6,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,2,37.8,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,3,41.6,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,4,39.1,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,5,34.6,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D06,6,30.4,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,0,25.3,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,1,26.5,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,2,29.8,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,3,32.9,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,4,30.8,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,5,27.3,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D07,6,24.0,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,0,25.3,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,1,26.6,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,2,29.9,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,3,32.9,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,4,30.9,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,5,27.3,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D08,6,24.1,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,0,86.3,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,1,90.6,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,2,101.8,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,3,112.1,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,4,105.2,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,5,93.2,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D09,6,81.9,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,0,25.7,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,1,27.0,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,2,30.3,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,3,33.4,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,4,31.4,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,5,27.8,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D10,6,24.4,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,0,36.7,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,1,38.6,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,2,43.3,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,3,47.7,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,4,44.8,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,5,39.7,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D11,6,34.9,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,0,50.7,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,1,53.2,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,2,59.8,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,3,65.9,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,4,61.9,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,5,54.8,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+base,D12,6,48.2,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x1.0"
+high,D01,0,61.5,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,1,64.6,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,2,72.6,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,3,80.0,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,4,75.1,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,5,66.4,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D01,6,58.4,0.82,0.6378,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,0,69.9,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,1,73.4,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,2,82.5,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,3,90.9,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,4,85.3,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,5,75.5,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D02,6,66.4,0.74,0.5749,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,0,134.4,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,1,141.2,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,2,158.6,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,3,174.8,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,4,164.0,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,5,145.2,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D03,6,127.7,0.78,0.6107,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,0,90.6,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,1,95.2,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,2,106.9,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,3,117.8,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,4,110.6,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,5,97.9,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D04,6,86.1,0.62,0.3765,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,0,89.5,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,1,93.9,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,2,105.6,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,3,116.3,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,4,109.1,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,5,96.6,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D05,6,85.0,0.52,0.2421,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,0,64.1,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,1,67.3,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,2,75.6,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,3,83.3,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,4,78.2,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,5,69.2,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D06,6,60.9,0.61,0.3148,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,0,50.6,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,1,53.1,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,2,59.7,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,3,65.7,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,4,61.7,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,5,54.6,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D07,6,48.0,0.57,0.2384,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,0,50.6,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,1,53.2,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,2,59.8,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,3,65.8,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,4,61.8,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,5,54.7,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D08,6,48.1,0.66,0.3524,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,0,172.5,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,1,181.1,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,2,203.6,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,3,224.3,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,4,210.5,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,5,186.3,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D09,6,163.9,0.91,0.6287,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,0,51.4,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,1,54.0,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,2,60.7,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,3,66.9,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,4,62.7,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,5,55.5,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D10,6,48.9,0.5,0.2251,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,0,73.5,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,1,77.1,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,2,86.7,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,3,95.5,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,4,89.6,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,5,79.3,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D11,6,69.8,0.46,0.2692,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,0,101.4,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,1,106.5,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,2,119.6,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,3,131.8,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,4,123.7,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,5,109.5,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
+high,D12,6,96.3,0.6,0.3034,POTENTIAL_DEMAND,"D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x2.0"
