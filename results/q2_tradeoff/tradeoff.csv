@@ -1,9 +1,9 @@
 ﻿p,strategy,unmet_total,coverage_rate,worst_unmet_ratio,gini_coverage,chosen
-1,efficiency_first,51.1,0.875366,1.0,0.176579,MCH-3
-1,max_min,51.1,0.875366,1.0,0.176579,MCH-3
-2,efficiency_first,29.1,0.929024,1.0,0.093333,"MCH-3,MCH-8"
-2,max_min,31.2,0.923902,0.321574,0.033997,"MCH-7,MCH-8"
-3,efficiency_first,7.5,0.981707,0.130435,0.010073,"MCH-3,MCH-7,MCH-8"
-3,max_min,7.5,0.981707,0.130435,0.010073,"MCH-3,MCH-7,MCH-8"
-4,efficiency_first,7.5,0.981707,0.130435,0.010073,"MCH-1,MCH-3,MCH-7,MCH-8"
-4,max_min,7.5,0.981707,0.130435,0.010073,"MCH-1,MCH-3,MCH-7,MCH-8"
+1,efficiency_first,152.5,0.628049,1.0,0.298551,MCH-3
+1,max_min,152.5,0.628049,1.0,0.298551,MCH-3
+2,efficiency_first,130.5,0.681707,1.0,0.225628,"MCH-3,MCH-8"
+2,max_min,160.1,0.609512,0.694708,0.185437,"MCH-7,MCH-8"
+3,efficiency_first,108.9,0.73439,0.608696,0.150483,"MCH-3,MCH-7,MCH-8"
+3,max_min,108.9,0.73439,0.608696,0.150483,"MCH-3,MCH-7,MCH-8"
+4,efficiency_first,88.1,0.785122,0.608696,0.132618,"MCH-3,MCH-4,MCH-7,MCH-8"
+4,max_min,88.1,0.785122,0.608696,0.132618,"MCH-3,MCH-4,MCH-7,MCH-8"

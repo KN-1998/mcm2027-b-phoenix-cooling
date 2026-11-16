@@ -1,5 +1,5 @@
 ﻿p,unmet_cost,unmet_cost_pct,coverage_loss_pp,worst_before,worst_after,efficiency_pick,fair_pick
 1,0.0,0.0,0.0,1.0,1.0,MCH-3,MCH-3
-2,2.1,7.2,0.51,1.0,0.321574,"MCH-3,MCH-8","MCH-7,MCH-8"
-3,0.0,0.0,0.0,0.130435,0.130435,"MCH-3,MCH-7,MCH-8","MCH-3,MCH-7,MCH-8"
-4,0.0,0.0,0.0,0.130435,0.130435,"MCH-1,MCH-3,MCH-7,MCH-8","MCH-1,MCH-3,MCH-7,MCH-8"
+2,29.6,22.7,7.22,1.0,0.694708,"MCH-3,MCH-8","MCH-7,MCH-8"
+3,0.0,0.0,0.0,0.608696,0.608696,"MCH-3,MCH-7,MCH-8","MCH-3,MCH-7,MCH-8"
+4,0.0,0.0,0.0,0.608696,0.608696,"MCH-3,MCH-4,MCH-7,MCH-8","MCH-3,MCH-4,MCH-7,MCH-8"

@@ -17,11 +17,11 @@
     },
     {
       "p": 2,
-      "unmet_cost": 2.1,
-      "unmet_cost_pct": 7.2,
-      "coverage_loss_pp": 0.51,
+      "unmet_cost": 29.6,
+      "unmet_cost_pct": 22.7,
+      "coverage_loss_pp": 7.22,
       "worst_before": 1.0,
-      "worst_after": 0.321574,
+      "worst_after": 0.694708,
       "efficiency_pick": "MCH-3,MCH-8",
       "fair_pick": "MCH-7,MCH-8"
     },
@@ -30,8 +30,8 @@
       "unmet_cost": 0.0,
       "unmet_cost_pct": 0.0,
       "coverage_loss_pp": 0.0,
-      "worst_before": 0.130435,
-      "worst_after": 0.130435,
+      "worst_before": 0.608696,
+      "worst_after": 0.608696,
       "efficiency_pick": "MCH-3,MCH-7,MCH-8",
       "fair_pick": "MCH-3,MCH-7,MCH-8"
     },
@@ -40,10 +40,10 @@
       "unmet_cost": 0.0,
       "unmet_cost_pct": 0.0,
       "coverage_loss_pp": 0.0,
-      "worst_before": 0.130435,
-      "worst_after": 0.130435,
-      "efficiency_pick": "MCH-1,MCH-3,MCH-7,MCH-8",
-      "fair_pick": "MCH-1,MCH-3,MCH-7,MCH-8"
+      "worst_before": 0.608696,
+      "worst_after": 0.608696,
+      "efficiency_pick": "MCH-3,MCH-4,MCH-7,MCH-8",
+      "fair_pick": "MCH-3,MCH-4,MCH-7,MCH-8"
     }
   ]
 }

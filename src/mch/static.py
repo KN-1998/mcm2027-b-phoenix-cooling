@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
+from .hours import availability_table
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
 from .schema import COOLING, Instance, Site
@@ -35,16 +36,19 @@ def _active_sites(inst: Instance, chosen: Sequence[str], exclude: Sequence[str] 
 
 
 def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
-            capacity: float, weights: Optional[Dict[str, float]] = None) -> Solution:
+            capacity: float, weights: Optional[Dict[str, float]] = None,
+            availability: Optional[Dict[str, float]] = None) -> Solution:
     """需求优先贪心：按 (需求 × 权重) 从大到小分配，每区取最近且有余量的站点。"""
     weights = weights or {}
     dem = {d.id: inst.demand.get((d.id, day), 0.0) for d in inst.districts}
     order = sorted(inst.districts, key=lambda d: -(dem[d.id] * weights.get(d.id, 1.0)))
 
+    # EXT-14：开放时段 -> 有效容量（关门的时段不能服务）
+    avail = availability if availability is not None else availability_table(inst)
     remaining = {}
     for s in sites:
         cap = s.capacity if s.capacity and s.capacity > 0 else capacity
-        remaining[s.id] = float(cap)
+        remaining[s.id] = float(cap) * float(avail.get(s.id, 1.0))
 
     served: Dict[Tuple[str, int], float] = {}
     by_site: Dict[str, float] = {s.id: 0.0 for s in sites}
@@ -78,6 +82,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     m.update(equity_summary(dem, srv))
     util = utilization(by_site, {s.id: (s.capacity or capacity) for s in sites})
     m["utilization_mean"] = round(sum(util.values()) / len(util), 4) if util else 0.0
+    if availability is None:
+        m["availability_applied"] = True
     return Solution(chosen=[s.id for s in sites if s.kind == "candidate_mch"],
                     served=served, served_by_site=by_site, metrics=m, day=day)
 

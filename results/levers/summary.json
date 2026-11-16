@@ -1,0 +1,82 @@
+[
+  {
+    "lever": "baseline",
+    "p": 3,
+    "unmet_total": 130.5,
+    "coverage_rate": 0.697637,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.225628,
+    "chosen": "MCH-3,MCH-7,MCH-8",
+    "note": "fixed centers 9-17 cap 50; hubs 9-19 cap 250"
+  },
+  {
+    "lever": "extend_fixed_hours_22",
+    "p": 3,
+    "unmet_total": 37.4,
+    "coverage_rate": 0.913346,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.10476,
+    "chosen": "MCH-3,MCH-7,MCH-8",
+    "note": "fixed centers open until 22:00"
+  },
+  {
+    "lever": "double_fixed_capacity",
+    "p": 3,
+    "unmet_total": 34.1,
+    "coverage_rate": 0.920992,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.100134,
+    "chosen": "MCH-3,MCH-7,MCH-8",
+    "note": "fixed center capacity 50 -> 100"
+  },
+  {
+    "lever": "both_hours_and_capacity",
+    "p": 3,
+    "unmet_total": 21.6,
+    "coverage_rate": 0.949954,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.083333,
+    "chosen": "MCH-1,MCH-7,MCH-8",
+    "note": "A + B"
+  },
+  {
+    "lever": "extend_hub_hours_22",
+    "p": 3,
+    "unmet_total": 130.5,
+    "coverage_rate": 0.697637,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.225628,
+    "chosen": "MCH-3,MCH-7,MCH-8",
+    "note": "mobile hubs open until 22:00"
+  },
+  {
+    "lever": "buy_4_hubs",
+    "p": 3,
+    "unmet_total": 109.7,
+    "coverage_rate": 0.745829,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.210711,
+    "chosen": "MCH-3,MCH-4,MCH-7,MCH-8",
+    "note": "fleet size 4"
+  },
+  {
+    "lever": "buy_5_hubs",
+    "p": 3,
+    "unmet_total": 93.5,
+    "coverage_rate": 0.783364,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.195006,
+    "chosen": "MCH-3,MCH-4,MCH-5,MCH-7,MCH-8",
+    "note": "fleet size 5"
+  },
+  {
+    "lever": "buy_6_hubs",
+    "p": 3,
+    "unmet_total": 77.8,
+    "coverage_rate": 0.819741,
+    "worst_unmet_ratio": 1.0,
+    "gini_coverage": 0.174183,
+    "chosen": "MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8",
+    "note": "fleet size 6"
+  }
+]
