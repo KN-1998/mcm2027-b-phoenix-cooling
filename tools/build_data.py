@@ -65,6 +65,7 @@ CANDIDATES = [
  ("MCH-8","North Gateway Gap MCH","D10",33.8180,-112.1020),
 ]
 MCH_CAP = 250
+UNSHEL = 0.50   # 基础情景：无家可归者占潜在需求的比例（ASSUME）
 
 def hav(a,b,c,d):
     R=6371.0; p1,p2=math.radians(a),math.radians(c)
@@ -117,13 +118,15 @@ def main():
     week_total = sum(sum(raw_demand(d,day) for d in DISTRICTS) for day in range(7))
     k = OBS["peak_week_visits_total"] / week_total
     with (OUT/"demand.csv").open("w",newline="",encoding="utf-8-sig") as f:
-        w=csv.writer(f); w.writerow(["scenario","district_id","day","demand_visits","heat_exposure","vulnerability","note"])
+        w=csv.writer(f); w.writerow(["scenario","district_id","day","segment","demand_visits","heat_exposure","vulnerability","caliber","note"])
         for name,mult in (("low",0.5),("base",1.0),("high",2.0)):
             for d in DISTRICTS:
                 for day in range(7):
-                    w.writerow([name,d[0],day,round(raw_demand(d,day)*k*mult,1),d[8],vuln(d[4],d[5],d[6]),
-                                "POTENTIAL_DEMAND",
-                                "D = potential cooling demand (not observed visits); scale k set so the 7-day total = 3,929 (2025 peak week); scenario x%.1f" % mult])
+                    tot = raw_demand(d,day)*k*mult
+                    for seg, share in (("housed", 1 - UNSHEL), ("unsheltered", UNSHEL)):
+                        w.writerow([name,d[0],day,seg,round(tot*share,2),d[8],vuln(d[4],d[5],d[6]),
+                                    "POTENTIAL_DEMAND",
+                                    "segment share %.2f (ASSUME; 69-83%% observed among city-center visitors is a selection effect)" % share])
     json.dump(OBS, open(OUT/"calibration.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"OK: 12 区 / {len(EXISTING)+len(CANDIDATES)} 站点 / {len(DISTRICTS)*len(sites)} 链接 / 需求标定 k={k:.6f}")
 

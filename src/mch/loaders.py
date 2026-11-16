@@ -45,12 +45,25 @@ def load_instance(data_dir: str | Path | None = None, scenario: str = "base",
     access: Dict[Tuple[str, str], float] = {
         (r["district_id"], r["site_id"]): float(r[access_mode]) for r in _rows(base / "access.csv")
     }
-    demand: Dict[Tuple[str, int], float] = {
-        (r["district_id"], int(r["day"])): float(r["demand_visits"])
-        for r in _rows(base / "demand.csv") if r["scenario"] == scenario
-    }
+    demand: Dict[Tuple[str, int], float] = {}
+    by_segment: Dict[str, float] = {}
+    unsheltered_share = None
+    for r in _rows(base / "demand.csv"):
+        if r["scenario"] != scenario:
+            continue
+        key = (r["district_id"], int(r["day"]))
+        v = float(r["demand_visits"])
+        demand[key] = demand.get(key, 0.0) + v
+        seg = r.get("segment", "all")
+        by_segment[seg] = by_segment.get(seg, 0.0) + v
+        if seg == "unsheltered" and demand[key] > 0:
+            unsheltered_share = 0.5 if unsheltered_share is None else unsheltered_share
+    total = sum(demand.values()) or 1.0
+    ushare = round(by_segment.get("unsheltered", 0.0) / total, 4) if by_segment else 0.5
     return Instance(districts=districts, sites=sites, access=access, demand=demand,
                     horizon_days=horizon_days,
                     meta={"loaded_from": str(base), "scenario": scenario,
                           "access_mode": access_mode,
+                          "unsheltered_share": ushare,
+                          "demand_by_segment": {k: round(v, 2) for k, v in by_segment.items()},
                           "note": "12 districts / 8 candidates are CONTEST fictions"})

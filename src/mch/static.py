@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
-from .hours import PERIODS, availability_table, capacity_in_period, split_demand
+from .hours import PERIODS, availability_table, capacity_in_period, split_demand, split_demand_mixed
 from .assign import solve_assignment
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
@@ -82,7 +82,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
         by_period: Dict[str, float] = {}
         for h in PERIODS:
             cap_h = {s.id: capacity_in_period(s, cap_daily.get(s.id, 0.0), h) for s in sites}
-            dem_h = {d.id: split_demand(dem[d.id])[h] for d in inst.districts}
+            ushare = float(inst.meta.get("unsheltered_share", 0.5))
+            dem_h = {d.id: split_demand_mixed(dem[d.id], ushare)[h] for d in inst.districts}
             out = solve_assignment(inst, sites, day, max_minutes, cap_h, dem_h,
                                    equity_cap=equity_cap, equity_exempt=equity_exempt)
             for d, v in out["served"].items():

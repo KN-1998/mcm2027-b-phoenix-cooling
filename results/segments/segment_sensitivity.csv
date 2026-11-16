@@ -1,0 +1,4 @@
+﻿unsheltered_share,p,unmet_total,coverage_rate,worst_unmet_ratio,served_day,served_evening,served_night,chosen
+0.3,3,229.08,0.5464,1.0,216.85,55.29,3.81,"MCH-3,MCH-7,MCH-8"
+0.5,3,245.88,0.5132,1.0,197.81,56.43,4.92,"MCH-3,MCH-7,MCH-8"
+0.7,3,262.82,0.4796,1.0,167.71,68.48,6.03,"MCH-3,MCH-4,MCH-8"

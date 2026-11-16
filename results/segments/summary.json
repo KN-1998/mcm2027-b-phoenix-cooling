@@ -1,0 +1,35 @@
+[
+  {
+    "unsheltered_share": 0.3,
+    "p": 3,
+    "unmet_total": 229.08,
+    "coverage_rate": 0.5464,
+    "worst_unmet_ratio": 1.0,
+    "served_day": 216.85,
+    "served_evening": 55.29,
+    "served_night": 3.81,
+    "chosen": "MCH-3,MCH-7,MCH-8"
+  },
+  {
+    "unsheltered_share": 0.5,
+    "p": 3,
+    "unmet_total": 245.88,
+    "coverage_rate": 0.5132,
+    "worst_unmet_ratio": 1.0,
+    "served_day": 197.81,
+    "served_evening": 56.43,
+    "served_night": 4.92,
+    "chosen": "MCH-3,MCH-7,MCH-8"
+  },
+  {
+    "unsheltered_share": 0.7,
+    "p": 3,
+    "unmet_total": 262.82,
+    "coverage_rate": 0.4796,
+    "worst_unmet_ratio": 1.0,
+    "served_day": 167.71,
+    "served_evening": 68.48,
+    "served_night": 6.03,
+    "chosen": "MCH-3,MCH-4,MCH-8"
+  }
+]

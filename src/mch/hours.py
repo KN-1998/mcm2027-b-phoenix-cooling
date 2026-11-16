@@ -84,3 +84,28 @@ def capacity_in_period(site: Site, daily_capacity: float, period: str) -> float:
 
 def split_demand(total: float) -> Dict[str, float]:
     return {h: total * DEMAND_SHARE[h] for h in PERIODS}
+
+# ---------------------------------------------------------------------------
+# P1-5 后半：分群时段结构（有住所 / 无家可归者）
+# ---------------------------------------------------------------------------
+# 观测依据：2025 周报显示市运营休息/延时中心的到访者中 69%-83% 自述无家可归。
+# 但这是"到访者中"的比例（选择效应），不能直接当全市人口比例。
+# 因此把"无家可归者占比"作为**情景参数**，并给区间。
+UNSHELTERED_SHARE = {"low": 0.30, "base": 0.50, "high": 0.70}
+
+PERIOD_SHARES_BY_SEGMENT = {
+    "housed":       {"day": 0.55, "evening": 0.38, "night": 0.07},
+    "unsheltered":  {"day": 0.30, "evening": 0.45, "night": 0.25},
+}
+
+
+def mixed_period_shares(unsheltered_share: float) -> Dict[str, float]:
+    u = max(0.0, min(1.0, float(unsheltered_share)))
+    return {h: (1 - u) * PERIOD_SHARES_BY_SEGMENT["housed"][h]
+               + u * PERIOD_SHARES_BY_SEGMENT["unsheltered"][h]
+            for h in PERIODS}
+
+
+def split_demand_mixed(total: float, unsheltered_share: float) -> Dict[str, float]:
+    sh = mixed_period_shares(unsheltered_share)
+    return {h: total * sh[h] for h in PERIODS}
