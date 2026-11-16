@@ -1,5 +1,10 @@
 # 2027 MCM Problem B — Keeping Phoenix Cool
 
+仓库：https://github.com/KN-1998/mcm2027-b-phoenix-cooling
+运行：`python -m src.exp.run_pipeline --p 3 --out results/run_demo`
+测试：`python -m pytest tests -q`
+**扩展点索引：`docs/EXTENSION_POINTS.md`（代码里用 `[EXT-nn]` 标注）**
+
 > 新赛题工作区（2026-11-16 起）。上个赛题（A：Where Does the Sand Go?）已完整归档：
 > `D:\MCM2027A_archive_20261116.zip`（231 MB / 1140 文件，SHA256 `b9ca1463…1539c1`）。
 > 本目录**只含 B 题内容**，外加 `PRACTICE_NOTES/` 里从 A 题提炼的经验。

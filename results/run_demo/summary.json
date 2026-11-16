@@ -1,0 +1,245 @@
+{
+  "instance": {
+    "districts": 12,
+    "sites": 21,
+    "candidates": 8,
+    "days": 7,
+    "note": "12 districts x 8 candidates are CONTEST FICTIONS, not official Phoenix areas"
+  },
+  "q1_baseline_no_mch": {
+    "demand_total": 3000.0,
+    "served_total": 620.0,
+    "unmet_total": 2380.0,
+    "coverage_rate": 0.206667,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.136631,
+    "gini_coverage": 0.841976,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.3333
+  },
+  "q2_static": {
+    "chosen": [
+      "MCH-1",
+      "MCH-2",
+      "MCH-3"
+    ],
+    "demand_total": 3000.0,
+    "served_total": 1370.0,
+    "unmet_total": 1630.0,
+    "coverage_rate": 0.456667,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.339116,
+    "gini_coverage": 0.659562,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.5
+  },
+  "q3_dynamic": [
+    {
+      "day": 0,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3000.0,
+      "served_total": 1120.0,
+      "unmet_total": 1880.0,
+      "coverage_rate": 0.373333,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.268969,
+      "gini_coverage": 0.726492,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "downtime_applied": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 3
+    },
+    {
+      "day": 1,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3150.0,
+      "served_total": 1370.0,
+      "unmet_total": 1780.0,
+      "coverage_rate": 0.434921,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.320711,
+      "gini_coverage": 0.676506,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    },
+    {
+      "day": 2,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3540.0,
+      "served_total": 1370.0,
+      "unmet_total": 2170.0,
+      "coverage_rate": 0.387006,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.280456,
+      "gini_coverage": 0.713802,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    },
+    {
+      "day": 3,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3900.0,
+      "served_total": 1370.0,
+      "unmet_total": 2530.0,
+      "coverage_rate": 0.351282,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.250443,
+      "gini_coverage": 0.749411,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    },
+    {
+      "day": 4,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3660.0,
+      "served_total": 1370.0,
+      "unmet_total": 2290.0,
+      "coverage_rate": 0.374317,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.269795,
+      "gini_coverage": 0.725543,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    },
+    {
+      "day": 5,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 3240.0,
+      "served_total": 1370.0,
+      "unmet_total": 1870.0,
+      "coverage_rate": 0.42284,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.310561,
+      "gini_coverage": 0.684998,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    },
+    {
+      "day": 6,
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      "demand_total": 2850.0,
+      "served_total": 1370.0,
+      "unmet_total": 1480.0,
+      "coverage_rate": 0.480702,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.35979,
+      "gini_coverage": 0.636028,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5,
+      "move_penalty": 0.0,
+      "n_changed": 0
+    }
+  ],
+  "q4_disruption": {
+    "baseline": {
+      "demand_total": 3000.0,
+      "served_total": 1370.0,
+      "unmet_total": 1630.0,
+      "coverage_rate": 0.456667,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.339116,
+      "gini_coverage": 0.659562,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.5
+    },
+    "after_disruption": {
+      "demand_total": 3440.619,
+      "served_total": 1250.0,
+      "unmet_total": 2190.619,
+      "coverage_rate": 0.363307,
+      "coverage_min": 0.0,
+      "coverage_mean": 0.21442,
+      "gini_coverage": 0.777656,
+      "worst_unmet_ratio": 1.0,
+      "utilization_mean": 0.4545
+    },
+    "shock_districts": [
+      "D12",
+      "D07"
+    ],
+    "down_site": "R01",
+    "delta_unmet": 560.619,
+    "response_hours": 24.0
+  },
+  "q5_plan": [
+    {
+      "year": 2027,
+      "hubs": 2,
+      "unmet_total": 2320.619,
+      "coverage_rate": 0.325523,
+      "worst_unmet_ratio": 1.0,
+      "trigger_add_hub": true
+    },
+    {
+      "year": 2028,
+      "hubs": 3,
+      "unmet_total": 2070.619,
+      "coverage_rate": 0.398184,
+      "worst_unmet_ratio": 1.0,
+      "trigger_add_hub": true
+    },
+    {
+      "year": 2029,
+      "hubs": 4,
+      "unmet_total": 1820.619,
+      "coverage_rate": 0.470845,
+      "worst_unmet_ratio": 1.0,
+      "trigger_add_hub": true
+    },
+    {
+      "year": 2030,
+      "hubs": 5,
+      "unmet_total": 1570.619,
+      "coverage_rate": 0.543507,
+      "worst_unmet_ratio": 1.0,
+      "trigger_add_hub": true
+    },
+    {
+      "year": 2031,
+      "hubs": 6,
+      "unmet_total": 1320.619,
+      "coverage_rate": 0.616168,
+      "worst_unmet_ratio": 1.0,
+      "trigger_add_hub": true
+    }
+  ]
+}

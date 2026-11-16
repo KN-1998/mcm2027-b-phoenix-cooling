@@ -1,0 +1,18 @@
+# 基础参数（全部可在 CLI 覆盖）
+capacity_visits_per_day: 250      # 单枢纽容量，SCENARIO（题面给定）
+max_travel_minutes: 30            # 可服务阈值，ASSUME
+horizon_days: 7                   # 热浪天数，SCENARIO
+seed: 2027
+demand_target_total_daily: 3000   # 用 2025 周报告量级标定，ASSUME
+
+# [EXT-09] 成本结构：题目未给，需宽范围敏感性
+costs:
+  buy_per_hub_usd: 300000         # ASSUME
+  ops_per_hub_day_usd: 450        # ASSUME
+  move_per_move_usd: 1200         # ASSUME
+  downtime_frac_on_move: 0.5      # ASSUME
+
+# [EXT-08] 公平口径
+equity:
+  metric: worst_unmet_ratio       # 可选 gini_coverage / coverage_min
+  cap: 0.25                       # 最差区未满足率上限（ASSUME）

@@ -1,0 +1,44 @@
+"""Q4 中断与 24 小时重规划。
+
+情景：一个主要固定中心（默认 R01, 24/7 respite）因断电停用；
+      两个低收入且公交差的区需求上升；移动枢纽须在 24 h 内重分配。
+[EXT-12] 可扩展：设备故障概率、路网中断、需求预测误差的蒙特卡洛。
+"""
+from __future__ import annotations
+
+from typing import Dict, List, Sequence
+
+from .schema import Instance
+from .static import Solution, solve_static
+
+
+def pick_low_income(inst: Instance, k: int = 2) -> List[str]:
+    ranked = sorted(inst.districts, key=lambda d: (d.median_income, -d.pct_no_vehicle))
+    return [d.id for d in ranked[:k]]
+
+
+def apply_shock(inst: Instance, districts: Sequence[str], mult: float = 1.8) -> Instance:
+    """就地放大指定区需求；返回同一实例便于链式调用。"""
+    for (did, day), v in list(inst.demand.items()):
+        if did in districts:
+            inst.demand[(did, day)] = v * mult
+    inst.meta["shock"] = {"districts": list(districts), "multiplier": mult}
+    return inst
+
+
+def run_disruption(inst: Instance, p: int, max_minutes: float = 30.0,
+                   capacity: float = 250.0, down_site: str = "R01",
+                   mult: float = 1.8) -> Dict[str, object]:
+    before = solve_static(inst, p, max_minutes=max_minutes, capacity=capacity, day=0)
+    low = pick_low_income(inst, 2)
+    apply_shock(inst, low, mult)
+    after_shock = solve_static(inst, p, max_minutes=max_minutes, capacity=capacity, day=0,
+                               exclude_sites=[down_site])
+    return {
+        "baseline": before.metrics,
+        "after_disruption": after_shock.metrics,
+        "shock_districts": low,
+        "down_site": down_site,
+        "delta_unmet": round(after_shock.metrics["unmet_total"] - before.metrics["unmet_total"], 3),
+        "response_hours": 24.0,
+    }
