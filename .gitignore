@@ -1,0 +1,23 @@
+﻿# 缓存与临时
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp/
+
+# 打包产物
+dist/
+*.zip
+*.bundle
+
+# 大二进制结果（按需放开）
+results/**/*.npz
+results/**/*.mat
+results/**/*.bin
+
+# 原始资料（体积大，按需本地保留）
+data/raw/*
+!data/raw/README.md
+
+# 系统
+Thumbs.db
+desktop.ini
