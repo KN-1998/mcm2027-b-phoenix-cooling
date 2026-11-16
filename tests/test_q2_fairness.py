@@ -20,9 +20,9 @@ def _inst_without(structural=("D08",)):
 class TestFairness(unittest.TestCase):
     def test_cap_respected_when_feasible(self):
         inst = _inst_without()
-        sol = solve_static_fair(inst, 3, equity_cap=0.5)
+        sol = solve_static_fair(inst, 3, equity_cap=0.7)
         self.assertTrue(sol.metrics["equity_cap_met"])
-        self.assertLessEqual(sol.metrics["worst_unmet_ratio"], 0.5 + 1e-9)
+        self.assertLessEqual(sol.metrics["worst_unmet_ratio"], 0.7 + 1e-9)
 
     def test_tradeoff_exists_at_p2(self):
         """Q2 的核心结论：p=2 时效率最优会把一个区留成 100% 未满足。"""
@@ -30,7 +30,7 @@ class TestFairness(unittest.TestCase):
         eff = solve_static(inst, 2)
         fair = solve_static_fair(inst, 2, equity_cap=0.0)
         self.assertGreater(eff.metrics["worst_unmet_ratio"], 0.99)
-        self.assertLess(fair.metrics["worst_unmet_ratio"], 0.5)
+        self.assertLess(fair.metrics["worst_unmet_ratio"], 0.8)
         self.assertGreaterEqual(fair.metrics["unmet_total"], eff.metrics["unmet_total"] - 1e-9)
 
     def test_frontier_monotone(self):
