@@ -1,0 +1,49 @@
+{
+  "scenario": "base",
+  "access_mode": "walk_min",
+  "excluded_structural": {
+    "D08": 21.6
+  },
+  "tradeoff": [
+    {
+      "p": 1,
+      "unmet_cost": 0.0,
+      "unmet_cost_pct": 0.0,
+      "coverage_loss_pp": 0.0,
+      "worst_before": 1.0,
+      "worst_after": 1.0,
+      "efficiency_pick": "MCH-3",
+      "fair_pick": "MCH-3"
+    },
+    {
+      "p": 2,
+      "unmet_cost": 2.1,
+      "unmet_cost_pct": 7.2,
+      "coverage_loss_pp": 0.51,
+      "worst_before": 1.0,
+      "worst_after": 0.321574,
+      "efficiency_pick": "MCH-3,MCH-8",
+      "fair_pick": "MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "unmet_cost": 0.0,
+      "unmet_cost_pct": 0.0,
+      "coverage_loss_pp": 0.0,
+      "worst_before": 0.130435,
+      "worst_after": 0.130435,
+      "efficiency_pick": "MCH-3,MCH-7,MCH-8",
+      "fair_pick": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 4,
+      "unmet_cost": 0.0,
+      "unmet_cost_pct": 0.0,
+      "coverage_loss_pp": 0.0,
+      "worst_before": 0.130435,
+      "worst_after": 0.130435,
+      "efficiency_pick": "MCH-1,MCH-3,MCH-7,MCH-8",
+      "fair_pick": "MCH-1,MCH-3,MCH-7,MCH-8"
+    }
+  ]
+}

@@ -125,3 +125,55 @@ def solve_static_milp(*args, **kwargs):  # pragma: no cover - 可选路径
     公平：加 max_i U_i/D_i ≤ ε 或加权目标。
     """
     raise NotImplementedError("MILP 后端未实现：见 docs/EXTENSION_POINTS.md#EXT-10")
+
+# ---------------------------------------------------------------------------
+# 公平版本（Q2 的核心）：把"最差区"从事后统计变成约束
+# ---------------------------------------------------------------------------
+
+def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
+                      max_minutes: float = 30.0, capacity: float = 250.0,
+                      day: int = 0, exclude_sites: Sequence[str] = (),
+                      weights: Optional[Dict[str, float]] = None) -> Solution:
+    """在 max_i (U_i/D_i) <= equity_cap 的可行组合里，最小化总未满足量。
+
+    若无组合可行，退化为"最小化最差区未满足率"（max-min），并在 metrics 里标记
+    equity_cap_met=False —— 这是要如实报告的结论，不是失败。
+    """
+    cands = [s.id for s in inst.candidate_sites() if s.id not in set(exclude_sites)]
+    if p > len(cands):
+        raise ValueError("p 超过候选点数")
+
+    feasible = []
+    infeasible = []
+    for combo in itertools.combinations(cands, p):
+        sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
+                      capacity, weights)
+        worst = sol.metrics["worst_unmet_ratio"]
+        sol.metrics["equity_cap"] = equity_cap
+        sol.metrics["equity_cap_met"] = bool(worst <= equity_cap + 1e-9)
+        (feasible if worst <= equity_cap + 1e-9 else infeasible).append(sol)
+
+    if feasible:
+        return min(feasible, key=lambda s: (s.metrics["unmet_total"], s.metrics["gini_coverage"]))
+    if not infeasible:
+        raise AssertionError("没有候选组合")
+    return min(infeasible, key=lambda s: (s.metrics["worst_unmet_ratio"], s.metrics["unmet_total"]))
+
+
+def efficiency_equity_frontier(inst: Instance, p: int, caps: Sequence[float] = (0.1, 0.2, 0.3, 0.5, 0.75, 1.0),
+                               **kw) -> List[Dict[str, object]]:
+    """扫 equity_cap，得到 效率（未满足量）— 公平（最差区）前沿。"""
+    rows: List[Dict[str, object]] = []
+    for cap in caps:
+        sol = solve_static_fair(inst, p, equity_cap=cap, **kw)
+        rows.append({
+            "p": p, "equity_cap": cap,
+            "worst_unmet_ratio": sol.metrics["worst_unmet_ratio"],
+            "unmet_total": sol.metrics["unmet_total"],
+            "coverage_rate": sol.metrics["coverage_rate"],
+            "coverage_min": sol.metrics["coverage_min"],
+            "gini_coverage": sol.metrics["gini_coverage"],
+            "cap_met": sol.metrics["equity_cap_met"],
+            "chosen": ",".join(sol.chosen),
+        })
+    return rows

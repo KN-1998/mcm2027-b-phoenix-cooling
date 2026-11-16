@@ -37,14 +37,14 @@
 
 **已知限制**：属性为量级估计，**不是 ACS 实测**。真实 ACS 接入点见 `docs/EXTENSION_POINTS.md` EXT-04。
 
-## 2. `sites.csv`（21 行 = 13 既有 + 8 候选）
+## 2. `sites.csv`（22 行 = 14 既有 + 8 候选）
 
 | 列 | 类型 | 单位 | 说明 |
 |---|---|---|---|
 | `site_id` | str | — | `C01`–`C08` 冷却中心、`H01`–`H04` 饮水站、`R01` 24/7 休息中心、`MCH-1..8` 候选 |
 | `kind` | str | — | `cooling` / `hydration` / `respite` / `donation` / `candidate_mch` |
 | `district_id` | str | — | 所属区 |
-| `capacity_visits_per_day` | int | 人次/日 | **0 = 官方未公布**；候选点为 250（题面） |
+| `capacity_visits_per_day` | int | 人次/日 | 既有冷却中心取 **50**（ASSUME，使容量成为真实约束）；饮水站 0（不构成降温容量）；候选点 250（题面） |
 | `open_hour`/`close_hour` | float | 24h 制 | 既有设施按常规办公时间；`R01` 为 0–24 |
 | `source` | str | — | `PLAN_2026` / `CONTEST` |
 

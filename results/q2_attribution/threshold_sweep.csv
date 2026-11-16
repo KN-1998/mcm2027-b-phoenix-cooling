@@ -1,0 +1,5 @@
+﻿chosen,coverage_rate,gini_coverage,p,threshold_minutes,unmet_no_access,unmet_served,unmet_total,worst_unmet_ratio
+"MCH-1,MCH-7,MCH-8",0.949954,0.083333,3,20.0,21.6,0.0,21.6,1.0
+"MCH-1,MCH-7,MCH-8",0.949954,0.083333,3,30.0,21.6,0.0,21.6,1.0
+"MCH-1,MCH-7,MCH-8",0.949954,0.083333,3,45.0,21.6,0.0,21.6,1.0
+"MCH-1,MCH-7,MCH-8",0.949954,0.083333,3,60.0,21.6,0.0,21.6,1.0

@@ -1,0 +1,121 @@
+{
+  "instance": {
+    "scenario": "base",
+    "access_mode": "walk_min",
+    "p": 3,
+    "excluded_structural_districts": [
+      "D08"
+    ]
+  },
+  "structural_demand_excluded": {
+    "D08": 21.6
+  },
+  "efficiency_first": {
+    "chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "demand_total": 410.0,
+    "served_total": 402.5,
+    "unmet_total": 7.5,
+    "coverage_rate": 0.981707,
+    "coverage_min": 0.869565,
+    "coverage_mean": 0.98913,
+    "gini_coverage": 0.010073,
+    "worst_unmet_ratio": 0.130435,
+    "utilization_mean": 0.5364
+  },
+  "max_min": {
+    "chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "demand_total": 410.0,
+    "served_total": 402.5,
+    "unmet_total": 7.5,
+    "coverage_rate": 0.981707,
+    "coverage_min": 0.869565,
+    "coverage_mean": 0.98913,
+    "gini_coverage": 0.010073,
+    "worst_unmet_ratio": 0.130435,
+    "utilization_mean": 0.5364,
+    "equity_cap": 0.0,
+    "equity_cap_met": false
+  },
+  "left_behind": {
+    "worst_ratio_efficiency": 0.130435,
+    "worst_ratio_maxmin": 0.130435,
+    "coverage_gain": 0.9817,
+    "verdict": "no district fully left behind"
+  },
+  "frontier": [
+    {
+      "p": 3,
+      "equity_cap": 0.1,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": false,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "equity_cap": 0.2,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": true,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "equity_cap": 0.3,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": true,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "equity_cap": 0.5,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": true,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "equity_cap": 0.75,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": true,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "p": 3,
+      "equity_cap": 1.0,
+      "worst_unmet_ratio": 0.130435,
+      "unmet_total": 7.5,
+      "coverage_rate": 0.981707,
+      "coverage_min": 0.869565,
+      "gini_coverage": 0.010073,
+      "cap_met": true,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    }
+  ]
+}

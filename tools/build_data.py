@@ -37,18 +37,19 @@ k_pop = 1_650_000 / sum(d[3] for d in DISTRICTS)
 DISTRICTS = [(*d[:3], int(round(d[3]*k_pop)), *d[4:]) for d in DISTRICTS]
 
 EXISTING = [
- ("C01","Central City Cooling Center","cooling","D01",33.4484,-112.0740,0,9,17),
- ("C02","Encanto Cooling Center","cooling","D02",33.4700,-112.1000,0,9,17),
- ("C03","North Mountain Cooling Center","cooling","D03",33.5650,-112.1200,0,9,17),
- ("C04","Camelback East Cooling Center","cooling","D04",33.5000,-111.9900,0,9,17),
- ("C05","Deer Valley Cooling Center","cooling","D05",33.6900,-112.1200,0,9,17),
- ("C06","Desert View Cooling Center","cooling","D06",33.7800,-112.0000,0,9,17),
- ("C07","South Mountain Cooling Center","cooling","D12",33.3400,-112.0500,0,9,17),
- ("C08","Maryvale Cooling Center","cooling","D09",33.4900,-112.1900,0,9,17),
+ ("C01","Central City Cooling Center","cooling","D01",33.4484,-112.0740,50,9,17),
+ ("C02","Encanto Cooling Center","cooling","D02",33.4700,-112.1000,50,9,17),
+ ("C03","North Mountain Cooling Center","cooling","D03",33.5650,-112.1200,50,9,17),
+ ("C04","Camelback East Cooling Center","cooling","D04",33.5000,-111.9900,50,9,17),
+ ("C05","Deer Valley Cooling Center","cooling","D05",33.6900,-112.1200,50,9,17),
+ ("C06","Desert View Cooling Center","cooling","D06",33.7800,-112.0000,50,9,17),
+ ("C07","South Mountain Cooling Center","cooling","D12",33.3400,-112.0500,50,9,17),
+ ("C08","Maryvale Cooling Center","cooling","D09",33.4900,-112.1900,50,9,17),
+ ("C09","Paradise Valley Cooling Center","cooling","D11",33.5900,-111.9500,50,9,17),
  ("H01","Laveen Hydration Station","hydration","D08",33.3500,-112.1700,0,10,16),
  ("H02","Estrella Hydration Station","hydration","D07",33.4000,-112.3000,0,10,16),
  ("H03","Rio Vista Hydration Station","hydration","D10",33.8200,-112.1000,0,10,16),
- ("H04","Paradise Valley Hydration Station","hydration","D11",33.5900,-111.9500,0,10,16),
+ ("H04","Ahwatukee Hydration Station","hydration","D12",33.3300,-112.0200,0,10,16),
  ("R01","24/7 Respite & Navigation Center","respite","D01",33.4490,-112.0700,120,0,24),
 ]
 CANDIDATES = [
@@ -58,8 +59,8 @@ CANDIDATES = [
  ("MCH-4","South Mountain MCH","D12",33.3450,-112.0560),
  ("MCH-5","Camelback East MCH","D04",33.5050,-111.9950),
  ("MCH-6","Deer Valley MCH","D05",33.6950,-112.1150),
- ("MCH-7","Laveen MCH","D08",33.3550,-112.1650),
- ("MCH-8","Desert View MCH","D06",33.7750,-112.0050),
+ ("MCH-7","Estrella Gap MCH","D07",33.4010,-112.2960),
+ ("MCH-8","North Gateway Gap MCH","D10",33.8180,-112.1020),
 ]
 MCH_CAP = 250
 

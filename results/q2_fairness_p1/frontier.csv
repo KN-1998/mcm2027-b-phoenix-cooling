@@ -1,0 +1,7 @@
+﻿p,equity_cap,worst_unmet_ratio,unmet_total,coverage_rate,coverage_min,gini_coverage,cap_met,chosen
+1,0.1,1.0,51.1,0.875366,0.0,0.176579,False,MCH-3
+1,0.2,1.0,51.1,0.875366,0.0,0.176579,False,MCH-3
+1,0.3,1.0,51.1,0.875366,0.0,0.176579,False,MCH-3
+1,0.5,1.0,51.1,0.875366,0.0,0.176579,False,MCH-3
+1,0.75,1.0,51.1,0.875366,0.0,0.176579,False,MCH-3
+1,1.0,1.0,51.1,0.875366,0.0,0.176579,True,MCH-3
