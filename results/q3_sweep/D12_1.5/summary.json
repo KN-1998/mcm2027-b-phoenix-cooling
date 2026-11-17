@@ -1,0 +1,75 @@
+{
+  "p": 3,
+  "days": 7,
+  "combos": 56,
+  "top_k": 3,
+  "static_best": [
+    "MCH-3",
+    "MCH-4",
+    "MCH-8"
+  ],
+  "static_total_unmet": 1768.92,
+  "oracle_total_unmet": 1767.67,
+  "dynamic_dp_total_unmet": 1767.89,
+  "relocation_gain_vs_static": 1.03,
+  "oracle_headroom": 1.25,
+  "reloc_downtime_factor": 0.8,
+  "per_day": [
+    {
+      "day": 0,
+      "combo": "MCH-3,MCH-7,MCH-8",
+      "moved_in": "MCH-3,MCH-7,MCH-8",
+      "unmet": 226.51,
+      "unmet_static": 226.7,
+      "unmet_oracle": 226.51
+    },
+    {
+      "day": 1,
+      "combo": "MCH-3,MCH-7,MCH-8",
+      "moved_in": "-",
+      "unmet": 237.81,
+      "unmet_static": 238.01,
+      "unmet_oracle": 237.81
+    },
+    {
+      "day": 2,
+      "combo": "MCH-3,MCH-4,MCH-8",
+      "moved_in": "MCH-4",
+      "unmet": 267.49,
+      "unmet_static": 267.49,
+      "unmet_oracle": 267.26
+    },
+    {
+      "day": 3,
+      "combo": "MCH-3,MCH-4,MCH-8",
+      "moved_in": "-",
+      "unmet": 299.96,
+      "unmet_static": 299.96,
+      "unmet_oracle": 299.96
+    },
+    {
+      "day": 4,
+      "combo": "MCH-3,MCH-7,MCH-8",
+      "moved_in": "MCH-7",
+      "unmet": 276.33,
+      "unmet_static": 276.56,
+      "unmet_oracle": 276.33
+    },
+    {
+      "day": 5,
+      "combo": "MCH-3,MCH-7,MCH-8",
+      "moved_in": "-",
+      "unmet": 244.62,
+      "unmet_static": 244.83,
+      "unmet_oracle": 244.62
+    },
+    {
+      "day": 6,
+      "combo": "MCH-3,MCH-7,MCH-8",
+      "moved_in": "-",
+      "unmet": 215.18,
+      "unmet_static": 215.37,
+      "unmet_oracle": 215.18
+    }
+  ]
+}
