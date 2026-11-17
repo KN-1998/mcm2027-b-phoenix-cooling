@@ -1,9 +1,9 @@
 ﻿lever,p,unmet_total,coverage_rate,worst_unmet_ratio,gini_coverage,chosen,note
-baseline,3,228.447,0.547666,1.0,0.252951,"MCH-3,MCH-7,MCH-8",fixed centers 9-17 cap 50; hubs 9-19 cap 250
-extend_fixed_hours_22,3,108.206,0.785749,1.0,0.112399,"MCH-3,MCH-7,MCH-8",fixed centers open until 22:00
-double_fixed_capacity,3,228.447,0.547666,1.0,0.252951,"MCH-3,MCH-7,MCH-8",fixed center capacity 50 -> 100
-both_hours_and_capacity,3,97.49,0.806967,1.0,0.097518,"MCH-1,MCH-7,MCH-8",A + B
-extend_hub_hours_22,3,228.447,0.547666,1.0,0.252951,"MCH-3,MCH-7,MCH-8",mobile hubs open until 22:00
-buy_4_hubs,3,206.884,0.590362,1.0,0.252774,"MCH-3,MCH-4,MCH-7,MCH-8",fleet size 4
-buy_5_hubs,3,187.893,0.627964,1.0,0.243174,"MCH-3,MCH-4,MCH-6,MCH-7,MCH-8",fleet size 5
-buy_6_hubs,3,168.919,0.665533,1.0,0.225668,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8",fleet size 6
+baseline,3,227.295,0.549911,1.0,0.252951,"MCH-3,MCH-7,MCH-8",fixed centers 9-17 cap 50; hubs 9-19 cap 250
+extend_fixed_hours_22,3,107.801,0.786533,1.0,0.112184,"MCH-3,MCH-7,MCH-8",fixed centers open until 22:00
+double_fixed_capacity,3,227.295,0.549911,1.0,0.252951,"MCH-3,MCH-7,MCH-8",fixed center capacity 50 -> 100
+both_hours_and_capacity,3,97.176,0.807572,1.0,0.097518,"MCH-1,MCH-7,MCH-8",A + B
+extend_hub_hours_22,3,227.295,0.549911,1.0,0.252951,"MCH-3,MCH-7,MCH-8",mobile hubs open until 22:00
+buy_4_hubs,3,206.097,0.591887,1.0,0.252774,"MCH-3,MCH-4,MCH-7,MCH-8",fleet size 4
+buy_5_hubs,3,187.256,0.629196,1.0,0.243174,"MCH-3,MCH-4,MCH-5,MCH-7,MCH-8",fleet size 5
+buy_6_hubs,3,168.631,0.666078,1.0,0.225668,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8",fleet size 6

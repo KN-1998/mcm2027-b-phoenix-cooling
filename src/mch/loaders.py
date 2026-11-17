@@ -39,7 +39,12 @@ def load_instance(data_dir: str | Path | None = None, scenario: str = "base",
              lat=float(r["lat"]), lon=float(r["lon"]),
              capacity=int(float(r["capacity_visits_per_day"])),
              open_hour=float(r["open_hour"]), close_hour=float(r["close_hour"]),
-             source=r.get("source", "ASSUME"))
+             # B7：保留字段级来源，不再退化成单一 "source"
+             source=r.get("source_kind", r.get("source", "ASSUME")),
+             extra={"source_kind": r.get("source_kind"),
+                    "source_location": r.get("source_location"),
+                    "source_capacity": r.get("source_capacity"),
+                    "source_hours": r.get("source_hours")})
         for r in _rows(base / "sites.csv")
     ]
     access: Dict[Tuple[str, str], float] = {

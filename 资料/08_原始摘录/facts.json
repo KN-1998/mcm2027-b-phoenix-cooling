@@ -190,7 +190,7 @@
  },
  {
   "id": "F22",
-  "fact": "Cooling center visitors' normal travel mode: walk 54%, public transit 40%, drive 20%, bike 16% (N=903)",
+  "fact": "Cooling center visitors' normal travel mode (MULTI-SELECT, cannot be summed): walk 54%, public transit 40%, drive 20%, bike 16% (N=903); union bound for walk-or-transit is 54.5%-94.8%",
   "doc": "visitor",
   "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
   "page": 24,

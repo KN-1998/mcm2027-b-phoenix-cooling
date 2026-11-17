@@ -37,7 +37,7 @@ DISTRICTS = [
 ]
 # ---- ACS 2024 1-year 校准（Census Reporter, Phoenix city 16000US0455000）----
 ACS = {"population": 1_673_122, "median_income": 85_246,
-       "pct_65plus": 0.129, "pct_no_vehicle": 0.0304}
+       "pct_65plus": 0.129, "pct_no_vehicle": 0.0742}
 # 1) 人口对齐
 k_pop = ACS["population"] / sum(d[3] for d in DISTRICTS)
 DISTRICTS = [(*d[:3], int(round(d[3]*k_pop)), *d[4:]) for d in DISTRICTS]

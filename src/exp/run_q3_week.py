@@ -89,13 +89,15 @@ def main(argv=None) -> int:
     for d in days:
         for c in sorted(combos, key=lambda c: table[(d, c)])[: a.top_k]:
             cand.add(c)
+    cand.add(static_best)          # A4：保证"不搬"永远可选
     cand = sorted(cand)
     trans_cache: Dict[Tuple[int, Tuple[str, ...], Tuple[str, ...]], float] = {}
 
     def transition_unmet(day, prev, cur) -> float:
         key = (day, prev, cur)
         if key not in trans_cache:
-            moved = tuple(x for x in cur if x not in prev)
+            # A4 修复：首日没有"搬入"，不计停服
+            moved = tuple(x for x in cur if x not in prev) if prev else ()
             trans_cache[key] = day_unmet(inst, cur, day, a.max_minutes, None, moved, ushare)
         return trans_cache[key]
 

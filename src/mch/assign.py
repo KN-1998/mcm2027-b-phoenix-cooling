@@ -228,3 +228,95 @@ def solve_assignment_flow(inst: Instance, sites, day: int = 0,
             by_site[s] += f / scale
     return {"served": served, "by_site": by_site, "status": "optimal",
             "objective": sum(served.values())}
+
+def solve_assignment_periods(inst: Instance, sites, day: int = 0,
+                             max_minutes: float = 30.0,
+                             cap_by_period=None,
+                             dem_by_period=None,
+                             equity_cap: Optional[float] = None,
+                             equity_exempt: Sequence[str] = ()):
+    """跨时段**单个** LP：公平约束施加在**日**未满足率上。
+
+    A2 修复：此前对每个时段各自施加 epsilon，且时段 LP 不可行时返回全零服务，
+    导致"公平解"比"效率解"还差。这里把所有时段放进同一个 LP：
+        sum_{h,j} x_ijh <= D_i            (日需求上限)
+        sum_{i,h} x_ijh <= sum_h C_jh     (站点日容量，按时段细分)
+        sum_{h,j} x_ijh >= (1-eps) D_i    (日公平，仅对非豁免区)
+    """
+    from scipy.optimize import linprog
+
+    caps = cap_by_period or {}
+    dems = dem_by_period or {}
+    periods = sorted(dems.get(next(iter(dems)), {}).keys()) if dems else []
+    districts = [d.id for d in inst.districts if dems.get(d.id)]
+
+    # 变量索引：(i, j, h)
+    index = []
+    for i in districts:
+        for s in sites:
+            if caps.get(s.id, {}).get(periods[0], 0.0) <= 0:
+                continue
+            t = inst.access.get((i, s.id))
+            if t is None or t > max_minutes:
+                continue
+            for h in periods:
+                if dems[i][h] > 0 and caps[s.id][h] > 0:
+                    index.append((i, s.id, h))
+    if not index:
+        return {"served": {}, "served_by_period": {}, "by_site": {},
+                "status": "no_feasible_links", "t": None}
+
+    n = len(index)
+    col = {k: k2 for k2, k in enumerate(index)}
+    c = -np.ones(n)
+    A, b = [], []
+
+    for i in districts:                     # 日需求上限
+        row = np.zeros(n)
+        for k, (ii, _, _) in enumerate(index):
+            if ii == i: row[k] = 1.0
+        A.append(row); b.append(sum(dems[i].values()))
+    for s in sites:                         # 站点日容量
+        row = np.zeros(n)
+        for k, (_, jj, _) in enumerate(index):
+            if jj == s.id: row[k] = 1.0
+        if row.sum() > 0:
+            A.append(row); b.append(sum(caps[s.id].values()))
+    for h in periods:                       # 时段细分约束
+        for i in districts:
+            row = np.zeros(n)
+            for k, (ii, _, hh) in enumerate(index):
+                if ii == i and hh == h: row[k] = 1.0
+            if row.sum() > 0:
+                A.append(row); b.append(dems[i][h])
+        for s in sites:
+            row = np.zeros(n)
+            for k, (_, jj, hh) in enumerate(index):
+                if jj == s.id and hh == h: row[k] = 1.0
+            if row.sum() > 0:
+                A.append(row); b.append(caps[s.id][h])
+    if equity_cap is not None:              # 日公平约束
+        ex = set(equity_exempt)
+        for i in districts:
+            if i in ex: continue
+            row = np.zeros(n)
+            for k, (ii, _, _) in enumerate(index):
+                if ii == i: row[k] = -1.0
+            A.append(row); b.append(-(1.0 - equity_cap) * sum(dems[i].values()))
+
+    res = linprog(c, A_ub=np.array(A), b_ub=np.array(b), bounds=[(0, None)] * n,
+                  method="highs")
+    if not res.success:
+        return {"served": {}, "served_by_period": {}, "by_site": {},
+                "status": "infeasible" if "infeasible" in (res.message or "").lower() else str(res.message),
+                "t": None}
+
+    served = {i: 0.0 for i in districts}
+    served_h = {h: 0.0 for h in periods}
+    by_site = {s.id: 0.0 for s in sites}
+    for k, (i, j, h) in enumerate(index):
+        v = res.x[k]
+        if v > 1e-9:
+            served[i] += v; served_h[h] += v; by_site[j] += v
+    return {"served": served, "served_by_period": served_h, "by_site": by_site,
+            "status": "optimal", "t": None, "objective": -res.fun}

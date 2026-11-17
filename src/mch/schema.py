@@ -51,6 +51,8 @@ class Site:
     open_hour: float = 8.0          # 24h 制
     close_hour: float = 17.0
     source: str = "ASSUME"          # OBS/PLAN/SCENARIO/ASSUME
+    # B7：字段级来源（class/坐标/容量/时段各自独立标注）
+    extra: Dict[str, object] = field(default_factory=dict)
 
 
 @dataclass

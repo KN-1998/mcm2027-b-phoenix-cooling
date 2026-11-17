@@ -1,7 +1,7 @@
 ﻿p,access_mode,scenario,ushare,max_minutes,extend_fixed_to,capacity_override,unmet_total,coverage_rate,worst_unmet_ratio,structural,served_day,served_evening,served_night,chosen
-0,walk_min,base,,30.0,,,306.71,0.3927,1.0,D08,181.61,12.07,4.65,
-2,walk_min,base,,30.0,,,250.12,0.5048,1.0,D08,192.88,57.39,4.65,"MCH-3,MCH-8"
-3,walk_min,base,,30.0,,,228.45,0.5477,1.0,D08,203.85,68.09,4.65,"MCH-3,MCH-7,MCH-8"
-4,walk_min,base,,30.0,,,206.88,0.5904,1.0,D08,203.85,89.66,4.65,"MCH-3,MCH-4,MCH-7,MCH-8"
-6,walk_min,base,,30.0,,,168.92,0.6655,1.0,D08,203.85,127.62,4.65,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
-8,walk_min,base,,30.0,,,154.71,0.6937,1.0,D08,203.85,141.83,4.65,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+0,walk_min,base,,30.0,,,305.51,0.395,1.0,D08,182.15,12.52,4.83,
+2,walk_min,base,,30.0,,,248.55,0.5078,1.0,D08,193.15,58.48,4.83,"MCH-3,MCH-8"
+3,walk_min,base,,30.0,,,227.3,0.5499,1.0,D08,203.9,68.98,4.83,"MCH-3,MCH-7,MCH-8"
+4,walk_min,base,,30.0,,,206.1,0.5919,1.0,D08,203.9,90.18,4.83,"MCH-3,MCH-4,MCH-7,MCH-8"
+6,walk_min,base,,30.0,,,168.63,0.6661,1.0,D08,203.9,127.65,4.83,"MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
+8,walk_min,base,,30.0,,,154.21,0.6946,1.0,D08,203.9,142.06,4.83,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"

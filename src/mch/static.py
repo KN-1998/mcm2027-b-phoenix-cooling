@@ -14,7 +14,8 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
 from .hours import PERIODS, availability_table, capacity_in_period, split_demand, split_demand_mixed
-from .assign import solve_assignment, solve_assignment_flow
+from .assign import (solve_assignment, solve_assignment_flow,
+                     solve_assignment_periods)
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
 from .schema import COOLING, Instance, Site
@@ -79,25 +80,28 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
         # 时段拆分由 capacity_in_period 完成，这里不能再乘 available 份额（否则重复折减）
         no_discount = {x.id: 1.0 for x in inst.sites}
         cap_daily = _effective_capacity(inst, sites, capacity, no_discount, downtime, override)
-        raw = {d.id: 0.0 for d in inst.districts}
-        by_site: Dict[str, float] = {s.id: 0.0 for s in sites}
-        by_period: Dict[str, float] = {}
-        for h in PERIODS:
-            cap_h = {s.id: capacity_in_period(s, cap_daily.get(s.id, 0.0), h) for s in sites}
-            ushare = float(inst.meta.get("unsheltered_share", 0.5))
-            dem_h = {d.id: split_demand_mixed(dem[d.id], ushare)[h] for d in inst.districts}
-            out = solve_assignment(inst, sites, day, max_minutes, cap_h, dem_h,
-                                   equity_cap=equity_cap, equity_exempt=equity_exempt)
-            for d, v in out["served"].items():
-                raw[d] += v
-            for sid, v in out["by_site"].items():
-                by_site[sid] += v
-            by_period[h] = round(sum(out["served"].values()), 3)
-        lp_status = "period-lp"
+        ushare = float(inst.meta.get("unsheltered_share", 0.5))
+        cap_h = {s.id: {h: capacity_in_period(s, cap_daily.get(s.id, 0.0), h) for h in PERIODS}
+                 for s in sites}
+        dem_h = {d.id: split_demand_mixed(dem[d.id], ushare) for d in inst.districts}
+        # A2 修复：跨时段单个 LP，公平约束施加在"日未满足率"上
+        out = solve_assignment_periods(inst, sites, day, max_minutes, cap_h, dem_h,
+                                       equity_cap=equity_cap, equity_exempt=equity_exempt)
+        lp_status = out.get("status", "unknown")
+        if out["status"] != "optimal":
+            # 不可行时退回无公平约束的可行解，并如实标记（不返回零服务）
+            out = solve_assignment_periods(inst, sites, day, max_minutes, cap_h, dem_h)
+            lp_status = f"equity_infeasible_fallback:{lp_status}"
+        raw = {d.id: out["served"].get(d.id, 0.0) for d in inst.districts}
+        by_site = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
+        by_period = {h: round(v, 3) for h, v in out.get("served_by_period", {}).items()}
     else:
         cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
         if solver == "flow" and equity_cap is None:
             out = solve_assignment_flow(inst, sites, day, max_minutes, cap_eff, dem)
+            raw = out["served"]
+            by_site = {s.id: out["by_site"].get(s.id, 0.0) for s in sites}
+            lp_status = out["status"]
         elif solver == "lp":
             out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem,
                                    equity_cap=equity_cap, equity_exempt=equity_exempt)
@@ -120,10 +124,38 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     m["worst_unmet_ratio_nonexempt"] = round(max(ratios), 6) if ratios else 0.0
     if by_period:
         m["served_by_period"] = by_period
+    m["solver_status"] = locals().get("lp_status", "unknown")
     if availability is None:
         m["availability_applied"] = True
     return Solution(chosen=[s.id for s in sites if s.kind == "candidate_mch"],
                     served=served, served_by_site=by_site, metrics=m, day=day)
+
+
+def _greedy_fill(inst: Instance, sites: List[Site], dem: Dict[str, float],
+                 max_minutes: float, cap_eff: Dict[str, float]):
+    """旧版贪心分配，仅作对照（已知次优，勿用于主结果）。"""
+    order = sorted(inst.districts, key=lambda d: -dem.get(d.id, 0.0))
+    remaining = dict(cap_eff)
+    raw = {d.id: 0.0 for d in inst.districts}
+    by_site = {s.id: 0.0 for s in sites}
+    for d in order:
+        need = dem.get(d.id, 0.0)
+        if need <= 0:
+            continue
+        opts = sorted((inst.access[(d.id, s.id)], s.id) for s in sites
+                      if (d.id, s.id) in inst.access
+                      and inst.access[(d.id, s.id)] <= max_minutes
+                      and remaining.get(s.id, 0.0) > 0)
+        left = need
+        for _t, sid in opts:
+            if left <= 0:
+                break
+            take = min(left, remaining[sid])
+            remaining[sid] -= take
+            by_site[sid] += take
+            left -= take
+        raw[d.id] = need - left
+    return raw, by_site, "greedy"
 
 
 def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
@@ -155,9 +187,12 @@ def sweep_p(inst: Instance, pmax: int = 8, **kw) -> List[Dict[str, float]]:
     """Q2 的边际收益曲线：p 从 0 到 pmax。"""
     rows = []
     for p in range(0, pmax + 1):
+        # B2 修复：p=0 与 p>0 走同一条参数通路
         sol = solve_static(inst, p, **kw) if p > 0 else _assign(
             inst, _active_sites(inst, ()), kw.get("day", 0),
-            kw.get("max_minutes", 30.0), kw.get("capacity", 250.0), kw.get("weights"))
+            kw.get("max_minutes", 30.0), kw.get("capacity", 250.0), kw.get("weights"),
+            mode=kw.get("mode", "period"), override=kw.get("override"),
+            solver=kw.get("solver", "lp"))
         row = {"p": p}
         row.update(sol.metrics)
         rows.append(row)

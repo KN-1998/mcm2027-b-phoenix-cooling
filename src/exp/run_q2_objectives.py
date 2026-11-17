@@ -43,8 +43,8 @@ def main(argv=None) -> int:
     for p in range(1, a.pmax + 1):
         base = solve_static(inst, p, max_minutes=a.max_minutes, mode="daily")
         act = _active_sites(inst, base.chosen)
-        cap = _effective_capacity(inst, act, 250.0,
-                                  availability={s.id: 1.0 for s in inst.sites})
+        # A6 修复：评估用的容量口径必须与选址时一致（默认 availability）
+        cap = _effective_capacity(inst, act, 250.0)
         eff = solve_assignment(inst, act, 0, a.max_minutes, cap, dem)
         mm = solve_assignment_maxmin(inst, act, 0, a.max_minutes, cap, dem, exempt=S)
         for name, res in (("efficiency", eff), ("max_min", mm)):
