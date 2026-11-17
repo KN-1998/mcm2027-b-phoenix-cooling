@@ -259,5 +259,23 @@
   "page": 3,
   "quote": "rs have an unstable residence. 32% 68% Unaware Aware 68% of visitors were aware of cooling centers. Word of mouth Social Media TV/Radio 60% 39% 30% Top 3 ways suggested to increase awareness of cooling centers: Walk Bus/light rail Drive myself 54% 40% 20% Common transportation methods to coolin",
   "status": "VERIFIED"
+ },
+ {
+  "id": "F30",
+  "fact": "Phoenix Transit Heat Relief FY21-22: 12,830 visits over 86 days (149/day), service hours 09:00-16:00 only",
+  "doc": "transit_heat_relief",
+  "file": "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
+  "page": 1,
+  "quote": "688 hourly records, DATE/HOUR_OF_DAY/COUNT, 7/7/2021-9/9/2021",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F31",
+  "fact": "Within 09:00-16:00 the hourly shape is nearly flat, peaking at 09:00 and 12:00 (14.7% each) and falling to 10.3% at 16:00",
+  "doc": "transit_heat_relief",
+  "file": "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
+  "page": 1,
+  "quote": "derived by summing COUNT over HOUR_OF_DAY",
+  "status": "DERIVED"
  }
 ]
