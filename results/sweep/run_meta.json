@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-17T18:18:33",
-  "git_sha": "3a4c535",
+  "generated_at": "2026-11-17T18:26:21",
+  "git_sha": "0d17c17",
   "worktree_dirty": true,
   "python": "3.13.9",
   "params": {
-    "p": "0,2,3,4",
+    "p": "0,2,3,4,6,8",
     "access_modes": "walk_min",
     "scenarios": "base",
-    "ushares": "0.3,0.5,0.7",
+    "ushares": "",
     "max_minutes": "30",
     "extend_fixed": "",
     "capacity_override": "",
@@ -15,8 +15,8 @@
   },
   "inputs": {
     "access.csv": "dc990ef1d8658091",
-    "demand.csv": "35475d9dc3154690",
-    "districts.csv": "cbe157664e20bb50",
+    "demand.csv": "3146239a7bedc99d",
+    "districts.csv": "0a508a98f791d2b4",
     "sites.csv": "6576a3e4eb6867bc"
   },
   "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿"

@@ -35,8 +35,32 @@ DISTRICTS = [
  ("D11","Paradise Valley","Paradise Valley",133000,0.17,0.06,105000,0.24,0.46,33.5900,-111.9500),
  ("D12","South Mountain-Ahwatukee","South Mountain; Ahwatukee Foothills",158000,0.13,0.06,88000,0.13,0.60,33.3400,-112.0500),
 ]
-k_pop = 1_650_000 / sum(d[3] for d in DISTRICTS)
+# ---- ACS 2024 1-year 校准（Census Reporter, Phoenix city 16000US0455000）----
+ACS = {"population": 1_673_122, "median_income": 85_246,
+       "pct_65plus": 0.129, "pct_no_vehicle": 0.0304}
+# 1) 人口对齐
+k_pop = ACS["population"] / sum(d[3] for d in DISTRICTS)
 DISTRICTS = [(*d[:3], int(round(d[3]*k_pop)), *d[4:]) for d in DISTRICTS]
+
+def _wmean(idx):
+    tot = sum(d[3] for d in DISTRICTS)
+    return sum(d[idx]*d[3] for d in DISTRICTS) / tot
+
+# 2) 65+ 与无车：按比例缩放，保持区内差异
+def _scale(idx, target):
+    cur = _wmean(idx)
+    return [(*d[:idx], round(d[idx]*target/cur, 4), *d[idx+1:]) for d in DISTRICTS]
+
+# 3) 收入：平移，保持贫富差距
+def _shift_income(target):
+    cur = _wmean(6); delta = target - cur
+    return [(*d[:6], round(d[6]+delta), *d[7:]) for d in DISTRICTS]
+
+DISTRICTS = _scale(4, ACS["pct_65plus"])      # pct_65plus
+DISTRICTS = _scale(5, ACS["pct_no_vehicle"])  # pct_no_vehicle
+DISTRICTS = _shift_income(ACS["median_income"])
+print(f"ACS 校准: 人口 {sum(d[3] for d in DISTRICTS):,} | 收入均值 ${_wmean(6):,.0f} | "
+      f"65+ {_wmean(4):.1%} | 无车 {_wmean(5):.2%}")
 
 EXISTING = [
  ("C01","Central City Cooling Center","cooling","D01",33.4484,-112.0740,50,9,17),

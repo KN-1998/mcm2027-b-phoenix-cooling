@@ -187,5 +187,77 @@
   "page": 2,
   "quote": "e them, and what limitations decision-makers should understand. Important distinctions: A hydration station is not necessarily a cooling center; visitor-visits per day are not simultaneous occupancy or unique persons served; recorded heat-related deaths cannot by themselves e",
   "status": "VERIFIED"
+ },
+ {
+  "id": "F22",
+  "fact": "Cooling center visitors' normal travel mode: walk 54%, public transit 40%, drive 20%, bike 16% (N=903)",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 24,
+  "quote": "r * 15 2% 8 2% 24 6% How do you normally travel to a cooling center? (Check all that apply) (N=903) Walk 492 54% Public transportation (bus or light rail) 364 40% Drive myself 184 20% Bike 145 16% Friend, family member, or neighbor 62 7% Agency pickup (dial-a-ride, shuttl",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F23",
+  "fact": "Barrier 'no transportation' reported by 31% of visitors and 24% of friends/family",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 14,
+  "quote": "ters during August 1–September 15, 2023. Unaware they exist No transportation Issues finding their locations Not open when needed Too crowded Concerns about safety No storage for belongings Do not want to transport belongings Go somewhere e",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F24",
+  "fact": "Barrier 'unaware they exist' reported by 36% of visitors and 30% of friends/family",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 14,
+  "quote": "(referred to as visitors) our 15 participating cooling centers during August 1–September 15, 2023. Unaware they exist No transportation Issues finding their locations Not open when needed Too crowded Concerns about safety No storage for belongings Do not want to transport belo",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F25",
+  "fact": "Barrier 'not open when needed' reported by 14% of visitors",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 14,
+  "quote": "ng August 1–September 15, 2023. Unaware they exist No transportation Issues finding their locations Not open when needed Too crowded Concerns about safety No storage for belongings Do not want to transport belongings Go somewhere else instead Pets may not be allowed Other Concern",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F26",
+  "fact": "60% of respondents identifying with a group report experiencing homelessness (373)",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 21,
+  "quote": "dont know 11 1% Native Hawaiian or Other Pacific Islander Middle Eastern or Northern African People experiencing homelessness/houselessness 373 60% People with disabilities 148 24% Lives alone 126 20% Lesbian, Gay, Bisesecual, Transgender, and Queer (LGBTQIA+) community 82 13% Military Member/Veteran 65 10",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F27",
+  "fact": "2023 evaluation covered 15 participating Maricopa cooling centers (Aug 1 - Sep 15, 2023)",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 3,
+  "quote": "ower BI Desktop The following is reported by respondents that visited (referred to as visitors) our 15 participating cooling centers during August 1–September 15, 2023. 944 total responses 18-34 35-49 50-64 65-74 75+ 26% 32% 26% 12% Over half of visitors are under age 50 years. Unstable Resi",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F28",
+  "fact": "77% of visitors feel their health is at risk due to extreme temperatures",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 3,
+  "quote": "k Bus/light rail Drive myself 54% 40% 20% Common transportation methods to cooling centers: 0% 100% 77% Most (77%) visitors feel their health is at risk due to extreme temperatures. Rent Own 52% 48% Among those with shelter, over half of all visitors rent the pla",
+  "status": "VERIFIED"
+ },
+ {
+  "id": "F29",
+  "fact": "Awareness channels: word of mouth 60%, social media 39%, TV/radio 30%",
+  "doc": "visitor",
+  "file": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+  "page": 3,
+  "quote": "rs have an unstable residence. 32% 68% Unaware Aware 68% of visitors were aware of cooling centers. Word of mouth Social Media TV/Radio 60% 39% 30% Top 3 ways suggested to increase awareness of cooling centers: Walk Bus/light rail Drive myself 54% 40% 20% Common transportation methods to coolin",
+  "status": "VERIFIED"
  }
 ]
