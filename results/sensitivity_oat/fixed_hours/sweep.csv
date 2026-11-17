@@ -1,0 +1,4 @@
+﻿p,access_mode,scenario,ushare,max_minutes,extend_fixed_to,capacity_override,unmet_total,coverage_rate,worst_unmet_ratio,structural,served_day,served_evening,served_night,chosen
+3,walk_min,base,,30.0,17.0,,228.45,0.5477,1.0,D08,203.85,68.09,4.65,"MCH-3,MCH-7,MCH-8"
+3,walk_min,base,,30.0,20.0,,133.15,0.7364,1.0,D08,203.85,163.39,4.65,"MCH-3,MCH-7,MCH-8"
+3,walk_min,base,,30.0,22.0,,108.21,0.7857,1.0,D08,203.85,188.34,4.65,"MCH-3,MCH-7,MCH-8"
