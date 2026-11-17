@@ -14,7 +14,7 @@ from typing import Dict, List, Optional, Sequence, Tuple
 
 from . import demand as demand_mod
 from .hours import PERIODS, availability_table, capacity_in_period, split_demand, split_demand_mixed
-from .assign import solve_assignment
+from .assign import solve_assignment, solve_assignment_flow
 from .equity import equity_summary
 from .metrics import cost_breakdown, totals, unmet_by_district, utilization
 from .schema import COOLING, Instance, Site
@@ -96,7 +96,9 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
         lp_status = "period-lp"
     else:
         cap_eff = _effective_capacity(inst, sites, capacity, availability, downtime, override)
-        if solver == "lp":
+        if solver == "flow" and equity_cap is None:
+            out = solve_assignment_flow(inst, sites, day, max_minutes, cap_eff, dem)
+        elif solver == "lp":
             out = solve_assignment(inst, sites, day, max_minutes, cap_eff, dem,
                                    equity_cap=equity_cap, equity_exempt=equity_exempt)
             raw = out["served"]
@@ -129,7 +131,8 @@ def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
                  exclude_sites: Sequence[str] = (),
                  weights: Optional[Dict[str, float]] = None,
                  override: Optional[float] = None,
-                 mode: str = "period") -> Solution:
+                 mode: str = "period",
+                 solver: str = "lp") -> Solution:
     """返回 p 个候选点的最优组合（按 未满足总量 → Gini → 最差区 字典序）。"""
     cands = [s.id for s in inst.candidate_sites() if s.id not in set(exclude_sites)]
     if p > len(cands):
@@ -138,7 +141,7 @@ def solve_static(inst: Instance, p: int, max_minutes: float = 30.0,
     best: Optional[Solution] = None
     for combo in itertools.combinations(cands, p):
         sol = _assign(inst, _active_sites(inst, combo, exclude_sites), day, max_minutes,
-                      capacity, weights, override=override, mode=mode)
+                      capacity, weights, override=override, mode=mode, solver=solver)
         key = (sol.metrics["unmet_total"], sol.metrics["gini_coverage"],
                sol.metrics["worst_unmet_ratio"])
         if best is None or key < (best.metrics["unmet_total"], best.metrics["gini_coverage"],

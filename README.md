@@ -45,6 +45,26 @@ Phoenix, AZ。2027–2031 年移动降温枢纽（MCH）规划。测试规模：
 - **`资料/00_数据主表.md`** —— 所有数据源、本地文件、访问状态、用途与边界（已下载 4 份官方 PDF）
 - **`handoff/MODELER_HANDOFF_2026-11-16.md`** —— 建模交接：五问映射、四条不可混、模型骨架、给编程手的第一批任务
 
+## 一条命令做参数扫描（改参数就重跑）
+
+```powershell
+python -m src.exp.run_sweep --out results/sweep `
+  --p 0,2,3,4,6,8 --access-modes walk_min,transit_min `
+  --scenarios base --ushares 0.3,0.5,0.7 --max-minutes 30
+```
+
+可扫的轴：`p`、`access-modes`、`scenarios`、`ushares`、`max-minutes`、`extend-fixed`（固定中心延时时刻）、`capacity-override`。
+输出 `results/<out>/sweep.csv`（一行一个配置）+ `run_meta.json`（SHA/数据哈希/参数）。
+
+示例（延时轴，p=3）：
+
+| 固定中心延时到 | 未满足 | 覆盖 |
+|---|---|---|
+| 19:00 | 156.5 | 69.0% |
+| 20:00 | 131.4 | 74.0% |
+| 21:00 | 116.8 | 76.9% |
+| 22:00 | 107.6 | 78.7% |
+
 ## 示例运行结果（SHA `030f2b8`，**非定稿**）
 
 > **这些数字是"当前参数下的示例输出"，不是结论。** 改参数/改数据后必须重跑；
