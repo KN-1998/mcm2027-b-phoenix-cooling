@@ -110,3 +110,24 @@ python -m src.exp.run_pipeline --p 3 --data csv --out results/run_csv
 - **零可达区 = D07 / D08 / D10 / D11**（无任何室内降温设施在 30 分钟步行内；D08 只有饮水站，按题面不能替代）；
 - 网络覆盖 p=0 时 77.6%，p=3 时 82.6%；
 - **边际收益在 p=3 归零**——残余未满足需求是**结构性不可达**，不是枢纽数量不足。这正好回答 Q2"何时再加一个枢纽几乎无益"。
+
+---
+
+## 6. 预留字段（真实资料接入后替换）
+
+> 机制：把文件放进 `data/incoming/`（见该目录 README），程序自动覆盖，无需改代码。
+> 状态：⬜ 待填 / ✅ 已填 / ➖ 不适用
+
+| 目标 | 现在的值 | 将被什么替换 | 状态 |
+|---|---|---|---|
+| 站点坐标 | 区质心（`SYNTHETIC(centroid)`） | `data/incoming/sites_mag.csv` 的 `lat/lon` | ⬜ M1 |
+| 站点类型 | 按 2026 计划推断 | 同上 `kind` | ⬜ M1 |
+| 站点容量 | 固定中心 50 / 枢纽 250（ASSUME） | 同上 `capacity` | ⬜ M4/M9 |
+| 开放时段 | 9–17 / 9–19（ASSUME） | 同上 `open_hour/close_hour` | ⬜ M1 |
+| 区人口/65+/无车/收入 | 城市总量已按 ACS 校准，**区内为假设** | `data/incoming/acs_districts.csv` | ⬜ M7 |
+| 行程时间 | 直线 × 1.35 ÷ 速度 | `data/incoming/access_gtfs.csv` | ⬜ M8 |
+| 观测需求 | 由 2025 峰值周总量标定的潜在需求 | `data/incoming/demand_observed.csv` | ⬜ 选填 |
+| 运营成本 | 仅有芝加哥 Pilsen 量级参照 | **暂无接入位**（`src/mch/metrics.cost_breakdown` 预留） | ⬜ M9 |
+| 热暴露 | 区级指数（估计） | 暂无接入位（需 Shade Study / LST） | ⬜ M6 |
+
+**填完后必须重跑**：`tools/build_data.py` → `pytest` → `run_levers` / `run_sweep` / `run_q4_response`，并在 `run_meta.json` 里核对 `inputs` 哈希已变。

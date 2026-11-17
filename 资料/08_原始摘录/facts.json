@@ -277,5 +277,95 @@
   "page": 1,
   "quote": "derived by summing COUNT over HOUR_OF_DAY",
   "status": "DERIVED"
+ },
+ {
+  "id": "F32",
+  "fact": "MAG 真实站点数（Respite/Cooling/Hydration/Donation 各多少个）",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M1"
+ },
+ {
+  "id": "F33",
+  "fact": "Phoenix 冷却中心日接待容量（官方或实测）",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M1/M4"
+ },
+ {
+  "id": "F34",
+  "fact": "Phoenix 本地冷却中心运营/人员季度成本",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M9"
+ },
+ {
+  "id": "F35",
+  "fact": "移动降温设施（车/拖车）的单位成本与部署人数",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M9"
+ },
+ {
+  "id": "F36",
+  "fact": "村庄级 ACS：人口/收入/65+/无车（12 区对应值）",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M7"
+ },
+ {
+  "id": "F37",
+  "fact": "Valley Metro 到各站点的实际公交时间",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M8"
+ },
+ {
+  "id": "F38",
+  "fact": "Maricopa 逐年热相关死亡数（heat-caused / heat-contributed）",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M10"
+ },
+ {
+  "id": "F39",
+  "fact": "冷却中心访客的**交叉计数**（步行∩公交），用于确定并集比例",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M2 补充"
+ },
+ {
+  "id": "F40",
+  "fact": "Phoenix Shade Study 的街区级树冠/遮荫数据",
+  "doc": "PENDING",
+  "file": "",
+  "page": null,
+  "quote": null,
+  "status": "PENDING",
+  "source_hint": "M6"
  }
 ]

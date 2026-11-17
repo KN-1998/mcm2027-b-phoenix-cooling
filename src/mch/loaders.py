@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 from .schema import Instance, District, Site
+from .incoming import apply_incoming
 
 ACCESS_MODES = ("walk_min", "transit_min", "drive_min")
 
@@ -16,6 +17,10 @@ ACCESS_MODES = ("walk_min", "transit_min", "drive_min")
 def _rows(path: Path) -> List[dict]:
     with path.open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
+
+
+def _incoming_dir(base: Path) -> Path:
+    return base.parent / "incoming"
 
 
 def load_instance(data_dir: str | Path | None = None, scenario: str = "base",
@@ -65,10 +70,11 @@ def load_instance(data_dir: str | Path | None = None, scenario: str = "base",
             unsheltered_share = 0.5 if unsheltered_share is None else unsheltered_share
     total = sum(demand.values()) or 1.0
     ushare = round(by_segment.get("unsheltered", 0.0) / total, 4) if by_segment else 0.5
-    return Instance(districts=districts, sites=sites, access=access, demand=demand,
+    inst = Instance(districts=districts, sites=sites, access=access, demand=demand,
                     horizon_days=horizon_days,
                     meta={"loaded_from": str(base), "scenario": scenario,
                           "access_mode": access_mode,
                           "unsheltered_share": ushare,
                           "demand_by_segment": {k: round(v, 2) for k, v in by_segment.items()},
                           "note": "12 districts / 8 candidates are CONTEST fictions"})
+    return apply_incoming(inst, _incoming_dir(base))

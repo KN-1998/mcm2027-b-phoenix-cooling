@@ -1,0 +1,7 @@
+﻿down_site,shock_mult,from,to,depart_h,travel_h,arrive_h,open_h
+MCH-3,1.0,MCH-3,MCH-4,0.0,1.02,1.02,1.52
+MCH-3,1.8,MCH-3,MCH-4,0.0,1.02,1.02,1.52
+MCH-3,3.0,MCH-3,MCH-4,0.0,1.02,1.02,1.52
+MCH-7,1.0,MCH-7,MCH-4,0.0,1.09,1.09,1.59
+MCH-7,1.8,MCH-7,MCH-4,0.0,1.09,1.09,1.59
+MCH-7,3.0,MCH-7,MCH-4,0.0,1.09,1.09,1.59
