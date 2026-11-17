@@ -23,31 +23,43 @@ def move_time_hours(inst: Instance, a: str, b: str) -> float:
 
 def solve_dynamic(inst: Instance, p: int, max_minutes: float = 30.0,
                   capacity: float = 250.0, downtime_frac: float = 0.5,
-                  move_penalty: float = 0.0) -> List[Solution]:
-    """逐日贪心：当天的组合在"未满足 + 迁移惩罚"上最优。"""
+                  move_penalty: float = 0.0, use_move_time: bool = True) -> List[Solution]:
+    """逐日贪心对照版（不是 DP；DP 见 src/exp/run_q3_week.py）。
+
+    修正点：
+    1. 停服**只作用于当天新搬入的枢纽**（不再对所有选中枢纽一起折减）；
+    2. 通过 `_assign(..., downtime={sid: factor})` 显式下传，
+       不再依赖会被 s.capacity 覆盖的 capacity 参数；
+    3. `move_time_hours` 真正参与：停服因子 = 1 - 迁移小时 / 营业小时。
+    """
     prev: Sequence[str] = ()
     out: List[Solution] = []
+    open_hours = 10.0
+
     for day in range(inst.horizon_days):
-        best = None
         base = solve_static(inst, p, max_minutes=max_minutes, capacity=capacity, day=day)
-        candidates = [base]
-        # 复用昨天的方案（迁移成本为 0）
+        cands = [base]
         if prev:
-            reuse = _assign(inst, _active_sites(inst, tuple(prev)), day, max_minutes, capacity)
-            candidates.append(reuse)
-        for sol in candidates:
-            changed = len(set(sol.chosen) ^ set(prev))
-            penalty = move_penalty * changed
-            if changed:
-                # 停服：迁移当天的有效容量下降
-                sol = _assign(inst, _active_sites(inst, tuple(sol.chosen)), day,
-                              max_minutes, capacity * (1.0 - downtime_frac))
-                sol.metrics["downtime_applied"] = downtime_frac
-            sol.metrics["move_penalty"] = round(penalty, 3)
-            sol.metrics["n_changed"] = changed
-            score = sol.metrics["unmet_total"] + penalty
+            cands.append(_assign(inst, _active_sites(inst, tuple(prev)), day,
+                                 max_minutes, capacity))
+        best = None
+        for sol in cands:
+            changed = [x for x in sol.chosen if x not in prev] if day > 0 else []
+            downtime = {}
+            for sid in changed:
+                if use_move_time and prev:
+                    hours = min(move_time_hours(inst, prev[0], sid), open_hours)
+                    downtime[sid] = max(0.0, 1.0 - hours / open_hours)
+                elif changed:
+                    downtime[sid] = 1.0 - downtime_frac
+            scored = _assign(inst, _active_sites(inst, tuple(sol.chosen)), day,
+                             max_minutes, capacity, downtime=downtime) if downtime else sol
+            scored.metrics["moved_in"] = list(changed)
+            scored.metrics["downtime_factor"] = {k: round(v, 3) for k, v in downtime.items()}
+            scored.metrics["move_penalty"] = round(move_penalty * len(changed), 3)
+            score = scored.metrics["unmet_total"] + scored.metrics["move_penalty"]
             if best is None or score < best[0]:
-                best = (score, sol)
+                best = (score, scored)
         assert best is not None
         out.append(best[1])
         prev = best[1].chosen

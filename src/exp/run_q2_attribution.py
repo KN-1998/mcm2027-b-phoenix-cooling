@@ -23,6 +23,10 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
 
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+
+    from ..mch import runmeta
+
+    runmeta.write(out, vars(a))
     inst = load_instance(scenario=a.scenario, access_mode=a.access_mode)
     ths = [float(x) for x in a.thresholds.split(",")]
 

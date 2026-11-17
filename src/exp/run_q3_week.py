@@ -55,6 +55,10 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
 
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+
+    from ..mch import runmeta
+
+    runmeta.write(out, vars(a))
     inst = load_instance()
     ushare = float(inst.meta.get("unsheltered_share", 0.5))
     if a.shock_districts and a.shock_days:

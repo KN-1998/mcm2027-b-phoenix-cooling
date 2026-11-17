@@ -26,6 +26,10 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
 
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+
+    from ..mch import runmeta
+
+    runmeta.write(out, vars(a))
     inst = load_instance(scenario=a.scenario, access_mode=a.access_mode)
     S = structural_set(inst, a.max_minutes)
     dem = {d.id: inst.demand[(d.id, 0)] for d in inst.districts}

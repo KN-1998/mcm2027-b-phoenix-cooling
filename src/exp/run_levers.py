@@ -30,6 +30,8 @@ def main(argv=None) -> int:
     ap.add_argument("--out", required=True)
     a = ap.parse_args(argv)
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+    from ..mch import runmeta
+    runmeta.write(out, vars(a))
 
     rows = []
     def add(name, sol, note=""):

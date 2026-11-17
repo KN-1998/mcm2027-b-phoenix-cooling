@@ -76,7 +76,9 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
 
     if mode == "period":
         # P1-2：按时段显式分配。容量 = 日容量 x 该时段营业重叠小时 / 营业时长。
-        cap_daily = _effective_capacity(inst, sites, capacity, None, downtime, override)
+        # 时段拆分由 capacity_in_period 完成，这里不能再乘 available 份额（否则重复折减）
+        no_discount = {x.id: 1.0 for x in inst.sites}
+        cap_daily = _effective_capacity(inst, sites, capacity, no_discount, downtime, override)
         raw = {d.id: 0.0 for d in inst.districts}
         by_site: Dict[str, float] = {s.id: 0.0 for s in sites}
         by_period: Dict[str, float] = {}
@@ -191,10 +193,9 @@ def solve_static_fair(inst: Instance, p: int, equity_cap: float = 0.3,
     infeasible = []
     for combo in itertools.combinations(cands, p):
         act = _active_sites(inst, combo, exclude_sites)
-        # 物理上不可达的区（任何激活站点都在阈值外）豁免 ε 约束，单独报告
-        exempt = [d.id for d in inst.districts
-                  if all((inst.access.get((d.id, s.id)) is None
-                          or inst.access[(d.id, s.id)] > max_minutes) for s in act)]
+        # 结构性豁免：在"全部固定站点 + 全部候选点"上一次算出，所有组合共用
+        from .diagnostics import structural_set as _structural
+        exempt = _structural(inst, max_minutes)
         sol = _assign(inst, act, day, max_minutes,
                       capacity, weights, override=override, equity_cap=equity_cap,
                       equity_exempt=exempt, mode=mode)

@@ -40,7 +40,7 @@
     {
       "p": 3,
       "strategy": "efficiency",
-      "served_total": 437.2,
+      "served_total": 437.22,
       "worst_excl_structural": 1.0,
       "t_star": null,
       "chosen": "MCH-3,MCH-4,MCH-8"
@@ -48,7 +48,7 @@
     {
       "p": 3,
       "strategy": "max_min",
-      "served_total": 437.2,
+      "served_total": 437.22,
       "worst_excl_structural": 1.0,
       "t_star": 1.0,
       "chosen": "MCH-3,MCH-4,MCH-8"
@@ -57,7 +57,7 @@
       "p": 4,
       "strategy": "efficiency",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
+      "worst_excl_structural": 0.2562,
       "t_star": null,
       "chosen": "MCH-3,MCH-4,MCH-7,MCH-8"
     },
@@ -65,15 +65,15 @@
       "p": 4,
       "strategy": "max_min",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
-      "t_star": 0.256,
+      "worst_excl_structural": 0.2562,
+      "t_star": 0.2562,
       "chosen": "MCH-3,MCH-4,MCH-7,MCH-8"
     },
     {
       "p": 5,
       "strategy": "efficiency",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
+      "worst_excl_structural": 0.2562,
       "t_star": null,
       "chosen": "MCH-3,MCH-4,MCH-5,MCH-7,MCH-8"
     },
@@ -81,15 +81,15 @@
       "p": 5,
       "strategy": "max_min",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
-      "t_star": 0.256,
+      "worst_excl_structural": 0.2562,
+      "t_star": 0.2562,
       "chosen": "MCH-3,MCH-4,MCH-5,MCH-7,MCH-8"
     },
     {
       "p": 6,
       "strategy": "efficiency",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
+      "worst_excl_structural": 0.2562,
       "t_star": null,
       "chosen": "MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     },
@@ -97,15 +97,15 @@
       "p": 6,
       "strategy": "max_min",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
-      "t_star": 0.256,
+      "worst_excl_structural": 0.2562,
+      "t_star": 0.2562,
       "chosen": "MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     },
     {
       "p": 7,
       "strategy": "efficiency",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
+      "worst_excl_structural": 0.2562,
       "t_star": null,
       "chosen": "MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     },
@@ -113,15 +113,15 @@
       "p": 7,
       "strategy": "max_min",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
-      "t_star": 0.256,
+      "worst_excl_structural": 0.2562,
+      "t_star": 0.2562,
       "chosen": "MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     },
     {
       "p": 8,
       "strategy": "efficiency",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
+      "worst_excl_structural": 0.2562,
       "t_star": null,
       "chosen": "MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     },
@@ -129,8 +129,8 @@
       "p": 8,
       "strategy": "max_min",
       "served_total": 462.5,
-      "worst_excl_structural": 0.256,
-      "t_star": 0.256,
+      "worst_excl_structural": 0.2562,
+      "t_star": 0.2562,
       "chosen": "MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
     }
   ]

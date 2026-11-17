@@ -33,15 +33,21 @@
     "note": "hydration stations do not count as cooling capacity"
   },
   "q1_baseline_no_mch": {
-    "demand_total": 431.6,
-    "served_total": 206.3,
-    "unmet_total": 225.3,
-    "coverage_rate": 0.477989,
+    "demand_total": 505.04,
+    "served_total": 199.893,
+    "unmet_total": 305.147,
+    "coverage_rate": 0.395796,
     "coverage_min": 0.0,
-    "coverage_mean": 0.473072,
-    "gini_coverage": 0.387087,
+    "coverage_mean": 0.366667,
+    "gini_coverage": 0.337121,
     "worst_unmet_ratio": 1.0,
-    "utilization_mean": 0.3819,
+    "utilization_mean": 0.3792,
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "served_by_period": {
+      "day": 182.206,
+      "evening": 12.765,
+      "night": 4.922
+    },
     "availability_applied": true
   },
   "q2_static": {
@@ -50,15 +56,21 @@
       "MCH-7",
       "MCH-8"
     ],
-    "demand_total": 431.6,
-    "served_total": 301.1,
-    "unmet_total": 130.5,
-    "coverage_rate": 0.697637,
+    "demand_total": 505.04,
+    "served_total": 278.531,
+    "unmet_total": 226.509,
+    "coverage_rate": 0.551503,
     "coverage_min": 0.0,
-    "coverage_mean": 0.697631,
-    "gini_coverage": 0.225628,
+    "coverage_mean": 0.54125,
+    "gini_coverage": 0.252951,
     "worst_unmet_ratio": 1.0,
-    "utilization_mean": 0.2953,
+    "utilization_mean": 0.3159,
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "served_by_period": {
+      "day": 203.881,
+      "evening": 69.728,
+      "night": 4.922
+    },
     "availability_applied": true
   },
   "q3_dynamic": [
@@ -69,120 +81,160 @@
         "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 431.6,
-      "served_total": 301.1,
-      "unmet_total": 130.5,
-      "coverage_rate": 0.697637,
+      "demand_total": 505.04,
+      "served_total": 278.531,
+      "unmet_total": 226.509,
+      "coverage_rate": 0.551503,
       "coverage_min": 0.0,
-      "coverage_mean": 0.697631,
-      "gini_coverage": 0.225628,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2953,
+      "utilization_mean": 0.3159,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 203.881,
+        "evening": 69.728,
+        "night": 4.922
+      },
       "availability_applied": true,
-      "downtime_applied": 0.5,
-      "move_penalty": 0.0,
-      "n_changed": 3
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 1,
       "chosen": [
         "MCH-3",
-        "MCH-4",
+        "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 453.4,
-      "served_total": 308.6,
-      "unmet_total": 144.8,
-      "coverage_rate": 0.680635,
+      "demand_total": 530.24,
+      "served_total": 292.43,
+      "unmet_total": 237.81,
+      "coverage_rate": 0.551504,
       "coverage_min": 0.0,
-      "coverage_mean": 0.638774,
-      "gini_coverage": 0.297046,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2703,
+      "utilization_mean": 0.3316,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 214.056,
+        "evening": 73.206,
+        "night": 5.168
+      },
       "availability_applied": true,
-      "downtime_applied": 0.5,
-      "move_penalty": 0.0,
-      "n_changed": 2
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 2,
       "chosen": [
         "MCH-3",
-        "MCH-4",
+        "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 509.3,
-      "served_total": 330.0,
-      "unmet_total": 179.3,
-      "coverage_rate": 0.647948,
+      "demand_total": 595.9,
+      "served_total": 328.636,
+      "unmet_total": 267.264,
+      "coverage_rate": 0.551495,
       "coverage_min": 0.0,
-      "coverage_mean": 0.605296,
-      "gini_coverage": 0.319395,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.278,
+      "utilization_mean": 0.3727,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 240.559,
+        "evening": 82.27,
+        "night": 5.808
+      },
       "availability_applied": true,
-      "move_penalty": 0.0,
-      "n_changed": 0
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 3,
       "chosen": [
         "MCH-3",
-        "MCH-4",
+        "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 561.3,
-      "served_total": 350.0,
-      "unmet_total": 211.3,
-      "coverage_rate": 0.623552,
+      "demand_total": 656.48,
+      "served_total": 362.046,
+      "unmet_total": 294.434,
+      "coverage_rate": 0.551496,
       "coverage_min": 0.0,
-      "coverage_mean": 0.580187,
-      "gini_coverage": 0.337825,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2852,
+      "utilization_mean": 0.4105,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 265.013,
+        "evening": 90.636,
+        "night": 6.397
+      },
       "availability_applied": true,
-      "move_penalty": 0.0,
-      "n_changed": 0
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 4,
       "chosen": [
         "MCH-3",
-        "MCH-4",
+        "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 526.9,
-      "served_total": 336.8,
-      "unmet_total": 190.1,
-      "coverage_rate": 0.63921,
+      "demand_total": 616.1,
+      "served_total": 339.772,
+      "unmet_total": 276.328,
+      "coverage_rate": 0.551488,
       "coverage_min": 0.0,
-      "coverage_mean": 0.596335,
-      "gini_coverage": 0.325825,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2805,
+      "utilization_mean": 0.3853,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 248.71,
+        "evening": 85.058,
+        "night": 6.003
+      },
       "availability_applied": true,
-      "move_penalty": 0.0,
-      "n_changed": 0
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 5,
       "chosen": [
         "MCH-3",
-        "MCH-4",
+        "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 466.2,
-      "served_total": 313.5,
-      "unmet_total": 152.7,
-      "coverage_rate": 0.672458,
+      "demand_total": 545.44,
+      "served_total": 300.814,
+      "unmet_total": 244.626,
+      "coverage_rate": 0.551506,
       "coverage_min": 0.0,
-      "coverage_mean": 0.630486,
-      "gini_coverage": 0.30236,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2721,
+      "utilization_mean": 0.3411,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 220.192,
+        "evening": 75.306,
+        "night": 5.315
+      },
       "availability_applied": true,
-      "move_penalty": 0.0,
-      "n_changed": 0
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     },
     {
       "day": 6,
@@ -191,44 +243,62 @@
         "MCH-7",
         "MCH-8"
       ],
-      "demand_total": 410.2,
-      "served_total": 294.0,
-      "unmet_total": 116.2,
-      "coverage_rate": 0.716724,
+      "demand_total": 479.76,
+      "served_total": 264.582,
+      "unmet_total": 215.178,
+      "coverage_rate": 0.551488,
       "coverage_min": 0.0,
-      "coverage_mean": 0.716844,
-      "gini_coverage": 0.21492,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2926,
+      "utilization_mean": 0.3,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 193.672,
+        "evening": 66.234,
+        "night": 4.675
+      },
       "availability_applied": true,
-      "downtime_applied": 0.5,
-      "move_penalty": 0.0,
-      "n_changed": 2
+      "moved_in": [],
+      "downtime_factor": {},
+      "move_penalty": 0.0
     }
   ],
   "q4_disruption": {
     "baseline": {
-      "demand_total": 431.6,
-      "served_total": 301.1,
-      "unmet_total": 130.5,
-      "coverage_rate": 0.697637,
+      "demand_total": 505.04,
+      "served_total": 278.531,
+      "unmet_total": 226.509,
+      "coverage_rate": 0.551503,
       "coverage_min": 0.0,
-      "coverage_mean": 0.697631,
-      "gini_coverage": 0.225628,
+      "coverage_mean": 0.54125,
+      "gini_coverage": 0.252951,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.2953,
+      "utilization_mean": 0.3159,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 203.881,
+        "evening": 69.728,
+        "night": 4.922
+      },
       "availability_applied": true
     },
     "after_disruption": {
-      "demand_total": 536.56,
-      "served_total": 356.26,
-      "unmet_total": 180.3,
-      "coverage_rate": 0.66397,
+      "demand_total": 505.04,
+      "served_total": 260.844,
+      "unmet_total": 244.196,
+      "coverage_rate": 0.516482,
       "coverage_min": 0.0,
-      "coverage_mean": 0.671098,
-      "gini_coverage": 0.243269,
+      "coverage_mean": 0.493333,
+      "gini_coverage": 0.223536,
       "worst_unmet_ratio": 1.0,
-      "utilization_mean": 0.3856,
+      "utilization_mean": 0.3299,
+      "worst_unmet_ratio_nonexempt": 1.0,
+      "served_by_period": {
+        "day": 203.881,
+        "evening": 56.963,
+        "night": 0.0
+      },
       "availability_applied": true
     },
     "shock_districts": [
@@ -236,53 +306,53 @@
       "D03"
     ],
     "down_site": "R01",
-    "delta_unmet": 49.8,
+    "delta_unmet": 17.687,
     "response_hours": 24.0
   },
   "q5_plan": [
     {
       "year": 2027,
       "hubs": 2,
-      "unmet_total": 152.1,
-      "coverage_rate": 0.64759,
+      "unmet_total": 247.744,
+      "coverage_rate": 0.509456,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 21.6,
+      "next_hub_gain": 21.24,
       "add_hub": true
     },
     {
       "year": 2028,
       "hubs": 3,
-      "unmet_total": 130.5,
-      "coverage_rate": 0.697637,
+      "unmet_total": 226.509,
+      "coverage_rate": 0.551503,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 20.8,
+      "next_hub_gain": 21.04,
       "add_hub": true
     },
     {
       "year": 2029,
       "hubs": 4,
-      "unmet_total": 109.7,
-      "coverage_rate": 0.745829,
+      "unmet_total": 205.469,
+      "coverage_rate": 0.593164,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 16.2,
+      "next_hub_gain": 18.81,
       "add_hub": true
     },
     {
       "year": 2030,
       "hubs": 5,
-      "unmet_total": 93.5,
-      "coverage_rate": 0.783364,
+      "unmet_total": 186.661,
+      "coverage_rate": 0.630404,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 15.7,
+      "next_hub_gain": 18.57,
       "add_hub": true
     },
     {
       "year": 2031,
       "hubs": 6,
-      "unmet_total": 77.8,
-      "coverage_rate": 0.819741,
+      "unmet_total": 168.094,
+      "coverage_rate": 0.667168,
       "worst_unmet_ratio": 1.0,
-      "next_hub_gain": 7.4,
+      "next_hub_gain": 14.51,
       "add_hub": true
     }
   ]

@@ -20,6 +20,10 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
 
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
+
+    from ..mch import runmeta
+
+    runmeta.write(out, vars(a))
     rows = []
     for us in [float(x) for x in a.shares.split(",")]:
         inst = load_instance()

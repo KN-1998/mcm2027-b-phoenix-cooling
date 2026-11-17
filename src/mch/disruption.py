@@ -6,6 +6,8 @@
 """
 from __future__ import annotations
 
+import copy
+
 from typing import Dict, List, Sequence
 
 from .schema import Instance
@@ -18,12 +20,14 @@ def pick_low_income(inst: Instance, k: int = 2) -> List[str]:
 
 
 def apply_shock(inst: Instance, districts: Sequence[str], mult: float = 1.8) -> Instance:
-    """就地放大指定区需求；返回同一实例便于链式调用。"""
-    for (did, day), v in list(inst.demand.items()):
+    """返回**新实例**（不修改输入）。重复调用同一输入结果一致。"""
+    out = copy.deepcopy(inst)
+    for (did, day), v in list(out.demand.items()):
         if did in districts:
-            inst.demand[(did, day)] = v * mult
-    inst.meta["shock"] = {"districts": list(districts), "multiplier": mult}
-    return inst
+            out.demand[(did, day)] = v * mult
+    out.meta = dict(out.meta)
+    out.meta["shock"] = {"districts": list(districts), "multiplier": mult}
+    return out
 
 
 def run_disruption(inst: Instance, p: int, max_minutes: float = 30.0,
