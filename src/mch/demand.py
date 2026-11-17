@@ -27,9 +27,11 @@ def vulnerability(d: District) -> float:
     return round((d.pct_65plus / 0.30 + d.pct_no_vehicle / 0.35 + income_term) / 3.0, 4)
 
 
-def district_day_demand(d: District, day: int) -> float:
+def district_day_demand(d: District, day: int, rate_base: float | None = None) -> float:
+    """B4 修复：rate_base 参数真正参与计算（此前被硬编码 RATE_BASE 覆盖）。"""
     v = vulnerability(d)
-    return RATE_BASE * d.population * (0.4 + 0.6 * d.heat_exposure_index) * (0.6 + 0.8 * v) * DAY_FACTOR[day % 7]
+    rate = RATE_BASE if rate_base is None else float(rate_base)
+    return rate * d.population * (0.4 + 0.6 * d.heat_exposure_index) * (0.6 + 0.8 * v) * DAY_FACTOR[day % 7]
 
 
 def fill_demand(inst: Instance, rate_base: float = RATE_BASE) -> Instance:

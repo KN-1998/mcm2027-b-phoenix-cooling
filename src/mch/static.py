@@ -116,8 +116,14 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     srv = {d.id: served.get((d.id, day), 0.0) for d in inst.districts}
     m = totals(dem, srv)
     m.update(equity_summary(dem, srv))
-    util = utilization(by_site, {s.id: (s.capacity or capacity) for s in sites})
+    # B3：分母必须是"实际可用于分配的容量"（已含 override / downtime / 时段拆分）
+    if mode == "period":
+        cap_for_util = {sid: sum(cap_h[sid].values()) for sid in cap_h}
+    else:
+        cap_for_util = dict(cap_eff)
+    util = utilization(by_site, cap_for_util)
     m["utilization_mean"] = round(sum(util.values()) / len(util), 4) if util else 0.0
+    m["utilization_by_site"] = {k: round(v, 4) for k, v in util.items()}
     ex = set(equity_exempt or ())
     ratios = [(dem[d.id] - srv.get(d.id, 0.0)) / dem[d.id]
               for d in inst.districts if dem[d.id] > 0 and d.id not in ex]

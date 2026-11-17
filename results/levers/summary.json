@@ -2,6 +2,7 @@
   {
     "lever": "baseline",
     "p": 3,
+    "fleet": 3,
     "unmet_total": 227.295,
     "coverage_rate": 0.549911,
     "worst_unmet_ratio": 1.0,
@@ -12,6 +13,7 @@
   {
     "lever": "extend_fixed_hours_22",
     "p": 3,
+    "fleet": 3,
     "unmet_total": 107.801,
     "coverage_rate": 0.786533,
     "worst_unmet_ratio": 1.0,
@@ -22,6 +24,7 @@
   {
     "lever": "double_fixed_capacity",
     "p": 3,
+    "fleet": 3,
     "unmet_total": 227.295,
     "coverage_rate": 0.549911,
     "worst_unmet_ratio": 1.0,
@@ -32,6 +35,7 @@
   {
     "lever": "both_hours_and_capacity",
     "p": 3,
+    "fleet": 3,
     "unmet_total": 97.176,
     "coverage_rate": 0.807572,
     "worst_unmet_ratio": 1.0,
@@ -42,6 +46,7 @@
   {
     "lever": "extend_hub_hours_22",
     "p": 3,
+    "fleet": 3,
     "unmet_total": 227.295,
     "coverage_rate": 0.549911,
     "worst_unmet_ratio": 1.0,
@@ -52,6 +57,7 @@
   {
     "lever": "buy_4_hubs",
     "p": 3,
+    "fleet": 4,
     "unmet_total": 206.097,
     "coverage_rate": 0.591887,
     "worst_unmet_ratio": 1.0,
@@ -62,6 +68,7 @@
   {
     "lever": "buy_5_hubs",
     "p": 3,
+    "fleet": 5,
     "unmet_total": 187.256,
     "coverage_rate": 0.629196,
     "worst_unmet_ratio": 1.0,
@@ -72,6 +79,7 @@
   {
     "lever": "buy_6_hubs",
     "p": 3,
+    "fleet": 6,
     "unmet_total": 168.631,
     "coverage_rate": 0.666078,
     "worst_unmet_ratio": 1.0,

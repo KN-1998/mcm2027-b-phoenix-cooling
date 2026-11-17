@@ -1,75 +1,62 @@
 {
   "p": 3,
-  "days": 7,
-  "combos": 56,
   "top_k": 3,
+  "shock": {
+    "districts": "",
+    "days": "",
+    "mult": 1.0
+  },
   "static_best": [
     "MCH-3",
     "MCH-7",
     "MCH-8"
   ],
-  "static_total_unmet": 1762.14,
-  "oracle_total_unmet": 1762.14,
-  "dynamic_dp_total_unmet": 1762.14,
-  "relocation_gain_vs_static": 0.0,
-  "oracle_headroom": 0.0,
-  "reloc_downtime_factor": 0.8,
-  "per_day": [
+  "static_total_unmet": 1768.43,
+  "dynamic_total_unmet": 1768.43,
+  "relocation_gain_7day": 0.0,
+  "relocation_gain_per_day": 0.0,
+  "schedule": [
     {
       "day": 0,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "MCH-3,MCH-7,MCH-8",
-      "unmet": 226.51,
-      "unmet_static": 226.51,
-      "unmet_oracle": 226.51
+      "moves": "-",
+      "unmet": 227.295
     },
     {
       "day": 1,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 237.81,
-      "unmet_static": 237.81,
-      "unmet_oracle": 237.81
+      "moves": "-",
+      "unmet": 238.694
     },
     {
       "day": 2,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 267.26,
-      "unmet_static": 267.26,
-      "unmet_oracle": 267.26
+      "moves": "-",
+      "unmet": 268.236
     },
     {
       "day": 3,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 294.43,
-      "unmet_static": 294.43,
-      "unmet_oracle": 294.43
+      "moves": "-",
+      "unmet": 295.494
     },
     {
       "day": 4,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 276.33,
-      "unmet_static": 276.33,
-      "unmet_oracle": 276.33
+      "moves": "-",
+      "unmet": 277.298
     },
     {
       "day": 5,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 244.62,
-      "unmet_static": 244.62,
-      "unmet_oracle": 244.62
+      "moves": "-",
+      "unmet": 245.48
     },
     {
       "day": 6,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 215.18,
-      "unmet_static": 215.18,
-      "unmet_oracle": 215.18
+      "moves": "-",
+      "unmet": 215.931
     }
   ]
 }

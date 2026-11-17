@@ -1,75 +1,62 @@
 {
   "p": 3,
-  "days": 7,
-  "combos": 56,
   "top_k": 3,
+  "shock": {
+    "districts": "D12",
+    "days": "3",
+    "mult": 1.5
+  },
   "static_best": [
     "MCH-3",
     "MCH-4",
     "MCH-8"
   ],
-  "static_total_unmet": 1768.92,
-  "oracle_total_unmet": 1767.67,
-  "dynamic_dp_total_unmet": 1767.89,
-  "relocation_gain_vs_static": 1.03,
-  "oracle_headroom": 1.25,
-  "reloc_downtime_factor": 0.8,
-  "per_day": [
+  "static_total_unmet": 1774.11,
+  "dynamic_total_unmet": 1773.85,
+  "relocation_gain_7day": 0.26,
+  "relocation_gain_per_day": 0.04,
+  "schedule": [
     {
       "day": 0,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "MCH-3,MCH-7,MCH-8",
-      "unmet": 226.51,
-      "unmet_static": 226.7,
-      "unmet_oracle": 226.51
+      "moves": "-",
+      "unmet": 227.295
     },
     {
       "day": 1,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 237.81,
-      "unmet_static": 238.01,
-      "unmet_oracle": 237.81
+      "moves": "-",
+      "unmet": 238.694
     },
     {
       "day": 2,
       "combo": "MCH-3,MCH-4,MCH-8",
-      "moved_in": "MCH-4",
-      "unmet": 267.49,
-      "unmet_static": 267.49,
-      "unmet_oracle": 267.26
+      "moves": "MCH-7->MCH-4(1.09h)",
+      "unmet": 268.286
     },
     {
       "day": 3,
       "combo": "MCH-3,MCH-4,MCH-8",
-      "moved_in": "-",
-      "unmet": 299.96,
-      "unmet_static": 299.96,
-      "unmet_oracle": 299.96
+      "moves": "-",
+      "unmet": 300.869
     },
     {
       "day": 4,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "MCH-7",
-      "unmet": 276.33,
-      "unmet_static": 276.56,
-      "unmet_oracle": 276.33
+      "moves": "MCH-4->MCH-7(1.09h)",
+      "unmet": 277.298
     },
     {
       "day": 5,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 244.62,
-      "unmet_static": 244.83,
-      "unmet_oracle": 244.62
+      "moves": "-",
+      "unmet": 245.48
     },
     {
       "day": 6,
       "combo": "MCH-3,MCH-7,MCH-8",
-      "moved_in": "-",
-      "unmet": 215.18,
-      "unmet_static": 215.37,
-      "unmet_oracle": 215.18
+      "moves": "-",
+      "unmet": 215.931
     }
   ]
 }

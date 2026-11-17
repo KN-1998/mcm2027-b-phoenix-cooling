@@ -34,8 +34,8 @@ def main(argv=None) -> int:
     runmeta.write(out, vars(a))
 
     rows = []
-    def add(name, sol, note=""):
-        rows.append({"lever": name, "p": a.p,
+    def add(name, sol, note="", fleet=None):
+        rows.append({"lever": name, "p": a.p, "fleet": fleet if fleet is not None else a.p,
                      "unmet_total": sol.metrics["unmet_total"],
                      "coverage_rate": sol.metrics["coverage_rate"],
                      "worst_unmet_ratio": sol.metrics["worst_unmet_ratio"],
@@ -49,7 +49,7 @@ def main(argv=None) -> int:
     add("both_hours_and_capacity", solve_variant(a.p, extend_fixed_to=22.0, cap_fixed=100), "A + B")
     add("extend_hub_hours_22", solve_variant(a.p, mch_close=22.0), "mobile hubs open until 22:00")
     for p in (a.p + 1, a.p + 2, a.p + 3):
-        add(f"buy_{p}_hubs", solve_variant(p), f"fleet size {p}")
+        add(f"buy_{p}_hubs", solve_variant(p), f"fleet size {p}", fleet=p)
 
     with (out / "levers.csv").open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T16:00:43",
-  "git_sha": "030f2b8",
+  "generated_at": "2026-11-17T23:36:17",
+  "git_sha": "1a267e7",
   "worktree_dirty": true,
   "python": "3.13.9",
   "params": {
@@ -14,8 +14,8 @@
   },
   "inputs": {
     "access.csv": "dc990ef1d8658091",
-    "demand.csv": "35475d9dc3154690",
-    "districts.csv": "cbe157664e20bb50",
+    "demand.csv": "b6041bb74bbfbae3",
+    "districts.csv": "0ad48911cabcdabb",
     "sites.csv": "6576a3e4eb6867bc"
   },
   "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿"

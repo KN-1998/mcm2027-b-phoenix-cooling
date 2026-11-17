@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-17T23:36:27",
+  "git_sha": "1a267e7",
+  "worktree_dirty": true,
+  "python": "3.13.9",
+  "params": {
+    "p": 3,
+    "max_minutes": 30.0,
+    "top_k": 3,
+    "shock_districts": "D01",
+    "shock_days": "3",
+    "shock_mult": 1.5,
+    "out": "results/q3_sweep/D01_1.5"
+  },
+  "inputs": {
+    "access.csv": "dc990ef1d8658091",
+    "demand.csv": "b6041bb74bbfbae3",
+    "districts.csv": "0ad48911cabcdabb",
+    "sites.csv": "6576a3e4eb6867bc"
+  },
+  "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿"
+}
