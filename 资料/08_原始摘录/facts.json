@@ -262,11 +262,11 @@
  },
  {
   "id": "F30",
-  "fact": "Phoenix Transit Heat Relief FY21-22: 12,830 visits over 86 days (149/day), service hours 09:00-16:00 only",
+  "fact": "Phoenix Transit Heat Relief FY21-22: 12,830 visits over 86 days (149/day), service window 09:00-16:00 only; dates 2021-07-07 to 2021-09-30",
   "doc": "transit_heat_relief",
   "file": "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
   "page": 1,
-  "quote": "688 hourly records, DATE/HOUR_OF_DAY/COUNT, 7/7/2021-9/9/2021",
+  "quote": "688 rows = 86 days x 8 hours; no duplicate or missing date-hour",
   "status": "VERIFIED"
  },
  {

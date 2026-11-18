@@ -12,7 +12,6 @@ import json
 from pathlib import Path
 
 from ..mch import demand as demand_mod
-from ..mch import dynamic as dyn
 from ..mch.disruption import run_disruption
 from ..mch.policy import five_year_plan
 from ..mch.static import solve_static, sweep_p
