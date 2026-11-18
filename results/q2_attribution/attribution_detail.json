@@ -5,41 +5,41 @@
     "rows": [
       {
         "district_id": "D01",
-        "demand": 30.76,
-        "served": 30.76,
+        "demand": 30.16,
+        "served": 30.16,
         "unmet": 0.0,
         "feasible_sites": 2,
         "reason": "served"
       },
       {
         "district_id": "D02",
-        "demand": 34.96,
-        "served": 14.86,
-        "unmet": 20.1,
+        "demand": 34.74,
+        "served": 14.76,
+        "unmet": 19.98,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D03",
-        "demand": 67.22,
-        "served": 28.57,
-        "unmet": 38.65,
+        "demand": 67.2,
+        "served": 28.56,
+        "unmet": 38.64,
         "feasible_sites": 1,
         "reason": "capacity"
       },
       {
         "district_id": "D04",
-        "demand": 45.32,
-        "served": 19.26,
-        "unmet": 26.06,
+        "demand": 45.4,
+        "served": 19.3,
+        "unmet": 26.1,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D05",
-        "demand": 44.74,
-        "served": 19.01,
-        "unmet": 25.73,
+        "demand": 44.88,
+        "served": 19.07,
+        "unmet": 25.81,
         "feasible_sites": 1,
         "reason": "selection"
       },
@@ -53,58 +53,58 @@
       },
       {
         "district_id": "D07",
-        "demand": 25.28,
-        "served": 21.24,
-        "unmet": 4.04,
+        "demand": 25.3,
+        "served": 21.25,
+        "unmet": 4.05,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D08",
-        "demand": 25.32,
+        "demand": 25.24,
         "served": 0.0,
-        "unmet": 25.32,
+        "unmet": 25.24,
         "feasible_sites": 0,
         "reason": "no_access"
       },
       {
         "district_id": "D09",
-        "demand": 86.26,
-        "served": 72.46,
-        "unmet": 13.8,
+        "demand": 84.88,
+        "served": 71.3,
+        "unmet": 13.58,
         "feasible_sites": 2,
         "reason": "selection"
       },
       {
         "district_id": "D10",
-        "demand": 25.72,
-        "served": 21.6,
-        "unmet": 4.12,
+        "demand": 25.88,
+        "served": 21.74,
+        "unmet": 4.14,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D11",
-        "demand": 36.72,
-        "served": 15.61,
-        "unmet": 21.11,
+        "demand": 38.2,
+        "served": 16.24,
+        "unmet": 21.96,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D12",
-        "demand": 50.7,
-        "served": 21.55,
-        "unmet": 29.15,
+        "demand": 51.08,
+        "served": 21.71,
+        "unmet": 29.37,
         "feasible_sites": 1,
         "reason": "capacity"
       }
     ],
     "by_reason": {
       "served": 0.0,
-      "selection": 133.38,
-      "capacity": 67.8,
-      "no_access": 25.32
+      "selection": 134.04,
+      "capacity": 68.01,
+      "no_access": 25.24
     }
   },
   "30.0": {
@@ -113,41 +113,41 @@
     "rows": [
       {
         "district_id": "D01",
-        "demand": 30.76,
-        "served": 30.76,
+        "demand": 30.16,
+        "served": 30.16,
         "unmet": 0.0,
         "feasible_sites": 2,
         "reason": "served"
       },
       {
         "district_id": "D02",
-        "demand": 34.96,
-        "served": 14.86,
-        "unmet": 20.1,
+        "demand": 34.74,
+        "served": 14.76,
+        "unmet": 19.98,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D03",
-        "demand": 67.22,
-        "served": 28.57,
-        "unmet": 38.65,
+        "demand": 67.2,
+        "served": 28.56,
+        "unmet": 38.64,
         "feasible_sites": 1,
         "reason": "capacity"
       },
       {
         "district_id": "D04",
-        "demand": 45.32,
-        "served": 19.26,
-        "unmet": 26.06,
+        "demand": 45.4,
+        "served": 19.3,
+        "unmet": 26.1,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D05",
-        "demand": 44.74,
-        "served": 19.01,
-        "unmet": 25.73,
+        "demand": 44.88,
+        "served": 19.07,
+        "unmet": 25.81,
         "feasible_sites": 1,
         "reason": "selection"
       },
@@ -161,58 +161,58 @@
       },
       {
         "district_id": "D07",
-        "demand": 25.28,
-        "served": 21.24,
-        "unmet": 4.04,
+        "demand": 25.3,
+        "served": 21.25,
+        "unmet": 4.05,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D08",
-        "demand": 25.32,
+        "demand": 25.24,
         "served": 0.0,
-        "unmet": 25.32,
+        "unmet": 25.24,
         "feasible_sites": 0,
         "reason": "no_access"
       },
       {
         "district_id": "D09",
-        "demand": 86.26,
-        "served": 72.46,
-        "unmet": 13.8,
+        "demand": 84.88,
+        "served": 71.3,
+        "unmet": 13.58,
         "feasible_sites": 2,
         "reason": "selection"
       },
       {
         "district_id": "D10",
-        "demand": 25.72,
-        "served": 21.6,
-        "unmet": 4.12,
+        "demand": 25.88,
+        "served": 21.74,
+        "unmet": 4.14,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D11",
-        "demand": 36.72,
-        "served": 15.61,
-        "unmet": 21.11,
+        "demand": 38.2,
+        "served": 16.24,
+        "unmet": 21.96,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D12",
-        "demand": 50.7,
-        "served": 21.55,
-        "unmet": 29.15,
+        "demand": 51.08,
+        "served": 21.71,
+        "unmet": 29.37,
         "feasible_sites": 1,
         "reason": "capacity"
       }
     ],
     "by_reason": {
       "served": 0.0,
-      "selection": 133.38,
-      "capacity": 67.8,
-      "no_access": 25.32
+      "selection": 134.04,
+      "capacity": 68.01,
+      "no_access": 25.24
     }
   },
   "45.0": {
@@ -221,41 +221,41 @@
     "rows": [
       {
         "district_id": "D01",
-        "demand": 30.76,
-        "served": 30.76,
+        "demand": 30.16,
+        "served": 30.16,
         "unmet": 0.0,
         "feasible_sites": 2,
         "reason": "served"
       },
       {
         "district_id": "D02",
-        "demand": 34.96,
-        "served": 14.86,
-        "unmet": 20.1,
+        "demand": 34.74,
+        "served": 14.76,
+        "unmet": 19.98,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D03",
-        "demand": 67.22,
-        "served": 28.57,
-        "unmet": 38.65,
+        "demand": 67.2,
+        "served": 28.56,
+        "unmet": 38.64,
         "feasible_sites": 1,
         "reason": "capacity"
       },
       {
         "district_id": "D04",
-        "demand": 45.32,
-        "served": 19.26,
-        "unmet": 26.06,
+        "demand": 45.4,
+        "served": 19.3,
+        "unmet": 26.1,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D05",
-        "demand": 44.74,
-        "served": 19.01,
-        "unmet": 25.73,
+        "demand": 44.88,
+        "served": 19.07,
+        "unmet": 25.81,
         "feasible_sites": 1,
         "reason": "selection"
       },
@@ -269,58 +269,58 @@
       },
       {
         "district_id": "D07",
-        "demand": 25.28,
-        "served": 21.24,
-        "unmet": 4.04,
+        "demand": 25.3,
+        "served": 21.25,
+        "unmet": 4.05,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D08",
-        "demand": 25.32,
+        "demand": 25.24,
         "served": 0.0,
-        "unmet": 25.32,
+        "unmet": 25.24,
         "feasible_sites": 0,
         "reason": "no_access"
       },
       {
         "district_id": "D09",
-        "demand": 86.26,
-        "served": 72.46,
-        "unmet": 13.8,
+        "demand": 84.88,
+        "served": 71.3,
+        "unmet": 13.58,
         "feasible_sites": 2,
         "reason": "selection"
       },
       {
         "district_id": "D10",
-        "demand": 25.72,
-        "served": 21.6,
-        "unmet": 4.12,
+        "demand": 25.88,
+        "served": 21.74,
+        "unmet": 4.14,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D11",
-        "demand": 36.72,
-        "served": 15.61,
-        "unmet": 21.11,
+        "demand": 38.2,
+        "served": 16.24,
+        "unmet": 21.96,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D12",
-        "demand": 50.7,
-        "served": 21.55,
-        "unmet": 29.15,
+        "demand": 51.08,
+        "served": 21.71,
+        "unmet": 29.37,
         "feasible_sites": 1,
         "reason": "capacity"
       }
     ],
     "by_reason": {
       "served": 0.0,
-      "selection": 133.38,
-      "capacity": 67.8,
-      "no_access": 25.32
+      "selection": 134.04,
+      "capacity": 68.01,
+      "no_access": 25.24
     }
   },
   "60.0": {
@@ -329,41 +329,41 @@
     "rows": [
       {
         "district_id": "D01",
-        "demand": 30.76,
-        "served": 28.49,
-        "unmet": 2.27,
+        "demand": 30.16,
+        "served": 28.23,
+        "unmet": 1.93,
         "feasible_sites": 3,
         "reason": "selection"
       },
       {
         "district_id": "D02",
-        "demand": 34.96,
-        "served": 34.96,
+        "demand": 34.74,
+        "served": 34.74,
         "unmet": 0.0,
         "feasible_sites": 3,
         "reason": "served"
       },
       {
         "district_id": "D03",
-        "demand": 67.22,
-        "served": 28.57,
-        "unmet": 38.65,
+        "demand": 67.2,
+        "served": 28.56,
+        "unmet": 38.64,
         "feasible_sites": 1,
         "reason": "capacity"
       },
       {
         "district_id": "D04",
-        "demand": 45.32,
-        "served": 19.26,
-        "unmet": 26.06,
+        "demand": 45.4,
+        "served": 19.3,
+        "unmet": 26.1,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D05",
-        "demand": 44.74,
-        "served": 19.01,
-        "unmet": 25.73,
+        "demand": 44.88,
+        "served": 19.07,
+        "unmet": 25.81,
         "feasible_sites": 1,
         "reason": "selection"
       },
@@ -377,58 +377,58 @@
       },
       {
         "district_id": "D07",
-        "demand": 25.28,
-        "served": 21.24,
-        "unmet": 4.04,
+        "demand": 25.3,
+        "served": 21.25,
+        "unmet": 4.05,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D08",
-        "demand": 25.32,
+        "demand": 25.24,
         "served": 0.0,
-        "unmet": 25.32,
+        "unmet": 25.24,
         "feasible_sites": 0,
         "reason": "no_access"
       },
       {
         "district_id": "D09",
-        "demand": 86.26,
-        "served": 72.46,
-        "unmet": 13.8,
+        "demand": 84.88,
+        "served": 71.3,
+        "unmet": 13.58,
         "feasible_sites": 2,
         "reason": "selection"
       },
       {
         "district_id": "D10",
-        "demand": 25.72,
-        "served": 21.6,
-        "unmet": 4.12,
+        "demand": 25.88,
+        "served": 21.74,
+        "unmet": 4.14,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D11",
-        "demand": 36.72,
-        "served": 15.61,
-        "unmet": 21.11,
+        "demand": 38.2,
+        "served": 16.24,
+        "unmet": 21.96,
         "feasible_sites": 1,
         "reason": "selection"
       },
       {
         "district_id": "D12",
-        "demand": 50.7,
-        "served": 21.55,
-        "unmet": 29.15,
+        "demand": 51.08,
+        "served": 21.71,
+        "unmet": 29.37,
         "feasible_sites": 1,
         "reason": "capacity"
       }
     ],
     "by_reason": {
-      "selection": 115.55,
+      "selection": 115.99,
       "served": 0.0,
-      "capacity": 67.8,
-      "no_access": 25.32
+      "capacity": 68.01,
+      "no_access": 25.24
     }
   }
 }

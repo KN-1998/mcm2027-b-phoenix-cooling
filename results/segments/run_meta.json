@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T21:37:36",
-  "git_sha": "c0903e4",
+  "generated_at": "2026-11-18T16:43:20",
+  "git_sha": "d13e099",
   "worktree_dirty": true,
   "python": "3.13.9",
   "params": {
@@ -12,7 +12,11 @@
     "access.csv": "dc990ef1d8658091",
     "demand.csv": "b6041bb74bbfbae3",
     "districts.csv": "0ad48911cabcdabb",
-    "sites.csv": "6576a3e4eb6867bc"
+    "sites.csv": "6576a3e4eb6867bc",
+    "incoming/access_gtfs.csv": "6389533cdf0f5367",
+    "incoming/acs_districts.csv": "925f834bcfbc8bd6",
+    "incoming/README.md": "939c03c95ed9aa21",
+    "incoming/sites_mag.csv": "6479ea0864da206e"
   },
   "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿"
 }

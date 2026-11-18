@@ -40,7 +40,10 @@ def input_hashes() -> Dict[str, str]:
 
 def meta(params: Dict[str, Any]) -> Dict[str, Any]:
     sha = _git("rev-parse", "--short", "HEAD")
-    dirty = bool(_git("status", "--porcelain"))
+    # 只关心**代码/数据**是否脏；写 results/ 本身不算（否则每次运行都标脏）
+    lines = [l for l in _git("status", "--porcelain").splitlines()
+             if l.strip() and not l[3:].startswith("results/")]
+    dirty = bool(lines)
     return {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "git_sha": sha or "unknown",
