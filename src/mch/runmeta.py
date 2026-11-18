@@ -29,6 +29,12 @@ def input_hashes() -> Dict[str, str]:
     out = {}
     for f in sorted(DATA.glob("*.csv")):
         out[f.name] = hashlib.sha256(f.read_bytes()).hexdigest()[:16]
+    # R6：真实资料也必须进摘要，否则不同输入会共用同一组哈希
+    inc = DATA.parent / "incoming"
+    if inc.exists():
+        for f in sorted(inc.glob("*")):
+            if f.is_file() and f.stat().st_size > 0:
+                out[f"incoming/{f.name}"] = hashlib.sha256(f.read_bytes()).hexdigest()[:16]
     return out
 
 

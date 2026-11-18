@@ -78,3 +78,11 @@
 - [建模手] 用 GTFS 重算公交时间 -> `data/incoming/access_gtfs.csv`（264 行），钩子自动生效（transit 模式 264 行覆盖）。
 - [建模手] 公交口径 p 扫描：p=3 后完全饱和（283.0/44.0%）；6 个区 30 分钟公交可达站点为 0（D06/D07/D08/D10/D11/D12）。
 - [资料] facts F32-F38 已用真实内容替换预留位；状态 VERIFIED 31 / DERIVED 4 / REPORTED 3 / PENDING 2。
+- [建模手] 第三轮审查 R1-R6：
+  - R1 车队守恒：区分 down_site（位置不可用，车队仍 p）与 down_vehicle（车辆故障，车队 p-1），故障车禁止作搬迁来源；**撤销"故障后 +21.2"结论**。
+  - R2 时刻表：去掉重复 setup（move_time_hours 已含），按各自开业时刻折算停服（含排队），超预算方案不计入可执行收益。
+  - R3 Q3 实际行程入优化：停服按每台车实际迁移小时，不再统一 2h；pipeline 改用 solve_week_dp。
+  - R4 时段过滤：去掉"按首时段容量筛整站"，纯傍晚站 41.5、纯夜间站 16.0 恢复服务。
+  - R5 pipeline KeyError 修复，退出码 0。
+  - R6 incoming：median_income_usd 正确映射、新站不再静默丢弃、未知列/未匹配行入日志、run_meta 纳入 incoming 哈希。
+- [测试] 33 passed（新增晚间/夜间站、车队守恒、超预算不计收益）。

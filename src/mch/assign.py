@@ -254,13 +254,13 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
     index = []
     for i in districts:
         for s in sites:
-            if caps.get(s.id, {}).get(periods[0], 0.0) <= 0:
-                continue
             t = inst.access.get((i, s.id))
             if t is None or t > max_minutes:
                 continue
+            # R4 修复：只按"(i,j,h) 该时段是否有需求与容量"筛选，
+            # 不再用第一个时段的容量把整站过滤掉（否则纯晚间/夜间站点被整体排除）
             for h in periods:
-                if dems[i][h] > 0 and caps[s.id][h] > 0:
+                if dems[i][h] > 0 and caps.get(s.id, {}).get(h, 0.0) > 0:
                     index.append((i, s.id, h))
     if not index:
         return {"served": {}, "served_by_period": {}, "by_site": {},

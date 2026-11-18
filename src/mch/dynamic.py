@@ -101,14 +101,16 @@ def solve_week_dp(inst: Instance, p: int, max_minutes: float = 30.0,
     days = list(range(inst.horizon_days))
     combos = list(itertools.combinations([s.id for s in inst.candidate_sites()], p))
 
-    def day_unmet(combo, day, downtime_sites=()) -> float:
+    def day_unmet(combo, day, downtime_factor=None) -> float:
+        """R3 修复：停服按**实际行程小时**折算，而不是固定 2 小时。"""
         act = _active_sites(inst, combo)
         total = sum(inst.demand.get((d.id, day), 0.0) for d in inst.districts)
         cap_h, dem_h = {}, {}
+        downt = downtime_factor or {}
         for s in act:
             base = float(s.capacity or capacity)
-            if s.id in downtime_sites:
-                base *= max(0.0, 1.0 - min(open_hours, 2.0) / open_hours)
+            if s.id in downt:
+                base *= max(0.0, 1.0 - min(open_hours, downt[s.id]) / open_hours)
             cap_h[s.id] = {h: capacity_in_period(s, base, h) for h in PERIODS}
         for d in inst.districts:
             dem_h[d.id] = split_demand_mixed(inst.demand.get((d.id, day), 0.0), ushare)
@@ -129,8 +131,13 @@ def solve_week_dp(inst: Instance, p: int, max_minutes: float = 30.0,
     def trans(day, prev, cur):
         key = (day, prev, cur)
         if key not in cache:
-            moved = tuple(x for x in cur if x not in prev) if prev else ()
-            cache[key] = day_unmet(cur, day, moved)
+            # R3：用实际迁移小时（最近配对）算每台车的停服时长
+            factor = {}
+            if prev:
+                for m in plan_moves(inst, prev, cur):
+                    if m["to"]:
+                        factor[m["to"]] = float(m["hours"])
+            cache[key] = day_unmet(cur, day, factor)
         return cache[key]
 
     INF = float("inf")

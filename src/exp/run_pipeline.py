@@ -18,6 +18,7 @@ from ..mch.policy import five_year_plan
 from ..mch.static import solve_static, sweep_p
 from ..mch.diagnostics import access_gap
 from ..mch.loaders import load_instance
+from ..mch.dynamic import solve_week_dp
 from ..mch.synthetic import build_instance
 from ..mch.validate import run_all
 
@@ -60,7 +61,9 @@ def main(argv=None) -> int:
     q2 = solve_static(inst, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
     curve = sweep_p(inst, pmax=8, max_minutes=a.max_minutes, capacity=a.capacity)
     # Q3 动态
-    days = dyn.solve_dynamic(inst, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
+    # R3：与独立 runner 共用唯一实现（DP），避免两套动态口径
+    week = solve_week_dp(inst, a.p, max_minutes=a.max_minutes, capacity=a.capacity, top_k=1)
+    days = week["schedule"]
     # Q4 中断
     inst_for_q4 = copy.deepcopy(inst)   # 情景隔离：Q4 的冲击不得污染 Q5
     q4 = run_disruption(inst_for_q4, a.p, max_minutes=a.max_minutes, capacity=a.capacity)
@@ -75,7 +78,9 @@ def main(argv=None) -> int:
         "q1_access_gap": access_gap(inst, a.max_minutes),
         "q1_baseline_no_mch": q1.metrics,
         "q2_static": {"chosen": q2.chosen, **q2.metrics},
-        "q3_dynamic": [{"day": s.day, "chosen": s.chosen, **s.metrics} for s in days],
+        "q3_dynamic": days,
+        "q3_static_total_unmet": week["static_total_unmet"],
+        "q3_dynamic_total_unmet": week["dynamic_total_unmet"],
         "q4_disruption": q4,
         "q5_plan": q5,
     }
@@ -92,11 +97,14 @@ def main(argv=None) -> int:
     print("=== Q2 p=%d ===" % a.p)
     print("选址:", q2.chosen)
     print(json.dumps(q2.metrics, ensure_ascii=False))
-    print("=== Q3 动态（逐日选址）===")
+    print("=== Q3 动态（统一 DP）===")
+    print(f"  静态七日 {week['static_total_unmet']:.1f} -> 动态 {week['dynamic_total_unmet']:.1f}")
     for s in days:
-        print(f"  day{s.day}: {s.chosen}  unmet={s.metrics['unmet_total']:.0f}  cov={s.metrics['coverage_rate']:.3f}")
+        print(f"  day{s['day']}: {s['combo']}  unmet={s['unmet']:.0f}  moves={s['moves']}")
     print("=== Q4 中断 ===")
-    print(json.dumps({k: q4[k] for k in ("shock_districts","down_site","delta_unmet","response_hours")}, ensure_ascii=False))
+    print(json.dumps({k: q4.get(k) for k in ("shock_districts","down_site","delta_unmet",
+                                               "response_hours_assumed","response_hours_modeled")},
+                     ensure_ascii=False))
     print("=== Q5 五年 ===")
     for row in q5:
         print("  ", row)
