@@ -1,0 +1,17 @@
+{
+  "walk_min": {
+    "n_fixed_cooling": 24,
+    "districts_with_cooling_within_20": 0,
+    "districts_with_cooling_within_30": 1,
+    "districts_with_cooling_within_45": 5,
+    "districts_with_cooling_within_60": 8
+  },
+  "transit_min": {
+    "n_fixed_cooling": 24,
+    "districts_with_cooling_within_20": 1,
+    "districts_with_cooling_within_30": 8,
+    "districts_with_cooling_within_45": 11,
+    "districts_with_cooling_within_60": 11
+  },
+  "note": "districts are synthetic planning areas; access measured from district centroid, which exaggerates distance vs. within-district population"
+}
