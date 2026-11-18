@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-18",
+  "fixed_repository_sha": "d9257baa953478298b1348f403576ae2872f1971",
+  "source_index_rows": 24,
+  "source_index_paths_and_hashes_valid": true,
+  "source_publishers_and_years_present": true,
+  "duplicate_raw_files_already_in_repository": [],
+  "category_manifests_hashes_valid": true,
+  "pdf_magic_and_pages_valid": true,
+  "pdfs": [
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_General_2025-08-21_Staffing.pdf",
+      "pages": 27
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2025-03-25_Full.pdf",
+      "pages": 52
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2026-02-24_Full.pdf",
+      "pages": 74
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Trial_Budget_2026-27.pdf",
+      "pages": 50
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf",
+      "pages": 21
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2023_Heat_Related_Deaths_Final.pdf",
+      "pages": 24
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2024_Heat_Related_Deaths_Final.pdf",
+      "pages": 24
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2025_Heat_Related_Deaths_Final_April2026.pdf",
+      "pages": 26
+    }
+  ],
+  "gtfs_archive_crc_valid": true,
+  "gtfs_archives": [
+    "资料/02_降温网络/GTFS/mdb-147-202606160033/mdb-147-202606160033.zip",
+    "资料/02_降温网络/GTFS/mdb-147-202607280152/mdb-147-202607280152.zip"
+  ],
+  "scope": "Incremental source-material delivery. Collection does not turn missing capacity or MCH unit cost into observations.",
+  "repository_path_base": "Repository root; MAG manifest file paths are relative to its own directory.",
+  "repository_layout_verified": true,
+  "raw_source_bytes_preserved": true,
+  "uploaded_local_paths_removed": true
+}

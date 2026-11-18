@@ -1,0 +1,117 @@
+{
+  "verified_date": "2026-11-18 Asia/Shanghai",
+  "publisher": "Arizona Department of Health Services Vital Statistics",
+  "source_url": "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/extreme-weather/pubs/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf?v=20260709",
+  "title": "Heat-Related Illness (HRI) Emergency Department and Inpatient Admissions 2021-2025, Arizona Residents and Non-Residents",
+  "pdf_pages": 21,
+  "geography": "County of residence = Maricopa; Arizona residents only; not Phoenix city and not hospital county",
+  "count_unit": "ED visits and inpatient admissions; unique-patient deduplication is not documented on the cited methods page.",
+  "values": [
+    {
+      "year": 2023,
+      "emergency_department_visits": 2492,
+      "inpatient_admissions": 807,
+      "ed_crude_rate_per_100000": 53.4,
+      "inpatient_crude_rate_per_100000": 17.3
+    },
+    {
+      "year": 2024,
+      "emergency_department_visits": 3031,
+      "inpatient_admissions": 885,
+      "ed_crude_rate_per_100000": 64.1,
+      "inpatient_crude_rate_per_100000": 18.7
+    },
+    {
+      "year": 2025,
+      "emergency_department_visits": 2272,
+      "inpatient_admissions": 705,
+      "ed_crude_rate_per_100000": 47.5,
+      "inpatient_crude_rate_per_100000": 14.7
+    }
+  ],
+  "all_year_maricopa_counts": {
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "ed": [
+      1528,
+      1845,
+      2492,
+      3031,
+      2272
+    ],
+    "inpatient": [
+      536,
+      719,
+      807,
+      885,
+      705
+    ]
+  },
+  "table_locations": {
+    "ed_counts": {
+      "pdf_page_1based": 8,
+      "printed_page": 8,
+      "table": 12
+    },
+    "ed_crude_rates": {
+      "pdf_page_1based": 9,
+      "printed_page": 9,
+      "table": 13
+    },
+    "inpatient_counts": {
+      "pdf_page_1based": 10,
+      "printed_page": 10,
+      "table": 14
+    },
+    "inpatient_crude_rates": {
+      "pdf_page_1based": 11,
+      "printed_page": 11,
+      "table": 15
+    },
+    "caused_vs_related_definition": {
+      "pdf_page_1based": 3,
+      "printed_page": 3,
+      "table": 2,
+      "note": "heat-caused means primary diagnosis exposure to excessive natural heat; heat-related means heat in any diagnosis and includes heat-caused"
+    },
+    "methods": {
+      "pdf_page_1based": 21,
+      "printed_page": 21,
+      "table": 30
+    }
+  },
+  "methods": [
+    "CSTE-adapted criteria; search entire Hospital Discharge Data record for ICD-10 codes T67.0-T67.9 and X30.",
+    "ICD codes for manmade heat sources are excluded.",
+    "New more flexible wildcard database search introduced beginning in 2025 and applied retrospectively to previous data years in reports published 2025 onward; same inclusion/exclusion codes. Older reports annual totals may differ.",
+    "Crude rates per 100,000 population, denominators official ADHS Vital Statistics population estimates.",
+    "County tables headed County Residence / Arizona Residents Only."
+  ],
+  "limitations": [
+    "No individual de-duplication method, ED-to-inpatient overlap exclusion, or explicit counts mutual exclusivity is stated on methods page; do not add counts and label unique persons.",
+    "County-level observations cannot identify city/district exposure or demonstrate cooling facility causal effects.",
+    "Use a single release for time comparisons, not mix old report annual totals."
+  ],
+  "verification": {
+    "parsed_pdf_text": true,
+    "web_screenshot_requested_pages_1based": [
+      8,
+      10,
+      21
+    ],
+    "visual_check_completed": true,
+    "visual_check_reason": "Root rendered and inspected the downloaded original with Poppler.",
+    "downloaded_by_this_agent": false,
+    "locally_rendered_and_visually_checked_pages_1based": [
+      8,
+      10,
+      21
+    ],
+    "downloaded_by_root": true
+  }
+}

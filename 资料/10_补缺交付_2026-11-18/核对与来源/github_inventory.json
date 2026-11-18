@@ -1,0 +1,856 @@
+{
+  "checked_on": "2026-11-18 Asia/Shanghai",
+  "repository": "https://github.com/KN-1998/mcm2027-b-phoenix-cooling",
+  "branch": "main",
+  "commit_sha": "d9257baa953478298b1348f403576ae2872f1971",
+  "tree_truncated": false,
+  "scope": "只核对资料缺口，不修改仓库、不合并本轮资料入模型。",
+  "raw_shape": {
+    "acs_repository": {
+      "root_keys": [
+        "data",
+        "geography",
+        "release",
+        "tables"
+      ],
+      "bytes": 39270,
+      "zcta_count": 11,
+      "tables": [
+        "B01001",
+        "B01003",
+        "B19013",
+        "B08201"
+      ],
+      "estimate_and_moe": true
+    },
+    "incoming_csv": "三份sites_mag/acs_districts/access_gtfs仅有表头，无数据行"
+  },
+  "acs_comparison": {
+    "repo_release": {
+      "id": "acs2024_5yr",
+      "name": "ACS 2024 5-year",
+      "years": "2020-2024"
+    },
+    "local_release": {
+      "id": "acs2024_5yr",
+      "name": "ACS 2024 5-year",
+      "years": "2020-2024"
+    },
+    "repo_zctas": [
+      "86000US85003",
+      "86000US85006",
+      "86000US85008",
+      "86000US85009",
+      "86000US85015",
+      "86000US85017",
+      "86000US85031",
+      "86000US85033",
+      "86000US85035",
+      "86000US85041",
+      "86000US85051"
+    ],
+    "local_zctas": [
+      "86000US85003",
+      "86000US85006",
+      "86000US85008",
+      "86000US85009",
+      "86000US85015",
+      "86000US85017",
+      "86000US85020",
+      "86000US85021",
+      "86000US85023",
+      "86000US85027",
+      "86000US85031",
+      "86000US85033",
+      "86000US85035",
+      "86000US85041",
+      "86000US85051"
+    ],
+    "new_zctas": [
+      "86000US85020",
+      "86000US85021",
+      "86000US85023",
+      "86000US85027"
+    ],
+    "common_tables": [
+      "B01001",
+      "B01003",
+      "B19013"
+    ],
+    "repo_only_tables": [
+      "B08201"
+    ],
+    "local_only_tables": [
+      "B25044"
+    ],
+    "compared_cells": 1122,
+    "differing_cells": [],
+    "no_vehicle_cross_table": [
+      {
+        "geoid": "86000US85003",
+        "repo_households": 5889.0,
+        "local_households": 5889.0,
+        "repo_no_vehicle": 1150.0,
+        "local_no_vehicle": 1150.0
+      },
+      {
+        "geoid": "86000US85006",
+        "repo_households": 9087.0,
+        "local_households": 9087.0,
+        "repo_no_vehicle": 1147.0,
+        "local_no_vehicle": 1147.0
+      },
+      {
+        "geoid": "86000US85008",
+        "repo_households": 22679.0,
+        "local_households": 22679.0,
+        "repo_no_vehicle": 1654.0,
+        "local_no_vehicle": 1654.0
+      },
+      {
+        "geoid": "86000US85009",
+        "repo_households": 13984.0,
+        "local_households": 13984.0,
+        "repo_no_vehicle": 1359.0,
+        "local_no_vehicle": 1359.0
+      },
+      {
+        "geoid": "86000US85015",
+        "repo_households": 16237.0,
+        "local_households": 16237.0,
+        "repo_no_vehicle": 2527.0,
+        "local_no_vehicle": 2527.0
+      },
+      {
+        "geoid": "86000US85017",
+        "repo_households": 11838.0,
+        "local_households": 11838.0,
+        "repo_no_vehicle": 1662.0,
+        "local_no_vehicle": 1662.0
+      },
+      {
+        "geoid": "86000US85031",
+        "repo_households": 8132.0,
+        "local_households": 8132.0,
+        "repo_no_vehicle": 337.0,
+        "local_no_vehicle": 337.0
+      },
+      {
+        "geoid": "86000US85033",
+        "repo_households": 16008.0,
+        "local_households": 16008.0,
+        "repo_no_vehicle": 1225.0,
+        "local_no_vehicle": 1225.0
+      },
+      {
+        "geoid": "86000US85035",
+        "repo_households": 15676.0,
+        "local_households": 15676.0,
+        "repo_no_vehicle": 961.0,
+        "local_no_vehicle": 961.0
+      },
+      {
+        "geoid": "86000US85041",
+        "repo_households": 19316.0,
+        "local_households": 19316.0,
+        "repo_no_vehicle": 1042.0,
+        "local_no_vehicle": 1042.0
+      },
+      {
+        "geoid": "86000US85051",
+        "repo_households": 15922.0,
+        "local_households": 15922.0,
+        "repo_no_vehicle": 1510.0,
+        "local_no_vehicle": 1510.0
+      }
+    ]
+  },
+  "current_gtfs_exact_duplicate": {
+    "repo_path": "资料/02_降温网络/googletransit.zip",
+    "local_archive": "outputs/补齐资料_2026-11-18/资料/02_降温网络/GTFS/mdb-147-202611110057/mdb-147-202611110057.zip",
+    "git_blob_sha": "e750e556bc6342eec825636462152b122279f44a",
+    "bytes": 7210122,
+    "exact_match": true,
+    "service_start": "2026-10-26",
+    "service_end": "2027-01-24"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "category": "MAG 热避难网络站点目录",
+      "repo_status": "missing",
+      "evidence": [
+        "资料/08_原始摘录/arcgis_webmap.json",
+        "data/incoming/sites_mag.csv"
+      ],
+      "finding": "arcgis_webmap.json 是113字节 Item does not exist or is inaccessible 错误响应；sites_mag.csv仅表头。仓库有网络类型说明但没有逐站地址/坐标/开放时间目录。",
+      "supplement_needed": "本轮取得的 MAG 官方2026公开视图原始JSON/GeoJSON和来源元数据；应注明采集时点快照而非全年完整目录。"
+    },
+    {
+      "id": 2,
+      "category": "Valley Metro GTFS",
+      "repo_status": "present_but_winter_service",
+      "evidence": [
+        "资料/02_降温网络/googletransit.zip"
+      ],
+      "finding": "与本地mdb-147-202611110057.zip逐字节相同（Git blob SHA e750e556bc6342eec825636462152b122279f44a），服务2026-10-26至2027-01-24。完整ZIP已由队友提供，不重复交付。",
+      "supplement_needed": "若研究2026热季，只补202606160033与202607280152历史包，二者服务日历合计覆盖2026年5—9月。2027夏季仍不是已观测排班。"
+    },
+    {
+      "id": 3,
+      "category": "ACS 区域人口/收入/65+/无车家庭",
+      "repo_status": "minimum_requirement_satisfied",
+      "evidence": [
+        "资料/04_人口与地理/acs2024_5yr_phoenix_zcta_raw.json"
+      ],
+      "finding": "ACS2024 5-year共11 ZCTA，原始estimate/error完整；B01001/B01003/B19013/B08201可推导清单四项。原文件39,270字节，已核验。",
+      "supplement_needed": "不需重复交付全套ACS；可保留公式字典或将85020/85021/85023/85027作为额外可选扩展，不称为必缺。ZCTA到12模拟区/15village对应仍需建模者制定。"
+    },
+    {
+      "id": 4,
+      "category": "Phoenix 本地运营成本/容量",
+      "repo_status": "local_cost_missing",
+      "evidence": [
+        "资料/06_学术文献/CRA_Cooling_Center_Costs_2025.pdf",
+        "资料/00_数据主表.md"
+      ],
+      "finding": "仓库主表明确CRA是Pilsen, Chicago的学生Action Plan，成本只是外地量级；已有Phoenix计划不能替代本地合同、实际预算及容量口径。CRA PDF本轮未完整复读，城市/性质判断依据仓库明确来源说明及原来源标题。",
+      "supplement_needed": "本轮Phoenix Council预算/合同上限/床位与运营期原件。总计划、合同上限、拟议增资和已发生成本须区分，不能当每台MCH报价。"
+    },
+    {
+      "id": 5,
+      "category": "移动/临时降温设施真实案例",
+      "repo_status": "minimum_case_and_visits_satisfied",
+      "evidence": [
+        "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
+        "资料/08_原始摘录/phx_ckan_heat.json"
+      ],
+      "finding": "真实Phoenix Human Services Campus 40-foot cooling bus项目；688条逐小时记录，2021-07-07至2021-09-30，COUNT合计12,830。官方CKAN说明同日可能重复计数；无成本/空间路径/调度字段，不能解释为12,830独立人数。",
+      "supplement_needed": "案例和服务计数已满足；只补本地成本合同即可，2021/2023 bus报道可为可选交叉核验材料，主增量包不重复交付已有CSV。"
+    },
+    {
+      "id": 6,
+      "category": "2023/2024/2025县级死亡/急诊年度报告",
+      "repo_status": "annual_reports_missing",
+      "evidence": [
+        "资料/03_健康与暴露/Maricopa_CoolingCenter_General_Survey_2023.pdf",
+        "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+        "资料/03_健康与暴露/Maricopa_Heat_Methodology_WhitePaper.pdf",
+        "资料/03_健康与暴露/Maricopa_Heat_Surveillance_Methodology_2025.pdf",
+        "资料/03_健康与暴露/Maricopa_Heat_Surveillance.html",
+        "资料/03_健康与暴露/Phoenix_Weekly_Heat_Reports_2025.pdf"
+      ],
+      "finding": "有2023设施调查、方法白皮书、年度目录HTML和Phoenix2025周报；无2023/24/25 Maricopa县年度死亡终版，也无县年度急诊报告。两份方法PDF同Git blob，属副本。",
+      "supplement_needed": "本轮补三年度官方死亡终版；县2018–2022发病/急诊和州2020–2024急诊住院报告为现可取补充，不能称县2023–2025逐年急诊。"
+    }
+  ],
+  "repository_material_blobs": [
+    {
+      "path": "data/incoming/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca837ef6aa5e3ba1a06adfb1eb03268ebdaff74b",
+      "size": 1359,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/ca837ef6aa5e3ba1a06adfb1eb03268ebdaff74b"
+    },
+    {
+      "path": "data/incoming/access_gtfs.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1518dbf86116c226635f26ab370a319b45940d6",
+      "size": 51,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/e1518dbf86116c226635f26ab370a319b45940d6"
+    },
+    {
+      "path": "data/incoming/acs_districts.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26469e67f05b0317c423f965802e32e0d5756ff8",
+      "size": 98,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/26469e67f05b0317c423f965802e32e0d5756ff8"
+    },
+    {
+      "path": "data/incoming/sites_mag.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81d6c92a23f16a375d76dfac9164a0a273c9a08",
+      "size": 51,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/f81d6c92a23f16a375d76dfac9164a0a273c9a08"
+    },
+    {
+      "path": "资料/00_数据主表.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddf21f803a6ad6d3c151dfb1ec1646dd07375cf1",
+      "size": 20909,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/ddf21f803a6ad6d3c151dfb1ec1646dd07375cf1"
+    },
+    {
+      "path": "资料/00_赛题/2027_MCM_B_Keeping_Phoenix_Cool.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e9376246d25d8f5820a2072bb80e0044655da1",
+      "size": 33106,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/88e9376246d25d8f5820a2072bb80e0044655da1"
+    },
+    {
+      "path": "资料/01_官方计划/Phoenix_Heat_Response_Plan_2025.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "973badd2176b8b99d198be331e3dbc87e2389f4e",
+      "size": 619713,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/973badd2176b8b99d198be331e3dbc87e2389f4e"
+    },
+    {
+      "path": "资料/01_官方计划/Phoenix_Heat_Response_Plan_2026.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32a88e3b79ae0c1fe7a0c81d07f77991af323867",
+      "size": 725750,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/32a88e3b79ae0c1fe7a0c81d07f77991af323867"
+    },
+    {
+      "path": "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f441ea52dbbaf7e8806017292163f1aa9ea94c6",
+      "size": 10643,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/6f441ea52dbbaf7e8806017292163f1aa9ea94c6"
+    },
+    {
+      "path": "资料/02_降温网络/googletransit.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e750e556bc6342eec825636462152b122279f44a",
+      "size": 7210122,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/e750e556bc6342eec825636462152b122279f44a"
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_CoolingCenter_General_Survey_2023.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fba6d6c525f36b0818d021821e6b8c584db3476b",
+      "size": 5673549,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/fba6d6c525f36b0818d021821e6b8c584db3476b"
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_CoolingCenter_Visitor_Survey_2023.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7478a776d561982b4337c776fd13c43803815f0d",
+      "size": 5587830,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/7478a776d561982b4337c776fd13c43803815f0d"
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_Heat_Methodology_WhitePaper.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3578afa1de691f3d99587928d4a32db39efdece4",
+      "size": 1005650,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/3578afa1de691f3d99587928d4a32db39efdece4"
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_Heat_Surveillance.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a77b2fefdb97ffb27d02b6fee80debd907a44171",
+      "size": 206352,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/a77b2fefdb97ffb27d02b6fee80debd907a44171"
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_Heat_Surveillance_Methodology_2025.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3578afa1de691f3d99587928d4a32db39efdece4",
+      "size": 1005650,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/3578afa1de691f3d99587928d4a32db39efdece4"
+    },
+    {
+      "path": "资料/03_健康与暴露/Phoenix_Weekly_Heat_Reports_2025.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0067ebd664a557c20852bf8f6960fd06419ede9f",
+      "size": 3799211,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/0067ebd664a557c20852bf8f6960fd06419ede9f"
+    },
+    {
+      "path": "资料/04_人口与地理/acs2024_5yr_phoenix_zcta_raw.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "524f253b4d2954f64ac6a4a375c13432492650a4",
+      "size": 39270,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/524f253b4d2954f64ac6a4a375c13432492650a4"
+    },
+    {
+      "path": "资料/06_学术文献/CRA_Cooling_Center_Costs_2025.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd027b1b98e24d7e64ceb6d331b3ac968b206af",
+      "size": 18917743,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/7bd027b1b98e24d7e64ceb6d331b3ac968b206af"
+    },
+    {
+      "path": "资料/06_学术文献/NatComm2023_reflective_pavement_AZ.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98582e3989f7b5c853809089ae88cab9384499f7",
+      "size": 1197629,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/98582e3989f7b5c853809089ae88cab9384499f7"
+    },
+    {
+      "path": "资料/06_学术文献/PNAS2025_heat_adaptation_PMC12087966.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3763b971e2cf2b3f053895a0bc1af7333d9fca67",
+      "size": 254440,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/3763b971e2cf2b3f053895a0bc1af7333d9fca67"
+    },
+    {
+      "path": "资料/07_政策与新闻/Phoenix_2026_plan_newsrelease.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad2112357c04888675fd93955ca29a0e2eaa4ea5",
+      "size": 260007,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/ad2112357c04888675fd93955ca29a0e2eaa4ea5"
+    },
+    {
+      "path": "资料/08_原始摘录/FACTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d119d1e43c720d53dae47b16c83ab5fcbb8c74e",
+      "size": 8093,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/2d119d1e43c720d53dae47b16c83ab5fcbb8c74e"
+    },
+    {
+      "path": "资料/08_原始摘录/_failed/CRA_Cooling_Center_Costs_2025.pdf.failed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c96b3e89b9ea0628101c978c3270783825dc425",
+      "size": 4750913,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/0c96b3e89b9ea0628101c978c3270783825dc425"
+    },
+    {
+      "path": "资料/08_原始摘录/_failed/Elser_GrowingShade_Phoenix.pdf.failed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd79d018b683536b56a74d38793439a10f85d9cf",
+      "size": 5874,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/cd79d018b683536b56a74d38793439a10f85d9cf"
+    },
+    {
+      "path": "资料/08_原始摘录/_failed/PNAS2025_heat_adaptation_prioritization.pdf.failed",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ddd44cad807a7741d7c1426d0f3bd3445c7ee7b",
+      "size": 1817,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/6ddd44cad807a7741d7c1426d0f3bd3445c7ee7b"
+    },
+    {
+      "path": "资料/08_原始摘录/acs_phoenix_city.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b457dbfa94d952b019890218f4e317c7e2e65f00",
+      "size": 6733,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/b457dbfa94d952b019890218f4e317c7e2e65f00"
+    },
+    {
+      "path": "资料/08_原始摘录/arcgis_webmap.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc0916ff2943eb6dc2267b1cf95b4703b41b294",
+      "size": 113,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/2cc0916ff2943eb6dc2267b1cf95b4703b41b294"
+    },
+    {
+      "path": "资料/08_原始摘录/facts.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccd89dcb4679e0143347b17090c5aa0df1798a51",
+      "size": 17481,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/ccd89dcb4679e0143347b17090c5aa0df1798a51"
+    },
+    {
+      "path": "资料/08_原始摘录/fetch_manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64084b49527ee0a2b55730bd25366e88793954c5",
+      "size": 1641,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/64084b49527ee0a2b55730bd25366e88793954c5"
+    },
+    {
+      "path": "资料/08_原始摘录/https___www_maricopa_gov_heat.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb90d7b0332868e836a079977d8c86a6b00df7d6",
+      "size": 196573,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/eb90d7b0332868e836a079977d8c86a6b00df7d6"
+    },
+    {
+      "path": "资料/08_原始摘录/https___www_phoenix_gov_heat.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f795d05fabeb513b91290deb4d10e14fc061a172",
+      "size": 289459,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/f795d05fabeb513b91290deb4d10e14fc061a172"
+    },
+    {
+      "path": "资料/08_原始摘录/https___www_phoenix_gov_heatsite.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e484c6ed1a96bec5f53b92765c2186e222a751e",
+      "size": 289459,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/2e484c6ed1a96bec5f53b92765c2186e222a751e"
+    },
+    {
+      "path": "资料/08_原始摘录/mag_directories.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab245ba104d3afc73309eebfa32db59b925bab0f",
+      "size": 5804,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/ab245ba104d3afc73309eebfa32db59b925bab0f"
+    },
+    {
+      "path": "资料/08_原始摘录/methodology_text.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fce0e03daecafa336fcf6a6433feca4f3ee22ef4",
+      "size": 116958,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/fce0e03daecafa336fcf6a6433feca4f3ee22ef4"
+    },
+    {
+      "path": "资料/08_原始摘录/pdf_inventory.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fc261f42bc82c61a83ffb84c4b74a317f26debd",
+      "size": 1695,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/5fc261f42bc82c61a83ffb84c4b74a317f26debd"
+    },
+    {
+      "path": "资料/08_原始摘录/phx_ckan_heat.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "091b5b7381b68de9220c97b67dfff7df6982754e",
+      "size": 13700,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/091b5b7381b68de9220c97b67dfff7df6982754e"
+    },
+    {
+      "path": "资料/08_原始摘录/plan2026_text.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19358423ba2bd7e64d10781564dc3c686869a1e7",
+      "size": 46620,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/19358423ba2bd7e64d10781564dc3c686869a1e7"
+    },
+    {
+      "path": "资料/08_原始摘录/team_handoff_docx.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "size": 14796,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/598c53b42ec974d94a1f97bd5923d3d6f08eec38"
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_series_2025.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f686412a95bcce181cba29e917144378808690fa",
+      "size": 1178,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/f686412a95bcce181cba29e917144378808690fa"
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_series_2025.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b359896c657a19d6a5893cc010f9f246d578dad",
+      "size": 5729,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/3b359896c657a19d6a5893cc010f9f246d578dad"
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_visitors_2025.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6246d8627d23a30e5add084ddc011e7371da3f4c",
+      "size": 144,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/6246d8627d23a30e5add084ddc011e7371da3f4c"
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_visits_cumulative_2025.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73d256e58c9936c36e2df3b41acca799900826ad",
+      "size": 2773,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/73d256e58c9936c36e2df3b41acca799900826ad"
+    },
+    {
+      "path": "资料/09_队友交接参考/Phoenix_MCH_Team_Handoff.docx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ef9f11ec14275597b58736ba0d8f037cbcc05eb",
+      "size": 46020,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/1ef9f11ec14275597b58736ba0d8f037cbcc05eb"
+    },
+    {
+      "path": "资料/09_队友交接参考/Phoenix_MCH_Team_Handoff_文本提取.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "size": 14796,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/598c53b42ec974d94a1f97bd5923d3d6f08eec38"
+    },
+    {
+      "path": "资料/09_队友交接参考/README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61eae5f7af8edfd69268d649a6043924e0636e47",
+      "size": 543,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/61eae5f7af8edfd69268d649a6043924e0636e47"
+    },
+    {
+      "path": "资料/09_队友交接参考/Source_Index.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72694fd72fd649db0f666dfd19848ba713fbe3fd",
+      "size": 3927,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/72694fd72fd649db0f666dfd19848ba713fbe3fd"
+    },
+    {
+      "path": "资料/需要队友找的资料清单.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa5879b58e24c733fb83fc55488306a18482fa87",
+      "size": 5868,
+      "url": "https://api.github.com/repos/KN-1998/mcm2027-b-phoenix-cooling/git/blobs/aa5879b58e24c733fb83fc55488306a18482fa87"
+    }
+  ],
+  "raw_files_verified_locally": [
+    {
+      "path": "data/incoming/README.md",
+      "bytes": 1359,
+      "git_blob_sha": "ca837ef6aa5e3ba1a06adfb1eb03268ebdaff74b",
+      "verified_blob_sha": "ca837ef6aa5e3ba1a06adfb1eb03268ebdaff74b",
+      "matches": true
+    },
+    {
+      "path": "data/incoming/access_gtfs.csv",
+      "bytes": 51,
+      "git_blob_sha": "e1518dbf86116c226635f26ab370a319b45940d6",
+      "verified_blob_sha": "e1518dbf86116c226635f26ab370a319b45940d6",
+      "matches": true
+    },
+    {
+      "path": "data/incoming/acs_districts.csv",
+      "bytes": 98,
+      "git_blob_sha": "26469e67f05b0317c423f965802e32e0d5756ff8",
+      "verified_blob_sha": "26469e67f05b0317c423f965802e32e0d5756ff8",
+      "matches": true
+    },
+    {
+      "path": "data/incoming/sites_mag.csv",
+      "bytes": 51,
+      "git_blob_sha": "f81d6c92a23f16a375d76dfac9164a0a273c9a08",
+      "verified_blob_sha": "f81d6c92a23f16a375d76dfac9164a0a273c9a08",
+      "matches": true
+    },
+    {
+      "path": "资料/00_数据主表.md",
+      "bytes": 16659,
+      "git_blob_sha": "ddf21f803a6ad6d3c151dfb1ec1646dd07375cf1",
+      "verified_blob_sha": "d41bf850ea148f5b120c21ebc0dbbd4476a06bda",
+      "matches": false
+    },
+    {
+      "path": "资料/00_赛题/2027_MCM_B_Keeping_Phoenix_Cool.pdf",
+      "bytes": 33106,
+      "git_blob_sha": "88e9376246d25d8f5820a2072bb80e0044655da1",
+      "verified_blob_sha": "88e9376246d25d8f5820a2072bb80e0044655da1",
+      "matches": true
+    },
+    {
+      "path": "资料/02_降温网络/Phoenix_Transit_Heat_Relief_FY21-22.csv",
+      "bytes": 10643,
+      "git_blob_sha": "6f441ea52dbbaf7e8806017292163f1aa9ea94c6",
+      "verified_blob_sha": "6f441ea52dbbaf7e8806017292163f1aa9ea94c6",
+      "matches": true
+    },
+    {
+      "path": "资料/03_健康与暴露/Maricopa_Heat_Surveillance.html",
+      "bytes": 206352,
+      "git_blob_sha": "a77b2fefdb97ffb27d02b6fee80debd907a44171",
+      "verified_blob_sha": "a77b2fefdb97ffb27d02b6fee80debd907a44171",
+      "matches": true
+    },
+    {
+      "path": "资料/04_人口与地理/acs2024_5yr_phoenix_zcta_raw.json",
+      "bytes": 39270,
+      "git_blob_sha": "524f253b4d2954f64ac6a4a375c13432492650a4",
+      "verified_blob_sha": "524f253b4d2954f64ac6a4a375c13432492650a4",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/FACTS.md",
+      "bytes": 8093,
+      "git_blob_sha": "2d119d1e43c720d53dae47b16c83ab5fcbb8c74e",
+      "verified_blob_sha": "2d119d1e43c720d53dae47b16c83ab5fcbb8c74e",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/_failed/Elser_GrowingShade_Phoenix.pdf.failed",
+      "bytes": 5874,
+      "git_blob_sha": "cd79d018b683536b56a74d38793439a10f85d9cf",
+      "verified_blob_sha": "cd79d018b683536b56a74d38793439a10f85d9cf",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/_failed/PNAS2025_heat_adaptation_prioritization.pdf.failed",
+      "bytes": 1817,
+      "git_blob_sha": "6ddd44cad807a7741d7c1426d0f3bd3445c7ee7b",
+      "verified_blob_sha": "6ddd44cad807a7741d7c1426d0f3bd3445c7ee7b",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/acs_phoenix_city.json",
+      "bytes": 6733,
+      "git_blob_sha": "b457dbfa94d952b019890218f4e317c7e2e65f00",
+      "verified_blob_sha": "b457dbfa94d952b019890218f4e317c7e2e65f00",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/arcgis_webmap.json",
+      "bytes": 113,
+      "git_blob_sha": "2cc0916ff2943eb6dc2267b1cf95b4703b41b294",
+      "verified_blob_sha": "2cc0916ff2943eb6dc2267b1cf95b4703b41b294",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/facts.json",
+      "bytes": 17481,
+      "git_blob_sha": "ccd89dcb4679e0143347b17090c5aa0df1798a51",
+      "verified_blob_sha": "ccd89dcb4679e0143347b17090c5aa0df1798a51",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/fetch_manifest.json",
+      "bytes": 1641,
+      "git_blob_sha": "64084b49527ee0a2b55730bd25366e88793954c5",
+      "verified_blob_sha": "64084b49527ee0a2b55730bd25366e88793954c5",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/https___www_maricopa_gov_heat.html",
+      "bytes": 196573,
+      "git_blob_sha": "eb90d7b0332868e836a079977d8c86a6b00df7d6",
+      "verified_blob_sha": "eb90d7b0332868e836a079977d8c86a6b00df7d6",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/mag_directories.html",
+      "bytes": 5804,
+      "git_blob_sha": "ab245ba104d3afc73309eebfa32db59b925bab0f",
+      "verified_blob_sha": "ab245ba104d3afc73309eebfa32db59b925bab0f",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/methodology_text.txt",
+      "bytes": 116958,
+      "git_blob_sha": "fce0e03daecafa336fcf6a6433feca4f3ee22ef4",
+      "verified_blob_sha": "fce0e03daecafa336fcf6a6433feca4f3ee22ef4",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/pdf_inventory.json",
+      "bytes": 1695,
+      "git_blob_sha": "5fc261f42bc82c61a83ffb84c4b74a317f26debd",
+      "verified_blob_sha": "5fc261f42bc82c61a83ffb84c4b74a317f26debd",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/phx_ckan_heat.json",
+      "bytes": 13700,
+      "git_blob_sha": "091b5b7381b68de9220c97b67dfff7df6982754e",
+      "verified_blob_sha": "091b5b7381b68de9220c97b67dfff7df6982754e",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/plan2026_text.txt",
+      "bytes": 46620,
+      "git_blob_sha": "19358423ba2bd7e64d10781564dc3c686869a1e7",
+      "verified_blob_sha": "19358423ba2bd7e64d10781564dc3c686869a1e7",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/team_handoff_docx.txt",
+      "bytes": 14796,
+      "git_blob_sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "verified_blob_sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_series_2025.csv",
+      "bytes": 1178,
+      "git_blob_sha": "f686412a95bcce181cba29e917144378808690fa",
+      "verified_blob_sha": "f686412a95bcce181cba29e917144378808690fa",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_series_2025.json",
+      "bytes": 5729,
+      "git_blob_sha": "3b359896c657a19d6a5893cc010f9f246d578dad",
+      "verified_blob_sha": "3b359896c657a19d6a5893cc010f9f246d578dad",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_visitors_2025.json",
+      "bytes": 144,
+      "git_blob_sha": "6246d8627d23a30e5add084ddc011e7371da3f4c",
+      "verified_blob_sha": "6246d8627d23a30e5add084ddc011e7371da3f4c",
+      "matches": true
+    },
+    {
+      "path": "资料/08_原始摘录/weekly_visits_cumulative_2025.json",
+      "bytes": 2773,
+      "git_blob_sha": "73d256e58c9936c36e2df3b41acca799900826ad",
+      "verified_blob_sha": "73d256e58c9936c36e2df3b41acca799900826ad",
+      "matches": true
+    },
+    {
+      "path": "资料/09_队友交接参考/Phoenix_MCH_Team_Handoff.docx",
+      "bytes": 46020,
+      "git_blob_sha": "1ef9f11ec14275597b58736ba0d8f037cbcc05eb",
+      "verified_blob_sha": "1ef9f11ec14275597b58736ba0d8f037cbcc05eb",
+      "matches": true
+    },
+    {
+      "path": "资料/09_队友交接参考/Phoenix_MCH_Team_Handoff_文本提取.txt",
+      "bytes": 14796,
+      "git_blob_sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "verified_blob_sha": "598c53b42ec974d94a1f97bd5923d3d6f08eec38",
+      "matches": true
+    },
+    {
+      "path": "资料/09_队友交接参考/README.txt",
+      "bytes": 543,
+      "git_blob_sha": "61eae5f7af8edfd69268d649a6043924e0636e47",
+      "verified_blob_sha": "61eae5f7af8edfd69268d649a6043924e0636e47",
+      "matches": true
+    },
+    {
+      "path": "资料/09_队友交接参考/Source_Index.txt",
+      "bytes": 3927,
+      "git_blob_sha": "72694fd72fd649db0f666dfd19848ba713fbe3fd",
+      "verified_blob_sha": "72694fd72fd649db0f666dfd19848ba713fbe3fd",
+      "matches": true
+    },
+    {
+      "path": "资料/需要队友找的资料清单.md",
+      "bytes": 5868,
+      "git_blob_sha": "aa5879b58e24c733fb83fc55488306a18482fa87",
+      "verified_blob_sha": "aa5879b58e24c733fb83fc55488306a18482fa87",
+      "matches": true
+    }
+  ],
+  "cost_primary_source": "https://mtfchallenge.org/wp-content/uploads/2025/08/CRA-Action-Plan-2025.pdf",
+  "verification_limitations": [
+    "原始大PDF未在本轮重复下载；CRA城市和性质依据仓库主表明确说明。",
+    "年度健康缺口按固定SHA的完整文件树和现存目录/方法/周报原件类型判定，非按陈旧主表下载状态判定。"
+  ]
+}

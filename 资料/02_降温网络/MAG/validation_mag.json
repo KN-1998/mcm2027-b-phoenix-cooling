@@ -1,0 +1,73 @@
+{
+  "verified_on": "2026-11-18",
+  "checks": {
+    "count_equals_returnCountOnly": true,
+    "objectids_unique": true,
+    "objectids_match_returnIdsOnly": true,
+    "no_exceededTransferLimit": true,
+    "geojson_ids_match_native_json": true,
+    "spatial_reference_4326": true,
+    "all_geometries_valid_lonlat": true,
+    "all_coordinates_in_Maricopa_region_envelope": true,
+    "json_geojson_coordinates_match_1e_minus6": true,
+    "json_geojson_attributes_match": true,
+    "names_addresses_general_hours_present": true,
+    "item_matches_service": true,
+    "item_org_matches_official_MAG_org": true,
+    "item_public_authoritative": true
+  },
+  "all_checks_passed": true,
+  "view_rows": 122,
+  "year_counts": {
+    "2026": 121,
+    "2025": 1
+  },
+  "city_counts": {
+    "Phoenix": 50,
+    "Tempe": 3,
+    "Surprise": 5,
+    "Scottsdale": 10,
+    "Glendale": 15,
+    "Mesa": 13,
+    "Buckeye": 3,
+    "Chandler": 7,
+    "El Mirage": 4,
+    "Goodyear": 3,
+    "Gilbert": 2,
+    "Peoria": 1,
+    "Gila Bend": 1,
+    "Litchfield Park": 1,
+    "Guadalupe": 1,
+    "Sun Lakes": 1,
+    "Aguila": 1,
+    "Fountain Hills": 1
+  },
+  "type_counts_all_view": {
+    "Hydration Station": 63,
+    "Cooling Center": 56,
+    "Respite Center": 3
+  },
+  "phoenix_2026_rows": 50,
+  "phoenix_2026_type_counts": {
+    "Hydration Station": 26,
+    "Cooling Center": 24
+  },
+  "phoenix_2026_collection_yes": 8,
+  "unpaired_weekday_open_close_fields": [],
+  "end_date_counts": {
+    "2026-10-31": 109,
+    "2026-10-30": 13
+  },
+  "stale_year_records_excluded_from_2026_filter": [
+    {
+      "OBJECTID": 396,
+      "City": "Chandler",
+      "Year": 2025,
+      "Location": "AZCEND",
+      "Start_Date": "2026-05-01",
+      "End_Date": "2026-10-31"
+    }
+  ],
+  "capacity_field_present": false,
+  "scope_caveat": "Checks establish complete retrieval of the published view at this snapshot, not completeness of the whole seasonal network. Active=Yes is a source flag, not proof of operation on the retrieval date; all source End_Date values precede 2026-11-18."
+}

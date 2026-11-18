@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-18",
+  "all_passed": true,
+  "checks": [
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2025-03-25_Full.pdf",
+      "sha256_matches": true,
+      "bytes": 4437260,
+      "pdf_magic_valid": true,
+      "pages": 52
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2026-02-24_Full.pdf",
+      "sha256_matches": true,
+      "bytes": 1576546,
+      "pdf_magic_valid": true,
+      "pages": 74
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Maricopa_2023_Heat_Relief_IGA_Cost_Case.html",
+      "sha256_matches": true,
+      "bytes": 185738
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2025_Heat_Related_Deaths_Final_April2026.pdf",
+      "sha256_matches": true,
+      "bytes": 748987,
+      "pdf_magic_valid": true,
+      "pages": 26
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2024_Heat_Related_Deaths_Final.pdf",
+      "sha256_matches": true,
+      "bytes": 555896,
+      "pdf_magic_valid": true,
+      "pages": 24
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/Maricopa_2023_Heat_Related_Deaths_Final.pdf",
+      "sha256_matches": true,
+      "bytes": 943047,
+      "pdf_magic_valid": true,
+      "pages": 24
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Trial_Budget_2026-27.pdf",
+      "sha256_matches": true,
+      "bytes": 1539889,
+      "pdf_magic_valid": true,
+      "pages": 50
+    },
+    {
+      "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_General_2025-08-21_Staffing.pdf",
+      "sha256_matches": true,
+      "bytes": 370496,
+      "pdf_magic_valid": true,
+      "pages": 27
+    },
+    {
+      "path": "资料/03_健康与暴露/年度报告/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf",
+      "sha256_matches": true,
+      "bytes": 472278,
+      "pdf_magic_valid": true,
+      "pages": 21
+    }
+  ],
+  "repository_path_base": "Repository root; MAG manifest file paths are relative to its own directory."
+}

@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-11-18",
+  "versions": [
+    {
+      "version": "mdb-147-202606160033",
+      "zip_crc_error_member": null,
+      "unique_stop_ids": 8029,
+      "stop_rows": 8029,
+      "unique_trip_ids": 18252,
+      "trip_rows": 18252,
+      "route_rows": 112,
+      "unique_route_ids": 112,
+      "stop_time_rows": 918117,
+      "bad_stop_time_stop_refs": [],
+      "bad_stop_time_trip_refs": [],
+      "trip_route_ids_missing": [],
+      "trip_service_ids_missing_from_calendar_dates": [],
+      "active_service_date_min": "20260427",
+      "active_service_date_max": "20260726",
+      "active_service_date_count": 91
+    },
+    {
+      "version": "mdb-147-202607280152",
+      "zip_crc_error_member": null,
+      "unique_stop_ids": 8027,
+      "stop_rows": 8027,
+      "unique_trip_ids": 18157,
+      "trip_rows": 18157,
+      "route_rows": 112,
+      "unique_route_ids": 112,
+      "stop_time_rows": 915650,
+      "bad_stop_time_stop_refs": [],
+      "bad_stop_time_trip_refs": [],
+      "trip_route_ids_missing": [],
+      "trip_service_ids_missing_from_calendar_dates": [],
+      "active_service_date_min": "20260727",
+      "active_service_date_max": "20261025",
+      "active_service_date_count": 91
+    }
+  ],
+  "may_to_september_2026_missing_service_dates": [],
+  "scope": "Structural references and nonempty scheduled service on each date; not a real-time accuracy check or a routing result."
+}

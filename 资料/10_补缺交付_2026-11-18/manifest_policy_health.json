@@ -1,0 +1,223 @@
+[
+  {
+    "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2025-03-25_Full.pdf",
+    "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/3-25-25%20Policy%20Agenda%20-%20Final.pdf",
+    "publisher": "City of Phoenix",
+    "year": 2025,
+    "type": "council agenda and program budget",
+    "pages": 52,
+    "sha256": "b47cb636ce8ee88da1bc759003f79d28d71239eaeadcb5d5486be5a703f6671f",
+    "limitations": [
+      "2025 estimated need for 24/7 Heat Respite and three Extended Hour Cooling Center sites: $4,944,000.",
+      "This is a program estimate in a council agenda, not one center actual expenditure or mobile hub quote."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 4437260,
+    "resolved_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/3-25-25%20Policy%20Agenda%20-%20Final.pdf",
+    "download_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/3-25-25%20Policy%20Agenda%20-%20Final.pdf",
+    "relevant_pdf_pages_1_based": [
+      12
+    ],
+    "relative_path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2025-03-25_Full.pdf"
+  },
+  {
+    "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2026-02-24_Full.pdf",
+    "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/2-24-26%20Policy%20FINAL.pdf",
+    "publisher": "City of Phoenix",
+    "year": 2026,
+    "type": "council agenda, budget and proposed contracts",
+    "pages": 74,
+    "sha256": "6c119efd2b6757da46f429a9f790cd07f7d2ddd0571ae463c566b9879af2f077",
+    "limitations": [
+      "Page37 reports 2025 total cost for extended-hour/overnight sites and services: $4.3m; 2026 approximate project need $5.25m.",
+      "Pages66-68 request authorization for CBI two-site contract <=$2.6m and Justa Center <=$130,000; CBI/Justa term about April1-October31,2026. Agenda requests are not evidence of executed invoices.",
+      "SVdP overflow operations <=$500,000; page67 accommodates up to170 individuals. This is concurrent accommodation, not visitor-visits/day.",
+      "These contract services include care coordination/navigation; cannot divide by beds to obtain a comparable MCH unit operating price.",
+      "The $66,856,295 QVL ceiling spans a broader vendor-list program and its life; not annual heat-center spending.",
+      "Source contains conflicting SVdP street numbers: page67=1075 W Jackson; page68=1035 W Jackson. Do not automatically geocode from this agenda."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 1576546,
+    "resolved_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/2-24-26%20Policy%20FINAL.pdf",
+    "download_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/2-24-26%20Policy%20FINAL.pdf",
+    "relevant_pdf_pages_1_based": [
+      37,
+      66,
+      67,
+      68
+    ],
+    "relative_path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_Policy_2026-02-24_Full.pdf",
+    "visual_qa": "Selected relevant pages rendered with Poppler and visually inspected2026-11-18."
+  },
+  {
+    "path": "资料/07_政策与新闻/成本与案例/Maricopa_2023_Heat_Relief_IGA_Cost_Case.html",
+    "url": "https://www.maricopa.gov/CivicAlerts.aspx?AID=2988&ARC=5717",
+    "publisher": "Maricopa County Human Services",
+    "year": 2023,
+    "type": "official program case study",
+    "pages": null,
+    "sha256": "f4ca4bbf710a093949a271c7ba854f2f84c32ab4adebeda7fee6a4ab1fa2ae45",
+    "limitations": [
+      "Official county funding/case narrative; project totals encompass several services, not a per-center MCH procurement quote."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 185738,
+    "resolved_url": "https://www.maricopa.gov/m/newsflash/Archive/Item/2988?arcId=5717",
+    "download_url": "https://www.maricopa.gov/CivicAlerts.aspx?AID=2988&ARC=5717",
+    "relevant_pdf_pages_1_based": [],
+    "relative_path": "资料/07_政策与新闻/成本与案例/Maricopa_2023_Heat_Relief_IGA_Cost_Case.html"
+  },
+  {
+    "path": "资料/03_健康与暴露/年度报告/Maricopa_2025_Heat_Related_Deaths_Final_April2026.pdf",
+    "url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/6510",
+    "publisher": "Maricopa County Department of Public Health",
+    "year": 2025,
+    "type": "annual mortality report, April 2026 release",
+    "pages": 26,
+    "sha256": "d1d7ec88b6fda5cf6d551f6a0dc2cf5a2d36461cbdbe456a6cb6b8e8608cb1cf",
+    "limitations": [
+      "PublishedApril2026; 2025 county total430. Page21TableA gives2021-2025 consistent totals.",
+      "Counts are county surveillance outcomes, not a causal estimate of cooling services."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 748987,
+    "resolved_url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/6510",
+    "download_url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/6510",
+    "relevant_pdf_pages_1_based": [
+      5,
+      7,
+      21
+    ],
+    "relative_path": "资料/03_健康与暴露/年度报告/Maricopa_2025_Heat_Related_Deaths_Final_April2026.pdf"
+  },
+  {
+    "path": "资料/03_健康与暴露/年度报告/Maricopa_2024_Heat_Related_Deaths_Final.pdf",
+    "url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5934",
+    "publisher": "Maricopa County Department of Public Health",
+    "year": 2024,
+    "type": "annual mortality report, final",
+    "pages": 24,
+    "sha256": "9694ef0815e98c53ae7d59131a56a4e4015aa038365592f64821de4a01b9e351",
+    "limitations": [
+      "2024 final annual county report identifies608 deaths as ofMarch31,2025. Not Phoenix city total."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 555896,
+    "resolved_url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5934",
+    "download_url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5934",
+    "relevant_pdf_pages_1_based": [
+      4,
+      21
+    ],
+    "relative_path": "资料/03_健康与暴露/年度报告/Maricopa_2024_Heat_Related_Deaths_Final.pdf"
+  },
+  {
+    "path": "资料/03_健康与暴露/年度报告/Maricopa_2023_Heat_Related_Deaths_Final.pdf",
+    "url": "https://www.maricopa.gov/Archive.aspx?ADID=5820",
+    "publisher": "Maricopa County Department of Public Health",
+    "year": 2023,
+    "type": "annual mortality report, final",
+    "pages": 24,
+    "sha256": "703cc4161219ef7902e4170c3232d26f385679657a23a6cac76f2ac4faaf4d0c",
+    "limitations": [
+      "2023 final annual county report identifies645 deaths. County recorded heat-related deaths do not establish facility effects."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 943047,
+    "resolved_url": "https://www.maricopa.gov/ArchiveCenter/ViewFile/Item/5820",
+    "download_url": "https://www.maricopa.gov/Archive.aspx?ADID=5820",
+    "relevant_pdf_pages_1_based": [
+      4,
+      21
+    ],
+    "relative_path": "资料/03_健康与暴露/年度报告/Maricopa_2023_Heat_Related_Deaths_Final.pdf"
+  },
+  {
+    "path": "资料/07_政策与新闻/成本与案例/Phoenix_Trial_Budget_2026-27.pdf",
+    "url": "https://web-prod.phoenix.gov/content/dam/phoenix/budgetsite/documents/2026-27-Trial-Budget.pdf",
+    "publisher": "City of Phoenix",
+    "year": 2026,
+    "type": "trial budget; not final appropriation",
+    "pages": 50,
+    "sha256": "4fac558d8912f731472cb55bc36c9af0d8f3fb1699e7100812344cf059e4db84",
+    "limitations": [
+      "PDF physical page11 is printed page22: $1.5m incremental ongoing funding for heat-respite/extended-hour centers; eventual ongoing General Fund cost anticipated $4m.",
+      "Trial budget is a proposal. $1.5m is neither all-program cost nor one center price.",
+      "0.0 positions in the supplemental is additional city positions, not evidence that facilities require no operating staff."
+    ],
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 1539889,
+    "resolved_url": "https://web-prod.phoenix.gov/content/dam/phoenix/budgetsite/documents/2026-27-Trial-Budget.pdf",
+    "download_url": "https://web-prod.phoenix.gov/content/dam/phoenix/budgetsite/documents/2026-27-Trial-Budget.pdf",
+    "relevant_pdf_pages_1_based": [
+      6,
+      11
+    ],
+    "relative_path": "资料/07_政策与新闻/成本与案例/Phoenix_Trial_Budget_2026-27.pdf"
+  },
+  {
+    "path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_General_2025-08-21_Staffing.pdf",
+    "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/8-21-25%20General%20Info%20Packet-FINAL.pdf",
+    "publisher": "City of Phoenix",
+    "year": 2025,
+    "type": "Official transmittal packet containing City Council March25,2025 policy-session minutes; staffing plan",
+    "pages": 27,
+    "sha256": "4634961bbdfd0a336d1b31d895b762409bf175b6d77d9a6588f71d5a5d9ff47a",
+    "bytes": 370496,
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "resolved_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/8-21-25%20General%20Info%20Packet-FINAL.pdf",
+    "download_url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/8-21-25%20General%20Info%20Packet-FINAL.pdf",
+    "relative_path": "资料/07_政策与新闻/成本与案例/Phoenix_Council_General_2025-08-21_Staffing.pdf",
+    "relevant_pdf_pages_1_based": [
+      8,
+      9,
+      12,
+      13,
+      15,
+      16
+    ],
+    "limitations": [
+      "Aug21,2025 publication packet transmits minutes of the March25,2025 meeting; the staffing/capacity discussion is a 2025 plan, not a 2026 observation.",
+      "PDF page13 / minutes internal page10: CBI staffing at the 24/7 respite site is two12-hour shifts, minimum9staff each, including navigators, peer supports, supervisors; OHS adds2staff Mon-Fri7am-4pm. Page9 identifies new24/7 site at20WJacksonStreet.",
+      "Capacity is anticipated more than100 individuals AT ANY GIVEN TIME; expected simultaneous accommodation, not observed daily visitor-visits or unique persons.",
+      "40seasonal part-time workers are reported hired across Harmon,Cholla,Yucca library extended-hours services; not40perlibrary or40staff on each shift.",
+      "Page15 describes9additional library security guards in the library staffing model; group total, not per-shift allocation.",
+      "Do not transplant the fixed24/7center staffing ratio to a mobile cooling bus without adaptation."
+    ],
+    "visual_qa": "PDF physical pages9and13 rendered with Poppler and visually inspected2026-11-18; address and staffing/capacity refer to2025 24/7 heat respite site20WJacksonStreet."
+  },
+  {
+    "path": "资料/03_健康与暴露/年度报告/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf",
+    "relative_path": "资料/03_健康与暴露/年度报告/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf",
+    "url": "https://www.azdhs.gov/documents/preparedness/epidemiology-disease-control/extreme-weather/pubs/heat-related-illness-emergency-department-and-inpatient-admissions-in-arizona-by-year-2021-2025.pdf?v=20260709",
+    "publisher": "Arizona Department of Health Services",
+    "year": 2025,
+    "type": "2021-2025 annual emergency department and inpatient admissions report; county of residence tables",
+    "accessed": "2026-11-18",
+    "status": "downloaded",
+    "bytes": 472278,
+    "pages": 21,
+    "sha256": "45f4cc5c777dafea7ee821c30fa829760d77dc817ec1d454ae0762b934659ecf",
+    "limitations": [
+      "County Residence tables cover Arizona residents only; Maricopa is residence county, not the location of injury or hospital.",
+      "PDF page8/Table12: Maricopa heat-related ED visits2023=2492,2024=3031,2025=2272; page10/Table14 inpatient admissions807,885,705.",
+      "These are visits/admissions, not unique persons; heat-related includes but is broader than heat-caused.",
+      "Use the same 2021-2025 release for year comparisons; examine current methods and exclusions."
+    ],
+    "landing_page": "https://www.azdhs.gov/preparedness/epidemiology-disease-control/extreme-weather/heat-safety/index.php",
+    "relevant_pdf_pages_1_based": [
+      3,
+      8,
+      10,
+      21
+    ]
+  }
+]

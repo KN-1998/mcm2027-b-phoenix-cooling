@@ -1,0 +1,4046 @@
+{
+  "layers" : [
+    {
+      "currentVersion" : 12, 
+      "id" : 0, 
+      "name" : "HRN", 
+      "type" : "Feature Layer", 
+      "serviceItemId" : "bd08dde5206543018fe41da60d2551a7", 
+      "cacheMaxAge" : 30, 
+      "isView" : true, 
+      "isUpdatableView" : true, 
+      "sourceSchemaChangesAllowed" : true, 
+      "displayField" : "HC_Name", 
+      "description" : "", 
+      "copyrightText" : "", 
+      "defaultVisibility" : true, 
+      "editingInfo" : {
+        "lastEditDate" : 1793426519158, 
+        "schemaLastEditDate" : 1793343624677, 
+        "dataLastEditDate" : 1793343624677
+      }, 
+      "relationships" : [], 
+      "isDataVersioned" : false, 
+      "hasContingentValuesDefinition" : false, 
+      "supportsAppend" : true, 
+      "supportsCalculate" : true, 
+      "supportsASyncCalculate" : true, 
+      "supportsTruncate" : false, 
+      "supportsAttachmentsByUploadId" : true, 
+      "supportsAttachmentsResizing" : true, 
+      "supportsRollbackOnFailureParameter" : true, 
+      "supportsStatistics" : true, 
+      "supportsExceedsLimitStatistics" : true, 
+      "supportsAdvancedQueries" : true, 
+      "supportsValidateSql" : true, 
+      "supportsCoordinatesQuantization" : true, 
+      "supportsLayerOverrides" : true, 
+      "supportsTilesAndBasicQueriesMode" : true, 
+      "supportsFieldDescriptionProperty" : true, 
+      "supportsQuantizationEditMode" : true, 
+      "supportsColumnStoreIndex" : true, 
+      "supportsApplyEditsWithGlobalIds" : true, 
+      "supportsReturningQueryGeometry" : true, 
+      "enableNullGeometry" : false, 
+      "advancedQueryCapabilities" : {
+        "supportsPagination" : true, 
+        "supportsPaginationOnAggregatedQueries" : true, 
+        "supportsQueryRelatedPagination" : true, 
+        "supportsQueryWithDistance" : true, 
+        "supportsOutDistance" : true, 
+        "supportsReturningQueryExtent" : true, 
+        "supportsStatistics" : true, 
+        "supportsOrderBy" : true, 
+        "supportsDistinct" : true, 
+        "supportsQueryWithResultType" : true, 
+        "supportsSqlExpression" : true, 
+        "supportsTimeRelation" : true, 
+        "supportsAdvancedQueryRelated" : true, 
+        "supportsCountDistinct" : true, 
+        "supportsPercentileStatistics" : true, 
+        "supportsApproxPercentileStatistics" : true, 
+        "supportsSpatialAggregationStatistics" : true, 
+        "supportedSpatialAggregationStatistics" : [
+          "EnvelopeAggregate", 
+          "CentroidAggregate", 
+          "ConvexHullAggregate"
+        ], 
+        "supportsLod" : true, 
+        "supportsQueryWithLodSR" : false, 
+        "supportedLodTypes" : [
+          "geohash"
+        ], 
+        "supportsReturningGeometryCentroid" : false, 
+        "supportsReturningGeometryEnvelope" : false, 
+        "supportsQueryWithDatumTransformation" : true, 
+        "supportsCurrentUserQueries" : true, 
+        "supportsHavingClause" : true, 
+        "supportsOutFieldSQLExpression" : true, 
+        "supportsMaxRecordCountFactor" : true, 
+        "supportsTopFeaturesQuery" : true, 
+        "supportsDisjointSpatialRel" : true, 
+        "supportsQueryWithCacheHint" : true, 
+        "supportedOperationsWithCacheHint" : [
+          "query", 
+          "queryTopFilter", 
+          "queryAnalytics", 
+          "queryAttachments", 
+          "queryRelated", 
+          "queryBins", 
+          "queryPivot"
+        ], 
+        "supportsQueryAnalytic" : true, 
+        "supportsQueryPivot" : true, 
+        "supportsQueryBins" : true, 
+        "supportsDefaultSR" : true, 
+        "supportsTranslations" : false, 
+        "supportsAggIds" : true, 
+        "supportsQueryWithCollation" : true, 
+        "supportsISODOW" : true, 
+        "supportsISOWeek" : true, 
+        "supportsFullTextSearch" : true, 
+        "fullTextSearchCapabilities" : {
+          "supportsAccentSensitivity" : true, 
+          "supportsStopWords" : true, 
+          "supportsSearchOperator" : true, 
+          "supportsOperator" : true
+        }
+      }, 
+      "advancedQueryAnalyticCapabilities" : {
+        "supportsLinearRegression" : true, 
+        "supportsTrendlineRegression" : true, 
+        "supportsAsync" : true, 
+        "supportsPercentileAnalytic" : true
+      }, 
+      "queryBinsCapabilities" : {
+        "supportsAsync" : true, 
+        "supportsAutoIntervalBin" : true, 
+        "supportsFixedIntervalBin" : true, 
+        "supportsFixedBoundariesBin" : true, 
+        "supportsDateBin" : true, 
+        "supportsClassificationBin" : true, 
+        "supportsStackBy" : true, 
+        "supportsSplitBy" : true, 
+        "supportsFirstDayOfWeek" : true, 
+        "supportsSnapToData" : true, 
+        "supportsReturnFullIntervalBin" : true, 
+        "supportsReturnStackValueRange" : true, 
+        "supportsNormalization" : true, 
+        "supportedStatisticTypes" : [
+          "COUNT", 
+          "SUM", 
+          "AVG", 
+          "VAR", 
+          "VAR_SAMP", 
+          "VAR_POP", 
+          "STDDEV", 
+          "STDDEV_SAMP", 
+          "STDDEV_POP", 
+          "MIN", 
+          "MAX", 
+          "PERCENTILE_CONT", 
+          "PERCENTILE_DISC", 
+          "APPROX_PERCENTILE_CONT", 
+          "APPROX_PERCENTILE_DISC", 
+          "CentroidAggregate", 
+          "EnvelopeAggregate", 
+          "ConvexHullAggregate"
+        ], 
+        "supportedNormalizationTypes" : [
+          "boxCox", 
+          "field", 
+          "inverse", 
+          "log", 
+          "naturalLog", 
+          "percentOfTotal", 
+          "squareRoot"
+        ]
+      }, 
+      "supportedOperationsWithCollation" : "query,addField,updateField", 
+      "advancedEditingCapabilities" : {
+        "supportedSqlFormatsInCalculate" : [
+          "standard"
+        ], 
+        "supportsAsyncApplyEdits" : true, 
+        "supportsReturnEditResults" : true, 
+        "supportsApplyEditsbyUploadID" : true, 
+        "supportedApplyEditsUploadIDFormats" : "JSON,PBF", 
+        "supportsTranslation" : false, 
+        "supportsMaxTranslations" : 10
+      }, 
+      "infoInEstimates" : [
+        "extent", 
+        "count"
+      ], 
+      "useStandardizedQueries" : true, 
+      "geometryType" : "esriGeometryPoint", 
+      "minScale" : 0, 
+      "maxScale" : 0, 
+      "extent" : {
+        "xmin" : -113.17212133244234, 
+        "ymin" : 32.893738894000023, 
+        "xmax" : -111.53935082921288, 
+        "ymax" : 33.968350667000038, 
+        "spatialReference" : {
+          "wkid" : 4326, 
+          "latestWkid" : 4326
+        }
+      }, 
+      "drawingInfo":{"renderer":{"type":"simple","symbol":{"type":"esriSMS","style":"esriSMSCircle","color":[39,117,135,255],"size":4,"angle":0,"xoffset":0,"yoffset":0,"outline":{"color":[0,0,0,255],"width":0.7}}},"scaleSymbols":true,"transparency":0,"labelingInfo":null}, 
+      "allowGeometryUpdates" : true, 
+      "hasAttachments" : false, 
+      "viewSourceHasAttachments" : false, 
+      "htmlPopupType" : "esriServerHTMLPopupTypeAsHTMLText", 
+      "hasMetadata" : true, 
+      "hasM" : false, 
+      "hasZ" : false, 
+      "objectIdField" : "OBJECTID", 
+      "uniqueIdField" : 
+      {
+        "name" : "OBJECTID", 
+        "isSystemMaintained" : true
+      }, 
+      "globalIdField" : "globalid", 
+      "typeIdField" : "", 
+      "collation" : {
+        "locale" : "neutral", 
+        "caseSensitive" : false, 
+        "accentSensitive" : true
+      }, 
+      "fields" : [
+        {
+          "name" : "OBJECTID", 
+          "type" : "esriFieldTypeOID", 
+          "alias" : "objectid", 
+          "sqlType" : "sqlTypeOther", 
+          "nullable" : false, 
+          "editable" : false, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "globalid", 
+          "type" : "esriFieldTypeGlobalID", 
+          "alias" : "GlobalID", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 38, 
+          "nullable" : false, 
+          "editable" : false, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "City", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "City", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 50, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "City", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Avondale", 
+                "code" : "Avondale"
+              }, 
+              {
+                "name" : "Buckeye", 
+                "code" : "Buckeye"
+              }, 
+              {
+                "name" : "Chandler", 
+                "code" : "Chandler"
+              }, 
+              {
+                "name" : "Gilbert", 
+                "code" : "Gilbert"
+              }, 
+              {
+                "name" : "Glendale", 
+                "code" : "Glendale"
+              }, 
+              {
+                "name" : "Goodyear", 
+                "code" : "Goodyear"
+              }, 
+              {
+                "name" : "Guadalupe", 
+                "code" : "Guadalupe"
+              }, 
+              {
+                "name" : "Maricopa", 
+                "code" : "Maricopa"
+              }, 
+              {
+                "name" : "Mesa", 
+                "code" : "Mesa"
+              }, 
+              {
+                "name" : "Peoria", 
+                "code" : "Peoria"
+              }, 
+              {
+                "name" : "Phoenix", 
+                "code" : "Phoenix"
+              }, 
+              {
+                "name" : "Scottsdale", 
+                "code" : "Scottsdale"
+              }, 
+              {
+                "name" : "Surprise", 
+                "code" : "Surprise"
+              }, 
+              {
+                "name" : "Tempe", 
+                "code" : "Tempe"
+              }, 
+              {
+                "name" : "Wickenburg", 
+                "code" : "Wickenburg"
+              }, 
+              {
+                "name" : "Aguila", 
+                "code" : "Aguila"
+              }, 
+              {
+                "name" : "Tolleson", 
+                "code" : "Tolleson"
+              }, 
+              {
+                "name" : "Apache Junction", 
+                "code" : "Apache Junction"
+              }, 
+              {
+                "name" : "Casa Grande", 
+                "code" : "Casa Grande"
+              }, 
+              {
+                "name" : "El Mirage", 
+                "code" : "El Mirage"
+              }, 
+              {
+                "name" : "Queen Creek", 
+                "code" : "Queen Creek"
+              }, 
+              {
+                "name" : "Gila Bend", 
+                "code" : "Gila Bend"
+              }, 
+              {
+                "name" : "Litchfield Park", 
+                "code" : "Litchfield Park"
+              }, 
+              {
+                "name" : "Sun Lakes", 
+                "code" : "Sun Lakes"
+              }, 
+              {
+                "name" : "Fountain Hills", 
+                "code" : "Fountain Hills"
+              }, 
+              {
+                "name" : "Sun City", 
+                "code" : "Sun City"
+              }, 
+              {
+                "name" : "Cave Creek", 
+                "code" : "Cave Creek"
+              }, 
+              {
+                "name" : "Carefree", 
+                "code" : "Carefree"
+              }, 
+              {
+                "name" : "Sun City West", 
+                "code" : "Sun City West"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Year", 
+          "type" : "esriFieldTypeSmallInteger", 
+          "alias" : "Year", 
+          "sqlType" : "sqlTypeOther", 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "LUT_Location", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "LUT_Location", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 35, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Organization", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Organization", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 100, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Location", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Location", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 255, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Address", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Address", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 255, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "map_link", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Google Map Link", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 300, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Start_Date", 
+          "type" : "esriFieldTypeDateOnly", 
+          "alias" : "Start_Date", 
+          "sqlType" : "sqlTypeOther", 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "End_Date", 
+          "type" : "esriFieldTypeDateOnly", 
+          "alias" : "End_Date", 
+          "sqlType" : "sqlTypeOther", 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "PrimaryPhone", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "PrimaryPhone", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 50, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "HeatRelief", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "HeatRelief", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 3, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "YesNo", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Yes", 
+                "code" : "Yes"
+              }, 
+              {
+                "name" : "No", 
+                "code" : "No"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "HeatRelief_Type", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "HeatRelief_Type", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 35, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "HeatRelief_Type", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Cooling Center - Offering a place indoors to cool down.", 
+                "code" : "Cooling Center"
+              }, 
+              {
+                "name" : "Hydration Station - Offering bottled water only.", 
+                "code" : "Hydration Station"
+              }, 
+              {
+                "name" : "Respite Center - Offering a place indoors to cool down and allows for uninterrupted rest.", 
+                "code" : "Respite Center"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Collection", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Collection", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 3, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "YesNo", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Yes", 
+                "code" : "Yes"
+              }, 
+              {
+                "name" : "No", 
+                "code" : "No"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Collection_Type", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Collection_Type", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 35, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Collection_Type", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "General Collection - Only accepting snacks and sun protection items like sun screen, sun glasses, and hats.", 
+                "code" : "General Collection Only"
+              }, 
+              {
+                "name" : "Water Collection - Only accepting bottled water donations.", 
+                "code" : "Water Collection Only"
+              }, 
+              {
+                "name" : "Water & General Collection - Accepting bottled water and general collection donations.", 
+                "code" : "Water and General Collection"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Hours", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Hours", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 255, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "MondayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Monday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "MondayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Monday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "TuesdayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Tuesday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "TuesdayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Tuesday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "WednesdayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Wednesday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "WednesdayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Wednesday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "ThursdayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Thursday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "ThursdayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Thursday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "FridayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Friday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "FridayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Friday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "SaturdayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Saturday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "SaturdayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Saturday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "SundayOpen", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Sunday Open", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "SundayClose", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Sunday Close", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 8, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Hours", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "12:00 AM", 
+                "code" : "12:00 AM"
+              }, 
+              {
+                "name" : "12:30 AM", 
+                "code" : "12:30 AM"
+              }, 
+              {
+                "name" : "1:00 AM", 
+                "code" : "1:00 AM"
+              }, 
+              {
+                "name" : "1:30 AM", 
+                "code" : "1:30 AM"
+              }, 
+              {
+                "name" : "2:00 AM", 
+                "code" : "2:00 AM"
+              }, 
+              {
+                "name" : "2:30 AM", 
+                "code" : "2:30 AM"
+              }, 
+              {
+                "name" : "3:00 AM", 
+                "code" : "3:00 AM"
+              }, 
+              {
+                "name" : "3:30 AM", 
+                "code" : "3:30 AM"
+              }, 
+              {
+                "name" : "4:00 AM", 
+                "code" : "4:00 AM"
+              }, 
+              {
+                "name" : "4:30 AM", 
+                "code" : "4:30 AM"
+              }, 
+              {
+                "name" : "5:00 AM", 
+                "code" : "5:00 AM"
+              }, 
+              {
+                "name" : "5:30 AM", 
+                "code" : "5:30 AM"
+              }, 
+              {
+                "name" : "6:00 AM", 
+                "code" : "6:00 AM"
+              }, 
+              {
+                "name" : "6:30 AM", 
+                "code" : "6:30 AM"
+              }, 
+              {
+                "name" : "7:00 AM", 
+                "code" : "7:00 AM"
+              }, 
+              {
+                "name" : "7:30 AM", 
+                "code" : "7:30 AM"
+              }, 
+              {
+                "name" : "8:00 AM", 
+                "code" : "8:00 AM"
+              }, 
+              {
+                "name" : "8:30 AM", 
+                "code" : "8:30 AM"
+              }, 
+              {
+                "name" : "9:00 AM", 
+                "code" : "9:00 AM"
+              }, 
+              {
+                "name" : "9:30 AM", 
+                "code" : "9:30 AM"
+              }, 
+              {
+                "name" : "10:00 AM", 
+                "code" : "10:00 AM"
+              }, 
+              {
+                "name" : "10:30 AM", 
+                "code" : "10:30 AM"
+              }, 
+              {
+                "name" : "11:00 AM", 
+                "code" : "11:00 AM"
+              }, 
+              {
+                "name" : "11:30 AM", 
+                "code" : "11:30 AM"
+              }, 
+              {
+                "name" : "12:00 PM", 
+                "code" : "12:00 PM"
+              }, 
+              {
+                "name" : "12:30 PM", 
+                "code" : "12:30 PM"
+              }, 
+              {
+                "name" : "1:00 PM", 
+                "code" : "1:00 PM"
+              }, 
+              {
+                "name" : "1:30 PM", 
+                "code" : "1:30 PM"
+              }, 
+              {
+                "name" : "2:00 PM", 
+                "code" : "2:00 PM"
+              }, 
+              {
+                "name" : "2:30 PM", 
+                "code" : "2:30 PM"
+              }, 
+              {
+                "name" : "3:00 PM", 
+                "code" : "3:00 PM"
+              }, 
+              {
+                "name" : "3:30 PM", 
+                "code" : "3:30 PM"
+              }, 
+              {
+                "name" : "4:00 PM", 
+                "code" : "4:00 PM"
+              }, 
+              {
+                "name" : "4:30 PM", 
+                "code" : "4:30 PM"
+              }, 
+              {
+                "name" : "5:00 PM", 
+                "code" : "5:00 PM"
+              }, 
+              {
+                "name" : "5:30 PM", 
+                "code" : "5:30 PM"
+              }, 
+              {
+                "name" : "6:00 PM", 
+                "code" : "6:00 PM"
+              }, 
+              {
+                "name" : "6:30 PM", 
+                "code" : "6:30 PM"
+              }, 
+              {
+                "name" : "7:00 PM", 
+                "code" : "7:00 PM"
+              }, 
+              {
+                "name" : "7:30 PM", 
+                "code" : "7:30 PM"
+              }, 
+              {
+                "name" : "8:00 PM", 
+                "code" : "8:00 PM"
+              }, 
+              {
+                "name" : "8:30 PM", 
+                "code" : "8:30 PM"
+              }, 
+              {
+                "name" : "9:00 PM", 
+                "code" : "9:00 PM"
+              }, 
+              {
+                "name" : "9:30 PM", 
+                "code" : "9:30 PM"
+              }, 
+              {
+                "name" : "10:00 PM", 
+                "code" : "10:00 PM"
+              }, 
+              {
+                "name" : "10:30 PM", 
+                "code" : "10:30 PM"
+              }, 
+              {
+                "name" : "11:00 PM", 
+                "code" : "11:00 PM"
+              }, 
+              {
+                "name" : "11:30 PM", 
+                "code" : "11:30 PM"
+              }, 
+              {
+                "name" : "11:59 PM", 
+                "code" : "11:59 PM"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "MemorialDay", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Memorial Day", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 20, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Juneteenth", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Juneteenth", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 20, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "IndependenceDay", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Independence Day", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 20, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "LaborDay", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Labor Day", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 20, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Pets", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Pets", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 5, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "YesNo", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Yes", 
+                "code" : "Yes"
+              }, 
+              {
+                "name" : "No", 
+                "code" : "No"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Wheelchair_access", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Wheelchair_access", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 5, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "YesNo", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Yes", 
+                "code" : "Yes"
+              }, 
+              {
+                "name" : "No", 
+                "code" : "No"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "ADA_accessible", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "ADA_accessible", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 5, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "YesNo", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "codedValues" : [
+              {
+                "name" : "Yes", 
+                "code" : "Yes"
+              }, 
+              {
+                "name" : "No", 
+                "code" : "No"
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Services", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Services", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 500, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Note", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Note", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 75, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "image", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "image", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 100, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Status", 
+          "type" : "esriFieldTypeSmallInteger", 
+          "alias" : "Status", 
+          "sqlType" : "sqlTypeOther", 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "Status", 
+            "mergePolicy" : "esriMPTDefaultValue", 
+            "splitPolicy" : "esriSPTDefaultValue", 
+            "description" : "Use for closures, extended hours", 
+            "codedValues" : [
+              {
+                "name" : "Open with regular hours", 
+                "code" : 1
+              }, 
+              {
+                "name" : "Open **ONLY** during extreme heat warning", 
+                "code" : 4
+              }, 
+              {
+                "name" : "Temporarily closed", 
+                "code" : 5
+              }, 
+              {
+                "name" : "Permanently closed", 
+                "code" : 6
+              }, 
+              {
+                "name" : "Hours differ **use OUTSIDE OF extreme heat warning**", 
+                "code" : 2
+              }, 
+              {
+                "name" : "Hours differ ** use DURING extreme heat warning**", 
+                "code" : 3
+              }
+            ]
+          }, 
+          "defaultValue" : null
+        }, 
+        {
+          "name" : "Active", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Active", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 256, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null, 
+          "description" : "{\"value\":\"This field is scripted to run daily to check today's date against the start and end date fields to dermine if site is active (yes) or inactive (no)\",\"fieldValueType\":\"\"}"
+        }, 
+        {
+          "name" : "ColumbusDay", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Columbus Day", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 20, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : null, 
+          "defaultValue" : null, 
+          "description" : "{\"value\":\"Used if HRN season is extended through October\",\"fieldValueType\":\"\"}"
+        }, 
+        {
+          "name" : "Sub_pop", 
+          "type" : "esriFieldTypeString", 
+          "alias" : "Sub Population", 
+          "sqlType" : "sqlTypeOther", 
+          "length" : 50, 
+          "nullable" : true, 
+          "editable" : true, 
+          "domain" : 
+          {
+            "type" : "codedValue", 
+            "name" : "HRN_Sub_pop_58e3e9cd-fa0b-44c2-aafa-5de504857f3e", 
+            "codedValues" : [
+              {
+                "name" : "Seniors", 
+                "code" : "Seniors"
+              }, 
+              {
+                "name" : "Youth", 
+                "code" : "Youth"
+              }, 
+              {
+                "name" : "Families", 
+                "code" : "Families"
+              }, 
+              {
+                "name" : "Homeless", 
+                "code" : "Homeless"
+              }
+            ]
+          }, 
+          "defaultValue" : null, 
+          "description" : "{\"value\":\"Captures subpopulations served for use in map and popups\",\"fieldValueType\":\"\"}"
+        }
+      ], 
+      "indexes" : [
+        {
+          "name" : "PK__HRN_HRN__F4B70D856C7F9837", 
+          "fields" : "OBJECTID", 
+          "isAscending" : true, 
+          "isUnique" : true, 
+          "description" : "", 
+          "indexType" : "Attribute"
+        }, 
+        {
+          "name" : "user_1104.HRN_HRN_Shape_sidx", 
+          "fields" : "Shape", 
+          "isAscending" : true, 
+          "isUnique" : false, 
+          "description" : "", 
+          "indexType" : "Spatial"
+        }, 
+        {
+          "name" : "FDO_globalid", 
+          "fields" : "globalid", 
+          "isAscending" : true, 
+          "isUnique" : true, 
+          "description" : "", 
+          "indexType" : "Attribute"
+        }, 
+        {
+          "name" : "HeatRelief_Index", 
+          "fields" : "HeatRelief", 
+          "isAscending" : true, 
+          "isUnique" : false, 
+          "description" : "HeatRelief_Index", 
+          "indexType" : "Attribute"
+        }, 
+        {
+          "name" : "Status_Index", 
+          "fields" : "Status", 
+          "isAscending" : true, 
+          "isUnique" : false, 
+          "description" : "Status_Index", 
+          "indexType" : "Attribute"
+        }, 
+        {
+          "name" : "Active_Index", 
+          "fields" : "Active", 
+          "isAscending" : true, 
+          "isUnique" : false, 
+          "description" : "Active_Index", 
+          "indexType" : "Attribute"
+        }
+      ], 
+      "dateFieldsTimeReference" : {
+        "timeZone" : "UTC", 
+        "timeZoneIANA" : "Etc/UTC", 
+        "respectsDaylightSaving" : false
+      }, 
+      "preferredTimeReference" : null, 
+      "types" : [], 
+      "templates" : [
+        {
+          "name" : "HRN", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "extend_season" : null, 
+              "HRN_Sign" : null, 
+              "Status" : null, 
+              "Date_Added" : null, 
+              "Date_Added_Text" : null, 
+              "City" : null, 
+              "Year" : null, 
+              "LUT_Organization" : null, 
+              "LUT_Location" : null, 
+              "Organization" : null, 
+              "Location_Type" : null, 
+              "Location" : null, 
+              "Note_Internal" : null, 
+              "Address" : null, 
+              "Zipcode" : null, 
+              "map_link" : null, 
+              "new_location" : null, 
+              "extend_hours" : null, 
+              "Start_Date" : null, 
+              "Start_Date_Text" : null, 
+              "End_Date" : null, 
+              "End_Date_Text" : null, 
+              "PrimaryPhone" : null, 
+              "HeatRelief" : null, 
+              "HeatRelief_Type" : null, 
+              "Collection" : null, 
+              "Collection_Type" : null, 
+              "open24seven" : null, 
+              "open_after5pm" : null, 
+              "open_wknd" : null, 
+              "known_closures" : null, 
+              "Hours" : null, 
+              "MondayOpen" : null, 
+              "MondayClose" : null, 
+              "TuesdayOpen" : null, 
+              "TuesdayClose" : null, 
+              "WednesdayOpen" : null, 
+              "WednesdayClose" : null, 
+              "ThursdayOpen" : null, 
+              "ThursdayClose" : null, 
+              "FridayOpen" : null, 
+              "FridayClose" : null, 
+              "SaturdayOpen" : null, 
+              "SaturdayClose" : null, 
+              "SundayOpen" : null, 
+              "SundayClose" : null, 
+              "MemorialDay" : null, 
+              "Juneteenth" : null, 
+              "IndependenceDay" : null, 
+              "LaborDay" : null, 
+              "Pets" : null, 
+              "Pets_Area" : null, 
+              "Wheelchair_access" : null, 
+              "ADA_accessible" : null, 
+              "Generator" : null, 
+              "Generator_hrs" : null, 
+              "Capacity" : null, 
+              "Other_Services" : null, 
+              "Services" : null, 
+              "Homeless_Srvcs" : null, 
+              "Health" : null, 
+              "Food" : null, 
+              "Clothing" : null, 
+              "Hygiene" : null, 
+              "Showers" : null, 
+              "Laundry" : null, 
+              "Charging" : null, 
+              "Utility_Assist" : null, 
+              "HC_Name" : null, 
+              "HC_Phone" : null, 
+              "HC_Extension" : null, 
+              "HC_Cell" : null, 
+              "HC_Email" : null, 
+              "SC_Name" : null, 
+              "SC_Phone" : null, 
+              "SC_Extension" : null, 
+              "SC_Cell" : null, 
+              "SC_Email" : null, 
+              "SC_Communications" : null, 
+              "Note" : null, 
+              "image" : null, 
+              "Overdose" : null, 
+              "Narcan" : null
+            }
+          }
+        }
+      ], 
+      "supportedQueryFormats" : "JSON, geoJSON, PBF", 
+      "supportedAppendFormats" : "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,pbf", 
+      "supportedAppendSourceFilterFormats" : "sqlite,geoPackage,shapefile,filegdb,featureService", 
+      "supportedExportFormats" : "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,kml,excel,parquet", 
+      "supportedConvertFileFormats" : "JSON,PBF,Parquet", 
+      "supportedConvertContentFormats" : "LayerEditCollection,FeatureCollection", 
+      "supportedSpatialRelationships" : [
+        "esriSpatialRelIntersects", 
+        "esriSpatialRelContains", 
+        "esriSpatialRelCrosses", 
+        "esriSpatialRelEnvelopeIntersects", 
+        "esriSpatialRelIndexIntersects", 
+        "esriSpatialRelOverlaps", 
+        "esriSpatialRelTouches", 
+        "esriSpatialRelWithin", 
+        "esriSpatialRelDisjoint", 
+        "esriSpatialRelRelation"
+      ], 
+      "guidFormat" : "", 
+      "supportsContingentValues" : true, 
+      "supportsEditingContingentValues" : true, 
+      "supportedContingentValuesFormats" : "JSON, PBF", 
+      "supportsFieldGroups" : true, 
+      "supportedSyncDataOptions" : 49412, 
+      "hasStaticData" : false, 
+      "maxRecordCount" : 2000, 
+      "standardMaxRecordCount" : 16000, 
+      "maxIdsCount" : 400000, 
+      "standardMaxRecordCountNoGeometry" : 32000, 
+      "tileMaxRecordCount" : 8000, 
+      "maxRecordCountFactor" : 1, 
+      "capabilities" : "Query"
+    }
+  ], 
+  "tables" : []
+}

@@ -1,0 +1,140 @@
+{
+  "repo_release": {
+    "id": "acs2024_5yr",
+    "name": "ACS 2024 5-year",
+    "years": "2020-2024"
+  },
+  "local_release": {
+    "id": "acs2024_5yr",
+    "name": "ACS 2024 5-year",
+    "years": "2020-2024"
+  },
+  "repo_zctas": [
+    "86000US85003",
+    "86000US85006",
+    "86000US85008",
+    "86000US85009",
+    "86000US85015",
+    "86000US85017",
+    "86000US85031",
+    "86000US85033",
+    "86000US85035",
+    "86000US85041",
+    "86000US85051"
+  ],
+  "local_zctas": [
+    "86000US85003",
+    "86000US85006",
+    "86000US85008",
+    "86000US85009",
+    "86000US85015",
+    "86000US85017",
+    "86000US85020",
+    "86000US85021",
+    "86000US85023",
+    "86000US85027",
+    "86000US85031",
+    "86000US85033",
+    "86000US85035",
+    "86000US85041",
+    "86000US85051"
+  ],
+  "new_zctas": [
+    "86000US85020",
+    "86000US85021",
+    "86000US85023",
+    "86000US85027"
+  ],
+  "common_tables": [
+    "B01001",
+    "B01003",
+    "B19013"
+  ],
+  "repo_only_tables": [
+    "B08201"
+  ],
+  "local_only_tables": [
+    "B25044"
+  ],
+  "compared_cells": 1122,
+  "differing_cells": [],
+  "no_vehicle_cross_table": [
+    {
+      "geoid": "86000US85003",
+      "repo_households": 5889.0,
+      "local_households": 5889.0,
+      "repo_no_vehicle": 1150.0,
+      "local_no_vehicle": 1150.0
+    },
+    {
+      "geoid": "86000US85006",
+      "repo_households": 9087.0,
+      "local_households": 9087.0,
+      "repo_no_vehicle": 1147.0,
+      "local_no_vehicle": 1147.0
+    },
+    {
+      "geoid": "86000US85008",
+      "repo_households": 22679.0,
+      "local_households": 22679.0,
+      "repo_no_vehicle": 1654.0,
+      "local_no_vehicle": 1654.0
+    },
+    {
+      "geoid": "86000US85009",
+      "repo_households": 13984.0,
+      "local_households": 13984.0,
+      "repo_no_vehicle": 1359.0,
+      "local_no_vehicle": 1359.0
+    },
+    {
+      "geoid": "86000US85015",
+      "repo_households": 16237.0,
+      "local_households": 16237.0,
+      "repo_no_vehicle": 2527.0,
+      "local_no_vehicle": 2527.0
+    },
+    {
+      "geoid": "86000US85017",
+      "repo_households": 11838.0,
+      "local_households": 11838.0,
+      "repo_no_vehicle": 1662.0,
+      "local_no_vehicle": 1662.0
+    },
+    {
+      "geoid": "86000US85031",
+      "repo_households": 8132.0,
+      "local_households": 8132.0,
+      "repo_no_vehicle": 337.0,
+      "local_no_vehicle": 337.0
+    },
+    {
+      "geoid": "86000US85033",
+      "repo_households": 16008.0,
+      "local_households": 16008.0,
+      "repo_no_vehicle": 1225.0,
+      "local_no_vehicle": 1225.0
+    },
+    {
+      "geoid": "86000US85035",
+      "repo_households": 15676.0,
+      "local_households": 15676.0,
+      "repo_no_vehicle": 961.0,
+      "local_no_vehicle": 961.0
+    },
+    {
+      "geoid": "86000US85041",
+      "repo_households": 19316.0,
+      "local_households": 19316.0,
+      "repo_no_vehicle": 1042.0,
+      "local_no_vehicle": 1042.0
+    },
+    {
+      "geoid": "86000US85051",
+      "repo_households": 15922.0,
+      "local_households": 15922.0,
+      "repo_no_vehicle": 1510.0,
+      "local_no_vehicle": 1510.0
+    }
+  ]
+}
