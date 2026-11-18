@@ -64,7 +64,10 @@
 | `drive_min` | float | 分钟 | 30 km/h |
 | `source` | str | — | `ESTIMATE_LINEAR` |
 
-**已知限制**：直线代理会**低估**实际行程（尤其跨河/高速），且未含时段拥堵。真实 GTFS 接入点：EXT-05。
+**GTFS 实测（2026-11-18）**：`data/incoming/access_gtfs.csv` 用 City of Phoenix GTFS（8,101 站）重算公交时间：
+步行到最近站 + 10 min 候车 + 站间直线×1.4/25 km/h + 下车步行。**仅在 `--access-mode transit_min` 时生效**。
+
+**已知限制**：直线代理会**低估**实际行程（尤其跨河/高速），且未含时段拥堵；GTFS 为 City of Phoenix feed，不含 Valley Metro 全部区域线路。真实 GTFS 接入点：EXT-05。
 **当前选择的默认模式**：`walk_min`（依据：2025 周报逐周显示 **56%–66% 步行/骑行**到达，末周为 56%）。**注意：早季 63% 不能代表全季。**
 
 ## 4. `demand.csv`（504 行 = 3 情景 × 12 区 × 7 天 × 2 分群）

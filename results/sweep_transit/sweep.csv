@@ -1,0 +1,7 @@
+﻿p,access_mode,scenario,ushare,max_minutes,extend_fixed_to,capacity_override,unmet_total,coverage_rate,worst_unmet_ratio,structural,served_day,served_evening,served_night,chosen
+0,transit_min,base,,30.0,,,339.03,0.3287,1.0,"D06,D07,D08,D10,D11,D12",130.59,25.0,10.38,
+2,transit_min,base,,30.0,,,284.96,0.4357,1.0,"D06,D07,D08,D10,D11,D12",130.59,79.07,10.38,"MCH-3,MCH-5"
+3,transit_min,base,,30.0,,,283.03,0.4395,1.0,"D06,D07,D08,D10,D11,D12",130.59,81.0,10.38,"MCH-1,MCH-3,MCH-5"
+4,transit_min,base,,30.0,,,283.03,0.4395,1.0,"D06,D07,D08,D10,D11,D12",130.59,81.0,10.38,"MCH-1,MCH-2,MCH-3,MCH-5"
+6,transit_min,base,,30.0,,,283.03,0.4395,1.0,"D06,D07,D08,D10,D11,D12",130.59,81.0,10.38,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6"
+8,transit_min,base,,30.0,,,283.03,0.4395,1.0,"D06,D07,D08,D10,D11,D12",130.59,81.0,10.38,"MCH-1,MCH-2,MCH-3,MCH-4,MCH-5,MCH-6,MCH-7,MCH-8"
