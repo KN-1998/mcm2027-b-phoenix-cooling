@@ -41,8 +41,15 @@ def input_hashes() -> Dict[str, str]:
 def meta(params: Dict[str, Any]) -> Dict[str, Any]:
     sha = _git("rev-parse", "--short", "HEAD")
     # 只关心**代码/数据**是否脏；写 results/ 本身不算（否则每次运行都标脏）
-    lines = [l for l in _git("status", "--porcelain").splitlines()
-             if l.strip() and not l[3:].startswith("results/")]
+    # porcelain 每行是 "XY path"；_git 的 strip() 会吃掉第一行的前导空格，
+    # 因此统一用 l[2:].lstrip() 取路径，不能假定路径从下标 3 开始
+    lines = []
+    for l in _git("status", "--porcelain").splitlines():
+        if not l.strip():
+            continue
+        path = l[2:].lstrip()
+        if not path.startswith("results/"):
+            lines.append(l)
     dirty = bool(lines)
     return {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
