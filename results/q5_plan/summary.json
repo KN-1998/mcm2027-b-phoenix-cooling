@@ -1,0 +1,156 @@
+{
+  "cost_assumptions": {
+    "hub_buy": 80000,
+    "hub_ops": 120000,
+    "extend_21": 1500000,
+    "extend_22": 2500000,
+    "shuttle": 400000
+  },
+  "budgets": {
+    "low": 2000000,
+    "base": 4000000,
+    "high": 6000000
+  },
+  "heat": {
+    "mild": [
+      1.0,
+      1.0,
+      1.02,
+      1.02,
+      1.03
+    ],
+    "base": [
+      1.0,
+      1.03,
+      1.06,
+      1.09,
+      1.12
+    ],
+    "severe": [
+      1.05,
+      1.12,
+      1.2,
+      1.28,
+      1.36
+    ]
+  },
+  "plans": {
+    "low/mild": {
+      "total_spend": 2300000,
+      "final_fleet": 6,
+      "final_extend": 21.0,
+      "final_unmet": 112.15,
+      "actions": [
+        "extend_21",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "low/base": {
+      "total_spend": 2300000,
+      "final_fleet": 6,
+      "final_extend": 21.0,
+      "final_unmet": 124.49,
+      "actions": [
+        "extend_21",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "low/severe": {
+      "total_spend": 2300000,
+      "final_fleet": 6,
+      "final_extend": 21.0,
+      "final_unmet": 168.18,
+      "actions": [
+        "extend_21",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "base/mild": {
+      "total_spend": 3100000,
+      "final_fleet": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "keep",
+        "buy_hub"
+      ]
+    },
+    "base/base": {
+      "total_spend": 3300000,
+      "final_fleet": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.06,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "base/severe": {
+      "total_spend": 3300000,
+      "final_fleet": 6,
+      "final_extend": 22.0,
+      "final_unmet": 161.63,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "high/mild": {
+      "total_spend": 3100000,
+      "final_fleet": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "keep",
+        "buy_hub"
+      ]
+    },
+    "high/base": {
+      "total_spend": 3300000,
+      "final_fleet": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.06,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    },
+    "high/severe": {
+      "total_spend": 3300000,
+      "final_fleet": 6,
+      "final_extend": 22.0,
+      "final_unmet": 161.63,
+      "actions": [
+        "extend_22",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub",
+        "buy_hub"
+      ]
+    }
+  }
+}

@@ -157,6 +157,34 @@ python -m src.exp.run_sweep --out results/sweep `
 3. 收益不再为负——因为"不搬"始终是候选；
 4. 之前的"故障后不能恢复"是**车辆/站点混用**造成的，已作废。
 
+## Q5 五年分期（2027–2031）
+
+**做法**：每年重新决策一次，四类行动——保留 / 增购枢纽 / 延长固定中心营业 / 接驳（阈值 30→45 分钟代理）。
+三档预算（$2M/$4M/$6M）× 三档热浪强度（需求年乘数 mild/base/severe）。
+每年在预算内选**单位美元收益最大**的动作，并输出**可观察触发信号**（最差区未满足率 ≥90%、动作收益 <5）。
+
+**成本假设（ASSUME，缺本地实测）**：枢纽购置 $80k、年运营 $120k、延到 21:00 $1.5M、延到 22:00 $2.5M、接驳 $400k。
+→ 因此**只做排序建议，不做绝对金额承诺**。
+
+| 情景 | 五年花费 | 末年车队 | 延时 | 末年未满足 | 行动序列 |
+|---|---|---|---|---|---|
+| low/mild | $2,300,000 | 6 | 21.0 | 112.2 | extend_21 → buy_hub → buy_hub → buy_hub → buy_hub |
+| low/base | $2,300,000 | 6 | 21.0 | 124.5 | extend_21 → buy_hub → buy_hub → buy_hub → buy_hub |
+| low/severe | $2,300,000 | 6 | 21.0 | 168.2 | extend_21 → buy_hub → buy_hub → buy_hub → buy_hub |
+| base/mild | $3,100,000 | 5 | 22.0 | 109.6 | extend_22 → buy_hub → buy_hub → keep → buy_hub |
+| base/base | $3,300,000 | 6 | 22.0 | 122.1 | extend_22 → buy_hub → buy_hub → buy_hub → buy_hub |
+| base/severe | $3,300,000 | 6 | 22.0 | 161.6 | extend_22 → buy_hub → buy_hub → buy_hub → buy_hub |
+| high/mild | $3,100,000 | 5 | 22.0 | 109.6 | extend_22 → buy_hub → buy_hub → keep → buy_hub |
+| high/base | $3,300,000 | 6 | 22.0 | 122.1 | extend_22 → buy_hub → buy_hub → buy_hub → buy_hub |
+| high/severe | $3,300,000 | 6 | 22.0 | 161.6 | extend_22 → buy_hub → buy_hub → buy_hub → buy_hub |
+
+**三条结论**：
+1. **所有情景的第一笔钱都花在"延时"上**（low 档延到 21:00，其余延到 22:00），与 Q2/Q3 的静态结论一致；
+2. 延时做完后才轮到增购枢纽，且 high 档与 base 档结果相同——**预算在这个区间不是约束**；
+3. mild 情景下 2030 会出现"保留"（不再增购）——因为可達需求已接近饱和，属于**自然的停止信号**。
+
+结果：`results/q5_plan/{plan.csv, summary.json}`。
+
 ## 后续资料怎么接（留空机制）
 
 队友找到文件后放进 `data/incoming/`，**按固定文件名**即可自动覆盖，不用改代码：
