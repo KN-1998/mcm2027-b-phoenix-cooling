@@ -1,0 +1,101 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "date": "2026-11-19",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2432,
+      "sha256": "5618a2e7ab6985a8e7c7f221194655e65be0d5f9e2f8ddcf0f6b697f157f280a"
+    },
+    {
+      "path": "复现入口与跨日边界.py",
+      "bytes": 1935,
+      "sha256": "de4659ad7c02f9bd99ec7bfd5e5fc53ed5f1212ec14c5e667c6dd741d846e0c3"
+    },
+    {
+      "path": "第五轮建模审查.md",
+      "bytes": 14858,
+      "sha256": "fbd5b073dd35bcff96b3e13ff8f9456dfc536b81a962b8bb4df3d9cd9cb1a03e"
+    },
+    {
+      "path": "证据/Q4/evidence.json",
+      "bytes": 11066,
+      "sha256": "4475bba9a13b27f7c1d03b56e1b27b78221e0b9875151ccfae41734816b69803"
+    },
+    {
+      "path": "证据/Q4/probe_q4.py",
+      "bytes": 6206,
+      "sha256": "f0ff832e4d3220cb5734bf38dcf679d65f42019425066778b66d453222b3c87e"
+    },
+    {
+      "path": "证据/Q4/Q4审查结论.md",
+      "bytes": 4656,
+      "sha256": "a128d0e342eddafb7582212e9038b7d5d5d4d23c087fa3d34c0f16c2a1c3e193"
+    },
+    {
+      "path": "证据/Q5/evidence.json",
+      "bytes": 15562,
+      "sha256": "53821b56b3ceeba2025c8cd1bc28bc257b560a912613f63ae6dd916eea7b0028"
+    },
+    {
+      "path": "证据/Q5/probe_q5.py",
+      "bytes": 6087,
+      "sha256": "c7a99a49f58f522f94e854573087d2cecb53ba110b41ac0e247d6f6c3ed4bbce"
+    },
+    {
+      "path": "证据/Q5/Q5审查结论.md",
+      "bytes": 7427,
+      "sha256": "6bb36ca698156c6ac67e67db98db1187860444cab15ec43acf6a379cf413642b"
+    },
+    {
+      "path": "证据/入口与边界/boundary_checks.json",
+      "bytes": 2047,
+      "sha256": "412c3a8c68d34f2690be353d8028bac2386af3b6219c8f3d28f6ae6b89a6b743"
+    },
+    {
+      "path": "证据/入口与边界/pipeline_summary.json",
+      "bytes": 6626,
+      "sha256": "6c94eb07feb2e1d0aaa5055461889209d0ecb14ea4c970f856d4a919482d110f"
+    },
+    {
+      "path": "证据/入口与边界/q3_multiday.json",
+      "bytes": 1011,
+      "sha256": "a85f5f74b7c0dd83605333e72ac29f1230e5a323e35e3788d6881bb10764d4bc"
+    },
+    {
+      "path": "证据/入口与边界/q4_p8_closed_site.json",
+      "bytes": 874,
+      "sha256": "e1f5c76dcc814a8d7e6925003567aec1e13035c215c44066abcb694a721e7a8b"
+    },
+    {
+      "path": "证据/来源/commit_source_lookup.json",
+      "bytes": 2083,
+      "sha256": "eec55d3334b2da7c64c01824c0e2b597501c5429a87a8180cffe0b554422fcf0"
+    },
+    {
+      "path": "证据/来源/evidence.json",
+      "bytes": 62344,
+      "sha256": "164dead18d1258e1818389c4c1f84567234a74df124f6a1304589050dfc91313"
+    },
+    {
+      "path": "证据/来源/审查结论.md",
+      "bytes": 5920,
+      "sha256": "42f2aa52d4be0ff839336c45d00a5c532b103309112ad52995ec61d9a954564f"
+    },
+    {
+      "path": "证据/真实资料接入/evidence.json",
+      "bytes": 7245,
+      "sha256": "8939d62da216fa9ef725f031b469b902dabc6acad439ab26f87be5a5c9909f98"
+    },
+    {
+      "path": "证据/真实资料接入/reproduce_realdata.py",
+      "bytes": 8870,
+      "sha256": "713842c06c2af3e3a6887c1ed441e0fcc0f471b6105fd04b430a2e917e1ac884"
+    },
+    {
+      "path": "验证记录.json",
+      "bytes": 762,
+      "sha256": "cb5f05a65771a0efad687c010d4b27c7d18d1ee41d0b750c2ff71df275e65dde"
+    }
+  ]
+}

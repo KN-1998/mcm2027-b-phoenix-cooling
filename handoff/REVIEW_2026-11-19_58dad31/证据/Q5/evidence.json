@@ -1,0 +1,571 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "zero_budget_still_operates": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2027",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "248.55",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2028",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "248.55",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2029",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "248.55",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2030",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "248.55",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2031",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "248.55",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+      }
+    ],
+    "summary": {
+      "cost_assumptions": {
+        "hub_buy": 80000,
+        "hub_ops": 120000,
+        "extend_21": 1500000,
+        "extend_22": 2500000,
+        "shuttle": 400000
+      },
+      "budgets": {
+        "case": 0
+      },
+      "heat": {
+        "flat": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "plans": {
+        "case/flat": {
+          "total_spend": 0,
+          "final_fleet": 2,
+          "final_extend": null,
+          "final_unmet": 248.55,
+          "actions": [
+            "keep",
+            "keep",
+            "keep",
+            "keep",
+            "keep"
+          ]
+        }
+      }
+    },
+    "annual_existing_hub_operating_cost_by_declared_assumption": 240000
+  },
+  "tiny_budget_wrongly_affordable": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "budget_scenario": "case",
+        "budget": "200000",
+        "heat_scenario": "flat",
+        "year": "2027",
+        "action": "buy_hub",
+        "note": "增购 1 台（购置+首年运营）",
+        "cost": "200000",
+        "within_budget": "True",
+        "fleet": "3",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "227.3",
+        "gain": "21.25",
+        "gain_per_musd": "106.3",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "200000",
+        "heat_scenario": "flat",
+        "year": "2028",
+        "action": "buy_hub",
+        "note": "增购 1 台（购置+首年运营）",
+        "cost": "200000",
+        "within_budget": "True",
+        "fleet": "4",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "227.3",
+        "unmet_after": "206.1",
+        "gain": "21.2",
+        "gain_per_musd": "106.0",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "200000",
+        "heat_scenario": "flat",
+        "year": "2029",
+        "action": "buy_hub",
+        "note": "增购 1 台（购置+首年运营）",
+        "cost": "200000",
+        "within_budget": "True",
+        "fleet": "5",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "206.1",
+        "unmet_after": "187.26",
+        "gain": "18.84",
+        "gain_per_musd": "94.2",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "200000",
+        "heat_scenario": "flat",
+        "year": "2030",
+        "action": "buy_hub",
+        "note": "增购 1 台（购置+首年运营）",
+        "cost": "200000",
+        "within_budget": "True",
+        "fleet": "6",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "187.26",
+        "unmet_after": "168.63",
+        "gain": "18.62",
+        "gain_per_musd": "93.1",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "200000",
+        "heat_scenario": "flat",
+        "year": "2031",
+        "action": "buy_hub",
+        "note": "增购 1 台（购置+首年运营）",
+        "cost": "200000",
+        "within_budget": "True",
+        "fleet": "7",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "168.63",
+        "unmet_after": "154.21",
+        "gain": "14.42",
+        "gain_per_musd": "72.1",
+        "worst_unmet_ratio": "1.0",
+        "trigger": "最差区未满足率≥90%"
+      }
+    ],
+    "summary": {
+      "cost_assumptions": {
+        "hub_buy": 80000,
+        "hub_ops": 120000,
+        "extend_21": 1500000,
+        "extend_22": 2500000,
+        "shuttle": 400000
+      },
+      "budgets": {
+        "case": 200000
+      },
+      "heat": {
+        "flat": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "plans": {
+        "case/flat": {
+          "total_spend": 1000000,
+          "final_fleet": 7,
+          "final_extend": null,
+          "final_unmet": 154.21,
+          "actions": [
+            "buy_hub",
+            "buy_hub",
+            "buy_hub",
+            "buy_hub",
+            "buy_hub"
+          ]
+        }
+      }
+    },
+    "first_year_actual_hub_only_cost_under_declared_assumption": 440000
+  },
+  "worst_metric_state_leak": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "budget_scenario": "case",
+        "budget": "2000000",
+        "heat_scenario": "flat",
+        "year": "2027",
+        "action": "extend_21",
+        "note": "固定中心延到 21:00",
+        "cost": "1500000",
+        "within_budget": "True",
+        "fleet": "0",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "57.5",
+        "unmet_after": "16.0",
+        "gain": "41.5",
+        "gain_per_musd": "27.7",
+        "worst_unmet_ratio": "0.575",
+        "trigger": ""
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "2000000",
+        "heat_scenario": "flat",
+        "year": "2028",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "0",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "16.0",
+        "unmet_after": "16.0",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "0.16",
+        "trigger": "本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "2000000",
+        "heat_scenario": "flat",
+        "year": "2029",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "0",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "16.0",
+        "unmet_after": "16.0",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "0.16",
+        "trigger": "本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "2000000",
+        "heat_scenario": "flat",
+        "year": "2030",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "0",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "16.0",
+        "unmet_after": "16.0",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "0.16",
+        "trigger": "本年动作收益<5 人次/日"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "2000000",
+        "heat_scenario": "flat",
+        "year": "2031",
+        "action": "keep",
+        "note": "维持现状",
+        "cost": "0",
+        "within_budget": "True",
+        "fleet": "0",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "16.0",
+        "unmet_after": "16.0",
+        "gain": "0.0",
+        "gain_per_musd": "",
+        "worst_unmet_ratio": "0.16",
+        "trigger": "本年动作收益<5 人次/日"
+      }
+    ],
+    "summary": {
+      "cost_assumptions": {
+        "hub_buy": 80000,
+        "hub_ops": 120000,
+        "extend_21": 1500000,
+        "extend_22": 2500000,
+        "shuttle": 400000
+      },
+      "budgets": {
+        "case": 2000000
+      },
+      "heat": {
+        "flat": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "plans": {
+        "case/flat": {
+          "total_spend": 1500000,
+          "final_fleet": 0,
+          "final_extend": 21.0,
+          "final_unmet": 16.0,
+          "actions": [
+            "extend_21",
+            "keep",
+            "keep",
+            "keep",
+            "keep"
+          ]
+        }
+      }
+    },
+    "correct_chosen_config_worst": 0.16,
+    "correct_chosen_config_unmet": 16.0
+  },
+  "saved_default_actions": {
+    "low/mild": [
+      "extend_21",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "low/base": [
+      "extend_21",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "low/severe": [
+      "extend_21",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "base/mild": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "keep",
+      "buy_hub"
+    ],
+    "base/base": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "base/severe": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "high/mild": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "keep",
+      "buy_hub"
+    ],
+    "high/base": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ],
+    "high/severe": [
+      "extend_22",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub",
+      "buy_hub"
+    ]
+  },
+  "low_mild_small_gain_still_buy": [
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "mild",
+      "year": "2029",
+      "action": "buy_hub",
+      "note": "增购 1 台（购置+首年运营）",
+      "cost": "200000",
+      "within_budget": "True",
+      "fleet": "4",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "120.74",
+      "unmet_after": "115.78",
+      "gain": "4.95",
+      "gain_per_musd": "24.8",
+      "worst_unmet_ratio": "1.0",
+      "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+    },
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "mild",
+      "year": "2030",
+      "action": "buy_hub",
+      "note": "增购 1 台（购置+首年运营）",
+      "cost": "200000",
+      "within_budget": "True",
+      "fleet": "5",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "115.78",
+      "unmet_after": "113.23",
+      "gain": "2.55",
+      "gain_per_musd": "12.8",
+      "worst_unmet_ratio": "1.0",
+      "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+    },
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "mild",
+      "year": "2031",
+      "action": "buy_hub",
+      "note": "增购 1 台（购置+首年运营）",
+      "cost": "200000",
+      "within_budget": "True",
+      "fleet": "6",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "114.67",
+      "unmet_after": "112.15",
+      "gain": "2.52",
+      "gain_per_musd": "12.6",
+      "worst_unmet_ratio": "1.0",
+      "trigger": "最差区未满足率≥90%;本年动作收益<5 人次/日"
+    }
+  ],
+  "baseline_hours_changed": {
+    "standard_q2_p2_unmet": 248.547,
+    "q5_p2_unmet": 248.547
+  },
+  "unexamined_affordable_joint_action": {
+    "budget": 4000000,
+    "cost_as_current_action_convention": 3100000,
+    "selected_extend22_only_unmet": 129.053,
+    "extend22_plus_shuttle_plus_one_hub_unmet": 107.801,
+    "note": "Uses the current one-time action-cost convention solely to isolate the restricted action set; recurring-cost omissions are independently audited."
+  },
+  "simplest_joint_extension_plus_buy": {
+    "budget": 4000000,
+    "current_cost_convention": 2700000,
+    "including_existing_two_hub_annual_ops": 2940000,
+    "unmet": 107.801
+  },
+  "default_reproduction_exit_code": 0,
+  "default_reproduction_summary_exactly_matches_saved": true,
+  "dollar_objective_documentation_counterexample": {
+    "2027_selected_base_action": "extend_22",
+    "selected_gain_per_million_usd": 47.7976,
+    "available_buy_gain_per_million_usd": 106.26000000000005,
+    "implemented_objective": "max(gain, -cost), not max gain/cost"
+  },
+  "checks": {
+    "zero_budget_returns_feasible_nonzero_operating_fleet": true,
+    "tiny_budget_hub_cost_exceeds_limit": true,
+    "chosen_worst_differs_from_written_worst": true,
+    "joint_affordable_and_better": true,
+    "default_has_low_gain_purchases": true
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "q3_multiday": {
+    "p": 1,
+    "static_best": [
+      "B"
+    ],
+    "static_total_unmet": 100.0,
+    "dynamic_total_unmet": 50.0,
+    "schedule": [
+      {
+        "day": 0,
+        "combo": [
+          "A"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      },
+      {
+        "day": 1,
+        "combo": [
+          "B"
+        ],
+        "moves": [
+          {
+            "from": "A",
+            "to": "B",
+            "hours": 48.0
+          }
+        ],
+        "unmet": 50.0
+      },
+      {
+        "day": 2,
+        "combo": [
+          "B"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      }
+    ],
+    "candidates": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ]
+    ]
+  },
+  "q4_p8_closed_site": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": "MCH-3",
+    "down_vehicle_at": null,
+    "fleet_nominal": 8,
+    "fleet_healthy": 8,
+    "base": {
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3",
+        "MCH-4",
+        "MCH-5",
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 154.214
+    },
+    "shock_only": 154.214,
+    "no_move": {
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-4",
+        "MCH-5",
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 189.439
+    },
+    "best": null,
+    "response_gain": null,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 0,
+    "n_feasible": 0,
+    "budget_hours": 24.0,
+    "feasible_any": false,
+    "parallel": false
+  },
+  "scope": "Deliberate algorithm boundary fixtures, not Phoenix observed journeys or capacity.",
+  "checks": {
+    "q3_still_serves_before_48h_arrival": true,
+    "q4_p8_loses_valid_partial_service_noop": true
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "undeployed_vehicle_rejected": "down_vehicle_at=MCH-1 不在当前部署中；未部署车辆故障不应改变车队",
+  "vehicle_MCH3_failure": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle_at": "MCH-3",
+    "fleet_nominal": 3,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_move": {
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52
+    },
+    "best": {
+      "chosen": [
+        "MCH-3",
+        "MCH-8"
+      ],
+      "unmet": 248.547,
+      "timeline": [
+        {
+          "from": "MCH-7",
+          "to": "MCH-3",
+          "depart_h": 0.0,
+          "travel_h": 0.87,
+          "ready_h": 0.87
+        }
+      ],
+      "total_hours": 0.87,
+      "feasible": true,
+      "n_moves": 1
+    },
+    "response_gain": 13.973,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [
+      {
+        "chosen": [
+          "MCH-4",
+          "MCH-8"
+        ],
+        "unmet": 262.574
+      },
+      {
+        "chosen": [
+          "MCH-4",
+          "MCH-7"
+        ],
+        "unmet": 263.061
+      },
+      {
+        "chosen": [
+          "MCH-5",
+          "MCH-8"
+        ],
+        "unmet": 264.931
+      }
+    ],
+    "n_options": 28,
+    "n_feasible": 28,
+    "budget_hours": 24.0,
+    "feasible_any": true,
+    "parallel": false
+  },
+  "closed_candidate_tiny_budget": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": "MCH-3",
+    "down_vehicle_at": null,
+    "fleet_nominal": 3,
+    "fleet_healthy": 3,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_move": {
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52
+    },
+    "best": null,
+    "response_gain": null,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 35,
+    "n_feasible": 0,
+    "budget_hours": 0.1,
+    "feasible_any": false,
+    "parallel": false
+  },
+  "closed_fixed_tiny_budget": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": "R01",
+    "down_vehicle_at": null,
+    "fleet_nominal": 3,
+    "fleet_healthy": 3,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_move": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 244.637
+    },
+    "best": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 244.637,
+      "timeline": [],
+      "total_hours": 0.0,
+      "feasible": true,
+      "n_moves": 0
+    },
+    "response_gain": 0.0,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 56,
+    "n_feasible": 1,
+    "budget_hours": 0.1,
+    "feasible_any": true,
+    "parallel": false
+  },
+  "custom_base": [
+    "A",
+    "B"
+  ],
+  "two_moves_serial": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0
+    },
+    "best": {
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "unmet": 276.217,
+      "timeline": [
+        {
+          "from": "A",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "depart_h": 2.0,
+          "travel_h": 2.0,
+          "ready_h": 4.0
+        }
+      ],
+      "total_hours": 4.0,
+      "feasible": true,
+      "n_moves": 2
+    },
+    "response_gain": 218.783,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 6,
+    "n_feasible": 6,
+    "budget_hours": 24.0,
+    "feasible_any": true,
+    "parallel": false
+  },
+  "two_moves_parallel": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0
+    },
+    "best": {
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "unmet": 276.217,
+      "timeline": [
+        {
+          "from": "A",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "depart_h": 2.0,
+          "travel_h": 2.0,
+          "ready_h": 4.0
+        }
+      ],
+      "total_hours": 4.0,
+      "feasible": true,
+      "n_moves": 2
+    },
+    "response_gain": 218.783,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 6,
+    "n_feasible": 6,
+    "budget_hours": 24.0,
+    "feasible_any": true,
+    "parallel": true
+  },
+  "parallel_tight_budget": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0
+    },
+    "best": {
+      "chosen": [
+        "A",
+        "C"
+      ],
+      "unmet": 372.067,
+      "timeline": [
+        {
+          "from": "B",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0
+        }
+      ],
+      "total_hours": 2.0,
+      "feasible": true,
+      "n_moves": 1
+    },
+    "response_gain": 122.933,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 6,
+    "n_feasible": 5,
+    "budget_hours": 2.5,
+    "feasible_any": true,
+    "parallel": true
+  },
+  "parallel_feasible_witness": {
+    "chosen": [
+      "C",
+      "D"
+    ],
+    "moves": [
+      {
+        "from": "A",
+        "to": "C",
+        "depart_h": 0.0,
+        "ready_h": 2.0
+      },
+      {
+        "from": "B",
+        "to": "D",
+        "depart_h": 0.0,
+        "ready_h": 2.0
+      }
+    ],
+    "total_hours": 2.0,
+    "unmet": 249.133,
+    "budget_hours": 2.5
+  },
+  "greedy_matching_response": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0
+    },
+    "best": {
+      "chosen": [
+        "B",
+        "C"
+      ],
+      "unmet": 372.067,
+      "timeline": [
+        {
+          "from": "A",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0
+        }
+      ],
+      "total_hours": 2.0,
+      "feasible": true,
+      "n_moves": 1
+    },
+    "response_gain": 122.933,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+    "dominated_examples": [],
+    "n_options": 6,
+    "n_feasible": 4,
+    "budget_hours": 5.0,
+    "feasible_any": true,
+    "parallel": false
+  },
+  "better_matching_witness": {
+    "chosen": [
+      "C",
+      "D"
+    ],
+    "moves": [
+      {
+        "from": "B",
+        "to": "C",
+        "ready_h": 2.1
+      },
+      {
+        "from": "A",
+        "to": "D",
+        "ready_h": 4.2
+      }
+    ],
+    "total_hours": 4.2,
+    "unmet": 280.279,
+    "budget_hours": 5.0,
+    "metric_interpretation": "1D positions A=0,B=3.1,C=1.5,D=-1.6, duration=abs(x-y)+0.5 setup; e.g. one x unit is 40km at40km/h"
+  },
+  "tiny_budget_cli": {
+    "returncode": 0,
+    "stderr": ""
+  },
+  "checks": {
+    "parallel_flag_has_identical_timeline": true,
+    "parallel_tight_budget_rejects_better_feasible_plan": true,
+    "closed_candidate_loses_no_move_option": true,
+    "greedy_matching_misses_better_feasible_plan": true,
+    "tiny_budget_cli_printing_fixed": true,
+    "late_window_ignored_changes_choice": true
+  },
+  "opening_window_not_intersected": {
+    "response": {
+      "shock_districts": [
+        "Z",
+        "B"
+      ],
+      "shock_multiplier": 10.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 1,
+      "fleet_healthy": 1,
+      "base": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 416.0
+      },
+      "shock_only": 3850.0,
+      "no_move": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 4016.0
+      },
+      "best": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 4016.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "feasible": true,
+        "n_moves": 0
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+      "dominated_examples": [
+        {
+          "chosen": [
+            "B"
+          ],
+          "unmet": 4050.0
+        }
+      ],
+      "n_options": 2,
+      "n_feasible": 2,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false
+    },
+    "physical_scenario": "09:00 decision +8h travel/setup=17:00 ready, destination opens22:00-24:00; no operating-hour loss",
+    "full_late_window_feasible_witness_unmet": 3850.0,
+    "current_API_has_no_response_start_clock_argument": true,
+    "best_reported_unmet": 4016.0
+  }
+}

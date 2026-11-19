@@ -1,0 +1,58 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "capacity": 250,
+  "fixture_daily_demand": [
+    100,
+    50,
+    100
+  ],
+  "result": {
+    "p": 1,
+    "static_best": [
+      "B"
+    ],
+    "static_total_unmet": 100.0,
+    "dynamic_total_unmet": 50.0,
+    "schedule": [
+      {
+        "day": 0,
+        "combo": [
+          "A"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      },
+      {
+        "day": 1,
+        "combo": [
+          "B"
+        ],
+        "moves": [
+          {
+            "from": "A",
+            "to": "B",
+            "hours": 48.0
+          }
+        ],
+        "unmet": 50.0
+      },
+      {
+        "day": 2,
+        "combo": [
+          "B"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      }
+    ],
+    "candidates": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ]
+    ]
+  },
+  "scope": "Deliberate algorithm boundary fixtures, not Phoenix observed journeys or capacity."
+}

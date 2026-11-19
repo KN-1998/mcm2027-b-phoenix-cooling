@@ -1,0 +1,46 @@
+{
+  "shock_districts": [
+    "D09",
+    "D03"
+  ],
+  "shock_multiplier": 1.0,
+  "down_site": "MCH-3",
+  "down_vehicle_at": null,
+  "fleet_nominal": 8,
+  "fleet_healthy": 8,
+  "base": {
+    "chosen": [
+      "MCH-1",
+      "MCH-2",
+      "MCH-3",
+      "MCH-4",
+      "MCH-5",
+      "MCH-6",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "unmet": 154.214
+  },
+  "shock_only": 154.214,
+  "no_move": {
+    "chosen": [
+      "MCH-1",
+      "MCH-2",
+      "MCH-4",
+      "MCH-5",
+      "MCH-6",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "unmet": 189.439
+  },
+  "best": null,
+  "response_gain": null,
+  "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+  "dominated_examples": [],
+  "n_options": 0,
+  "n_feasible": 0,
+  "budget_hours": 24.0,
+  "feasible_any": false,
+  "parallel": false
+}

@@ -1,0 +1,2224 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "reviewed_on": "2026-11-19",
+  "top_level_meta_count": 12,
+  "top_level_clean_count": 10,
+  "top_level_shas": {
+    "99add35": 9,
+    "ca22477": 1,
+    "46a0d7f": 1,
+    "2d74f7a": 1
+  },
+  "nested_meta_count_not_in_manifest": 15,
+  "top_level_input_hashes_explained_by_CRLF": true,
+  "run_metadata_changes": [
+    {
+      "directory": "results/levers",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/q2_attribution",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/q2_objectives",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/q3_week",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/q4_response",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha",
+        "params"
+      ],
+      "non_meta_result_files_changed": [
+        "results/q4_response/scenario_table.csv",
+        "results/q4_response/stress.json",
+        "results/q4_response/timeline.csv"
+      ]
+    },
+    {
+      "directory": "results/real_network",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/run_csv",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/segments",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/sweep",
+      "meta_fields_changed": [
+        "generated_at",
+        "git_sha"
+      ],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/sweep_levers",
+      "meta_fields_changed": [],
+      "non_meta_result_files_changed": []
+    },
+    {
+      "directory": "results/sweep_transit",
+      "meta_fields_changed": [],
+      "non_meta_result_files_changed": []
+    }
+  ],
+  "unchanged_source_files": {
+    "src/mch/realnet.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "8a3339a45ea103bcf69a6945603f7b93eb177f4276f38b6a4117c9ae6e8b0b27"
+    },
+    "src/mch/incoming.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "761f9583bd5165fe6074059123113ec98e61ba04dcf3c43cb21a153fa7db1604"
+    },
+    "src/mch/dynamic.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "e7f73e0982e0dc62ae940cb286f5ab9f003c75ab5e639500252470defff95a5b"
+    },
+    "src/exp/run_pipeline.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "dc3e834fbd1a9a9c5fee6cf9c95da9db958d926ad72a3691463aff2fc9b02821"
+    },
+    "src/mch/runmeta.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "3bca94285fbca51cea309dbc5247fe9d082df1445f2384685c11b55c25daafcb"
+    },
+    "src/mch/static.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "4fe7371bdc8ebd333847136c280536a8db3c4c5dc2f05b11a933efac23a5ce2c"
+    },
+    "src/mch/policy.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "bc307f85dbf3f1b06151b3043501da25406cc7652312d5d2df4b5b7c8255606e"
+    },
+    "tools/build_manifest.py": {
+      "byte_identical_to_c506b539fa61": true,
+      "sha256": "16fd13cddecfd27daad006cf3b67e510999ae636463bbd9a9b279b071feb7ed7"
+    }
+  },
+  "commit_source_lookup": {
+    "99add35": {
+      "status": 200,
+      "sha": "99add35e2003fd432abeebea1eb63ff6cb10730a",
+      "message": null,
+      "source_files": {
+        "src/mch/disruption.py": "ca785ff84ac5214e82c21e9c21c7b408107ff073",
+        "src/exp/run_q4_response.py": "a1adcacd12c1d92c4f2c53ff9fdaf31ee95acb83",
+        "src/exp/run_q5_plan.py": null,
+        "src/mch/realnet.py": "6a6e32ea18003bdf580b5752b96c257c002aed9d",
+        "src/mch/runmeta.py": "e2cda2e845d4ecc6422a2b82d679c794d4942ece",
+        "src/mch/incoming.py": "e19189c90919741d5f351f845e5acb8e90badea4",
+        "tools/build_manifest.py": "61b725edd62e81fbe3481180c5299f7b55b88d6b"
+      }
+    },
+    "ca22477": {
+      "status": 200,
+      "sha": "ca2247764d0b72bf024b012930185ed4d22a5dc4",
+      "message": null,
+      "source_files": {
+        "src/mch/disruption.py": "ca785ff84ac5214e82c21e9c21c7b408107ff073",
+        "src/exp/run_q4_response.py": "a1adcacd12c1d92c4f2c53ff9fdaf31ee95acb83",
+        "src/exp/run_q5_plan.py": null,
+        "src/mch/realnet.py": "6a6e32ea18003bdf580b5752b96c257c002aed9d",
+        "src/mch/runmeta.py": "e2cda2e845d4ecc6422a2b82d679c794d4942ece",
+        "src/mch/incoming.py": "e19189c90919741d5f351f845e5acb8e90badea4",
+        "tools/build_manifest.py": "61b725edd62e81fbe3481180c5299f7b55b88d6b"
+      }
+    },
+    "4997f1d": {
+      "status": 200,
+      "sha": "4997f1d917b0b922f32980d86839054eb678c368",
+      "message": null,
+      "source_files": {
+        "src/mch/disruption.py": "ca785ff84ac5214e82c21e9c21c7b408107ff073",
+        "src/exp/run_q4_response.py": "a1adcacd12c1d92c4f2c53ff9fdaf31ee95acb83",
+        "src/exp/run_q5_plan.py": "71f24b7140b8d380e2361dff2f7fc0592ea0d8e4",
+        "src/mch/realnet.py": "6a6e32ea18003bdf580b5752b96c257c002aed9d",
+        "src/mch/runmeta.py": "e2cda2e845d4ecc6422a2b82d679c794d4942ece",
+        "src/mch/incoming.py": "e19189c90919741d5f351f845e5acb8e90badea4",
+        "tools/build_manifest.py": "61b725edd62e81fbe3481180c5299f7b55b88d6b"
+      }
+    },
+    "46a0d7f": {
+      "status": 422,
+      "sha": null,
+      "message": "No commit found for SHA: 46a0d7f"
+    }
+  },
+  "levers_reproduction_exact_json_match": true,
+  "segments_saved_unmet": [
+    206.72,
+    227.3,
+    246.3
+  ],
+  "segments_saved_coverage": [
+    0.5907,
+    0.5499,
+    0.5123
+  ],
+  "segments_endpoint_unmet_increase_percent": 19.146671826625393,
+  "facts_changed_ids": [
+    "F03"
+  ],
+  "F03_MAG_cooling_count": 24,
+  "F03_MAG_city_org_cooling_count": 17,
+  "F23_unchanged_from_old": true,
+  "MAG_still_absent_from_real_network_inputs": true,
+  "run_meta": [
+    {
+      "path": "results/levers/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:34:29",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q2_attribution/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:35:01",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q2_objectives/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:35:03",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:27",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:28",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:29",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:22",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:23",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:25",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:31",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:32",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "dirty": true,
+      "generated_at": "2026-11-17T23:36:34",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_week/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:34:33",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q4_response/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:34:34",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q5_plan/run_meta.json",
+      "git_sha": "ca22477",
+      "dirty": true,
+      "generated_at": "2026-11-19T12:41:36",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/real_network/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:35:00",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/run_csv/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:35:04",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/segments/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:34:30",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/access/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": false,
+      "generated_at": "2026-11-17T21:16:43",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/access_threshold/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": true,
+      "generated_at": "2026-11-17T21:16:55",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/capacity/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": true,
+      "generated_at": "2026-11-17T21:16:59",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/demand_scenario/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": true,
+      "generated_at": "2026-11-17T21:16:47",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/fixed_hours/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": true,
+      "generated_at": "2026-11-17T21:17:03",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/ushare/run_meta.json",
+      "git_sha": "8daf5f5",
+      "dirty": true,
+      "generated_at": "2026-11-17T21:16:51",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep/run_meta.json",
+      "git_sha": "99add35",
+      "dirty": false,
+      "generated_at": "2026-11-19T12:34:31",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep_levers/run_meta.json",
+      "git_sha": "46a0d7f",
+      "dirty": false,
+      "generated_at": "2026-11-18T16:45:42",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "actual": {
+            "raw": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "actual": {
+            "raw": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "actual": {
+            "raw": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "actual": {
+            "raw": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep_transit/run_meta.json",
+      "git_sha": "2d74f7a",
+      "dirty": true,
+      "generated_at": "2026-11-18T12:48:01",
+      "inputs": [
+        {
+          "path": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "actual": {
+            "raw": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "actual": {
+            "raw": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "actual": {
+            "raw": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "path": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "actual": {
+            "raw": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Unchanged numerical outputs do not prove metadata was manually retagged. Stable source bytes and successful numerical reproduction support repeatability; actual historical execution is not externally observable from a diff."
+}

@@ -1,0 +1,25 @@
+{
+  "reviewed_commit": "58dad31d0faf75a5a5742dcea47c314a1ac43fe9",
+  "date": "2026-11-19",
+  "snapshot_selected_files_verified": 319,
+  "source_files_changed_by_review": false,
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "scipy": "1.18.1",
+  "existing_test_suite": {
+    "command": "python -m pytest tests -q",
+    "passed": 43,
+    "warnings": 1,
+    "exit_code": 0,
+    "seconds": 7.98
+  },
+  "pipeline_exit_code": 0,
+  "q5_runner_default_exit_code": 0,
+  "q5_default_summary_matches_saved": true,
+  "q4_probe_exit_code": 0,
+  "q5_probe_exit_code": 0,
+  "realdata_probe_exit_code": 0,
+  "scope": "Review evidence only; model changes and current results are preserved.",
+  "boundary_script_exit_code": 0,
+  "q3_fixture_capacity": 250
+}
