@@ -83,41 +83,48 @@ def main(argv=None) -> int:
                     inst.demand[k] *= mults[i]
 
                 cur_unmet, cur_worst = evaluate(inst, p, ext, shuttle)
-                base_cost = annual_cost(p, ext, shuttle)
 
-                cands = []
+                # 第六轮修正：枚举**行动组合**（车队 × 延时 × 接驳），而不是单动作
+                fleets = sorted({max(1, p - 1), p, min(a.pmax, p + 1)} - {0})
+                exts = sorted({e for e in (ext, 21.0, 22.0) if e is None or e >= (ext or 0)},
+                              key=lambda x: (x is None, x or 0))
+                c = []
+                for fp in fleets:
+                    for fe in exts:
+                        for fs in ((shuttle, True) if not shuttle else (True,)):
+                            cost = annual_cost(fp, fe, fs, max(0, fp - p))
+                            if cost["total"] > budget:
+                                continue
+                            unmet, worst = evaluate(inst, fp, fe, fs)
+                            c.append({"action": f"fleet={fp},ext={fe},shuttle={int(fs)}",
+                                      "p": fp, "ext": fe, "shuttle": fs,
+                                      "cost": cost["total"], "cost_detail": cost,
+                                      "unmet": round(unmet, 2), "worst": round(worst, 4),
+                                      "gain": round(cur_unmet - unmet, 2)})
+                if not c:
+                    # 预算不足以维持：只能减车，直到可行或到 1 台
+                    for fp in range(max(1, p - 1), 0, -1):
+                        cost = annual_cost(fp, ext, shuttle, 0)
+                        if cost["total"] <= budget:
+                            unmet, worst = evaluate(inst, fp, ext, shuttle)
+                            c.append({"action": f"fleet={fp} (budget cut)",
+                                      "p": fp, "ext": ext, "shuttle": shuttle,
+                                      "cost": cost["total"], "cost_detail": cost,
+                                      "unmet": round(unmet, 2), "worst": round(worst, 4),
+                                      "gain": round(cur_unmet - unmet, 2)})
+                            break
+                if not c:   # 连 1 台都付不起：报告无解，不假装可行
+                    c = [{"action": "infeasible", "p": p, "ext": ext, "shuttle": shuttle,
+                          "cost": annual_cost(p, ext, shuttle, 0)["total"],
+                          "cost_detail": annual_cost(p, ext, shuttle, 0),
+                          "unmet": round(cur_unmet, 2), "worst": round(cur_worst, 4), "gain": 0.0}]
 
-                def add(action, pp, ee, ss, buy, note):
-                    c = annual_cost(pp, ee, ss, buy)
-                    unmet, worst = evaluate(inst, pp, ee, ss)
-                    cands.append({"action": action, "p": pp, "ext": ee, "shuttle": ss,
-                                  "cost": c["total"], "cost_detail": c,
-                                  "unmet": round(unmet, 2), "worst": round(worst, 4),
-                                  "gain": round(cur_unmet - unmet, 2), "note": note})
-
-                add("keep", p, ext, shuttle, 0, "维持现状（仍计运维）")
-                if p < a.pmax:
-                    add("buy_hub", p + 1, ext, shuttle, 1, "增购 1 台（含购置与全部运维）")
-                if ext is None:
-                    add("extend_21", p, 21.0, shuttle, 0, "固定中心延到 21:00")
-                if ext in (None, 21.0):
-                    add("extend_22", p, 22.0, shuttle, 0, "固定中心延到 22:00")
-                if not shuttle:
-                    add("shuttle", p, ext, True, 0, "接驳/外展（阈值 30→45 分钟代理）")
-                if p > 1:
-                    add("cut_hub", p - 1, ext, shuttle, 0, "停运 1 台以压运维")
-
-                affordable = [c for c in cands if c["cost"] <= budget]
-                if not affordable:
-                    # 预算连运行现状都不够：只能减车，直到可行或到 1 台
-                    affordable = [c for c in cands if c["action"] == "cut_hub"] or \
-                                 [min(cands, key=lambda c: c["cost"])]
-                best = max(affordable, key=lambda c: (c["gain"], -c["cost"]))
+                best = max(c, key=lambda x: (x["gain"], -x["cost"]))
                 p, ext, shuttle = best["p"], best["ext"], best["shuttle"]
 
                 rows.append({"budget_scenario": bname, "budget": budget,
                              "heat_scenario": hname, "year": year,
-                             "action": best["action"], "note": best["note"],
+                             "action": best["action"], "note": best.get("note", ""),
                              "total_cost": best["cost"],
                              "capital": best["cost_detail"]["capital"],
                              "hub_opex": best["cost_detail"]["hub_opex"],

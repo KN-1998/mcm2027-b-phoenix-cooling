@@ -53,16 +53,15 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
                   down_site: str | None = None, down_vehicle_at: str | None = None,
                   budget_hours: float = 24.0, max_minutes: float = 30.0,
                   capacity: float = 250.0, open_hours: float = 10.0,
-                  parallel: bool = False, exact_matching: bool = True) -> Dict[str, object]:
-    """Q4 闭环 v4（第五轮审查修正）。
+                  parallel: bool = False, top_combos: int = 3,
+                  top_matchings: int = 3) -> Dict[str, object]:
+    """Q4 闭环 v5（第六轮审查修正）。
 
-    修正点：
-      P2-A：**始终**把"不搬/闲置"作为候选（关闭已部署点时也合法）；
-            活动点数 ≤ 健康车队数，不要求恰好用满。
-      P2-B：`parallel=True` 时各车**各自从 0 时刻出发**，总耗时取最大值；串行才累加。
-      P2-C：目标点集内**精确枚举车辆匹配**（当前部署 ≤4 台时用排列），不再只用贪心。
-      时钟：停服折减按 `1 - ready/open_hours`（仍是近似；文档已如实标注，
-            未实现"决策钟点 + 营业窗交集"，因为模型没有引入墙钟时间轴）。
+    1. **所有候选结构统一**：都含 `timeline`、`feasible`、`action`，`no_move` 的 timeline 为空表；
+    2. **原地留驻不计时**：`from == to` 的车辆 ready=0，不占队列、不扣容量、不计搬迁次数；
+    3. **按响应后净服务选优**：对每个目标点集枚举匹配与串行顺序，先判期限，再算净服务，
+       最小运输时间只作次级指标（不再"先按总时间挑一个"）。
+    4. 容量仍按 `1 - ready/open_hours` 近似（未引入墙钟时间轴，已在输出中标注）。
     """
     import itertools
 
@@ -81,87 +80,112 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
     blocked = [x for x in (down_site,) if x]
     current = [x for x in base.chosen if x != down_vehicle_at]
 
-    # ---------- 不搬（含闲置）：始终是候选 ----------
     stay_sites = [x for x in current if x != down_site]
     no_move_sol = _assign(shocked, _active_sites(shocked, tuple(stay_sites), blocked),
                           0, max_minutes, capacity)
     no_move = {"action": "no_move", "chosen": list(stay_sites),
                "unmet": round(no_move_sol.metrics["unmet_total"], 3),
-               "total_hours": 0.0, "n_moves": 0, "idle": len(stay_sites) < fleet}
+               "timeline": [], "total_hours": 0.0, "n_moves": 0,
+               "feasible": True, "idle": len(stay_sites) < fleet}
 
-    def best_matching(cur_sites, target_sites):
-        """精确枚举车辆匹配（≤4 台）或贪心（更多）。返回 [(from,to,hours)]。"""
-        cur = [x for x in cur_sites if x]
-        tgt = list(target_sites)
-        if not cur or not tgt:
-            return [(None, t, 0.0) for t in tgt]
+    def matchings(cur, tgt):
+        """生成 cur→tgt 的匹配（每台车最多一个目标；可留驻）。"""
+        cur = [c for c in cur]
+        tgt = list(tgt)
+        if len(cur) <= 4 and len(tgt) <= 4:
+            out = []
+            for perm in itertools.permutations(cur, min(len(cur), len(tgt))):
+                out.append(list(zip(perm, tgt)))
+            # 也允许部分车辆闲置（目标少于车辆）
+            if len(tgt) < len(cur):
+                for perm in itertools.permutations(cur, len(tgt)):
+                    out.append(list(zip(perm, tgt)))
+            # 去重
+            seen, uniq = set(), []
+            for m in out:
+                key = tuple((c, t) for c, t in m)
+                if key not in seen:
+                    seen.add(key)
+                    uniq.append(m)
+            return uniq
+        pairs, used = [], set()
+        for t in tgt:
+            cand = [(move_time_hours(inst, c, t), c) for c in cur if c not in used]
+            if not cand:
+                pairs.append((None, t)); continue
+            h, c = min(cand); used.add(c); pairs.append((c, t))
+        return [pairs]
 
-        def cost(perm):
-            return sum(move_time_hours(inst, c, t) for c, t in perm)
-
-        if exact_matching and len(cur) <= 4 and len(tgt) <= 4:
-            best, best_v = None, float("inf")
-            for combo in itertools.permutations(cur, min(len(cur), len(tgt))):
-                perm = list(zip(combo, tgt))
-                v = cost(perm)
-                if v < best_v:
-                    best, best_v = perm, v
-            pairs = best or list(zip(cur, tgt))
-        else:
-            # 贪心：每次取最近的未占用配对
-            pairs, used = [], set()
-            for t in tgt:
-                cand = [(move_time_hours(inst, c, t), c) for c in cur if c not in used]
-                if not cand:
-                    pairs.append((None, t))
-                    continue
-                h, c = min(cand)
-                used.add(c)
-                pairs.append((c, t))
-        return [(c, t, move_time_hours(inst, c, t)) for c, t in pairs]
-
-    def schedule_to(target):
-        pairs = best_matching(current, list(target))
-        timeline = []
+    def timeline_for(pairs, order):
+        """顺序执行；from==to 视为已就绪，不占队列。"""
         if parallel:
-            # 各车 0 时刻同时出发
-            for c, t, h in pairs:
-                ready = float(h)
-                timeline.append({"from": c, "to": t, "depart_h": 0.0,
-                                 "travel_h": round(float(h), 2), "ready_h": round(ready, 2)})
-            total = max([m["ready_h"] for m in timeline], default=0.0)
-        else:
-            clock = 0.0
-            for c, t, h in pairs:
-                ready = clock + float(h)
-                timeline.append({"from": c, "to": t, "depart_h": round(clock, 2),
-                                 "travel_h": round(float(h), 2), "ready_h": round(ready, 2)})
-                clock = ready
-            total = clock
-        ready_by_site = {m["to"]: m["ready_h"] for m in timeline}
-        return timeline, ready_by_site, round(total, 2)
+            tl = []
+            for c, t in pairs:
+                h = 0.0 if c == t else float(move_time_hours(inst, c, t))
+                tl.append({"from": c, "to": t, "depart_h": 0.0, "travel_h": round(h, 2),
+                           "ready_h": round(h, 2), "in_place": c == t})
+            total = max([x["ready_h"] for x in tl], default=0.0)
+            return tl, round(total, 2)
+        clock, tl = 0.0, []
+        for idx in order:
+            c, t = pairs[idx]
+            if c == t:
+                tl.append({"from": c, "to": t, "depart_h": 0.0, "travel_h": 0.0,
+                           "ready_h": 0.0, "in_place": True})
+                continue
+            h = float(move_time_hours(inst, c, t))
+            tl.append({"from": c, "to": t, "depart_h": round(clock, 2), "travel_h": round(h, 2),
+                       "ready_h": round(clock + h, 2), "in_place": False})
+            clock += h
+        return tl, round(clock, 2)
 
     def capacity_factor(ready_h):
         return max(0.0, 1.0 - min(open_hours, float(ready_h)) / open_hours)
 
-    # ---------- 枚举目标点集：规模取 min(健康车队, 可用候选) ----------
     cand_ids = [s.id for s in inst.candidate_sites() if s.id not in blocked]
     k = min(fleet, len(cand_ids))
-    options = [no_move]
+
+    # 先用"不计停服"的未满足量粗排，取 top_combos 再做完整调度
+    quick = []
     if k > 0:
         for combo in itertools.combinations(cand_ids, k):
-            timeline, ready_by_site, total_t = schedule_to(combo)
-            downtime = {sid: capacity_factor(h) for sid, h in ready_by_site.items()}
             sol = _assign(shocked, _active_sites(shocked, tuple(combo), blocked),
-                          0, max_minutes, capacity, downtime=downtime)
-            options.append({"action": "relocate", "chosen": list(combo),
-                            "unmet": round(sol.metrics["unmet_total"], 3),
-                            "timeline": timeline, "total_hours": total_t,
-                            "feasible": total_t <= budget_hours,
-                            "n_moves": sum(1 for m in timeline if m["from"])})
+                          0, max_minutes, capacity)
+            quick.append((sol.metrics["unmet_total"], combo))
+        quick.sort()
+        quick = quick[:max(1, top_combos)]
+    else:
+        quick = []
+
+    options = [no_move]
+    for _proxy, combo in quick:
+        # 匹配候选（按"最大就绪"或"总时间"排序，取前 top_matchings）
+        ms = matchings(current, list(combo))
+
+        def score(m):
+            hs = [0.0 if c == t else float(move_time_hours(inst, c, t)) for c, t in m]
+            return max(hs) if parallel else sum(hs)
+
+        ms = sorted(ms, key=score)[:max(1, top_matchings)]
+        for m in ms:
+            orders = [tuple(range(len(m)))]
+            if not parallel and len(m) <= 3:
+                orders = list(itertools.permutations(range(len(m))))
+            for order in orders:
+                tl, total = timeline_for(m, order)
+                if total > budget_hours:
+                    continue
+                down = {x["to"]: capacity_factor(x["ready_h"]) for x in tl if not x.get("in_place")}
+                sol = _assign(shocked, _active_sites(shocked, tuple(combo), blocked),
+                              0, max_minutes, capacity, downtime=down)
+                options.append({"action": "relocate", "chosen": list(combo),
+                                "unmet": round(sol.metrics["unmet_total"], 3),
+                                "timeline": tl, "total_hours": total,
+                                "n_moves": sum(1 for x in tl if not x.get("in_place")),
+                                "feasible": True})
 
     feasible = [o for o in options if o.get("feasible", True)]
-    best = min(feasible, key=lambda o: o["unmet"]) if feasible else None
+    best = min(feasible, key=lambda o: (o["unmet"], o["total_hours"])) if feasible else None
     gain = None if best is None else round(no_move["unmet"] - best["unmet"], 3)
 
     return {
@@ -170,14 +194,12 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
         "fleet_nominal": p, "fleet_healthy": fleet,
         "base": {"chosen": list(base.chosen), "unmet": round(base.metrics["unmet_total"], 3)},
         "shock_only": round(solve_static(shocked, p, **kw).metrics["unmet_total"], 3),
-        "no_move": no_move,
-        "best": best,
-        "response_gain": gain,
-        "gain_definition": "no_move_unmet - best_feasible_unmet（不搬始终在候选内，故 >= 0）",
+        "no_move": no_move, "best": best, "response_gain": gain,
+        "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
         "n_options": len(options), "n_feasible": len(feasible),
         "budget_hours": budget_hours, "feasible_any": bool(feasible),
-        "parallel": parallel, "exact_matching": exact_matching,
-        "capacity_note": "停服按 1-ready/open_hours 近似；未引入墙钟时间轴与营业窗交集",
+        "parallel": parallel,
+        "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量",
     }
 
 

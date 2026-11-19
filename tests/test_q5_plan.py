@@ -30,9 +30,13 @@ class TestQ5Plan(unittest.TestCase):
             self.assertLessEqual(v["total_spend"], 5 * b + 1, msg=k)
 
     def test_first_action_is_extension(self):
-        """所有情景的第一笔钱都花在延时上（与静态结论一致）。"""
-        for k, v in self.data["plans"].items():
-            self.assertTrue(v["actions"][0].startswith("extend"), msg=k)
+        """所有情景的第一年都包含延时（v3 组合动作下按 extend_to 判定，不看动作字符串）。"""
+        import csv
+        rows = list(csv.DictReader((ROOT / "results" / "q5_plan" / "plan.csv").open(encoding="utf-8-sig")))
+        first = [r for r in rows if r["year"] == "2027"]
+        self.assertTrue(first)
+        for r in first:
+            self.assertNotEqual(r["extend_to"], "", msg=(r["budget_scenario"], r["heat_scenario"]))
 
     def test_cost_assumptions_declared(self):
         self.assertIn("hub_buy", self.data["cost_assumptions"])

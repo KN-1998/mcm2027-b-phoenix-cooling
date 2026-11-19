@@ -16,6 +16,8 @@ def move_time_hours(inst: Instance, a: str, b: str) -> float:
     """两个候选点之间的迁移时间（小时）。[EXT-11] 现用直线距离代理。"""
     sa = next(s for s in inst.sites if s.id == a)
     sb = next(s for s in inst.sites if s.id == b)
+    if a == b:
+        return 0.0                     # 原地留驻：不搬迁、不搭建（第六轮审查）
     from math import hypot
     km = hypot((sa.lat - sb.lat) * 111.0, (sa.lon - sb.lon) * 95.0)
     return round(0.5 + km / 40.0, 2)   # 0.5 h 搭建 + 40 km/h 行驶
