@@ -1,0 +1,7 @@
+﻿kind,down,shock_mult,from,to,depart_h,travel_h,ready_h,in_place
+vehicle,MCH-3,1.0,MCH-7,MCH-3,0.0,0.87,0.87,False
+vehicle,MCH-3,1.0,MCH-8,MCH-8,0.0,0.0,0.0,True
+vehicle,MCH-3,1.8,MCH-7,MCH-3,0.0,0.87,0.87,False
+vehicle,MCH-3,1.8,MCH-8,MCH-8,0.0,0.0,0.0,True
+vehicle,MCH-3,3.0,MCH-7,MCH-3,0.0,0.87,0.87,False
+vehicle,MCH-3,3.0,MCH-8,MCH-8,0.0,0.0,0.0,True

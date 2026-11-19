@@ -1,0 +1,133 @@
+{
+  "base": [
+    "A"
+  ],
+  "default": {
+    "shock_districts": [
+      "B",
+      "C"
+    ],
+    "shock_multiplier": 2,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 1,
+    "fleet_healthy": 1,
+    "base": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 210.0
+    },
+    "shock_only": 321.68,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "A"
+      ],
+      "unmet": 404.0,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "no_move",
+      "chosen": [
+        "A"
+      ],
+      "unmet": 404.0,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "response_gain": 0.0,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 1,
+    "n_feasible": 1,
+    "budget_hours": 1,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "all_combos": {
+    "shock_districts": [
+      "B",
+      "C"
+    ],
+    "shock_multiplier": 2,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 1,
+    "fleet_healthy": 1,
+    "base": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 210.0
+    },
+    "shock_only": 321.68,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "A"
+      ],
+      "unmet": 404.0,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "relocate",
+      "chosen": [
+        "E"
+      ],
+      "unmet": 328.4,
+      "timeline": [
+        {
+          "from": "A",
+          "to": "E",
+          "depart_h": 0.0,
+          "travel_h": 0.53,
+          "ready_h": 0.53,
+          "in_place": false
+        }
+      ],
+      "total_hours": 0.53,
+      "n_moves": 1,
+      "feasible": true
+    },
+    "response_gain": 75.6,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 3,
+    "n_feasible": 3,
+    "budget_hours": 1,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "times": {
+    "B1": 1.61,
+    "B2": 1.89,
+    "B3": 2.17,
+    "E": 0.53
+  },
+  "fixture": {
+    "capacity": 250,
+    "hours": "09-22",
+    "demand_before": {
+      "A": 100,
+      "B": 99,
+      "C": 95
+    },
+    "shock_districts": [
+      "B",
+      "C"
+    ],
+    "multiplier": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "reviewed_commit": "a52f54ba7b3213c1354992b8d94b221ebced6727",
+  "review_started_on": "2026-11-19",
+  "selected_files_git_blob_verified": 359,
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "scipy": "1.18.1",
+  "pytest": {
+    "passed": 49,
+    "warnings": 1,
+    "exit_code": 0,
+    "seconds": 8.19
+  },
+  "q4_default_cli": {
+    "command": "python -m src.exp.run_q4_response --out <independent_output>",
+    "exit_code": 0,
+    "scenario_rows": 12,
+    "stress_draws": 100
+  },
+  "q4_probe_exit_code": 0,
+  "q4_probe_checks": 9,
+  "q5_default_runner_exit_code": 0,
+  "q5_default_saved_summary_matches": true,
+  "q5_probe_exit_code": 0,
+  "q5_probe_checks": 7,
+  "model_code_or_input_changes": false
+}

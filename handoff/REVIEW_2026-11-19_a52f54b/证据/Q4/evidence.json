@@ -1,0 +1,804 @@
+{
+  "reviewed_commit": "a52f54ba7b3213c1354992b8d94b221ebced6727",
+  "p8_closed_candidate": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": "MCH-3",
+    "down_vehicle_at": null,
+    "fleet_nominal": 8,
+    "fleet_healthy": 8,
+    "base": {
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3",
+        "MCH-4",
+        "MCH-5",
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 154.214
+    },
+    "shock_only": 154.214,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-4",
+        "MCH-5",
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 189.439,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": true
+    },
+    "best": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-1",
+        "MCH-2",
+        "MCH-4",
+        "MCH-5",
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 189.439,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": true
+    },
+    "response_gain": 0.0,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 2,
+    "n_feasible": 2,
+    "budget_hours": 24.0,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "default_vehicle3_failure": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle_at": "MCH-3",
+    "fleet_nominal": 3,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "relocate",
+      "chosen": [
+        "MCH-3",
+        "MCH-8"
+      ],
+      "unmet": 248.547,
+      "timeline": [
+        {
+          "from": "MCH-7",
+          "to": "MCH-3",
+          "depart_h": 0.0,
+          "travel_h": 0.87,
+          "ready_h": 0.87,
+          "in_place": false
+        },
+        {
+          "from": "MCH-8",
+          "to": "MCH-8",
+          "depart_h": 0.0,
+          "travel_h": 0.0,
+          "ready_h": 0.0,
+          "in_place": true
+        }
+      ],
+      "total_hours": 0.87,
+      "n_moves": 1,
+      "feasible": true
+    },
+    "response_gain": 13.973,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 13,
+    "n_feasible": 13,
+    "budget_hours": 24.0,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "default_vehicle3_one_hour_budget": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle_at": "MCH-3",
+    "fleet_nominal": 3,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "relocate",
+      "chosen": [
+        "MCH-3",
+        "MCH-8"
+      ],
+      "unmet": 248.547,
+      "timeline": [
+        {
+          "from": "MCH-7",
+          "to": "MCH-3",
+          "depart_h": 0.0,
+          "travel_h": 0.87,
+          "ready_h": 0.87,
+          "in_place": false
+        },
+        {
+          "from": "MCH-8",
+          "to": "MCH-8",
+          "depart_h": 0.0,
+          "travel_h": 0.0,
+          "ready_h": 0.0,
+          "in_place": true
+        }
+      ],
+      "total_hours": 0.87,
+      "n_moves": 1,
+      "feasible": true
+    },
+    "response_gain": 13.973,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 3,
+    "n_feasible": 3,
+    "budget_hours": 1.0,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "vehicle3_one_hour_feasible_witness": {
+    "chosen": [
+      "MCH-3",
+      "MCH-8"
+    ],
+    "timeline": [
+      {
+        "from": "MCH-7",
+        "to": "MCH-3",
+        "depart_h": 0.0,
+        "ready_h": 0.87
+      }
+    ],
+    "unchanged_site": "MCH-8",
+    "total_hours": 0.87,
+    "n_moves": 1,
+    "unmet": 248.547
+  },
+  "parallel_min_sum_not_makespan": {
+    "response": {
+      "shock_districts": [
+        "C",
+        "D"
+      ],
+      "shock_multiplier": 10.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 2,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "A",
+          "B"
+        ],
+        "unmet": 49.5
+      },
+      "shock_only": 194.967,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "A",
+          "B"
+        ],
+        "unmet": 495.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "C",
+          "D"
+        ],
+        "unmet": 215.55,
+        "timeline": [
+          {
+            "from": "B",
+            "to": "C",
+            "depart_h": 0.0,
+            "travel_h": 0.76,
+            "ready_h": 0.76,
+            "in_place": false
+          },
+          {
+            "from": "A",
+            "to": "D",
+            "depart_h": 0.0,
+            "travel_h": 0.76,
+            "ready_h": 0.76,
+            "in_place": false
+          }
+        ],
+        "total_hours": 0.76,
+        "n_moves": 2,
+        "feasible": true
+      },
+      "response_gain": 279.45,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+      "n_options": 3,
+      "n_feasible": 3,
+      "budget_hours": 0.8,
+      "feasible_any": true,
+      "parallel": true,
+      "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+    },
+    "positions_arbitrary_units": {
+      "A": [
+        0.0,
+        0.0
+      ],
+      "B": [
+        3.1,
+        0.0
+      ],
+      "C": [
+        0.5,
+        0.0
+      ],
+      "D": [
+        -0.625806451612903,
+        2.5235622213687674
+      ]
+    },
+    "km_per_unit": 4.0,
+    "travel_matrix": {
+      "A->C": 0.55,
+      "A->D": 0.76,
+      "B->C": 0.76,
+      "B->D": 0.95
+    },
+    "witness": {
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "pairs": [
+        {
+          "from": "B",
+          "to": "C",
+          "ready_h": 0.76
+        },
+        {
+          "from": "A",
+          "to": "D",
+          "ready_h": 0.76
+        }
+      ],
+      "total_hours": 0.76,
+      "unmet": 215.55
+    }
+  },
+  "serial_order_not_enumerated": {
+    "response": {
+      "shock_districts": [
+        "C",
+        "D"
+      ],
+      "shock_multiplier": 10.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 2,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "A",
+          "B"
+        ],
+        "unmet": 34.75
+      },
+      "shock_only": 122.483,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "A",
+          "B"
+        ],
+        "unmet": 347.5,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "C",
+          "D"
+        ],
+        "unmet": 159.817,
+        "timeline": [
+          {
+            "from": "B",
+            "to": "D",
+            "depart_h": 0.0,
+            "travel_h": 2.0,
+            "ready_h": 2.0,
+            "in_place": false
+          },
+          {
+            "from": "A",
+            "to": "C",
+            "depart_h": 2.0,
+            "travel_h": 2.0,
+            "ready_h": 4.0,
+            "in_place": false
+          }
+        ],
+        "total_hours": 4.0,
+        "n_moves": 2,
+        "feasible": true
+      },
+      "response_gain": 187.683,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+      "n_options": 13,
+      "n_feasible": 13,
+      "budget_hours": 5.0,
+      "feasible_any": true,
+      "parallel": false,
+      "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+    },
+    "cross_travel_hours": 2.0,
+    "witness": {
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "timeline": [
+        {
+          "from": "B",
+          "to": "D",
+          "depart_h": 0.0,
+          "ready_h": 2.0
+        },
+        {
+          "from": "A",
+          "to": "C",
+          "depart_h": 2.0,
+          "ready_h": 4.0
+        }
+      ],
+      "total_hours": 4.0,
+      "unmet": 159.817
+    }
+  },
+  "parallel_equal2h_fixed": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "relocate",
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "unmet": 249.133,
+      "timeline": [
+        {
+          "from": "A",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0,
+          "in_place": false
+        },
+        {
+          "from": "B",
+          "to": "D",
+          "depart_h": 0.0,
+          "travel_h": 2.0,
+          "ready_h": 2.0,
+          "in_place": false
+        }
+      ],
+      "total_hours": 2.0,
+      "n_moves": 2,
+      "feasible": true
+    },
+    "response_gain": 245.867,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 5,
+    "n_feasible": 5,
+    "budget_hours": 2.5,
+    "feasible_any": true,
+    "parallel": true,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "former_greedy_matching_fixed": {
+    "shock_districts": [
+      "C",
+      "D"
+    ],
+    "shock_multiplier": 10.0,
+    "down_site": null,
+    "down_vehicle_at": null,
+    "fleet_nominal": 2,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 49.5
+    },
+    "shock_only": 194.967,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "A",
+        "B"
+      ],
+      "unmet": 495.0,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "relocate",
+      "chosen": [
+        "C",
+        "D"
+      ],
+      "unmet": 280.279,
+      "timeline": [
+        {
+          "from": "B",
+          "to": "C",
+          "depart_h": 0.0,
+          "travel_h": 2.1,
+          "ready_h": 2.1,
+          "in_place": false
+        },
+        {
+          "from": "A",
+          "to": "D",
+          "depart_h": 2.1,
+          "travel_h": 2.1,
+          "ready_h": 4.2,
+          "in_place": false
+        }
+      ],
+      "total_hours": 4.2,
+      "n_moves": 2,
+      "feasible": true
+    },
+    "response_gain": 214.721,
+    "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+    "n_options": 5,
+    "n_feasible": 5,
+    "budget_hours": 5.0,
+    "feasible_any": true,
+    "parallel": false,
+    "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+  },
+  "default_cli": {
+    "returncode": 0,
+    "stderr": ""
+  },
+  "topK_pruning": {
+    "default_top3": {
+      "shock_districts": [
+        "B",
+        "C"
+      ],
+      "shock_multiplier": 2.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 1,
+      "fleet_healthy": 1,
+      "base": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 210.0
+      },
+      "shock_only": 321.68,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "A"
+        ],
+        "unmet": 404.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "A"
+        ],
+        "unmet": 404.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 1.0,
+      "feasible_any": true,
+      "parallel": false,
+      "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+    },
+    "K10": {
+      "shock_districts": [
+        "B",
+        "C"
+      ],
+      "shock_multiplier": 2.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 1,
+      "fleet_healthy": 1,
+      "base": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 210.0
+      },
+      "shock_only": 321.68,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "A"
+        ],
+        "unmet": 404.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "E"
+        ],
+        "unmet": 328.4,
+        "timeline": [
+          {
+            "from": "A",
+            "to": "E",
+            "depart_h": 0.0,
+            "travel_h": 0.53,
+            "ready_h": 0.53,
+            "in_place": false
+          }
+        ],
+        "total_hours": 0.53,
+        "n_moves": 1,
+        "feasible": true
+      },
+      "response_gain": 75.6,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+      "n_options": 3,
+      "n_feasible": 3,
+      "budget_hours": 1.0,
+      "feasible_any": true,
+      "parallel": false,
+      "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+    },
+    "all_combos": {
+      "shock_districts": [
+        "B",
+        "C"
+      ],
+      "shock_multiplier": 2.0,
+      "down_site": null,
+      "down_vehicle_at": null,
+      "fleet_nominal": 1,
+      "fleet_healthy": 1,
+      "base": {
+        "chosen": [
+          "A"
+        ],
+        "unmet": 210.0
+      },
+      "shock_only": 321.68,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "A"
+        ],
+        "unmet": 404.0,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "E"
+        ],
+        "unmet": 328.4,
+        "timeline": [
+          {
+            "from": "A",
+            "to": "E",
+            "depart_h": 0.0,
+            "travel_h": 0.53,
+            "ready_h": 0.53,
+            "in_place": false
+          }
+        ],
+        "total_hours": 0.53,
+        "n_moves": 1,
+        "feasible": true
+      },
+      "response_gain": 75.6,
+      "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
+      "n_options": 3,
+      "n_feasible": 3,
+      "budget_hours": 1.0,
+      "feasible_any": true,
+      "parallel": false,
+      "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量"
+    },
+    "travel_from_A": {
+      "B1": 1.61,
+      "B2": 1.89,
+      "B3": 2.17,
+      "E": 0.53
+    },
+    "fixture": {
+      "capacity": 250,
+      "open_hours": "09-22",
+      "demand_before": {
+        "A": 100,
+        "B": 99,
+        "C": 95
+      },
+      "shock": [
+        "B",
+        "C"
+      ],
+      "multiplier": 2,
+      "coordinates": {
+        "A": [
+          33.5,
+          -112.0
+        ],
+        "B1": [
+          33.9,
+          -112.0
+        ],
+        "B2": [
+          34.0,
+          -112.0
+        ],
+        "B3": [
+          34.1,
+          -112.0
+        ],
+        "E": [
+          33.51,
+          -112.0
+        ]
+      }
+    },
+    "scope": "Unbounded topK heuristic example, not Phoenix measured demand or routes"
+  },
+  "checks": {
+    "p8_noop_feasible": true,
+    "parallel_equal2h_fixed": true,
+    "former_greedy_matching_fixed": true,
+    "default_cli_runs": true,
+    "in_place_zero_time": true,
+    "one_hour_response_fixed": true,
+    "parallel_matching_old_case_fixed": true,
+    "serial_order_old_case_fixed": true,
+    "topK_default_misses_better_feasible_plan": true
+  }
+}
