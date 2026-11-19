@@ -1,0 +1,86 @@
+{
+  "reviewed_commit": "59ba2421ce3d1d1affc59b366d202c7526588585",
+  "date": "2026-11-19",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1483,
+      "sha256": "69b60ab9e8b11a7091317314b5332f088fdbb4a4b4f9b3bd620e4aeb0a33b1fd"
+    },
+    {
+      "path": "假设卡修订草案.md",
+      "bytes": 2906,
+      "sha256": "602fcde0e90d921daba5fa883bafdef505a0b0004894f5a3d5146ee72769fee1"
+    },
+    {
+      "path": "第六轮建模审查.md",
+      "bytes": 8091,
+      "sha256": "0d36dd332e69bc199f9b8da5fe61406100fe19671080e33a44f1c332c32a3962"
+    },
+    {
+      "path": "证据/Q4/evidence.json",
+      "bytes": 13076,
+      "sha256": "66cb4e017a71702c9564cac71a6d77d5a50a225cbbc650ed70be8aa2b6fbb777"
+    },
+    {
+      "path": "证据/Q4/probe_q4.py",
+      "bytes": 5954,
+      "sha256": "4c8ea31f428f596de87813078abdee1a73989c80eb3f2f3c6c3e64d43597e0ee"
+    },
+    {
+      "path": "证据/Q4/Q4审查结论.md",
+      "bytes": 5471,
+      "sha256": "09766b0ea381dfacf1d182d74823a730908f3dd67eb65adffc37e8ed8db5445e"
+    },
+    {
+      "path": "证据/Q5/evidence.json",
+      "bytes": 30030,
+      "sha256": "9e3dcfb4daaee8a36603e97eb270d9bf450dc41dcda2d167e6080b0e59909b48"
+    },
+    {
+      "path": "证据/Q5/probe_q5.py",
+      "bytes": 5251,
+      "sha256": "0fd03e6035fb3ba8354cdc0c93722c0fe9d1fd3df12af1ad1b8bc0d6ebb55b77"
+    },
+    {
+      "path": "证据/Q5/Q5审查结论.md",
+      "bytes": 6377,
+      "sha256": "8b84ac9a5b3502b9eb33f0d7bc297fc787cf5df5a0799552611e92e4264fe0cf"
+    },
+    {
+      "path": "证据/主入口/summary.json",
+      "bytes": 6626,
+      "sha256": "6c94eb07feb2e1d0aaa5055461889209d0ecb14ea4c970f856d4a919482d110f"
+    },
+    {
+      "path": "证据/文档/commit_lookup.json",
+      "bytes": 595,
+      "sha256": "c4e3681f766516db45ace44af5bc6fcd3824f484e27476bf2d576b2a389251bd"
+    },
+    {
+      "path": "证据/文档/evidence.json",
+      "bytes": 4160,
+      "sha256": "22d91f0bcfabe8ee8438c219d6e5737824d273369c22f678cb22b64c7d7329bd"
+    },
+    {
+      "path": "证据/文档/probe_docs.py",
+      "bytes": 3914,
+      "sha256": "8b4ff68beccd5dad99ef18722b2459c39e2f0e08d06d4a6f1f70cd32dbe1632a"
+    },
+    {
+      "path": "证据/文档/unchanged_dependencies.json",
+      "bytes": 177,
+      "sha256": "a28e84a3d2a8470ad0f160de6c8072602a0ad7b9006cf374ae9d10adae861700"
+    },
+    {
+      "path": "证据/文档/文档审查结论.md",
+      "bytes": 4816,
+      "sha256": "771ea4d40b8af046e6cbbca65513a39ef7d04a5f50f3c1b73d762ecee088794c"
+    },
+    {
+      "path": "验证记录.json",
+      "bytes": 645,
+      "sha256": "c2e440556c51060ace23553f88f0473e1eb699ce1353c88a4416dc49b64754f8"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "reviewed_commit": "59ba2421ce3d1d1affc59b366d202c7526588585",
+  "date": "2026-11-19",
+  "selected_snapshot_files_git_blob_verified": 342,
+  "python": "3.14.6",
+  "numpy": "2.5.1",
+  "scipy": "1.18.1",
+  "pytest": {
+    "passed": 49,
+    "warnings": 1,
+    "exit_code": 0,
+    "seconds": 7.69
+  },
+  "main_pipeline_exit_code": 0,
+  "independent_q4_cli_exit_code": 1,
+  "q4_cli_error": "KeyError: 'timeline'",
+  "independent_q5_exit_code": 0,
+  "q5_saved_summary_reproduced": true,
+  "q4_probe_checks_passed": 8,
+  "q5_probe_checks_passed": 8,
+  "docs_probe_exit_code": 0,
+  "model_sources_or_inputs_modified": false
+}

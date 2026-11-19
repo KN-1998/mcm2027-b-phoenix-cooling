@@ -1,0 +1,1122 @@
+{
+  "reviewed_commit": "59ba2421ce3d1d1affc59b366d202c7526588585",
+  "default_runner": {
+    "exit_code": 0,
+    "summary_matches_saved": true
+  },
+  "default_first_years": [
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "mild",
+      "year": "2027",
+      "action": "extend_21",
+      "note": "固定中心延到 21:00",
+      "total_cost": "1740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "1500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "138.31",
+      "worst_after": "1.0",
+      "gain": "110.23"
+    },
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "base",
+      "year": "2027",
+      "action": "extend_21",
+      "note": "固定中心延到 21:00",
+      "total_cost": "1740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "1500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "138.31",
+      "worst_after": "1.0",
+      "gain": "110.23"
+    },
+    {
+      "budget_scenario": "low",
+      "budget": "2000000",
+      "heat_scenario": "severe",
+      "year": "2027",
+      "action": "extend_21",
+      "note": "固定中心延到 21:00",
+      "total_cost": "1740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "1500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "21.0",
+      "shuttle": "False",
+      "unmet_before": "260.97",
+      "unmet_after": "148.56",
+      "worst_after": "1.0",
+      "gain": "112.41"
+    },
+    {
+      "budget_scenario": "base",
+      "budget": "4000000",
+      "heat_scenario": "mild",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "129.05",
+      "worst_after": "1.0",
+      "gain": "119.49"
+    },
+    {
+      "budget_scenario": "base",
+      "budget": "4000000",
+      "heat_scenario": "base",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "129.05",
+      "worst_after": "1.0",
+      "gain": "119.49"
+    },
+    {
+      "budget_scenario": "base",
+      "budget": "4000000",
+      "heat_scenario": "severe",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "260.97",
+      "unmet_after": "138.31",
+      "worst_after": "1.0",
+      "gain": "122.67"
+    },
+    {
+      "budget_scenario": "high",
+      "budget": "6000000",
+      "heat_scenario": "mild",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "129.05",
+      "worst_after": "1.0",
+      "gain": "119.49"
+    },
+    {
+      "budget_scenario": "high",
+      "budget": "6000000",
+      "heat_scenario": "base",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "248.55",
+      "unmet_after": "129.05",
+      "worst_after": "1.0",
+      "gain": "119.49"
+    },
+    {
+      "budget_scenario": "high",
+      "budget": "6000000",
+      "heat_scenario": "severe",
+      "year": "2027",
+      "action": "extend_22",
+      "note": "固定中心延到 22:00",
+      "total_cost": "2740000",
+      "capital": "0",
+      "hub_opex": "240000",
+      "extend_cost": "2500000",
+      "shuttle_cost": "0",
+      "within_budget": "True",
+      "fleet": "2",
+      "extend_to": "22.0",
+      "shuttle": "False",
+      "unmet_before": "260.97",
+      "unmet_after": "138.31",
+      "worst_after": "1.0",
+      "gain": "122.67"
+    }
+  ],
+  "zero_budget": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2027",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "120000",
+        "capital": "0",
+        "hub_opex": "120000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "1",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "270.29",
+        "worst_after": "1.0",
+        "gain": "-21.74"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2028",
+        "action": "keep",
+        "note": "维持现状（仍计运维）",
+        "total_cost": "120000",
+        "capital": "0",
+        "hub_opex": "120000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "1",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "270.29",
+        "unmet_after": "270.29",
+        "worst_after": "1.0",
+        "gain": "0.0"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2029",
+        "action": "keep",
+        "note": "维持现状（仍计运维）",
+        "total_cost": "120000",
+        "capital": "0",
+        "hub_opex": "120000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "1",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "270.29",
+        "unmet_after": "270.29",
+        "worst_after": "1.0",
+        "gain": "0.0"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2030",
+        "action": "keep",
+        "note": "维持现状（仍计运维）",
+        "total_cost": "120000",
+        "capital": "0",
+        "hub_opex": "120000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "1",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "270.29",
+        "unmet_after": "270.29",
+        "worst_after": "1.0",
+        "gain": "0.0"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "0",
+        "heat_scenario": "flat",
+        "year": "2031",
+        "action": "keep",
+        "note": "维持现状（仍计运维）",
+        "total_cost": "120000",
+        "capital": "0",
+        "hub_opex": "120000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "1",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "270.29",
+        "unmet_after": "270.29",
+        "worst_after": "1.0",
+        "gain": "0.0"
+      }
+    ],
+    "summary": {
+      "cost_assumptions": {
+        "hub_buy": 80000,
+        "hub_ops": 120000,
+        "extend_21": 1500000,
+        "extend_22": 2500000,
+        "shuttle": 400000
+      },
+      "budgets": {
+        "case": 0
+      },
+      "heat": {
+        "flat": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "成本为 ASSUME；预算按当年完整支出（资本+全部运维+延时+接驳）判定",
+      "plans": {
+        "case/flat": {
+          "total_spend": 600000,
+          "total_opex": 600000,
+          "all_within_budget": false,
+          "final_fleet": 1,
+          "final_extend": null,
+          "final_unmet": 270.29,
+          "actions": [
+            "cut_hub",
+            "keep",
+            "keep",
+            "keep",
+            "keep"
+          ]
+        }
+      }
+    },
+    "feasible_omitted_alternative_cost": {
+      "capital": 0,
+      "hub_opex": 0,
+      "extend": 0,
+      "shuttle": 0,
+      "total": 0
+    }
+  },
+  "many_cuts_needed": {
+    "exit_code": 0,
+    "rows": [
+      {
+        "budget_scenario": "case",
+        "budget": "240000",
+        "heat_scenario": "flat",
+        "year": "2027",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "840000",
+        "capital": "0",
+        "hub_opex": "840000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "7",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "154.21",
+        "unmet_after": "154.21",
+        "worst_after": "1.0",
+        "gain": "0.0"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "240000",
+        "heat_scenario": "flat",
+        "year": "2028",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "720000",
+        "capital": "0",
+        "hub_opex": "720000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "6",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "154.21",
+        "unmet_after": "168.63",
+        "worst_after": "1.0",
+        "gain": "-14.42"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "240000",
+        "heat_scenario": "flat",
+        "year": "2029",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "600000",
+        "capital": "0",
+        "hub_opex": "600000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "5",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "168.63",
+        "unmet_after": "187.26",
+        "worst_after": "1.0",
+        "gain": "-18.62"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "240000",
+        "heat_scenario": "flat",
+        "year": "2030",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "480000",
+        "capital": "0",
+        "hub_opex": "480000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "4",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "187.26",
+        "unmet_after": "206.1",
+        "worst_after": "1.0",
+        "gain": "-18.84"
+      },
+      {
+        "budget_scenario": "case",
+        "budget": "240000",
+        "heat_scenario": "flat",
+        "year": "2031",
+        "action": "cut_hub",
+        "note": "停运 1 台以压运维",
+        "total_cost": "360000",
+        "capital": "0",
+        "hub_opex": "360000",
+        "extend_cost": "0",
+        "shuttle_cost": "0",
+        "within_budget": "False",
+        "fleet": "3",
+        "extend_to": "",
+        "shuttle": "False",
+        "unmet_before": "206.1",
+        "unmet_after": "227.3",
+        "worst_after": "1.0",
+        "gain": "-21.2"
+      }
+    ],
+    "summary": {
+      "cost_assumptions": {
+        "hub_buy": 80000,
+        "hub_ops": 120000,
+        "extend_21": 1500000,
+        "extend_22": 2500000,
+        "shuttle": 400000
+      },
+      "budgets": {
+        "case": 240000
+      },
+      "heat": {
+        "flat": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "note": "成本为 ASSUME；预算按当年完整支出（资本+全部运维+延时+接驳）判定",
+      "plans": {
+        "case/flat": {
+          "total_spend": 3000000,
+          "total_opex": 3000000,
+          "all_within_budget": false,
+          "final_fleet": 3,
+          "final_extend": null,
+          "final_unmet": 227.3,
+          "actions": [
+            "cut_hub",
+            "cut_hub",
+            "cut_hub",
+            "cut_hub",
+            "cut_hub"
+          ]
+        }
+      }
+    },
+    "feasible_omitted_two_active_cost": {
+      "capital": 0,
+      "hub_opex": 240000,
+      "extend": 0,
+      "shuttle": 0,
+      "total": 240000
+    }
+  },
+  "first_year_action_combination_frontier": {
+    "low": {
+      "annual_budget": 2000000,
+      "actual_runner_first_year": {
+        "budget_scenario": "low",
+        "budget": "2000000",
+        "heat_scenario": "base",
+        "year": "2027",
+        "action": "extend_21",
+        "note": "固定中心延到 21:00",
+        "total_cost": "1740000",
+        "capital": "0",
+        "hub_opex": "240000",
+        "extend_cost": "1500000",
+        "shuttle_cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "21.0",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "138.31",
+        "worst_after": "1.0",
+        "gain": "110.23"
+      },
+      "actual_configuration_unrounded_unmet": 138.314,
+      "best_one_year_combination_under_same_costs": {
+        "active_fleet": 3,
+        "extend_to": 21.0,
+        "shuttle": false,
+        "capital_for_new_above_initial_two": 80000,
+        "total_first_year_cost": 1940000,
+        "unmet": 117.062,
+        "worst": 1.0
+      },
+      "improvement_over_runner": 21.252
+    },
+    "base": {
+      "annual_budget": 4000000,
+      "actual_runner_first_year": {
+        "budget_scenario": "base",
+        "budget": "4000000",
+        "heat_scenario": "base",
+        "year": "2027",
+        "action": "extend_22",
+        "note": "固定中心延到 22:00",
+        "total_cost": "2740000",
+        "capital": "0",
+        "hub_opex": "240000",
+        "extend_cost": "2500000",
+        "shuttle_cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "22.0",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "129.05",
+        "worst_after": "1.0",
+        "gain": "119.49"
+      },
+      "actual_configuration_unrounded_unmet": 129.053,
+      "best_one_year_combination_under_same_costs": {
+        "active_fleet": 4,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "capital_for_new_above_initial_two": 160000,
+        "total_first_year_cost": 3140000,
+        "unmet": 105.833,
+        "worst": 1.0
+      },
+      "improvement_over_runner": 23.22
+    },
+    "high": {
+      "annual_budget": 6000000,
+      "actual_runner_first_year": {
+        "budget_scenario": "high",
+        "budget": "6000000",
+        "heat_scenario": "base",
+        "year": "2027",
+        "action": "extend_22",
+        "note": "固定中心延到 22:00",
+        "total_cost": "2740000",
+        "capital": "0",
+        "hub_opex": "240000",
+        "extend_cost": "2500000",
+        "shuttle_cost": "0",
+        "within_budget": "True",
+        "fleet": "2",
+        "extend_to": "22.0",
+        "shuttle": "False",
+        "unmet_before": "248.55",
+        "unmet_after": "129.05",
+        "worst_after": "1.0",
+        "gain": "119.49"
+      },
+      "actual_configuration_unrounded_unmet": 129.053,
+      "best_one_year_combination_under_same_costs": {
+        "active_fleet": 4,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "capital_for_new_above_initial_two": 160000,
+        "total_first_year_cost": 3140000,
+        "unmet": 105.833,
+        "worst": 1.0
+      },
+      "improvement_over_runner": 23.22
+    }
+  },
+  "first_year_options": [
+    {
+      "active_fleet": 0,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 0,
+      "unmet": 305.511,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 0,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 400000,
+      "unmet": 305.511,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 0,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 1500000,
+      "unmet": 181.352,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 0,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 1900000,
+      "unmet": 181.352,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 0,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2500000,
+      "unmet": 172.091,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 0,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2900000,
+      "unmet": 172.091,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 120000,
+      "unmet": 270.286,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 520000,
+      "unmet": 270.286,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 1620000,
+      "unmet": 159.613,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2020000,
+      "unmet": 159.613,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2620000,
+      "unmet": 150.352,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 1,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 3020000,
+      "unmet": 150.352,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 240000,
+      "unmet": 248.547,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 640000,
+      "unmet": 248.547,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 1740000,
+      "unmet": 138.314,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2140000,
+      "unmet": 138.314,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 2740000,
+      "unmet": 129.053,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 2,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 0,
+      "total_first_year_cost": 3140000,
+      "unmet": 129.053,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 440000,
+      "unmet": 227.295,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 840000,
+      "unmet": 227.295,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 1940000,
+      "unmet": 117.062,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 2340000,
+      "unmet": 117.062,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 2940000,
+      "unmet": 107.801,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 3,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 80000,
+      "total_first_year_cost": 3340000,
+      "unmet": 107.801,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 640000,
+      "unmet": 206.097,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 1040000,
+      "unmet": 206.097,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 2140000,
+      "unmet": 112.53,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 2540000,
+      "unmet": 112.53,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 3140000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 4,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 160000,
+      "total_first_year_cost": 3540000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 840000,
+      "unmet": 187.256,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 1240000,
+      "unmet": 187.256,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 2340000,
+      "unmet": 110.356,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 2740000,
+      "unmet": 110.356,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 3340000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 5,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 240000,
+      "total_first_year_cost": 3740000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 1040000,
+      "unmet": 168.631,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 1440000,
+      "unmet": 168.631,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 2540000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 2940000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 3540000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 6,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 320000,
+      "total_first_year_cost": 3940000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 1240000,
+      "unmet": 154.214,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 1640000,
+      "unmet": 154.214,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 2740000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 3140000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 3740000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 7,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 400000,
+      "total_first_year_cost": 4140000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": null,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 1440000,
+      "unmet": 154.214,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": null,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 1840000,
+      "unmet": 154.214,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": 21.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 2940000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": 21.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 3340000,
+      "unmet": 108.397,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": 22.0,
+      "shuttle": false,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 3940000,
+      "unmet": 105.833,
+      "worst": 1.0
+    },
+    {
+      "active_fleet": 8,
+      "extend_to": 22.0,
+      "shuttle": true,
+      "capital_for_new_above_initial_two": 480000,
+      "total_first_year_cost": 4340000,
+      "unmet": 105.833,
+      "worst": 1.0
+    }
+  ],
+  "evaluation_purity_and_metric_fix": {
+    "chosen_extension_unmet": 16.0,
+    "chosen_extension_worst": 0.16,
+    "implied_worst": 0.16,
+    "original_close_after_two_calls": 17,
+    "other_candidate_unmet": 57.5
+  },
+  "checks": {
+    "default_summary_reproduces": true,
+    "annual_hub_opex_matches_active_count_in_default": true,
+    "default_budget_flags_match_full_recorded_costs": true,
+    "evaluate_is_pure": true,
+    "selected_worst_is_correct_in_old_counterexample": true,
+    "zero_budget_marks_infeasible_but_still_runs_one_vehicle": true,
+    "one_cut_per_year_misses_affordable_starting_configuration": true,
+    "single_action_rule_is_dominated_by_affordable_combination": true
+  }
+}

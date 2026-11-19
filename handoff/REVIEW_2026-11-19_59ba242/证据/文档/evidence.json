@@ -1,0 +1,145 @@
+{
+  "reviewed_commit": "59ba2421ce3d1d1affc59b366d202c7526588585",
+  "A2_default_demand_doubled": {
+    "base_unmet": 227.295,
+    "twice_base_unmet": 454.59,
+    "double_demand_unmet": 482.193,
+    "base_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "double_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ]
+  },
+  "A2_valid_capacity_ranking_counterexample": {
+    "fixture": {
+      "district_demands": [
+        100,
+        75
+      ],
+      "fixed_C_capacity": 50,
+      "C_hours": [
+        0,
+        24
+      ],
+      "candidate_A_B_capacity_each": 250,
+      "candidate_hours": [
+        9,
+        22
+      ],
+      "reachability": "D1->C,A and D2->B only; all finite edges1min"
+    },
+    "base_chosen": [
+      "B"
+    ],
+    "double_chosen": [
+      "A"
+    ],
+    "base_unmet": 68.917,
+    "double_unmet": 159.083
+  },
+  "D08_current_realnet_access": {
+    "fixed_cooling_within30": [],
+    "candidate_times_minutes": {
+      "MCH-1": 249.3,
+      "MCH-2": 261.4,
+      "MCH-3": 271.4,
+      "MCH-4": 178.9,
+      "MCH-5": 399.6,
+      "MCH-6": 653.1,
+      "MCH-7": 219.4,
+      "MCH-8": 884.6
+    },
+    "note": "Distance proxies from a synthetic demand point, not independently observed access."
+  },
+  "A12_pipeline_fairness": {
+    "worst_unmet_ratio": 1.0,
+    "worst_unmet_ratio_nonexempt": 1.0
+  },
+  "A4_current_segments": {
+    "rows": [
+      {
+        "unsheltered_share": 0.3,
+        "p": 3,
+        "unmet_total": 206.72,
+        "coverage_rate": 0.5907,
+        "worst_unmet_ratio": 1.0,
+        "served_day": 227.89,
+        "served_evening": 66.65,
+        "served_night": 3.74,
+        "chosen": "MCH-3,MCH-7,MCH-8"
+      },
+      {
+        "unsheltered_share": 0.5,
+        "p": 3,
+        "unmet_total": 227.3,
+        "coverage_rate": 0.5499,
+        "worst_unmet_ratio": 1.0,
+        "served_day": 203.9,
+        "served_evening": 68.98,
+        "served_night": 4.83,
+        "chosen": "MCH-3,MCH-7,MCH-8"
+      },
+      {
+        "unsheltered_share": 0.7,
+        "p": 3,
+        "unmet_total": 246.3,
+        "coverage_rate": 0.5123,
+        "worst_unmet_ratio": 1.0,
+        "served_day": 170.42,
+        "served_evening": 82.37,
+        "served_night": 5.91,
+        "chosen": "MCH-3,MCH-4,MCH-8"
+      }
+    ],
+    "endpoint_increase_percent": 19.146671826625393
+  },
+  "q5_saved_opex_shares": {
+    "low/mild": 0.9913606911447084,
+    "low/base": 0.9913606911447084,
+    "low/severe": 0.9913606911447084,
+    "base/mild": 0.9838926174496644,
+    "base/base": 0.9789750328515112,
+    "base/severe": 0.9789750328515112,
+    "high/mild": 0.9838926174496644,
+    "high/base": 0.9789750328515112,
+    "high/severe": 0.9789750328515112
+  },
+  "q5_runmeta": {
+    "generated_at": "2026-11-19T22:06:32",
+    "git_sha": "ef13078",
+    "worktree_dirty": true,
+    "python": "3.13.9",
+    "params": {
+      "p0": 2,
+      "pmax": 8,
+      "out": "results/q5_plan"
+    },
+    "inputs": {
+      "access.csv": "dc990ef1d8658091",
+      "demand.csv": "b6041bb74bbfbae3",
+      "districts.csv": "0ad48911cabcdabb",
+      "sites.csv": "6576a3e4eb6867bc",
+      "incoming/access_gtfs.csv": "6389533cdf0f5367",
+      "incoming/acs_districts.csv": "925f834bcfbc8bd6",
+      "incoming/README.md": "939c03c95ed9aa21",
+      "incoming/sites_mag.csv": "6479ea0864da206e"
+    },
+    "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿"
+  },
+  "dependency_source_sha256": {
+    "src/mch/realnet.py": "8a3339a45ea103bcf69a6945603f7b93eb177f4276f38b6a4117c9ae6e8b0b27",
+    "src/mch/incoming.py": "761f9583bd5165fe6074059123113ec98e61ba04dcf3c43cb21a153fa7db1604",
+    "src/mch/runmeta.py": "3bca94285fbca51cea309dbc5247fe9d082df1445f2384685c11b55c25daafcb",
+    "src/exp/run_pipeline.py": "dc3e834fbd1a9a9c5fee6cf9c95da9db958d926ad72a3691463aff2fc9b02821"
+  },
+  "checks": {
+    "default_unmet_is_not_proportional_to_demand": true,
+    "a_valid_fixture_changes_optimal_placement": true,
+    "A4_saved_increase_is_not15percent": true
+  }
+}
