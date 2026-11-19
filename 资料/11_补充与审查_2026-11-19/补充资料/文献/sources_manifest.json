@@ -1,0 +1,67 @@
+{
+  "verified_on": "2026-11-18",
+  "papers": [
+    {
+      "id": "L01",
+      "doi": "10.15585/mmwr.mm7124a1",
+      "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7124a1.htm",
+      "reading_status": "Official CDC full text read",
+      "local_fulltext_status": "Not copied; citation and original short card only",
+      "public_reuse": "No full-text license determination needed because no full text is included",
+      "verified_on": "2026-11-18"
+    },
+    {
+      "id": "L02",
+      "doi": "10.1007/s11069-024-06946-x",
+      "url": "https://link.springer.com/article/10.1007/s11069-024-06946-x",
+      "reading_status": "Publisher full text read, including Sections2/5/6 and rights statement",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "http_status": 200,
+      "local_fulltext_status": "Downloaded original publisher HTML without modification",
+      "path": "Allen_et_al_2025_CC-BY4_fulltext.html",
+      "bytes": 491320,
+      "sha256": "473cbaf14ced9728749df19a03d72c4914684090c79cca5f3afd6c323b485a75",
+      "verified_on": "2026-11-18"
+    },
+    {
+      "id": "L03",
+      "doi": "10.1289/EHP11651",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37262028/",
+      "pmcid": "PMC10234508",
+      "reading_status": "PubMed original abstract and publisher bibliographic metadata read; full text not read",
+      "local_fulltext_status": "Not included",
+      "access_limit": "PMC browser verification and publisher HTTP403; no bypass attempted",
+      "verified_on": "2026-11-18"
+    },
+    {
+      "id": "L04",
+      "doi": "10.15585/mmwr.mm7414a4",
+      "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7414a4.htm",
+      "reading_status": "Official CDC full text and table footnotes read",
+      "local_fulltext_status": "Not copied; same2023 evaluation as existing county report; original denominator card added",
+      "verified_on": "2026-11-18"
+    }
+  ],
+  "delivered_files": [
+    {
+      "path": "Allen_et_al_2025_CC-BY4_fulltext.html",
+      "type": "Downloaded licensed article",
+      "bytes": 491320,
+      "sha256": "473cbaf14ced9728749df19a03d72c4914684090c79cca5f3afd6c323b485a75"
+    },
+    {
+      "path": "cooling_centres_sources.bib",
+      "type": "Local original curation document",
+      "bytes": 2692,
+      "sha256": "f35adbcc9a9076b599433e8cca4e2614e26744d2aea8fafd054a183b8ac74127"
+    },
+    {
+      "path": "文献卡与建模用途.md",
+      "type": "Local original curation document",
+      "bytes": 6177,
+      "sha256": "0b88b8d1471f27174a201624d99ced3ec77cb10faf3d19dc474b2d3bd0c7c2e9"
+    }
+  ],
+  "scope": "Four citation cards; three primary full-text sources read, one abstract-only source explicitly marked. Only clearly licensed full text is archived."
+}

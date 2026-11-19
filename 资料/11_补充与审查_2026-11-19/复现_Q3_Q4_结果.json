@@ -1,0 +1,263 @@
+{
+  "reviewed_revision": "c506b539fa61ac57b04fb822c8557e1cf3b003de",
+  "net_response_negative": {
+    "shock_districts": [
+      "D2",
+      "D3"
+    ],
+    "shock_multiplier": 1.1,
+    "down_site": null,
+    "down_vehicle": null,
+    "fleet_nominal": 1,
+    "fleet_healthy": 1,
+    "base": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 118.038
+    },
+    "shock_only": 124.156,
+    "no_response": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 127.938
+    },
+    "with_response": {
+      "chosen": [
+        "B"
+      ],
+      "unmet": 129.925
+    },
+    "response_gain": -1.987,
+    "response_gain_infeasible": null,
+    "moves": [
+      {
+        "from": "A",
+        "to": "B",
+        "hours": 1.5
+      }
+    ],
+    "timeline": [
+      {
+        "from": "A",
+        "to": "B",
+        "depart_h": 0.0,
+        "travel_h": 1.5,
+        "arrive_h": 1.5,
+        "open_h": 1.5
+      }
+    ],
+    "total_response_hours": 1.5,
+    "budget_hours": 24.0,
+    "feasible_within_budget": true,
+    "response_hours_modeled": true
+  },
+  "undeployed_vehicle_minimal": {
+    "shock_districts": [
+      "D2",
+      "D3"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle": "B",
+    "fleet_nominal": 1,
+    "fleet_healthy": 0,
+    "base": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 118.038
+    },
+    "shock_only": 118.038,
+    "no_response": {
+      "chosen": [
+        "A"
+      ],
+      "unmet": 118.038
+    },
+    "with_response": {
+      "chosen": [],
+      "unmet": 199.0
+    },
+    "response_gain": -80.962,
+    "response_gain_infeasible": null,
+    "moves": [],
+    "timeline": [],
+    "total_response_hours": 0.0,
+    "budget_hours": 24.0,
+    "feasible_within_budget": true,
+    "response_hours_modeled": true
+  },
+  "multiday_trip": {
+    "p": 1,
+    "static_best": [
+      "B"
+    ],
+    "static_total_unmet": 200.0,
+    "dynamic_total_unmet": 100.0,
+    "schedule": [
+      {
+        "day": 0,
+        "combo": [
+          "A"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      },
+      {
+        "day": 1,
+        "combo": [
+          "B"
+        ],
+        "moves": [
+          {
+            "from": "A",
+            "to": "B",
+            "hours": 48.0
+          }
+        ],
+        "unmet": 100.0
+      },
+      {
+        "day": 2,
+        "combo": [
+          "B"
+        ],
+        "moves": [],
+        "unmet": 0.0
+      }
+    ],
+    "candidates": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ]
+    ]
+  },
+  "undeployed_MCH1": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle": "MCH-1",
+    "fleet_nominal": 3,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_response": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "with_response": {
+      "chosen": [
+        "MCH-3",
+        "MCH-8"
+      ],
+      "unmet": 248.547
+    },
+    "response_gain": -21.252,
+    "response_gain_infeasible": null,
+    "moves": [],
+    "timeline": [],
+    "total_response_hours": 0.0,
+    "budget_hours": 24.0,
+    "feasible_within_budget": true,
+    "response_hours_modeled": true
+  },
+  "deployed_MCH3": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.0,
+    "down_site": null,
+    "down_vehicle": "MCH-3",
+    "fleet_nominal": 3,
+    "fleet_healthy": 2,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 227.295,
+    "no_response": {
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52
+    },
+    "with_response": {
+      "chosen": [
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 262.52
+    },
+    "response_gain": 0.0,
+    "response_gain_infeasible": null,
+    "moves": [],
+    "timeline": [],
+    "total_response_hours": 0.0,
+    "budget_hours": 24.0,
+    "feasible_within_budget": true,
+    "response_hours_modeled": true
+  },
+  "healthy_fleet_original_pad_available": {
+    "healthy_origins": [
+      "MCH-7",
+      "MCH-8"
+    ],
+    "target": [
+      "MCH-3",
+      "MCH-8"
+    ],
+    "moves": [
+      {
+        "from": "MCH-7",
+        "to": "MCH-3",
+        "hours": 0.87
+      }
+    ],
+    "response_hours": 0.87,
+    "no_response_unmet": 262.52,
+    "with_response_unmet": 248.547,
+    "gain": 13.973
+  },
+  "infeasible_cli": {
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\r\n  File \"<frozen runpy>\", line 203, in _run_module_as_main\r\n  File \"<frozen runpy>\", line 88, in _run_code\r\n  File \"<REPOSITORY>\\src\\exp\\run_q4_response.py\", line 95, in <module>\r\n    raise SystemExit(main())\r\n                     ~~~~^^\r\n  File \"<REPOSITORY>\\src\\exp\\run_q4_response.py\", line 87, in main\r\n    f\"{r['with_response_unmet']:8.1f} {r['response_gain']:+8.1f} {r['n_moves']:4d} \"\r\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nTypeError: unsupported format string passed to NoneType.__format__\r\n",
+    "files_written": [
+      "run_meta.json",
+      "scenario_table.csv",
+      "stress.json",
+      "timeline.csv"
+    ]
+  },
+  "observed_issue_checks": {
+    "net_response_can_be_negative": true,
+    "undeployed_vehicle_wrongly_reduces_fleet": true,
+    "healthy_vehicles_can_regain_service_at_unfailed_original_pad": true,
+    "multiday_trip_serves_before_arrival": true,
+    "infeasible_cli_fails_formatting_none": true
+  }
+}

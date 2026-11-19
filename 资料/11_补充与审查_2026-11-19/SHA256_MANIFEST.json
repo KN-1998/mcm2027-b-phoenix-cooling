@@ -1,0 +1,327 @@
+{
+  "finalized_on": "2026-11-19",
+  "reviewed_commit": "c506b539fa61ac57b04fb822c8557e1cf3b003de",
+  "scope": "Source materials, derived candidates, independent review and reproductions. Model code and inputs not changed.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3902,
+      "sha256": "2a20d3c4cac5c471fcc402ac09107523192873edf374ce9cb1d8cc8d8cc7002f"
+    },
+    {
+      "path": "复现_Q3_Q4_结果.json",
+      "bytes": 5884,
+      "sha256": "51f5f13e3455b040340ce520d2688d07ccbe14a13968e0f7f1a5ce08bd172ed9"
+    },
+    {
+      "path": "复现_Q3_Q4_边界检查.py",
+      "bytes": 4237,
+      "sha256": "3d250ccb1527bd364075dbde1676fe1757ed5d4ec96131387562da8499782c89"
+    },
+    {
+      "path": "建模修正建议.md",
+      "bytes": 8370,
+      "sha256": "72c1bb871a04a06ad82f828471923dcc1aac504f172e7c40c0d8ae81dce961b6"
+    },
+    {
+      "path": "第四轮建模审查.md",
+      "bytes": 13721,
+      "sha256": "b5215165c1733ada1ecf2fd77fd455725c7127b924b2cab48bebd218755934f8"
+    },
+    {
+      "path": "补充资料/GTFS接入/gtfs_schedule_validation.json",
+      "bytes": 43031,
+      "sha256": "7c0813a0a38441ccb4560bc10fabfc1a58096efa69d7223cb57f8f0f74ba8c0b"
+    },
+    {
+      "path": "补充资料/GTFS接入/README.md",
+      "bytes": 4746,
+      "sha256": "74cce8201af35e81c3c2ade81ebc3a7099cb6e2dc598f8230a4c9e69980ff304"
+    },
+    {
+      "path": "补充资料/GTFS接入/verify_summer_gtfs.py",
+      "bytes": 8792,
+      "sha256": "2c71903b9fedf147b8ec776878a430f55c7cb414210e4a2c761751deefcdf047"
+    },
+    {
+      "path": "补充资料/MAG日历/build_mag_calendar.py",
+      "bytes": 10236,
+      "sha256": "b3aa38f3d1eb6b275caeded713dfbf3ce2dad691066bc35ad57c72d8cfe7cd65"
+    },
+    {
+      "path": "补充资料/MAG日历/mag_public_view_calendar_122.json",
+      "bytes": 662020,
+      "sha256": "5c93e97ad49d6abf688d6df36b74ed0a160cfc677ad3b1134d24df694797bf2d"
+    },
+    {
+      "path": "补充资料/MAG日历/mag_year2026_calendar_121.json",
+      "bytes": 656401,
+      "sha256": "f13af67e577b31c407a149167119d96ac4f6cd9b21312ab4ecc8c7d9c3f1a8a0"
+    },
+    {
+      "path": "补充资料/MAG日历/phoenix_year2026_calendar_50.json",
+      "bytes": 269984,
+      "sha256": "122648d5c1538f138b7f441f2376d2509df5f6c3790c07582a150064c4cd2ac2"
+    },
+    {
+      "path": "补充资料/MAG日历/README.md",
+      "bytes": 3591,
+      "sha256": "0ca591f33d55cc29bdf1d0618fed6c02ad3952fb059a697edc12449ffc2ab594"
+    },
+    {
+      "path": "补充资料/MAG日历/原始响应/count.json",
+      "bytes": 13,
+      "sha256": "a8dd71f7b26b9cbf18c6e20e167fc110ce45fdc6c18e135d0412fb1c41606d97"
+    },
+    {
+      "path": "补充资料/MAG日历/原始响应/HRN_Public_view_item.json",
+      "bytes": 4061,
+      "sha256": "8dc5faf1e16e2fc552481a8cb2706a74e55fbf1ec9b94f0e86dd3fbaace7d809"
+    },
+    {
+      "path": "补充资料/MAG日历/原始响应/ids.json",
+      "bytes": 512,
+      "sha256": "1cc9d7c356db110c5cc8dc06bda72b2d9e1347cc292b24a0bbc12e692d177f15"
+    },
+    {
+      "path": "补充资料/MAG日历/原始响应/query_all_fields.json",
+      "bytes": 321787,
+      "sha256": "4814600945e0770b8ae473e306162767b5b07f854b81f4bbebc430bb3d49502b"
+    },
+    {
+      "path": "补充资料/MAG日历/日历缺失与范围摘要.json",
+      "bytes": 6440,
+      "sha256": "153a55b849301740ad8e590476de1e0d76739186483b7fa334f7132378fec99d"
+    },
+    {
+      "path": "补充资料/MAG日历/来源与文件哈希.json",
+      "bytes": 2314,
+      "sha256": "148b96ab7496b0419891d2062c6801d1ac191478b5e4518f65072017a56aa83c"
+    },
+    {
+      "path": "补充资料/MAG日历/核验.json",
+      "bytes": 446,
+      "sha256": "3a48fbfbe0e9806aa905c8d00089bfab9918ba716c67fb4ad7a255ada070454a"
+    },
+    {
+      "path": "补充资料/官方村界与人口/2024_HSD_Community_Assessment_Report_FINAL.pdf",
+      "bytes": 2432507,
+      "sha256": "46ae7955f355d56df318984ab7b2fcfe865cc907dff1099ab10d00ec6fa02654"
+    },
+    {
+      "path": "补充资料/官方村界与人口/2024_HSD_Community_Assessment_Report_FINAL.pdf.extracted.txt",
+      "bytes": 144939,
+      "sha256": "7da227cb409545994d4ac7e6550702c9ed64fd5a014b044b774e899b9cedcd66"
+    },
+    {
+      "path": "补充资料/官方村界与人口/2025_HSD_CommunityNeedsAssessment_Report.pdf",
+      "bytes": 3195618,
+      "sha256": "69c64605d301aa294ec55ac793f7df443af837b03c181e7f424cd83911f47bee"
+    },
+    {
+      "path": "补充资料/官方村界与人口/2025_HSD_CommunityNeedsAssessment_Report.pdf.extracted.txt",
+      "bytes": 293622,
+      "sha256": "5eef0bcd784007927449b090182bc232e8b97fa0cb25adad7803006b7ef10948"
+    },
+    {
+      "path": "补充资料/官方村界与人口/boundary_item_provenance.json",
+      "bytes": 223,
+      "sha256": "49bd13d21fea56225334fd6b8ec95d71f5f1cb85207f5f9989fb900996b54b1c"
+    },
+    {
+      "path": "补充资料/官方村界与人口/derive_village_demographics.py",
+      "bytes": 7456,
+      "sha256": "f00f8d39c67e1381f8fb2fd84a339bce4b77f21790d4f5def45dcb947b8a59d1"
+    },
+    {
+      "path": "补充资料/官方村界与人口/derived_validation.json",
+      "bytes": 741,
+      "sha256": "5a42e19c2c9e1562414fc7049768cf4ac91a20a73c8567588205e438cffa1003"
+    },
+    {
+      "path": "补充资料/官方村界与人口/district_demographics_candidate_12.csv",
+      "bytes": 3245,
+      "sha256": "e360f9ab4c7112ae723788c2ac0a22b33601e94bd0ca5562dd893adee7335757"
+    },
+    {
+      "path": "补充资料/官方村界与人口/phoenix_15_villages_raw.geojson",
+      "bytes": 299512,
+      "sha256": "0114b2d767ba3ecf11eae548893d80d5bd7a2c4752847312578d44af5d917361"
+    },
+    {
+      "path": "补充资料/官方村界与人口/phoenix_villages_item_raw.json",
+      "bytes": 2241,
+      "sha256": "3f7e6b43a468cbaa7b0308e21b748eb227a392ae9d6d95f5a76f759ce4fff53a"
+    },
+    {
+      "path": "补充资料/官方村界与人口/phoenix_villages_layer_raw.json",
+      "bytes": 33434,
+      "sha256": "3dd67a112e9f34746ce2c351c565eb93447768dfcf99bfe6bb9b01740747ddc6"
+    },
+    {
+      "path": "补充资料/官方村界与人口/README.md",
+      "bytes": 4665,
+      "sha256": "04ac03a7142d131e63182d0d6d6900ba2417c40dc519771e9d42133cfe874788"
+    },
+    {
+      "path": "补充资料/官方村界与人口/source_downloads.json",
+      "bytes": 1030,
+      "sha256": "7e830391e2bf5bd48be39cd3a739226d2d2db9e16429e643ad1a1ccf6fbf7677"
+    },
+    {
+      "path": "补充资料/官方村界与人口/source_downloads_retry.json",
+      "bytes": 2068,
+      "sha256": "f69f88729709d2e17129f8bc6aa80bc8e6e4683e974fc8b8fd60370ce3572dc3"
+    },
+    {
+      "path": "补充资料/官方村界与人口/village_demographics_acs2018_2022.csv",
+      "bytes": 3119,
+      "sha256": "3a34e063fb890b2903d8d02345b7d63f0fac191c9ba65b6f0bba64e06205af89"
+    },
+    {
+      "path": "补充资料/官方村界与人口/village_to_contest_district.csv",
+      "bytes": 793,
+      "sha256": "72d9c7464da5c3a4bb103c5340fc88eb2544c8721a201565df2a488617b9d485"
+    },
+    {
+      "path": "补充资料/文献/Allen_et_al_2025_CC-BY4_fulltext.html",
+      "bytes": 491320,
+      "sha256": "473cbaf14ced9728749df19a03d72c4914684090c79cca5f3afd6c323b485a75"
+    },
+    {
+      "path": "补充资料/文献/cooling_centres_sources.bib",
+      "bytes": 2692,
+      "sha256": "f35adbcc9a9076b599433e8cca4e2614e26744d2aea8fafd054a183b8ac74127"
+    },
+    {
+      "path": "补充资料/文献/sources_manifest.json",
+      "bytes": 2836,
+      "sha256": "abc4d1ee51b3568f125686d00a4ef120db8fdbb6845a31151b7b2050e733b281"
+    },
+    {
+      "path": "补充资料/文献/文献卡与建模用途.md",
+      "bytes": 6177,
+      "sha256": "0b88b8d1471f27174a201624d99ced3ec77cb10faf3d19dc474b2d3bd0c7c2e9"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/acs2024_B08201_group_metadata_raw.json",
+      "bytes": 235388,
+      "sha256": "24ce57c5e3cdc294dc0c3f4fb54cb857173906d67827b35a87ddc082ab8da957"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/census_B08201_metadata_raw.html",
+      "bytes": 250512,
+      "sha256": "c85435ef012c410ac8683cc5e7954a4828ca3c068bfad6a6e735232e0a494499"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/censusreporter_acs2024_B08201_county_04013_raw.json",
+      "bytes": 3194,
+      "sha256": "557466df9f1c52a4aa7dc19410c5a8b872642db97c580e5a9ba658255aebfef5"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/censusreporter_acs2024_B08201_tract_04013_raw.json",
+      "bytes": 1203035,
+      "sha256": "9e0b68f3bb3c9aeb7aae23ff812bc6afc671784c329c1031a2c922e0e4420c8b"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/derive_no_vehicle_tracts.py",
+      "bytes": 5135,
+      "sha256": "8400f1af17185c2a582109929c1256e6465b11c315d38995e656003377bd068f"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/download_attempts.json",
+      "bytes": 1322,
+      "sha256": "91ad344600499a5f2c87f9f997971a6d8c9656e8f681d2b00afcdb9106ed52ea"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/download_attempts_mirror.json",
+      "bytes": 1093,
+      "sha256": "540c2bff58910541c707504b9616575766b8678c6a656b7b7beec75e2098f289"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/maricopa_tract_no_vehicle_acs2024_5yr.csv",
+      "bytes": 196262,
+      "sha256": "72866654f34ab0d547f638012d14ad8e51cf74c0891cabe779ccfc07118a3431"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/README.md",
+      "bytes": 4763,
+      "sha256": "a5b3155595f2d02a7442110dcb9aac66efca558d1d4a901663896c8b9d1cd7aa"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/selected_variables.json",
+      "bytes": 1037,
+      "sha256": "79eeb16b4a66781b7ccbb3847154470f35367164b8c0eba1cf612a1f11ad7e69"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/SHA256_MANIFEST.json",
+      "bytes": 2620,
+      "sha256": "502bc7748ce3ee87aea14a843f9e4abdabfaded4ed2b4d1bc22a15b9dd5b7cbd"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/source_county_success.json",
+      "bytes": 469,
+      "sha256": "a383e6a366a554d1b1568c1edde450b9715c3340fcd66bc4c1c0ce16194b7b50"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/source_mirror_success.json",
+      "bytes": 643,
+      "sha256": "b08f14222a515d3ccdb87d9d9d7a0fb3f08261ece4f00662b9eb84afc137f0bc"
+    },
+    {
+      "path": "补充资料/无车家庭普查区/validation.json",
+      "bytes": 1184,
+      "sha256": "57b86a4926355ce5636310669b0e8b46bede179d647e21f510feb691b3a01af9"
+    },
+    {
+      "path": "证据/主流水线/summary.json",
+      "bytes": 6626,
+      "sha256": "6c94eb07feb2e1d0aaa5055461889209d0ecb14ea4c970f856d4a919482d110f"
+    },
+    {
+      "path": "证据/真实站点runner/district_access.csv",
+      "bytes": 1000,
+      "sha256": "6a729af487cfe31b39070fd3ed87a70a973e652055bcdebe6fc5aaeda30e10cf"
+    },
+    {
+      "path": "证据/真实站点runner/summary.json",
+      "bytes": 612,
+      "sha256": "d0faff7033da0054a30d2d72e67e7b3e4088a7694379b38131b2ab5992562fd1"
+    },
+    {
+      "path": "证据/真实站点runner/sweep.csv",
+      "bytes": 383,
+      "sha256": "54c453b490afcd6428bcb9d874222f35b6871f49e5bd87385341f0d03a5dafa6"
+    },
+    {
+      "path": "证据/真实资料接入/evidence.json",
+      "bytes": 7136,
+      "sha256": "e77d695969ea9d5f76941816d60f3c094147f3d855f2a0b4d51eef6201e6ba72"
+    },
+    {
+      "path": "证据/真实资料接入/reproduce_realdata.py",
+      "bytes": 8742,
+      "sha256": "9f41cbbfada593be189675d9914402c3c2c1fa9eca7c20da70a87f6f00b93c33"
+    },
+    {
+      "path": "证据/结果来源/commit_lookup.json",
+      "bytes": 229,
+      "sha256": "dd38c58a75c002e1ba4924b5721401d2feaaf655c2df1978160766f7ba3d9b92"
+    },
+    {
+      "path": "证据/结果来源/evidence.json",
+      "bytes": 57159,
+      "sha256": "c90260db931ec5703f6ff600d3c1fe89875d672eff10722cc4c174e53b518714"
+    },
+    {
+      "path": "证据/结果来源/reproduce_provenance.py",
+      "bytes": 3511,
+      "sha256": "6a8abec374c9471e47ed8880b06c65e86b32e29c6d4b65535fb8d0ffe71032c7"
+    },
+    {
+      "path": "验证记录.json",
+      "bytes": 1386,
+      "sha256": "5da4d21e7341864d0fa2633295a1fef73e9e75ddcaf754b1a3277b2d7dc19424"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "censusreporter_acs2024_B08201_tract_04013_raw.json",
+    "url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B08201&geo_ids=140|05000US04013",
+    "retrieved_date": "2026-11-19",
+    "ok": false,
+    "error": "403 Client Error: Forbidden for url: https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B08201&geo_ids=140%7C05000US04013"
+  },
+  {
+    "file": "censusreporter_B08201_metadata_raw.json",
+    "url": "https://api.censusreporter.org/1.0/table/B08201",
+    "retrieved_date": "2026-11-19",
+    "ok": false,
+    "error": "403 Client Error: Forbidden for url: https://api.censusreporter.org/1.0/table/B08201"
+  },
+  {
+    "file": "census_B08201_metadata_raw.html",
+    "url": "https://api.census.gov/data/2024/acs/acs5/groups/B08201.html",
+    "resolved_url": "https://api.census.gov/data/2024/acs/acs5/groups/B08201.html",
+    "retrieved_date": "2026-11-19",
+    "http_status": 200,
+    "bytes": 250512,
+    "sha256": "c85435ef012c410ac8683cc5e7954a4828ca3c068bfad6a6e735232e0a494499",
+    "ok": true
+  }
+]

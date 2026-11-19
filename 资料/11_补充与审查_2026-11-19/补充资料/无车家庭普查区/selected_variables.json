@@ -1,0 +1,38 @@
+{
+  "B08201_001E": {
+    "label": "Estimate!!Total:",
+    "concept": "Household Size by Vehicles Available",
+    "predicateType": "int",
+    "group": "B08201",
+    "limit": 0,
+    "predicateOnly": true,
+    "universe": "Households"
+  },
+  "B08201_001M": {
+    "label": "Margin of Error!!Total:",
+    "concept": "Household Size by Vehicles Available",
+    "predicateType": "int",
+    "group": "B08201",
+    "limit": 0,
+    "predicateOnly": true,
+    "universe": "Households"
+  },
+  "B08201_002E": {
+    "label": "Estimate!!Total:!!No vehicle available",
+    "concept": "Household Size by Vehicles Available",
+    "predicateType": "int",
+    "group": "B08201",
+    "limit": 0,
+    "predicateOnly": true,
+    "universe": "Households"
+  },
+  "B08201_002M": {
+    "label": "Margin of Error!!Total:!!No vehicle available",
+    "concept": "Household Size by Vehicles Available",
+    "predicateType": "int",
+    "group": "B08201",
+    "limit": 0,
+    "predicateOnly": true,
+    "universe": "Households"
+  }
+}

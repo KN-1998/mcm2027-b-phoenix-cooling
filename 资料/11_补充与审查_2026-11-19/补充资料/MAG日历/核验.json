@@ -1,0 +1,16 @@
+{
+  "count_id_sets_match": true,
+  "no_transfer_truncation": true,
+  "unique_ids": true,
+  "raw_attributes_exactly_preserved": true,
+  "null_blank_missingness_preserved": true,
+  "no_capacity_imputation": true,
+  "weekday_rules_not_merged": true,
+  "holiday_explicit_closed_preserved": true,
+  "source_range_applied_before_active_flag": true,
+  "counts": {
+    "public_view": 122,
+    "year2026": 121,
+    "phoenix2026": 50
+  }
+}

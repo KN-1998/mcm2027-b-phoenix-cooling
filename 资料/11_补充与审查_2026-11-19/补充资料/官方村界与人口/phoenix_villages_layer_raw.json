@@ -1,0 +1,868 @@
+{
+  "currentVersion" : 12, 
+  "id" : 0, 
+  "name" : "Village", 
+  "type" : "Feature Layer", 
+  "serviceItemId" : "a2e97741384943d19dc71892335c0b73", 
+  "cacheMaxAge" : 30, 
+  "displayField" : "NAME", 
+  "description" : "Villages in the City of Phoenix", 
+  "copyrightText" : "", 
+  "defaultVisibility" : true, 
+  "editFieldsInfo" : {
+    "creationDateField" : "created_date", 
+    "creatorField" : "created_user", 
+    "editDateField" : "last_edited_date", 
+    "editorField" : "last_edited_user"
+  }, 
+  "editingInfo" : {
+    "lastEditDate" : 1794988894878, 
+    "schemaLastEditDate" : 1788445468202, 
+    "dataLastEditDate" : 1794988894878
+  }, 
+  "relationships" : [], 
+  "isDataVersioned" : false, 
+  "hasContingentValuesDefinition" : false, 
+  "supportsAppend" : true, 
+  "supportsCalculate" : true, 
+  "supportsASyncCalculate" : true, 
+  "supportsTruncate" : false, 
+  "supportsAttachmentsByUploadId" : true, 
+  "supportsAttachmentsResizing" : true, 
+  "supportsRollbackOnFailureParameter" : true, 
+  "supportsStatistics" : true, 
+  "supportsExceedsLimitStatistics" : true, 
+  "supportsAdvancedQueries" : true, 
+  "supportsValidateSql" : true, 
+  "supportsCoordinatesQuantization" : true, 
+  "supportsLayerOverrides" : true, 
+  "supportsTilesAndBasicQueriesMode" : true, 
+  "supportsFieldDescriptionProperty" : true, 
+  "supportsQuantizationEditMode" : true, 
+  "supportsColumnStoreIndex" : true, 
+  "supportsApplyEditsWithGlobalIds" : true, 
+  "supportsMultiScaleGeometry" : true, 
+  "supportsReturningQueryGeometry" : true, 
+  "enableNullGeometry" : false, 
+  "hasGeometryProperties" : true, 
+  "geometryProperties" : 
+  {
+    "shapeAreaFieldName" : "Shape__Area", 
+    "shapeLengthFieldName" : "Shape__Length", 
+    "units" : "esriFeet"
+  }, 
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true, 
+    "supportsPaginationOnAggregatedQueries" : true, 
+    "supportsQueryRelatedPagination" : true, 
+    "supportsQueryWithDistance" : true, 
+    "supportsOutDistance" : true, 
+    "supportsReturningQueryExtent" : true, 
+    "supportsStatistics" : true, 
+    "supportsOrderBy" : true, 
+    "supportsDistinct" : true, 
+    "supportsQueryWithResultType" : true, 
+    "supportsSqlExpression" : true, 
+    "supportsTimeRelation" : true, 
+    "supportsAdvancedQueryRelated" : true, 
+    "supportsCountDistinct" : true, 
+    "supportsPercentileStatistics" : true, 
+    "supportsApproxPercentileStatistics" : true, 
+    "supportsSpatialAggregationStatistics" : true, 
+    "supportsTrueCurve" : true, 
+    "supportedSpatialAggregationStatistics" : [
+      "EnvelopeAggregate", 
+      "CentroidAggregate", 
+      "ConvexHullAggregate"
+    ], 
+    "supportsLod" : true, 
+    "supportsQueryWithLodSR" : false, 
+    "supportedLodTypes" : [
+      "geohash"
+    ], 
+    "supportsReturningGeometryCentroid" : true, 
+    "supportsReturningGeometryEnvelope" : true, 
+    "supportsReturningGeometryProperties" : true, 
+    "supportsQueryWithDatumTransformation" : true, 
+    "supportsCurrentUserQueries" : true, 
+    "supportsHavingClause" : true, 
+    "supportsOutFieldSQLExpression" : true, 
+    "supportsMaxRecordCountFactor" : true, 
+    "supportsTopFeaturesQuery" : true, 
+    "supportsDisjointSpatialRel" : true, 
+    "supportsQueryWithCacheHint" : true, 
+    "supportedOperationsWithCacheHint" : [
+      "query", 
+      "queryTopFilter", 
+      "queryAnalytics", 
+      "queryAttachments", 
+      "queryRelated", 
+      "queryBins", 
+      "queryPivot"
+    ], 
+    "supportsQueryAnalytic" : true, 
+    "supportsQueryPivot" : true, 
+    "supportsQueryBins" : true, 
+    "supportsDefaultSR" : true, 
+    "supportsTranslations" : false, 
+    "supportsAggIds" : true, 
+    "supportsQueryWithCollation" : true, 
+    "supportsISODOW" : true, 
+    "supportsISOWeek" : true, 
+    "supportsFullTextSearch" : true, 
+    "fullTextSearchCapabilities" : {
+      "supportsAccentSensitivity" : true, 
+      "supportsStopWords" : true, 
+      "supportsSearchOperator" : true, 
+      "supportsOperator" : true
+    }
+  }, 
+  "advancedQueryAnalyticCapabilities" : {
+    "supportsLinearRegression" : true, 
+    "supportsTrendlineRegression" : true, 
+    "supportsAsync" : true, 
+    "supportsPercentileAnalytic" : true
+  }, 
+  "queryBinsCapabilities" : {
+    "supportsAsync" : true, 
+    "supportsAutoIntervalBin" : true, 
+    "supportsFixedIntervalBin" : true, 
+    "supportsFixedBoundariesBin" : true, 
+    "supportsDateBin" : true, 
+    "supportsClassificationBin" : true, 
+    "supportsStackBy" : true, 
+    "supportsSplitBy" : true, 
+    "supportsFirstDayOfWeek" : true, 
+    "supportsSnapToData" : true, 
+    "supportsReturnFullIntervalBin" : true, 
+    "supportsReturnStackValueRange" : true, 
+    "supportsNormalization" : true, 
+    "supportedStatisticTypes" : [
+      "COUNT", 
+      "SUM", 
+      "AVG", 
+      "VAR", 
+      "VAR_SAMP", 
+      "VAR_POP", 
+      "STDDEV", 
+      "STDDEV_SAMP", 
+      "STDDEV_POP", 
+      "MIN", 
+      "MAX", 
+      "PERCENTILE_CONT", 
+      "PERCENTILE_DISC", 
+      "APPROX_PERCENTILE_CONT", 
+      "APPROX_PERCENTILE_DISC", 
+      "CentroidAggregate", 
+      "EnvelopeAggregate", 
+      "ConvexHullAggregate"
+    ], 
+    "supportedNormalizationTypes" : [
+      "boxCox", 
+      "field", 
+      "inverse", 
+      "log", 
+      "naturalLog", 
+      "percentOfTotal", 
+      "squareRoot"
+    ]
+  }, 
+  "supportedOperationsWithCollation" : "query,addField,updateField", 
+  "advancedEditingCapabilities" : {
+    "supportedSqlFormatsInCalculate" : [
+      "standard"
+    ], 
+    "supportsAsyncApplyEdits" : true, 
+    "supportsReturnEditResults" : true, 
+    "supportsApplyEditsbyUploadID" : true, 
+    "supportedApplyEditsUploadIDFormats" : "JSON,PBF", 
+    "supportsTranslation" : false, 
+    "supportsMaxTranslations" : 10
+  }, 
+  "infoInEstimates" : [
+    "extent", 
+    "count"
+  ], 
+  "useStandardizedQueries" : true, 
+  "geometryType" : "esriGeometryPolygon", 
+  "minScale" : 500000, 
+  "maxScale" : 24001, 
+  "extent" : {
+    "xmin" : 575830.56299211876, 
+    "ymin" : 833273.68799212389, 
+    "xmax" : 697309.75, 
+    "ymax" : 1076283.8579396326, 
+    "spatialReference" : {
+      "wkid" : 2868, 
+      "latestWkid" : 2868
+    }
+  }, 
+  "spatialReference" : {
+    "wkid" : 2868, 
+    "latestWkid" : 2868
+  }, 
+  "drawingInfo":{"renderer":{"type":"uniqueValue","field1":"NAME","uniqueValueGroups":[{"heading":"NAME","classes":[{"label":"Ahwatukee Foothills","description":"Ahwatukee Foothills","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[64,75,130,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Ahwatukee Foothills"]]},{"label":"Alhambra","description":"Alhambra","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[54,119,135,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Alhambra"]]},{"label":"Camelback East","description":"Camelback East","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[53,156,109,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Camelback East"]]},{"label":"Central City","description":"Central City","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[126,80,171,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Central City"]]},{"label":"Deer Valley","description":"Deer Valley","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[108,44,176,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Deer Valley"]]},{"label":"Desert View","description":"Desert View","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[138,55,45,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Desert View"]]},{"label":"Encanto","description":"Encanto","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[173,55,146,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Encanto"]]},{"label":"Estrella","description":"Estrella","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[166,116,36,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Estrella"]]},{"label":"Laveen","description":"Laveen","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[143,37,78,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Laveen"]]},{"label":"Maryvale","description":"Maryvale","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[148,103,68,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Maryvale"]]},{"label":"North Gateway","description":"North Gateway","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[59,166,51,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["North Gateway"]]},{"label":"North Mountain","description":"North Mountain","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[82,128,51,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["North Mountain"]]},{"label":"Paradise Valley","description":"Paradise Valley","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[140,134,60,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Paradise Valley"]]},{"label":"Rio Vista","description":"Rio Vista","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[146,168,35,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["Rio Vista"]]},{"label":"South Mountain","description":"South Mountain","symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[34,46,153,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"values":[["South Mountain"]]}]}],"uniqueValueInfos":[{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[64,75,130,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Ahwatukee Foothills","label":"Ahwatukee Foothills"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[54,119,135,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Alhambra","label":"Alhambra"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[53,156,109,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Camelback East","label":"Camelback East"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[126,80,171,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Central City","label":"Central City"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[108,44,176,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Deer Valley","label":"Deer Valley"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[138,55,45,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Desert View","label":"Desert View"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[173,55,146,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Encanto","label":"Encanto"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[166,116,36,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Estrella","label":"Estrella"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[143,37,78,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Laveen","label":"Laveen"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[148,103,68,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Maryvale","label":"Maryvale"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[59,166,51,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"North Gateway","label":"North Gateway"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[82,128,51,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"North Mountain","label":"North Mountain"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[140,134,60,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Paradise Valley","label":"Paradise Valley"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[146,168,35,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"Rio Vista","label":"Rio Vista"},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[34,46,153,255],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[110,110,110,255],"width":0.4}},"value":"South Mountain","label":"South Mountain"}],"fieldDelimiter":",","authoringInfo":{"colorRamp":{"type":"multipart","colorRamps":[{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[113,55,140,255],"toColor":[113,55,140,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[126,163,46,255],"toColor":[126,163,46,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[156,33,33,255],"toColor":[156,33,33,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[48,153,161,255],"toColor":[48,153,161,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[176,130,84,255],"toColor":[176,130,84,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[143,66,81,255],"toColor":[143,66,81,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[35,140,84,255],"toColor":[35,140,84,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[78,107,166,255],"toColor":[78,107,166,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[39,31,130,255],"toColor":[39,31,130,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[176,145,42,255],"toColor":[176,145,42,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[52,176,48,255],"toColor":[52,176,48,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[163,39,114,255],"toColor":[163,39,114,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[153,78,32,255],"toColor":[153,78,32,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[34,60,143,255],"toColor":[34,60,143,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[168,49,168,255],"toColor":[168,49,168,255]}]}}},"scaleSymbols":true,"transparency":40,"labelingInfo":[{"labelExpression":"[NAME]","labelPlacement":"esriServerPolygonPlacementAlwaysHorizontal","removeDuplicates":"none","multiPart":"labelPerPart","deconflictionStrategy":"dynamic","repeatLabel":false,"allowOverrun":true,"stackLabel":false,"useCodedValues":true,"maxScale":0,"minScale":0,"name":"Default","priority":2,"symbol":{"type":"esriTS","color":[0,0,0,255],"backgroundColor":null,"borderLineColor":null,"borderLineSize":null,"verticalAlignment":"bottom","horizontalAlignment":"center","rightToLeft":false,"angle":0,"xoffset":0,"yoffset":0,"kerning":true,"haloColor":[255,255,255,255],"haloSize":1,"font":{"family":"Arial","size":9,"style":"normal","weight":"bold","decoration":"none"}}}]}, 
+  "allowGeometryUpdates" : true, 
+  "trueCurveSupportMode" : "OGC", 
+  "supportedCurveTypes" : [
+    "esriGeometryCircularArc"
+  ], 
+  "supportedTrueCurvePbfFeatureEncodings" : [
+    "esriCompressedShapeBuffer", 
+    "esriDefault"
+  ], 
+  "allowTrueCurvesUpdates" : true, 
+  "onlyAllowTrueCurveUpdatesByTrueCurveClients" : false, 
+  "hasAttachments" : false, 
+  "htmlPopupType" : "esriServerHTMLPopupTypeAsHTMLText", 
+  "hasMetadata" : true, 
+  "hasM" : false, 
+  "hasZ" : false, 
+  "objectIdField" : "OBJECTID", 
+  "uniqueIdField" : 
+  {
+    "name" : "OBJECTID", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdField" : "GLOBALID", 
+  "typeIdField" : "NAME", 
+  "collation" : {
+    "locale" : "neutral", 
+    "caseSensitive" : false, 
+    "accentSensitive" : true
+  }, 
+  "fields" : [
+    {
+      "name" : "OBJECTID", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "OBJECTID", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Name", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 30, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ACRES", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Acres", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "URL", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "URL", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "INSERT_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "INSERT_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "UPDATE_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "UPDATE_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "ANID", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "ANID", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GLOBALID", 
+      "type" : "esriFieldTypeGlobalID", 
+      "alias" : "GLOBALID", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 38, 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CREATED_USER", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "CREATED_USER", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CREATED_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "CREATED_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "LAST_EDITED_USER", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LAST_EDITED_USER", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 255, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LAST_EDITED_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "LAST_EDITED_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "Shape__Area", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape__Area", 
+      "sqlType" : "sqlTypeDouble", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape__Length", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape__Length", 
+      "sqlType" : "sqlTypeDouble", 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "indexes" : [
+    {
+      "name" : "PK__VILLAGES__F4B70D85458BD52A", 
+      "fields" : "OBJECTID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "user_520.VILLAGES_VILLAGE_Shape_sidx", 
+      "fields" : "SHAPE", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Spatial"
+    }, 
+    {
+      "name" : "FDO_GLOBALID", 
+      "fields" : "GLOBALID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "Shape__Area_Index", 
+      "fields" : "Shape__Area", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "Shape__Length_Index", 
+      "fields" : "Shape__Length", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "created_dateIndex", 
+      "fields" : "created_date", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "created_date Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "created_userIndex", 
+      "fields" : "created_user", 
+      "isAscending" : false, 
+      "isUnique" : false, 
+      "description" : "created_user Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "last_edited_dateIndex", 
+      "fields" : "last_edited_date", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "last_edited_date Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "last_edited_userIndex", 
+      "fields" : "last_edited_user", 
+      "isAscending" : false, 
+      "isUnique" : false, 
+      "description" : "last_edited_user Field index", 
+      "indexType" : "Attribute"
+    }
+  ], 
+  "dateFieldsTimeReference" : {
+    "timeZone" : "UTC", 
+    "timeZoneIANA" : "Etc/UTC", 
+    "respectsDaylightSaving" : false
+  }, 
+  "preferredTimeReference" : {
+    "timeZone" : "US Mountain Standard Time", 
+    "timeZoneIANA" : "America/Phoenix", 
+    "respectsDaylightSaving" : false
+  }, 
+  "types" : [
+    {
+      "id" : "Ahwatukee Foothills", 
+      "name" : "Ahwatukee Foothills", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Ahwatukee Foothills", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Ahwatukee Foothills", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Alhambra", 
+      "name" : "Alhambra", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Alhambra", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Alhambra", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Camelback East", 
+      "name" : "Camelback East", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Camelback East", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Camelback East", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Central City", 
+      "name" : "Central City", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Central City", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Central City", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Deer Valley", 
+      "name" : "Deer Valley", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Deer Valley", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Deer Valley", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Desert View", 
+      "name" : "Desert View", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Desert View", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Desert View", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Encanto", 
+      "name" : "Encanto", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Encanto", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Encanto", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Estrella", 
+      "name" : "Estrella", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Estrella", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Estrella", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Laveen", 
+      "name" : "Laveen", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Laveen", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Laveen", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Maryvale", 
+      "name" : "Maryvale", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Maryvale", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Maryvale", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "North Gateway", 
+      "name" : "North Gateway", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "North Gateway", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "North Gateway", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "North Mountain", 
+      "name" : "North Mountain", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "North Mountain", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "North Mountain", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Paradise Valley", 
+      "name" : "Paradise Valley", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Paradise Valley", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Paradise Valley", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Rio Vista", 
+      "name" : "Rio Vista", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Rio Vista", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "Rio Vista", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "South Mountain", 
+      "name" : "South Mountain", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "South Mountain", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPolygon", 
+          "prototype" : {
+            "attributes" : {
+              "ANID" : null, 
+              "UPDATE_DATE" : null, 
+              "NAME" : "South Mountain", 
+              "ACRES" : null, 
+              "URL" : null, 
+              "INSERT_DATE" : null
+            }
+          }
+        }
+      ]
+    }
+  ], 
+  "templates" : [], 
+  "supportedQueryFormats" : "JSON, geoJSON, PBF", 
+  "supportedAppendFormats" : "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,pbf", 
+  "supportedAppendSourceFilterFormats" : "sqlite,geoPackage,shapefile,filegdb,featureService", 
+  "supportedExportFormats" : "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,kml,excel,parquet", 
+  "supportedConvertFileFormats" : "JSON,PBF,Parquet", 
+  "supportedConvertContentFormats" : "LayerEditCollection,FeatureCollection", 
+  "supportedSpatialRelationships" : [
+    "esriSpatialRelIntersects", 
+    "esriSpatialRelContains", 
+    "esriSpatialRelCrosses", 
+    "esriSpatialRelEnvelopeIntersects", 
+    "esriSpatialRelIndexIntersects", 
+    "esriSpatialRelOverlaps", 
+    "esriSpatialRelTouches", 
+    "esriSpatialRelWithin", 
+    "esriSpatialRelDisjoint", 
+    "esriSpatialRelRelation"
+  ], 
+  "guidFormat" : "", 
+  "supportsContingentValues" : true, 
+  "supportsEditingContingentValues" : true, 
+  "supportedContingentValuesFormats" : "JSON, PBF", 
+  "supportsFieldGroups" : true, 
+  "supportedSyncDataOptions" : 49412, 
+  "hasStaticData" : false, 
+  "maxRecordCount" : 2000, 
+  "standardMaxRecordCount" : 2000, 
+  "maxIdsCount" : 1000000, 
+  "standardMaxRecordCountNoGeometry" : 32000, 
+  "tileMaxRecordCount" : 4000, 
+  "maxRecordCountFactor" : 1, 
+  "capabilities" : "Query,Sync"
+}

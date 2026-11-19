@@ -1,0 +1,28 @@
+{
+  "raw_sha256": "9e0b68f3bb3c9aeb7aae23ff812bc6afc671784c329c1031a2c922e0e4420c8b",
+  "csv_sha256": "72866654f34ab0d547f638012d14ad8e51cf74c0891cabe779ccfc07118a3431",
+  "county_raw_sha256": "557466df9f1c52a4aa7dc19410c5a8b872642db97c580e5a9ba658255aebfef5",
+  "release_checked": {
+    "id": "acs2024_5yr",
+    "name": "ACS 2024 5-year",
+    "years": "2020-2024"
+  },
+  "raw_geography_count": 1009,
+  "selected_tract_count": 1009,
+  "non_tract_parent_rows_excluded": 0,
+  "tract_ids_unique": true,
+  "all_tracts_in_state04_county013": true,
+  "nonnegative_estimate_numerators_within_denominators": true,
+  "negative_sentinel_fields_converted_to_empty_csv_cells": 0,
+  "missing_total_estimates": 0,
+  "missing_no_vehicle_estimates": 0,
+  "zero_household_tracts": 16,
+  "tract_households_sum": 1730696.0,
+  "tract_no_vehicle_households_sum": 88150.0,
+  "published_county_households": 1730696.0,
+  "published_county_no_vehicle_households": 88150.0,
+  "tract_count_sums_exactly_match_separate_county_response": true,
+  "MOEs_not_added_and_ratio_MOE_not_claimed": true,
+  "not_mapped_to_villages_or_contest_districts": true,
+  "model_inputs_changed": false
+}

@@ -1,0 +1,1997 @@
+{
+  "reviewed_commit": "c506b539fa61ac57b04fb822c8557e1cf3b003de",
+  "top_level_meta_count": 11,
+  "top_level_clean_count": 10,
+  "top_level_shas": [
+    "2d74f7a",
+    "46a0d7f"
+  ],
+  "nested_meta_count_not_in_top_level_manifest": 15,
+  "raw_input_hash_mismatches": 144,
+  "inputs_not_explained_by_any_line_ending_representation": [
+    {
+      "run": "results/sensitivity_oat/access/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/access/run_meta.json",
+      "input": "districts.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/access_threshold/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/access_threshold/run_meta.json",
+      "input": "districts.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/capacity/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/capacity/run_meta.json",
+      "input": "districts.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/demand_scenario/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/demand_scenario/run_meta.json",
+      "input": "districts.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/fixed_hours/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/fixed_hours/run_meta.json",
+      "input": "districts.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/ushare/run_meta.json",
+      "input": "demand.csv"
+    },
+    {
+      "run": "results/sensitivity_oat/ushare/run_meta.json",
+      "input": "districts.csv"
+    }
+  ],
+  "note": "Line-ending matching is a diagnostic, not proof of the exact bytes originally read. Raw hashes remain recorded; files are never normalized on disk.",
+  "real_network_recorded_input_names": [
+    "access.csv",
+    "demand.csv",
+    "districts.csv",
+    "incoming/README.md",
+    "incoming/access_gtfs.csv",
+    "incoming/acs_districts.csv",
+    "incoming/sites_mag.csv",
+    "sites.csv"
+  ],
+  "MAG_actual_dependency_missing_from_metadata": "资料/02_降温网络/MAG/phoenix_2026_public_view_sites.csv",
+  "segments_summary": [
+    {
+      "unsheltered_share": 0.3,
+      "p": 3,
+      "unmet_total": 206.72,
+      "coverage_rate": 0.5907,
+      "worst_unmet_ratio": 1.0,
+      "served_day": 227.89,
+      "served_evening": 66.65,
+      "served_night": 3.74,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "unsheltered_share": 0.5,
+      "p": 3,
+      "unmet_total": 227.3,
+      "coverage_rate": 0.5499,
+      "worst_unmet_ratio": 1.0,
+      "served_day": 203.9,
+      "served_evening": 68.98,
+      "served_night": 4.83,
+      "chosen": "MCH-3,MCH-7,MCH-8"
+    },
+    {
+      "unsheltered_share": 0.7,
+      "p": 3,
+      "unmet_total": 246.3,
+      "coverage_rate": 0.5123,
+      "worst_unmet_ratio": 1.0,
+      "served_day": 170.42,
+      "served_evening": 82.37,
+      "served_night": 5.91,
+      "chosen": "MCH-3,MCH-4,MCH-8"
+    }
+  ],
+  "segments_endpoint_increase_percent": 19.146671826625393,
+  "runs": [
+    {
+      "path": "results/levers/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q2_attribution/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q2_objectives/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D01_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D05_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_1.5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_2/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_sweep/D12_5/run_meta.json",
+      "git_sha": "1a267e7",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q3_week/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/q4_response/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/real_network/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/run_csv/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/segments/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/access/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/access_threshold/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/capacity/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/demand_scenario/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/fixed_hours/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sensitivity_oat/ushare/run_meta.json",
+      "git_sha": "8daf5f5",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "3146239a7bedc99d",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0a508a98f791d2b4",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": []
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep_levers/run_meta.json",
+      "git_sha": "46a0d7f",
+      "worktree_dirty": false,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/access_gtfs.csv",
+          "expected": "6389533cdf0f5367",
+          "hash_candidates": {
+            "raw_bytes": "52229a44c30cc342",
+            "LF": "52229a44c30cc342",
+            "CRLF": "6389533cdf0f5367"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/acs_districts.csv",
+          "expected": "925f834bcfbc8bd6",
+          "hash_candidates": {
+            "raw_bytes": "850546632c9a5580",
+            "LF": "850546632c9a5580",
+            "CRLF": "925f834bcfbc8bd6"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/README.md",
+          "expected": "939c03c95ed9aa21",
+          "hash_candidates": {
+            "raw_bytes": "06afd0415c05670e",
+            "LF": "06afd0415c05670e",
+            "CRLF": "939c03c95ed9aa21"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "incoming/sites_mag.csv",
+          "expected": "6479ea0864da206e",
+          "hash_candidates": {
+            "raw_bytes": "b090464e380b6af0",
+            "LF": "b090464e380b6af0",
+            "CRLF": "6479ea0864da206e"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "results/sweep_transit/run_meta.json",
+      "git_sha": "2d74f7a",
+      "worktree_dirty": true,
+      "inputs": [
+        {
+          "input": "access.csv",
+          "expected": "dc990ef1d8658091",
+          "hash_candidates": {
+            "raw_bytes": "90c48cd8d2d61401",
+            "LF": "90c48cd8d2d61401",
+            "CRLF": "dc990ef1d8658091"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "demand.csv",
+          "expected": "b6041bb74bbfbae3",
+          "hash_candidates": {
+            "raw_bytes": "98c0e5c1d8b91e6a",
+            "LF": "98c0e5c1d8b91e6a",
+            "CRLF": "b6041bb74bbfbae3"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "districts.csv",
+          "expected": "0ad48911cabcdabb",
+          "hash_candidates": {
+            "raw_bytes": "9bc7dec0913e04d8",
+            "LF": "9bc7dec0913e04d8",
+            "CRLF": "0ad48911cabcdabb"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        },
+        {
+          "input": "sites.csv",
+          "expected": "6576a3e4eb6867bc",
+          "hash_candidates": {
+            "raw_bytes": "a86f76913a41e282",
+            "LF": "a86f76913a41e282",
+            "CRLF": "6576a3e4eb6867bc"
+          },
+          "matching_representations": [
+            "CRLF"
+          ]
+        }
+      ]
+    }
+  ]
+}

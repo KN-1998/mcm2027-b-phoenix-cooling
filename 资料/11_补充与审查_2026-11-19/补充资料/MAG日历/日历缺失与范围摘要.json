@@ -1,0 +1,265 @@
+{
+  "all_public_view_122": {
+    "count": 122,
+    "year_counts": {
+      "2026": 121,
+      "2025": 1
+    },
+    "city_counts": {
+      "Phoenix": 50,
+      "Tempe": 3,
+      "Surprise": 5,
+      "Scottsdale": 10,
+      "Glendale": 15,
+      "Mesa": 13,
+      "Buckeye": 3,
+      "Chandler": 7,
+      "El Mirage": 4,
+      "Goodyear": 3,
+      "Gilbert": 2,
+      "Peoria": 1,
+      "Gila Bend": 1,
+      "Litchfield Park": 1,
+      "Guadalupe": 1,
+      "Sun Lakes": 1,
+      "Aguila": 1,
+      "Fountain Hills": 1
+    },
+    "service_type_counts": {
+      "Hydration Station": 63,
+      "Cooling Center": 56,
+      "Respite Center": 3
+    },
+    "weekday_status_counts": {
+      "Monday": {
+        "open_clock_pair": 117,
+        "unknown_blank_pair": 5
+      },
+      "Tuesday": {
+        "open_clock_pair": 117,
+        "unknown_blank_pair": 5
+      },
+      "Wednesday": {
+        "open_clock_pair": 118,
+        "unknown_blank_pair": 4
+      },
+      "Thursday": {
+        "open_clock_pair": 117,
+        "unknown_blank_pair": 5
+      },
+      "Friday": {
+        "open_clock_pair": 115,
+        "unknown_blank_pair": 7
+      },
+      "Saturday": {
+        "unknown_blank_pair": 58,
+        "open_clock_pair": 64
+      },
+      "Sunday": {
+        "unknown_blank_pair": 100,
+        "open_clock_pair": 22
+      }
+    },
+    "holiday_status_counts": {
+      "MemorialDay": {
+        "closed_explicit": 112,
+        "open_special_clock_pair": 3,
+        "inherit_selected_weekday": 7
+      },
+      "Juneteenth": {
+        "inherit_selected_weekday": 72,
+        "closed_explicit": 49,
+        "open_special_clock_pair": 1
+      },
+      "IndependenceDay": {
+        "closed_explicit": 113,
+        "unknown_blank": 1,
+        "inherit_selected_weekday": 6,
+        "open_special_clock_pair": 2
+      },
+      "LaborDay": {
+        "closed_explicit": 112,
+        "open_special_clock_pair": 3,
+        "inherit_selected_weekday": 7
+      },
+      "ColumbusDay": {
+        "inherit_selected_weekday": 93,
+        "closed_explicit": 29
+      }
+    },
+    "source_end_dates": {
+      "2026-10-31": 109,
+      "2026-10-30": 13
+    },
+    "active_yes_but_posted_end_before_snapshot": 122,
+    "capacity_supplied_count": 0
+  },
+  "source_year2026_121": {
+    "count": 121,
+    "year_counts": {
+      "2026": 121
+    },
+    "city_counts": {
+      "Phoenix": 50,
+      "Tempe": 3,
+      "Surprise": 5,
+      "Scottsdale": 10,
+      "Glendale": 15,
+      "Mesa": 13,
+      "Buckeye": 3,
+      "Chandler": 6,
+      "El Mirage": 4,
+      "Goodyear": 3,
+      "Gilbert": 2,
+      "Peoria": 1,
+      "Gila Bend": 1,
+      "Litchfield Park": 1,
+      "Guadalupe": 1,
+      "Sun Lakes": 1,
+      "Aguila": 1,
+      "Fountain Hills": 1
+    },
+    "service_type_counts": {
+      "Hydration Station": 63,
+      "Cooling Center": 56,
+      "Respite Center": 2
+    },
+    "weekday_status_counts": {
+      "Monday": {
+        "open_clock_pair": 116,
+        "unknown_blank_pair": 5
+      },
+      "Tuesday": {
+        "open_clock_pair": 116,
+        "unknown_blank_pair": 5
+      },
+      "Wednesday": {
+        "open_clock_pair": 117,
+        "unknown_blank_pair": 4
+      },
+      "Thursday": {
+        "open_clock_pair": 116,
+        "unknown_blank_pair": 5
+      },
+      "Friday": {
+        "open_clock_pair": 114,
+        "unknown_blank_pair": 7
+      },
+      "Saturday": {
+        "unknown_blank_pair": 57,
+        "open_clock_pair": 64
+      },
+      "Sunday": {
+        "unknown_blank_pair": 100,
+        "open_clock_pair": 21
+      }
+    },
+    "holiday_status_counts": {
+      "MemorialDay": {
+        "closed_explicit": 112,
+        "open_special_clock_pair": 3,
+        "inherit_selected_weekday": 6
+      },
+      "Juneteenth": {
+        "inherit_selected_weekday": 71,
+        "closed_explicit": 49,
+        "open_special_clock_pair": 1
+      },
+      "IndependenceDay": {
+        "closed_explicit": 113,
+        "unknown_blank": 1,
+        "inherit_selected_weekday": 5,
+        "open_special_clock_pair": 2
+      },
+      "LaborDay": {
+        "closed_explicit": 112,
+        "open_special_clock_pair": 3,
+        "inherit_selected_weekday": 6
+      },
+      "ColumbusDay": {
+        "inherit_selected_weekday": 92,
+        "closed_explicit": 29
+      }
+    },
+    "source_end_dates": {
+      "2026-10-31": 108,
+      "2026-10-30": 13
+    },
+    "active_yes_but_posted_end_before_snapshot": 121,
+    "capacity_supplied_count": 0
+  },
+  "phoenix_source_year2026_50": {
+    "count": 50,
+    "year_counts": {
+      "2026": 50
+    },
+    "city_counts": {
+      "Phoenix": 50
+    },
+    "service_type_counts": {
+      "Hydration Station": 26,
+      "Cooling Center": 24
+    },
+    "weekday_status_counts": {
+      "Monday": {
+        "open_clock_pair": 47,
+        "unknown_blank_pair": 3
+      },
+      "Tuesday": {
+        "open_clock_pair": 49,
+        "unknown_blank_pair": 1
+      },
+      "Wednesday": {
+        "open_clock_pair": 50
+      },
+      "Thursday": {
+        "open_clock_pair": 48,
+        "unknown_blank_pair": 2
+      },
+      "Friday": {
+        "open_clock_pair": 47,
+        "unknown_blank_pair": 3
+      },
+      "Saturday": {
+        "unknown_blank_pair": 25,
+        "open_clock_pair": 25
+      },
+      "Sunday": {
+        "unknown_blank_pair": 43,
+        "open_clock_pair": 7
+      }
+    },
+    "holiday_status_counts": {
+      "MemorialDay": {
+        "closed_explicit": 46,
+        "open_special_clock_pair": 1,
+        "inherit_selected_weekday": 3
+      },
+      "Juneteenth": {
+        "inherit_selected_weekday": 23,
+        "closed_explicit": 26,
+        "open_special_clock_pair": 1
+      },
+      "IndependenceDay": {
+        "closed_explicit": 46,
+        "unknown_blank": 1,
+        "inherit_selected_weekday": 3
+      },
+      "LaborDay": {
+        "closed_explicit": 46,
+        "open_special_clock_pair": 1,
+        "inherit_selected_weekday": 3
+      },
+      "ColumbusDay": {
+        "inherit_selected_weekday": 33,
+        "closed_explicit": 17
+      }
+    },
+    "source_end_dates": {
+      "2026-10-31": 48,
+      "2026-10-30": 2
+    },
+    "active_yes_but_posted_end_before_snapshot": 50,
+    "capacity_supplied_count": 0
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "acs2024_B08201_tract_04013_raw.json",
+    "url": "https://api.census.gov/data/2024/acs/acs5?get=NAME,B08201_001E,B08201_001M,B08201_002E,B08201_002M&for=tract:*&in=state:04%20county:013",
+    "retrieved_date": "2026-11-19",
+    "ok": false,
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "file": "acs2024_B08201_group_metadata_raw.json",
+    "url": "https://api.census.gov/data/2024/acs/acs5/groups/B08201.json",
+    "resolved_url": "https://api.census.gov/data/2024/acs/acs5/groups/B08201.json",
+    "retrieved_date": "2026-11-19",
+    "http_status": 200,
+    "bytes": 235388,
+    "sha256": "24ce57c5e3cdc294dc0c3f4fb54cb857173906d67827b35a87ddc082ab8da957",
+    "ok": true
+  },
+  {
+    "file": "phoenix_OHR_no_vehicle_layer_metadata_raw.json",
+    "url": "https://maps.phoenix.gov/pub/rest/services/Public/Shade_Study_Data_CMO_OHR/MapServer/3?f=pjson",
+    "retrieved_date": "2026-11-19",
+    "ok": false,
+    "error": "HTTPSConnectionPool(host='maps.phoenix.gov', port=443): Max retries exceeded with url: /pub/rest/services/Public/Shade_Study_Data_CMO_OHR/MapServer/3?f=pjson (Caused by ConnectTimeoutError(<HTTPSConnection(host='maps.phoenix.gov', port=443) at 0x1801baa3770>, 'Connection to maps.phoenix.gov timed out. (connect timeout=12)'))"
+  }
+]

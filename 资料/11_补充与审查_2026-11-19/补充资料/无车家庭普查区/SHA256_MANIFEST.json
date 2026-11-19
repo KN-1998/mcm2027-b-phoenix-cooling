@@ -1,0 +1,73 @@
+{
+  "generated_date": "2026-11-19",
+  "source_provider_for_numeric_values": "Census Reporter mirror of U.S. Census Bureau ACS",
+  "release": "ACS 2024 5-year (2020-2024)",
+  "source_notes": "Official Census variable dictionaries downloaded; direct numeric API redirects to Missing Key. Project-specific User-Agent enabled successful mirror downloads per provider instructions.",
+  "files": [
+    {
+      "file": "acs2024_B08201_group_metadata_raw.json",
+      "bytes": 235388,
+      "sha256": "24ce57c5e3cdc294dc0c3f4fb54cb857173906d67827b35a87ddc082ab8da957"
+    },
+    {
+      "file": "census_B08201_metadata_raw.html",
+      "bytes": 250512,
+      "sha256": "c85435ef012c410ac8683cc5e7954a4828ca3c068bfad6a6e735232e0a494499"
+    },
+    {
+      "file": "censusreporter_acs2024_B08201_county_04013_raw.json",
+      "bytes": 3194,
+      "sha256": "557466df9f1c52a4aa7dc19410c5a8b872642db97c580e5a9ba658255aebfef5"
+    },
+    {
+      "file": "censusreporter_acs2024_B08201_tract_04013_raw.json",
+      "bytes": 1203035,
+      "sha256": "9e0b68f3bb3c9aeb7aae23ff812bc6afc671784c329c1031a2c922e0e4420c8b"
+    },
+    {
+      "file": "derive_no_vehicle_tracts.py",
+      "bytes": 5135,
+      "sha256": "8400f1af17185c2a582109929c1256e6465b11c315d38995e656003377bd068f"
+    },
+    {
+      "file": "download_attempts.json",
+      "bytes": 1322,
+      "sha256": "91ad344600499a5f2c87f9f997971a6d8c9656e8f681d2b00afcdb9106ed52ea"
+    },
+    {
+      "file": "download_attempts_mirror.json",
+      "bytes": 1093,
+      "sha256": "540c2bff58910541c707504b9616575766b8678c6a656b7b7beec75e2098f289"
+    },
+    {
+      "file": "maricopa_tract_no_vehicle_acs2024_5yr.csv",
+      "bytes": 196262,
+      "sha256": "72866654f34ab0d547f638012d14ad8e51cf74c0891cabe779ccfc07118a3431"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4763,
+      "sha256": "a5b3155595f2d02a7442110dcb9aac66efca558d1d4a901663896c8b9d1cd7aa"
+    },
+    {
+      "file": "selected_variables.json",
+      "bytes": 1037,
+      "sha256": "79eeb16b4a66781b7ccbb3847154470f35367164b8c0eba1cf612a1f11ad7e69"
+    },
+    {
+      "file": "source_county_success.json",
+      "bytes": 469,
+      "sha256": "a383e6a366a554d1b1568c1edde450b9715c3340fcd66bc4c1c0ce16194b7b50"
+    },
+    {
+      "file": "source_mirror_success.json",
+      "bytes": 643,
+      "sha256": "b08f14222a515d3ccdb87d9d9d7a0fb3f08261ece4f00662b9eb84afc137f0bc"
+    },
+    {
+      "file": "validation.json",
+      "bytes": 1184,
+      "sha256": "57b86a4926355ce5636310669b0e8b46bede179d647e21f510feb691b3a01af9"
+    }
+  ]
+}

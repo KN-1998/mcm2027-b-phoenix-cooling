@@ -1,0 +1,64 @@
+{
+  "publisher": "Maricopa Association of Governments",
+  "source_url": "https://services1.arcgis.com/MdyCMZnX1raZ7TS3/arcgis/rest/services/HRN_Public_view/FeatureServer/0/query?where=1%3D1&outFields=%2A&returnGeometry=true&outSR=4326&f=pjson",
+  "item_url": "https://www.arcgis.com/home/item.html?id=bd08dde5206543018fe41da60d2551a7",
+  "retrieved_date": "2026-11-18",
+  "derivation": "Conservative local transformation; no additional source collection.",
+  "files": [
+    {
+      "path": "build_mag_calendar.py",
+      "bytes": 10236,
+      "sha256": "b3aa38f3d1eb6b275caeded713dfbf3ce2dad691066bc35ad57c72d8cfe7cd65"
+    },
+    {
+      "path": "mag_public_view_calendar_122.json",
+      "bytes": 662020,
+      "sha256": "5c93e97ad49d6abf688d6df36b74ed0a160cfc677ad3b1134d24df694797bf2d"
+    },
+    {
+      "path": "mag_year2026_calendar_121.json",
+      "bytes": 656401,
+      "sha256": "f13af67e577b31c407a149167119d96ac4f6cd9b21312ab4ecc8c7d9c3f1a8a0"
+    },
+    {
+      "path": "phoenix_year2026_calendar_50.json",
+      "bytes": 269984,
+      "sha256": "122648d5c1538f138b7f441f2376d2509df5f6c3790c07582a150064c4cd2ac2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3591,
+      "sha256": "0ca591f33d55cc29bdf1d0618fed6c02ad3952fb059a697edc12449ffc2ab594"
+    },
+    {
+      "path": "原始响应/count.json",
+      "bytes": 13,
+      "sha256": "a8dd71f7b26b9cbf18c6e20e167fc110ce45fdc6c18e135d0412fb1c41606d97"
+    },
+    {
+      "path": "原始响应/HRN_Public_view_item.json",
+      "bytes": 4061,
+      "sha256": "8dc5faf1e16e2fc552481a8cb2706a74e55fbf1ec9b94f0e86dd3fbaace7d809"
+    },
+    {
+      "path": "原始响应/ids.json",
+      "bytes": 512,
+      "sha256": "1cc9d7c356db110c5cc8dc06bda72b2d9e1347cc292b24a0bbc12e692d177f15"
+    },
+    {
+      "path": "原始响应/query_all_fields.json",
+      "bytes": 321787,
+      "sha256": "4814600945e0770b8ae473e306162767b5b07f854b81f4bbebc430bb3d49502b"
+    },
+    {
+      "path": "日历缺失与范围摘要.json",
+      "bytes": 6440,
+      "sha256": "153a55b849301740ad8e590476de1e0d76739186483b7fa334f7132378fec99d"
+    },
+    {
+      "path": "核验.json",
+      "bytes": 446,
+      "sha256": "3a48fbfbe0e9806aa905c8d00089bfab9918ba716c67fb4ad7a255ada070454a"
+    }
+  ]
+}

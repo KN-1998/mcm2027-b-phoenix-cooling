@@ -1,0 +1,17 @@
+[
+  {
+    "file": "phoenix_villages_layer_raw.json",
+    "url": "https://maps.phoenix.gov/pub/rest/services/Public/Villages/MapServer/0?f=pjson",
+    "error": "HTTPSConnectionPool(host='maps.phoenix.gov', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+    "file": "phoenix_15_villages_raw.geojson",
+    "url": "https://maps.phoenix.gov/pub/rest/services/Public/Villages/MapServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson",
+    "error": "HTTPSConnectionPool(host='maps.phoenix.gov', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+    "file": "2024_HSD_Community_Assessment_Report_FINAL.pdf",
+    "url": "https://www.phoenix.gov/humanservicessite/Documents/2024%20HSD%20Community%20Assessment%20Report%20Year%202%20Update%20and%20Appendices%20-%20FINAL.pdf",
+    "error": "404 Client Error: Not Found for url: https://www.phoenix.gov/content/dam/phoenix/humanservicessite/documents/2024%20HSD%20Community%20Assessment%20Report%20Year%202%20Update%20and%20Appendices%20-%20FINAL.pdf"
+  }
+]

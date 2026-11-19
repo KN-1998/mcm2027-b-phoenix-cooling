@@ -1,0 +1,19 @@
+{
+  "source_pdf_sha256": "46ae7955f355d56df318984ab7b2fcfe865cc907dff1099ab10d00ec6fa02654",
+  "mapping_csv_sha256": "9bc7dec0913e04d8b4a5b36310a2f27fdc310c449eb859673c030433512072a5",
+  "source_acs_period": "2018-2022",
+  "source_report_year": 2024,
+  "source_pdf_page_age": 34,
+  "source_pdf_page_income": 37,
+  "village_count": 15,
+  "district_count": 12,
+  "mapping_unique_and_exhaustive": true,
+  "village_population_sum": 1620649,
+  "report_phoenix_population": 1620649,
+  "village_households_sum": 595336,
+  "report_phoenix_households": 595336,
+  "source_totals_need_not_exactly_sum": true,
+  "no_vehicle_missing_not_imputed": true,
+  "income_median_is_interpolation_proxy": true,
+  "model_inputs_changed": false
+}

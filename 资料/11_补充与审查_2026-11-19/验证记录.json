@@ -1,0 +1,41 @@
+{
+  "reviewed_commit": "c506b539fa61ac57b04fb822c8557e1cf3b003de",
+  "delivery_finalized_on": "2026-11-19",
+  "selected_snapshot_files_verified_against_git_blobs": 251,
+  "python": "3.14.6",
+  "scipy": "1.18.1",
+  "numpy": "2.5.1",
+  "existing_test_suite": {
+    "command": "python -m pytest tests -q",
+    "run_on": "2026-11-18",
+    "exit_code": 0,
+    "passed": 36,
+    "warnings": 1
+  },
+  "main_pipeline": {
+    "command": "python -m src.exp.run_pipeline --p 3 --data csv --out <separate_output>",
+    "exit_code": 0,
+    "day0_demand": 505,
+    "day0_p3_unmet": 227.295,
+    "q3_static_and_dynamic_weekly_unmet": 1768.43,
+    "q4_response_hours_modeled": false
+  },
+  "real_network": {
+    "command": "python -m src.exp.run_real_network --pmax 3 --out <separate_output>",
+    "exit_code": 0,
+    "transport": "distance proxies, not scheduled OD",
+    "geography": "synthetic planning districts",
+    "capacity": "assumption"
+  },
+  "new_evidence_scripts": {
+    "dynamic_all_5_checks": true,
+    "realdata_all_5_checks": true,
+    "provenance_recursive_check": true
+  },
+  "model_sources_and_inputs_modified": false,
+  "notes": [
+    "Scripts reproduce the reviewed revision and should be updated after fixes.",
+    "Runtime differs from saved repository runs (Python3.13.9).",
+    "Raw, LF and CRLF hashes are recorded separately."
+  ]
+}

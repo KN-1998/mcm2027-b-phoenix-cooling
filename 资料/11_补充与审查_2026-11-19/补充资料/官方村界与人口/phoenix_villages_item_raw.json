@@ -1,0 +1,71 @@
+{
+  "id": "a2e97741384943d19dc71892335c0b73",
+  "owner": "City_of_Phoenix",
+  "ownerId": "323e015246cec5f3a461abe9e584db2b",
+  "orgId": "cfKakmeHE95cgeEK",
+  "created": 1788445463000,
+  "modified": 1790260979000,
+  "guid": null,
+  "name": "Villages",
+  "title": "Villages",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Metadata",
+    "Multilayer",
+    "Service",
+    "Hosted Service"
+  ],
+  "description": "Villages in the City of Phoenix",
+  "tags": [
+    "City of Phoenix",
+    "village",
+    "planning"
+  ],
+  "snippet": "Villages in the City of Phoenix",
+  "thumbnail": "thumbnail/thumbnail.png",
+  "documentation": null,
+  "extent": [
+    [
+      -112.32616936275716,
+      33.28997102786516
+    ],
+    [
+      -111.92547084058613,
+      33.95850214165956
+    ]
+  ],
+  "categories": ["/Categories/City Departments/Planning and Development (PDD)"],
+  "spatialReference": "2868",
+  "accessInformation": "City of Phoenix Planning",
+  "classification": null,
+  "licenseInfo": "<p>This Data is subject to the <a target='_blank' href='https://phoenixopendata.com/pages/terms-of-use' rel='nofollow ugc noopener noreferrer'>Terms of Use<\/a> (Terms) that accompany its distribution. You should read and understand Terms before using City Data. By continuing use of the Data, or accessing any materials on the Site, you agree to these Terms, as they may be updated or modified by City at any time in its discretion. If you (Licensee) do not agree to them, do not use or download any material.<\/p>",
+  "culture": "en-us",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://services.arcgis.com/cfKakmeHE95cgeEK/arcgis/rest/services/Villages/FeatureServer",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 10125312,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": false,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 2002,
+  "scoreCompleteness": 65,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "lastViewed": 1795014000000
+}

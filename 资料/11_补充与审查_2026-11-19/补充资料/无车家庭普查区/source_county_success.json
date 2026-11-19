@@ -1,0 +1,9 @@
+{
+  "file": "censusreporter_acs2024_B08201_county_04013_raw.json",
+  "url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B08201&geo_ids=05000US04013",
+  "resolved_url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B08201&geo_ids=05000US04013",
+  "retrieved_date": "2026-11-19",
+  "bytes": 3194,
+  "sha256": "557466df9f1c52a4aa7dc19410c5a8b872642db97c580e5a9ba658255aebfef5",
+  "provider": "Census Reporter mirror"
+}

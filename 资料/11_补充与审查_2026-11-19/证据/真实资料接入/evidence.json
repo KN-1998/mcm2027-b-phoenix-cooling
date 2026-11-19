@@ -1,0 +1,193 @@
+{
+  "reviewed_commit": "c506b539fa61ac57b04fb822c8557e1cf3b003de",
+  "source_hashes_sha256": {
+    "src/mch/realnet.py": "8a3339a45ea103bcf69a6945603f7b93eb177f4276f38b6a4117c9ae6e8b0b27",
+    "src/mch/incoming.py": "761f9583bd5165fe6074059123113ec98e61ba04dcf3c43cb21a153fa7db1604",
+    "src/mch/runmeta.py": "3bca94285fbca51cea309dbc5247fe9d082df1445f2384685c11b55c25daafcb",
+    "src/mch/static.py": "4fe7371bdc8ebd333847136c280536a8db3c4c5dc2f05b11a933efac23a5ce2c",
+    "src/mch/demand.py": "a9bda9c1ca3b4e21a267661e95d70f1f38528900d4e4538f94862ae6a344a27c",
+    "src/mch/loaders.py": "34263dc2d311e2dc7d649e979ca099860d5f67da3a533a672048bec8e1fb42cd",
+    "src/mch/schema.py": "5eaaac68e872fb0854584abc5e28784cc6da56c78c433feb681cde23adc89efc",
+    "资料/02_降温网络/MAG/phoenix_2026_public_view_sites.csv": "bc69a49f9fcb0be6ff6fbaec20787f519225372a2fe183f6ab327b60c5f76520",
+    "资料/02_降温网络/MAG/derived/phoenix_2026_public_view_sites.csv": "fd88092e6f10aa898ec09e455d398d5beb1a03bcd0f6b48c243db0330b06b29d",
+    "资料/08_原始摘录/zcta_to_district.json": "c7da36c4e6e2fb29337bd68bde7c3bf66623254d856f55d84a877fcd31b84f77",
+    "资料/04_人口与地理/acs2024_5yr_phoenix_zcta_raw.json": "e2e6f9a8e6cb0257107ac1162c2973892c7f3f2d1614376d56e9e8282c72505e",
+    "data/processed/districts.csv": "9bc7dec0913e04d8b4a5b36310a2f27fdc310c449eb859673c030433512072a5",
+    "data/processed/sites.csv": "a86f76913a41e2829b199896050f93063ab02c9e88027dca24297592fce8f2e3",
+    "data/processed/access.csv": "90c48cd8d2d6140114d5b47ce50b82e0addd1d480c61954ba8bc0be3bab91002",
+    "data/processed/demand.csv": "98c0e5c1d8b91e6a6e8a6da6e34be3176c628ed90c3ea5092d81ef6fd8c4f0e1",
+    "data/incoming/access_gtfs.csv": "52229a44c30cc342b1bebef15993152cbd7a8f784703c4de686713eec5cc9a71",
+    "data/incoming/acs_districts.csv": "850546632c9a55809720489bf131cdd3276353d99fcbac792aaf90e5aee77375",
+    "data/incoming/README.md": "06afd0415c05670e70193cc710299eafae92d3c87f4538c0748d61ac76db0bfe",
+    "data/incoming/sites_mag.csv": "b090464e380b6af0b085a6cac461ba17dc988f7222d67b52baa6645ded740f1c"
+  },
+  "calendar_envelope": {
+    "cooling_records": 24,
+    "cooling_sunday_blank_clock_pair": 19,
+    "century_original": {
+      "MondayOpen": "9:00 AM",
+      "MondayClose": "5:00 PM",
+      "TuesdayOpen": "10:00 AM",
+      "TuesdayClose": "6:00 PM",
+      "SundayOpen": "",
+      "SundayClose": "",
+      "Start_Date": "2026-05-01",
+      "End_Date": "2026-10-31"
+    },
+    "century_model_daily_hours": [
+      9.0,
+      18.0
+    ],
+    "note": "Blank weekday fields are unknown, not independently proven closed; the loader nevertheless repeats a daily min/max envelope."
+  },
+  "traffic_axis_confound": {
+    "largest_candidate_proxy_changes": [
+      {
+        "district": "D10",
+        "site": "MCH-8",
+        "base_stop_proxy_min": 304.3,
+        "realnet_linear_proxy_min": 11.6,
+        "difference_min": -292.7
+      },
+      {
+        "district": "D06",
+        "site": "MCH-8",
+        "base_stop_proxy_min": 328.8,
+        "realnet_linear_proxy_min": 65.8,
+        "difference_min": -263.0
+      },
+      {
+        "district": "D10",
+        "site": "MCH-6",
+        "base_stop_proxy_min": 215.9,
+        "realnet_linear_proxy_min": 85.4,
+        "difference_min": -130.5
+      },
+      {
+        "district": "D05",
+        "site": "MCH-8",
+        "base_stop_proxy_min": 212.9,
+        "realnet_linear_proxy_min": 87.4,
+        "difference_min": -125.5
+      },
+      {
+        "district": "D06",
+        "site": "MCH-6",
+        "base_stop_proxy_min": 207.6,
+        "realnet_linear_proxy_min": 86.8,
+        "difference_min": -120.8
+      }
+    ],
+    "p3_all_linear": {
+      "unmet": 169.596,
+      "chosen": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ]
+    },
+    "p3_retain_base_candidate_proxy": {
+      "unmet": 220.957,
+      "chosen": [
+        "MCH-1",
+        "MCH-3",
+        "MCH-5"
+      ]
+    },
+    "nearby_direct_walk_counterexample": {
+      "district": "D10",
+      "site": "MCH-8",
+      "district_coords": [
+        33.82,
+        -112.1
+      ],
+      "site_coords": [
+        33.818,
+        -112.102
+      ],
+      "direct_walk_proxy_min": 4.879,
+      "base_forced_stop_proxy_min": 304.3
+    },
+    "note": "Both implementations are proxies. The baseline stop proxy is not a genuine scheduled path; it omits the direct-walk alternative. Retaining it above isolates the traffic-axis confound, not a claim that it is ground truth."
+  },
+  "rebuild_order_and_calibration": {
+    "capacity_only_C01_50_to_100": {
+      "daily_demand_before": 505.0,
+      "daily_demand_after": 4624.068252688
+    },
+    "observed_demand_overwritten": {
+      "provided_D01_day0": 123,
+      "result_D01_day0": 552.21418097664,
+      "log": {
+        "files": [
+          "acs_districts.csv",
+          "demand_observed.csv"
+        ],
+        "changed": {
+          "districts": 1,
+          "demand_observed": 1
+        },
+        "unmatched": {},
+        "ignored_columns": {},
+        "rebuild_needed": [
+          "demand(脆弱性变化后需重算需求)"
+        ],
+        "applied": true,
+        "rebuilt": true
+      }
+    },
+    "note": "These cases explicitly enable rebuild_derived=True; the default loader does not enable rebuilding."
+  },
+  "zcta_mapping_draft": {
+    "incoming_acs_rows": 0,
+    "reused_whole_zctas": {
+      "85015": [
+        "D02",
+        "D03"
+      ]
+    },
+    "mapped_district_population_sum": 503600,
+    "no_vehicle_percent": {
+      "D01": {
+        "draft": 7.5,
+        "household_denominator_correct": 8.696687165244992
+      },
+      "D02": {
+        "draft": 14.8,
+        "household_denominator_correct": 14.920747996438113
+      },
+      "D03": {
+        "draft": 12.4,
+        "household_denominator_correct": 12.553251033925184
+      },
+      "D04": {
+        "draft": 7.3,
+        "household_denominator_correct": 7.293090524273557
+      },
+      "D09": {
+        "draft": 7.2,
+        "household_denominator_correct": 7.215613382899628
+      }
+    },
+    "note": "This mapping JSON is a draft, not loaded by the current solver; income medians cannot be combined as population-weighted medians."
+  },
+  "MAG_input_hash_omission": {
+    "hashed_inputs_identical_after_alternate_MAG_fixture": true,
+    "original_p0_unmet": 474.84,
+    "fixture_without_cooling_p0_unmet": 505.0,
+    "recorded_input_names": [
+      "access.csv",
+      "demand.csv",
+      "districts.csv",
+      "incoming/README.md",
+      "incoming/access_gtfs.csv",
+      "incoming/acs_districts.csv",
+      "incoming/sites_mag.csv",
+      "sites.csv"
+    ],
+    "actual_MAG_repository_path": "资料/02_降温网络/MAG/phoenix_2026_public_view_sites.csv",
+    "note": "Only an in-memory source-path override to a temporary CSV is used; no repository file is edited."
+  },
+  "MAG_alias_records_equal_to_preserved_derived": true,
+  "repository_input_files_unchanged": true
+}
