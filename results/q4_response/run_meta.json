@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-18T16:45:07",
-  "git_sha": "46a0d7f",
-  "worktree_dirty": false,
+  "generated_at": "2026-11-19T12:32:58",
+  "git_sha": "9826d75",
+  "worktree_dirty": true,
   "python": "3.13.9",
   "params": {
     "p": 3,
     "mults": "1.0,1.8,3.0",
     "down_sites": "R01,C01",
-    "down_vehicles": "MCH-3,MCH-7",
+    "down_vehicles_at": "MCH-3,MCH-7",
     "budget_hours": 24.0,
     "stress_draws": 100,
     "out": "results/q4_response"

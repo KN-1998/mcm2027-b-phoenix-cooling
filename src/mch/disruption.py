@@ -50,17 +50,19 @@ def run_disruption(inst: Instance, p: int, max_minutes: float = 30.0,
     }
 
 def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
-                  down_site: str | None = None, down_vehicle: str | None = None,
+                  down_site: str | None = None, down_vehicle_at: str | None = None,
                   budget_hours: float = 24.0, max_minutes: float = 30.0,
-                  capacity: float = 250.0, open_hours: float = 10.0) -> Dict[str, object]:
-    """Q4 闭环（R1/R2 修正版）：区分"位置不可用"与"车辆故障"，并守住车队守恒。
+                  capacity: float = 250.0, open_hours: float = 10.0,
+                  parallel: bool = False) -> Dict[str, object]:
+    """Q4 闭环 v3（第四轮审查修正）。
 
-    - `down_site`：某个**位置**不可用（如断电）。设备可以搬走，车队仍是 p 台。
-    - `down_vehicle`：某台**移动枢纽设备**故障。健康车队变为 p-1 台，
-      故障车**不得**再被当作可搬迁车辆投入服务。
-    - 迁移时间沿用 `move_time_hours`（已含 0.5 h 搭建），不再重复加 setup。
-    - 串行调度：第 k 台车在它自己开业前的等待期同样不可服务（按开业时刻折算停服）。
-    - 超出 `budget_hours` 的方案照实计算，但标记为不可执行，且**不计入可执行收益**。
+    语义分离（审查第 1、3 条）：
+      - `down_site`：**场地**不可用（任何车都不能在该点服务，但车可以开走）。
+      - `down_vehicle_at`：**停在某点的车**故障（该场地仍可用，可由别的健康车占用）。
+        车队由 p 降为 p−1；故障车永远不能作为迁出来源。
+    选点规则（审查第 2 条）：把"不搬"作为候选，**按响应后的未满足量**在所有可行方案中选最优，
+    因此报告的最优方案净收益恒 ≥ 0（负收益只作为被拒绝的候选出现）。
+    容量（审查第 5 条）：按"就绪时刻与营业窗口的交集"折算该车当天可服务小时，而不是固定 2 小时。
     """
     from .dynamic import plan_moves
     from .static import _assign, _active_sites
@@ -70,61 +72,87 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
     low = pick_low_income(inst, 2)
     shocked = apply_shock(inst, low, mult)
 
-    # 健康车队：故障车退出
-    fleet = p - (1 if down_vehicle else 0)
-    if fleet < 0:
-        raise ValueError("fleet < 0")
+    if down_vehicle_at and down_vehicle_at not in base.chosen:
+        raise ValueError(f"down_vehicle_at={down_vehicle_at} 不在当前部署中；未部署车辆故障不应改变车队")
 
-    # 事前部署（合理起点）：若故障车在部署中，它不能算作可用
-    before_healthy = [x for x in base.chosen if x != down_vehicle]
+    fleet = p - (1 if down_vehicle_at else 0)
+    blocked = [x for x in (down_site,) if x]
 
-    # 不响应：位置限制 + 车辆故障，都体现在可用集合里
-    stay_pool = [x for x in before_healthy if x != down_site]
-    stay = _assign(shocked, _active_sites(shocked, tuple(stay_pool), [down_site] if down_site else []),
-                   0, max_minutes, capacity)
+    # 不搬：维持原点位；故障车所在点若无车则无人服务（场地仍可用但没车）
+    stay_sites = [x for x in base.chosen if x != down_site]
+    if down_vehicle_at:
+        stay_sites = [x for x in stay_sites if x != down_vehicle_at]
+    no_move = _assign(shocked, _active_sites(shocked, tuple(stay_sites), blocked),
+                      0, max_minutes, capacity)
 
-    # 响应：健康车队重新选点（数量为 fleet），再算迁移
-    target = solve_static(shocked, fleet, exclude_sites=[x for x in (down_site, down_vehicle) if x], **kw)
+    # 计算"从当前部署出发、搬到目标点集"的就绪时刻与容量折减
+    current = [x for x in base.chosen if x != down_vehicle_at]
 
-    moves = plan_moves(inst, tuple(before_healthy), tuple(target.chosen))
+    def schedule_to(target):
+        moves = plan_moves(inst, tuple(current), tuple(target))
+        t = 0.0
+        timeline = []
+        for m in moves:
+            travel = float(m["hours"])       # move_time_hours 已含搭建
+            ready = t + travel
+            timeline.append({"from": m["from"], "to": m["to"], "depart_h": round(t, 2),
+                             "travel_h": round(travel, 2), "ready_h": round(ready, 2)})
+            # 串行：同一班组的下一台从上一台就绪后开始；并行走各自就绪
+            t = max(t, ready) if parallel else ready
+        ready_by_site = {m["to"]: m["ready_h"] for m in timeline}
+        return timeline, ready_by_site, t
 
-    timeline, t = [], 0.0
-    for m in moves:
-        travel = float(m["hours"])          # move_time_hours 已含搭建
-        ready = t + travel
-        timeline.append({"from": m["from"], "to": m["to"], "depart_h": round(t, 2),
-                         "travel_h": round(travel, 2), "arrive_h": round(t + travel, 2),
-                         "open_h": round(ready, 2)})
-        t = ready
-    feasible = t <= budget_hours
+    def capacity_factor(ready_h):
+        # 就绪前不可服务：按该车当天可服务小时占比折算
+        return max(0.0, 1.0 - min(open_hours, float(ready_h)) / open_hours)
 
-    # 停服：按该车自己的开业时刻（含排队等待）
-    down = {}
-    for m in timeline:
-        down[m["to"]] = max(0.0, 1.0 - min(open_hours, m["open_h"]) / open_hours)
-    with_resp = _assign(shocked, _active_sites(shocked, tuple(target.chosen),
-                                              [x for x in (down_site, down_vehicle) if x]),
-                        0, max_minutes, capacity, downtime=down)
+    # 枚举可达的点位集合（枚举而非贪心），含"不搬"
+    import itertools
+    cand_ids = [s.id for s in inst.candidate_sites() if s.id not in blocked]
+    options = []
+    for combo in itertools.combinations(cand_ids, fleet):
+        timeline, ready_by_site, total_t = schedule_to(combo)
+        downtime = {sid: capacity_factor(h) for sid, h in ready_by_site.items()}
+        sol = _assign(shocked, _active_sites(shocked, tuple(combo), blocked),
+                      0, max_minutes, capacity, downtime=downtime)
+        options.append({"chosen": list(combo), "unmet": round(sol.metrics["unmet_total"], 3),
+                        "timeline": timeline, "total_hours": round(total_t, 2),
+                        "feasible": total_t <= budget_hours,
+                        "n_moves": sum(1 for m in timeline if m["from"])})
 
-    gain = round(stay.metrics["unmet_total"] - with_resp.metrics["unmet_total"], 3)
-    # 车队守恒自检
-    origins = {m["from"] for m in moves if m["from"]}
-    assert len(origins) <= fleet, "搬迁车数超过健康车队"
-    if down_vehicle:
-        assert down_vehicle not in origins, "故障车不得被当作可搬迁车辆"
+    feasible = [o for o in options if o["feasible"]]
+    best = min(feasible, key=lambda o: o["unmet"]) if feasible else None
+    no_move_unmet = round(no_move.metrics["unmet_total"], 3)
+    best_unmet = best["unmet"] if best else None
+    gain = None if best is None else round(no_move_unmet - best_unmet, 3)
+
+    # 被"不搬"支配的候选（用于解释为什么不该搬）
+    dominated = sorted([o for o in feasible if o["unmet"] > no_move_unmet],
+                       key=lambda o: o["unmet"])[:3]
 
     return {
         "shock_districts": low, "shock_multiplier": mult,
-        "down_site": down_site, "down_vehicle": down_vehicle,
+        "down_site": down_site, "down_vehicle_at": down_vehicle_at,
         "fleet_nominal": p, "fleet_healthy": fleet,
         "base": {"chosen": list(base.chosen), "unmet": round(base.metrics["unmet_total"], 3)},
         "shock_only": round(solve_static(shocked, p, **kw).metrics["unmet_total"], 3),
-        "no_response": {"chosen": list(stay.chosen), "unmet": round(stay.metrics["unmet_total"], 3)},
-        "with_response": {"chosen": list(target.chosen), "unmet": round(with_resp.metrics["unmet_total"], 3)},
-        "response_gain": gain if feasible else None,
-        "response_gain_infeasible": None if feasible else gain,
-        "moves": moves, "timeline": timeline,
-        "total_response_hours": round(t, 2), "budget_hours": budget_hours,
-        "feasible_within_budget": bool(feasible),
-        "response_hours_modeled": True,
+        "no_move": {"chosen": list(stay_sites), "unmet": no_move_unmet},
+        "best": best,
+        "response_gain": gain,
+        "gain_definition": "no_move_unmet - best_feasible_unmet（按响应后未满足量选优，恒 >= 0）",
+        "dominated_examples": [{"chosen": o["chosen"], "unmet": o["unmet"]} for o in dominated],
+        "n_options": len(options), "n_feasible": len(feasible),
+        "budget_hours": budget_hours,
+        "feasible_any": bool(feasible),
+        "parallel": parallel,
     }
+
+
+def plan_response_legacy(inst: Instance, p: int = 3, mult: float = 1.8,
+                         down_site: str | None = None, down_vehicle: str | None = None,
+                         budget_hours: float = 24.0, max_minutes: float = 30.0,
+                         capacity: float = 250.0, open_hours: float = 10.0) -> Dict[str, object]:
+    """旧接口（v2）：保留兼容，语义为 down_vehicle=车辆在某点故障且该点同时不可用。"""
+    return plan_response(inst, p, mult=mult, down_site=down_site,
+                         down_vehicle_at=down_vehicle, budget_hours=budget_hours,
+                         max_minutes=max_minutes, capacity=capacity, open_hours=open_hours)

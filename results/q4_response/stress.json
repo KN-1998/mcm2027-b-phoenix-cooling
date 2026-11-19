@@ -1,9 +1,8 @@
 {
   "draws": 100,
   "feasible_share": 1.0,
-  "gain_p10": -21.252,
+  "gain_p10": 0.0,
   "gain_p50": 0.0,
-  "gain_p90": 21.198,
-  "max_response_hours": 1.82,
-  "note": "故障为均匀抽样，不是实证概率"
+  "gain_p90": 21.655,
+  "note": "车辆故障只在已部署点抽样；场地故障抽固定站点"
 }

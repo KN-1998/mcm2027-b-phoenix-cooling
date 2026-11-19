@@ -41,35 +41,7 @@ class TestPeriodFilter(unittest.TestCase):
         self.assertGreater(sum(out["served"].values()), 10.0)
 
 
-from src.mch.disruption import plan_response  # noqa: E402
-
-
-@unittest.skipUnless(HAVE, "run tools/build_data.py first")
-class TestFleetConservation(unittest.TestCase):
-    """R1：车辆故障后健康车队减一，且故障车不得成为搬迁来源。"""
-
-    def test_vehicle_failure_reduces_fleet(self):
-        from src.mch.loaders import load_instance
-        inst = load_instance()
-        r = plan_response(inst, 3, mult=1.8, down_vehicle="MCH-3")
-        self.assertEqual(r["fleet_healthy"], 2)
-        origins = {m["from"] for m in r["moves"] if m["from"]}
-        self.assertNotIn("MCH-3", origins)
-
-    def test_site_unavailable_keeps_fleet(self):
-        from src.mch.loaders import load_instance
-        inst = load_instance()
-        r = plan_response(inst, 3, mult=1.8, down_site="MCH-3")
-        self.assertEqual(r["fleet_healthy"], 3)
-        self.assertLessEqual(len(r["moves"]), 3)
-
-    def test_infeasible_gain_not_counted(self):
-        from src.mch.loaders import load_instance
-        inst = load_instance()
-        r = plan_response(inst, 3, mult=1.8, down_site="MCH-3", budget_hours=0.1)
-        if not r["feasible_within_budget"]:
-            self.assertIsNone(r["response_gain"])
-            self.assertIsNotNone(r["response_gain_infeasible"])
+# Q4 的车队守恒与"不搬"候选等不变量已迁移到 tests/test_q4_v3.py（v3 接口）。
 
 
 if __name__ == "__main__":
