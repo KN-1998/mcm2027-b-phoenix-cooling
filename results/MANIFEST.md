@@ -1,6 +1,6 @@
 # 可引用结果清单
 
-生成时间：2026-11-19T12:35:06
+生成时间：2026-11-19T12:42:30
 
 > **引用任何数字前**：确认 `git_sha` 与你手上的代码一致、`inputs` 与当前 `data/processed` 一致。
 > 标 `dirty=true` 的运行说明当时工作区有未提交改动，**不能仅凭父提交复现**。
@@ -12,6 +12,7 @@
 | `q2_objectives` | `99add35` | — | scenario=base, access_mode=walk_min, max_minutes=30.0, pmax=8 | 固定点集上的分配目标比较（非公平选址） |
 | `q3_week` | `99add35` | — | p=3, max_minutes=30.0, top_k=3, shock_districts= | 七日累计；静态 vs 动态 DP；首日不计停服 |
 | `q4_response` | `99add35` | — | p=3, mults=1.0,1.8,3.0, down_sites=R01,C01, down_vehicles_at=MCH-3,MCH-7 | 位置不可用 vs 车辆故障；超预算方案不计可执行收益 |
+| `q5_plan` | `ca22477` | ⚠️ | p0=2, pmax=8, out=results/q5_plan |  |
 | `real_network` | `99add35` | — | modes=walk_min,transit_min, thresholds=20,30,45,60, pmax=8, out=results/real_network | MAG 2026 真实网络；区质心口径会高估不可达 |
 | `run_csv` | `99add35` | — | p=3, max_minutes=30.0, capacity=250.0, seed=2027 | 端到端流水线输出 |
 | `segments` | `99add35` | — | p=3, shares=0.3,0.5,0.7, out=results/segments | 无家可归者占比 0.3/0.5/0.7 情景 |
@@ -23,14 +24,14 @@
 
 | 输入 | 哈希 | 出现次数 |
 |---|---|---:|
-| `access.csv` | `dc990ef1d8658091` | 11 |
-| `demand.csv` | `b6041bb74bbfbae3` | 11 |
-| `districts.csv` | `0ad48911cabcdabb` | 11 |
-| `incoming/README.md` | `939c03c95ed9aa21` | 10 |
-| `incoming/access_gtfs.csv` | `6389533cdf0f5367` | 10 |
-| `incoming/acs_districts.csv` | `925f834bcfbc8bd6` | 10 |
-| `incoming/sites_mag.csv` | `6479ea0864da206e` | 10 |
-| `sites.csv` | `6576a3e4eb6867bc` | 11 |
+| `access.csv` | `dc990ef1d8658091` | 12 |
+| `demand.csv` | `b6041bb74bbfbae3` | 12 |
+| `districts.csv` | `0ad48911cabcdabb` | 12 |
+| `incoming/README.md` | `939c03c95ed9aa21` | 11 |
+| `incoming/access_gtfs.csv` | `6389533cdf0f5367` | 11 |
+| `incoming/acs_districts.csv` | `925f834bcfbc8bd6` | 11 |
+| `incoming/sites_mag.csv` | `6479ea0864da206e` | 11 |
+| `sites.csv` | `6576a3e4eb6867bc` | 12 |
 
 ## 单位
 
