@@ -34,48 +34,57 @@
       1.36
     ]
   },
+  "note": "成本为 ASSUME；预算按当年完整支出（资本+全部运维+延时+接驳）判定",
   "plans": {
     "low/mild": {
-      "total_spend": 2300000,
-      "final_fleet": 6,
+      "total_spend": 9260000,
+      "total_opex": 9180000,
+      "all_within_budget": true,
+      "final_fleet": 3,
       "final_extend": 21.0,
-      "final_unmet": 112.15,
+      "final_unmet": 122.57,
       "actions": [
         "extend_21",
         "buy_hub",
-        "buy_hub",
-        "buy_hub",
-        "buy_hub"
+        "keep",
+        "keep",
+        "keep"
       ]
     },
     "low/base": {
-      "total_spend": 2300000,
-      "final_fleet": 6,
+      "total_spend": 9260000,
+      "total_opex": 9180000,
+      "all_within_budget": true,
+      "final_fleet": 3,
       "final_extend": 21.0,
-      "final_unmet": 124.49,
+      "final_unmet": 140.2,
       "actions": [
         "extend_21",
         "buy_hub",
-        "buy_hub",
-        "buy_hub",
-        "buy_hub"
+        "keep",
+        "keep",
+        "keep"
       ]
     },
     "low/severe": {
-      "total_spend": 2300000,
-      "final_fleet": 6,
+      "total_spend": 9260000,
+      "total_opex": 9180000,
+      "all_within_budget": true,
+      "final_fleet": 3,
       "final_extend": 21.0,
-      "final_unmet": 168.18,
+      "final_unmet": 197.96,
       "actions": [
         "extend_21",
         "buy_hub",
-        "buy_hub",
-        "buy_hub",
-        "buy_hub"
+        "keep",
+        "keep",
+        "keep"
       ]
     },
     "base/mild": {
-      "total_spend": 3100000,
+      "total_spend": 14900000,
+      "total_opex": 14660000,
+      "all_within_budget": true,
       "final_fleet": 5,
       "final_extend": 22.0,
       "final_unmet": 109.58,
@@ -88,7 +97,9 @@
       ]
     },
     "base/base": {
-      "total_spend": 3300000,
+      "total_spend": 15220000,
+      "total_opex": 14900000,
+      "all_within_budget": true,
       "final_fleet": 6,
       "final_extend": 22.0,
       "final_unmet": 122.06,
@@ -101,7 +112,9 @@
       ]
     },
     "base/severe": {
-      "total_spend": 3300000,
+      "total_spend": 15220000,
+      "total_opex": 14900000,
+      "all_within_budget": true,
       "final_fleet": 6,
       "final_extend": 22.0,
       "final_unmet": 161.63,
@@ -114,7 +127,9 @@
       ]
     },
     "high/mild": {
-      "total_spend": 3100000,
+      "total_spend": 14900000,
+      "total_opex": 14660000,
+      "all_within_budget": true,
       "final_fleet": 5,
       "final_extend": 22.0,
       "final_unmet": 109.58,
@@ -127,7 +142,9 @@
       ]
     },
     "high/base": {
-      "total_spend": 3300000,
+      "total_spend": 15220000,
+      "total_opex": 14900000,
+      "all_within_budget": true,
       "final_fleet": 6,
       "final_extend": 22.0,
       "final_unmet": 122.06,
@@ -140,7 +157,9 @@
       ]
     },
     "high/severe": {
-      "total_spend": 3300000,
+      "total_spend": 15220000,
+      "total_opex": 14900000,
+      "all_within_budget": true,
       "final_fleet": 6,
       "final_extend": 22.0,
       "final_unmet": 161.63,
