@@ -1,0 +1,27 @@
+=== Q1 access gaps (no indoor cooling within threshold) ===
+  districts: ['D07', 'D08', 'D10']
+=== Q1 无 MCH 基线 ===
+{"demand_total": 505.0, "served_total": 199.489, "unmet_total": 305.511, "coverage_rate": 0.395027, "unmet_total_raw": 305.51149999999996, "coverage_min": 0.0, "coverage_mean": 0.366667, "gini_coverage": 0.337121, "worst_unmet_ratio": 1.0, "utilization_mean": 0.3787, "utilization_by_site": {"C01": 0.2564, "C02": 0.2953, "C03": 0.5712, "C04": 0.3859, "C05": 0.3815, "C06": 0.2723, "C07": 0.4342, "C08": 0.7215, "C09": 0.3247, "R01": 0.1445}, "worst_unmet_ratio_nonexempt": 1.0, "worst_unmet_ratio_nonexempt_raw": 1.0, "worst_unmet_ratio_raw": 1.0, "served_by_period": {"day": 182.147, "evening": 12.516, "night": 4.826}, "solver_status": "optimal", "assignment_objective": "efficiency", "availability_applied": true}
+=== Q2 p=3 ===
+选址: ['MCH-3', 'MCH-7', 'MCH-8']
+{"demand_total": 505.0, "served_total": 277.705, "unmet_total": 227.295, "coverage_rate": 0.549911, "unmet_total_raw": 227.29509999999993, "coverage_min": 0.0, "coverage_mean": 0.54125, "gini_coverage": 0.252951, "worst_unmet_ratio": 1.0, "utilization_mean": 0.3154, "utilization_by_site": {"C01": 0.2564, "C02": 0.2953, "C03": 0.5712, "C04": 0.3859, "C05": 0.3815, "C06": 0.2723, "C07": 0.4342, "C08": 0.7215, "C09": 0.3247, "R01": 0.1445, "MCH-3": 0.1409, "MCH-7": 0.085, "MCH-8": 0.087}, "worst_unmet_ratio_nonexempt": 1.0, "worst_unmet_ratio_nonexempt_raw": 1.0, "worst_unmet_ratio_raw": 1.0, "served_by_period": {"day": 203.898, "evening": 68.981, "night": 4.826}, "solver_status": "optimal", "assignment_objective": "efficiency", "availability_applied": true}
+=== Q3 动态（统一 DP）===
+  静态七日 1768.4 -> 动态 1768.4
+  day0: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=227  moves=[]
+  day1: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=239  moves=[]
+  day2: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=268  moves=[]
+  day3: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=295  moves=[]
+  day4: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=277  moves=[]
+  day5: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=245  moves=[]
+  day6: ['MCH-3', 'MCH-7', 'MCH-8']  unmet=216  moves=[]
+=== Q4 中断 ===
+{"shock_districts": ["D09", "D03"], "down_site": "C08", "response_gain": 0.0, "search": {"requested_mode": "auto", "mode": "exact", "optimality_status": "exact_for_stated_discrete_model", "top_combos": null, "top_matchings": null, "destination_sets_total": 93, "destination_sets_evaluated": 0, "destination_sets_pruned_by_bound": 93, "matchings_generated": 0, "timelines_tested": 0, "deadline_feasible_timelines": 0, "assignment_lp_evaluations": 0}}
+=== Q5 五年 ===
+   {'year': 2027, 'strategy': 'dp', 'budget': 4000000.0, 'heat_multiplier': 1.0, 'operating_days': 1.0, 'owned_before': 3, 'owned': 4, 'active': 4, 'fleet': 4, 'buy': 1, 'retire': 0, 'idled': 0, 'extend_to': 22.0, 'shuttle': False, 'action': 'active=4,buy=1,ext=22.0,shuttle=0', 'total_cost': 3060000.0, 'capital': 80000.0, 'hub_opex': 480000.0, 'extend_cost': 2500000.0, 'shuttle_cost': 0.0, 'within_budget': True, 'unmet_before': 227.29509999999993, 'unmet_after': 105.83323076923074, 'worst_after': 1.0, 'gain': 121.4618692307692, 'weighted_unmet_visits': 105.83323076923074}
+   {'year': 2028, 'strategy': 'dp', 'budget': 4000000.0, 'heat_multiplier': 1.03, 'operating_days': 1.0, 'owned_before': 4, 'owned': 5, 'active': 5, 'fleet': 5, 'buy': 1, 'retire': 0, 'idled': 0, 'extend_to': 22.0, 'shuttle': False, 'action': 'active=5,buy=1,ext=22.0,shuttle=0', 'total_cost': 3180000.0, 'capital': 80000.0, 'hub_opex': 600000.0, 'extend_cost': 2500000.0, 'shuttle_cost': 0.0, 'within_budget': True, 'unmet_before': 212.27980699999995, 'unmet_after': 109.58515076923078, 'worst_after': 1.0, 'gain': 102.69465623076917, 'weighted_unmet_visits': 109.58515076923078}
+   {'year': 2029, 'strategy': 'dp', 'budget': 4000000.0, 'heat_multiplier': 1.06, 'operating_days': 1.0, 'owned_before': 5, 'owned': 6, 'active': 6, 'fleet': 6, 'buy': 1, 'retire': 0, 'idled': 0, 'extend_to': 22.0, 'shuttle': False, 'action': 'active=6,buy=1,ext=22.0,shuttle=0', 'total_cost': 3300000.0, 'capital': 80000.0, 'hub_opex': 720000.0, 'extend_cost': 2500000.0, 'shuttle_cost': 0.0, 'within_budget': True, 'unmet_before': 198.49125400000008, 'unmet_after': 113.33707076923076, 'worst_after': 1.0, 'gain': 85.15418323076932, 'weighted_unmet_visits': 113.33707076923076}
+   {'year': 2030, 'strategy': 'dp', 'budget': 4000000.0, 'heat_multiplier': 1.09, 'operating_days': 1.0, 'owned_before': 6, 'owned': 6, 'active': 6, 'fleet': 6, 'buy': 0, 'retire': 0, 'idled': 0, 'extend_to': 22.0, 'shuttle': False, 'action': 'active=6,buy=0,ext=22.0,shuttle=0', 'total_cost': 3220000.0, 'capital': 0.0, 'hub_opex': 720000.0, 'extend_cost': 2500000.0, 'shuttle_cost': 0.0, 'within_budget': True, 'unmet_before': 183.80746300000004, 'unmet_after': 117.45016000000004, 'worst_after': 1.0, 'gain': 66.357303, 'weighted_unmet_visits': 117.45016000000004}
+   {'year': 2031, 'strategy': 'dp', 'budget': 4000000.0, 'heat_multiplier': 1.12, 'operating_days': 1.0, 'owned_before': 6, 'owned': 6, 'active': 6, 'fleet': 6, 'buy': 0, 'retire': 0, 'idled': 0, 'extend_to': 22.0, 'shuttle': False, 'action': 'active=6,buy=0,ext=22.0,shuttle=0', 'total_cost': 3220000.0, 'capital': 0.0, 'hub_opex': 720000.0, 'extend_cost': 2500000.0, 'shuttle_cost': 0.0, 'within_budget': True, 'unmet_before': 188.86638399999993, 'unmet_after': 122.05887999999993, 'worst_after': 1.0, 'gain': 66.807504, 'weighted_unmet_visits': 122.05887999999993}
+
+结果写入 F:\数模\2\model_takeover_shallow_20261120\results\takeover_20261120\pipeline
+

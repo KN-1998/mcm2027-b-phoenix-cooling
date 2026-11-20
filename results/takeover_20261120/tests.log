@@ -1,0 +1,21 @@
+....................................ssss........sss..................... [ 71%]
+.............................                                            [100%]
+============================== warnings summary ===============================
+C:\Python314\Lib\site-packages\anyio\pytest_plugin.py:14
+  C:\Python314\Lib\site-packages\anyio\pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_q5_plan.py:19: 先运行 run_q5_plan
+SKIPPED [1] tests\test_q5_plan.py:32: 先运行 run_q5_plan
+SKIPPED [1] tests\test_q5_plan.py:22: 先运行 run_q5_plan
+SKIPPED [1] tests\test_q5_plan.py:26: 先运行 run_q5_plan
+SKIPPED [1] tests\test_review5_fixes.py:59: 先运行 run_q5_plan
+SKIPPED [1] tests\test_review5_fixes.py:51: 先运行 run_q5_plan
+SKIPPED [1] tests\test_review5_fixes.py:65: 先运行 run_q5_plan
+94 passed, 7 skipped, 1 warning in 7.86s
+

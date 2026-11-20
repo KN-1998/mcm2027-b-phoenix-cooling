@@ -1,0 +1,628 @@
+{
+  "cost_assumptions": {
+    "hub_buy": 80000,
+    "hub_ops": 120000,
+    "extend_21": 1500000,
+    "extend_22": 2500000,
+    "shuttle": 400000
+  },
+  "budgets": {
+    "low": 2000000,
+    "base": 4000000,
+    "high": 6000000
+  },
+  "heat": {
+    "mild": [
+      1.0,
+      1.0,
+      1.02,
+      1.02,
+      1.03
+    ],
+    "base": [
+      1.0,
+      1.03,
+      1.06,
+      1.09,
+      1.12
+    ],
+    "severe": [
+      1.05,
+      1.12,
+      1.2,
+      1.28,
+      1.36
+    ]
+  },
+  "operating_days_assumed": 1,
+  "scope": "Conditional service scenario; not validated annual visits, avoided deaths or a procurement quote.",
+  "objective": "Lexicographic cumulative weighted unmet visits, cumulative weighted worst district ratio, total expenditure",
+  "exactness": "DP exact over finite annual actions and the specified fully known scenario, conditional on inner service solver",
+  "actions": "buy=0..pmax-owned; active=0..owned+buy; annual extension=None/21/22; shuttle=False/True",
+  "stock_assumptions": {
+    "initial_procurement_sunk": true,
+    "idle_stock_retained": true,
+    "retirement_allowed": false,
+    "storage_cost_assumed": 0,
+    "procurement_lead_time_years_assumed": 0,
+    "budget_carryover_allowed": false,
+    "annual_contracts_can_cancel": true
+  },
+  "note": "All prices/budgets/heat multipliers ASSUME. Contracts may cancel annually; idle stock retained; no salvage, storage cost, lead time or budget carryover.",
+  "plans": {
+    "low/mild": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 9820000.0,
+      "total_opex": 9660000.0,
+      "weighted_unmet_visits": 583.0911806666666,
+      "mean_representative_day_unmet": 116.61823613333331,
+      "all_within_budget": true,
+      "final_fleet": 4,
+      "final_owned": 4,
+      "final_extend": 21.0,
+      "final_unmet": 117.40610600000002,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 2091
+    },
+    "base/mild": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 15260000.0,
+      "total_opex": 15020000.0,
+      "weighted_unmet_visits": 537.9206338461538,
+      "mean_representative_day_unmet": 107.58412676923076,
+      "all_within_budget": true,
+      "final_fleet": 5,
+      "final_owned": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58515076923078,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4899
+    },
+    "high/mild": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 15260000.0,
+      "total_opex": 15020000.0,
+      "weighted_unmet_visits": 537.9206338461538,
+      "mean_representative_day_unmet": 107.58412676923076,
+      "all_within_budget": true,
+      "final_fleet": 5,
+      "final_owned": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58515076923078,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4956
+    },
+    "low/base": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 9820000.0,
+      "total_opex": 9660000.0,
+      "weighted_unmet_visits": 622.9483826666667,
+      "mean_representative_day_unmet": 124.58967653333335,
+      "all_within_budget": true,
+      "final_fleet": 4,
+      "final_owned": 4,
+      "final_extend": 21.0,
+      "final_unmet": 133.1225173333333,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 2091
+    },
+    "base/base": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 16060000.0,
+      "total_opex": 15740000.0,
+      "weighted_unmet_visits": 568.2644923076923,
+      "mean_representative_day_unmet": 113.65289846153846,
+      "all_within_budget": true,
+      "final_fleet": 6,
+      "final_owned": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.05887999999993,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4899
+    },
+    "high/base": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 16060000.0,
+      "total_opex": 15740000.0,
+      "weighted_unmet_visits": 568.2644923076923,
+      "mean_representative_day_unmet": 113.65289846153846,
+      "all_within_budget": true,
+      "final_fleet": 6,
+      "final_owned": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.05887999999993,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4956
+    },
+    "low/severe": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 9820000.0,
+      "total_opex": 9660000.0,
+      "weighted_unmet_visits": 768.2392306666666,
+      "mean_representative_day_unmet": 153.6478461333333,
+      "all_within_budget": true,
+      "final_fleet": 4,
+      "final_owned": 4,
+      "final_extend": 21.0,
+      "final_unmet": 185.80005066666666,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0",
+        "active=4,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 2091
+    },
+    "base/severe": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 16620000.0,
+      "total_opex": 16220000.0,
+      "weighted_unmet_visits": 677.4518523076922,
+      "mean_representative_day_unmet": 135.49037046153845,
+      "all_within_budget": true,
+      "final_fleet": 7,
+      "final_owned": 7,
+      "final_extend": 22.0,
+      "final_unmet": 161.25795076923077,
+      "actions": [
+        "active=6,buy=4,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=7,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4899
+    },
+    "high/severe": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 16620000.0,
+      "total_opex": 16220000.0,
+      "weighted_unmet_visits": 677.4518523076922,
+      "mean_representative_day_unmet": 135.49037046153845,
+      "all_within_budget": true,
+      "final_fleet": 7,
+      "final_owned": 7,
+      "final_extend": 22.0,
+      "final_unmet": 161.25795076923077,
+      "actions": [
+        "active=6,buy=4,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=7,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 4956
+    }
+  },
+  "baselines": {
+    "low/mild/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 9380000.0,
+      "total_opex": 9300000.0,
+      "weighted_unmet_visits": 598.1696546666665,
+      "mean_representative_day_unmet": 119.63393093333329,
+      "all_within_budget": true,
+      "final_fleet": 3,
+      "final_owned": 3,
+      "final_extend": 21.0,
+      "final_unmet": 122.57358533333331,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 491
+    },
+    "low/mild/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1260.1337969999997,
+      "mean_representative_day_unmet": 252.02675939999995,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 256.00351299999994,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "base/mild/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 15260000.0,
+      "total_opex": 15020000.0,
+      "weighted_unmet_visits": 537.9206338461538,
+      "mean_representative_day_unmet": 107.58412676923076,
+      "all_within_budget": true,
+      "final_fleet": 5,
+      "final_owned": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58515076923078,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 1079
+    },
+    "base/mild/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1260.1337969999997,
+      "mean_representative_day_unmet": 252.02675939999995,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 256.00351299999994,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "high/mild/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 15260000.0,
+      "total_opex": 15020000.0,
+      "weighted_unmet_visits": 537.9206338461538,
+      "mean_representative_day_unmet": 107.58412676923076,
+      "all_within_budget": true,
+      "final_fleet": 5,
+      "final_owned": 5,
+      "final_extend": 22.0,
+      "final_unmet": 109.58515076923078,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=4,buy=0,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 1092
+    },
+    "high/mild/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1260.1337969999997,
+      "mean_representative_day_unmet": 252.02675939999995,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 256.00351299999994,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "low/base/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 9380000.0,
+      "total_opex": 9300000.0,
+      "weighted_unmet_visits": 642.2664966666666,
+      "mean_representative_day_unmet": 128.45329933333332,
+      "all_within_budget": true,
+      "final_fleet": 3,
+      "final_owned": 3,
+      "final_extend": 21.0,
+      "final_unmet": 140.1978346666666,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 491
+    },
+    "low/base/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1317.29963,
+      "mean_representative_day_unmet": 263.459926,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 278.372752,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "base/base/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 16060000.0,
+      "total_opex": 15740000.0,
+      "weighted_unmet_visits": 568.2644923076923,
+      "mean_representative_day_unmet": 113.65289846153846,
+      "all_within_budget": true,
+      "final_fleet": 6,
+      "final_owned": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.05887999999993,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 920
+    },
+    "base/base/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1317.29963,
+      "mean_representative_day_unmet": 263.459926,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 278.372752,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "high/base/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 16060000.0,
+      "total_opex": 15740000.0,
+      "weighted_unmet_visits": 568.2644923076923,
+      "mean_representative_day_unmet": 113.65289846153846,
+      "all_within_budget": true,
+      "final_fleet": 6,
+      "final_owned": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.05887999999993,
+      "actions": [
+        "active=4,buy=2,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 930
+    },
+    "high/base/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1317.29963,
+      "mean_representative_day_unmet": 263.459926,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 278.372752,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "low/severe/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 9380000.0,
+      "total_opex": 9300000.0,
+      "weighted_unmet_visits": 799.6403186666666,
+      "mean_representative_day_unmet": 159.92806373333332,
+      "all_within_budget": true,
+      "final_fleet": 3,
+      "final_owned": 3,
+      "final_extend": 21.0,
+      "final_unmet": 197.962936,
+      "actions": [
+        "active=3,buy=1,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0",
+        "active=3,buy=0,ext=21.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 491
+    },
+    "low/severe/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1493.768071,
+      "mean_representative_day_unmet": 298.7536142,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 338.024056,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "base/severe/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 16620000.0,
+      "total_opex": 16220000.0,
+      "weighted_unmet_visits": 677.4518523076922,
+      "mean_representative_day_unmet": 135.49037046153845,
+      "all_within_budget": true,
+      "final_fleet": 7,
+      "final_owned": 7,
+      "final_extend": 22.0,
+      "final_unmet": 161.25795076923077,
+      "actions": [
+        "active=6,buy=4,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=7,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 819
+    },
+    "base/severe/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1493.768071,
+      "mean_representative_day_unmet": 298.7536142,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 338.024056,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    },
+    "high/severe/rolling": {
+      "strategy": "rolling",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 16620000.0,
+      "total_opex": 16220000.0,
+      "weighted_unmet_visits": 677.4518523076922,
+      "mean_representative_day_unmet": 135.49037046153845,
+      "all_within_budget": true,
+      "final_fleet": 7,
+      "final_owned": 7,
+      "final_extend": 22.0,
+      "final_unmet": 161.25795076923077,
+      "actions": [
+        "active=6,buy=4,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=7,buy=1,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 828
+    },
+    "high/severe/maintain": {
+      "strategy": "maintain",
+      "optimality": "myopic_finite_actions",
+      "total_spend": 1200000.0,
+      "total_opex": 1200000.0,
+      "weighted_unmet_visits": 1493.768071,
+      "mean_representative_day_unmet": 298.7536142,
+      "all_within_budget": true,
+      "final_fleet": 2,
+      "final_owned": 2,
+      "final_extend": null,
+      "final_unmet": 338.024056,
+      "actions": [
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0",
+        "active=2,buy=0,ext=None,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 15
+    }
+  },
+  "evaluator_cache_entries": {
+    "mild": 270,
+    "base": 270,
+    "severe": 270
+  }
+}

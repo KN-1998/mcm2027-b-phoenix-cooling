@@ -1,0 +1,10 @@
+low/mild       unmet score=583.091; DP gain vs rolling=15.078; owned/active=4/4; cost=$9,820,000
+base/mild      unmet score=537.921; DP gain vs rolling=0.000; owned/active=5/5; cost=$15,260,000
+high/mild      unmet score=537.921; DP gain vs rolling=0.000; owned/active=5/5; cost=$15,260,000
+low/base       unmet score=622.948; DP gain vs rolling=19.318; owned/active=4/4; cost=$9,820,000
+base/base      unmet score=568.264; DP gain vs rolling=0.000; owned/active=6/6; cost=$16,060,000
+high/base      unmet score=568.264; DP gain vs rolling=0.000; owned/active=6/6; cost=$16,060,000
+low/severe     unmet score=768.239; DP gain vs rolling=31.401; owned/active=4/4; cost=$9,820,000
+base/severe    unmet score=677.452; DP gain vs rolling=0.000; owned/active=7/7; cost=$16,620,000
+high/severe    unmet score=677.452; DP gain vs rolling=0.000; owned/active=7/7; cost=$16,620,000
+

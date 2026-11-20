@@ -1,0 +1,15 @@
+{
+  "draws": 100,
+  "seed": 7,
+  "feasible_share": 1.0,
+  "positive_gain_share": 0.59,
+  "passenger_access_scales": [
+    1.0,
+    1.5,
+    2.0
+  ],
+  "gain_p10": 0.0,
+  "gain_p50": 0.487,
+  "gain_p90": 21.655,
+  "note": "ASSUME scenario draws: deployed vehicle/fixed site failure, demand forecast x0.8/1/1.2, relocation time x1/1.5/2 and passenger access-time multipliers. Every strategy in a draw shares all disrupted inputs and the original initial deployment. No-move is always feasible; feasible_share is an action-feasibility check, not observed reliability or restoration probability."
+}

@@ -1,0 +1,10 @@
+{
+  "period_served": 277.70490000000007,
+  "pooled_day_served": 461.47999999999996,
+  "same_sites": [
+    "MCH-3",
+    "MCH-7",
+    "MCH-8"
+  ],
+  "interpretation": "Dropping timing constraints gives an optimistic daily-capacity bound, not observed benefit."
+}

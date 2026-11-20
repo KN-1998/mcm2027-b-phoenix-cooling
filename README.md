@@ -4,6 +4,9 @@
 [建模交付说明](docs/TAKEOVER_2026-11-20.md)、[核心推导](docs/MODEL_CHAIN.md)、
 [假设卡](docs/ASSUMPTIONS.md)、[验收记录](docs/TAKEOVER_CHECKLIST.md)。
 数值以 `results/takeover_20261120/` 和各自 `run_meta.json` 为准。
+本轮结果：[冻结结果与解释](results/takeover_20261120/RESULTS.md)；
+[结论证据表](results/takeover_20261120/CLAIM_EVIDENCE.csv)；
+[两页推导PDF](results/takeover_20261120/model_chain.pdf)。
 
 这是给定需求、容量、候选集和成本的条件配置模型，尚无独立服务结果留出验证。
 MAG 原始站点与时段、官方人口输入核验，不能升级为真实覆盖率、年度客流或健康效果预测。

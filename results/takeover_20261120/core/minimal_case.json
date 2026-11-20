@@ -1,0 +1,48 @@
+{
+  "input": {
+    "A_demand": 10,
+    "B_demand": 9,
+    "each_capacity": 10,
+    "links": [
+      "A-S1",
+      "A-S2",
+      "B-S1"
+    ],
+    "period": "day"
+  },
+  "hand_solution": "B->S1=9,A->S2=10",
+  "lp": {
+    "served": {
+      "A": 10.0,
+      "B": 9.0
+    },
+    "served_by_period": {
+      "day": 19.0,
+      "evening": 0.0,
+      "night": 0.0
+    },
+    "by_site": {
+      "S1": 9.0,
+      "S2": 10.0
+    },
+    "status": "optimal",
+    "t": null,
+    "objective": 19.0,
+    "allocations": [
+      {
+        "district_id": "A",
+        "site_id": "S2",
+        "period": "day",
+        "visits": 10.0
+      },
+      {
+        "district_id": "B",
+        "site_id": "S1",
+        "period": "day",
+        "visits": 9.0
+      }
+    ]
+  },
+  "greedy_served": 10,
+  "evidence_type": "numerical hypothetical case"
+}

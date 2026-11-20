@@ -1,0 +1,13 @@
+﻿kind,down,shock_mult,fleet_healthy,no_move,best,gain,n_moves,hours,feasible,search_status,no_move_worst,response_worst,timelines_tested,note
+site,R01,1.0,3,244.637,244.637,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+site,R01,1.8,3,301.227,301.227,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+site,R01,3.0,3,440.434,440.434,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+site,C01,1.0,3,227.295,227.295,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+site,C01,1.8,3,283.885,283.885,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+site,C01,3.0,3,423.092,423.092,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+vehicle,MCH-3,1.0,2,262.52,248.547,13.973,1,0.87,True,exact_for_stated_discrete_model,1.0,1.0,3,
+vehicle,MCH-3,1.8,2,348.818,305.137,43.681,1,0.87,True,exact_for_stated_discrete_model,1.0,1.0,3,
+vehicle,MCH-3,3.0,2,531.314,444.344,86.97,1,0.87,True,exact_for_stated_discrete_model,1.0,1.0,3,
+vehicle,MCH-7,1.0,2,248.547,248.547,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+vehicle,MCH-7,1.8,2,305.137,305.137,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,
+vehicle,MCH-7,3.0,2,444.344,444.344,0.0,0,0.0,True,exact_for_stated_discrete_model,1.0,1.0,0,

@@ -1,0 +1,263 @@
+{
+  "generated_at_utc": "2026-11-20T14:09:17.750915+00:00",
+  "source_commit": "d070f5d3a90929836d210f4e6002c9dbc00a8449",
+  "source_and_inputs": {
+    "generated_at_utc": "2026-11-20T14:09:17+00:00",
+    "git_sha": "d070f5d3a90929836d210f4e6002c9dbc00a8449",
+    "worktree_dirty": false,
+    "dirty_scope": "src, tests, tools, data, requirements and source materials; generated results excluded",
+    "source_sha256": {
+      "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/exp/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/exp/common.py": "94ef5d0db637c88b316bb728318a7f17c88de92aed1390793e3eb502bb0090a0",
+      "src/exp/run_levers.py": "3f37e8a7ac952cf869029f64fa73bfe618bca4f81d6c76a700e12052fcf7112b",
+      "src/exp/run_pipeline.py": "1ddfd310a7562aaaf2ad631dc6916c0067cacd31d254341f92e27531f0ddc745",
+      "src/exp/run_q2_attribution.py": "20902ff4ac04d299bda727fc8b3f35fe35f99a4681fef621347ef4b9de281024",
+      "src/exp/run_q2_fairness.py": "1d5a33b6cdb58946ef8ef278ce4f798f47b245126eae5c932d61a1e87249e4fa",
+      "src/exp/run_q2_objectives.py": "48abf0d382f24eb1728077a91fcbca3221ba011940096eb96c9cc8b69d7b156e",
+      "src/exp/run_q2_tradeoff.py": "414f04c931c29d7f073cff24e8ec18827bf9b7381b42fe2ad62fec90da2990a2",
+      "src/exp/run_q3_week.py": "a9567164c4317554be888f5f66072ec28565657eb4c19af8902101160a39163e",
+      "src/exp/run_q4_response.py": "8154df65ebd942963048f8a3354afc028cddc499843320d1b8e0d4a118e7b45e",
+      "src/exp/run_q5_plan.py": "f190540cab61cf23c729ef16adc4b0ecf82638d8bdfb465444ac1222a04ae823",
+      "src/exp/run_real_network.py": "09e02c721e08cde3cc69c1c66904be4d457bc56ba60ade68e26089385747bbf5",
+      "src/exp/run_segment_sensitivity.py": "eb273cb22d75612f4bf940df1bd50a418108af7254fadf3edf513dceb12a1de7",
+      "src/exp/run_sweep.py": "df3759aaf143489e37c9491e6a4c64f56d460b1ad89eba268891be6d7db15a26",
+      "src/exp/run_takeover_evidence.py": "b5c44f869010c80ff2a28376d187a81c73d86c2c78290ea729739293b06bf5f3",
+      "src/mch/__init__.py": "c83914837f5308977dcafb24a09c3f167e7a7aeb5294aff9cc4d8a3d510ff2b0",
+      "src/mch/access.py": "390a9882023af5885b7557573fd4c4432118c1d3debeb2d0383e8a71304634c0",
+      "src/mch/assign.py": "4521fb9810f039776ee54193a0f486bba475b8972edabe34f8e362afd6b2cccd",
+      "src/mch/attribution.py": "704b3433960be755b56a6bbfce2ec9a39506b14bf011c11488987df8fedc5a90",
+      "src/mch/demand.py": "dc09f0a6d8aaf0bbb7092b452b463b4bbec8790229fbf378102d54477ccf0e07",
+      "src/mch/diagnostics.py": "2a410e39522b7b39a1b4daa294fc97623b0b14d4e56a8a12317882a893aa69c4",
+      "src/mch/disruption.py": "aa83c36006516dc9641c4aea916b0f5c9cc8ba7557f62c5b13c243fb1a609756",
+      "src/mch/dynamic.py": "922b88e762afbd570708e698b2072c0eecdd07af33153ca11d6cf6207f2ad850",
+      "src/mch/equity.py": "64b30c51b96c625397a8c7546ab02c436274dd94d79de1b084289e4613a46a84",
+      "src/mch/hours.py": "a98204a0871d15c74d933eb307d2707692d2c6a767a98a6334eca00a3e5a210a",
+      "src/mch/incoming.py": "95f96366c8a6b3c3c6eecb1003ae2a663980eb8e6c0b606278a5b9d9d925b7d3",
+      "src/mch/loaders.py": "34263dc2d311e2dc7d649e979ca099860d5f67da3a533a672048bec8e1fb42cd",
+      "src/mch/metrics.py": "66506d420fcf861436aa66ba529952d961908fc4927da96b0203cad34ced251d",
+      "src/mch/policy.py": "bc8b844aebbc21390dfedc93c26540f741d9751acf6a83115ef68ba16b4583a1",
+      "src/mch/realnet.py": "39e72899ad60ba5678d7dfc57c246e361a80b83939db1ae1804744851f832913",
+      "src/mch/runmeta.py": "633668a04539112b1ee90405e8b0d4f80a5fa01831709802747ce8911dbc08e7",
+      "src/mch/schema.py": "d0a023022f27e95776477d4e78b7a57c85adeb2404a3ef5a981b5979e74e5223",
+      "src/mch/static.py": "6083ac416b3b9c3ce9d9d4ebabfd0a2838a20e824005344fc0e3aab06998807c",
+      "src/mch/synthetic.py": "957317fc975db41f9714c866c341c9234b903a86e681c22d1ca7fe7e2b9ea7de",
+      "src/mch/validate.py": "e73356a2e133000e844c72eb8791525bd24ea0bf7d30177f10c85fb2b111ac9f",
+      "tools/render_model_chain.py": "6fc4d8023cb0cc29ebfa9df855359dc46f1adb630bbea031cd539867ebd3098a",
+      "tools/run_takeover_release.py": "e76937423fa1d6f4960826950a980836a22faedf4f1ca02b99bca85488a87391",
+      "tools/validate_takeover_data.py": "eeb571b1628823c959324cf481283e8a38e057080490f44f63b7ff7ca0c165f3"
+    },
+    "python": "3.14.6",
+    "packages": {
+      "numpy": "2.5.1",
+      "scipy": "1.18.1",
+      "pytest": "9.2.0",
+      "matplotlib": "3.11.1"
+    },
+    "params": {
+      "out": "results/takeover_20261120",
+      "pdf_python": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe"
+    },
+    "inputs": {
+      "data/incoming/access_gtfs.csv": "52229a44c30cc342b1bebef15993152cbd7a8f784703c4de686713eec5cc9a71",
+      "data/incoming/acs_districts.csv": "850546632c9a55809720489bf131cdd3276353d99fcbac792aaf90e5aee77375",
+      "data/incoming/sites_mag.csv": "b090464e380b6af0b085a6cac461ba17dc988f7222d67b52baa6645ded740f1c",
+      "data/processed/access.csv": "90c48cd8d2d6140114d5b47ce50b82e0addd1d480c61954ba8bc0be3bab91002",
+      "data/processed/calibration.json": "e83aa148dd02bb9bcd0ac98e5ceaf03503d462bfc79d642adcf068ea6265dcf3",
+      "data/processed/demand.csv": "98c0e5c1d8b91e6a6e8a6da6e34be3176c628ed90c3ea5092d81ef6fd8c4f0e1",
+      "data/processed/districts.csv": "9bc7dec0913e04d8b4a5b36310a2f27fdc310c449eb859673c030433512072a5",
+      "data/processed/sites.csv": "a86f76913a41e2829b199896050f93063ab02c9e88027dca24297592fce8f2e3",
+      "资料/02_降温网络/MAG/phoenix_2026_public_view_sites.csv": "bc69a49f9fcb0be6ff6fbaec20787f519225372a2fe183f6ab327b60c5f76520",
+      "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/district_demographics_candidate_12.csv": "e360f9ab4c7112ae723788c2ac0a22b33601e94bd0ca5562dd893adee7335757",
+      "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/village_demographics_acs2018_2022.csv": "3a34e063fb890b2903d8d02345b7d63f0fac191c9ba65b6f0bba64e06205af89",
+      "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/village_to_contest_district.csv": "72d9c7464da5c3a4bb103c5340fc88eb2544c8721a201565df2a488617b9d485"
+    },
+    "dependency_scope": "conservative union of processed/incoming CSVs, calibration, MAG and demographic CSVs",
+    "notice": "Conditional resource allocation, not empirically validated visitor or health forecasting."
+  },
+  "runs": [
+    {
+      "name": "tests",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "-rs"
+      ],
+      "started_utc": "2026-11-20T14:06:38.126786+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "data_validation",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "tools/validate_takeover_data.py",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\data_validation"
+      ],
+      "started_utc": "2026-11-20T14:06:47.178742+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "core",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_takeover_evidence",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\core"
+      ],
+      "started_utc": "2026-11-20T14:06:47.555239+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "q3",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_q3_week",
+        "--p",
+        "3",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\q3"
+      ],
+      "started_utc": "2026-11-20T14:07:06.294170+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "q4",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_q4_response",
+        "--stress-draws",
+        "100",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\q4"
+      ],
+      "started_utc": "2026-11-20T14:07:12.383868+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "q5",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_q5_plan",
+        "--cost-scales",
+        "0.5,0.75,1,1.25,1.5,2,3,5,10",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\q5"
+      ],
+      "started_utc": "2026-11-20T14:07:37.858294+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "pipeline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_pipeline",
+        "--p",
+        "3",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\pipeline"
+      ],
+      "started_utc": "2026-11-20T14:08:21.045231+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "dated_pipeline",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "-m",
+        "src.exp.run_pipeline",
+        "--p",
+        "3",
+        "--real-network",
+        "--access-mode",
+        "transit_min",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\dated_pipeline"
+      ],
+      "started_utc": "2026-11-20T14:08:42.538389+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "model_chain",
+      "command": [
+        "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+        "tools/render_model_chain.py",
+        "--out",
+        "F:\\数模\\2\\model_takeover_shallow_20261120\\results\\takeover_20261120\\model_chain.pdf"
+      ],
+      "started_utc": "2026-11-20T14:09:15.225821+00:00",
+      "exit_code": 0
+    }
+  ],
+  "experiment_metadata": [
+    "results/takeover_20261120/core/run_meta.json",
+    "results/takeover_20261120/dated_pipeline/run_meta.json",
+    "results/takeover_20261120/pipeline/run_meta.json",
+    "results/takeover_20261120/q3/run_meta.json",
+    "results/takeover_20261120/q4/run_meta.json",
+    "results/takeover_20261120/q5/run_meta.json"
+  ],
+  "scope": "Frozen conditional modeling release; empirical service validation and human team sign-off pending",
+  "pdf_authoring_runtime": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1118-904-0_26.1118.904.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+  "sha256": {
+    "CLAIM_EVIDENCE.csv": "a06b02c311faa40c670e99b16cd534d2043972402121127a7c9693b85ebe3867",
+    "core/dated_inventory_sweep.csv": "a48fb6785707c208fbe1cabd26228156ba6e0821e7598b4711d88ab6b5f6654e",
+    "core/dated_week.csv": "bc169b2263e6e1f05f8f1e605784e795633c3d0c9e878c7a7db8a179efb29b7b",
+    "core/district_gap.csv": "c0d418956c8142e2db726e879fa5dd154285f10bd85e8938d6da77f11a5de749",
+    "core/district_gaps.png": "6984363f68c71323cfba521520d80965f81dcb5de2084234b215f90ecb728250",
+    "core/frontiers.pdf": "32a42c1d40bd76b9b89ea6a9bba42f090a4815b812b8140ab962d32cddf38c07",
+    "core/frontiers.png": "1045841aaa9b50f2b0b66e13562f9a055bab9a7f848ceb19b92a11d957b8e04d",
+    "core/minimal_case.json": "bc0b13c5c4b2d8417b780d1b26efc5fd03ef139bbc799016d5f1c01b78b89aad",
+    "core/minimal_case_flows.csv": "04005615ec7aa8706292563fbf927146498704a3cb243bd51c3a5459a90e8015",
+    "core/oat.csv": "7cd88e85008e7fb48af1cd6135f8ea6b81340363c27c3b5e9c34d4ec828a091b",
+    "core/p3_allocations.csv": "da7a721b506dbedf5886c2f90a639c40ca16caae03962078882ecb0a5a32930a",
+    "core/p_frontier.csv": "54d11b214400034d3bca0a0f64a1840ff1ff2195e91c43a7789e5883ed1bd123",
+    "core/run_meta.json": "6c97222c1c60885531b6523eb66275a14f88e37d358a7e135741f9d51a543b77",
+    "core/summary.json": "d1e3a237f6acc1b0519eaa1972aa9eda86123aeb039daec3af6f603921628f92",
+    "core/timing_ablation.json": "edb209402b7824b8facf94f60e895c2fab560a99da0f79abaacc1ac46f93db37",
+    "core/weeks.json": "b5b40bc26254a9a290658346823554ed10ba8d74babfd85c45370c381a66eb98",
+    "core.log": "a3204bc04f422292c5191e164122b8f3b4e0e17cb388a8e32e3534cf2201459a",
+    "data_validation/calendar_source_reconstruction.csv": "f34f91d2a1961fe4b145b952caf4cebb6df407e0dc5c0b36622b06f69b39ff15",
+    "data_validation/summary.json": "f8cadbfabc05d4570272657d15addf5cf745bfc3cf0c9e5102e6e5916f7f9523",
+    "data_validation.log": "92976df048768ee11525515b92e010593e85ebee40239c1106b9b962926671bd",
+    "dated_pipeline/marginal_curve.csv": "c603abb5c9cb28effc265defa2218c91941822f94b78134c2c75bd47e307bc41",
+    "dated_pipeline/run_meta.json": "8d76ec17ebfc8c97df23403ef17dd6367083f29f55663123d8c181bbdb6cd047",
+    "dated_pipeline/summary.json": "cfcb31305639eefd1ec7db56c38aa726b3d88dc862c2eda28eff5b775d4ba677",
+    "dated_pipeline.log": "2102bef589a2c2587fdc96328c3c61026e2f41e40c5f7b7993f207c0eca87f73",
+    "model_chain.log": "b5bd60ac04a06bf9a251ada84aad38b4e043abf1e6a6ab0d727eea6dcd6cbc52",
+    "model_chain.pdf": "3f82ec491dadc746ef0df1a6f596cbb707d46579642415e24c74bd3cfaea5542",
+    "pipeline/marginal_curve.csv": "9fae94d7a9417384cbda27a37859f62e79a761981a70ebf97f956aab7c3244eb",
+    "pipeline/run_meta.json": "f8389f5b1f23fcf04f8e23737ceaa139dd7becad09c3adc800d86cb4d72a0d5d",
+    "pipeline/summary.json": "08e3d71e584cb70455bfcecc0546ca6350e38bc55f429f69abada3e4ae739b18",
+    "pipeline.log": "f132a2c52cbe651722ec3fcf151c58ef9af8619b295a46f6f99b10b8fcb17b44",
+    "q3/run_meta.json": "6a5b614b656760a46b2dbe23c3dc27c6866a2e54b736c6257db7b94cb392af06",
+    "q3/summary.json": "a18732bc5c279a57e02069c0a7130d26206cb6e2b37045e82452509e9d3dee5e",
+    "q3/week.csv": "f07856b7d539e7e89bd652ddb550b44fd476da8aed10ff734c00c8f555eba364",
+    "q3.log": "b4240ff7941083455a096d68371a94878417cf84194214d8e667b1de9be781a5",
+    "q4/run_meta.json": "589b06f9e57b5a45951ff7047caf2b58d50516a6dd100930d9c2d4ddee8b838f",
+    "q4/scenario_details.json": "c7a40b278229d8af941944231847ed9ddd96dcb788de28c09619d3bd3aa0a5cc",
+    "q4/scenario_table.csv": "5524ae9d1d321e2544dc77ae2f21b2b6255ef72486f2c73e948cd2fcede60c05",
+    "q4/stress.json": "ae00f8eef22c4cf61a85b23ecc93f0ecc7f05057aea8fc24981163e01b663080",
+    "q4/stress_draws.json": "ef0f6779ee6397551ed8b8932b710877bf1e3d602d7ab0ecea89fdc01d3fd9fd",
+    "q4/timeline.csv": "86214c361bc4ae10e83536ff4e4d2fcde2787d358cebc8ae4207e27e1cf25c43",
+    "q4.log": "811b8927f2907d9c7d4390c0960d3a7ef91d587ada2509407e66a8ae69d303e8",
+    "q5/baselines.csv": "de63c477bb4f9112424ec9c0dfd6363e305990144b526cb0d96130800e73a150",
+    "q5/comparison.csv": "3a027bba3df3c74545a2d433c90c87c4de89b4fd80a0cfe7723bb7229c725299",
+    "q5/cost_sensitivity.csv": "5812957dbd948be3e3d567be6eb8ba1abec47461820609b7216a8f79166c37cf",
+    "q5/plan.csv": "6f108c8d10b8c49784e6ee055c8af2dbb92ecc8acd776816ce7f214a0e4d21f3",
+    "q5/run_meta.json": "7f2dcd6479bfa5d808e9ea5c58ceb9ade6a94377711dc6745a8eb0d86da55e31",
+    "q5/summary.json": "42fa27508ac483e6a0778af33f2dd956d66f677f56a39dac0e566da9b6869c4b",
+    "q5.log": "c48bd66397abe4763055fa722b894db198b5fcb3288f8d85caf562c8fba6eac6",
+    "README.md": "5d7a019671b817e90da053c0e3018a6f22bfaaf7f82b43d67ac5d0030d2156e2",
+    "RESULTS.md": "91d071a71304d0645f96e3da2f8c09558443635f33576dbbfe352649c8f52bd3",
+    "tests.log": "023fa6e9b67139d665473eaeb942f661cecd3f9dc51704fee5bf66cec1d4bb10"
+  }
+}
