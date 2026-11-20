@@ -1,30 +1,34 @@
-"""Q4 中断与 24 小时重规划。
+"""Q4 emergency reallocation on a 09:00-to-next-09:00 service day.
 
-情景：一个主要固定中心（默认 R01, 24/7 respite）因断电停用；
-      两个低收入且公交差的区需求上升；移动枢纽须在 24 h 内重分配。
-[EXT-12] 可扩展：设备故障概率、路网中断、需求预测误差的蒙特卡洛。
+Small fleets enumerate destinations, vehicle assignments and serial move orders.
+Gross service (no relocation downtime) supplies a valid optimistic bound. Larger
+fleets use an explicitly labelled heuristic unless exact search is requested.
 """
 from __future__ import annotations
 
 import copy
-
+import itertools
+import math
 from typing import Dict, List, Sequence
 
 from .schema import Instance
-from .static import Solution, solve_static
+from .static import solve_static
 
 
 def pick_low_income(inst: Instance, k: int = 2) -> List[str]:
+    # Income is primary; no-vehicle share breaks equal-income ties. This is a
+    # scenario rule, not a claim that these are measured transit-poorest areas.
     ranked = sorted(inst.districts, key=lambda d: (d.median_income, -d.pct_no_vehicle))
     return [d.id for d in ranked[:k]]
 
 
 def apply_shock(inst: Instance, districts: Sequence[str], mult: float = 1.8) -> Instance:
-    """返回**新实例**（不修改输入）。重复调用同一输入结果一致。"""
+    if not math.isfinite(mult) or mult < 0:
+        raise ValueError("shock multiplier must be finite and nonnegative")
     out = copy.deepcopy(inst)
-    for (did, day), v in list(out.demand.items()):
+    for (did, day), value in list(out.demand.items()):
         if did in districts:
-            out.demand[(did, day)] = v * mult
+            out.demand[(did, day)] = value * mult
     out.meta = dict(out.meta)
     out.meta["shock"] = {"districts": list(districts), "multiplier": mult}
     return out
@@ -33,181 +37,230 @@ def apply_shock(inst: Instance, districts: Sequence[str], mult: float = 1.8) -> 
 def run_disruption(inst: Instance, p: int, max_minutes: float = 30.0,
                    capacity: float = 250.0, down_site: str = "R01",
                    mult: float = 1.8) -> Dict[str, object]:
+    """Legacy static comparison; relocation timing is not modeled here."""
     before = solve_static(inst, p, max_minutes=max_minutes, capacity=capacity, day=0)
     low = pick_low_income(inst, 2)
-    # A1 修复：必须接收冲击后的**副本**，否则需求激增根本没进入求解
     shocked = apply_shock(inst, low, mult)
-    after_shock = solve_static(shocked, p, max_minutes=max_minutes, capacity=capacity, day=0,
-                               exclude_sites=[down_site])
-    return {
-        "baseline": before.metrics,
-        "after_disruption": after_shock.metrics,
-        "shock_districts": low,
-        "down_site": down_site,
-        "delta_unmet": round(after_shock.metrics["unmet_total"] - before.metrics["unmet_total"], 3),
-        "response_hours_assumed": 24.0,   # 假设值，不是求解出来的恢复时间
-        "response_hours_modeled": False,
-    }
+    after = solve_static(shocked, p, max_minutes=max_minutes, capacity=capacity,
+                         day=0, exclude_sites=[down_site])
+    return {"baseline": before.metrics, "after_disruption": after.metrics,
+            "shock_districts": low, "down_site": down_site,
+            "delta_unmet": round(after.metrics["unmet_total"] - before.metrics["unmet_total"], 3),
+            "response_hours_assumed": 24.0, "response_hours_modeled": False}
+
 
 def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
                   down_site: str | None = None, down_vehicle_at: str | None = None,
                   budget_hours: float = 24.0, max_minutes: float = 30.0,
                   capacity: float = 250.0, open_hours: float = 10.0,
                   parallel: bool = False, top_combos: int = 3,
-                  top_matchings: int = 3) -> Dict[str, object]:
-    """Q4 闭环 v5（第六轮审查修正）。
+                  top_matchings: int = 3, search_mode: str = "auto",
+                  travel_time_multiplier: float = 1.0,
+                  initial_chosen: Sequence[str] | None = None) -> Dict[str, object]:
+    """Minimize unmet visits, then response makespan, under stated assumptions.
 
-    1. **所有候选结构统一**：都含 `timeline`、`feasible`、`action`，`no_move` 的 timeline 为空表；
-    2. **原地留驻不计时**：`from == to` 的车辆 ready=0，不占队列、不扣容量、不计搬迁次数；
-    3. **按响应后净服务选优**：对每个目标点集枚举匹配与串行顺序，先判期限，再算净服务，
-       最小运输时间只作次级指标（不再"先按总时间挑一个"）。
-    4. 容量仍按 `1 - ready/open_hours` 近似（未引入墙钟时间轴，已在输出中标注）。
+    ``auto`` is exact for <=4 healthy vehicles and explicitly heuristic above
+    that size. ``exact`` enumerates every vehicle assignment and every serial
+    order for any size; its factorial runtime is the caller's responsibility.
+    ``heuristic`` uses the supplied top-K limits and a greedy matching for >4.
+    ``open_hours`` is retained for API compatibility; window intersections now
+    determine usable capacity, so it does not rescale the daily capacity.
     """
-    import itertools
+    from .dynamic import move_time_hours as base_move_time_hours
+    from .hours import PERIODS, capacity_on_service_day
+    from .realnet import site_on_day
+    from .static import _active_sites, _assign
 
-    from .dynamic import move_time_hours
-    from .static import _assign, _active_sites
+    if p < 0 or p > len(inst.candidate_sites()):
+        raise ValueError("p must be between zero and the number of candidate sites")
+    if not math.isfinite(budget_hours) or not 0 <= budget_hours <= 24:
+        raise ValueError("response deadline must be within the modeled 24-hour service day")
+    if search_mode not in {"auto", "exact", "heuristic"}:
+        raise ValueError("search_mode must be auto, exact or heuristic")
+    if not math.isfinite(travel_time_multiplier) or travel_time_multiplier <= 0:
+        raise ValueError("travel_time_multiplier must be finite and positive")
 
+    def move_time_hours(instance, origin, target):
+        return round(float(base_move_time_hours(instance, origin, target)) * travel_time_multiplier, 2)
+    known = {s.id for s in inst.sites}
+    if down_site and down_site not in known:
+        raise ValueError(f"unknown closed site: {down_site}")
     kw = dict(max_minutes=max_minutes, capacity=capacity, day=0)
-    base = solve_static(inst, p, **kw)
+    if initial_chosen is None:
+        base = solve_static(inst, p, **kw)
+    else:
+        ids = list(initial_chosen)
+        eligible = {s.id for s in inst.candidate_sites()}
+        if len(ids) != p or len(set(ids)) != p or not set(ids) <= eligible:
+            raise ValueError("initial_chosen must contain p distinct candidate site IDs")
+        base = _assign(inst, _active_sites(inst, ids), 0, max_minutes, capacity)
     low = pick_low_income(inst, 2)
     shocked = apply_shock(inst, low, mult)
-
     if down_vehicle_at and down_vehicle_at not in base.chosen:
         raise ValueError(f"down_vehicle_at={down_vehicle_at} 不在当前部署中；未部署车辆故障不应改变车队")
-
-    fleet = p - (1 if down_vehicle_at else 0)
-    blocked = [x for x in (down_site,) if x]
+    fleet = p - int(bool(down_vehicle_at))
+    mode = ("exact" if fleet <= 4 else "heuristic") if search_mode == "auto" else search_mode
+    blocked = [down_site] if down_site else []
     current = [x for x in base.chosen if x != down_vehicle_at]
-
     stay_sites = [x for x in current if x != down_site]
-    no_move_sol = _assign(shocked, _active_sites(shocked, tuple(stay_sites), blocked),
-                          0, max_minutes, capacity)
-    no_move = {"action": "no_move", "chosen": list(stay_sites),
-               "unmet": round(no_move_sol.metrics["unmet_total"], 3),
-               "timeline": [], "total_hours": 0.0, "n_moves": 0,
-               "feasible": True, "idle": len(stay_sites) < fleet}
+    demand_total = sum(shocked.demand.get((d.id, 0), 0.0) for d in shocked.districts)
 
-    def matchings(cur, tgt):
-        """生成 cur→tgt 的匹配（每台车最多一个目标；可留驻）。"""
-        cur = [c for c in cur]
-        tgt = list(tgt)
-        if len(cur) <= 4 and len(tgt) <= 4:
-            out = []
-            for perm in itertools.permutations(cur, min(len(cur), len(tgt))):
-                out.append(list(zip(perm, tgt)))
-            # 也允许部分车辆闲置（目标少于车辆）
-            if len(tgt) < len(cur):
-                for perm in itertools.permutations(cur, len(tgt)):
-                    out.append(list(zip(perm, tgt)))
-            # 去重
-            seen, uniq = set(), []
-            for m in out:
-                key = tuple((c, t) for c, t in m)
-                if key not in seen:
-                    seen.add(key)
-                    uniq.append(m)
-            return uniq
+    def unmet_raw(sol):
+        return float(max(0.0, demand_total - sum(sol.served.values())))
+
+    stay_sol = _assign(shocked, _active_sites(shocked, stay_sites, blocked),
+                       0, max_minutes, capacity)
+    no_move = {"action": "no_move", "chosen": stay_sites,
+               'worst_unmet_ratio_all':stay_sol.metrics['worst_unmet_ratio_raw'],
+               "unmet": round(unmet_raw(stay_sol), 3), "timeline": [],
+               "total_hours": 0.0, "n_moves": 0, "feasible": True,
+               "idle": len(stay_sites) < fleet, "_raw": unmet_raw(stay_sol)}
+    options = [no_move]
+    best = no_move
+    counts = {"destination_sets_total": 0, "destination_sets_evaluated": 0,
+              "destination_sets_pruned_by_bound": 0, "matchings_generated": 0,
+              "timelines_tested": 0, "deadline_feasible_timelines": 0,
+              "assignment_lp_evaluations": 0}
+
+    def generate_matchings(target):
+        if mode == "exact" or len(current) <= 4:
+            return (list(zip(origin, target)) for origin in
+                    itertools.permutations(current, len(target)))
         pairs, used = [], set()
-        for t in tgt:
-            cand = [(move_time_hours(inst, c, t), c) for c in cur if c not in used]
-            if not cand:
-                pairs.append((None, t)); continue
-            h, c = min(cand); used.add(c); pairs.append((c, t))
-        return [pairs]
+        for t in target:
+            choices = [(move_time_hours(inst, c, t), c) for c in current if c not in used]
+            if not choices:
+                return iter(())
+            _, c = min(choices)
+            used.add(c)
+            pairs.append((c, t))
+        return iter([pairs])
+
+    def matching_score(pairs):
+        hours = [0.0 if c == t else float(move_time_hours(inst, c, t)) for c, t in pairs]
+        return max(hours, default=0.0) if parallel else sum(hours)
 
     def timeline_for(pairs, order):
-        """顺序执行；from==to 视为已就绪，不占队列。"""
-        if parallel:
-            tl = []
-            for c, t in pairs:
-                h = 0.0 if c == t else float(move_time_hours(inst, c, t))
-                tl.append({"from": c, "to": t, "depart_h": 0.0, "travel_h": round(h, 2),
-                           "ready_h": round(h, 2), "in_place": c == t})
-            total = max([x["ready_h"] for x in tl], default=0.0)
-            return tl, round(total, 2)
-        clock, tl = 0.0, []
+        clock, timeline = 0.0, []
+        # Stationary vehicles are immediately available independently of queue.
+        for c, t in pairs:
+            if c == t:
+                timeline.append({"from": c, "to": t, "depart_h": 0.0,
+                                 "travel_h": 0.0, "ready_h": 0.0, "in_place": True})
         for idx in order:
             c, t = pairs[idx]
-            if c == t:
-                tl.append({"from": c, "to": t, "depart_h": 0.0, "travel_h": 0.0,
-                           "ready_h": 0.0, "in_place": True})
-                continue
-            h = float(move_time_hours(inst, c, t))
-            tl.append({"from": c, "to": t, "depart_h": round(clock, 2), "travel_h": round(h, 2),
-                       "ready_h": round(clock + h, 2), "in_place": False})
-            clock += h
-        return tl, round(clock, 2)
+            hours = float(move_time_hours(inst, c, t))
+            depart = 0.0 if parallel else clock
+            timeline.append({"from": c, "to": t, "depart_h": round(depart, 2),
+                             "travel_h": round(hours, 2), "ready_h": round(depart + hours, 2),
+                             "in_place": False})
+            if not parallel:
+                clock += hours
+        makespan = max((x["ready_h"] for x in timeline), default=0.0)
+        return timeline, makespan
 
-    def capacity_factor(ready_h):
-        return max(0.0, 1.0 - min(open_hours, float(ready_h)) / open_hours)
-
-    cand_ids = [s.id for s in inst.candidate_sites() if s.id not in blocked]
+    cand_ids = sorted(s.id for s in inst.candidate_sites() if s.id not in blocked)
     k = min(fleet, len(cand_ids))
-
-    # 先用"不计停服"的未满足量粗排，取 top_combos 再做完整调度
     quick = []
-    if k > 0:
-        for combo in itertools.combinations(cand_ids, k):
-            sol = _assign(shocked, _active_sites(shocked, tuple(combo), blocked),
+    # Exact action space includes idling vehicles. Requiring all healthy
+    # vehicles to relocate can exclude a useful partial response under a tight
+    # deadline, especially when a current deployment site becomes unavailable.
+    sizes = range(k + 1) if mode == "exact" else [k]
+    for size in sizes:
+        for combo in itertools.combinations(cand_ids, size):
+            sol = _assign(shocked, _active_sites(shocked, combo, blocked),
                           0, max_minutes, capacity)
-            quick.append((sol.metrics["unmet_total"], combo))
-        quick.sort()
+            quick.append((unmet_raw(sol), combo))
+    quick.sort()
+    counts["destination_sets_total"] = len(quick)
+    if mode == "heuristic":
         quick = quick[:max(1, top_combos)]
-    else:
-        quick = []
 
-    options = [no_move]
-    for _proxy, combo in quick:
-        # 匹配候选（按"最大就绪"或"总时间"排序，取前 top_matchings）
-        ms = matchings(current, list(combo))
-
-        def score(m):
-            hs = [0.0 if c == t else float(move_time_hours(inst, c, t)) for c, t in m]
-            return max(hs) if parallel else sum(hs)
-
-        ms = sorted(ms, key=score)[:max(1, top_matchings)]
-        for m in ms:
-            orders = [tuple(range(len(m)))]
-            if not parallel and len(m) <= 3:
-                orders = list(itertools.permutations(range(len(m))))
+    for lower_bound, combo in quick:
+        # Capacities after travel cannot exceed capacities at zero downtime.
+        # Equality alone cannot prune because response time is a tie-breaker.
+        if lower_bound > best["_raw"] + 1e-8 or (
+                abs(lower_bound - best["_raw"]) <= 1e-8 and best["total_hours"] == 0.0):
+            counts["destination_sets_pruned_by_bound"] += 1
+            continue
+        counts["destination_sets_evaluated"] += 1
+        matchings = generate_matchings(combo)
+        if mode == "heuristic":
+            matchings = sorted(matchings, key=matching_score)[:max(1, top_matchings)]
+        for pairs in matchings:
+            counts["matchings_generated"] += 1
+            moving = tuple(i for i, (c, t) in enumerate(pairs) if c != t)
+            if parallel:
+                orders = [moving]
+            elif mode == "exact" or len(moving) <= 3:
+                orders = itertools.permutations(moving)
+            else:
+                orders = [moving]
             for order in orders:
-                tl, total = timeline_for(m, order)
-                if total > budget_hours:
+                counts["timelines_tested"] += 1
+                timeline, total = timeline_for(pairs, order)
+                if total > budget_hours + 1e-9:
                     continue
-                down = {x["to"]: capacity_factor(x["ready_h"]) for x in tl if not x.get("in_place")}
-                sol = _assign(shocked, _active_sites(shocked, tuple(combo), blocked),
-                              0, max_minutes, capacity, downtime=down)
-                options.append({"action": "relocate", "chosen": list(combo),
-                                "unmet": round(sol.metrics["unmet_total"], 3),
-                                "timeline": tl, "total_hours": total,
-                                "n_moves": sum(1 for x in tl if not x.get("in_place")),
-                                "feasible": True})
+                counts["deadline_feasible_timelines"] += 1
+                sites = _active_sites(shocked, combo, blocked)
+                ready = {m["to"]: m["ready_h"] for m in timeline}
+                caps = {}
+                for site in sites:
+                    site = site_on_day(site, 0)
+                    if site.id not in ready:
+                        continue
+                    cap = (float(site.capacity) if site.extra.get("capacity_is_explicit") or
+                           (site.capacity and site.capacity > 0) else capacity)
+                    caps[site.id] = {h: capacity_on_service_day(site, cap, h, 0, ready[site.id])
+                                     for h in PERIODS}
+                sol = _assign(shocked, sites, 0, max_minutes, capacity,
+                              cap_by_period_override=caps)
+                counts["assignment_lp_evaluations"] += 1
+                raw = unmet_raw(sol)
+                option = {"action": "relocate", "chosen": list(combo),
+                          'worst_unmet_ratio_all':sol.metrics['worst_unmet_ratio_raw'],
+                          "unmet": round(raw, 3), "timeline": timeline,
+                          "total_hours": total, "n_moves": len(moving),
+                          "feasible": True, "idle": len(combo) < fleet,
+                          "capacity_by_period": caps, "_raw": raw}
+                options.append(option)
+                if (raw, total) < (best["_raw"], best["total_hours"]):
+                    best = option
 
-    feasible = [o for o in options if o.get("feasible", True)]
-    best = min(feasible, key=lambda o: (o["unmet"], o["total_hours"])) if feasible else None
-    gain = None if best is None else round(no_move["unmet"] - best["unmet"], 3)
-
-    return {
+    gain = round(no_move["_raw"] - best["_raw"], 3)
+    # All plans, including no-move, are explicitly feasible capacity allocations.
+    result = {
         "shock_districts": low, "shock_multiplier": mult,
         "down_site": down_site, "down_vehicle_at": down_vehicle_at,
         "fleet_nominal": p, "fleet_healthy": fleet,
         "base": {"chosen": list(base.chosen), "unmet": round(base.metrics["unmet_total"], 3)},
         "shock_only": round(solve_static(shocked, p, **kw).metrics["unmet_total"], 3),
-        "no_move": no_move, "best": best, "response_gain": gain,
-        "gain_definition": "no_move_unmet - best_feasible_unmet（不搬恒在候选内）",
-        "n_options": len(options), "n_feasible": len(feasible),
-        "budget_hours": budget_hours, "feasible_any": bool(feasible),
-        "parallel": parallel,
-        "capacity_note": "停服按 1-ready/open_hours 近似；原地留驻 ready=0，不扣容量",
+        "no_move": {k: v for k, v in no_move.items() if k != "_raw"},
+        "best": {k: v for k, v in best.items() if k != "_raw"},
+        "response_gain": gain,
+        "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+        "n_options": len(options), "n_feasible": len(options),
+        "budget_hours": budget_hours, "feasible_any": True, "parallel": parallel,
+        "search": {"requested_mode": search_mode, "mode": mode,
+                   "optimality_status": "exact_for_stated_discrete_model" if mode == "exact" else "heuristic_no_global_certificate",
+                   "top_combos": None if mode == "exact" else max(1, top_combos),
+                   "top_matchings": None if mode == "exact" else max(1, top_matchings),
+                   **counts},
+        "response_start_hour": 9.0, "service_day_end_hour": 33.0,
+        "travel_time_multiplier": travel_time_multiplier,
+        "initial_deployment_source": "specified_before_shock" if initial_chosen is not None else "unshocked_static_plan",
+        "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+        "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+        "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial assumes one shared team",
     }
+    return result
 
 
 def plan_response_legacy(inst: Instance, p: int = 3, mult: float = 1.8,
                          down_site: str | None = None, down_vehicle: str | None = None,
                          budget_hours: float = 24.0, max_minutes: float = 30.0,
                          capacity: float = 250.0, open_hours: float = 10.0) -> Dict[str, object]:
-    """旧接口（v2）：保留兼容，语义为 down_vehicle=车辆在某点故障且该点同时不可用。"""
+    """Compatibility: down_vehicle identifies the failed vehicle's original site."""
     return plan_response(inst, p, mult=mult, down_site=down_site,
                          down_vehicle_at=down_vehicle, budget_hours=budget_hours,
                          max_minutes=max_minutes, capacity=capacity, open_hours=open_hours)

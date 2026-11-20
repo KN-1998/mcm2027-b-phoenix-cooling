@@ -47,7 +47,7 @@ class Site:
     district_id: str
     lat: float
     lon: float
-    capacity: int = 0               # 人次/日；既有站点未知时置 0 表示不限
+    capacity: int = 0               # 人次/日；0 触发调用者的显式默认值，绝不表示已观测无限容量
     open_hour: float = 8.0          # 24h 制
     close_hour: float = 17.0
     source: str = "ASSUME"          # OBS/PLAN/SCENARIO/ASSUME
@@ -74,6 +74,7 @@ class Instance:
 def validate_instance(inst: Instance) -> List[str]:
     """返回问题清单；空表示通过。任何模型运行前都应调用。"""
     problems: List[str] = []
+    import math
     d_ids = {d.id for d in inst.districts}
     s_ids = {s.id for s in inst.sites}
 
@@ -89,16 +90,18 @@ def validate_instance(inst: Instance) -> List[str]:
             problems.append(f"access 含未知区 {di}")
         if sj not in s_ids:
             problems.append(f"access 含未知站点 {sj}")
-        if t < 0:
+        if not math.isfinite(t) or t < 0:
             problems.append(f"行程时间为负 {di}-{sj}")
 
     for (di, day), value in inst.demand.items():
         if di not in d_ids:
             problems.append(f"demand 含未知区 {di}")
-        if value < 0:
+        if not math.isfinite(value) or value < 0:
             problems.append(f"需求为负 {di}-day{day}")
 
     for d in inst.districts:
+        if d.population < 0 or not (0 <= d.pct_no_vehicle <= 1):
+            problems.append(f'{d.id} 人口或无车比例非法')
         if not (0 <= d.pct_65plus <= 1):
             problems.append(f"{d.id} pct_65plus 越界")
         if not (0 <= d.heat_exposure_index <= 1):
@@ -107,8 +110,12 @@ def validate_instance(inst: Instance) -> List[str]:
     for s in inst.sites:
         if s.kind not in SERVICE_RANK:
             problems.append(f"{s.id} 未知站点类型 {s.kind}")
-        if s.open_hour > s.close_hour:
-            problems.append(f"{s.id} 开放时段倒置")
+        if not (0 <= s.open_hour <= 24 and 0 <= s.close_hour <= 24):
+            problems.append(f"{s.id} 开放小时须在0至24内")
+        if not math.isfinite(s.capacity) or s.capacity < 0:
+            problems.append(f"{s.id} 容量为负")
+        if s.kind == CANDIDATE and s.capacity > 250:
+            problems.append(f'{s.id} 移动枢纽超过250人次/运营日上限')
 
     return problems
 

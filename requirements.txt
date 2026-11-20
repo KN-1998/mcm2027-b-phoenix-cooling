@@ -4,3 +4,5 @@ pytest>=8.0
 # 可选（EXT-10 MILP 后端，未安装时自动跳过）
 # pulp>=2.8
 scipy>=1.10
+matplotlib>=3.8
+# Optional: reportlab>=4, pypdf>=5 for tools/render_model_chain.py

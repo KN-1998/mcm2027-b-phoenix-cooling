@@ -58,8 +58,9 @@ def main(argv=None) -> int:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
     with (out / "sweep.csv").open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(sweeps[0].keys())); w.writeheader(); w.writerows(sweeps)
-    summary["note"] = ("districts are synthetic planning areas; access measured from district "
-                       "centroid, which exaggerates distance vs. within-district population")
+    summary["note"] = ("Conditional scenario: synthetic district centers; centroid bias has no fixed direction. "
+                       "Counts describe source indoor-site inventory, not dated opening or measured population access. "
+                       "All access is a distance/speed proxy with direct walk option, not GTFS routing.")
     (out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
     for mode, s in summary.items():

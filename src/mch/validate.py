@@ -49,6 +49,13 @@ def run_all(inst: Instance, p: int = 2, capacity: float = 250.0) -> List[str]:
     check_zero_demand(inst, p)
     check_determinism(inst, p)
     sol = solve_static(inst, p)
-    check_capacity(sol, capacity)
+    from .realnet import site_on_day
+    from .hours import capacity_on_service_day, PERIODS
+    for site in inst.sites:
+        active = site_on_day(site, 0)
+        base = float(site.capacity) if site.extra.get('capacity_is_explicit') else float(site.capacity or capacity)
+        effective = sum(capacity_on_service_day(active, base, h, 0) for h in PERIODS)
+        if sol.served_by_site.get(site.id, 0) > effective + 1e-6:
+            raise AssertionError(f"capacity exceeded at {site.id}")
     check_nonnegative_unmet(inst, sol)
     return []

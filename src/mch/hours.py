@@ -82,6 +82,75 @@ def capacity_in_period(site: Site, daily_capacity: float, period: str) -> float:
     return daily_capacity * overlap_hours(site, period) / L
 
 
+def capacity_after_ready(site: Site, daily_capacity: float, period: str,
+                         ready_hours: float = 0.0,
+                         response_start_hour: float = 9.0) -> float:
+    """Visits available after arrival in a 24-hour service day starting at 09:00.
+
+    Keep the original hourly throughput; intersect the opening window, period,
+    and [arrival, service-day end].  Arrival never restores lost capacity.
+    """
+    import math
+    if not math.isfinite(ready_hours) or ready_hours < 0 or not 0 <= response_start_hour < 24:
+        raise ValueError("invalid arrival or service-day start")
+    length = window_length(site)
+    if length <= 0 or daily_capacity <= 0 or ready_hours >= 24:
+        return 0.0
+    start, end = response_start_hour, response_start_hour + 24
+    ready = start + ready_hours
+    def windows(a, b):
+        if b < a:
+            b += 24
+        return [(a + 24*k, b + 24*k) for k in (-1, 0, 1, 2)]
+    overlap = 0.0
+    for a, b in windows(site.open_hour, site.close_hour):
+        for c, d in windows(*PERIODS[period]):
+            overlap += max(0.0, min(b, d, end) - max(a, c, ready, start))
+    return daily_capacity / length * overlap
+
+
+def capacity_on_service_day(site: Site, daily_capacity: float, period: str,
+                            day: int, ready_hours: float = 0.0) -> float:
+    """Clock-window throughput on 09:00 to next 09:00, with dated calendars.
+
+    Daily throughput belongs to an opening-date schedule; the early morning
+    after midnight uses the following calendar date, not today's weekday.
+    Unknown/closed source cells have zero available hours by explicit policy.
+    """
+    import copy
+    import math
+    if not math.isfinite(ready_hours) or ready_hours < 0:
+        raise ValueError('arrival must be finite and nonnegative')
+    calendar = (site.extra or {}).get('calendar_by_day')
+    if calendar is None:
+        return capacity_after_ready(site,daily_capacity,period,ready_hours)
+    if ready_hours >= 24 or daily_capacity <= 0: return 0.0
+    p0,p1 = PERIODS[period]
+    if p1 < p0: p1 += 24
+    total = 0.0
+    dated_windows = []
+    for offset in (-1,0,1):
+        key = str(day+offset)
+        if key not in calendar:
+            raise ValueError(f'calendar context missing {site.id}/day{key}')
+        rule = calendar[key]
+        view = copy.copy(site)
+        view.open_hour = float(rule.get('open_hour',0))
+        view.close_hour = float(rule.get('close_hour',0))
+        length = window_length(view)
+        if length <= 0: continue
+        a = view.open_hour+24*offset
+        b = a+length
+        dated_windows.append((a,b,length))
+    dated_windows.sort()
+    if any(a[1] > b[0]+1e-9 for a,b in zip(dated_windows,dated_windows[1:])):
+        raise ValueError(f'overlapping dated opening windows at {site.id}; a staffing/rate rule is required')
+    for a,b,length in dated_windows:
+        overlap = max(0.0,min(b,p1,33)-max(a,p0,9+ready_hours,9))
+        total += daily_capacity/length*overlap
+    return total
+
+
 def split_demand(total: float) -> Dict[str, float]:
     return {h: total * DEMAND_SHARE[h] for h in PERIODS}
 

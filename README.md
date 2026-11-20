@@ -1,5 +1,30 @@
 # 2027 MCM Problem B — Keeping Phoenix Cool
 
+**2026-11-20 建模接手版：** 本轮已经修改模型与主流水线。当前入口为
+[建模交付说明](docs/TAKEOVER_2026-11-20.md)、[核心推导](docs/MODEL_CHAIN.md)、
+[假设卡](docs/ASSUMPTIONS.md)、[验收记录](docs/TAKEOVER_CHECKLIST.md)。
+数值以 `results/takeover_20261120/` 和各自 `run_meta.json` 为准。
+
+这是给定需求、容量、候选集和成本的条件配置模型，尚无独立服务结果留出验证。
+MAG 原始站点与时段、官方人口输入核验，不能升级为真实覆盖率、年度客流或健康效果预测。
+本轮交付建模与可复算实验；英文终稿、三位队员现场复核和训练 AI 规则确认仍需队伍完成。
+
+```text
+python -m pip install -r requirements.txt
+python -m pytest tests -q
+python -m src.exp.run_pipeline --p 3 --out results/reproduce_pipeline
+python -m src.exp.run_takeover_evidence --out results/reproduce_evidence
+python -m src.exp.run_q4_response --out results/reproduce_q4
+python -m src.exp.run_q5_plan --out results/reproduce_q5
+python tools/validate_takeover_data.py --out results/reproduce_data_validation
+```
+
+Q3 默认全组合与全车辆匹配；`--top-k` 正数才启用并标明受限搜索。
+Q4 默认健康车不超过4辆时精确搜索，更多车辆显式标启发式。
+Q5 独立枚举购买与开工，闲置车辆保留，DP 与滚动基线共享外生需求。
+
+**以下为历史工作与旧运行记录，保留追溯用途；旧表中的数字、算法说明和推荐不代表本轮结论。**
+
 仓库：https://github.com/KN-1998/mcm2027-b-phoenix-cooling
 运行：`python -m src.exp.run_pipeline --p 3 --out results/run_demo`
 生成数据：`python tools/build_data.py`（写 `data/processed/` 四张表）

@@ -38,7 +38,7 @@ def fill_demand(inst: Instance, rate_base: float = RATE_BASE) -> Instance:
     inst.demand = {}
     for d in inst.districts:
         for day in range(inst.horizon_days):
-            inst.demand[(d.id, day)] = district_day_demand(d, day)
+            inst.demand[(d.id, day)] = district_day_demand(d, day, rate_base)
     return inst
 
 

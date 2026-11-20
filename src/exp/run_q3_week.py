@@ -18,7 +18,7 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--p", type=int, default=3)
     ap.add_argument("--max-minutes", type=float, default=30.0)
-    ap.add_argument("--top-k", type=int, default=3)
+    ap.add_argument("--top-k", type=int, default=0, help="0=all states; positive K=restricted-state heuristic")
     ap.add_argument("--shock-districts", default="")
     ap.add_argument("--shock-days", default="")
     ap.add_argument("--shock-mult", type=float, default=1.0)
@@ -45,6 +45,11 @@ def main(argv=None) -> int:
     with (out / "week.csv").open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys())); w.writeheader(); w.writerows(rows)
     summary = {"p": a.p, "top_k": a.top_k,
+               "search_status": res["search_status"],
+               "daily_oracle_lower_bound": res["daily_oracle_lower_bound"],
+               "absolute_gap_to_lower_bound": res["absolute_gap_to_lower_bound"],
+               "transition_lp_evaluations": res["transition_lp_evaluations"],
+               "assumptions": res["assumptions"],
                "shock": {"districts": a.shock_districts, "days": a.shock_days, "mult": a.shock_mult},
                "static_best": res["static_best"],
                "static_total_unmet": res["static_total_unmet"],

@@ -41,7 +41,7 @@ class TestIncomingMapping(unittest.TestCase):
                 "district_id,median_income_usd,unknown_col\nD01,20000,x\nZZ,1,1\n", encoding="utf-8")
             (tmp / "sites_mag.csv").write_text(
                 "site_id,lat,lon\nC01,35,-113\nREAL_NEW,33,-112\n", encoding="utf-8")
-            inst = apply_incoming(load_instance(), tmp)
+            inst = apply_incoming(load_instance(), tmp, allow_stale_access=True)
             d1 = next(d for d in inst.districts if d.id == "D01")
             self.assertAlmostEqual(d1.median_income, 20000.0)
             log = inst.meta["incoming"]

@@ -234,7 +234,8 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
                              cap_by_period=None,
                              dem_by_period=None,
                              equity_cap: Optional[float] = None,
-                             equity_exempt: Sequence[str] = ()):
+                             equity_exempt: Sequence[str] = (),
+                             objective: str = "efficiency"):
     """跨时段**单个** LP：公平约束施加在**日**未满足率上。
 
     A2 修复：此前对每个时段各自施加 epsilon，且时段 LP 不可行时返回全零服务，
@@ -244,6 +245,9 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
         sum_{h,j} x_ijh >= (1-eps) D_i    (日公平，仅对非豁免区)
     """
     from scipy.optimize import linprog
+
+    if objective not in ("efficiency", "maxmin"):
+        raise ValueError("objective must be efficiency or maxmin")
 
     caps = cap_by_period or {}
     dems = dem_by_period or {}
@@ -263,8 +267,11 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
                 if dems[i][h] > 0 and caps.get(s.id, {}).get(h, 0.0) > 0:
                     index.append((i, s.id, h))
     if not index:
+        feasible = equity_cap is None or all(
+            i in equity_exempt or sum(dems[i].values()) <= 0 or equity_cap >= 1
+            for i in districts)
         return {"served": {}, "served_by_period": {}, "by_site": {},
-                "status": "no_feasible_links", "t": None}
+                "status": "optimal" if feasible else "infeasible", "t": 1.0}
 
     n = len(index)
     col = {k: k2 for k2, k in enumerate(index)}
@@ -281,7 +288,9 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
         for k, (_, jj, _) in enumerate(index):
             if jj == s.id: row[k] = 1.0
         if row.sum() > 0:
-            A.append(row); b.append(sum(caps[s.id].values()))
+            bound = sum(caps[s.id].values())
+            if s.kind == 'candidate_mch': bound = min(250.0,bound)
+            A.append(row); b.append(bound)
     for h in periods:                       # 时段细分约束
         for i in districts:
             row = np.zeros(n)
@@ -304,6 +313,32 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
                 if ii == i: row[k] = -1.0
             A.append(row); b.append(-(1.0 - equity_cap) * sum(dems[i].values()))
 
+    tstar = None
+    if objective == "maxmin":
+        # Stage 1 minimizes worst daily unmet fraction, including unreachable
+        # districts unless the caller explicitly declares the exemption set.
+        A1 = [np.r_[row, 0.0] for row in A]
+        b1 = list(b)
+        for i in districts:
+            demand_i = sum(dems[i].values())
+            if i in equity_exempt or demand_i <= 0:
+                continue
+            row = np.zeros(n + 1)
+            for k, (ii, _, _) in enumerate(index):
+                if ii == i: row[k] = -1.0
+            row[-1] = -demand_i
+            A1.append(row); b1.append(-demand_i)
+        c1 = np.zeros(n + 1); c1[-1] = 1.0
+        r1 = linprog(c1, A_ub=np.array(A1), b_ub=np.array(b1),
+                     bounds=[(0, None)] * n + [(0, 1)], method="highs")
+        if not r1.success:
+            return {"served": {}, "served_by_period": {}, "by_site": {},
+                    "status": "infeasible", "t": None}
+        tstar = float(r1.x[-1])
+        for i in districts:
+            if i in equity_exempt: continue
+            row = np.array([-1.0 if ii == i else 0.0 for ii, _, _ in index])
+            A.append(row); b.append(-(1.0 - tstar - 1e-9)*sum(dems[i].values()))
     res = linprog(c, A_ub=np.array(A), b_ub=np.array(b), bounds=[(0, None)] * n,
                   method="highs")
     if not res.success:
@@ -314,9 +349,12 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
     served = {i: 0.0 for i in districts}
     served_h = {h: 0.0 for h in periods}
     by_site = {s.id: 0.0 for s in sites}
+    allocations = []
     for k, (i, j, h) in enumerate(index):
         v = res.x[k]
         if v > 1e-9:
             served[i] += v; served_h[h] += v; by_site[j] += v
+            allocations.append({'district_id':i,'site_id':j,'period':h,'visits':float(v)})
     return {"served": served, "served_by_period": served_h, "by_site": by_site,
-            "status": "optimal", "t": None, "objective": -res.fun}
+            "status": "optimal", "t": tstar, "objective": -res.fun,
+            'allocations':allocations}

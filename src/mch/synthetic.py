@@ -41,10 +41,15 @@ def make_districts(seed: int = 2027) -> list:
         pct65 = max(0.06, min(0.30, rng.uniform(0.08, 0.26)))
         # 热暴露：与树冠负相关，加噪
         heat = max(0.05, min(0.99, 0.85 - 1.2 * canopy + rng.uniform(-0.08, 0.08)))
+        # Explicit, reproducible fictional geometry. Never use Python hash(),
+        # whose salt varies between processes even when the model seed is fixed.
+        lat = 33.36 + 0.055 * (idx // 3) + rng.uniform(-0.008, 0.008)
+        lon = -112.22 + 0.10 * (idx % 3) + rng.uniform(-0.008, 0.008)
         out.append(District(
             id=f"D{idx+1:02d}", name=name, population=pop, pct_65plus=round(pct65, 3),
             pct_no_vehicle=round(no_veh, 3), median_income=float(income),
             canopy_pct=round(canopy, 3), heat_exposure_index=round(heat, 3),
+            lat=round(lat, 6), lon=round(lon, 6),
         ))
     return out
 
@@ -85,28 +90,42 @@ def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     return 2 * r * math.asin(math.sqrt(a))
 
 
-def make_access(districts: list, sites: list) -> Dict[Tuple[str, str], float]:
-    """[EXT-05] 现状：直线距离 × 模式速度（分钟）。
-              换成真实 GTFS/路网时：只替换本函数，下游只认 minutes。
+def make_access(districts: list, sites: list,
+                access_mode: str = "walk_min") -> Dict[Tuple[str, str], float]:
+    """Same explicitly assumed distance/speed proxy as the real-inventory run.
+
+    Transit includes the direct-walk alternative. None of these values are
+    scheduled GTFS routes or measured travel times.
     """
-    mode_speed_kmh = {"walk": 4.8, "transit": 15.0, "drive": 30.0}
+    from .realnet import DETOUR, SPEED, WAIT
+    if access_mode not in SPEED:
+        raise ValueError(f"access_mode must be one of {tuple(SPEED)}")
     out = {}
     for d in districts:
         for s in sites:
-            km = _haversine_km(d.lat or 33.45 + (hash(d.id) % 40 - 20) / 1000.0,
-                               d.lon or -112.07 + (hash(d.id) % 30 - 15) / 1000.0,
-                               s.lat, s.lon)
-            # 默认按步行（2025 运营报告：63% 步行/骑行到达）
-            out[(d.id, s.id)] = round(km / mode_speed_kmh["walk"] * 60.0, 1)
+            km = _haversine_km(d.lat, d.lon, s.lat, s.lon) * DETOUR
+            walking = km / SPEED["walk_min"] * 60
+            if access_mode == "transit_min":
+                minutes = min(walking, km / SPEED["transit_min"] * 60 + WAIT)
+            elif access_mode == "walk_min":
+                minutes = walking
+            else:
+                minutes = km / SPEED["drive_min"] * 60
+            out[(d.id, s.id)] = round(minutes, 1)
     return out
 
 
-def build_instance(seed: int = 2027, horizon_days: int = 7) -> Instance:
+def build_instance(seed: int = 2027, horizon_days: int = 7,
+                   access_mode: str = "walk_min") -> Instance:
     districts = make_districts(seed)
     sites = make_sites(districts)
-    access = make_access(districts, sites)
+    access = make_access(districts, sites, access_mode=access_mode)
     # 需求先记 0，由 demand.py 填充（保持职责单一）
     return Instance(districts=districts, sites=sites, access=access, demand={},
                     horizon_days=horizon_days,
                     meta={"generator": "synthetic.build_instance", "seed": seed,
+                          "access_mode": access_mode,
+                          "geometry": "seeded fictional district grid and candidate coordinates",
+                          "access_method": "haversine_detour_speed_proxy_with_direct_walk_option",
+                          "access_schedule_routing": False,
                           "note": "12 districts x 8 candidates are CONTEST FICTIONS, not official Phoenix areas"})

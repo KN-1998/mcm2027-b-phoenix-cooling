@@ -8,8 +8,8 @@ import hashlib
 import json
 import platform
 import subprocess
-import sys
-from datetime import datetime
+from datetime import datetime, timezone
+from importlib.metadata import version
 from pathlib import Path
 from typing import Any, Dict
 
@@ -26,39 +26,39 @@ def _git(*args: str) -> str:
 
 
 def input_hashes() -> Dict[str, str]:
-    out = {}
-    for f in sorted(DATA.glob("*.csv")):
-        out[f.name] = hashlib.sha256(f.read_bytes()).hexdigest()[:16]
-    # R6：真实资料也必须进摘要，否则不同输入会共用同一组哈希
-    inc = DATA.parent / "incoming"
-    if inc.exists():
-        for f in sorted(inc.glob("*")):
-            if f.is_file() and f.stat().st_size > 0:
-                out[f"incoming/{f.name}"] = hashlib.sha256(f.read_bytes()).hexdigest()[:16]
-    return out
+    paths = list((ROOT/'data').rglob('*.csv')) + list(DATA.glob('*.json'))
+    paths += list((ROOT/'资料'/'02_降温网络'/'MAG').glob('*.csv'))
+    paths += list((ROOT/'资料'/'11_补充与审查_2026-11-19'/'补充资料'/'官方村界与人口').glob('*.csv'))
+    return fingerprints(paths)
+
+
+def fingerprints(paths) -> Dict[str, str]:
+    return {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in sorted(set(paths)) if p.is_file()}
 
 
 def meta(params: Dict[str, Any]) -> Dict[str, Any]:
-    sha = _git("rev-parse", "--short", "HEAD")
+    sha = _git("rev-parse", "HEAD")
     # 只关心**代码/数据**是否脏；写 results/ 本身不算（否则每次运行都标脏）
     # porcelain 每行是 "XY path"；_git 的 strip() 会吃掉第一行的前导空格，
     # 因此统一用 l[2:].lstrip() 取路径，不能假定路径从下标 3 开始
-    lines = []
-    for l in _git("status", "--porcelain").splitlines():
-        if not l.strip():
-            continue
-        path = l[2:].lstrip()
-        if not path.startswith("results/"):
-            lines.append(l)
-    dirty = bool(lines)
+    dirty = bool(_git('status','--porcelain','--','src','tests','tools','data','资料','requirements.txt'))
+    packages = {}
+    for package in ('numpy','scipy','pytest','matplotlib'):
+        try: packages[package] = version(package)
+        except Exception: pass
     return {
-        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "git_sha": sha or "unknown",
         "worktree_dirty": dirty,
+        "dirty_scope": "src, tests, tools, data, requirements and source materials; generated results excluded",
+        "source_sha256": fingerprints(list((ROOT/'src').rglob('*.py'))+list((ROOT/'tools').glob('*.py'))),
         "python": platform.python_version(),
+        "packages":packages,
         "params": params,
         "inputs": input_hashes(),
-        "notice": "示例运行；参数与数据变化后结果会变，勿当作定稿",
+        "dependency_scope": "conservative union of processed/incoming CSVs, calibration, MAG and demographic CSVs",
+        "notice": "Conditional resource allocation, not empirically validated visitor or health forecasting.",
     }
 
 

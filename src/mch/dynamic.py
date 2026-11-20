@@ -24,48 +24,32 @@ def move_time_hours(inst: Instance, a: str, b: str) -> float:
 
 
 def solve_dynamic(inst: Instance, p: int, max_minutes: float = 30.0,
-                  capacity: float = 250.0, downtime_frac: float = 0.5,
+                  capacity: float = 250.0, downtime_frac: float | None = None,
                   move_penalty: float = 0.0, use_move_time: bool = True) -> List[Solution]:
-    """逐日贪心对照版（不是 DP；DP 见 src/exp/run_q3_week.py）。
+    """Compatibility entry point replaying the authoritative full-state DP.
 
-    修正点：
-    1. 停服**只作用于当天新搬入的枢纽**（不再对所有选中枢纽一起折减）；
-    2. 通过 `_assign(..., downtime={sid: factor})` 显式下传，
-       不再依赖会被 s.capacity 覆盖的 capacity 参数；
-    3. `move_time_hours` 真正参与：停服因子 = 1 - 迁移小时 / 营业小时。
+    Fixed downtime fractions and arbitrary move-penalty objectives are retired;
+    callers must use the explicit clock model and its documented objective.
     """
-    prev: Sequence[str] = ()
-    out: List[Solution] = []
-    open_hours = 10.0
+    if downtime_frac is not None or move_penalty != 0 or not use_move_time:
+        raise ValueError('legacy fixed downtime/move penalty retired; use solve_week_dp')
+    from .hours import PERIODS, capacity_on_service_day
+    from .realnet import site_on_day
+    result = solve_week_dp(inst,p,max_minutes,capacity)
+    lookup = {s.id:s for s in inst.candidate_sites()}
+    output = []
+    for row in result['schedule']:
+        day = row['day']; caps = {}
+        for move in row['moves']:
+            site = site_on_day(lookup[move['to']],day)
+            base = float(site.capacity) if site.extra.get('capacity_is_explicit') else float(site.capacity or capacity)
+            caps[site.id] = {h:capacity_on_service_day(site,base,h,day,move['hours']) for h in PERIODS}
+        sol = _assign(inst,_active_sites(inst,row['combo']),day,max_minutes,capacity,
+                      cap_by_period_override=caps)
+        sol.metrics.update({'moves':row['moves'],'search_status':result['search_status']})
+        output.append(sol)
+    return output
 
-    for day in range(inst.horizon_days):
-        base = solve_static(inst, p, max_minutes=max_minutes, capacity=capacity, day=day)
-        cands = [base]
-        if prev:
-            cands.append(_assign(inst, _active_sites(inst, tuple(prev)), day,
-                                 max_minutes, capacity))
-        best = None
-        for sol in cands:
-            changed = [x for x in sol.chosen if x not in prev] if day > 0 else []
-            downtime = {}
-            for sid in changed:
-                if use_move_time and prev:
-                    hours = min(move_time_hours(inst, prev[0], sid), open_hours)
-                    downtime[sid] = max(0.0, 1.0 - hours / open_hours)
-                elif changed:
-                    downtime[sid] = 1.0 - downtime_frac
-            scored = _assign(inst, _active_sites(inst, tuple(sol.chosen)), day,
-                             max_minutes, capacity, downtime=downtime) if downtime else sol
-            scored.metrics["moved_in"] = list(changed)
-            scored.metrics["downtime_factor"] = {k: round(v, 3) for k, v in downtime.items()}
-            scored.metrics["move_penalty"] = round(move_penalty * len(changed), 3)
-            score = scored.metrics["unmet_total"] + scored.metrics["move_penalty"]
-            if best is None or score < best[0]:
-                best = (score, scored)
-        assert best is not None
-        out.append(best[1])
-        prev = best[1].chosen
-    return out
 
 def plan_moves(inst: Instance, prev: Sequence[str], cur: Sequence[str]) -> List[dict]:
     """把"迁出集合"与"迁入集合"一一配对（A4 修复）。
@@ -88,83 +72,104 @@ def plan_moves(inst: Instance, prev: Sequence[str], cur: Sequence[str]) -> List[
 
 
 def solve_week_dp(inst: Instance, p: int, max_minutes: float = 30.0,
-                  capacity: float = 250.0, top_k: int = 3,
+                  capacity: float = 250.0, top_k: int = 0,
                   open_hours: float = 10.0) -> Dict[str, object]:
-    """七天 DP（唯一权威实现）。状态=当天点位组合；转移=搬入枢纽当天容量折减。
+    """Daily-state DP, exact within the stated same-day relocation model.
 
-    与 run_q3_week 的差别：这里把"每日最优表"和 DP 都放在同一处，
-    主 pipeline 与独立 runner 共用，避免两套实现不一致。
+    top_k=0 uses all combinations; positive K is an explicitly restricted-state
+    heuristic. Trips over 24h are rejected: overnight transit needs extra state.
+    All bijections of the previous fleet to today's sites are evaluated,
+    including useful swaps at common sites. Crews relocate in parallel at 09:00.
+    open_hours is retained only for API compatibility, not used as a capacity
+    divisor. Arrival intersects each site's actual operating window instead.
     """
     import itertools
-    from .assign import solve_assignment_periods
-    from .hours import PERIODS, capacity_in_period, split_demand_mixed
-
-    ushare = float(inst.meta.get("unsheltered_share", 0.5))
+    from .hours import PERIODS, capacity_on_service_day
+    from .realnet import site_on_day
+    sites = {s.id: s for s in inst.candidate_sites()}
+    if not 0 <= p <= len(sites) or inst.horizon_days < 1 or top_k < 0:
+        raise ValueError("invalid p, horizon, or top_k")
+    travel = {(a, b): move_time_hours(inst, a, b) for a in sites for b in sites}
+    if any(t < 0 or t > 24 for t in travel.values()):
+        raise ValueError("Q3 requires all relocation trips within 24h; cross-day transit is outside this model")
     days = list(range(inst.horizon_days))
-    combos = list(itertools.combinations([s.id for s in inst.candidate_sites()], p))
-
-    def day_unmet(combo, day, downtime_factor=None) -> float:
-        """R3 修复：停服按**实际行程小时**折算，而不是固定 2 小时。"""
-        act = _active_sites(inst, combo)
-        total = sum(inst.demand.get((d.id, day), 0.0) for d in inst.districts)
-        cap_h, dem_h = {}, {}
-        downt = downtime_factor or {}
-        for s in act:
-            base = float(s.capacity or capacity)
-            if s.id in downt:
-                base *= max(0.0, 1.0 - min(open_hours, downt[s.id]) / open_hours)
-            cap_h[s.id] = {h: capacity_in_period(s, base, h) for h in PERIODS}
-        for d in inst.districts:
-            dem_h[d.id] = split_demand_mixed(inst.demand.get((d.id, day), 0.0), ushare)
-        out = solve_assignment_periods(inst, act, day, max_minutes, cap_h, dem_h)
-        return round(total - sum(out["served"].values()), 3)
-
-    table = {(d, c): day_unmet(c, d) for d in days for c in combos}
-    static_best = min(combos, key=lambda c: sum(table[(d, c)] for d in days))
-    static_total = round(sum(table[(d, static_best)] for d in days), 2)
-
-    cand = {tuple(static_best)}   # 保证"不搬"永远可选
-    for d in days:
-        for c in sorted(combos, key=lambda c: table[(d, c)])[:top_k]:
-            cand.add(c)
-    cand = sorted(cand)
-    cache = {}
-
-    def trans(day, prev, cur):
+    combos = list(itertools.combinations(sites, p))
+    def unmet(sol, day):
+        return max(0.0, sum(inst.demand.get((d.id, day), 0.0) for d in inst.districts)
+                   - sum(sol.served.values()))
+    gross = {(day, combo): unmet(_assign(inst, _active_sites(inst, combo), day,
+                                        max_minutes, capacity), day)
+             for day in days for combo in combos}
+    static_best = min(combos, key=lambda c: (sum(gross[d,c] for d in days), c))
+    static_total = sum(gross[d,static_best] for d in days)
+    states = set(combos) if top_k == 0 else {static_best}
+    if top_k:
+        for day in days:
+            states.update(sorted(combos, key=lambda c: (gross[day,c], c))[:top_k])
+    states = sorted(states)
+    cache, selected_moves = {}, {}
+    evaluated = 0
+    def transition(day, prev, cur):
+        nonlocal evaluated
         key = (day, prev, cur)
-        if key not in cache:
-            # R3：用实际迁移小时（最近配对）算每台车的停服时长
-            factor = {}
-            if prev:
-                for m in plan_moves(inst, prev, cur):
-                    if m["to"]:
-                        factor[m["to"]] = float(m["hours"])
-            cache[key] = day_unmet(cur, day, factor)
+        if key in cache: return cache[key]
+        if not prev or prev == cur:
+            cache[key], selected_moves[key] = gross[day,cur], []
+            return cache[key]
+        best = None
+        for permutation in itertools.permutations(prev):
+            moves = [{"from": a, "to": b, "hours": travel[a,b]}
+                     for a,b in zip(permutation, cur) if a != b]
+            caps = {}
+            for move in moves:
+                sid = move["to"]; site = site_on_day(sites[sid], day)
+                base = float(site.capacity) if site.extra.get('capacity_is_explicit') else float(site.capacity or capacity)
+                caps[sid] = {h: capacity_on_service_day(site, base, h, day, move["hours"]) for h in PERIODS}
+            sol = _assign(inst, _active_sites(inst, cur), day, max_minutes,
+                          capacity, cap_by_period_override=caps)
+            evaluated += 1
+            score = (unmet(sol, day), max(m["hours"] for m in moves), permutation)
+            if best is None or score < best[0]: best = (score, moves)
+        cache[key], selected_moves[key] = best[0][0], best[1]
         return cache[key]
-
-    INF = float("inf")
-    V = {c: trans(days[0], (), c) for c in cand}
-    back = {0: {c: () for c in cand}}
-    for d in days[1:]:
-        NV, bk = {}, {}
-        for cur in cand:
-            prev_best = min(V, key=lambda pv: V[pv] + trans(d, pv, cur))
-            NV[cur] = V[prev_best] + trans(d, prev_best, cur)
-            bk[cur] = prev_best
-        V, back[d] = NV, bk
-    last = min(V, key=lambda c: V[c])
-
+    values = {c: gross[0,c] for c in states}
+    back = {0: {c: () for c in states}}
+    for day in days[1:]:
+        nxt, links = {}, {}
+        previous = sorted(values, key=lambda pv: (values[pv], pv))
+        for cur in states:
+            best_value, best_prev = float("inf"), None
+            for prev in previous:
+                # Gross service ignores downtime, hence is a lower bound on unmet.
+                # Equality may be pruned because only total unmet is optimized.
+                if values[prev] + gross[day,cur] >= best_value - 1e-9: continue
+                score = values[prev] + transition(day, prev, cur)
+                if score < best_value:
+                    best_value, best_prev = score, prev
+            nxt[cur], links[cur] = best_value, best_prev
+        values, back[day] = nxt, links
+    last = min(values, key=lambda c: (values[c], c))
+    total = values[last]
     path, cur = [], last
-    for d in reversed(days):
-        path.append(cur); cur = back[d][cur]
+    for day in reversed(days):
+        path.append(cur); cur = back[day][cur]
     path.reverse()
-
     schedule = []
-    for i, d in enumerate(days):
-        prev = path[i - 1] if i > 0 else ()
-        schedule.append({"day": d, "combo": list(path[i]),
-                         "moves": plan_moves(inst, prev, path[i]) if i > 0 else [],
-                         "unmet": trans(d, prev, path[i])})
-    return {"p": p, "static_best": list(static_best), "static_total_unmet": static_total,
-            "dynamic_total_unmet": round(V[last], 2), "schedule": schedule,
-            "candidates": [list(c) for c in cand]}
+    for day, cur in enumerate(path):
+        prev = path[day-1] if day else ()
+        cost = transition(day, prev, cur)
+        schedule.append({"day": day, "combo": list(cur),
+                         "moves": selected_moves[day,prev,cur], "unmet": round(cost,6)})
+    lower = sum(min(gross[d,c] for c in combos) for d in days)
+    return {"p": p, "static_best": list(static_best),
+            "static_total_unmet": round(static_total,6),
+            "dynamic_total_unmet": round(total,6), "schedule": schedule,
+            "candidates": [list(c) for c in states], "top_k": top_k,
+            "search_status": "optimal_within_model" if top_k == 0 else "restricted_state_heuristic",
+            "daily_oracle_lower_bound": round(lower,6),
+            "absolute_gap_to_lower_bound": round(max(0,total-lower),6),
+            "transition_lp_evaluations": evaluated,
+            "assumptions": {"service_day_start":9,"parallel_crews_required":p,
+                            "initial_deployment_ready":True,"max_trip_hours":24,
+                            "matching_includes_common_site_swaps":True,
+                            "travel_model":"0.5h setup + coordinate distance / 40kmh"}}
