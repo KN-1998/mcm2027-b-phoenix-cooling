@@ -36,6 +36,9 @@ def main(argv=None) -> int:
     ap.add_argument("--annual-budget", type=float, default=4_000_000, help="ASSUME annual USD including operations")
     ap.add_argument("--real-network", action="store_true")
     ap.add_argument("--start-date", default="2026-07-20")
+    ap.add_argument('--city-operations',action='store_true',help='Explicit2026city programme corrections; requires real network')
+    ap.add_argument('--gtfs-reference-od',default='',help='One-departure conditional OD CSV, repeated across planning periods/days')
+    ap.add_argument('--reference-departure',default='09:00:00')
     a = ap.parse_args(argv)
 
     out = Path(a.out)
@@ -59,6 +62,14 @@ def main(argv=None) -> int:
         if a.data != 'csv':
             raise ValueError('--real-network requires --data csv')
         inst = build_real_instance(access_mode=a.access_mode, scenario=a.scenario, start_date=a.start_date)
+    if a.city_operations:
+        if not a.real_network:raise ValueError('--city-operations requires --real-network')
+        from ..mch.realnet import apply_city_operating_corrections
+        inst=apply_city_operating_corrections(inst)
+    if a.gtfs_reference_od:
+        if not a.real_network:raise ValueError('--gtfs-reference-od requires a dated real network')
+        from ..mch.reference_access import apply_reference_gtfs_access
+        inst=apply_reference_gtfs_access(inst,a.gtfs_reference_od,a.reference_departure)
 
     problems = run_all(inst, p=a.p)
     if problems:
@@ -88,7 +99,10 @@ def main(argv=None) -> int:
     summary = {
         "instance": {"districts": len(inst.districts), "sites": len(inst.sites),
                      "candidates": len(inst.candidate_sites()), "days": inst.horizon_days,
-                     "note": inst.meta.get("note"), "data": a.data, "scenario": a.scenario, "access_mode": a.access_mode},
+                     "note": inst.meta.get("note"), "data": a.data, "scenario": a.scenario,
+                     "access_mode": inst.meta.get('access_mode',a.access_mode)},
+        'city_operating_overlay':inst.meta.get('city_operating_overlay'),
+        'reference_access':inst.meta.get('reference_access'),
         "q1_access_gap": access_gap(inst, a.max_minutes),
         "q1_baseline_no_mch": q1.metrics,
         "q2_static": {"chosen": q2.chosen, **q2.metrics},

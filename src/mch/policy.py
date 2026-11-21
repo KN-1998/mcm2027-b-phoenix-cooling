@@ -236,3 +236,44 @@ def five_year_plan(inst: Instance, p_start: int = 2, p_max: int = 8,
     budgets = kwargs.pop("budgets", [4_000_000] * 5)
     heat = kwargs.pop("heat_multipliers", [1.00, 1.03, 1.06, 1.09, 1.12])
     return plan_investment(inst, budgets, heat, p_start=p_start, p_max=p_max, **kwargs)["rows"]
+
+
+def plan_robust_investment(inst: Instance, budgets: Sequence[float],
+                           heat_paths: Sequence[Sequence[float]], scenario_evaluators=None, **kwargs) -> dict:
+    """Nonanticipative plan against stagewise heat uncertainty (rectangular set).
+
+    The adversary may choose any supplied heat value independently in each
+    year, so this optimizes sum_y max_s u_y(action,s), a conservative bound for
+    each supplied complete heat path, not minimax over only those paths.
+    Decisions do not use the subsequently realized heat. No probability is
+    assigned to the supplied scenarios.
+    """
+    if not heat_paths or any(len(path)!=len(budgets) for path in heat_paths):
+        raise ValueError('heat paths must be nonempty and match the budget horizon')
+    if any(not math.isfinite(float(h)) or h<0 for path in heat_paths for h in path):
+        raise ValueError('heat paths must be finite and nonnegative')
+    if kwargs.get('strategy','dp')!='dp' or 'evaluator' in kwargs:
+        raise ValueError('exact robust planning requires strategy=dp and the internal worst-case evaluator')
+    service_kwargs={k:v for k,v in kwargs.items() if k in ('max_minutes','capacity','day','mode')}
+    evaluators=list(scenario_evaluators) if scenario_evaluators is not None else [scenario_evaluator(inst,path,**service_kwargs) for path in heat_paths]
+    if len(evaluators)!=len(heat_paths):raise ValueError('one evaluator is required for each heat path')
+    def worst(i,active,extension,shuttle):
+        values=[evaluate(i,active,extension,shuttle) for evaluate in evaluators]
+        return max(v[0] for v in values),max(v[1] for v in values)
+    options={k:v for k,v in kwargs.items() if k not in service_kwargs}
+    result=plan_investment(inst,budgets,[1.]*len(budgets),evaluator=worst,**options)
+    for i,row in enumerate(result['rows']):
+        row['heat_multiplier']=None
+        row['heat_uncertainty_values']=[float(path[i]) for path in heat_paths]
+    days=[r['operating_days'] for r in result['rows']]
+    realized=[]
+    for index,evaluate in enumerate(evaluators):
+        total=sum(days[i]*evaluate(i,r['active'],r['extend_to'],r['shuttle'])[0]
+                  for i,r in enumerate(result['rows']))
+        realized.append({'path_index':index,'heat_path':list(heat_paths[index]),'weighted_unmet_visits':total})
+    result['summary']['optimality']='exact_rectangular_stagewise_robust_finite_actions'
+    result['rectangular_uncertainty_note']='Adversary may switch heat-path labels each year; robust objective is an upper bound for each full supplied path.'
+    result['secondary_objective_note']='Annual maximum district-rate bounds are optimized separately; they need not share the heat realization attaining maximum total unmet visits.'
+    result['fixed_plan_performance_by_path']=realized
+    result['decision_information']='Year and owned stock, not future realized heat; fixed ex-ante action sequence'
+    return result

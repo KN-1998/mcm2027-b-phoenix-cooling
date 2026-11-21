@@ -32,7 +32,7 @@ def main():
     # equations in plain indexed notation to avoid a second prose version.
     equations={
         'M1':'D_ith = Σ_j x_ijth + U_ith ; x, U ≥ 0   [人次/时段]',
-        'M2':'K_jth = Σ_q (C_j / L_jq) × | W_jq ∩ H_th ∩ S_t ∩ [a_jt,∞) |',
+        'M2':'K_jth = Σ_q (C_j / L_jq) × | W_jq ∩ H_th ∩ S_t ∩ [a_jt,∞) ∩ R_jt |',
         'M3':'min Σ_ith U_ith ; Σ_i x_ijth ≤ y_j K_jth ; x_ijth = 0（不可行边）',
         'M4':'V_0(B) = u_0(B) ; V_t(B) = min_A { V_(t−1)(A) + u_t(A,B) }',
         'M5':'max_j (a_j − 9) ≤ T ≤ 24 小时',

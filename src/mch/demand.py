@@ -24,7 +24,9 @@ def vulnerability(d: District) -> float:
     [EXT-07] 加入语言、独居、慢性病等时，在此改权重并重跑敏感性。
     """
     income_term = max(0.0, min(1.0, (110_000 - d.median_income) / 72_000))
-    return round((d.pct_65plus / 0.30 + d.pct_no_vehicle / 0.35 + income_term) / 3.0, 4)
+    age_term = max(0.0,min(1.0,d.pct_65plus / 0.30))
+    vehicle_term = max(0.0,min(1.0,d.pct_no_vehicle / 0.35))
+    return round((age_term + vehicle_term + income_term) / 3.0, 4)
 
 
 def district_day_demand(d: District, day: int, rate_base: float | None = None) -> float:

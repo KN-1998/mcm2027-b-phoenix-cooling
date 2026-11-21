@@ -85,7 +85,7 @@ def make_report(out,sha):
     test_summary=next((line for line in reversed(tests.splitlines()) if ' passed' in line),'See tests.log')
     f=lambda n:f'{float(n):.3f}'
     lines=['# 本轮冻结结果与解释','',f'数值源提交：`{sha}`。结果/图均为条件模型输出，非真实覆盖或健康预测。',
-           '',f'数值验收：**{test_summary}**。跳过项原因完整保留于tests.log（旧保存结果不在本次稀疏工作树）。',
+           '',f'数值验收：**{test_summary}**。详见tests.log；历史发布样例的结构检查与当前代码独立数值测试分开解释。',
            '', '## Q1—Q2：固定网络、移动站与公平',
            '',f"默认日需求{f(core['baseline']['demand_total'])}人次；固定网络缺口{f(core['baseline']['unmet_total_raw'])}，"
               f"3辆MCH缺口{f(core['p3']['unmet_total_raw'])}，所选{core['p3']['chosen']}。",

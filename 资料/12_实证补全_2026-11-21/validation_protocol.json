@@ -1,0 +1,17 @@
+{
+  "locked_date_local": "2026-11-21 Asia/Shanghai",
+  "target": "Weekly realized intake visits at Phoenix 20 W. Jackson St. 24/7 respite center; aggregate posted extended-hour/overnight site visits is a secondary descriptive endpoint",
+  "scope": "Retrospective chronological validation of realized visits only; not potential demand, geographic coverage, MCH throughput or health effects",
+  "discovery_disclosure": "Before locking this protocol, official search/open snippets for 2026-09-14--20 were seen: aggregate visits 3459 and Jackson visits 2154. Other weekly values have not been machine-extracted for modeling. This is not a fully blinded or prospective validation.",
+  "week_inclusion": "Complete seven-day reporting periods within 2026-05-04--2026-09-20. Exclude May 1--3 and Sept 21--30 partial/unequal weeks; never derive weekly visits by subtracting revised cumulative totals.",
+  "development_train_end": "2026-07-26",
+  "development_selection": ["2026-07-27", "2026-08-23"],
+  "locked_test": ["2026-08-24", "2026-09-20"],
+  "models_fixed_before_full_extraction": ["last_week", "last_4_weeks_mean", "nonnegative_AR1", "nonnegative_AR1_plus_lagged_heat_excess_100F"],
+  "fit_rule": "Fit nonnegative least squares once on train data. Select by validation MAE; complex model must improve validation MAE by at least 5% over the best simple baseline. Refit selected rule on train+validation before evaluating the locked test once.",
+  "forecast_information": "Only previous observed counts and previous-week NOAA maximum-temperature summary enter primary forecasts. No contemporaneous test-week observed temperature, future actual visits or next-report cumulative totals enter prediction.",
+  "evaluation": ["MAE in visits/week", "RMSE in visits/week", "mean_signed_error in visits/week", "absolute error for each held-out week", "gain relative to last-week and last-four-weeks baselines"],
+  "dependence": "Successive weeks and sites share weather/network/recording practices. Four test weeks are not four independent experiments. No iid confidence interval or deployment guarantee will be claimed.",
+  "failure_action": "If complex alternatives do not beat the baseline in development, select baseline. Preserve all model test errors as diagnostics without test-based reselection. If selected model fails on test, keep the failed validation visible and do not promote to validated planning demand.",
+  "missing_policy": "Missing source values remain missing; no digitizing plots or imputing target counts. A gap invalidates lagged pairs; never treat a gap as the immediately preceding week. If fewer than required complete periods, report the limitation rather than move cutoff after seeing scores."
+}

@@ -271,7 +271,8 @@ def solve_assignment_periods(inst: Instance, sites, day: int = 0,
             i in equity_exempt or sum(dems[i].values()) <= 0 or equity_cap >= 1
             for i in districts)
         return {"served": {}, "served_by_period": {}, "by_site": {},
-                "status": "optimal" if feasible else "infeasible", "t": 1.0}
+                "status": "optimal" if feasible else "infeasible",
+                "t": 1.0 if any(i not in equity_exempt and sum(dems[i].values()) > 0 for i in districts) else 0.0}
 
     n = len(index)
     col = {k: k2 for k2, k in enumerate(index)}

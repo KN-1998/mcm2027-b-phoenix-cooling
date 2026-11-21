@@ -56,7 +56,8 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
                   parallel: bool = False, top_combos: int = 3,
                   top_matchings: int = 3, search_mode: str = "auto",
                   travel_time_multiplier: float = 1.0,
-                  initial_chosen: Sequence[str] | None = None) -> Dict[str, object]:
+                  initial_chosen: Sequence[str] | None = None,
+                  crew_start_site: str | None = None) -> Dict[str, object]:
     """Minimize unmet visits, then response makespan, under stated assumptions.
 
     ``auto`` is exact for <=4 healthy vehicles and explicitly heuristic above
@@ -66,7 +67,7 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
     ``open_hours`` is retained for API compatibility; window intersections now
     determine usable capacity, so it does not rescale the daily capacity.
     """
-    from .dynamic import move_time_hours as base_move_time_hours
+    from .dynamic import move_time_hours as base_move_time_hours, crew_drive_hours
     from .hours import PERIODS, capacity_on_service_day
     from .realnet import site_on_day
     from .static import _active_sites, _assign
@@ -83,6 +84,8 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
     def move_time_hours(instance, origin, target):
         return round(float(base_move_time_hours(instance, origin, target)) * travel_time_multiplier, 2)
     known = {s.id for s in inst.sites}
+    if crew_start_site is not None and crew_start_site not in known:
+        raise ValueError('unknown initial crew site')
     if down_site and down_site not in known:
         raise ValueError(f"unknown closed site: {down_site}")
     kw = dict(max_minutes=max_minutes, capacity=capacity, day=0)
@@ -94,6 +97,11 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
         if len(ids) != p or len(set(ids)) != p or not set(ids) <= eligible:
             raise ValueError("initial_chosen must contain p distinct candidate site IDs")
         base = _assign(inst, _active_sites(inst, ids), 0, max_minutes, capacity)
+    crew_start_was_provided=crew_start_site is not None
+    if crew_start_site is None and base.chosen:
+        # Freeze crew position with the pre-incident deployment; do not choose
+        # a free initial location separately for every candidate response.
+        crew_start_site=base.chosen[0]
     low = pick_low_income(inst, 2)
     shocked = apply_shock(inst, low, mult)
     if down_vehicle_at and down_vehicle_at not in base.chosen:
@@ -142,20 +150,24 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
 
     def timeline_for(pairs, order):
         clock, timeline = 0.0, []
+        crew_location = crew_start_site
         # Stationary vehicles are immediately available independently of queue.
         for c, t in pairs:
             if c == t:
                 timeline.append({"from": c, "to": t, "depart_h": 0.0,
-                                 "travel_h": 0.0, "ready_h": 0.0, "in_place": True})
+                                 "travel_h": 0.0, "ready_h": 0.0, 'crew_reposition_h':0.0,"in_place": True})
         for idx in order:
             c, t = pairs[idx]
             hours = float(move_time_hours(inst, c, t))
-            depart = 0.0 if parallel else clock
+            reposition = 0.0 if parallel or crew_location is None else round(
+                crew_drive_hours(inst,crew_location,c)*travel_time_multiplier,2)
+            depart = 0.0 if parallel else clock + reposition
             timeline.append({"from": c, "to": t, "depart_h": round(depart, 2),
                              "travel_h": round(hours, 2), "ready_h": round(depart + hours, 2),
-                             "in_place": False})
+                             'crew_reposition_h':reposition,"in_place": False})
             if not parallel:
-                clock += hours
+                clock = depart + hours
+                crew_location = t
         makespan = max((x["ready_h"] for x in timeline), default=0.0)
         return timeline, makespan
 
@@ -251,7 +263,10 @@ def plan_response(inst: Instance, p: int = 3, mult: float = 1.8,
         "initial_deployment_source": "specified_before_shock" if initial_chosen is not None else "unshocked_static_plan",
         "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
         "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
-        "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial assumes one shared team",
+        "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+        'crew_start_site':crew_start_site,
+        'crew_start_assumption':'specified' if crew_start_was_provided else 'shared crew at first pre-incident deployed site; parallel crews at their vehicles',
+        'origin_service_assumption':'moving units go offline at incident; waiting-to-depart service is conservatively not credited',
     }
     return result
 

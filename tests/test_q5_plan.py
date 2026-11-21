@@ -5,12 +5,15 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PLAN = ROOT / "results" / "q5_plan" / "summary.json"
+PLAN = ROOT / "results" / "takeover_20261120" / "q5" / "summary.json"
 
 
 @unittest.skipUnless(PLAN.exists(), "先运行 run_q5_plan")
 class TestQ5Plan(unittest.TestCase):
-    """Q5 计划的结构性不变量。"""
+    """Schema/accounting checks of the published frozen baseline artifact.
+
+    The independent current-code state/decision tests are test_q5_investment.
+    """
 
     @classmethod
     def setUpClass(cls):

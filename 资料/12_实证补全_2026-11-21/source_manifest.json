@@ -1,0 +1,223 @@
+[
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Heat%20Relief%20Sites%202026%20Season%20Totals.pdf",
+    "path": "raw/Heat Relief Sites 2026 Season Totals.pdf",
+    "sha256": "4d800c7fc5f9eaf612ff33b62f540b88c9b1d7616b71dfdd5e28f1b8585d4e84",
+    "bytes": 1517090,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week22_Sept21-30_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week22_Sept21-30_HeatResponseReport_FINAL.pdf",
+    "sha256": "c6d59df17a5c2634a57df642ac11fe5efae91b49f30f018632e7b17789473a0d",
+    "bytes": 205932,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week21_Sept14-20_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week21_Sept14-20_HeatResponseReport_FINAL.pdf",
+    "sha256": "873a223040011eb4ef36793423646f712ec188d71d185edfacdc97860bd48378",
+    "bytes": 207663,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week20_Sept7-13_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week20_Sept7-13_HeatResponseReport_FINAL.pdf",
+    "sha256": "8182cf3b7c066daba1253f4616b32c5eeb4572a76dfc88e480112ddd3fec50d2",
+    "bytes": 284536,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week19_Aug31-Sep6_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week19_Aug31-Sep6_HeatResponseReport_FINAL.pdf",
+    "sha256": "419b37f56a0cd0cdcff5edec5ce0cf1431fb27768509318e45e844c486b57376",
+    "bytes": 270267,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week18_Aug24-30_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week18_Aug24-30_HeatResponseReport_FINAL.pdf",
+    "sha256": "53a99b3105445ff97d43cc5fc4a11b9489146b8a2b11bf0394dafc580c2d356d",
+    "bytes": 286275,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week17_Aug17-23_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week17_Aug17-23_HeatResponseReport_FINAL.pdf",
+    "sha256": "bcebfc528f1308ca8d2bd62949780e02efadc0103966787e25da0de0e834a921",
+    "bytes": 286355,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week16_Aug10-16_HeatResponseReport_FINAL2.pdf",
+    "path": "raw/Week16_Aug10-16_HeatResponseReport_FINAL2.pdf",
+    "sha256": "41355c3e58b34ea9f1112d3eb8bd155c397418c9a80512df14d5d0e96cd8660f",
+    "bytes": 289888,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week15_Aug3-9_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week15_Aug3-9_HeatResponseReport_FINAL.pdf",
+    "sha256": "e18dbeac995e51571fbdb78846a135633ceef176010e6ebe50f6710e6eae628f",
+    "bytes": 271246,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week14_July27-Aug2_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week14_July27-Aug2_HeatResponseReport_FINAL.pdf",
+    "sha256": "e49aa35efa7e22a3ae6c230d962035495e531f6562cf1852b0d7e28761bf4e75",
+    "bytes": 281390,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week13_July20-July26_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week13_July20-July26_HeatResponseReport_FINAL.pdf",
+    "sha256": "9e851d5d9b725a950ca58a0a8cfa4500738b98ee5665a55f9d9850feb450380d",
+    "bytes": 269605,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week12_July13-July19_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week12_July13-July19_HeatResponseReport_FINAL.pdf",
+    "sha256": "142b5132bb58d48718a0b3dcfcf7351d601cf8d2babbe142b98539796e9ea257",
+    "bytes": 290994,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week11_July6-July12_HeatResponseReport_Final.pdf",
+    "path": "raw/Week11_July6-July12_HeatResponseReport_Final.pdf",
+    "sha256": "a3d76bb4214e32711381567533fff21ee1cce12ea19f0502d8a5f202497df229",
+    "bytes": 292108,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week10_June29-July5_HeatResponseReport_FINAL%20(1).pdf",
+    "path": "raw/Week10_June29-July5_HeatResponseReport_FINAL (1).pdf",
+    "sha256": "3f9bdb1de9f6863a75b2d14417be9ab807b5f5aa3694cc7e046e20966bf56987",
+    "bytes": 272993,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week9_June22-28_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week9_June22-28_HeatResponseReport_FINAL.pdf",
+    "sha256": "649c91e606a13b22efe6f8f8037ccf49c85d5a8aaf890b8ff02db25f7c0ccaef",
+    "bytes": 270478,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week7_June8-14_HeatResponseReport_Final.pdf",
+    "path": "raw/Week7_June8-14_HeatResponseReport_Final.pdf",
+    "sha256": "2c0ae9ebf08b494e4e31c65ad24928948e2a27680cf095e626c2023f73fc38f4",
+    "bytes": 277079,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week6_June1-7_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week6_June1-7_HeatResponseReport_FINAL.pdf",
+    "sha256": "3d483ba71cddc1a3d0639eadccea2c1dfeabe0bfad883fe0723a9967e11bf854",
+    "bytes": 296604,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week5_May25-31_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week5_May25-31_HeatResponseReport_FINAL.pdf",
+    "sha256": "25cf53690cbef46fa055723d2691563e047ca245fd326b32a0ac5b58ffa44605",
+    "bytes": 300483,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week4_May18-24_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week4_May18-24_HeatResponseReport_FINAL.pdf",
+    "sha256": "28f4f8f6b05dc350a60a77033203e169c6cea4c53228166309759b2abcc6e18d",
+    "bytes": 295463,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week3_May11-17_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week3_May11-17_HeatResponseReport_FINAL.pdf",
+    "sha256": "8e8611411d64b43b212ff2f0b17540a5865250066c7a2a590aea329c1245ac4e",
+    "bytes": 302036,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week2_May4-10_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week2_May4-10_HeatResponseReport_FINAL.pdf",
+    "sha256": "a2a68c6c2fb00be8b7c17d43f74ccb2bf2cbb53238f2d244e711dcd36e47f3d8",
+    "bytes": 313237,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Week1_May1-3_HeatResponseReport_FINAL%20(1).pdf",
+    "path": "raw/Week1_May1-3_HeatResponseReport_FINAL (1).pdf",
+    "sha256": "e68ae88537c51de228a6437b3548482a52ac5e34c3468141ffa1077409767aca",
+    "bytes": 293012,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/Week8_June15-21_HeatResponseReport_FINAL.pdf",
+    "path": "raw/Week8_June15-21_HeatResponseReport_FINAL.pdf",
+    "sha256": "a4f2e26e30c9d3fcbf53274fca4545999a239752dc8d55e98ad44bb0f1d82f0e",
+    "bytes": 289129,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Office of Heat Response and Mitigation"
+  },
+  {
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00023183&startDate=2026-05-01&endDate=2026-09-30&dataTypes=TMAX,TMIN&units=standard&includeAttributes=true&format=csv",
+    "path": "noaa_2026_phoenix_sky_harbor_daily_summaries.csv",
+    "sha256": "81ea9d814ea8dad38dac055043e610b77b86c02d5d42daee6ea5fee1187040c0",
+    "bytes": 7683,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "NOAA NCEI",
+    "station": "USW00023183 Phoenix Sky Harbor Intl AP",
+    "units": "TMAX,TMIN degree Fahrenheit; units=standard; attributes retained"
+  },
+  {
+    "url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+    "path": "noaa_api_documentation.html",
+    "sha256": "b82560bd373de7eeb2e6724ec94b038bad7cbcc78df4a52e8844e5436ae49f13",
+    "bytes": 40598,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "NOAA NCEI",
+    "use": "units and attribute request documentation"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/commsite/documents/PHXConnect-May-6-2026.pdf",
+    "path": "official_operations/PHXConnect-May-6-2026.pdf",
+    "sha256": "81af74c521a2d5aae885b53947b09ad1c4a2803c25247d9ad1eaecdf57f60476",
+    "bytes": 14270588,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Communications Office",
+    "use": "2026 Jackson/Justa/Cholla locations and extended operating hours; corroborates season report"
+  },
+  {
+    "url": "https://www.phoenix.gov/content/dam/phoenix/commsite/documents/pays_newsletter/2026/PAYS_July_2026.pdf",
+    "path": "official_operations/PAYS_July_2026.pdf",
+    "sha256": "f5b34c11d58568d9aa0a7e71af6f612212842721d21d051ad7e6b00a9ddf4be1",
+    "bytes": 1540948,
+    "retrieved_local_date": "2026-11-21",
+    "agency": "City of Phoenix Communications Office",
+    "use": "2026 Jackson/Justa/Cholla locations and extended operating hours; corroborates season report"
+  }
+]

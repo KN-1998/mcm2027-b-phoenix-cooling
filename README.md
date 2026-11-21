@@ -1,5 +1,12 @@
 # 2027 MCM Problem B — Keeping Phoenix Cool
 
+**2026-11-21 建模与代码补全入口：** [交付说明](docs/COMPLETION_2026-11-21.md)、
+[冻结结果/图表](results/completion_20261121/README.md)、
+[给论文手的模型交接](docs/MODELER_HANDOFF_20261121.md)。
+本轮新增官方真实周到访时间留出、发布排班OD、官方运营纠正、资源/费用约束与严格推导。
+按用户要求暂停论文写作/排版；队友2702.tex保持本轮开始时的远程版本。
+真实单站结果检验不等于全市潜在需求或现场部署验证，范围见[核对清单](docs/COMPLETION_CHECKLIST_20261121.md)。
+
 **2026-11-20 建模接手版：** 本轮已经修改模型与主流水线。当前入口为
 [建模交付说明](docs/TAKEOVER_2026-11-20.md)、[核心推导](docs/MODEL_CHAIN.md)、
 [假设卡](docs/ASSUMPTIONS.md)、[验收记录](docs/TAKEOVER_CHECKLIST.md)。

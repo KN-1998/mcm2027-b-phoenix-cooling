@@ -5,4 +5,6 @@ pytest>=8.0
 # pulp>=2.8
 scipy>=1.10
 matplotlib>=3.8
+pypdf>=5
+requests>=2.31
 # Optional: reportlab>=4, pypdf>=5 for tools/render_model_chain.py

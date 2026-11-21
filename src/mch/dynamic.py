@@ -23,6 +23,15 @@ def move_time_hours(inst: Instance, a: str, b: str) -> float:
     return round(0.5 + km / 40.0, 2)   # 0.5 h 搭建 + 40 km/h 行驶
 
 
+def crew_drive_hours(inst: Instance, a: str, b: str) -> float:
+    """Crew repositioning time without another vehicle's setup operation."""
+    from math import hypot
+    if a == b:return 0.0
+    lookup = {s.id:s for s in inst.sites}
+    sa,sb = lookup[a],lookup[b]
+    return round(hypot((sa.lat-sb.lat)*111,(sa.lon-sb.lon)*95)/40,2)
+
+
 def solve_dynamic(inst: Instance, p: int, max_minutes: float = 30.0,
                   capacity: float = 250.0, downtime_frac: float | None = None,
                   move_penalty: float = 0.0, use_move_time: bool = True) -> List[Solution]:

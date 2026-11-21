@@ -29,6 +29,9 @@ def input_hashes() -> Dict[str, str]:
     paths = list((ROOT/'data').rglob('*.csv')) + list(DATA.glob('*.json'))
     paths += list((ROOT/'资料'/'02_降温网络'/'MAG').glob('*.csv'))
     paths += list((ROOT/'资料'/'11_补充与审查_2026-11-19'/'补充资料'/'官方村界与人口').glob('*.csv'))
+    sources=ROOT/'资料'/'12_实证补全_2026-11-21'
+    paths += [p for p in sources.rglob('*') if p.is_file()]
+    paths += list((ROOT/'资料'/'02_降温网络'/'GTFS').rglob('*.zip'))
     return fingerprints(paths)
 
 
@@ -44,7 +47,12 @@ def meta(params: Dict[str, Any]) -> Dict[str, Any]:
     # 因此统一用 l[2:].lstrip() 取路径，不能假定路径从下标 3 开始
     dirty = bool(_git('status','--porcelain','--','src','tests','tools','data','资料','requirements.txt'))
     packages = {}
-    for package in ('numpy','scipy','pytest','matplotlib'):
+    inputs=input_hashes()
+    if params.get('gtfs_reference_od'):
+        od=Path(params['gtfs_reference_od'])
+        od=od if od.is_absolute() else ROOT/od
+        inputs.update(fingerprints([od]))
+    for package in ('numpy','scipy','pytest','matplotlib','pypdf','requests'):
         try: packages[package] = version(package)
         except Exception: pass
     return {
@@ -56,9 +64,9 @@ def meta(params: Dict[str, Any]) -> Dict[str, Any]:
         "python": platform.python_version(),
         "packages":packages,
         "params": params,
-        "inputs": input_hashes(),
-        "dependency_scope": "conservative union of processed/incoming CSVs, calibration, MAG and demographic CSVs",
-        "notice": "Conditional resource allocation, not empirically validated visitor or health forecasting.",
+        "inputs": inputs,
+        "dependency_scope": "Conservative union of processed/incoming CSVs, calibration, MAG, demographics, full20261121source package and local GTFS archives",
+        "notice": "Planning outputs remain conditional. Retrospective same-site weekly intake validation is a separate declared submodel, not latent demand or health validation.",
     }
 
 

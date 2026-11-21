@@ -64,7 +64,7 @@ class TestQ4Takeover(unittest.TestCase):
                         {("B", "B"): 1., ("C", "E"): 1.},
                         {("B", 0): 100., ("C", 0): 200.}, 1)
         result = plan_response(inst, 2, mult=1., initial_chosen=["A", "B"],
-                               down_site="A", budget_hours=1.)
+                               down_site="A", budget_hours=1.,crew_start_site='B')
         self.assertEqual(result["best"]["chosen"], ["E"])
         self.assertTrue(result["best"]["idle"])
         self.assertGreater(result["response_gain"], 70.)
@@ -85,11 +85,16 @@ class TestQ4Takeover(unittest.TestCase):
                         {(k, k): 1. for k in "ABC"},
                         {("A", 0): 100., ("B", 0): 10., ("C", 0): 600.}, 1)
         result = plan_response(inst, 2, mult=1., initial_chosen=["A", "B"],
-                               down_site="A", budget_hours=3.)
+                               down_site="A", budget_hours=5.,crew_start_site='B')
         self.assertEqual(result["best"]["chosen"], ["B", "C"])
         pairs = [(m["from"], m["to"]) for m in result["best"]["timeline"]]
         self.assertEqual(pairs, [("B", "C"), ("A", "B")])
         self.assertAlmostEqual(result["best"]["timeline"][0]["ready_h"], .53)
+        second=result['best']['timeline'][1]
+        self.assertGreater(second['crew_reposition_h'],1)
+        self.assertAlmostEqual(second['depart_h'],.53+second['crew_reposition_h'])
+        tight=plan_response(inst,2,mult=1.,initial_chosen=['A','B'],down_site='A',budget_hours=3.,crew_start_site='B')
+        self.assertEqual(tight['best']['chosen'],['C'])
 
     def test_invalid_deadline_is_rejected(self):
         with self.assertRaises(ValueError):

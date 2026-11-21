@@ -77,6 +77,7 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
             objective: str = "efficiency") -> Solution:
     """Capacity-constrained assignment; period mode uses one joint daily LP."""
     from .realnet import site_on_day
+    import math
     sites = [site_on_day(s, day) for s in sites]
     if weights:
         raise ValueError('weighted service objective is not implemented; use explicit equity constraints')
@@ -97,9 +98,11 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
         cap_h = {s.id: {h: capacity_on_service_day(s, cap_daily.get(s.id, 0.0), h, day) for h in PERIODS}
                  for s in sites}
         for sid, caps in (cap_by_period_override or {}).items():
-            if sid not in cap_h or any(float(v) < 0 for v in caps.values()):
+            if sid not in cap_h or any(not math.isfinite(float(v)) or float(v) < 0 for v in caps.values()):
                 raise ValueError("invalid per-period capacity override")
-            cap_h[sid] = {h: float(caps.get(h, cap_h[sid][h])) for h in PERIODS}
+            # Overrides may reduce supply (arrival/failure), never reopen an
+            # unstaffed, unpowered, unpermitted or closed operating window.
+            cap_h[sid] = {h: min(cap_h[sid][h],float(caps.get(h,cap_h[sid][h]))) for h in PERIODS}
         dem_h = {d.id: split_demand_mixed(dem[d.id], ushare) for d in inst.districts}
         # A2 修复：跨时段单个 LP，公平约束施加在"日未满足率"上
         out = solve_assignment_periods(inst, sites, day, max_minutes, cap_h, dem_h,
@@ -144,6 +147,8 @@ def _assign(inst: Instance, sites: List[Site], day: int, max_minutes: float,
     # B3：分母必须是"实际可用于分配的容量"（已含 override / downtime / 时段拆分）
     if mode == "period":
         cap_for_util = {sid: sum(cap_h[sid].values()) for sid in cap_h}
+        for s in sites:
+            if s.kind == 'candidate_mch':cap_for_util[s.id] = min(250.0,cap_for_util[s.id])
     else:
         cap_for_util = dict(cap_eff)
     util = utilization(by_site, cap_for_util)

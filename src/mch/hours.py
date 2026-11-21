@@ -98,6 +98,11 @@ def capacity_after_ready(site: Site, daily_capacity: float, period: str,
         return 0.0
     start, end = response_start_hour, response_start_hour + 24
     ready = start + ready_hours
+    from .operations import staffed_windows
+    has_operations=any(k in (site.extra or {}) for k in ('permit_by_day','power_by_day','site_access_by_day','staffed_windows_by_day'))
+    if has_operations and response_start_hour !=9:
+        raise ValueError('dated operating confirmations require service day start at09:00')
+    staff=staffed_windows(site,0) if has_operations else [(start,end)]
     def windows(a, b):
         if b < a:
             b += 24
@@ -105,7 +110,8 @@ def capacity_after_ready(site: Site, daily_capacity: float, period: str,
     overlap = 0.0
     for a, b in windows(site.open_hour, site.close_hour):
         for c, d in windows(*PERIODS[period]):
-            overlap += max(0.0, min(b, d, end) - max(a, c, ready, start))
+            for lo,hi in staff:
+                overlap += max(0.0, min(b, d, end,hi) - max(a, c, ready, start,lo))
     return daily_capacity / length * overlap
 
 
@@ -123,12 +129,20 @@ def capacity_on_service_day(site: Site, daily_capacity: float, period: str,
         raise ValueError('arrival must be finite and nonnegative')
     calendar = (site.extra or {}).get('calendar_by_day')
     if calendar is None:
-        return capacity_after_ready(site,daily_capacity,period,ready_hours)
+        # Use the requested day's confirmations even for a repeated schedule.
+        local=copy.copy(site);local.extra=dict(site.extra or {})
+        for key in ('permit_by_day','power_by_day','site_access_by_day','staffed_windows_by_day'):
+            if key in local.extra:
+                if str(day) not in local.extra[key]:raise ValueError(f'{site.id}: {key} missing day{day}')
+                local.extra[key]={'0':local.extra[key][str(day)]}
+        return capacity_after_ready(local,daily_capacity,period,ready_hours)
     if ready_hours >= 24 or daily_capacity <= 0: return 0.0
     p0,p1 = PERIODS[period]
     if p1 < p0: p1 += 24
     total = 0.0
     dated_windows = []
+    from .operations import staffed_windows
+    staff=staffed_windows(site,day)
     for offset in (-1,0,1):
         key = str(day+offset)
         if key not in calendar:
@@ -146,8 +160,9 @@ def capacity_on_service_day(site: Site, daily_capacity: float, period: str,
     if any(a[1] > b[0]+1e-9 for a,b in zip(dated_windows,dated_windows[1:])):
         raise ValueError(f'overlapping dated opening windows at {site.id}; a staffing/rate rule is required')
     for a,b,length in dated_windows:
-        overlap = max(0.0,min(b,p1,33)-max(a,p0,9+ready_hours,9))
-        total += daily_capacity/length*overlap
+        for lo,hi in staff:
+            overlap = max(0.0,min(b,p1,33,hi)-max(a,p0,9+ready_hours,9,lo))
+            total += daily_capacity/length*overlap
     return total
 
 

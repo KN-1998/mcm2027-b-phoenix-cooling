@@ -1,0 +1,81 @@
+{
+  "purpose": "Explicit observed-source overlay proposal; preserve the original MAG table. These data describe the 2026 season, not current November opening or a 2027 forecast.",
+  "source_hierarchy": "2026 city operating announcements plus end-of-season program report override conflicting generic MAG public-view registered clocks for the same heat-relief program; original fields and conflict flags must remain traceable.",
+  "sources": {
+    "city_20260506": {
+      "title": "PHXConnect Newsletter May 6, 2026",
+      "agency": "City of Phoenix Communications Office",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/commsite/documents/PHXConnect-May-6-2026.pdf",
+      "local_path": "official_operations/PHXConnect-May-6-2026.pdf",
+      "pdf_page": 3,
+      "supports": "Exact three site addresses; Jackson24/7 including holidays; Justa daily15-21; ChollaMon-Sat until21, Sundays/holidays12-21"
+    },
+    "city_202607": {
+      "title": "PHX At Your Service, July 2026",
+      "agency": "City of Phoenix Communications Office",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/commsite/documents/pays_newsletter/2026/PAYS_July_2026.pdf",
+      "local_path": "official_operations/PAYS_July_2026.pdf",
+      "pdf_page": 1,
+      "supports": "Same locations/extended hours; 24h Jackson public service through September30"
+    },
+    "season_2026": {
+      "title": "OHS Extended Hour Heat Relief, Summer 2026",
+      "agency": "City of Phoenix",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/heat-response-weekly-reports/2026/Heat%20Relief%20Sites%202026%20Season%20Totals.pdf",
+      "local_path": "raw/Heat Relief Sites 2026 Season Totals.pdf",
+      "pdf_page": 1,
+      "supports": "Four named extended-heat-relief sites operated May1--September30; Jackson24/7, Cholla7days until21, Justa7days15-21, UMOM family support"
+    }
+  },
+  "sites": [
+    {
+      "canonical_id": "CITY_JACKSON_24H_2026",
+      "name": "Jackson Street Respite Center",
+      "address": "20 W. Jackson St., Phoenix, AZ",
+      "kind": "respite",
+      "season_start": "2026-05-01",
+      "season_end": "2026-09-30",
+      "weekday_hours": {"Monday": [0,24], "Tuesday": [0,24], "Wednesday": [0,24], "Thursday": [0,24], "Friday": [0,24], "Saturday": [0,24], "Sunday": [0,24]},
+      "holiday_hours": [0,24],
+      "capacity": null,
+      "capacity_note": "Training-week realized visits imply at least one day >=472 visits. This is not a constant capacity estimate, not a bound for every day, and not MCH capacity.",
+      "coordinates": null,
+      "coordinate_note": "No observed entrance coordinate established here. Address geocoding must be labelled a derived proxy.",
+      "MAG_match": "No matching Jackson respite record in the saved 50-record Phoenix2026 MAG view.",
+      "processed_R01_match": "Type reference only. R01 is a synthetic representative location/capacity, not an empirical Jackson row.",
+      "sources": ["city_20260506", "city_202607", "season_2026"]
+    },
+    {
+      "canonical_id": "CITY_JUSTA_2026",
+      "name": "Justa Center",
+      "address": "1001 W. Jefferson St., Phoenix, AZ",
+      "kind": "cooling",
+      "season_start": "2026-05-01",
+      "season_end": "2026-09-30",
+      "weekday_hours": {"Monday": [15,21], "Tuesday": [15,21], "Wednesday": [15,21], "Thursday": [15,21], "Friday": [15,21], "Saturday": [15,21], "Sunday": [15,21]},
+      "holiday_hours": null,
+      "holiday_note": "Source says daily15-21; a distinct holiday exception is not specified. Model must document any policy for holidays.",
+      "capacity": null,
+      "coordinates": null,
+      "MAG_match": "No matching Justa Center row identified in saved 50-record view.",
+      "address_conflict_note": "June29 city newsroom article says1001W.Jackson; May6 and July official publications plus2026plan say1001W.Jefferson. Preserve conflict; do not geocode the newsroom typo.",
+      "sources": ["city_20260506", "city_202607", "season_2026"]
+    },
+    {
+      "canonical_id": "MAG0068",
+      "MAG_ID": 68,
+      "name": "Cholla Library",
+      "address": "10050 N. Metro Pkwy E., Phoenix, AZ",
+      "kind": "cooling",
+      "season_start": "2026-05-01",
+      "season_end": "2026-09-30",
+      "weekday_hours": {"Monday": [null,21], "Tuesday": [null,21], "Wednesday": [null,21], "Thursday": [null,21], "Friday": [null,21], "Saturday": [null,21], "Sunday": [12,21]},
+      "weekday_open_note": "The operating publications stateMon-Sat until21 but do not state those opening clocks. A model may explicitly retain the registered MAG9am opening as a separate source, never label it as observed in this publication.",
+      "holiday_hours": [12,21],
+      "capacity": null,
+      "capacity_note": "Heat-response staff engagements are not all library visitors; do not use these counts as a physical seat or throughput capacity.",
+      "MAG_conflict": "Registered regular clocksMon-Sat09-17/Sun12-17 conflict with named2026heat-relief extended service until21.",
+      "sources": ["city_20260506", "city_202607", "season_2026"]
+    }
+  ]
+}

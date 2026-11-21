@@ -1,0 +1,50 @@
+[
+  {
+    "file": "arizona_2026_wage_release.pdf",
+    "url": "https://www.azica.gov/sites/default/files/2025-10/2026%20Minimum%20Wage.pdf",
+    "retrieved_utc": "2026-11-21T11:21:23.042147+00:00",
+    "http_status": 403,
+    "saved": false,
+    "error": "403 Client Error: Forbidden for url: https://www.azica.gov/sites/default/files/2025-10/2026%20Minimum%20Wage.pdf"
+  },
+  {
+    "file": "phoenix_2026_heat_contract_request.html",
+    "url": "https://phoenix.legistar.com/LegislationDetail.aspx?GUID=8DA9469F-1B49-4E07-8CF2-1ED4B4F37AA0&ID=7923913",
+    "retrieved_utc": "2026-11-21T11:21:23.042476+00:00",
+    "http_status": 200,
+    "saved": true,
+    "sha256": "0b606e7fa9d0729375a4930f82ba3305a659327cd2e2b419f1175707fafbb58a",
+    "bytes": 119480,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "file": "phoenix_2026_plan_announcement.html",
+    "url": "https://www.phoenix.gov/newsroom/heat-news/city-of-phoenix-unveils-robust-2026-heat-response-plan.html",
+    "retrieved_utc": "2026-11-21T11:21:23.042716+00:00",
+    "http_status": 200,
+    "saved": true,
+    "sha256": "dd85775ff7b0b7621bc44e2ea839f8d82184f308cfb0e41e4c6a9ce06fde2545",
+    "bytes": 260025,
+    "content_type": "text/html;charset=utf-8"
+  },
+  {
+    "file": "jackson_census_geocode.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=20%20W%20Jackson%20St%20Phoenix%20AZ&benchmark=Public_AR_Current&format=json",
+    "retrieved_utc": "2026-11-21T11:21:24.205041+00:00",
+    "http_status": 200,
+    "saved": true,
+    "sha256": "4d8c1cc65678f48dcdb8536c57747084eeb0c089c2337f7bd216e8cac7b50a55",
+    "bytes": 634,
+    "content_type": "application/json"
+  },
+  {
+    "file": "justa_census_geocode.json",
+    "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1001%20W%20Jefferson%20St%20Phoenix%20AZ&benchmark=Public_AR_Current&format=json",
+    "retrieved_utc": "2026-11-21T11:21:25.158754+00:00",
+    "http_status": 200,
+    "saved": true,
+    "sha256": "a124b209181c1f933b40610ec33fad0d62f86ebb0529666a8731645724c07863",
+    "bytes": 650,
+    "content_type": "application/json"
+  }
+]

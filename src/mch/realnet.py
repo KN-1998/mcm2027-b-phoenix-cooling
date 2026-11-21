@@ -12,6 +12,7 @@ import csv
 import datetime as dt
 import math
 import re
+import json
 from pathlib import Path
 from typing import Dict, List, Mapping, Tuple
 
@@ -242,3 +243,83 @@ def apply_official_demographics(inst: Instance, path: Path | None = None) -> Ins
         "applied_fields": ["population", "pct_65plus"], "demand_rebuilt": False,
         "required_next_step": "choose explicit demand recalculation; remaining vulnerability inputs are assumptions"}
     return inst
+
+
+def apply_city_operating_corrections(inst: Instance, *, jackson_capacity: int=500,
+                                     justa_capacity: int=200) -> Instance:
+    """Explicit 2026 official-programme overlay; preserve the MAG source view.
+
+    Adds the independently published Jackson/Justa programmes and corrects
+    Cholla's heat-season closing clocks. Added-site capacities remain assumed;
+    Census address geocodes are street-interpolation proxies, not entrances.
+    """
+    if inst.meta.get('network')!='MAG_REAL':raise ValueError('city overlay requires MAG_REAL input')
+    if any(int(c)!=c or c<=0 for c in (jackson_capacity,justa_capacity)):
+        raise ValueError('added fixed-site capacities must be positive integer scenarios')
+    source=ROOT/'资料'/'12_实证补全_2026-11-21'
+    corrections=json.loads((source/'source_operating_corrections.json').read_text(encoding='utf-8'))
+    out=copy.deepcopy(inst)
+    start=dt.date.fromisoformat(str(out.meta['calendar_start_date']))
+    mode=str(out.meta['access_mode'])
+    for item in corrections['sites']:
+        sid=item['canonical_id']
+        existing=next((s for s in out.sites if s.id==sid),None)
+        original_calendar=copy.deepcopy(existing.extra.get('original_MAG_calendar',existing.extra.get('calendar_by_day',{}))) if existing else {}
+        if existing is not None and sid.startswith('CITY_'):
+            existing.capacity=jackson_capacity if 'JACKSON' in sid else justa_capacity
+        if existing is None:
+            geocode_name='jackson_census_geocode.json' if 'JACKSON' in sid else 'justa_census_geocode.json'
+            geo=json.loads((source/'operations_costs'/geocode_name).read_text(encoding='utf-8'))
+            matches=geo['result']['addressMatches']
+            if len(matches)!=1:raise ValueError('geocode requires one unambiguous address match')
+            match=matches[0];lat,lon=float(match['coordinates']['y']),float(match['coordinates']['x'])
+            district=min(out.districts,key=lambda d:_hav(d.lat,d.lon,lat,lon))
+            cap=jackson_capacity if 'JACKSON' in sid else justa_capacity
+            existing=Site(sid,item['name'],item['kind'],district.id,lat,lon,cap,source='OBS_PUBLISHED_PROGRAMME',
+                extra={'capacity_is_explicit':True,'source_capacity':'ASSUME_OBSERVATION_COMPATIBLE_SCENARIO',
+                       'source_location':'DERIVED_CENSUS_ADDRESS_GEOCODE_NOT_ENTRANCE',
+                       'matched_address':match['matchedAddress'],'source_geocode':geocode_name})
+            out.sites.append(existing)
+        calendar={}
+        lo,hi=dt.date.fromisoformat(item['season_start']),dt.date.fromisoformat(item['season_end'])
+        for day in range(-1,out.horizon_days+1):
+            date=start+dt.timedelta(days=day);key=str(day)
+            if not lo<=date<=hi:
+                calendar[key]={'date':str(date),'status':'outside_city_published_season','open_hour':0,'close_hour':0}
+                continue
+            hours=item['weekday_hours'][DAYS[date.weekday()]]
+            holiday=HOLIDAYS_2026.get(str(date))
+            if holiday and item.get('holiday_hours') is not None:hours=item['holiday_hours']
+            op,cl=hours
+            if op is None:
+                raw=original_calendar.get(key,{})
+                if raw.get('status')!='open_clock_pair':
+                    calendar[key]={'date':str(date),'status':'unknown_opening_clock_after_city_closing_correction','open_hour':0,'close_hour':0}
+                    continue
+                op=raw['open_hour']
+            calendar[key]={'date':str(date),'weekday':DAYS[date.weekday()],
+                           'status':'open_city_published_programme','open_hour':float(op),'close_hour':float(cl),
+                           'source_keys':item['sources'],'not_observed_door_log':True,
+                           'opening_clock_source':'registered_MAG' if hours[0] is None else 'city_publication'}
+        existing.extra.update({'calendar_by_day':calendar,'original_MAG_calendar':original_calendar,
+                               'city_operating_source_id':sid,'city_operating_sources':item['sources']})
+        existing.open_hour=calendar['0']['open_hour'];existing.close_hour=calendar['0']['close_hour']
+    # Rebuild the same travel proxy for every fixed/candidate pair, never mixing
+    # a scheduled OD for the old sites with a straight-line OD for the new ones.
+    access={}
+    for d in out.districts:
+        for site in out.sites:
+            km=_hav(d.lat,d.lon,site.lat,site.lon)*DETOUR
+            walk=km/SPEED['walk_min']*60
+            minutes=min(walk,km/SPEED['transit_min']*60+WAIT) if mode=='transit_min' else km/SPEED[mode]*60
+            access[d.id,site.id]=round(minutes,1)
+    out.access=access
+    out.meta['city_operating_overlay']={
+        'source':'资料/12_实证补全_2026-11-21/source_operating_corrections.json',
+        'corrected_ids':[x['canonical_id'] for x in corrections['sites']],
+        'added_site_capacity_assumptions':{'CITY_JACKSON_24H_2026':jackson_capacity,'CITY_JUSTA_2026':justa_capacity},
+        'coordinate_note':'Census address interpolation; not observed entrance coordinates',
+        'scope':'Published 2026 operating programmes; not observed door logs, complete city inventory or 2027 forecast',
+        'original_MAG_preserved':True}
+    out.meta['n_fixed']=len(out.fixed_sites())
+    return out
