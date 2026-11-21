@@ -1,0 +1,1115 @@
+[
+  {
+    "kind": "site",
+    "down": "R01",
+    "shock_mult": 1.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.0,
+      "down_site": "R01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 227.295,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 244.637,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 244.637,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "site",
+    "down": "R01",
+    "shock_mult": 1.8,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.8,
+      "down_site": "R01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 283.885,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 301.227,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 301.227,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "site",
+    "down": "R01",
+    "shock_mult": 3.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 3.0,
+      "down_site": "R01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 423.092,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 440.434,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 440.434,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "site",
+    "down": "C01",
+    "shock_mult": 1.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.0,
+      "down_site": "C01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 227.295,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 227.295,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 227.295,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "site",
+    "down": "C01",
+    "shock_mult": 1.8,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.8,
+      "down_site": "C01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 283.885,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 283.885,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 283.885,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "site",
+    "down": "C01",
+    "shock_mult": 3.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 3.0,
+      "down_site": "C01",
+      "down_vehicle_at": null,
+      "fleet_nominal": 3,
+      "fleet_healthy": 3,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 423.092,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 423.092,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 423.092,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 93,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 93,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-3",
+    "shock_mult": 1.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.0,
+      "down_site": null,
+      "down_vehicle_at": "MCH-3",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 227.295,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 262.52,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 248.547,
+        "timeline": [
+          {
+            "from": "MCH-8",
+            "to": "MCH-8",
+            "depart_h": 0.0,
+            "travel_h": 0.0,
+            "ready_h": 0.0,
+            "crew_reposition_h": 0.0,
+            "in_place": true
+          },
+          {
+            "from": "MCH-7",
+            "to": "MCH-3",
+            "depart_h": 0.37,
+            "travel_h": 0.87,
+            "ready_h": 1.24,
+            "crew_reposition_h": 0.37,
+            "in_place": false
+          }
+        ],
+        "total_hours": 1.24,
+        "n_moves": 1,
+        "feasible": true,
+        "idle": false,
+        "capacity_by_period": {
+          "MCH-3": {
+            "day": 169.0,
+            "evening": 50.0,
+            "night": 0.0
+          },
+          "MCH-8": {
+            "day": 200.0,
+            "evening": 50.0,
+            "night": 0.0
+          }
+        }
+      },
+      "response_gain": 13.973,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 4,
+      "n_feasible": 4,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 1,
+        "destination_sets_pruned_by_bound": 36,
+        "matchings_generated": 2,
+        "timelines_tested": 3,
+        "deadline_feasible_timelines": 3,
+        "assignment_lp_evaluations": 3
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-3",
+    "shock_mult": 1.8,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.8,
+      "down_site": null,
+      "down_vehicle_at": "MCH-3",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 283.885,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 348.818,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 305.137,
+        "timeline": [
+          {
+            "from": "MCH-8",
+            "to": "MCH-8",
+            "depart_h": 0.0,
+            "travel_h": 0.0,
+            "ready_h": 0.0,
+            "crew_reposition_h": 0.0,
+            "in_place": true
+          },
+          {
+            "from": "MCH-7",
+            "to": "MCH-3",
+            "depart_h": 0.37,
+            "travel_h": 0.87,
+            "ready_h": 1.24,
+            "crew_reposition_h": 0.37,
+            "in_place": false
+          }
+        ],
+        "total_hours": 1.24,
+        "n_moves": 1,
+        "feasible": true,
+        "idle": false,
+        "capacity_by_period": {
+          "MCH-3": {
+            "day": 169.0,
+            "evening": 50.0,
+            "night": 0.0
+          },
+          "MCH-8": {
+            "day": 200.0,
+            "evening": 50.0,
+            "night": 0.0
+          }
+        }
+      },
+      "response_gain": 43.681,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 4,
+      "n_feasible": 4,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 1,
+        "destination_sets_pruned_by_bound": 36,
+        "matchings_generated": 2,
+        "timelines_tested": 3,
+        "deadline_feasible_timelines": 3,
+        "assignment_lp_evaluations": 3
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-3",
+    "shock_mult": 3.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 3.0,
+      "down_site": null,
+      "down_vehicle_at": "MCH-3",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 423.092,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-7",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 531.314,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 444.344,
+        "timeline": [
+          {
+            "from": "MCH-8",
+            "to": "MCH-8",
+            "depart_h": 0.0,
+            "travel_h": 0.0,
+            "ready_h": 0.0,
+            "crew_reposition_h": 0.0,
+            "in_place": true
+          },
+          {
+            "from": "MCH-7",
+            "to": "MCH-3",
+            "depart_h": 0.37,
+            "travel_h": 0.87,
+            "ready_h": 1.24,
+            "crew_reposition_h": 0.37,
+            "in_place": false
+          }
+        ],
+        "total_hours": 1.24,
+        "n_moves": 1,
+        "feasible": true,
+        "idle": false,
+        "capacity_by_period": {
+          "MCH-3": {
+            "day": 169.0,
+            "evening": 50.0,
+            "night": 0.0
+          },
+          "MCH-8": {
+            "day": 200.0,
+            "evening": 50.0,
+            "night": 0.0
+          }
+        }
+      },
+      "response_gain": 86.97,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 4,
+      "n_feasible": 4,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 1,
+        "destination_sets_pruned_by_bound": 36,
+        "matchings_generated": 2,
+        "timelines_tested": 3,
+        "deadline_feasible_timelines": 3,
+        "assignment_lp_evaluations": 3
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-7",
+    "shock_mult": 1.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.0,
+      "down_site": null,
+      "down_vehicle_at": "MCH-7",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 227.295,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 248.547,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 248.547,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 37,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-7",
+    "shock_mult": 1.8,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 1.8,
+      "down_site": null,
+      "down_vehicle_at": "MCH-7",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 283.885,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 305.137,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 305.137,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 37,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  },
+  {
+    "kind": "vehicle",
+    "down": "MCH-7",
+    "shock_mult": 3.0,
+    "response": {
+      "shock_districts": [
+        "D09",
+        "D03"
+      ],
+      "shock_multiplier": 3.0,
+      "down_site": null,
+      "down_vehicle_at": "MCH-7",
+      "fleet_nominal": 3,
+      "fleet_healthy": 2,
+      "base": {
+        "chosen": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "unmet": 227.295
+      },
+      "shock_only": 423.092,
+      "no_move": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 444.344,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "best": {
+        "action": "no_move",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 444.344,
+        "timeline": [],
+        "total_hours": 0.0,
+        "n_moves": 0,
+        "feasible": true,
+        "idle": false
+      },
+      "response_gain": 0.0,
+      "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+      "n_options": 1,
+      "n_feasible": 1,
+      "budget_hours": 24.0,
+      "feasible_any": true,
+      "parallel": false,
+      "search": {
+        "requested_mode": "auto",
+        "mode": "exact",
+        "optimality_status": "exact_for_stated_discrete_model",
+        "top_combos": null,
+        "top_matchings": null,
+        "destination_sets_total": 37,
+        "destination_sets_evaluated": 0,
+        "destination_sets_pruned_by_bound": 37,
+        "matchings_generated": 0,
+        "timelines_tested": 0,
+        "deadline_feasible_timelines": 0,
+        "assignment_lp_evaluations": 0
+      },
+      "response_start_hour": 9.0,
+      "service_day_end_hour": 33.0,
+      "travel_time_multiplier": 1.0,
+      "initial_deployment_source": "unshocked_static_plan",
+      "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+      "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "crew_start_site": "MCH-3",
+      "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    }
+  }
+]

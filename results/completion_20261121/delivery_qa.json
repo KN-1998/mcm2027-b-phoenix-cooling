@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-21T13:23:13.305377+00:00",
+  "source_commit": "941c9fcff1268fd7d5678166b634d5ef72f00b18",
+  "checks": {
+    "seven_full_runs_exit_zero": true,
+    "tests": {
+      "passed": 162,
+      "skipped": 0
+    },
+    "result_file_hashes_verified_before_receipt": 106,
+    "frozen_numeric_run_metadata_files": 12,
+    "all_recorded_source_and_input_hashes_match": true,
+    "paper_source_diff_from_bdb74e8_empty": true,
+    "no_paper_artifacts_in_completion_package": true
+  },
+  "visual_review": [
+    "empirical/empirical_validation.png: labels, units, holdout blocks, baseline and selected rule legible",
+    "gtfs_city/routing_structure.png: inventory/date/time scope and conditional-model labels legible",
+    "two-page model-chain derivation rendered from frozen source: no clipped text; equations and operational-window explanation visible"
+  ],
+  "scope": "Model/code/data/validation only; manuscript writing and typesetting paused by user."
+}

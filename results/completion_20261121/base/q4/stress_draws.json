@@ -1,0 +1,2202 @@
+[
+  {
+    "draw": 0,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 328.825,
+    "response_unmet": 328.338,
+    "gain": 0.487,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 1,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C04"
+    },
+    "no_move_unmet": 295.908,
+    "response_unmet": 275.647,
+    "gain": 20.261,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 2,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 262.52,
+    "response_unmet": 248.547,
+    "gain": 13.973,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 3,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "R01"
+    },
+    "no_move_unmet": 548.521,
+    "response_unmet": 548.521,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 4,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 315.024,
+    "response_unmet": 298.257,
+    "gain": 16.768,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 5,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 199.227,
+    "response_unmet": 198.838,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 6,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 255.855,
+    "response_unmet": 255.855,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 7,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 315.024,
+    "response_unmet": 298.257,
+    "gain": 16.768,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 8,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 199.227,
+    "response_unmet": 198.838,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 9,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C06"
+    },
+    "no_move_unmet": 436.709,
+    "response_unmet": 436.709,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 10,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C02"
+    },
+    "no_move_unmet": 241.785,
+    "response_unmet": 235.441,
+    "gain": 6.344,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 11,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C05"
+    },
+    "no_move_unmet": 326.16,
+    "response_unmet": 309.713,
+    "gain": 16.447,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 12,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 298.257,
+    "response_unmet": 298.257,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 13,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C02"
+    },
+    "no_move_unmet": 271.008,
+    "response_unmet": 263.078,
+    "gain": 7.93,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 14,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "R01"
+    },
+    "no_move_unmet": 409.314,
+    "response_unmet": 409.314,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 15,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 335.865,
+    "response_unmet": 335.475,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 16,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 298.841,
+    "response_unmet": 298.257,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 17,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C06"
+    },
+    "no_move_unmet": 544.051,
+    "response_unmet": 544.051,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 18,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C08"
+    },
+    "no_move_unmet": 227.295,
+    "response_unmet": 227.295,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 19,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C07"
+    },
+    "no_move_unmet": 249.004,
+    "response_unmet": 227.349,
+    "gain": 21.655,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 20,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 335.865,
+    "response_unmet": 335.475,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 21,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 328.338,
+    "response_unmet": 328.338,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 22,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 379.234,
+    "response_unmet": 328.338,
+    "gain": 50.896,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 23,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 344.987,
+    "response_unmet": 344.402,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 24,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 277.982,
+    "response_unmet": 277.495,
+    "gain": 0.487,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 25,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 407.986,
+    "response_unmet": 407.986,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 26,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 298.257,
+    "response_unmet": 298.257,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 27,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 531.314,
+    "response_unmet": 444.344,
+    "gain": 86.97,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 28,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 249.034,
+    "response_unmet": 248.547,
+    "gain": 0.487,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 29,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 210.016,
+    "response_unmet": 198.838,
+    "gain": 11.179,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 30,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "R01"
+    },
+    "no_move_unmet": 243.847,
+    "response_unmet": 243.847,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 31,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "R01"
+    },
+    "no_move_unmet": 548.521,
+    "response_unmet": 548.521,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 32,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C08"
+    },
+    "no_move_unmet": 229.973,
+    "response_unmet": 229.973,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 33,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 444.831,
+    "response_unmet": 444.344,
+    "gain": 0.487,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 34,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 357.086,
+    "response_unmet": 357.086,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 35,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 298.841,
+    "response_unmet": 298.257,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 36,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C05"
+    },
+    "no_move_unmet": 246.369,
+    "response_unmet": 229.922,
+    "gain": 16.447,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 37,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 323.321,
+    "response_unmet": 323.321,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 38,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C04"
+    },
+    "no_move_unmet": 245.409,
+    "response_unmet": 231.902,
+    "gain": 13.507,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 39,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 344.402,
+    "response_unmet": 344.402,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 40,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C08"
+    },
+    "no_move_unmet": 229.973,
+    "response_unmet": 229.973,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 41,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C08"
+    },
+    "no_move_unmet": 388.504,
+    "response_unmet": 388.504,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 42,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 246.975,
+    "response_unmet": 246.975,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 43,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "R01"
+    },
+    "no_move_unmet": 216.598,
+    "response_unmet": 216.598,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 44,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C02"
+    },
+    "no_move_unmet": 290.472,
+    "response_unmet": 280.956,
+    "gain": 9.516,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 45,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 315.024,
+    "response_unmet": 298.257,
+    "gain": 16.768,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 46,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C07"
+    },
+    "no_move_unmet": 444.801,
+    "response_unmet": 423.146,
+    "gain": 21.655,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 47,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 577.711,
+    "response_unmet": 577.711,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 48,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 236.996,
+    "response_unmet": 236.996,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 49,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 473.092,
+    "response_unmet": 473.092,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 50,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 298.841,
+    "response_unmet": 298.257,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 51,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 244.995,
+    "response_unmet": 219.726,
+    "gain": 25.269,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 52,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 247.364,
+    "response_unmet": 246.975,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 53,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 335.475,
+    "response_unmet": 335.475,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 54,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 335.865,
+    "response_unmet": 335.475,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 55,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 210.016,
+    "response_unmet": 198.838,
+    "gain": 11.179,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 56,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 272.478,
+    "response_unmet": 272.478,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 57,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C08"
+    },
+    "no_move_unmet": 272.754,
+    "response_unmet": 272.754,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 58,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 210.016,
+    "response_unmet": 198.838,
+    "gain": 11.179,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 59,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 262.52,
+    "response_unmet": 248.547,
+    "gain": 13.973,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 60,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C04"
+    },
+    "no_move_unmet": 550.865,
+    "response_unmet": 530.604,
+    "gain": 20.261,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 61,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 407.986,
+    "response_unmet": 407.986,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 62,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C04"
+    },
+    "no_move_unmet": 342.054,
+    "response_unmet": 321.793,
+    "gain": 20.261,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 63,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 444.344,
+    "response_unmet": 444.344,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 64,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 199.227,
+    "response_unmet": 198.838,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 65,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C06"
+    },
+    "no_move_unmet": 240.867,
+    "response_unmet": 240.867,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 66,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 244.995,
+    "response_unmet": 219.726,
+    "gain": 25.269,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 67,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 368.474,
+    "response_unmet": 368.474,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 68,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 444.344,
+    "response_unmet": 444.344,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 69,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 414.591,
+    "response_unmet": 414.006,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 70,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 553.798,
+    "response_unmet": 553.213,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 71,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C04"
+    },
+    "no_move_unmet": 245.409,
+    "response_unmet": 231.902,
+    "gain": 13.507,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 72,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 262.52,
+    "response_unmet": 248.547,
+    "gain": 13.973,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 73,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C05"
+    },
+    "no_move_unmet": 326.16,
+    "response_unmet": 309.713,
+    "gain": 16.447,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 74,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C06"
+    },
+    "no_move_unmet": 544.051,
+    "response_unmet": 544.051,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 75,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 210.016,
+    "response_unmet": 198.838,
+    "gain": 11.179,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 76,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C02"
+    },
+    "no_move_unmet": 406.221,
+    "response_unmet": 396.705,
+    "gain": 9.516,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 77,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 277.495,
+    "response_unmet": 277.495,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 78,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 553.798,
+    "response_unmet": 553.213,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 79,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 244.995,
+    "response_unmet": 219.726,
+    "gain": 25.269,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 80,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C05"
+    },
+    "no_move_unmet": 326.16,
+    "response_unmet": 309.713,
+    "gain": 16.447,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 81,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 657.577,
+    "response_unmet": 553.213,
+    "gain": 104.364,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 82,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 242.961,
+    "response_unmet": 242.961,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 83,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C02"
+    },
+    "no_move_unmet": 271.008,
+    "response_unmet": 263.078,
+    "gain": 7.93,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 84,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C07"
+    },
+    "no_move_unmet": 444.801,
+    "response_unmet": 423.146,
+    "gain": 21.655,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 85,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 247.364,
+    "response_unmet": 246.975,
+    "gain": 0.39,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 86,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C01"
+    },
+    "no_move_unmet": 256.243,
+    "response_unmet": 256.243,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 87,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 315.024,
+    "response_unmet": 298.257,
+    "gain": 16.768,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 88,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C05"
+    },
+    "no_move_unmet": 246.369,
+    "response_unmet": 229.922,
+    "gain": 16.447,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 89,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 310.354,
+    "response_unmet": 277.495,
+    "gain": 32.859,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 90,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 246.975,
+    "response_unmet": 246.975,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 91,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.5,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 287.691,
+    "response_unmet": 246.975,
+    "gain": 40.717,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 92,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 249.034,
+    "response_unmet": 248.547,
+    "gain": 0.487,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 93,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-3"
+    },
+    "no_move_unmet": 383.833,
+    "response_unmet": 344.402,
+    "gain": 39.431,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 94,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 1.5,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 344.402,
+    "response_unmet": 344.402,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 95,
+    "shock_multiplier": 2.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 0.8,
+    "passenger_access_multiplier": 1.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C09"
+    },
+    "no_move_unmet": 242.961,
+    "response_unmet": 242.961,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 96,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-7"
+    },
+    "no_move_unmet": 344.402,
+    "response_unmet": 344.402,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 97,
+    "shock_multiplier": 3.0,
+    "relocation_time_multiplier": 1.0,
+    "demand_forecast_scale": 1.0,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C03"
+    },
+    "no_move_unmet": 473.092,
+    "response_unmet": 473.092,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 98,
+    "shock_multiplier": 1.0,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_vehicle_at": "MCH-8"
+    },
+    "no_move_unmet": 298.841,
+    "response_unmet": 298.257,
+    "gain": 0.585,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  },
+  {
+    "draw": 99,
+    "shock_multiplier": 1.5,
+    "relocation_time_multiplier": 2.0,
+    "demand_forecast_scale": 1.2,
+    "passenger_access_multiplier": 2.0,
+    "initial_chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "failure": {
+      "down_site": "C01"
+    },
+    "no_move_unmet": 318.9,
+    "response_unmet": 318.9,
+    "gain": 0.0,
+    "feasible": true,
+    "no_move_worst": 1.0,
+    "response_worst": 1.0,
+    "search_status": "exact_for_stated_discrete_model"
+  }
+]

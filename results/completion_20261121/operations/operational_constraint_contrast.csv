@@ -1,0 +1,5 @@
+﻿scenario,unmet,chosen
+assumed_fully_staffed,227.29509999999993,"MCH-3,MCH-7,MCH-8"
+mobile_staff_09_17,283.76,"MCH-1,MCH-7,MCH-8"
+mobile_power_loss_MCH3,241.32209999999992,"MCH-4,MCH-7,MCH-8"
+mobile_permit_loss_MCH3,241.32209999999992,"MCH-4,MCH-7,MCH-8"

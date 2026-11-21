@@ -1,0 +1,355 @@
+[
+  {
+    "district_id": "D01",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 101.81579553751507,
+    "independent_arrival_seconds": 38508.947732250905,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23700513",
+        "route": "B",
+        "from_stop": "9793",
+        "to_stop": "9773",
+        "active_service_id": "B_Weekday_1_2604-VMR_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:04:00",
+        "published_arrival": "09:52:00",
+        "published_ride_seconds": 2880,
+        "boarding_wait_seconds": 164.5557505994875,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867851",
+        "route": "35",
+        "from_stop": "20054",
+        "to_stop": "8129",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:56:00",
+        "published_arrival": "10:33:00",
+        "published_ride_seconds": 2220,
+        "boarding_wait_seconds": 1.2389581352035748,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D02",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 98.95806683905745,
+    "independent_arrival_seconds": 38337.48401034345,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23867092",
+        "route": "19",
+        "from_stop": "2023",
+        "to_stop": "20125",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:10:00",
+        "published_arrival": "10:22:00",
+        "published_ride_seconds": 4320,
+        "boarding_wait_seconds": 230.17831075525464,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867923",
+        "route": "35",
+        "from_stop": "8154",
+        "to_stop": "8150",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:24:00",
+        "published_arrival": "10:31:00",
+        "published_ride_seconds": 420,
+        "boarding_wait_seconds": 0,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D03",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 98.95806683905745,
+    "independent_arrival_seconds": 38337.48401034345,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23868327",
+        "route": "70",
+        "from_stop": "1320",
+        "to_stop": "1315",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:18:00",
+        "published_arrival": "09:27:00",
+        "published_ride_seconds": 540,
+        "boarding_wait_seconds": 570.5466450686945,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867092",
+        "route": "19",
+        "from_stop": "2015",
+        "to_stop": "20125",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:34:00",
+        "published_arrival": "10:22:00",
+        "published_ride_seconds": 2880,
+        "boarding_wait_seconds": 300,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867923",
+        "route": "35",
+        "from_stop": "8154",
+        "to_stop": "8150",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:24:00",
+        "published_arrival": "10:31:00",
+        "published_ride_seconds": 420,
+        "boarding_wait_seconds": 0,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D04",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 131.81579553751507,
+    "independent_arrival_seconds": 40308.947732250905,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23866217",
+        "route": "44",
+        "from_stop": "2380",
+        "to_stop": "501",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:30:00",
+        "published_arrival": "10:00:00",
+        "published_ride_seconds": 1800,
+        "boarding_wait_seconds": 902.4839122476551,
+        "permission_checked": true
+      },
+      {
+        "trip": "23866554",
+        "route": "138",
+        "from_stop": "501",
+        "to_stop": "7042",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:04:00",
+        "published_arrival": "10:41:00",
+        "published_ride_seconds": 2220,
+        "boarding_wait_seconds": 120,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867854",
+        "route": "35",
+        "from_stop": "2260",
+        "to_stop": "8129",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:44:00",
+        "published_arrival": "11:03:00",
+        "published_ride_seconds": 1140,
+        "boarding_wait_seconds": 60,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D05",
+    "site_id": "MAG0066",
+    "departure": "09:00:00",
+    "duration_minutes": 146.8106898487981,
+    "independent_arrival_seconds": 41208.641390927885,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23868209",
+        "route": "27",
+        "from_stop": "8033",
+        "to_stop": "3890",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:55:00",
+        "published_arrival": "10:11:00",
+        "published_ride_seconds": 960,
+        "boarding_wait_seconds": 2515.228567508995,
+        "permission_checked": true
+      },
+      {
+        "trip": "23866704",
+        "route": "170",
+        "from_stop": "1031",
+        "to_stop": "93",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:13:00",
+        "published_arrival": "10:40:00",
+        "published_ride_seconds": 1620,
+        "boarding_wait_seconds": 0,
+        "permission_checked": true
+      },
+      {
+        "trip": "23866136",
+        "route": "16",
+        "from_stop": "3909",
+        "to_stop": "3686",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:47:00",
+        "published_arrival": "11:20:00",
+        "published_ride_seconds": 1980,
+        "boarding_wait_seconds": 300,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D09",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 101.81579553751507,
+    "independent_arrival_seconds": 38508.947732250905,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23882482",
+        "route": "59",
+        "from_stop": "2434",
+        "to_stop": "2476",
+        "active_service_id": "Local_Weekday_10_2604-PHW_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:07:00",
+        "published_arrival": "09:38:00",
+        "published_ride_seconds": 1860,
+        "boarding_wait_seconds": 28.504308686198783,
+        "permission_checked": true
+      },
+      {
+        "trip": "23866523",
+        "route": "106",
+        "from_stop": "1596",
+        "to_stop": "1584",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:46:00",
+        "published_arrival": "09:58:00",
+        "published_ride_seconds": 720,
+        "boarding_wait_seconds": 360,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867851",
+        "route": "35",
+        "from_stop": "2228",
+        "to_stop": "8129",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:04:00",
+        "published_arrival": "10:33:00",
+        "published_ride_seconds": 1740,
+        "boarding_wait_seconds": 38.80019140528748,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D11",
+    "site_id": "MAG0065",
+    "departure": "09:00:00",
+    "duration_minutes": 128.95806683905747,
+    "independent_arrival_seconds": 40137.48401034345,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23865936",
+        "route": "80",
+        "from_stop": "5886",
+        "to_stop": "6850",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:28:00",
+        "published_arrival": "09:56:00",
+        "published_ride_seconds": 1680,
+        "boarding_wait_seconds": 823.6256803384895,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867094",
+        "route": "19",
+        "from_stop": "2030",
+        "to_stop": "20125",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:08:00",
+        "published_arrival": "10:52:00",
+        "published_ride_seconds": 2640,
+        "boarding_wait_seconds": 600,
+        "permission_checked": true
+      },
+      {
+        "trip": "23867925",
+        "route": "35",
+        "from_stop": "8154",
+        "to_stop": "8150",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "10:54:00",
+        "published_arrival": "11:01:00",
+        "published_ride_seconds": 420,
+        "boarding_wait_seconds": 0,
+        "permission_checked": true
+      }
+    ]
+  },
+  {
+    "district_id": "D01",
+    "site_id": "MAG0066",
+    "departure": "09:00:00",
+    "duration_minutes": 51.24385652256339,
+    "independent_arrival_seconds": 35474.6313913538,
+    "full_itinerary_time_residual_seconds": 0.0,
+    "ride_checks": [
+      {
+        "trip": "23883027",
+        "route": "3",
+        "from_stop": "1809",
+        "to_stop": "880",
+        "active_service_id": "Local_Weekday_10_2604-PHW_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:09:00",
+        "published_arrival": "09:17:00",
+        "published_ride_seconds": 480,
+        "boarding_wait_seconds": 180.4257165879062,
+        "permission_checked": true
+      },
+      {
+        "trip": "23866135",
+        "route": "16",
+        "from_stop": "1979",
+        "to_stop": "1962",
+        "active_service_id": "Local_Weekday_10_2604-PHNS_1111100",
+        "service_date": "2026-07-20",
+        "published_departure": "09:27:00",
+        "published_arrival": "09:45:00",
+        "published_ride_seconds": 1080,
+        "boarding_wait_seconds": 480,
+        "permission_checked": true
+      }
+    ]
+  }
+]

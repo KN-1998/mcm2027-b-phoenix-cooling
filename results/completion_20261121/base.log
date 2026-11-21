@@ -1,0 +1,21 @@
+RUN tests
+PASS tests
+RUN data_validation
+PASS data_validation
+RUN core
+PASS core
+RUN q3
+PASS q3
+RUN q4
+PASS q4
+RUN q5
+PASS q5
+RUN pipeline
+PASS pipeline
+RUN dated_pipeline
+PASS dated_pipeline
+RUN model_chain
+PASS model_chain
+FROZEN SOURCE 941c9fcff1268fd7d5678166b634d5ef72f00b18
+DELIVERY F:\数模\2\model_complete_20261121\results\completion_20261121\base
+

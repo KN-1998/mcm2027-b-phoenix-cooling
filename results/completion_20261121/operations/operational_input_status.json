@@ -1,0 +1,154 @@
+[
+  {
+    "site": "MCH-1",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-2",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-3",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-4",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-5",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-6",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-7",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  },
+  {
+    "site": "MCH-8",
+    "day": 0,
+    "confirmed_fields": [],
+    "assumed_fields": [
+      "permit_by_day",
+      "power_by_day",
+      "site_access_by_day",
+      "staffed_windows_by_day"
+    ],
+    "staffed_windows": [
+      [
+        9.0,
+        33.0
+      ]
+    ],
+    "fully_documented_inputs": false,
+    "not_a_field_inspection": true
+  }
+]

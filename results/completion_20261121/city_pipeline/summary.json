@@ -1,0 +1,514 @@
+{
+  "instance": {
+    "districts": 12,
+    "sites": 60,
+    "candidates": 8,
+    "days": 7,
+    "note": "MAG source inventory and dated hours; capacities/demand/centroids/travel remain conditional assumptions",
+    "data": "csv",
+    "scenario": "base",
+    "access_mode": "transit_min"
+  },
+  "city_operating_overlay": {
+    "source": "资料/12_实证补全_2026-11-21/source_operating_corrections.json",
+    "corrected_ids": [
+      "CITY_JACKSON_24H_2026",
+      "CITY_JUSTA_2026",
+      "MAG0068"
+    ],
+    "added_site_capacity_assumptions": {
+      "CITY_JACKSON_24H_2026": 500,
+      "CITY_JUSTA_2026": 200
+    },
+    "coordinate_note": "Census address interpolation; not observed entrance coordinates",
+    "scope": "Published 2026 operating programmes; not observed door logs, complete city inventory or 2027 forecast",
+    "original_MAG_preserved": true
+  },
+  "reference_access": null,
+  "q1_access_gap": {
+    "threshold_minutes": 30.0,
+    "zero_access_districts": [
+      "D07",
+      "D08",
+      "D10",
+      "D12"
+    ],
+    "reachable_counts": {
+      "D01": 7,
+      "D02": 6,
+      "D03": 1,
+      "D04": 1,
+      "D05": 1,
+      "D06": 1,
+      "D07": 0,
+      "D08": 0,
+      "D09": 3,
+      "D10": 0,
+      "D11": 1,
+      "D12": 0
+    },
+    "note": "hydration stations do not count as cooling capacity"
+  },
+  "q1_baseline_no_mch": {
+    "demand_total": 505.0,
+    "served_total": 207.755,
+    "unmet_total": 297.245,
+    "coverage_rate": 0.411396,
+    "unmet_total_raw": 297.245,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.388984,
+    "gini_coverage": 0.462827,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.141,
+    "utilization_by_site": {
+      "MAG0065": 0.3815,
+      "MAG0066": 0.0,
+      "MAG0067": 0.0,
+      "MAG0068": 0.0,
+      "MAG0069": 0.2723,
+      "MAG0070": 0.0,
+      "MAG0071": 0.0,
+      "MAG0072": 0.0,
+      "MAG0073": 0.0,
+      "MAG0074": 0.3247,
+      "MAG0075": 0.0,
+      "MAG0076": 0.0,
+      "MAG0077": 0.3859,
+      "MAG0078": 0.5712,
+      "MAG0080": 0.0,
+      "MAG0145": 0.2531,
+      "MAG0292": 0.2953,
+      "MAG0297": 0.0,
+      "MAG0355": 0.1112,
+      "MAG0518": 0.0,
+      "MAG0519": 0.0965,
+      "MAG0521": 0.9215,
+      "MAG0559": 0.0,
+      "MAG0613": 0.0,
+      "CITY_JACKSON_24H_2026": 0.0539,
+      "CITY_JUSTA_2026": 0.0
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 160.438,
+      "evening": 26.934,
+      "night": 20.384
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "q2_static": {
+    "chosen": [
+      "MCH-3",
+      "MCH-4",
+      "MCH-8"
+    ],
+    "demand_total": 505.0,
+    "served_total": 307.627,
+    "unmet_total": 197.373,
+    "coverage_rate": 0.609162,
+    "unmet_total_raw": 197.3734,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.563568,
+    "gini_coverage": 0.333314,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.1203,
+    "utilization_by_site": {
+      "MAG0065": 0.3815,
+      "MAG0066": 0.0,
+      "MAG0067": 0.0,
+      "MAG0068": 0.0,
+      "MAG0069": 0.2723,
+      "MAG0070": 0.0,
+      "MAG0071": 0.0,
+      "MAG0072": 0.0,
+      "MAG0073": 0.0,
+      "MAG0074": 0.3247,
+      "MAG0075": 0.0,
+      "MAG0076": 0.0,
+      "MAG0077": 0.3859,
+      "MAG0078": 0.5712,
+      "MAG0080": 0.0,
+      "MAG0145": 0.2531,
+      "MAG0292": 0.2953,
+      "MAG0297": 0.0,
+      "MAG0355": 0.1112,
+      "MAG0518": 0.0,
+      "MAG0519": 0.0965,
+      "MAG0521": 0.2,
+      "MAG0559": 0.0,
+      "MAG0613": 0.0,
+      "CITY_JACKSON_24H_2026": 0.0539,
+      "CITY_JUSTA_2026": 0.0,
+      "MCH-3": 0.2852,
+      "MCH-4": 0.1716,
+      "MCH-8": 0.087
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 193.146,
+      "evening": 94.097,
+      "night": 20.384
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "q3_dynamic": [
+    {
+      "day": 0,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 197.3734
+    },
+    {
+      "day": 1,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 179.989822
+    },
+    {
+      "day": 2,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 206.933022
+    },
+    {
+      "day": 3,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 231.812422
+    },
+    {
+      "day": 4,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 252.9886
+    },
+    {
+      "day": 5,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 223.9635
+    },
+    {
+      "day": 6,
+      "combo": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-5"
+      ],
+      "moves": [
+        {
+          "from": "MCH-8",
+          "to": "MCH-5",
+          "hours": 1.4
+        }
+      ],
+      "unmet": 263.3848
+    }
+  ],
+  "q3_static_total_unmet": 1572.002367,
+  "q3_dynamic_total_unmet": 1556.445567,
+  "q3_search_status": "optimal_within_model",
+  "q3_assumptions": {
+    "service_day_start": 9,
+    "parallel_crews_required": 3,
+    "initial_deployment_ready": true,
+    "max_trip_hours": 24,
+    "matching_includes_common_site_swaps": true,
+    "travel_model": "0.5h setup + coordinate distance / 40kmh"
+  },
+  "q4_disruption": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.8,
+    "down_site": "MAG0078",
+    "down_vehicle_at": null,
+    "fleet_nominal": 3,
+    "fleet_healthy": 3,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "unmet": 197.373
+    },
+    "shock_only": 253.963,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "worst_unmet_ratio_all": 1.0,
+      "unmet": 303.963,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      "worst_unmet_ratio_all": 1.0,
+      "unmet": 303.963,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "response_gain": 0.0,
+    "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+    "n_options": 1,
+    "n_feasible": 1,
+    "budget_hours": 24,
+    "feasible_any": true,
+    "parallel": false,
+    "search": {
+      "requested_mode": "auto",
+      "mode": "exact",
+      "optimality_status": "exact_for_stated_discrete_model",
+      "top_combos": null,
+      "top_matchings": null,
+      "destination_sets_total": 93,
+      "destination_sets_evaluated": 0,
+      "destination_sets_pruned_by_bound": 93,
+      "matchings_generated": 0,
+      "timelines_tested": 0,
+      "deadline_feasible_timelines": 0,
+      "assignment_lp_evaluations": 0
+    },
+    "response_start_hour": 9.0,
+    "service_day_end_hour": 33.0,
+    "travel_time_multiplier": 1.0,
+    "initial_deployment_source": "specified_before_shock",
+    "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+    "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+    "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+    "crew_start_site": "MCH-3",
+    "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+    "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+  },
+  "q5_plan": {
+    "rows": [
+      {
+        "year": 2027,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.0,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 3,
+        "active": 1,
+        "fleet": 1,
+        "buy": 0,
+        "retire": 0,
+        "idled": 2,
+        "extend_to": 21.0,
+        "shuttle": true,
+        "action": "active=1,buy=0,ext=21.0,shuttle=1",
+        "total_cost": 2020000.0,
+        "capital": 0.0,
+        "hub_opex": 120000.0,
+        "extend_cost": 1500000.0,
+        "shuttle_cost": 400000.0,
+        "within_budget": true,
+        "unmet_before": 197.3734,
+        "unmet_after": 63.27314285714277,
+        "worst_after": 0.15999999999999998,
+        "gain": 134.10025714285723,
+        "weighted_unmet_visits": 63.27314285714277
+      },
+      {
+        "year": 2028,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.03,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 3,
+        "active": 1,
+        "fleet": 1,
+        "buy": 0,
+        "retire": 0,
+        "idled": 2,
+        "extend_to": 21.0,
+        "shuttle": true,
+        "action": "active=1,buy=0,ext=21.0,shuttle=1",
+        "total_cost": 2020000.0,
+        "capital": 0.0,
+        "hub_opex": 120000.0,
+        "extend_cost": 1500000.0,
+        "shuttle_cost": 400000.0,
+        "within_budget": true,
+        "unmet_before": 203.59460199999995,
+        "unmet_after": 65.38562285714283,
+        "worst_after": 0.16000000000000006,
+        "gain": 138.20897914285712,
+        "weighted_unmet_visits": 65.38562285714283
+      },
+      {
+        "year": 2029,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.06,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 3,
+        "active": 1,
+        "fleet": 1,
+        "buy": 0,
+        "retire": 0,
+        "idled": 2,
+        "extend_to": 21.0,
+        "shuttle": true,
+        "action": "active=1,buy=0,ext=21.0,shuttle=1",
+        "total_cost": 2020000.0,
+        "capital": 0.0,
+        "hub_opex": 120000.0,
+        "extend_cost": 1500000.0,
+        "shuttle_cost": 400000.0,
+        "within_budget": true,
+        "unmet_before": 209.81580400000007,
+        "unmet_after": 67.63561619047624,
+        "worst_after": 0.16339606177351904,
+        "gain": 142.18018780952383,
+        "weighted_unmet_visits": 67.63561619047624
+      },
+      {
+        "year": 2030,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.09,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 3,
+        "active": 1,
+        "fleet": 1,
+        "buy": 0,
+        "retire": 0,
+        "idled": 2,
+        "extend_to": 22.0,
+        "shuttle": true,
+        "action": "active=1,buy=0,ext=22.0,shuttle=1",
+        "total_cost": 3020000.0,
+        "capital": 0.0,
+        "hub_opex": 120000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 400000.0,
+        "within_budget": true,
+        "unmet_before": 216.03700600000002,
+        "unmet_after": 70.08677333333338,
+        "worst_after": 0.16000000000000006,
+        "gain": 145.95023266666664,
+        "weighted_unmet_visits": 70.08677333333338
+      },
+      {
+        "year": 2031,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.12,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 3,
+        "active": 1,
+        "fleet": 1,
+        "buy": 0,
+        "retire": 0,
+        "idled": 2,
+        "extend_to": 22.0,
+        "shuttle": true,
+        "action": "active=1,buy=0,ext=22.0,shuttle=1",
+        "total_cost": 3020000.0,
+        "capital": 0.0,
+        "hub_opex": 120000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 400000.0,
+        "within_budget": true,
+        "unmet_before": 222.25820800000002,
+        "unmet_after": 72.19925333333333,
+        "worst_after": 0.16,
+        "gain": 150.0589546666667,
+        "weighted_unmet_visits": 72.19925333333333
+      }
+    ],
+    "summary": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 12100000.0,
+      "total_opex": 12100000.0,
+      "weighted_unmet_visits": 338.58040857142856,
+      "mean_representative_day_unmet": 67.7160817142857,
+      "all_within_budget": true,
+      "final_fleet": 1,
+      "final_owned": 3,
+      "final_extend": 22.0,
+      "final_unmet": 72.19925333333333,
+      "actions": [
+        "active=1,buy=0,ext=21.0,shuttle=1",
+        "active=1,buy=0,ext=21.0,shuttle=1",
+        "active=1,buy=0,ext=21.0,shuttle=1",
+        "active=1,buy=0,ext=22.0,shuttle=1",
+        "active=1,buy=0,ext=22.0,shuttle=1"
+      ],
+      "evaluated_feasible_actions": 3894
+    },
+    "cost_assumptions": {
+      "hub_buy": 80000,
+      "hub_ops": 120000,
+      "extend_21": 1500000,
+      "extend_22": 2500000,
+      "shuttle": 400000
+    },
+    "scope": "Conditional representative-day service scenario; not validated annual demand or health outcomes.",
+    "stock_assumptions": {
+      "initial_procurement_sunk": true,
+      "idle_stock_retained": true,
+      "retirement_allowed": false,
+      "storage_cost_assumed": 0,
+      "procurement_lead_time_years_assumed": 0,
+      "budget_carryover_allowed": false,
+      "annual_contracts_can_cancel": true
+    }
+  }
+}

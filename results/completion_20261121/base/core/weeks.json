@@ -1,0 +1,787 @@
+{
+  "baseline": {
+    "p": 3,
+    "static_best": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "static_total_unmet": 1768.428,
+    "dynamic_total_unmet": 1768.428,
+    "schedule": [
+      {
+        "day": 0,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 227.2951
+      },
+      {
+        "day": 1,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 238.6938
+      },
+      {
+        "day": 2,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 268.2364
+      },
+      {
+        "day": 3,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 295.494
+      },
+      {
+        "day": 4,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 277.2975
+      },
+      {
+        "day": 5,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 245.4801
+      },
+      {
+        "day": 6,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 215.9311
+      }
+    ],
+    "candidates": [
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-4"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-4"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-4"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-5"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-4",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-5",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-5",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-5",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ]
+    ],
+    "top_k": 0,
+    "search_status": "optimal_within_model",
+    "daily_oracle_lower_bound": 1768.428,
+    "absolute_gap_to_lower_bound": 0,
+    "transition_lp_evaluations": 1980,
+    "assumptions": {
+      "service_day_start": 9,
+      "parallel_crews_required": 3,
+      "initial_deployment_ready": true,
+      "max_trip_hours": 24,
+      "matching_includes_common_site_swaps": true,
+      "travel_model": "0.5h setup + coordinate distance / 40kmh"
+    }
+  },
+  "same_exogenous_shock_static_and_dynamic": {
+    "p": 3,
+    "static_best": [
+      "MCH-3",
+      "MCH-6",
+      "MCH-8"
+    ],
+    "static_total_unmet": 1898.6827,
+    "dynamic_total_unmet": 1887.9812,
+    "schedule": [
+      {
+        "day": 0,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 227.2951
+      },
+      {
+        "day": 1,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 238.6938
+      },
+      {
+        "day": 2,
+        "combo": [
+          "MCH-3",
+          "MCH-6",
+          "MCH-8"
+        ],
+        "moves": [
+          {
+            "from": "MCH-7",
+            "to": "MCH-3",
+            "hours": 0.87
+          },
+          {
+            "from": "MCH-3",
+            "to": "MCH-6",
+            "hours": 1.08
+          }
+        ],
+        "unmet": 304.206
+      },
+      {
+        "day": 3,
+        "combo": [
+          "MCH-3",
+          "MCH-6",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 340.2042
+      },
+      {
+        "day": 4,
+        "combo": [
+          "MCH-3",
+          "MCH-6",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 316.1709
+      },
+      {
+        "day": 5,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [
+          {
+            "from": "MCH-6",
+            "to": "MCH-3",
+            "hours": 1.08
+          },
+          {
+            "from": "MCH-3",
+            "to": "MCH-7",
+            "hours": 0.87
+          }
+        ],
+        "unmet": 245.4801
+      },
+      {
+        "day": 6,
+        "combo": [
+          "MCH-3",
+          "MCH-7",
+          "MCH-8"
+        ],
+        "moves": [],
+        "unmet": 215.9311
+      }
+    ],
+    "candidates": [
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-3"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-4"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-2",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-4"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-3",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-1",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-1",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-4"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-5"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-3",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-2",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-2",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-5"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-6"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-4",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-3",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-6"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-7"
+      ],
+      [
+        "MCH-4",
+        "MCH-5",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-4",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-4",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-5",
+        "MCH-6",
+        "MCH-7"
+      ],
+      [
+        "MCH-5",
+        "MCH-6",
+        "MCH-8"
+      ],
+      [
+        "MCH-5",
+        "MCH-7",
+        "MCH-8"
+      ],
+      [
+        "MCH-6",
+        "MCH-7",
+        "MCH-8"
+      ]
+    ],
+    "top_k": 0,
+    "search_status": "optimal_within_model",
+    "daily_oracle_lower_bound": 1887.9812,
+    "absolute_gap_to_lower_bound": 0,
+    "transition_lp_evaluations": 1980,
+    "assumptions": {
+      "service_day_start": 9,
+      "parallel_crews_required": 3,
+      "initial_deployment_ready": true,
+      "max_trip_hours": 24,
+      "matching_includes_common_site_swaps": true,
+      "travel_model": "0.5h setup + coordinate distance / 40kmh"
+    }
+  },
+  "shock_spec": {
+    "district": "D05",
+    "days": [
+      2,
+      3,
+      4
+    ],
+    "multiplier": 3
+  }
+}

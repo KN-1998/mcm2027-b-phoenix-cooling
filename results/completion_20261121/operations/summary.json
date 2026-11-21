@@ -1,0 +1,32 @@
+{
+  "scope": "Matched conditional planning; official published schedules and intake counts do not validate latent district demand or actual deployment.",
+  "city_overlay": {
+    "source": "资料/12_实证补全_2026-11-21/source_operating_corrections.json",
+    "corrected_ids": [
+      "CITY_JACKSON_24H_2026",
+      "CITY_JUSTA_2026",
+      "MAG0068"
+    ],
+    "added_site_capacity_assumptions": {
+      "CITY_JACKSON_24H_2026": 500,
+      "CITY_JUSTA_2026": 200
+    },
+    "coordinate_note": "Census address interpolation; not observed entrance coordinates",
+    "scope": "Published 2026 operating programmes; not observed door logs, complete city inventory or 2027 forecast",
+    "original_MAG_preserved": true
+  },
+  "inventory_scenarios": 3,
+  "added_capacity_scenarios": 12,
+  "staffing_scenarios": 4,
+  "robust_cost_profiles": [
+    "low",
+    "base",
+    "high"
+  ],
+  "annual_budget_scenarios": [
+    2000000,
+    4000000
+  ],
+  "nonanticipative_definition": "One ex-ante action sequence; year/stock/budget known, future heat not used; rectangular annual maxima bound every supplied heat path.",
+  "information_difference": "clairvoyant DP knows full heat; rolling sees current year heat; robust does not. Do not attribute differences solely to algorithm quality."
+}

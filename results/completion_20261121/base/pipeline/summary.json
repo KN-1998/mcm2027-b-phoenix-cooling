@@ -1,0 +1,461 @@
+{
+  "instance": {
+    "districts": 12,
+    "sites": 22,
+    "candidates": 8,
+    "days": 7,
+    "note": "12 districts / 8 candidates are CONTEST fictions",
+    "data": "csv",
+    "scenario": "base",
+    "access_mode": "walk_min"
+  },
+  "city_operating_overlay": null,
+  "reference_access": null,
+  "q1_access_gap": {
+    "threshold_minutes": 30.0,
+    "zero_access_districts": [
+      "D07",
+      "D08",
+      "D10"
+    ],
+    "reachable_counts": {
+      "D01": 2,
+      "D02": 1,
+      "D03": 1,
+      "D04": 1,
+      "D05": 1,
+      "D06": 1,
+      "D07": 0,
+      "D08": 0,
+      "D09": 1,
+      "D10": 0,
+      "D11": 1,
+      "D12": 1
+    },
+    "note": "hydration stations do not count as cooling capacity"
+  },
+  "q1_baseline_no_mch": {
+    "demand_total": 505.0,
+    "served_total": 199.489,
+    "unmet_total": 305.511,
+    "coverage_rate": 0.395027,
+    "unmet_total_raw": 305.51149999999996,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.366667,
+    "gini_coverage": 0.337121,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.3787,
+    "utilization_by_site": {
+      "C01": 0.2564,
+      "C02": 0.2953,
+      "C03": 0.5712,
+      "C04": 0.3859,
+      "C05": 0.3815,
+      "C06": 0.2723,
+      "C07": 0.4342,
+      "C08": 0.7215,
+      "C09": 0.3247,
+      "R01": 0.1445
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 182.147,
+      "evening": 12.516,
+      "night": 4.826
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "q2_static": {
+    "chosen": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "demand_total": 505.0,
+    "served_total": 277.705,
+    "unmet_total": 227.295,
+    "coverage_rate": 0.549911,
+    "unmet_total_raw": 227.29509999999993,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.54125,
+    "gini_coverage": 0.252951,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.3154,
+    "utilization_by_site": {
+      "C01": 0.2564,
+      "C02": 0.2953,
+      "C03": 0.5712,
+      "C04": 0.3859,
+      "C05": 0.3815,
+      "C06": 0.2723,
+      "C07": 0.4342,
+      "C08": 0.7215,
+      "C09": 0.3247,
+      "R01": 0.1445,
+      "MCH-3": 0.1409,
+      "MCH-7": 0.085,
+      "MCH-8": 0.087
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 203.898,
+      "evening": 68.981,
+      "night": 4.826
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "q3_dynamic": [
+    {
+      "day": 0,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 227.2951
+    },
+    {
+      "day": 1,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 238.6938
+    },
+    {
+      "day": 2,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 268.2364
+    },
+    {
+      "day": 3,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 295.494
+    },
+    {
+      "day": 4,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 277.2975
+    },
+    {
+      "day": 5,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 245.4801
+    },
+    {
+      "day": 6,
+      "combo": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "moves": [],
+      "unmet": 215.9311
+    }
+  ],
+  "q3_static_total_unmet": 1768.428,
+  "q3_dynamic_total_unmet": 1768.428,
+  "q3_search_status": "optimal_within_model",
+  "q3_assumptions": {
+    "service_day_start": 9,
+    "parallel_crews_required": 3,
+    "initial_deployment_ready": true,
+    "max_trip_hours": 24,
+    "matching_includes_common_site_swaps": true,
+    "travel_model": "0.5h setup + coordinate distance / 40kmh"
+  },
+  "q4_disruption": {
+    "shock_districts": [
+      "D09",
+      "D03"
+    ],
+    "shock_multiplier": 1.8,
+    "down_site": "C08",
+    "down_vehicle_at": null,
+    "fleet_nominal": 3,
+    "fleet_healthy": 3,
+    "base": {
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "unmet": 227.295
+    },
+    "shock_only": 283.885,
+    "no_move": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "worst_unmet_ratio_all": 1.0,
+      "unmet": 283.885,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "best": {
+      "action": "no_move",
+      "chosen": [
+        "MCH-3",
+        "MCH-7",
+        "MCH-8"
+      ],
+      "worst_unmet_ratio_all": 1.0,
+      "unmet": 283.885,
+      "timeline": [],
+      "total_hours": 0.0,
+      "n_moves": 0,
+      "feasible": true,
+      "idle": false
+    },
+    "response_gain": 0.0,
+    "gain_definition": "no_move_unmet - best_feasible_unmet; paired identical shocked demand",
+    "n_options": 1,
+    "n_feasible": 1,
+    "budget_hours": 24,
+    "feasible_any": true,
+    "parallel": false,
+    "search": {
+      "requested_mode": "auto",
+      "mode": "exact",
+      "optimality_status": "exact_for_stated_discrete_model",
+      "top_combos": null,
+      "top_matchings": null,
+      "destination_sets_total": 93,
+      "destination_sets_evaluated": 0,
+      "destination_sets_pruned_by_bound": 93,
+      "matchings_generated": 0,
+      "timelines_tested": 0,
+      "deadline_feasible_timelines": 0,
+      "assignment_lp_evaluations": 0
+    },
+    "response_start_hour": 9.0,
+    "service_day_end_hour": 33.0,
+    "travel_time_multiplier": 1.0,
+    "initial_deployment_source": "specified_before_shock",
+    "capacity_note": "daily_capacity/original_open_hours times operating-window overlap after arrival; 09:00-next09:00 service day",
+    "travel_note": "assumed straight-line distance/speed plus setup; scheduled/observed road travel not available",
+    "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+    "crew_start_site": "MCH-3",
+    "crew_start_assumption": "shared crew at first pre-incident deployed site; parallel crews at their vehicles",
+    "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+  },
+  "q5_plan": {
+    "rows": [
+      {
+        "year": 2027,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.0,
+        "operating_days": 1.0,
+        "owned_before": 3,
+        "owned": 4,
+        "active": 4,
+        "fleet": 4,
+        "buy": 1,
+        "retire": 0,
+        "idled": 0,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "action": "active=4,buy=1,ext=22.0,shuttle=0",
+        "total_cost": 3060000.0,
+        "capital": 80000.0,
+        "hub_opex": 480000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 0.0,
+        "within_budget": true,
+        "unmet_before": 227.29509999999993,
+        "unmet_after": 105.83323076923074,
+        "worst_after": 1.0,
+        "gain": 121.4618692307692,
+        "weighted_unmet_visits": 105.83323076923074
+      },
+      {
+        "year": 2028,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.03,
+        "operating_days": 1.0,
+        "owned_before": 4,
+        "owned": 5,
+        "active": 5,
+        "fleet": 5,
+        "buy": 1,
+        "retire": 0,
+        "idled": 0,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "action": "active=5,buy=1,ext=22.0,shuttle=0",
+        "total_cost": 3180000.0,
+        "capital": 80000.0,
+        "hub_opex": 600000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 0.0,
+        "within_budget": true,
+        "unmet_before": 212.27980699999995,
+        "unmet_after": 109.58515076923078,
+        "worst_after": 1.0,
+        "gain": 102.69465623076917,
+        "weighted_unmet_visits": 109.58515076923078
+      },
+      {
+        "year": 2029,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.06,
+        "operating_days": 1.0,
+        "owned_before": 5,
+        "owned": 6,
+        "active": 6,
+        "fleet": 6,
+        "buy": 1,
+        "retire": 0,
+        "idled": 0,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "action": "active=6,buy=1,ext=22.0,shuttle=0",
+        "total_cost": 3300000.0,
+        "capital": 80000.0,
+        "hub_opex": 720000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 0.0,
+        "within_budget": true,
+        "unmet_before": 198.49125400000008,
+        "unmet_after": 113.33707076923076,
+        "worst_after": 1.0,
+        "gain": 85.15418323076932,
+        "weighted_unmet_visits": 113.33707076923076
+      },
+      {
+        "year": 2030,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.09,
+        "operating_days": 1.0,
+        "owned_before": 6,
+        "owned": 6,
+        "active": 6,
+        "fleet": 6,
+        "buy": 0,
+        "retire": 0,
+        "idled": 0,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "action": "active=6,buy=0,ext=22.0,shuttle=0",
+        "total_cost": 3220000.0,
+        "capital": 0.0,
+        "hub_opex": 720000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 0.0,
+        "within_budget": true,
+        "unmet_before": 183.80746300000004,
+        "unmet_after": 117.45016000000004,
+        "worst_after": 1.0,
+        "gain": 66.357303,
+        "weighted_unmet_visits": 117.45016000000004
+      },
+      {
+        "year": 2031,
+        "strategy": "dp",
+        "budget": 4000000.0,
+        "heat_multiplier": 1.12,
+        "operating_days": 1.0,
+        "owned_before": 6,
+        "owned": 6,
+        "active": 6,
+        "fleet": 6,
+        "buy": 0,
+        "retire": 0,
+        "idled": 0,
+        "extend_to": 22.0,
+        "shuttle": false,
+        "action": "active=6,buy=0,ext=22.0,shuttle=0",
+        "total_cost": 3220000.0,
+        "capital": 0.0,
+        "hub_opex": 720000.0,
+        "extend_cost": 2500000.0,
+        "shuttle_cost": 0.0,
+        "within_budget": true,
+        "unmet_before": 188.86638399999993,
+        "unmet_after": 122.05887999999993,
+        "worst_after": 1.0,
+        "gain": 66.807504,
+        "weighted_unmet_visits": 122.05887999999993
+      }
+    ],
+    "summary": {
+      "strategy": "dp",
+      "optimality": "exact_finite_state_scenario",
+      "total_spend": 15980000.0,
+      "total_opex": 15740000.0,
+      "weighted_unmet_visits": 568.2644923076923,
+      "mean_representative_day_unmet": 113.65289846153846,
+      "all_within_budget": true,
+      "final_fleet": 6,
+      "final_owned": 6,
+      "final_extend": 22.0,
+      "final_unmet": 122.05887999999993,
+      "actions": [
+        "active=4,buy=1,ext=22.0,shuttle=0",
+        "active=5,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=1,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0",
+        "active=6,buy=0,ext=22.0,shuttle=0"
+      ],
+      "evaluated_feasible_actions": 3894
+    },
+    "cost_assumptions": {
+      "hub_buy": 80000,
+      "hub_ops": 120000,
+      "extend_21": 1500000,
+      "extend_22": 2500000,
+      "shuttle": 400000
+    },
+    "scope": "Conditional representative-day service scenario; not validated annual demand or health outcomes.",
+    "stock_assumptions": {
+      "initial_procurement_sunk": true,
+      "idle_stock_retained": true,
+      "retirement_allowed": false,
+      "storage_cost_assumed": 0,
+      "procurement_lead_time_years_assumed": 0,
+      "budget_carryover_allowed": false,
+      "annual_contracts_can_cancel": true
+    }
+  }
+}

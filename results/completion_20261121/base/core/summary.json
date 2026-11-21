@@ -1,0 +1,137 @@
+{
+  "scope": "Conditional allocation; no visitor-outcome holdout available",
+  "baseline": {
+    "chosen": "",
+    "demand_total": 505.0,
+    "served_total": 199.489,
+    "unmet_total": 305.511,
+    "coverage_rate": 0.395027,
+    "unmet_total_raw": 305.51149999999996,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.366667,
+    "gini_coverage": 0.337121,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.3787,
+    "utilization_by_site": {
+      "C01": 0.2564,
+      "C02": 0.2953,
+      "C03": 0.5712,
+      "C04": 0.3859,
+      "C05": 0.3815,
+      "C06": 0.2723,
+      "C07": 0.4342,
+      "C08": 0.7215,
+      "C09": 0.3247,
+      "R01": 0.1445
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 182.147,
+      "evening": 12.516,
+      "night": 4.826
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "p3": {
+    "chosen": "MCH-3,MCH-7,MCH-8",
+    "demand_total": 505.0,
+    "served_total": 277.705,
+    "unmet_total": 227.295,
+    "coverage_rate": 0.549911,
+    "unmet_total_raw": 227.29509999999993,
+    "coverage_min": 0.0,
+    "coverage_mean": 0.54125,
+    "gini_coverage": 0.252951,
+    "worst_unmet_ratio": 1.0,
+    "utilization_mean": 0.3154,
+    "utilization_by_site": {
+      "C01": 0.2564,
+      "C02": 0.2953,
+      "C03": 0.5712,
+      "C04": 0.3859,
+      "C05": 0.3815,
+      "C06": 0.2723,
+      "C07": 0.4342,
+      "C08": 0.7215,
+      "C09": 0.3247,
+      "R01": 0.1445,
+      "MCH-3": 0.1409,
+      "MCH-7": 0.085,
+      "MCH-8": 0.087
+    },
+    "worst_unmet_ratio_nonexempt": 1.0,
+    "worst_unmet_ratio_nonexempt_raw": 1.0,
+    "worst_unmet_ratio_raw": 1.0,
+    "served_by_period": {
+      "day": 203.898,
+      "evening": 68.981,
+      "night": 4.826
+    },
+    "solver_status": "optimal",
+    "assignment_objective": "efficiency",
+    "availability_applied": true
+  },
+  "structural_under_given_network": [
+    "D08"
+  ],
+  "sampled_site_set_flip_brackets": [
+    {
+      "axis": "demand_scale",
+      "sampled_interval": [
+        2,
+        3
+      ],
+      "old": "MCH-3,MCH-7,MCH-8",
+      "new": "MCH-3,MCH-4,MCH-8",
+      "scope": "sampled bracket, not an exact threshold"
+    },
+    {
+      "axis": "unsheltered_share",
+      "sampled_interval": [
+        0.5,
+        0.7
+      ],
+      "old": "MCH-3,MCH-7,MCH-8",
+      "new": "MCH-3,MCH-4,MCH-8",
+      "scope": "sampled bracket, not an exact threshold"
+    },
+    {
+      "axis": "unsheltered_share",
+      "sampled_interval": [
+        0.7,
+        1
+      ],
+      "old": "MCH-3,MCH-4,MCH-8",
+      "new": "MCH-3,MCH-4,MCH-5",
+      "scope": "sampled bracket, not an exact threshold"
+    },
+    {
+      "axis": "fixed_daily_capacity",
+      "sampled_interval": [
+        20,
+        50
+      ],
+      "old": "MCH-3,MCH-4,MCH-8",
+      "new": "MCH-3,MCH-7,MCH-8",
+      "scope": "sampled bracket, not an exact threshold"
+    }
+  ],
+  "timing_ablation": {
+    "period_served": 277.70490000000007,
+    "pooled_day_served": 461.47999999999996,
+    "same_sites": [
+      "MCH-3",
+      "MCH-7",
+      "MCH-8"
+    ],
+    "interpretation": "Dropping timing constraints gives an optimistic daily-capacity bound, not observed benefit."
+  },
+  "baseline_week_static": 1768.428,
+  "baseline_week_dynamic": 1768.428,
+  "shock_week_static": 1898.6827,
+  "shock_week_dynamic": 1887.9812
+}

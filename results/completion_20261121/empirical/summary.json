@@ -1,0 +1,167 @@
+{
+  "train_n": 12,
+  "selection_n": 4,
+  "test_n": 4,
+  "development_scores": {
+    "last_week": {
+      "n": 4,
+      "mae_visits_per_week": 130.5,
+      "rmse_visits_per_week": 174.88996540682373,
+      "mean_signed_error_visits_per_week": 41.0
+    },
+    "last_4_weeks_mean": {
+      "n": 4,
+      "mae_visits_per_week": 78.375,
+      "rmse_visits_per_week": 116.47491682761571,
+      "mean_signed_error_visits_per_week": 62.625
+    },
+    "nonnegative_AR1": {
+      "n": 4,
+      "mae_visits_per_week": 172.21389013614623,
+      "rmse_visits_per_week": 221.81094034285564,
+      "mean_signed_error_visits_per_week": 172.21389013614623
+    },
+    "nonnegative_AR1_plus_lagged_heat_excess_100F": {
+      "n": 4,
+      "mae_visits_per_week": 172.21389013614623,
+      "rmse_visits_per_week": 221.81094034285564,
+      "mean_signed_error_visits_per_week": 172.21389013614623
+    }
+  },
+  "test_scores": {
+    "last_week": {
+      "n": 4,
+      "mae_visits_per_week": 111.0,
+      "rmse_visits_per_week": 122.34173449808532,
+      "mean_signed_error_visits_per_week": -12.0
+    },
+    "last_4_weeks_mean": {
+      "n": 4,
+      "mae_visits_per_week": 72.625,
+      "rmse_visits_per_week": 76.3791938292098,
+      "mean_signed_error_visits_per_week": -11.125
+    },
+    "nonnegative_AR1": {
+      "n": 4,
+      "mae_visits_per_week": 87.41249194930458,
+      "rmse_visits_per_week": 135.85601911285482,
+      "mean_signed_error_visits_per_week": 87.41249194930458
+    },
+    "nonnegative_AR1_plus_lagged_heat_excess_100F": {
+      "n": 4,
+      "mae_visits_per_week": 87.41249194930458,
+      "rmse_visits_per_week": 135.85601911285482,
+      "mean_signed_error_visits_per_week": 87.41249194930458
+    }
+  },
+  "selected_model": "last_4_weeks_mean",
+  "selected_before_test": true,
+  "selection_baseline": "last_4_weeks_mean",
+  "complex_required_mae_at_most": 74.45625,
+  "coefficients": {
+    "last_week": {
+      "train": [],
+      "train_plus_selection": []
+    },
+    "last_4_weeks_mean": {
+      "train": [],
+      "train_plus_selection": []
+    },
+    "nonnegative_AR1": {
+      "train": [
+        807.8572125265607,
+        0.6822151826274911
+      ],
+      "train_plus_selection": [
+        788.5826929115045,
+        0.6691850709409817
+      ]
+    },
+    "nonnegative_AR1_plus_lagged_heat_excess_100F": {
+      "train": [
+        807.8572125265607,
+        0.6822151826274911,
+        0.0
+      ],
+      "train_plus_selection": [
+        788.5826929115045,
+        0.6691850709409817,
+        0.0
+      ]
+    }
+  },
+  "target": "20 W. Jackson St. weekly reported realized visits",
+  "not_potential_demand_or_coverage_validation": true,
+  "protocol": {
+    "locked_date_local": "2026-11-21 Asia/Shanghai",
+    "target": "Weekly realized intake visits at Phoenix 20 W. Jackson St. 24/7 respite center; aggregate posted extended-hour/overnight site visits is a secondary descriptive endpoint",
+    "scope": "Retrospective chronological validation of realized visits only; not potential demand, geographic coverage, MCH throughput or health effects",
+    "discovery_disclosure": "Before locking this protocol, official search/open snippets for 2026-09-14--20 were seen: aggregate visits 3459 and Jackson visits 2154. Other weekly values have not been machine-extracted for modeling. This is not a fully blinded or prospective validation.",
+    "week_inclusion": "Complete seven-day reporting periods within 2026-05-04--2026-09-20. Exclude May 1--3 and Sept 21--30 partial/unequal weeks; never derive weekly visits by subtracting revised cumulative totals.",
+    "development_train_end": "2026-07-26",
+    "development_selection": [
+      "2026-07-27",
+      "2026-08-23"
+    ],
+    "locked_test": [
+      "2026-08-24",
+      "2026-09-20"
+    ],
+    "models_fixed_before_full_extraction": [
+      "last_week",
+      "last_4_weeks_mean",
+      "nonnegative_AR1",
+      "nonnegative_AR1_plus_lagged_heat_excess_100F"
+    ],
+    "fit_rule": "Fit nonnegative least squares once on train data. Select by validation MAE; complex model must improve validation MAE by at least 5% over the best simple baseline. Refit selected rule on train+validation before evaluating the locked test once.",
+    "forecast_information": "Only previous observed counts and previous-week NOAA maximum-temperature summary enter primary forecasts. No contemporaneous test-week observed temperature, future actual visits or next-report cumulative totals enter prediction.",
+    "evaluation": [
+      "MAE in visits/week",
+      "RMSE in visits/week",
+      "mean_signed_error in visits/week",
+      "absolute error for each held-out week",
+      "gain relative to last-week and last-four-weeks baselines"
+    ],
+    "dependence": "Successive weeks and sites share weather/network/recording practices. Four test weeks are not four independent experiments. No iid confidence interval or deployment guarantee will be claimed.",
+    "failure_action": "If complex alternatives do not beat the baseline in development, select baseline. Preserve all model test errors as diagnostics without test-based reselection. If selected model fails on test, keep the failed validation visible and do not promote to validated planning demand.",
+    "missing_policy": "Missing source values remain missing; no digitizing plots or imputing target counts. A gap invalidates lagged pairs; never treat a gap as the immediately preceding week. If fewer than required complete periods, report the limitation rather than move cutoff after seeing scores."
+  },
+  "target_scope": "One existing 24/7 respite center; calendar-week realized intake visits, not latent unmet demand or mobile capacity",
+  "selected_test_mae_improvement_vs_last_week": 38.375,
+  "selected_beats_last_week_test": true,
+  "test_outcome_action": "Retain selected baseline/forecast only as a descriptive workload benchmark; do not feed it into district latent demand or claim service-coverage validation.",
+  "capacity_assumption_falsification": {
+    "site": "20 W. Jackson St.",
+    "week": "2026-06-15/2026-06-21",
+    "visits": 3304,
+    "days": 7,
+    "calibration_scope": "train only, complete weeks ending no later than 2026-07-26",
+    "mean_realized_visits_per_day": 472.0,
+    "at_least_one_day_visits_lower_bound": 472,
+    "interpretation": "Pigeonhole lower bound on at least one day, not a constant daily capacity estimate and not transferable to other sites/MCH."
+  },
+  "quality_flags": {
+    "weekly_minus_cumulative_difference_nonzero": [],
+    "source_table_arithmetic_inconsistencies": [
+      {
+        "week_id": 2,
+        "aggregate_week_minus_site_sum": 0,
+        "aggregate_season_minus_site_sum": -11,
+        "overview_minus_aggregate_week": 0
+      },
+      {
+        "week_id": 5,
+        "aggregate_week_minus_site_sum": -27,
+        "aggregate_season_minus_site_sum": 0,
+        "overview_minus_aggregate_week": 27
+      }
+    ]
+  },
+  "limitations": [
+    "Only four chronological test weeks; serial dependence; no iid confidence interval.",
+    "One held-out week value was seen during source discovery; retrospective, not fully blinded or prospective.",
+    "Archive counts may reflect reporting revisions; original release latency unavailable.",
+    "No district origins, turned-away demand, causal counterfactual or mobile-unit capacity in these data.",
+    "NOAA natural/climatological dates differ from the planning model 09:00 service day; this submodel uses report calendar weeks."
+  ]
+}

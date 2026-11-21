@@ -1,0 +1,110 @@
+{
+  "evidence_type": "published timetable routing plus independent source-record and numerical validation",
+  "not_observed_passenger_travel_validation": true,
+  "feed": {
+    "archive_sha256": "d8d421ce9b5667024ae32d6428d8546074d7d35e2819a1b5ef689cc7c6cc38f6",
+    "service_date": "2026-07-20",
+    "active_services": 20,
+    "active_trip_records": 7762,
+    "router_trip_patterns": 7764,
+    "calendar_txt_present": false,
+    "frequency_nonexact_rows": 4,
+    "frequency_rows_excluded": 0,
+    "exact_frequency_departures_expanded": 0,
+    "frequency_policy": "headway_bound",
+    "previous_service_days_included": false,
+    "block_continuations_inferred": false,
+    "latest_regular_arrival_seconds": 94155,
+    "latest_frequency_window_last_stop_bound_seconds": 105140,
+    "stop_based_transfer_rules": 4,
+    "restriction_counts": {
+      "pickup_excluded": 47,
+      "dropoff_excluded": 0,
+      "approximate_timepoint_rows": 330566,
+      "after_24h_rows": 1094
+    },
+    "transfer_rule_precedence": "explicit child endpoints over inherited station endpoints; equal-specificity conflicts rejected",
+    "walking": {
+      "speed_kmh": 4.8,
+      "detour": 1.35,
+      "access_egress_limit_km": 1.2,
+      "generated_transfer_limit_km": 0.5,
+      "transfer_buffer_seconds": 120
+    },
+    "scope": "Published times, with bounded boardings/search horizon and assumed walking. Headway-bound service is not a fixed timetable or actual maximum-wait guarantee."
+  },
+  "network_layer": "MAG_source_inventory_only",
+  "od_rows": 1152,
+  "districts": 12,
+  "indoor_and_candidate_destinations": 32,
+  "departures": [
+    "09:00:00",
+    "13:00:00",
+    "17:00:00"
+  ],
+  "transit_journeys_chosen": 535,
+  "headway_bound_journeys_chosen": 3,
+  "nonexact_exclusion_changed_30min_links": 0,
+  "routing_minus_proxy_minutes": {
+    "median": 48.333061775155564,
+    "min": -63.81775014743931,
+    "max": 657.7907634056983
+  },
+  "links_whose_30min_classification_changes": 39,
+  "independent_source_audits": 8,
+  "maximum_itinerary_time_residual_seconds": 0.0,
+  "matched_siting_p3": [
+    {
+      "access_case": "distance_speed_proxy",
+      "p": 3,
+      "unmet_visits": 212.76843846153844,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-8",
+      "threshold_minutes": 30
+    },
+    {
+      "access_case": "09:00:00",
+      "p": 3,
+      "unmet_visits": 278.87489999999997,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-6",
+      "threshold_minutes": 30
+    },
+    {
+      "access_case": "13:00:00",
+      "p": 3,
+      "unmet_visits": 278.87489999999997,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-6",
+      "threshold_minutes": 30
+    },
+    {
+      "access_case": "17:00:00",
+      "p": 3,
+      "unmet_visits": 269.7489839160839,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-6",
+      "threshold_minutes": 30
+    },
+    {
+      "access_case": "sampled_median",
+      "p": 3,
+      "unmet_visits": 278.87489999999997,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-6",
+      "threshold_minutes": 30
+    },
+    {
+      "access_case": "sampled_maximum",
+      "p": 3,
+      "unmet_visits": 278.87489999999997,
+      "worst_unmet_fraction": 1.0,
+      "chosen": "MCH-3,MCH-4,MCH-6",
+      "threshold_minutes": 30
+    }
+  ],
+  "scope": "Earliest arrival over bounded boardings/horizon, except nonexact headway service uses declared waiting bound. Walking and representative origins remain assumptions. Departure quantiles describe selected departure clocks, not a probability distribution or empirical error.",
+  "input_sha256": {
+    "资料/02_降温网络/GTFS/mdb-147-202606160033/mdb-147-202606160033.zip": "d8d421ce9b5667024ae32d6428d8546074d7d35e2819a1b5ef689cc7c6cc38f6"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "macros": {
+    "EmpiricalTrainN": 12,
+    "EmpiricalSelectN": 4,
+    "EmpiricalTestN": 4,
+    "EmpiricalMAE": "72.625",
+    "PersistenceMAE": "111.000",
+    "EmpiricalGainPct": "34.57",
+    "TransitODN": 1224,
+    "TransitMedian": "43.229",
+    "TransitRouteScope": "at most three boardings, a 240-minute transit search, and assumed walking and frequency waits",
+    "CoreUnmet": "227.295",
+    "CoreBaseline": "305.511",
+    "WeekStatic": "1768.428",
+    "WeekDynamic": "1768.428",
+    "TestsPassed": 162,
+    "QfourDown": "MAG0145",
+    "QfourNoMove": "280.897",
+    "QfourBest": "275.703",
+    "QfourGain": "5.194",
+    "QfourHours": "2.37",
+    "VehicleNoMove": "262.52",
+    "VehicleBest": "248.547",
+    "VehicleGainOne": "13.973",
+    "VehicleGainMid": "43.681",
+    "VehicleGainHigh": "86.97",
+    "StressPten": 0.0,
+    "StressPmedian": 0.487,
+    "StressPninety": 21.655,
+    "StressPosPct": "59.0"
+  },
+  "source_files": [
+    "base/core/summary.json",
+    "base/tests.log",
+    "empirical/summary.json",
+    "gtfs_city/summary.json",
+    "gtfs_city/od_by_departure.csv",
+    "base/dated_pipeline/summary.json",
+    "base/q4/stress.json",
+    "base/q4/scenario_table.csv"
+  ],
+  "sha256": {
+    "base/core/summary.json": "d1e3a237f6acc1b0519eaa1972aa9eda86123aeb039daec3af6f603921628f92",
+    "base/tests.log": "aba5c59029319799d94a4682fa23c886c3d6c2559166a07de6ea3f10320a3749",
+    "empirical/summary.json": "13f30fcae8d4647f452fc5edf508283cf049ff105bd75ebcf0533999f21dd569",
+    "gtfs_city/summary.json": "be0f6a5c4b3b4c9fe19bbca921dcab739943bb3869e65f3e3d4b192e72683cb5",
+    "gtfs_city/od_by_departure.csv": "bb6f351207888911d73efe2f000da7cfce82c8649e278cdebfb5977387ff4dab",
+    "base/dated_pipeline/summary.json": "d3fcfec3b3d3b71fc83f0486ec07ae4e07125fb6d8a7e2e5709cfbd9d7c1ef5a",
+    "base/q4/stress.json": "ae00f8eef22c4cf61a85b23ecc93f0ecc7f05057aea8fc24981163e01b663080",
+    "base/q4/scenario_table.csv": "a81a8945893378c331f1212ab1d2ab5dc3a9dc6ebd14b2ee6d3d01402a934f26"
+  }
+}

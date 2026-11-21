@@ -1,0 +1,29 @@
+[
+  {
+    "district_id": "D04",
+    "departure": "09:00:00",
+    "site_id": "MAG0071",
+    "headway_bound_minutes": 63.18539949771075,
+    "exclude_nonexact_minutes": 67.90380941768369,
+    "difference_minutes": 4.718409919972942,
+    "changes_30min_classification": false
+  },
+  {
+    "district_id": "D04",
+    "departure": "13:00:00",
+    "site_id": "MAG0071",
+    "headway_bound_minutes": 64.18539949771075,
+    "exclude_nonexact_minutes": 67.90380941768369,
+    "difference_minutes": 3.7184099199729417,
+    "changes_30min_classification": false
+  },
+  {
+    "district_id": "D04",
+    "departure": "17:00:00",
+    "site_id": "MAG0071",
+    "headway_bound_minutes": 65.18539949771075,
+    "exclude_nonexact_minutes": 67.90380941768369,
+    "difference_minutes": 2.7184099199729417,
+    "changes_30min_classification": false
+  }
+]

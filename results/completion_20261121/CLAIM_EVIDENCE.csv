@@ -1,0 +1,10 @@
+﻿claim,statement,result_file,fields,unit,scope
+N01,真实同站周到访回顾性检验,empirical/summary.json,"test_scores,last_4_weeks_mean;train_n/selection_n/test_n",MAE visits/week,"One-step, report availability unverified, one test value previously seen"
+N02,容量与小时假设被真实资料约束,empirical/capacity_reconciliation.csv,train-only at_least_one_day_count_lower_bound,visits on at least one day,Not a constant capacity estimate; no transfer to MCH or all libraries
+N03,官方运营层改变条件网络,operations/official_inventory_contrast.csv,"scenario,p,unmet,chosen",visits/representative day,same demand/proxy; added capacities assumed; published hours not door logs
+N04,排班语义与路径收支核验,gtfs_city/independent_source_leg_audits.json,"ride_checks,full_itinerary_time_residual_seconds",seconds,"Published schedule verification, not observed travel"
+N05,交通结构能改变可达与选址,gtfs_city/matched_inventory_siting.csv,"access_case,unmet_visits,chosen",visits/day,Same facilities/demand; limited boardings/walking/headway model
+N06,运营条件直接限制供给,operations/operational_constraint_contrast.csv,"scenario,unmet,chosen",visits/day,"Missing confirmations remain assumptions, not permits"
+N07,不预知未来的共享稳健计划,operations/nonanticipative_plan_comparison.csv,"fixed_robust_plan_unmet_on_path,robust_rectangular_upper_bound",weighted unmet visits,Rectangular annual worst cases; information differs from oracle/rolling
+N08,模型的数值与数学证书,base/tests.log,passed tests; test_completion_invariants.py,numerical equalities/inequalities,Not empirical citywide validity
+N09,默认零搬迁收益不能泛化,../../docs/TECHNICAL_DERIVATION_20261121.md,common multiplier counterexample,3.125 visits in synthetic counterexample,Fixed supply need not scale with demand
