@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \graphicspath{{}{mcm2027-b-phoenix-cooling/}}
 \usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \usepackage{setspace}
 \usepackage{indentfirst}
 \usepackage{needspace}
@@ -88,8 +90,10 @@
 
 Phoenix 的 Heat Relief Network 包含休息中心、降温中心、饮水站和其他合作点。设施类型决定其能否提供空调室内空间，因此不能把饮水站的数量当作降温容量\citep{phoenixplan}。固定设施也可能无法覆盖所有地区或晚间时段。移动降温枢纽可以补充固定网络，但车辆的旅行、搭建、人员和停服会减少当日有效服务。
 
+因此，我们不从“先买几台车”开始，而先问缺口在哪里、发生在什么时段，再判断移动资源是否能补上它。模型按需求形成、可达过滤、窗口容量和服务分配依次核算，最后才进入选址、调度和投资决策。这个顺序的好处是，每个决策都能追溯到同一套人次账本；代价是，需求和容量缺少现场观测时，结论必须保留为条件情景。
+
 \subsection{研究问题与贡献}
-本文按赛题五问建立一致的需求—供给—分配链。Q1 描述固定网络缺口；Q2 评估移动枢纽数量、选址和公平；Q3 比较七日固定与动态调度；Q4 在同一事故输入下比较不搬与重新部署；Q5 在年度预算和资产约束下比较五年路径。本文的贡献是把设施类型、营业日历、到达时间和服务人次放入同一口径，并明确区分数值算法验证与现实服务验证。
+建模路径是“先诊断、再决策”。Q1 描述固定网络缺口及其空间分布；Q2 在缺口结构上比较移动枢纽数量、选址和公平；Q3、Q4 把静态服务网络放入时间维，分别研究七日搬迁和设施中断；Q5 再把同一日服务核算接入年度预算与资产约束。五问共享需求—供给—分配链，因此上游需求或营业假设变化会传递至后续决策。本文的贡献是统一设施资格、营业窗口、代理可达性和服务人次口径，并将模型内的求解正确性与现实服务效果验证明确分开。
 
 \section{问题重述与建模路径}
 题目允许使用公开数据，也允许在无法匹配观测数据时构造明确记录的模拟区—站网络。我们把 12 区、8 个移动候选点和每台每日最多 250 visitor-visits 作为测试规模；它们均为竞赛假设，不是官方凤凰城边界、批准站址或实测容量\citep{mcm2027b}。移动枢纽被视为对既有网络的补充，而非替代。
@@ -158,6 +162,26 @@ $C_y$ & 年度完整成本 & 美元/年 \\
 
 \section{核心模型}
 
+\subsection{服务流机理与需求生成}
+本模型的服务机理是一条有方向的流：人口与热暴露形成规划需求，出行时间筛出可达站点，营业窗口限制供给发生时段，有限容量决定实际分配量，剩余部分成为未满足需求。下图概括这条核算链及其与五问决策的关系。
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  node distance=0.42cm,
+  box/.style={draw=black!55, rounded corners=2pt, text width=0.82\textwidth, minimum height=0.58cm, align=center, font=\small},
+  arr/.style={-{Stealth[length=5pt]}, thick, black!60}
+]
+  \node[box, fill=blue!8] (d) {需求：人口 $\times$ 热暴露 $\times$ 脆弱性 $\to D_{ith}$};
+  \node[box, fill=teal!8, below=of d] (a) {可达：设施合格、代理行程在阈值内 $\to A_{ij}$};
+  \node[box, fill=orange!12, below=of a] (k) {供给：营业窗口 $\cap$ 服务时段 $\cap$ 就绪时刻 $\to K_{jth}$};
+  \node[box, fill=red!8, below=of k] (u) {分配：需求守恒与容量约束 $\to x_{ijth},U_{ith}$};
+  \node[box, fill=black!5, below=of u] (q) {决策：Q2 选址 $\to$ Q3 调度 $\to$ Q4 响应 $\to$ Q5 投资};
+  \draw[arr] (d) -- (a); \draw[arr] (a) -- (k); \draw[arr] (k) -- (u); \draw[arr] (u) -- (q);
+\end{tikzpicture}
+\caption{从需求形成到规划决策的条件服务流。箭头表示模型输入依赖，不代表已观测到的因果效应。}
+\label{fig:mechanism}
+\end{figure}
+
 \subsection{需求与分时守恒}
 需求生成按代码实现的连续链为
 \begin{align}
@@ -187,7 +211,7 @@ $C_y$ & 年度完整成本 & 美元/年 \\
 \end{equation}
 式中 $S_t$ 是 24 小时服务日区间，区间长度以小时计。跨夜营业窗口使用相邻日期日历；未知小时按明确的保守工作规则处理。延时仅改变供给发生的时间位置，不会自动提高每日总容量。
 
-\subsection{选址、分配与公平}
+\subsection{匹配、选址与公平}
 区到站代理旅行时间定义为 $\tau_{ij}=1.35d_{ij}/v_m+w_m$，其中 $d_{ij}$ 为模拟区代表点至站点的直线距离，$m$ 为步行或公交代理。步行取 $v_m=4.8$ km/h、$w_m=0$；公交代理取 $v_m=15$ km/h、$w_m=10$ min。可行边 $A_{ij}=\mathbb{1}(\tau_{ij}\leq30\text{ min})$，且饮水站不符合室内降温资格。该式是距离代理的定义，不是根据本地行程拟合的经验模型；区代表点、速度和等待时间均可能改变可达集合，应由人口加权起点、同日 GTFS 门到门行程和实测路线替换。给定候选集合和选址变量 $y_j$，可行边还要求站点当时营业。效率目标为
 \begin{align}
  \min\quad & \sum_{ith} U_{ith}, \label{eq:objective}\\
@@ -196,10 +220,15 @@ $C_y$ & 年度完整成本 & 美元/年 \\
  & x_{ijth}=0, &&\text{若区站链接不可行},\\
  & \sum_{j\in M}y_j\leq p,\quad y_j\in\{0,1\}. &&
 \end{align}
-每个 $p$ 下枚举有限候选组合，对每个固定点集求联合时段 LP。公平结果另报全区最大未满足率 $\max_i(\sum_hU_{ith}/\sum_hD_{ith})$、预先定义豁免集合后的最大值和覆盖率 Gini。豁免后的指标不能取代全区结果。
+每个 $p$ 下枚举有限候选组合，对每个固定点集求联合时段 LP。该结构与经典覆盖选址问题同属离散设施选址模型族\citep{church1974,daskin2013}，但本文将二元“覆盖”扩展为类型、时间和营业共同定义的可行边，并以未满足人次最小化直接接入守恒账本；公式\,(\ref{eq:objective}) 是本题模型化，不是从文献直接抄用的完整公式。8 个候选点规模允许完整枚举，故优化解只对已定义的有限模型声称最优。公平结果另报全区最大未满足率 $\max_i(\sum_hU_{ith}/\sum_hD_{ith})$、预先定义豁免集合后的最大值和覆盖率 Gini。豁免后的指标不能取代全区结果。
 
 \subsection{动态调度、中断和年度库存}
-Q3 以每日部署组合为状态，用逐车匹配、搬迁时间和就绪后的营业窗口计算服务。超过 24 小时的搬迁不允许；不搬迁是显式候选。有限离散模型内用动态规划最小化七日累计未满足量。
+Q3 以每日部署组合为状态，用逐车匹配、搬迁时间和就绪后的营业窗口计算服务。超过 24 小时的搬迁不允许；不搬迁是显式候选。给定当前组合 $B_t$，累计缺口递推为
+\begin{equation}
+ V_t(B_t)=\min_{B_{t-1}}\left\{V_{t-1}(B_{t-1})+u_t(B_{t-1},B_t)\right\},
+ \label{eq:week-dp}
+\end{equation}
+其中 $u_t$ 是由当日行程、就绪时间与容量模型算得的缺口；对全部有限组合和逐车匹配求解时，该递推在声明的同日搬迁范围内全局最小化七日缺口\citep{bellman1957}。它没有证明真实路况预测准确，也没有优化搬迁次数或工时。
 
 Q4 固定事故前部署及同一故障、需求和交通扰动，分别计算不搬和重调度结果。场地关闭使位置不可用但不减少车队；车辆故障减少可用车辆数。响应收益为
 \begin{equation}
@@ -272,7 +301,7 @@ Q5 分开年初资产库存 $O_y$、新购 $B_y$ 和在役数量 $A_y$：
 
 服务日按当地 09:00 至次日 09:00 定义，夜间为 22:00 至次日 09:00；跨夜营业窗口与相邻日历求交。起始部署当日视为已就绪，每台移动枢纽需要可并行工作的司机和搭建团队；模型旅行时间为坐标距离/假定车速加 0.5 小时搭建时间。
 
-合成基准中，固定和动态方案累计未满足量均为 1768.428 人次，最优部署七天均为 MCH-3、MCH-7、MCH-8。需求只按同一日系数整体变化时，空间相对排序不变，因此搬迁收益为零。局部冲击会改变结论：若 D05 在第 3--5 日需求乘以 3，固定方案累计缺口为 1898.683，动态方案为 1887.981，改善 10.702 人次/七日。该结果只在给定候选点、旅行代理和团队规则内最优，不能外推到真实道路或人员调度。
+合成基准中，固定和动态方案累计未满足量均为 1768.428 人次，最优部署七天均为 MCH-3、MCH-7、MCH-8。需求只按同一日系数整体变化时，空间相对排序不变，因此搬迁收益为零。这是模型给出的可检验预期，而不是事后声称“搬迁总有价值”。局部冲击会改变结论：若 D05 在第 3--5 日需求乘以 3，固定方案累计缺口为 1898.683，动态方案为 1887.981，改善 10.702 人次/七日。故在本模型中，只有需求空间结构变化带来的增量服务超过搬迁停服损失时，移动才有收益；该结果只对既定候选点、旅行代理和团队规则成立。
 
 MAG 日期日历情景则得到固定方案累计缺口 1700.665、动态方案 1679.511，局部最优移动减少 21.154 人次/七日。动态时点为第 6 日和第 7 日。与合成基准并列报告说明移动收益取决于需求空间结构与设施营业日历，而非所有热浪均无搬迁价值。
 
@@ -374,6 +403,15 @@ Valley Metro. \emph{GTFS Static Schedule Feeds}, 2026 summer service periods (fe
 \bibitem{acs}
 City of Phoenix Housing and Community Development Department. \emph{2024 Neighborhood and Demographic Profile}, Appendix: urban-village population, household, and age counts derived from ACS 2018--2022, pp. 34, 37. These are report-derived counts, not the paper's simulated 12-district boundaries.
 
+\bibitem{church1974}
+Church, R. and ReVelle, C. The Maximal Covering Location Problem. \emph{Papers of the Regional Science Association}, 32(1), 101--118, 1974. doi:10.1111/j.1435-5597.1974.tb00902.x.
+
+\bibitem{daskin2013}
+Daskin, M. S. \emph{Network and Discrete Location: Models, Algorithms, and Applications}. 2nd ed. Wiley, 2013.
+
+\bibitem{bellman1957}
+Bellman, R. \emph{Dynamic Programming}. Princeton University Press, 1957.
+
 \bibitem{mag}
 Maricopa Association of Governments. \emph{Heat Relief Network Public View}, Phoenix records, 2026 season; snapshot queried 2026-11-18. ArcGIS FeatureServer item and archived response/checksum listed in the project repository.
 
@@ -406,6 +444,6 @@ COMAP. \emph{MCM/ICM Policy on the Use of Generative AI Tools}. Contest policy d
 \section*{AI 工具使用报告}
 \addcontentsline{toc}{section}{AI 工具使用报告}
 
-本工作稿使用 OpenAI Codex 协助整理结构、核对仓库中的代码与数值结果、修订中文表述、编辑绘图脚本并编辑 \texttt{2702.tex}。图件由 Python 根据团队模型输出绘制，未使用生成式图像模型；AI 工具不构成外部观测或独立验证。提交前，团队成员必须复算关键结果、核对来源和图件，并按竞赛政策确认实际协助记录。AI 使用报告按赛题/竞赛说明单独处理，不纳入主体页数统计；最终页数以提交规则和终稿版面复核为准\citep{comapAI}。
+本工作稿使用 OpenAI Codex 协助整理结构、核对仓库中的代码与数值结果、修订中文表述、编辑绘图脚本并编辑 \texttt{2702.tex}；另参考了用户提供的其他 AI 草稿中的叙事结构建议。图件由 Python 根据团队模型输出绘制，未使用生成式图像模型；AI 工具不构成外部观测或独立验证。提交前，团队成员必须复算关键结果、核对来源和图件，并按竞赛政策确认实际协助记录。AI 使用报告按赛题/竞赛说明单独处理，不纳入主体页数统计；最终页数以提交规则和终稿版面复核为准\citep{comapAI}。
 
 \end{document}
