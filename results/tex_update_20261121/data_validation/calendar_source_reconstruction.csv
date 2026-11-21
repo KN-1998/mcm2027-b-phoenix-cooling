@@ -1,0 +1,351 @@
+﻿objectid,name,kind,date,weekday,source_open_raw,source_close_raw,source_status,numeric_scoring_included,legacy_envelope_open,legacy_envelope_close,revised_open,revised_close,legacy_mean_endpoint_error_hours,revised_mean_endpoint_error_hours
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-20,Monday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-21,Tuesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-22,Wednesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-23,Thursday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-24,Friday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,17.0,,,,
+39,51st Avenue Recovery Center  ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,17.0,,,,
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-20,Monday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-21,Tuesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-22,Wednesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-23,Thursday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-24,Friday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.5,,,,
+41,27th Avenue Integrated Care  ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.5,,,,
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-20,Monday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-21,Tuesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-22,Wednesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-23,Thursday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-24,Friday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,17.0,,,,
+42,McDowell Road Integrated Care  ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,17.0,,,,
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-20,Monday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-21,Tuesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-22,Wednesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-23,Thursday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-24,Friday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.5,,,,
+44,23rd Avenue Recovery Center  ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.5,,,,
+65,Agave Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+65,Agave Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+65,Agave Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+65,Agave Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+65,Agave Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+65,Agave Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+65,Agave Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+66,Century Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-21,Tuesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-22,Wednesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-23,Thursday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+66,Century Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+67,Prickly Pear Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+67,Prickly Pear Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+68,Cholla Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,17.0,9.0,17.0,0.0,0.0
+68,Cholla Library  ,Cooling Center,2026-07-26,Sunday,12:00 PM,5:00 PM,open_clock_pair,True,9.0,17.0,12.0,17.0,1.5,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+69,Desert Broom Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+70,Desert Sage Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-21,Tuesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-22,Wednesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-23,Thursday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+70,Desert Sage Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+71,Harmon Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-21,Tuesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-22,Wednesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-23,Thursday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+71,Harmon Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+72,Ironwood Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+72,Ironwood Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+73,Juniper Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+73,Juniper Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+73,Juniper Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+73,Juniper Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+73,Juniper Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+73,Juniper Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+73,Juniper Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+74,Mesquite Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+74,Mesquite Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+75,Ocotillo Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-21,Tuesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-22,Wednesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-23,Thursday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+75,Ocotillo Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+76,Palo Verde Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+76,Palo Verde Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+77,Saguaro Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+77,Saguaro Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+78,Yucca Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+78,Yucca Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+78,Yucca Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+78,Yucca Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,9.0,18.0,0.0,0.0
+78,Yucca Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+78,Yucca Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+78,Yucca Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+80,Acacia Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-21,Tuesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-22,Wednesday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-23,Thursday,10:00 AM,6:00 PM,open_clock_pair,True,9.0,18.0,10.0,18.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,18.0,9.0,17.0,0.5,0.0
+80,Acacia Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,18.0,,,,
+145,Downtown Family Health Clinic,Cooling Center,2026-07-20,Monday,7:00 AM,8:00 PM,open_clock_pair,True,7.0,20.0,7.0,20.0,0.0,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-21,Tuesday,7:00 AM,7:00 PM,open_clock_pair,True,7.0,20.0,7.0,19.0,0.5,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-22,Wednesday,7:00 AM,7:00 PM,open_clock_pair,True,7.0,20.0,7.0,19.0,0.5,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-23,Thursday,7:00 AM,7:00 PM,open_clock_pair,True,7.0,20.0,7.0,19.0,0.5,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-24,Friday,7:00 AM,7:00 PM,open_clock_pair,True,7.0,20.0,7.0,19.0,0.5,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-25,Saturday,8:00 AM,5:00 PM,open_clock_pair,True,7.0,20.0,8.0,17.0,2.0,0.0
+145,Downtown Family Health Clinic,Cooling Center,2026-07-26,Sunday,8:00 AM,5:00 PM,open_clock_pair,True,7.0,20.0,8.0,17.0,2.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-20,Monday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-21,Tuesday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-22,Wednesday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-23,Thursday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-24,Friday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+167,Unlimited Potential,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,9.0,16.0,,,,
+167,Unlimited Potential,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,16.0,,,,
+176,City of Refuge,Hydration Station,2026-07-20,Monday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+176,City of Refuge,Hydration Station,2026-07-21,Tuesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+176,City of Refuge,Hydration Station,2026-07-22,Wednesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+176,City of Refuge,Hydration Station,2026-07-23,Thursday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+176,City of Refuge,Hydration Station,2026-07-24,Friday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+176,City of Refuge,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,17.0,,,,
+176,City of Refuge,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,17.0,,,,
+285,Desert Mission Health Center,Hydration Station,2026-07-20,Monday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+285,Desert Mission Health Center,Hydration Station,2026-07-21,Tuesday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+285,Desert Mission Health Center,Hydration Station,2026-07-22,Wednesday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+285,Desert Mission Health Center,Hydration Station,2026-07-23,Thursday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+285,Desert Mission Health Center,Hydration Station,2026-07-24,Friday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+285,Desert Mission Health Center,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,7.0,18.0,,,,
+285,Desert Mission Health Center,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,7.0,18.0,,,,
+286,Palomino Health Center,Hydration Station,2026-07-20,Monday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+286,Palomino Health Center,Hydration Station,2026-07-21,Tuesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+286,Palomino Health Center,Hydration Station,2026-07-22,Wednesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+286,Palomino Health Center,Hydration Station,2026-07-23,Thursday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+286,Palomino Health Center,Hydration Station,2026-07-24,Friday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+286,Palomino Health Center,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,17.0,,,,
+286,Palomino Health Center,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,17.0,,,,
+287,Venado Valley Health Center,Hydration Station,2026-07-20,Monday,7:30 AM,5:00 PM,open_clock_pair,True,7.5,17.0,7.5,17.0,0.0,0.0
+287,Venado Valley Health Center,Hydration Station,2026-07-21,Tuesday,7:30 AM,5:00 PM,open_clock_pair,True,7.5,17.0,7.5,17.0,0.0,0.0
+287,Venado Valley Health Center,Hydration Station,2026-07-22,Wednesday,7:30 AM,5:00 PM,open_clock_pair,True,7.5,17.0,7.5,17.0,0.0,0.0
+287,Venado Valley Health Center,Hydration Station,2026-07-23,Thursday,7:30 AM,5:00 PM,open_clock_pair,True,7.5,17.0,7.5,17.0,0.0,0.0
+287,Venado Valley Health Center,Hydration Station,2026-07-24,Friday,7:30 AM,5:00 PM,open_clock_pair,True,7.5,17.0,7.5,17.0,0.0,0.0
+287,Venado Valley Health Center,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,7.5,17.0,,,,
+287,Venado Valley Health Center,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,7.5,17.0,,,,
+288,Midtown Health Center,Hydration Station,2026-07-20,Monday,7:30 AM,5:30 PM,open_clock_pair,True,7.5,17.5,7.5,17.5,0.0,0.0
+288,Midtown Health Center,Hydration Station,2026-07-21,Tuesday,7:30 AM,5:30 PM,open_clock_pair,True,7.5,17.5,7.5,17.5,0.0,0.0
+288,Midtown Health Center,Hydration Station,2026-07-22,Wednesday,7:30 AM,5:30 PM,open_clock_pair,True,7.5,17.5,7.5,17.5,0.0,0.0
+288,Midtown Health Center,Hydration Station,2026-07-23,Thursday,7:30 AM,5:30 PM,open_clock_pair,True,7.5,17.5,7.5,17.5,0.0,0.0
+288,Midtown Health Center,Hydration Station,2026-07-24,Friday,7:30 AM,5:30 PM,open_clock_pair,True,7.5,17.5,7.5,17.5,0.0,0.0
+288,Midtown Health Center,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,7.5,17.5,,,,
+288,Midtown Health Center,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,7.5,17.5,,,,
+292,Burton Barr Central Library,Cooling Center,2026-07-20,Monday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,19.0,9.0,17.0,1.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-21,Tuesday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-22,Wednesday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-23,Thursday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,19.0,9.0,17.0,1.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,19.0,9.0,17.0,1.0,0.0
+292,Burton Barr Central Library,Cooling Center,2026-07-26,Sunday,12:00 PM,5:00 PM,open_clock_pair,True,9.0,19.0,12.0,17.0,2.5,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-20,Monday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-21,Tuesday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-22,Wednesday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-23,Thursday,9:00 AM,7:00 PM,open_clock_pair,True,9.0,19.0,9.0,19.0,0.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-24,Friday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,19.0,9.0,17.0,1.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,9.0,19.0,9.0,17.0,1.0,0.0
+297,South Mountain Community Library  ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,19.0,,,,
+343,South Mountain Clinic,Hydration Station,2026-07-20,Monday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+343,South Mountain Clinic,Hydration Station,2026-07-21,Tuesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+343,South Mountain Clinic,Hydration Station,2026-07-22,Wednesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+343,South Mountain Clinic,Hydration Station,2026-07-23,Thursday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+343,South Mountain Clinic,Hydration Station,2026-07-24,Friday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+343,South Mountain Clinic,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.0,,,,
+343,South Mountain Clinic,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.0,,,,
+344,Oak Clinic,Hydration Station,2026-07-20,Monday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+344,Oak Clinic,Hydration Station,2026-07-21,Tuesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+344,Oak Clinic,Hydration Station,2026-07-22,Wednesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+344,Oak Clinic,Hydration Station,2026-07-23,Thursday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+344,Oak Clinic,Hydration Station,2026-07-24,Friday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+344,Oak Clinic,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.5,,,,
+344,Oak Clinic,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.5,,,,
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-20,Monday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-21,Tuesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-22,Wednesday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-23,Thursday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-24,Friday,8:00 AM,4:30 PM,open_clock_pair,True,8.0,16.5,8.0,16.5,0.0,0.0
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.5,,,,
+353,Desert Cove Clinic (IHH),Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.5,,,,
+355,Mitchell Clinic,Cooling Center,2026-07-20,Monday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+355,Mitchell Clinic,Cooling Center,2026-07-21,Tuesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+355,Mitchell Clinic,Cooling Center,2026-07-22,Wednesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+355,Mitchell Clinic,Cooling Center,2026-07-23,Thursday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+355,Mitchell Clinic,Cooling Center,2026-07-24,Friday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+355,Mitchell Clinic,Cooling Center,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.0,,,,
+355,Mitchell Clinic,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.0,,,,
+388,Victory Community Church ,Hydration Station,2026-07-20,Monday,9:00 AM,10:00 AM,open_clock_pair,True,9.0,10.0,9.0,10.0,0.0,0.0
+388,Victory Community Church ,Hydration Station,2026-07-21,Tuesday,9:00 AM,10:00 AM,open_clock_pair,True,9.0,10.0,9.0,10.0,0.0,0.0
+388,Victory Community Church ,Hydration Station,2026-07-22,Wednesday,9:00 AM,10:00 AM,open_clock_pair,True,9.0,10.0,9.0,10.0,0.0,0.0
+388,Victory Community Church ,Hydration Station,2026-07-23,Thursday,9:00 AM,10:00 AM,open_clock_pair,True,9.0,10.0,9.0,10.0,0.0,0.0
+388,Victory Community Church ,Hydration Station,2026-07-24,Friday,9:00 AM,10:00 AM,open_clock_pair,True,9.0,10.0,9.0,10.0,0.0,0.0
+388,Victory Community Church ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,9.0,10.0,,,,
+388,Victory Community Church ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,10.0,,,,
+400,FIBCO Family Services,Hydration Station,2026-07-20,Monday,,,unknown_blank_pair,False,9.0,14.0,,,,
+400,FIBCO Family Services,Hydration Station,2026-07-21,Tuesday,9:00 AM,2:00 PM,open_clock_pair,True,9.0,14.0,9.0,14.0,0.0,0.0
+400,FIBCO Family Services,Hydration Station,2026-07-22,Wednesday,9:00 AM,2:00 PM,open_clock_pair,True,9.0,14.0,9.0,14.0,0.0,0.0
+400,FIBCO Family Services,Hydration Station,2026-07-23,Thursday,,,unknown_blank_pair,False,9.0,14.0,,,,
+400,FIBCO Family Services,Hydration Station,2026-07-24,Friday,9:00 AM,2:00 PM,open_clock_pair,True,9.0,14.0,9.0,14.0,0.0,0.0
+400,FIBCO Family Services,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,9.0,14.0,,,,
+400,FIBCO Family Services,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,14.0,,,,
+496,The Reborn Church ,Hydration Station,2026-07-20,Monday,,,unknown_blank_pair,False,17.0,19.5,,,,
+496,The Reborn Church ,Hydration Station,2026-07-21,Tuesday,,,unknown_blank_pair,False,17.0,19.5,,,,
+496,The Reborn Church ,Hydration Station,2026-07-22,Wednesday,5:00 PM,7:30 PM,open_clock_pair,True,17.0,19.5,17.0,19.5,0.0,0.0
+496,The Reborn Church ,Hydration Station,2026-07-23,Thursday,,,unknown_blank_pair,False,17.0,19.5,,,,
+496,The Reborn Church ,Hydration Station,2026-07-24,Friday,,,unknown_blank_pair,False,17.0,19.5,,,,
+496,The Reborn Church ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,17.0,19.5,,,,
+496,The Reborn Church ,Hydration Station,2026-07-26,Sunday,8:30 AM,12:30 PM,open_clock_pair,True,17.0,19.5,8.5,12.5,7.75,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-20,Monday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-21,Tuesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-22,Wednesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-23,Thursday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-24,Friday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-25,Saturday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+513,De La Cruz Tire Shop,Hydration Station,2026-07-26,Sunday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-20,Monday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-21,Tuesday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-22,Wednesday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-23,Thursday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-24,Friday,7:00 AM,6:00 PM,open_clock_pair,True,7.0,18.0,7.0,18.0,0.0,0.0
+518,Valle del Sol Central,Cooling Center,2026-07-25,Saturday,,,unknown_blank_pair,False,7.0,18.0,,,,
+518,Valle del Sol Central,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,7.0,18.0,,,,
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-20,Monday,5:00 AM,5:00 PM,open_clock_pair,True,5.0,17.0,5.0,17.0,0.0,0.0
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-21,Tuesday,5:00 AM,5:00 PM,open_clock_pair,True,5.0,17.0,5.0,17.0,0.0,0.0
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-22,Wednesday,5:00 AM,5:00 PM,open_clock_pair,True,5.0,17.0,5.0,17.0,0.0,0.0
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-23,Thursday,5:00 AM,5:00 PM,open_clock_pair,True,5.0,17.0,5.0,17.0,0.0,0.0
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-24,Friday,5:00 AM,5:00 PM,open_clock_pair,True,5.0,17.0,5.0,17.0,0.0,0.0
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-25,Saturday,,,unknown_blank_pair,False,5.0,17.0,,,,
+519,Valle del Sol South Phoenix ,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,5.0,17.0,,,,
+521,Valle del Sol - Indian School,Cooling Center,2026-07-20,Monday,7:00 AM,5:00 PM,open_clock_pair,True,7.0,17.0,7.0,17.0,0.0,0.0
+521,Valle del Sol - Indian School,Cooling Center,2026-07-21,Tuesday,7:00 AM,5:00 PM,open_clock_pair,True,7.0,17.0,7.0,17.0,0.0,0.0
+521,Valle del Sol - Indian School,Cooling Center,2026-07-22,Wednesday,7:00 AM,5:00 PM,open_clock_pair,True,7.0,17.0,7.0,17.0,0.0,0.0
+521,Valle del Sol - Indian School,Cooling Center,2026-07-23,Thursday,7:00 AM,5:00 PM,open_clock_pair,True,7.0,17.0,7.0,17.0,0.0,0.0
+521,Valle del Sol - Indian School,Cooling Center,2026-07-24,Friday,7:00 AM,5:00 PM,open_clock_pair,True,7.0,17.0,7.0,17.0,0.0,0.0
+521,Valle del Sol - Indian School,Cooling Center,2026-07-25,Saturday,,,unknown_blank_pair,False,7.0,17.0,,,,
+521,Valle del Sol - Indian School,Cooling Center,2026-07-26,Sunday,,,unknown_blank_pair,False,7.0,17.0,,,,
+526,ATR Resource Services,Hydration Station,2026-07-20,Monday,9:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,9.0,16.0,0.5,0.0
+526,ATR Resource Services,Hydration Station,2026-07-21,Tuesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+526,ATR Resource Services,Hydration Station,2026-07-22,Wednesday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+526,ATR Resource Services,Hydration Station,2026-07-23,Thursday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+526,ATR Resource Services,Hydration Station,2026-07-24,Friday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,16.0,8.0,16.0,0.0,0.0
+526,ATR Resource Services,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,16.0,,,,
+526,ATR Resource Services,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,16.0,,,,
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-20,Monday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-21,Tuesday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-22,Wednesday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-23,Thursday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-24,Friday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,18.0,,,,
+530,Mountain Park Gateway Clinic ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,18.0,,,,
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-20,Monday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-21,Tuesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-22,Wednesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-23,Thursday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-24,Friday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-25,Saturday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,19.0,8.0,17.0,1.0,0.0
+531,Mountain Park Baseline Clinic,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,19.0,,,,
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-20,Monday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-21,Tuesday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-22,Wednesday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-23,Thursday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-24,Friday,8:00 AM,6:00 PM,open_clock_pair,True,8.0,18.0,8.0,18.0,0.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-25,Saturday,8:00 AM,4:00 PM,open_clock_pair,True,8.0,18.0,8.0,16.0,1.0,0.0
+534,Mountain Park Maryvale Clinic,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,18.0,,,,
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-20,Monday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-21,Tuesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-22,Wednesday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-23,Thursday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-24,Friday,8:00 AM,7:00 PM,open_clock_pair,True,8.0,19.0,8.0,19.0,0.0,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-25,Saturday,8:30 AM,5:00 PM,open_clock_pair,True,8.0,19.0,8.5,17.0,1.25,0.0
+535,Mountain Park Baseline Jesse Owens Clinic,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,19.0,,,,
+559,Phoenix Dining room,Cooling Center,2026-07-20,Monday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-21,Tuesday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-22,Wednesday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-23,Thursday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-24,Friday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-25,Saturday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+559,Phoenix Dining room,Cooling Center,2026-07-26,Sunday,1:30 PM,5:00 PM,open_clock_pair,True,13.5,17.0,13.5,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-20,Monday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-21,Tuesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-22,Wednesday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-23,Thursday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-24,Friday,8:00 AM,5:00 PM,open_clock_pair,True,8.0,17.0,8.0,17.0,0.0,0.0
+568,Metro Center,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,8.0,17.0,,,,
+568,Metro Center,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,8.0,17.0,,,,
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-20,Monday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-21,Tuesday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-22,Wednesday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-23,Thursday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-24,Friday,9:00 AM,4:00 PM,open_clock_pair,True,9.0,16.0,9.0,16.0,0.0,0.0
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,9.0,16.0,,,,
+580,St. Joseph the Worker - Phoenix,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,9.0,16.0,,,,
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-20,Monday,,,unknown_blank_pair,False,10.0,20.0,,,,
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-21,Tuesday,10:00 AM,1:00 PM,open_clock_pair,True,10.0,20.0,10.0,13.0,3.5,0.0
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-22,Wednesday,5:00 PM,8:00 PM,open_clock_pair,True,10.0,20.0,17.0,20.0,3.5,0.0
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-23,Thursday,5:00 PM,8:00 PM,open_clock_pair,True,10.0,20.0,17.0,20.0,3.5,0.0
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-24,Friday,,,unknown_blank_pair,False,10.0,20.0,,,,
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-25,Saturday,,,unknown_blank_pair,False,10.0,20.0,,,,
+588,Backpacks for Kids AZ - Food Pantry ,Hydration Station,2026-07-26,Sunday,,,unknown_blank_pair,False,10.0,20.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-20,Monday,7:00 AM,7:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-21,Tuesday,7:00 AM,7:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-22,Wednesday,7:00 AM,7:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-23,Thursday,7:00 AM,7:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-24,Friday,7:00 AM,6:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-25,Saturday,7:00 AM,4:00 PM,outside_posted_source_date_range,False,7.0,19.0,,,,
+605,West Phoenix Clinic,Hydration Station,2026-07-26,Sunday,,,outside_posted_source_date_range,False,7.0,19.0,,,,
+613,North Valley Regional Library  ,Cooling Center,2026-07-20,Monday,3:00 PM,8:00 PM,open_clock_pair,True,15.0,20.0,15.0,20.0,0.0,0.0
+613,North Valley Regional Library  ,Cooling Center,2026-07-21,Tuesday,3:00 PM,8:00 PM,open_clock_pair,True,15.0,20.0,15.0,20.0,0.0,0.0
+613,North Valley Regional Library  ,Cooling Center,2026-07-22,Wednesday,3:00 PM,8:00 PM,open_clock_pair,True,15.0,20.0,15.0,20.0,0.0,0.0
+613,North Valley Regional Library  ,Cooling Center,2026-07-23,Thursday,3:00 PM,8:00 PM,open_clock_pair,True,15.0,20.0,15.0,20.0,0.0,0.0
+613,North Valley Regional Library  ,Cooling Center,2026-07-24,Friday,,,unknown_blank_pair,False,15.0,20.0,,,,
+613,North Valley Regional Library  ,Cooling Center,2026-07-25,Saturday,9:00 AM,5:00 PM,open_clock_pair,True,15.0,20.0,9.0,17.0,4.5,0.0
+613,North Valley Regional Library  ,Cooling Center,2026-07-26,Sunday,9:00 AM,5:00 PM,open_clock_pair,True,15.0,20.0,9.0,17.0,4.5,0.0

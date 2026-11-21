@@ -1,0 +1,48 @@
+{
+  "evidence_class": "real_source_reconstruction_and_input_quality_control",
+  "not_service_outcome_empirical_validation": true,
+  "source_scope": "MAG public-view snapshot 2026-11-18, posted 2026 season; HSD2024 report ACS2018-2022",
+  "calendar": {
+    "sites": 50,
+    "site_weekday_cells": 350,
+    "dates": [
+      "2026-07-20",
+      "2026-07-26"
+    ],
+    "status_counts": {
+      "open_clock_pair": 267,
+      "unknown_blank_pair": 76,
+      "outside_posted_source_date_range": 7
+    },
+    "numeric_known_clock_pairs": 267,
+    "scoring_rule": "mean absolute open/close endpoint error; unknown hours excluded",
+    "legacy_weekday_envelope_mae_hours": 0.27902621722846443,
+    "revised_day_lookup_mae_hours": 0.0,
+    "raw_csv_weekday_cell_mismatches": 0,
+    "independence_limit": "Both exports describe the same MAG response, not independent observations of actual opening."
+  },
+  "population": {
+    "villages": 15,
+    "contest_aggregated_districts": 12,
+    "population": 1620649,
+    "households": 595336,
+    "max_aggregation_count_error": 0,
+    "no_vehicle_values_imputed": 0,
+    "independence_limit": "Counts are report-derived input checks, not held-out prediction targets."
+  },
+  "service_outcome_validation": {
+    "status": "NOT_AVAILABLE",
+    "missing": [
+      "district-day requested visits including turned-away demand",
+      "actual site-day capacity and open hours",
+      "matched observed travel itineraries"
+    ],
+    "decision": "Restrict model outputs to conditional scenario comparisons; no measured coverage or deployment guarantee."
+  },
+  "input_sha256": {
+    "资料/02_降温网络/MAG/phoenix_2026_public_view_sites.csv": "fd88092e6f10aa898ec09e455d398d5beb1a03bcd0f6b48c243db0330b06b29d",
+    "资料/11_补充与审查_2026-11-19/补充资料/MAG日历/原始响应/query_all_fields.json": "4814600945e0770b8ae473e306162767b5b07f854b81f4bbebc430bb3d49502b",
+    "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/village_demographics_acs2018_2022.csv": "3a34e063fb890b2903d8d02345b7d63f0fac191c9ba65b6f0bba64e06205af89",
+    "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/district_demographics_candidate_12.csv": "e360f9ab4c7112ae723788c2ac0a22b33601e94bd0ca5562dd893adee7335757"
+  }
+}
