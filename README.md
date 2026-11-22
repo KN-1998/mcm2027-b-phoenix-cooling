@@ -1,6 +1,6 @@
 # 2027 MCM Problem B — Keeping Phoenix Cool
 
-**最新论文审查：** [2702_English(1)逐页核对与待修事项](docs/reviews/20261122_paper_v2/REVIEW.md)。
+**最新论文审查：** [2702_English(2)的13项修复回查与终稿核对](docs/reviews/20261122_paper_v3/REVIEW.md)。
 本次只提交审查材料；论文、模型与冻结结果未改，取数仍用下方唯一入口。
 
 **2026-11-22 当前取数入口：** [结果与口径索引](results/README.md)、
