@@ -34,6 +34,30 @@ def brief(sol):
     return {'chosen':','.join(sol.chosen), **sol.metrics}
 
 
+def objective_frontier_row(inst, p):
+    """Compare both allocations under the same declared diagnostic exemptions.
+
+    Efficiency imposes no exemption or fairness constraint during optimization.
+    Its existing nonexempt metric therefore covers all districts; recompute only
+    this reported diagnostic using the max-min comparison's explicit list.
+    """
+    eff=solve_static(inst,p);fair=solve_static_maxmin(inst,p)
+    exempt=set(fair.metrics['equity_exempt'])
+    ratios=[]
+    for district in inst.districts:
+        demand=inst.demand.get((district.id,eff.day),0.0)
+        if demand>0 and district.id not in exempt:
+            ratios.append((demand-eff.served.get((district.id,eff.day),0.0))/demand)
+    return {'p':p,'efficiency_unmet':eff.metrics['unmet_total_raw'],
+            'maxmin_unmet':fair.metrics['unmet_total_raw'],
+            'efficiency_worst_all':eff.metrics['worst_unmet_ratio_raw'],
+            'efficiency_worst_nonexempt':max(ratios,default=0.0),
+            'maxmin_worst_all':fair.metrics['worst_unmet_ratio_raw'],
+            'maxmin_worst_nonexempt':fair.metrics['worst_unmet_ratio_nonexempt_raw'],
+            'exempt':','.join(sorted(exempt)),
+            'efficiency_chosen':','.join(eff.chosen),'maxmin_chosen':','.join(fair.chosen)}
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out',required=True)
@@ -51,15 +75,7 @@ def main(argv=None):
     save_csv(out/'p3_allocations.csv',p3.allocations)
     frontier=[]
     for p in range(9):
-        eff=solve_static(base,p);fair=solve_static_maxmin(base,p)
-        frontier.append({'p':p,'efficiency_unmet':eff.metrics['unmet_total_raw'],
-                         'maxmin_unmet':fair.metrics['unmet_total_raw'],
-                         'efficiency_worst_all':eff.metrics['worst_unmet_ratio_raw'],
-                         'efficiency_worst_nonexempt':eff.metrics['worst_unmet_ratio_nonexempt_raw'],
-                         'maxmin_worst_all':fair.metrics['worst_unmet_ratio_raw'],
-                         'maxmin_worst_nonexempt':fair.metrics['worst_unmet_ratio_nonexempt_raw'],
-                         'exempt':','.join(fair.metrics['equity_exempt']),
-                         'efficiency_chosen':','.join(eff.chosen),'maxmin_chosen':','.join(fair.chosen)})
+        frontier.append(objective_frontier_row(base,p))
     for i,row in enumerate(frontier):
         row['marginal_unmet_reduction']=0 if i==0 else frontier[i-1]['efficiency_unmet']-row['efficiency_unmet']
     save_csv(out/'p_frontier.csv',frontier)

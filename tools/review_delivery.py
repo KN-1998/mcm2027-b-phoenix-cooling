@@ -9,6 +9,7 @@ import csv
 import datetime
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -19,7 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from src.mch import runmeta
 from src.mch.loaders import load_instance
-from src.mch.static import solve_static, solve_static_maxmin
+from src.mch.static import solve_static
+from src.exp.run_takeover_evidence import objective_frontier_row
 from tools.run_takeover_release import make_report
 
 
@@ -69,8 +71,9 @@ def main():
             if relative.startswith('src/mch/'):
                 assert sha(ROOT / relative) == digest, relative
 
+    env = {**os.environ, 'PYTHONIOENCODING': 'utf-8', 'PYTHONUTF8': '1'}
     tests = subprocess.run([sys.executable, '-m', 'pytest', 'tests', '-q', '-rs'],
-                           cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+                           cwd=ROOT, env=env, capture_output=True, text=True, encoding='utf-8')
     (out / 'tests.log').write_text(tests.stdout + '\n' + tests.stderr, encoding='utf-8')
     if tests.returncode or re.search(r'\b\d+ skipped\b', tests.stdout):
         raise RuntimeError('Review requires passing tests and zero skips; see tests.log')
@@ -81,14 +84,8 @@ def main():
     frontier = []
     for old in old_frontier:
         p = int(old['p'])
-        eff, fair = solve_static(inst, p), solve_static_maxmin(inst, p)
-        row = {'p': p, 'efficiency_unmet': eff.metrics['unmet_total_raw'],
-               'efficiency_worst_all': eff.metrics['worst_unmet_ratio_raw'],
-               'efficiency_worst_nonexempt': eff.metrics['worst_unmet_ratio_nonexempt_raw'],
-               'maxmin_unmet': fair.metrics['unmet_total_raw'],
-               'maxmin_worst_all': fair.metrics['worst_unmet_ratio_raw'],
-               'maxmin_worst_nonexempt': fair.metrics['worst_unmet_ratio_nonexempt_raw'],
-               'marginal_unmet_reduction': float(old['marginal_unmet_reduction'])}
+        row = objective_frontier_row(inst, p)
+        row['marginal_unmet_reduction'] = float(old['marginal_unmet_reduction'])
         for field in ('efficiency_unmet', 'efficiency_worst_all', 'maxmin_unmet',
                       'maxmin_worst_all', 'maxmin_worst_nonexempt'):
             assert abs(row[field] - float(old[field])) < 1e-7, (p, field)
@@ -96,6 +93,7 @@ def main():
     p2 = frontier[2]
     assert p2['efficiency_worst_nonexempt'] == 1.0
     assert abs(p2['maxmin_worst_nonexempt'] - .575) < 1e-8
+    assert abs(frontier[3]['efficiency_worst_nonexempt'] - .575) < 1e-8
     save_rows(out / 'q1_objective_metrics.csv', frontier)
 
     scans = []
@@ -122,10 +120,10 @@ def main():
 
     for script in ('tools/run_takeover_release.py', 'tools/run_completion_release.py'):
         guard = subprocess.run([sys.executable, script, '--out', str(frozen)], cwd=ROOT,
-                               capture_output=True, text=True, encoding='utf-8')
+                               env=env, capture_output=True, text=True, encoding='utf-8')
         assert guard.returncode != 0 and 'Refusing to overwrite' in guard.stderr
     guard = subprocess.run([sys.executable, 'tools/review_delivery.py', '--out', str(frozen / 'base')],
-                           cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+                           cwd=ROOT, env=env, capture_output=True, text=True, encoding='utf-8')
     assert guard.returncode != 0 and 'Review output must stay within' in guard.stderr
     assert sha(frozen / 'completion_manifest.json') == manifest_digest
     for relative, digest in manifest['sha256'].items():
@@ -142,6 +140,9 @@ def main():
     for item in inventory:
         assert indexed[item['archived']] == (item['mode'], item['blob'])
         if item['old'] in indexed:
+            if item['old'] == 'results/takeover_20261120/README.md':
+                assert '仅保留旧论文图片路径' in (ROOT / item['old']).read_text(encoding='utf-8')
+                continue  # The new compatibility notice intentionally replaces the old README.
             assert item['old'] in {
                 'results/takeover_20261120/core/district_gaps.png',
                 'results/takeover_20261120/core/frontiers.png'}
