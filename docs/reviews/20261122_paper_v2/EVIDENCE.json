@@ -1,0 +1,195 @@
+{
+  "reviewed_pdf": {
+    "name": "2702_English(1).pdf",
+    "sha256": "e228ede0ae2796b82b6bb78037f89f9d349c5bc87e68bbd199840daa1a5afb38",
+    "pages": 24,
+    "manuscript_changed": false
+  },
+  "base_repository_commit": "9add1afa0f994e1721e6a3a898353ed2172d966b",
+  "frozen_numeric_source": "941c9fcff1268fd7d5678166b634d5ef72f00b18",
+  "generated_utc": "2026-11-22T08:25:31.672236+00:00",
+  "frozen_output_hashes_checked_unchanged": 107,
+  "full_tests": "Existing 169 passed, 0 skipped evidence at 9add1af; full suite not repeated for a documentation-only review",
+  "targeted_test": {
+    "command": "python -m pytest tests/test_completion_invariants.py::test_common_demand_scaling_can_make_relocation_useful -q",
+    "passed": 1,
+    "skipped": 0,
+    "log": "counterexample_check.log"
+  },
+  "findings_evidence": {
+    "common_multiplier_counterexample": {
+      "static_unmet": 766.25,
+      "dynamic_unmet": 763.125,
+      "gain": 3.125
+    },
+    "dated_common_heat_case": {
+      "static": 1700.664761,
+      "dynamic": 1679.511161,
+      "gain": 21.153600000000097,
+      "assumptions": {
+        "service_day_start": 9,
+        "parallel_crews_required": 3,
+        "initial_deployment_ready": true,
+        "max_trip_hours": 24,
+        "matching_includes_common_site_swaps": true,
+        "travel_model": "0.5h setup + coordinate distance / 40kmh"
+      }
+    },
+    "p5": {
+      "p": "5",
+      "efficiency_unmet": "187.25589999999994",
+      "maxmin_unmet": "187.25589999999994",
+      "efficiency_worst_all": "1.0",
+      "maxmin_worst_all": "1.0",
+      "maxmin_worst_nonexempt": "0.575",
+      "exempt": "D08",
+      "efficiency_chosen": "MCH-3,MCH-4,MCH-5,MCH-7,MCH-8",
+      "maxmin_chosen": "MCH-3,MCH-4,MCH-5,MCH-7,MCH-8",
+      "marginal_unmet_reduction": "18.841000000000008"
+    },
+    "districts": [
+      {
+        "district_id": "D07",
+        "population_scenario": "104570",
+        "pct65_scenario": "0.0887",
+        "no_vehicle_scenario": "0.0355",
+        "demand_visits": "25.3",
+        "fixed_only_unmet": "25.3",
+        "p3_unmet": "4.047999999999998",
+        "p3_unmet_fraction": "0.15999999999999992"
+      },
+      {
+        "district_id": "D08",
+        "population_scenario": "87547",
+        "pct65_scenario": "0.0997",
+        "no_vehicle_scenario": "0.0638",
+        "demand_visits": "25.24",
+        "fixed_only_unmet": "25.24",
+        "p3_unmet": "25.24",
+        "p3_unmet_fraction": "1.0"
+      },
+      {
+        "district_id": "D10",
+        "population_scenario": "114298",
+        "pct65_scenario": "0.1219",
+        "no_vehicle_scenario": "0.0284",
+        "demand_visits": "25.88",
+        "fixed_only_unmet": "25.88",
+        "p3_unmet": "4.140799999999999",
+        "p3_unmet_fraction": "0.15999999999999995"
+      }
+    ],
+    "shock_fixed_best": [
+      "MCH-3",
+      "MCH-6",
+      "MCH-8"
+    ],
+    "q4_example": {
+      "parallel": false,
+      "crew_start_site": "MCH-3",
+      "best": {
+        "action": "relocate",
+        "chosen": [
+          "MCH-3",
+          "MCH-8"
+        ],
+        "worst_unmet_ratio_all": 1.0,
+        "unmet": 248.547,
+        "timeline": [
+          {
+            "from": "MCH-8",
+            "to": "MCH-8",
+            "depart_h": 0.0,
+            "travel_h": 0.0,
+            "ready_h": 0.0,
+            "crew_reposition_h": 0.0,
+            "in_place": true
+          },
+          {
+            "from": "MCH-7",
+            "to": "MCH-3",
+            "depart_h": 0.37,
+            "travel_h": 0.87,
+            "ready_h": 1.24,
+            "crew_reposition_h": 0.37,
+            "in_place": false
+          }
+        ],
+        "total_hours": 1.24,
+        "n_moves": 1,
+        "feasible": true,
+        "idle": false,
+        "capacity_by_period": {
+          "MCH-3": {
+            "day": 169.0,
+            "evening": 50.0,
+            "night": 0.0
+          },
+          "MCH-8": {
+            "day": 200.0,
+            "evening": 50.0,
+            "night": 0.0
+          }
+        }
+      },
+      "staffing_note": "parallel assumes one driver/setup team per moving vehicle; serial includes shared-team driving from previous destination to next origin",
+      "origin_service_assumption": "moving units go offline at incident; waiting-to-depart service is conservatively not credited"
+    },
+    "empirical": {
+      "train_n": 12,
+      "selection_n": 4,
+      "test_n": 4,
+      "selected_model": "last_4_weeks_mean",
+      "test_scores": {
+        "last_week": {
+          "n": 4,
+          "mae_visits_per_week": 111.0,
+          "rmse_visits_per_week": 122.34173449808532,
+          "mean_signed_error_visits_per_week": -12.0
+        },
+        "last_4_weeks_mean": {
+          "n": 4,
+          "mae_visits_per_week": 72.625,
+          "rmse_visits_per_week": 76.3791938292098,
+          "mean_signed_error_visits_per_week": -11.125
+        },
+        "nonnegative_AR1": {
+          "n": 4,
+          "mae_visits_per_week": 87.41249194930458,
+          "rmse_visits_per_week": 135.85601911285482,
+          "mean_signed_error_visits_per_week": 87.41249194930458
+        },
+        "nonnegative_AR1_plus_lagged_heat_excess_100F": {
+          "n": 4,
+          "mae_visits_per_week": 87.41249194930458,
+          "rmse_visits_per_week": 135.85601911285482,
+          "mean_signed_error_visits_per_week": 87.41249194930458
+        }
+      }
+    },
+    "q_weight_minimum_factor": 0.24
+  },
+  "source_sha256": {
+    "results/completion_20261121/completion_manifest.json": "aba22ef8285053a3682207b60bce37c93f52d125af82a2dd9fc556defa409342",
+    "results/completion_20261121/base/core/p_frontier.csv": "54d11b214400034d3bca0a0f64a1840ff1ff2195e91c43a7789e5883ed1bd123",
+    "results/completion_20261121/base/core/district_gap.csv": "c0d418956c8142e2db726e879fa5dd154285f10bd85e8938d6da77f11a5de749",
+    "results/completion_20261121/base/core/weeks.json": "b5b40bc26254a9a290658346823554ed10ba8d74babfd85c45370c381a66eb98",
+    "results/completion_20261121/base/dated_pipeline/summary.json": "d3fcfec3b3d3b71fc83f0486ec07ae4e07125fb6d8a7e2e5709cfbd9d7c1ef5a",
+    "results/completion_20261121/base/q4/scenario_details.json": "2e2cb518298211f8fa2671f2ac17079f7c470514f210f77d8692cce4bb7f8423",
+    "results/completion_20261121/empirical/summary.json": "13f30fcae8d4647f452fc5edf508283cf049ff105bd75ebcf0533999f21dd569",
+    "docs/TECHNICAL_DERIVATION_20261121.md": "4848bb0f56d09eae8923da0c2c3342bf00d26b70cd6e63b3bb6591008f89cf96",
+    "tests/test_completion_invariants.py": "22a5ef25b1426c8ff0160b2dc2e32cdbfc7d692d8016135bc0d1607c852271f2",
+    "src/mch/dynamic.py": "96f4f2f9d093941c765c7b3df3fd81118bc0da38cfa8811f9397c7b9e2d21033",
+    "src/mch/static.py": "76e071c4990f2171886c495ec05931f7dd2654a4abc7ce26c8cebd42f7140a3e",
+    "src/mch/realnet.py": "e92ed2cbc094e4465f9a9ef0488e0e4eb7807b873280c6e6f6705772d70f73d7",
+    "data/processed/districts.csv": "9bc7dec0913e04d8b4a5b36310a2f27fdc310c449eb859673c030433512072a5",
+    "data/incoming/acs_districts.csv": "850546632c9a55809720489bf131cdd3276353d99fcbac792aaf90e5aee77375",
+    "资料/11_补充与审查_2026-11-19/补充资料/官方村界与人口/district_demographics_candidate_12.csv": "e360f9ab4c7112ae723788c2ac0a22b33601e94bd0ca5562dd893adee7335757"
+  },
+  "review_files_sha256": {
+    "counterexample_check.log": "5e7df5f676bc414955733b864e6216dcc2765a253cc13d9e9d4bd758258859e9",
+    "REVIEW.md": "908fffe55ba6f07a80e27bb3a5f5ca930f9166b90eaa3fdca1c026ff62299e1b",
+    "SOURCES_AUDIT.md": "a60bdb4fb7964754340e1343b6f730746023eeadbf30e957fb9542e19f94677c"
+  },
+  "model_inputs_code_paper_frozen_outputs_modified": false
+}
