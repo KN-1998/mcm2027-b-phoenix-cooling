@@ -55,8 +55,8 @@ station层规则展开到child时，显式child端点更多的规则优先；同
 
 ```text
 python -m pytest tests/test_gtfs_routing.py -q
-python -m src.exp.run_gtfs_validation --out results/complete_20261121/gtfs
-python -m src.exp.run_gtfs_validation --city-operations --out results/complete_20261121/gtfs_city_operations
+python -m src.exp.run_gtfs_validation --out tmp/reproduce_gtfs_registered
+python -m src.exp.run_gtfs_validation --city-operations --out tmp/reproduce_gtfs_city
 ```
 
 默认从原仓库路径读取已归档zip，metadata包含完整SHA256及日期、频率政策、步行/缓冲/搜索参数。完整输出为`od_by_departure.csv`、`itineraries.json`、`sampled_departure_summary.csv`、`matched_inventory_siting.csv`、两个审计JSON、summary与run_meta。按`district_id/site_id/departure`可复算任意格。

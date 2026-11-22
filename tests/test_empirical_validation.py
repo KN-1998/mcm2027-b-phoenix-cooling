@@ -1,6 +1,10 @@
 """Checks that detect target leakage, changing splits and calendar-gap errors."""
 import copy
 import datetime as dt
+import hashlib
+import importlib.util
+import json
+import re
 from pathlib import Path
 
 import pytest
@@ -69,10 +73,53 @@ def test_zero_error_baseline_is_not_replaced_by_unnecessary_complexity():
 
 
 SOURCE=Path(__file__).resolve().parents[1]/'资料'/'12_实证补全_2026-11-21'
+WEATHER_FILE='noaa_2026_phoenix_sky_harbor_daily_summaries.csv'
+SOURCE_RECOVERY=('Restore the official source packet from Git (including source_manifest.json, '
+                 'the 22 Week PDFs and the NOAA CSV); install dependencies with '
+                 'python -m pip install -r requirements.txt.')
 
 
-@pytest.mark.skipif(not (SOURCE/'raw').exists(),reason='official empirical source packet absent')
+def _require_official_source_packet(source, *, pypdf_available=None):
+    """Skip absent prerequisites, but never conceal corrupt delivered inputs.
+
+    Only the source-reconstruction integration test calls this check.  The
+    seven synthetic statistical tests above remain independent of the packet.
+    The season-total PDF and operations publications are not used by this test.
+    """
+    manifest=source/'source_manifest.json'
+    if not manifest.is_file():
+        pytest.skip('Official empirical integration test needs source_manifest.json. '+SOURCE_RECOVERY)
+    try:
+        entries=json.loads(manifest.read_text(encoding='utf-8'))
+        weeks=[e for e in entries if re.fullmatch(r'raw/Week\d+_[^/]+\.pdf',e['path'])]
+        weather=[e for e in entries if e['path']==WEATHER_FILE]
+        ids=[int(re.search(r'Week(\d+)_',e['path'])[1]) for e in weeks]
+        if sorted(ids)!=list(range(1,23)) or len(weather)!=1:
+            raise ValueError('expected one manifest entry for each Week1–22 and the NOAA CSV')
+        required=weeks+weather
+        for e in required:
+            if not re.fullmatch('[0-9a-f]{64}',e['sha256']):
+                raise ValueError('invalid SHA256 for '+e['path'])
+    except (OSError,ValueError,KeyError,TypeError) as exc:
+        pytest.fail('Official empirical source manifest is invalid: '+str(exc)+'. '+SOURCE_RECOVERY,pytrace=False)
+    # Check every present source before deciding to skip missing prerequisites.
+    # A partial checkout with a second, truncated file is a corruption failure.
+    missing=[]
+    for e in required:
+        path=source/e['path']
+        if not path.is_file():
+            missing.append(e['path'])
+        elif hashlib.sha256(path.read_bytes()).hexdigest()!=e['sha256']:
+            pytest.fail('Official empirical source SHA256 mismatch: '+e['path']+'. '+SOURCE_RECOVERY,pytrace=False)
+    if pypdf_available is None:
+        pypdf_available=importlib.util.find_spec('pypdf') is not None
+    absent=(['pypdf'] if not pypdf_available else [])+missing
+    if absent:
+        pytest.skip('Official empirical integration test missing: '+', '.join(absent)+'. '+SOURCE_RECOVERY)
+
+
 def test_official_weekly_columns_and_partial_periods_reconstruct_without_differencing():
+    _require_official_source_packet(SOURCE)
     rows=extract_weekly_visits(SOURCE/'raw')
     assert len(rows)==22
     assert sum(bool(r['included_full_week']) for r in rows)==20
@@ -83,7 +130,62 @@ def test_official_weekly_columns_and_partial_periods_reconstruct_without_differe
     # Preserve the original documented inconsistency rather than 'repair' data.
     early=[r for r in rows if r['week_id']==2][0]
     assert early['aggregate_season_minus_site_sum']==-11
-    weather=load_noaa_tmax(SOURCE/'noaa_2026_phoenix_sky_harbor_daily_summaries.csv')
+    weather=load_noaa_tmax(SOURCE/WEATHER_FILE)
     matched=attach_week_weather(rows,weather)
     assert len(matched)==22
     assert all(0<r['mean_tmax_f']<150 for r in matched)
+
+
+def _synthetic_source_packet(tmp_path):
+    """Tiny byte fixtures for prerequisite/integrity handling, not PDF parsing."""
+    entries=[]
+    for week in range(1,23):
+        name=f'raw/Week{week}_fixture.pdf'
+        path=tmp_path/name;path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_bytes(b'%PDF-fixture\n'+str(week).encode('ascii')+b'\n%%EOF\n')
+        entries.append({'path':name,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
+    path=tmp_path/WEATHER_FILE;path.write_bytes(b'STATION,TMAX\nUSW00023183,100\n')
+    entries.append({'path':WEATHER_FILE,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
+    # An unused season-total entry must not make this test depend on that PDF.
+    entries.append({'path':'raw/Heat Relief Sites 2026 Season Totals.pdf','sha256':'0'*64})
+    (tmp_path/'source_manifest.json').write_text(json.dumps(entries),encoding='utf-8')
+    return entries
+
+
+def test_empirical_preflight_skips_absent_packet_with_recovery_instruction(tmp_path):
+    with pytest.raises(pytest.skip.Exception,match='source_manifest.json.*Restore'):
+        _require_official_source_packet(tmp_path,pypdf_available=True)
+
+
+def test_empirical_preflight_skips_missing_prerequisites_with_specific_reason(tmp_path):
+    _synthetic_source_packet(tmp_path)
+    with pytest.raises(pytest.skip.Exception,match='missing: pypdf'):
+        _require_official_source_packet(tmp_path,pypdf_available=False)
+    (tmp_path/'raw/Week2_fixture.pdf').unlink()
+    (tmp_path/WEATHER_FILE).unlink()
+    with pytest.raises(pytest.skip.Exception) as skipped:
+        _require_official_source_packet(tmp_path,pypdf_available=True)
+    assert 'raw/Week2_fixture.pdf' in str(skipped.value)
+    assert WEATHER_FILE in str(skipped.value)
+
+
+def test_empirical_preflight_does_not_skip_truncation_even_with_missing_inputs(tmp_path):
+    _synthetic_source_packet(tmp_path)
+    path=tmp_path/'raw/Week1_fixture.pdf'
+    path.write_bytes(path.read_bytes()[:-8])
+    (tmp_path/'raw/Week2_fixture.pdf').unlink()
+    with pytest.raises(pytest.fail.Exception,match='SHA256 mismatch: raw/Week1_fixture.pdf.*Restore'):
+        _require_official_source_packet(tmp_path,pypdf_available=False)
+
+
+def test_empirical_preflight_requires_only_inputs_used_by_reconstruction(tmp_path):
+    _synthetic_source_packet(tmp_path)
+    _require_official_source_packet(tmp_path,pypdf_available=True)
+    assert not (tmp_path/'raw/Heat Relief Sites 2026 Season Totals.pdf').exists()
+
+
+def test_empirical_preflight_rejects_incomplete_manifest_instead_of_skipping(tmp_path):
+    entries=_synthetic_source_packet(tmp_path)
+    (tmp_path/'source_manifest.json').write_text(json.dumps(entries[1:]),encoding='utf-8')
+    with pytest.raises(pytest.fail.Exception,match='manifest is invalid.*Week1–22'):
+        _require_official_source_packet(tmp_path,pypdf_available=True)

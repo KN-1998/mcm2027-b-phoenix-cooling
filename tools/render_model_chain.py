@@ -9,7 +9,7 @@ import re
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--out',default='results/takeover_20261120/model_chain.pdf')
+    parser=argparse.ArgumentParser();parser.add_argument('--out',default='tmp/model_chain.pdf')
     args=parser.parse_args()
     from reportlab.lib import colors
     from reportlab.lib.enums import TA_LEFT

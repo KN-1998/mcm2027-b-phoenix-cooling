@@ -1,3 +1,5 @@
+> 历史方法/交付记录（2026-11-20），不是当前取数入口。当前统一见[结果索引](../results/README.md)；该日冻结94/7日志保留原样并归档。
+
 # Q5：把资产、开工和年度合同分开的五年规划
 
 交付阶段：建模实现与条件情景比较。2026-11-20。实际 AI 辅助：模型推导整理、代码修改、测试与审阅；不将本文冒充队员已完成的独立研究或答辩记录。
@@ -71,7 +73,7 @@ C_y=c_BB_y+c_AA_y+c_E(e_y)+c_Ss_y\le K_y,\qquad[C_y]=\mathrm{USD/year}.
 
 ```powershell
 python -m pytest tests/test_q5_investment.py -q
-python -m src.exp.run_q5_plan --out results/takeover_20261120/q5
+python -m src.exp.run_q5_plan --out tmp/reproduce_q5
 ```
 
 输出：`plan.csv` 为 DP 年度轨迹；`baselines.csv` 为两种基线；`comparison.csv` 为同情景累计差；`cost_sensitivity.csv` 为基准预算/热情景下购置与运营价格倍率 0.5、0.75、1、1.25、1.5、2（合同价格保持固定）的行动变化。扫描范围是工作假设，不是成本置信区间，不据此作标准化参数重要性排序。`summary.json` 记录目标、有限行动、状态假设和条件最优范围，`run_meta.json` 记录实际运行版本；脏工作区的试跑不作冻结版证据。

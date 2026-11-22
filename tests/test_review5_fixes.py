@@ -9,7 +9,7 @@ from src.mch.disruption import plan_response
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "processed"
 HAVE = (DATA / "districts.csv").exists()
-PLAN = ROOT / "results" / "takeover_20261120" / "q5" / "summary.json"
+PLAN = ROOT / "results" / "completion_20261121" / "base" / "q5" / "summary.json"
 Q5 = PLAN.parent / 'plan.csv'
 
 

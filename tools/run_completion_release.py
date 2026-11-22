@@ -7,13 +7,14 @@ from src.mch import runmeta
 from tools.build_completion_report import build
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--out',default='results/completion_20261121')
+    p=argparse.ArgumentParser();p.add_argument('--out',default='tmp/reproduce_completion')
     p.add_argument('--pdf-python',default=sys.executable)
-    args=p.parse_args();out=ROOT/args.out;out.mkdir(parents=True,exist_ok=True)
+    args=p.parse_args();out=ROOT/args.out
+    if out.exists() and any(out.iterdir()):
+        raise RuntimeError('Refusing to overwrite an existing release. Choose a new empty --out directory.')
+    out.mkdir(parents=True,exist_ok=True)
     if runmeta.meta({})['worktree_dirty']:raise RuntimeError('Commit source, tests, tools and inputs before release')
     code_sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
-    old_readme=out/'base/README.md'
-    if old_readme.exists():old_readme.unlink() # development copy only; base writer does not produce this file
     jobs=[('base',[sys.executable,'tools/run_takeover_release.py','--out',str(out/'base'),'--pdf-python',args.pdf_python]),
           ('empirical',[sys.executable,'-m','src.exp.run_empirical_validation','--out',str(out/'empirical')]),
           ('gtfs_registered',[sys.executable,'-m','src.exp.run_gtfs_validation','--out',str(out/'gtfs_registered')]),

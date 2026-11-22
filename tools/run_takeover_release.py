@@ -1,6 +1,6 @@
 """Run and fingerprint the frozen modeler release; never rewrites old run metadata.
 
-Usage: python tools/run_takeover_release.py --out results/takeover_20261120
+Usage: python tools/run_takeover_release.py --out tmp/reproduce_takeover
 Install reportlab+pypdf, or pass --pdf-python for a separate document runtime.
 """
 from pathlib import Path
@@ -9,6 +9,7 @@ import csv
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -24,9 +25,12 @@ def read_csv(path):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--out',default='results/takeover_20261120')
+    parser=argparse.ArgumentParser();parser.add_argument('--out',default='tmp/reproduce_takeover')
     parser.add_argument('--pdf-python',default=sys.executable)
-    args=parser.parse_args();out=ROOT/args.out;out.mkdir(parents=True,exist_ok=True)
+    args=parser.parse_args();out=ROOT/args.out
+    if out.exists() and any(out.iterdir()):
+        raise RuntimeError('Refusing to overwrite an existing release. Choose a new empty --out directory.')
+    out.mkdir(parents=True,exist_ok=True)
     if runmeta.meta({})['worktree_dirty']:
         raise RuntimeError('Commit source/tests/tools/inputs first. No dirty-source release is permitted.')
     code_sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -49,6 +53,8 @@ def main():
         (out/(name+'.log')).write_text(result.stdout+'\n'+result.stderr,encoding='utf-8')
         records.append({'name':name,'command':command,'started_utc':start,'exit_code':result.returncode})
         if result.returncode:raise RuntimeError(name+' failed; see log')
+        if name=='tests' and re.search(r'\b\d+ skipped\b',result.stdout):
+            raise RuntimeError('A frozen release requires complete test inputs and zero skipped tests; see tests.log')
         print('PASS '+name,flush=True)
     # Every experiment must name the actual frozen source, not a parent or a
     # later result commit. Fingerprints also detect mutations during the run.
@@ -90,10 +96,11 @@ def make_report(out,sha):
            '',f"默认日需求{f(core['baseline']['demand_total'])}人次；固定网络缺口{f(core['baseline']['unmet_total_raw'])}，"
               f"3辆MCH缺口{f(core['p3']['unmet_total_raw'])}，所选{core['p3']['chosen']}。",
            '', '这是合成区/需求/候选位置和交通输入的条件结果，不能把这些编号当作已批准的实际部署点。',
-           '', '| p | 效率缺口 | max-min缺口 | 全区最差率(max-min) | 非豁免最差率 | 新增1辆的边际人次 |',
-           '|---|---|---|---|---|---|']
+           '', '| p | 效率解·缺口 | 效率解·全区最差率 | 效率解·非豁免最差率 | max-min解·缺口 | max-min解·全区最差率 | max-min解·非豁免最差率 | 效率解·新增1辆边际人次 |',
+           '|---|---|---|---|---|---|---|---|']
     for r in frontier:
-        lines.append(f"| {r['p']} | {f(r['efficiency_unmet'])} | {f(r['maxmin_unmet'])} | {f(r['maxmin_worst_all'])} | {f(r['maxmin_worst_nonexempt'])} | {f(r['marginal_unmet_reduction'])} |")
+        nonexempt=f(r['efficiency_worst_nonexempt']) if r.get('efficiency_worst_nonexempt') else '旧批次未记录'
+        lines.append(f"| {r['p']} | {f(r['efficiency_unmet'])} | {f(r['efficiency_worst_all'])} | {nonexempt} | {f(r['maxmin_unmet'])} | {f(r['maxmin_worst_all'])} | {f(r['maxmin_worst_nonexempt'])} | {f(r['marginal_unmet_reduction'])} |")
     lines+=['','非豁免口径只用于公开的公平约束集合；默认豁免D08仍保留在全区统计。p=7→8无边际服务，不代表真实新增地点永远无价值。',
             '',f"同一p3部署删除时段约束后服务上界{f(core['timing_ablation']['pooled_day_served'])}，"
                f"原分时服务{f(core['timing_ablation']['period_served'])}。差值说明聚合全天容量可能乐观，不能当成实测延时收益。",

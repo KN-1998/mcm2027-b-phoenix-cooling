@@ -77,7 +77,7 @@ May1—3仅3天、Sept21—30为10天，按事先规则排除主要检验，仍�
 
 ```text
 python -m pytest tests/test_empirical_validation.py -q
-python -m src.exp.run_empirical_validation --out results/empirical_20261121
+python -m src.exp.run_empirical_validation --out tmp/reproduce_empirical
 ```
 
 `src/mch/empirical.py`负责原始列解析、日期/质量校验、固定划分、候选拟合及无泄漏预测；runner生成逐周观察、逐候选逐周预测、误差、容量调和表和图。run_meta额外哈希整包PDF、天气CSV、协议与来源manifest。8个专用测试包括：改变全部测试目标不会改变选模/拟合系数及首个测试预测；信息截止严格在目标周之前；日期缺口、乱序、NaN/负目标拒绝；指标符号手算；协议变更拒绝；零误差基线不被无益复杂模型替换；官方周值/累计列与已知源错误保留。

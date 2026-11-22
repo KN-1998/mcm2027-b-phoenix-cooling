@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PLAN = ROOT / "results" / "takeover_20261120" / "q5" / "summary.json"
+PLAN = ROOT / "results" / "completion_20261121" / "base" / "q5" / "summary.json"
 
 
 @unittest.skipUnless(PLAN.exists(), "先运行 run_q5_plan")

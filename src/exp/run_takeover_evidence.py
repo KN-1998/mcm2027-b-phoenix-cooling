@@ -55,6 +55,7 @@ def main(argv=None):
         frontier.append({'p':p,'efficiency_unmet':eff.metrics['unmet_total_raw'],
                          'maxmin_unmet':fair.metrics['unmet_total_raw'],
                          'efficiency_worst_all':eff.metrics['worst_unmet_ratio_raw'],
+                         'efficiency_worst_nonexempt':eff.metrics['worst_unmet_ratio_nonexempt_raw'],
                          'maxmin_worst_all':fair.metrics['worst_unmet_ratio_raw'],
                          'maxmin_worst_nonexempt':fair.metrics['worst_unmet_ratio_nonexempt_raw'],
                          'exempt':','.join(fair.metrics['equity_exempt']),

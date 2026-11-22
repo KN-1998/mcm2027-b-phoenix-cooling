@@ -1,0 +1,996 @@
+{
+  "base_commit": "6f13bc27801589c5bb646512847fbaa4c2498ff5",
+  "scope": "Exact Git blob identity preserved for historical results. Two existing LaTeX figure paths retained separately for compatibility; neither is a numeric results entry.",
+  "files": [
+    {
+      "old": "results/MANIFEST.md",
+      "archived": "results/_legacy/MANIFEST.md",
+      "mode": "100644",
+      "blob": "74b9b89884d6f7b0525113e098d1f43bfb5b1fe4"
+    },
+    {
+      "old": "results/levers/levers.csv",
+      "archived": "results/_legacy/levers/levers.csv",
+      "mode": "100644",
+      "blob": "1db8ae15d852adbb69e6cd1a0b8c11f9904d23b1"
+    },
+    {
+      "old": "results/levers/run_meta.json",
+      "archived": "results/_legacy/levers/run_meta.json",
+      "mode": "100644",
+      "blob": "a4254e68e45f3c114a06c8ca2a42cb1e5f7bdb49"
+    },
+    {
+      "old": "results/levers/summary.json",
+      "archived": "results/_legacy/levers/summary.json",
+      "mode": "100644",
+      "blob": "ca5e6b054613149deacdc3c898e4cebd93f9819e"
+    },
+    {
+      "old": "results/q2_attribution/attribution_detail.json",
+      "archived": "results/_legacy/q2_attribution/attribution_detail.json",
+      "mode": "100644",
+      "blob": "3f127b9c7a1ba475e353b421d72cdea033dbbfe7"
+    },
+    {
+      "old": "results/q2_attribution/run_meta.json",
+      "archived": "results/_legacy/q2_attribution/run_meta.json",
+      "mode": "100644",
+      "blob": "d3dcdc51789ff25816233d8d1b6586aec2403d54"
+    },
+    {
+      "old": "results/q2_attribution/threshold_sweep.csv",
+      "archived": "results/_legacy/q2_attribution/threshold_sweep.csv",
+      "mode": "100644",
+      "blob": "395c786004d7855b56ffe8e5a43395862c093caa"
+    },
+    {
+      "old": "results/q2_fairness/frontier.csv",
+      "archived": "results/_legacy/q2_fairness/frontier.csv",
+      "mode": "100644",
+      "blob": "7da65d5b594122180a4ee80128cc2dfe9c352e8d"
+    },
+    {
+      "old": "results/q2_fairness/summary.json",
+      "archived": "results/_legacy/q2_fairness/summary.json",
+      "mode": "100644",
+      "blob": "4568a69aef909c3e2799bf32217b5f1752a453ae"
+    },
+    {
+      "old": "results/q2_fairness_p1/frontier.csv",
+      "archived": "results/_legacy/q2_fairness_p1/frontier.csv",
+      "mode": "100644",
+      "blob": "425f6edad66d534048eeb6c7c2392f733fdd9529"
+    },
+    {
+      "old": "results/q2_fairness_p1/summary.json",
+      "archived": "results/_legacy/q2_fairness_p1/summary.json",
+      "mode": "100644",
+      "blob": "d157bc8392e612033f963602ef687f8cccfec9d2"
+    },
+    {
+      "old": "results/q2_fairness_p2/frontier.csv",
+      "archived": "results/_legacy/q2_fairness_p2/frontier.csv",
+      "mode": "100644",
+      "blob": "f402c147d882a8144e51da406beb80d85e2d8fa1"
+    },
+    {
+      "old": "results/q2_fairness_p2/summary.json",
+      "archived": "results/_legacy/q2_fairness_p2/summary.json",
+      "mode": "100644",
+      "blob": "b30b00cb46048f22042b1b69a8055b93460ae6ed"
+    },
+    {
+      "old": "results/q2_objectives/allocation_objectives.csv",
+      "archived": "results/_legacy/q2_objectives/allocation_objectives.csv",
+      "mode": "100644",
+      "blob": "105db922ffe6b851be07f929178b3b4bb663ab27"
+    },
+    {
+      "old": "results/q2_objectives/run_meta.json",
+      "archived": "results/_legacy/q2_objectives/run_meta.json",
+      "mode": "100644",
+      "blob": "fdeb00f4d36edaa387cce46bb72495d312429365"
+    },
+    {
+      "old": "results/q2_objectives/summary.json",
+      "archived": "results/_legacy/q2_objectives/summary.json",
+      "mode": "100644",
+      "blob": "7d8e4c349842fad3e556be574699c5c3a2cd6df6"
+    },
+    {
+      "old": "results/q2_tradeoff/summary.json",
+      "archived": "results/_legacy/q2_tradeoff/summary.json",
+      "mode": "100644",
+      "blob": "bd02f28a61fa845cb13bc525e5944a9d53eef574"
+    },
+    {
+      "old": "results/q2_tradeoff/tradeoff.csv",
+      "archived": "results/_legacy/q2_tradeoff/tradeoff.csv",
+      "mode": "100644",
+      "blob": "375da0f7d08d98a02bd86b48e8d45466a1b99bbd"
+    },
+    {
+      "old": "results/q2_tradeoff/tradeoff_cost.csv",
+      "archived": "results/_legacy/q2_tradeoff/tradeoff_cost.csv",
+      "mode": "100644",
+      "blob": "3830035cb4b4d8f6a9e504b52eaaac7b06a9aeb3"
+    },
+    {
+      "old": "results/q3_sweep/D01_1.5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D01_1.5/run_meta.json",
+      "mode": "100644",
+      "blob": "edb9dbf45f21f9b1fab0a4fa589a8c4dae8afdcf"
+    },
+    {
+      "old": "results/q3_sweep/D01_1.5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D01_1.5/summary.json",
+      "mode": "100644",
+      "blob": "55189726fb9c471eed6a541ef79991b2fbb8336b"
+    },
+    {
+      "old": "results/q3_sweep/D01_1.5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D01_1.5/week.csv",
+      "mode": "100644",
+      "blob": "d9ffa2ce17564171a75117d44bafbbd7b82e6f1e"
+    },
+    {
+      "old": "results/q3_sweep/D01_2/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D01_2/run_meta.json",
+      "mode": "100644",
+      "blob": "396d9382ffcdcd0cd23fcfafc9dad0f5ca2967c5"
+    },
+    {
+      "old": "results/q3_sweep/D01_2/summary.json",
+      "archived": "results/_legacy/q3_sweep/D01_2/summary.json",
+      "mode": "100644",
+      "blob": "6987919197e5a5267da770bcf7f17e6efd50805f"
+    },
+    {
+      "old": "results/q3_sweep/D01_2/week.csv",
+      "archived": "results/_legacy/q3_sweep/D01_2/week.csv",
+      "mode": "100644",
+      "blob": "77cfc9a2f7430ed3e898f8310ed38c0f84119339"
+    },
+    {
+      "old": "results/q3_sweep/D01_3/summary.json",
+      "archived": "results/_legacy/q3_sweep/D01_3/summary.json",
+      "mode": "100644",
+      "blob": "0a3e7bbea83c8ea4b5641208e26d804f30380d8c"
+    },
+    {
+      "old": "results/q3_sweep/D01_3/week.csv",
+      "archived": "results/_legacy/q3_sweep/D01_3/week.csv",
+      "mode": "100644",
+      "blob": "6e635d4c7dc891ee406afc4a33882064fee6de51"
+    },
+    {
+      "old": "results/q3_sweep/D01_5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D01_5/run_meta.json",
+      "mode": "100644",
+      "blob": "4a5fc44440321a39f77cf290ab7ebe25078d950f"
+    },
+    {
+      "old": "results/q3_sweep/D01_5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D01_5/summary.json",
+      "mode": "100644",
+      "blob": "ede8c8fd16d28df9b029f724c96edc56812a5a3e"
+    },
+    {
+      "old": "results/q3_sweep/D01_5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D01_5/week.csv",
+      "mode": "100644",
+      "blob": "91a6ad71051dd9071c9c9c03c39447fd68d8324f"
+    },
+    {
+      "old": "results/q3_sweep/D05_1.5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D05_1.5/run_meta.json",
+      "mode": "100644",
+      "blob": "8798f40fd8c3a00a6c8cc17183f1ea1048cd9e80"
+    },
+    {
+      "old": "results/q3_sweep/D05_1.5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D05_1.5/summary.json",
+      "mode": "100644",
+      "blob": "473102452dd6f8c4510ab67876e663bc67a04916"
+    },
+    {
+      "old": "results/q3_sweep/D05_1.5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D05_1.5/week.csv",
+      "mode": "100644",
+      "blob": "8e3b399f250da08dfe8293799ec7e58665361244"
+    },
+    {
+      "old": "results/q3_sweep/D05_2/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D05_2/run_meta.json",
+      "mode": "100644",
+      "blob": "c88d2dc287ed04d19b5128cc173b0687e2206f4e"
+    },
+    {
+      "old": "results/q3_sweep/D05_2/summary.json",
+      "archived": "results/_legacy/q3_sweep/D05_2/summary.json",
+      "mode": "100644",
+      "blob": "53a25b29b181b7ee55c428dbcd058cc29a46151d"
+    },
+    {
+      "old": "results/q3_sweep/D05_2/week.csv",
+      "archived": "results/_legacy/q3_sweep/D05_2/week.csv",
+      "mode": "100644",
+      "blob": "9f79ba417e88828aba16e9d01d688776f9842001"
+    },
+    {
+      "old": "results/q3_sweep/D05_3/summary.json",
+      "archived": "results/_legacy/q3_sweep/D05_3/summary.json",
+      "mode": "100644",
+      "blob": "bf2c4b534079d09ed9f5573e0936b4f744086a9a"
+    },
+    {
+      "old": "results/q3_sweep/D05_3/week.csv",
+      "archived": "results/_legacy/q3_sweep/D05_3/week.csv",
+      "mode": "100644",
+      "blob": "3bbe1e01189e3338c75fddef6de099bfdceb5e90"
+    },
+    {
+      "old": "results/q3_sweep/D05_5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D05_5/run_meta.json",
+      "mode": "100644",
+      "blob": "9a30c2adeff47f36ad27fa81e52bfcc79ce5f0be"
+    },
+    {
+      "old": "results/q3_sweep/D05_5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D05_5/summary.json",
+      "mode": "100644",
+      "blob": "c78264a5d780754271c851596606d28803fc34f1"
+    },
+    {
+      "old": "results/q3_sweep/D05_5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D05_5/week.csv",
+      "mode": "100644",
+      "blob": "6c52bef613adfe966914aa423b4406a75f9bd445"
+    },
+    {
+      "old": "results/q3_sweep/D12_1.5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D12_1.5/run_meta.json",
+      "mode": "100644",
+      "blob": "49e8e0d35c5a4ad636e904c1b89050472c330cae"
+    },
+    {
+      "old": "results/q3_sweep/D12_1.5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D12_1.5/summary.json",
+      "mode": "100644",
+      "blob": "5d93ed3af5e2cad10023673354cc5d1441de52b1"
+    },
+    {
+      "old": "results/q3_sweep/D12_1.5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D12_1.5/week.csv",
+      "mode": "100644",
+      "blob": "60ad52a141750a416a7263de3f7c0cf7b28f9891"
+    },
+    {
+      "old": "results/q3_sweep/D12_2/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D12_2/run_meta.json",
+      "mode": "100644",
+      "blob": "3ebb863dfe4f586f4aa03a0b075934fbc40dbb53"
+    },
+    {
+      "old": "results/q3_sweep/D12_2/summary.json",
+      "archived": "results/_legacy/q3_sweep/D12_2/summary.json",
+      "mode": "100644",
+      "blob": "56b4c5ddf8b6f2432559c87c2cd7edaf1750fde6"
+    },
+    {
+      "old": "results/q3_sweep/D12_2/week.csv",
+      "archived": "results/_legacy/q3_sweep/D12_2/week.csv",
+      "mode": "100644",
+      "blob": "163aaa0c01f948206b162ca6d0722ea5b8ca01b6"
+    },
+    {
+      "old": "results/q3_sweep/D12_3/summary.json",
+      "archived": "results/_legacy/q3_sweep/D12_3/summary.json",
+      "mode": "100644",
+      "blob": "a4f29ae9ed769dbac84c3104003b9768e72cc537"
+    },
+    {
+      "old": "results/q3_sweep/D12_3/week.csv",
+      "archived": "results/_legacy/q3_sweep/D12_3/week.csv",
+      "mode": "100644",
+      "blob": "738c7858eb3bc5443d92293fe2127c93afb2ead2"
+    },
+    {
+      "old": "results/q3_sweep/D12_5/run_meta.json",
+      "archived": "results/_legacy/q3_sweep/D12_5/run_meta.json",
+      "mode": "100644",
+      "blob": "2e5d758d555d1b584e14e7bc430791b02d974942"
+    },
+    {
+      "old": "results/q3_sweep/D12_5/summary.json",
+      "archived": "results/_legacy/q3_sweep/D12_5/summary.json",
+      "mode": "100644",
+      "blob": "0fb9f9ac251c730812c1ea7122ea4c078318a54a"
+    },
+    {
+      "old": "results/q3_sweep/D12_5/week.csv",
+      "archived": "results/_legacy/q3_sweep/D12_5/week.csv",
+      "mode": "100644",
+      "blob": "6368be59404ddc5d388dec0f55c77c0cceb9f6c2"
+    },
+    {
+      "old": "results/q3_sweep/relocation_gain.csv",
+      "archived": "results/_legacy/q3_sweep/relocation_gain.csv",
+      "mode": "100644",
+      "blob": "8be53198142a981df90a458685da76807dc1a0e8"
+    },
+    {
+      "old": "results/q3_week/run_meta.json",
+      "archived": "results/_legacy/q3_week/run_meta.json",
+      "mode": "100644",
+      "blob": "2e4fce82247a16f1b95fa47eaebe3137aa124393"
+    },
+    {
+      "old": "results/q3_week/summary.json",
+      "archived": "results/_legacy/q3_week/summary.json",
+      "mode": "100644",
+      "blob": "7846d3085a545ffae65467a4f98a4e76ee52ebe7"
+    },
+    {
+      "old": "results/q3_week/week.csv",
+      "archived": "results/_legacy/q3_week/week.csv",
+      "mode": "100644",
+      "blob": "d9ffa2ce17564171a75117d44bafbbd7b82e6f1e"
+    },
+    {
+      "old": "results/q3_week_m1.5/summary.json",
+      "archived": "results/_legacy/q3_week_m1.5/summary.json",
+      "mode": "100644",
+      "blob": "0168aab006b21ed5cf61092af38cff6562ebbeed"
+    },
+    {
+      "old": "results/q3_week_m1.5/week.csv",
+      "archived": "results/_legacy/q3_week_m1.5/week.csv",
+      "mode": "100644",
+      "blob": "50906f18d2c28d0b704a03cd7125d140742290cd"
+    },
+    {
+      "old": "results/q3_week_m1/summary.json",
+      "archived": "results/_legacy/q3_week_m1/summary.json",
+      "mode": "100644",
+      "blob": "1e515756d21696d92aa9c7dec7a5d8fd5c7296b2"
+    },
+    {
+      "old": "results/q3_week_m1/week.csv",
+      "archived": "results/_legacy/q3_week_m1/week.csv",
+      "mode": "100644",
+      "blob": "5dfd51c78a6b8de4cb807ae814ce4e4cab7d1a28"
+    },
+    {
+      "old": "results/q3_week_m2/summary.json",
+      "archived": "results/_legacy/q3_week_m2/summary.json",
+      "mode": "100644",
+      "blob": "1e9a4a49b6f19a31a0ef827a2d46702ddfc45c24"
+    },
+    {
+      "old": "results/q3_week_m2/week.csv",
+      "archived": "results/_legacy/q3_week_m2/week.csv",
+      "mode": "100644",
+      "blob": "ca9ee50a0da361061e44bade0f1863c58346acd6"
+    },
+    {
+      "old": "results/q3_week_m3/summary.json",
+      "archived": "results/_legacy/q3_week_m3/summary.json",
+      "mode": "100644",
+      "blob": "dda3a7d181812c3bd720fc7255ff38a8145e9537"
+    },
+    {
+      "old": "results/q3_week_m3/week.csv",
+      "archived": "results/_legacy/q3_week_m3/week.csv",
+      "mode": "100644",
+      "blob": "bb96802ef7d04bc89ad717d29aa61005bca74426"
+    },
+    {
+      "old": "results/q3_week_m5/summary.json",
+      "archived": "results/_legacy/q3_week_m5/summary.json",
+      "mode": "100644",
+      "blob": "cfbf5587e663e2fe5275f42d85d30547a742217e"
+    },
+    {
+      "old": "results/q3_week_m5/week.csv",
+      "archived": "results/_legacy/q3_week_m5/week.csv",
+      "mode": "100644",
+      "blob": "84b61f16a584d20059d51631828ac983d9a69a50"
+    },
+    {
+      "old": "results/q4_response/run_meta.json",
+      "archived": "results/_legacy/q4_response/run_meta.json",
+      "mode": "100644",
+      "blob": "76ca2ca484d86f037d43536f50fda39e1dd434bb"
+    },
+    {
+      "old": "results/q4_response/scenario_table.csv",
+      "archived": "results/_legacy/q4_response/scenario_table.csv",
+      "mode": "100644",
+      "blob": "c9ff275b14b33b5bb0679decc0ceeb8eea8071db"
+    },
+    {
+      "old": "results/q4_response/stress.json",
+      "archived": "results/_legacy/q4_response/stress.json",
+      "mode": "100644",
+      "blob": "d245d1c02374597ac26bb048ae4f218d523e4a9d"
+    },
+    {
+      "old": "results/q4_response/timeline.csv",
+      "archived": "results/_legacy/q4_response/timeline.csv",
+      "mode": "100644",
+      "blob": "469b95c3c86651b1c3c0f1b8e74706d9f7f21ae1"
+    },
+    {
+      "old": "results/q5_plan/plan.csv",
+      "archived": "results/_legacy/q5_plan/plan.csv",
+      "mode": "100644",
+      "blob": "b96ad2f6256256850fd1997260ed6418227df5ee"
+    },
+    {
+      "old": "results/q5_plan/run_meta.json",
+      "archived": "results/_legacy/q5_plan/run_meta.json",
+      "mode": "100644",
+      "blob": "e50f847afc79cea0e0c6bb2d2c5aaaf9acb0fc81"
+    },
+    {
+      "old": "results/q5_plan/summary.json",
+      "archived": "results/_legacy/q5_plan/summary.json",
+      "mode": "100644",
+      "blob": "45a2caac2c32c1b10ee07524a17c6cd80a504b86"
+    },
+    {
+      "old": "results/real_network/district_access.csv",
+      "archived": "results/_legacy/real_network/district_access.csv",
+      "mode": "100644",
+      "blob": "061417d8428130fa4a1734d9b3a7d6554e8fc01d"
+    },
+    {
+      "old": "results/real_network/run_meta.json",
+      "archived": "results/_legacy/real_network/run_meta.json",
+      "mode": "100644",
+      "blob": "491e63470e99ea7edd2f720d4ef26db495e32510"
+    },
+    {
+      "old": "results/real_network/summary.json",
+      "archived": "results/_legacy/real_network/summary.json",
+      "mode": "100644",
+      "blob": "a94eff40e9718e1bcadddfd070582ed21e0eb25a"
+    },
+    {
+      "old": "results/real_network/sweep.csv",
+      "archived": "results/_legacy/real_network/sweep.csv",
+      "mode": "100644",
+      "blob": "a74cd2783d204b00f5741837b0f6b0551f26cb3e"
+    },
+    {
+      "old": "results/run_csv/marginal_curve.csv",
+      "archived": "results/_legacy/run_csv/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "18b04fbc1d8ad4a230bd9993c58d455e1ccaad51"
+    },
+    {
+      "old": "results/run_csv/run_meta.json",
+      "archived": "results/_legacy/run_csv/run_meta.json",
+      "mode": "100644",
+      "blob": "6c2b6683cebac38e10c22d8535384d67c39eb855"
+    },
+    {
+      "old": "results/run_csv/summary.json",
+      "archived": "results/_legacy/run_csv/summary.json",
+      "mode": "100644",
+      "blob": "c278476f7284efb2332abb58a18249eba140b9c5"
+    },
+    {
+      "old": "results/run_demo/marginal_curve.csv",
+      "archived": "results/_legacy/run_demo/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "91439f263907e0f6f131aa2175b39bea3de1d323"
+    },
+    {
+      "old": "results/run_demo/summary.json",
+      "archived": "results/_legacy/run_demo/summary.json",
+      "mode": "100644",
+      "blob": "9dd4311e357df140fc1300536e44bade8cf66f71"
+    },
+    {
+      "old": "results/run_drive_min/marginal_curve.csv",
+      "archived": "results/_legacy/run_drive_min/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "14868788cf36d5a3e1becacc2ada1996d6f42bcd"
+    },
+    {
+      "old": "results/run_drive_min/summary.json",
+      "archived": "results/_legacy/run_drive_min/summary.json",
+      "mode": "100644",
+      "blob": "139fa74047709f6b7653c086d1708ee8c005f895"
+    },
+    {
+      "old": "results/run_transit_min/marginal_curve.csv",
+      "archived": "results/_legacy/run_transit_min/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "bac7e376021bdb3f5049c68e7a4c68953d3f803c"
+    },
+    {
+      "old": "results/run_transit_min/summary.json",
+      "archived": "results/_legacy/run_transit_min/summary.json",
+      "mode": "100644",
+      "blob": "f7dfc8dfe965022894921cedfd8bee15b5d53551"
+    },
+    {
+      "old": "results/run_walk_min/marginal_curve.csv",
+      "archived": "results/_legacy/run_walk_min/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "bac7e376021bdb3f5049c68e7a4c68953d3f803c"
+    },
+    {
+      "old": "results/run_walk_min/summary.json",
+      "archived": "results/_legacy/run_walk_min/summary.json",
+      "mode": "100644",
+      "blob": "d9079744b1b6c012c9e9f11e90e64f9b664115b6"
+    },
+    {
+      "old": "results/segments/run_meta.json",
+      "archived": "results/_legacy/segments/run_meta.json",
+      "mode": "100644",
+      "blob": "1fa8a611d1a8d0acf1369e8ce12fd442527e3fd6"
+    },
+    {
+      "old": "results/segments/segment_sensitivity.csv",
+      "archived": "results/_legacy/segments/segment_sensitivity.csv",
+      "mode": "100644",
+      "blob": "ed80151ae69af9318884f6aeab9c1a1371bb3a8b"
+    },
+    {
+      "old": "results/segments/summary.json",
+      "archived": "results/_legacy/segments/summary.json",
+      "mode": "100644",
+      "blob": "21bc536517eebd7315325649f3de79dab5cac2c2"
+    },
+    {
+      "old": "results/sensitivity_oat/README.md",
+      "archived": "results/_legacy/sensitivity_oat/README.md",
+      "mode": "100644",
+      "blob": "6b2c93b96df8cf2037ee3d72d16aacb58495d8dd"
+    },
+    {
+      "old": "results/sensitivity_oat/access/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/access/run_meta.json",
+      "mode": "100644",
+      "blob": "5143f48a25a469e7ebd0a5b4131bdb2b042404fd"
+    },
+    {
+      "old": "results/sensitivity_oat/access/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/access/sweep.csv",
+      "mode": "100644",
+      "blob": "daf2f15a5d24ece4bc8225b1106ab324d9f166e9"
+    },
+    {
+      "old": "results/sensitivity_oat/access_threshold/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/access_threshold/run_meta.json",
+      "mode": "100644",
+      "blob": "bdd116863124c4592f94b03fe2ee67445e7bb6c5"
+    },
+    {
+      "old": "results/sensitivity_oat/access_threshold/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/access_threshold/sweep.csv",
+      "mode": "100644",
+      "blob": "6c7034860dbb56a22ef656dacae89c76ee3c1555"
+    },
+    {
+      "old": "results/sensitivity_oat/capacity/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/capacity/run_meta.json",
+      "mode": "100644",
+      "blob": "93328254e31e61eb95fc9ebc2bdab1ea3029e25f"
+    },
+    {
+      "old": "results/sensitivity_oat/capacity/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/capacity/sweep.csv",
+      "mode": "100644",
+      "blob": "4d7287f9ac89ea19265de96ecfdf1c5c6cb02e22"
+    },
+    {
+      "old": "results/sensitivity_oat/demand_scenario/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/demand_scenario/run_meta.json",
+      "mode": "100644",
+      "blob": "75cc2eef232cb087fbb8d0967c4d33573fce3cf9"
+    },
+    {
+      "old": "results/sensitivity_oat/demand_scenario/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/demand_scenario/sweep.csv",
+      "mode": "100644",
+      "blob": "7db86689dd8fbfe217edabd2f0f5cc6f4b1c4681"
+    },
+    {
+      "old": "results/sensitivity_oat/fixed_hours/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/fixed_hours/run_meta.json",
+      "mode": "100644",
+      "blob": "6a0de52798fc266192be197a0ddf8ba9ce10b21f"
+    },
+    {
+      "old": "results/sensitivity_oat/fixed_hours/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/fixed_hours/sweep.csv",
+      "mode": "100644",
+      "blob": "e3303fd44bca780f00337b30e9a1fee4a86d89e4"
+    },
+    {
+      "old": "results/sensitivity_oat/transit_hourly.csv",
+      "archived": "results/_legacy/sensitivity_oat/transit_hourly.csv",
+      "mode": "100644",
+      "blob": "307173ac5d260ffb1cb7ed939b4897d7ab2ca79e"
+    },
+    {
+      "old": "results/sensitivity_oat/ushare/run_meta.json",
+      "archived": "results/_legacy/sensitivity_oat/ushare/run_meta.json",
+      "mode": "100644",
+      "blob": "bcd6802ff83f9c4691025fbd6e8449112a839cac"
+    },
+    {
+      "old": "results/sensitivity_oat/ushare/sweep.csv",
+      "archived": "results/_legacy/sensitivity_oat/ushare/sweep.csv",
+      "mode": "100644",
+      "blob": "ec572e9d77a0bc9f7a3730d11eddeba2a4a618c8"
+    },
+    {
+      "old": "results/sweep/run_meta.json",
+      "archived": "results/_legacy/sweep/run_meta.json",
+      "mode": "100644",
+      "blob": "254db7b8896448cc54f45d9b8470b3df9df79e7e"
+    },
+    {
+      "old": "results/sweep/sweep.csv",
+      "archived": "results/_legacy/sweep/sweep.csv",
+      "mode": "100644",
+      "blob": "e4f1ca7cd565de9cb44598c1668310bebe866970"
+    },
+    {
+      "old": "results/sweep_levers/run_meta.json",
+      "archived": "results/_legacy/sweep_levers/run_meta.json",
+      "mode": "100644",
+      "blob": "9998ed07e75e3d5fdaddadedfce4d675c009a913"
+    },
+    {
+      "old": "results/sweep_levers/sweep.csv",
+      "archived": "results/_legacy/sweep_levers/sweep.csv",
+      "mode": "100644",
+      "blob": "2461a913836fa5aff0a4069efdddea10bd37dd99"
+    },
+    {
+      "old": "results/sweep_transit/run_meta.json",
+      "archived": "results/_legacy/sweep_transit/run_meta.json",
+      "mode": "100644",
+      "blob": "fae4de98b2c2bb97f6e0ea0fa95a04760d63fe7e"
+    },
+    {
+      "old": "results/sweep_transit/sweep.csv",
+      "archived": "results/_legacy/sweep_transit/sweep.csv",
+      "mode": "100644",
+      "blob": "ee35370400e1a7fa6b52b1da8c483ad165946556"
+    },
+    {
+      "old": "results/takeover_20261120/CLAIM_EVIDENCE.csv",
+      "archived": "results/_legacy/takeover_20261120/CLAIM_EVIDENCE.csv",
+      "mode": "100644",
+      "blob": "5dd1f687dea9286d1ba1d59a7767bbd20edab7c1"
+    },
+    {
+      "old": "results/takeover_20261120/README.md",
+      "archived": "results/_legacy/takeover_20261120/README.md",
+      "mode": "100644",
+      "blob": "2e6c6d7969780fe6703cde1d498527f71c81d68b"
+    },
+    {
+      "old": "results/takeover_20261120/RESULTS.md",
+      "archived": "results/_legacy/takeover_20261120/RESULTS.md",
+      "mode": "100644",
+      "blob": "f776608f33cc46a5ee95eb4d91b44567928fd29e"
+    },
+    {
+      "old": "results/takeover_20261120/core.log",
+      "archived": "results/_legacy/takeover_20261120/core.log",
+      "mode": "100644",
+      "blob": "3136466559cfed7e91eeec7d5d8a67f896de39d7"
+    },
+    {
+      "old": "results/takeover_20261120/core/dated_inventory_sweep.csv",
+      "archived": "results/_legacy/takeover_20261120/core/dated_inventory_sweep.csv",
+      "mode": "100644",
+      "blob": "991872d486a439af1a1edde877232de1eb4d596c"
+    },
+    {
+      "old": "results/takeover_20261120/core/dated_week.csv",
+      "archived": "results/_legacy/takeover_20261120/core/dated_week.csv",
+      "mode": "100644",
+      "blob": "47adc52a941c8fc3540d651a59c016bf5089ac96"
+    },
+    {
+      "old": "results/takeover_20261120/core/district_gap.csv",
+      "archived": "results/_legacy/takeover_20261120/core/district_gap.csv",
+      "mode": "100644",
+      "blob": "1d0dc86b94567e3e531121f0b36ee9a2940148d8"
+    },
+    {
+      "old": "results/takeover_20261120/core/district_gaps.png",
+      "archived": "results/_legacy/takeover_20261120/core/district_gaps.png",
+      "mode": "100644",
+      "blob": "8b278dbfd15abdf9175e58de72d6b9d4303a03db"
+    },
+    {
+      "old": "results/takeover_20261120/core/frontiers.pdf",
+      "archived": "results/_legacy/takeover_20261120/core/frontiers.pdf",
+      "mode": "100644",
+      "blob": "f8312b8598616ff7bd2855e5e830b7c3e78d91bc"
+    },
+    {
+      "old": "results/takeover_20261120/core/frontiers.png",
+      "archived": "results/_legacy/takeover_20261120/core/frontiers.png",
+      "mode": "100644",
+      "blob": "f766be6712c7c992bda184130bc920fa7b924636"
+    },
+    {
+      "old": "results/takeover_20261120/core/minimal_case.json",
+      "archived": "results/_legacy/takeover_20261120/core/minimal_case.json",
+      "mode": "100644",
+      "blob": "0b18886163bc34b8392312f48770a5dfac0d71c8"
+    },
+    {
+      "old": "results/takeover_20261120/core/minimal_case_flows.csv",
+      "archived": "results/_legacy/takeover_20261120/core/minimal_case_flows.csv",
+      "mode": "100644",
+      "blob": "4c15dc0075eedf74cef0a4ddd629d666ec43f564"
+    },
+    {
+      "old": "results/takeover_20261120/core/oat.csv",
+      "archived": "results/_legacy/takeover_20261120/core/oat.csv",
+      "mode": "100644",
+      "blob": "52e665192fbbfedb0d4d5e7a08891a7467c09b2a"
+    },
+    {
+      "old": "results/takeover_20261120/core/p3_allocations.csv",
+      "archived": "results/_legacy/takeover_20261120/core/p3_allocations.csv",
+      "mode": "100644",
+      "blob": "b31db99272fb17b6997cd521bbe75fb689fcc2d9"
+    },
+    {
+      "old": "results/takeover_20261120/core/p_frontier.csv",
+      "archived": "results/_legacy/takeover_20261120/core/p_frontier.csv",
+      "mode": "100644",
+      "blob": "3ded8872a2aa3b14fc4a9c739ef24398fa3136f9"
+    },
+    {
+      "old": "results/takeover_20261120/core/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/core/run_meta.json",
+      "mode": "100644",
+      "blob": "916b0e097a74c6e5984b7f73ab59df88c0c9a521"
+    },
+    {
+      "old": "results/takeover_20261120/core/summary.json",
+      "archived": "results/_legacy/takeover_20261120/core/summary.json",
+      "mode": "100644",
+      "blob": "2c45abc9e8a4ee91f24775bb402c6f794340b478"
+    },
+    {
+      "old": "results/takeover_20261120/core/timing_ablation.json",
+      "archived": "results/_legacy/takeover_20261120/core/timing_ablation.json",
+      "mode": "100644",
+      "blob": "2b67f25d984a2bc7508892d9c1e38b40dd38ae36"
+    },
+    {
+      "old": "results/takeover_20261120/core/weeks.json",
+      "archived": "results/_legacy/takeover_20261120/core/weeks.json",
+      "mode": "100644",
+      "blob": "02bde8f778d9215919bae16fc9826b5ab6f37c45"
+    },
+    {
+      "old": "results/takeover_20261120/data_validation.log",
+      "archived": "results/_legacy/takeover_20261120/data_validation.log",
+      "mode": "100644",
+      "blob": "add6220118125c6058d7b149cdbf19c378e27e8d"
+    },
+    {
+      "old": "results/takeover_20261120/data_validation/calendar_source_reconstruction.csv",
+      "archived": "results/_legacy/takeover_20261120/data_validation/calendar_source_reconstruction.csv",
+      "mode": "100644",
+      "blob": "9fc129eeb9ea5700e49b714d8279a5aee221f9b2"
+    },
+    {
+      "old": "results/takeover_20261120/data_validation/summary.json",
+      "archived": "results/_legacy/takeover_20261120/data_validation/summary.json",
+      "mode": "100644",
+      "blob": "6f902f916d8622e65ccdcdd01de439670375da45"
+    },
+    {
+      "old": "results/takeover_20261120/dated_pipeline.log",
+      "archived": "results/_legacy/takeover_20261120/dated_pipeline.log",
+      "mode": "100644",
+      "blob": "2653e092f34d612c41f4e02be3d99970efe4f030"
+    },
+    {
+      "old": "results/takeover_20261120/dated_pipeline/marginal_curve.csv",
+      "archived": "results/_legacy/takeover_20261120/dated_pipeline/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "d9e38fb0ea51a09f06b06283523e3003d30a3838"
+    },
+    {
+      "old": "results/takeover_20261120/dated_pipeline/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/dated_pipeline/run_meta.json",
+      "mode": "100644",
+      "blob": "23c029d147e517d8261a0c11d36dfa65acb8a58e"
+    },
+    {
+      "old": "results/takeover_20261120/dated_pipeline/summary.json",
+      "archived": "results/_legacy/takeover_20261120/dated_pipeline/summary.json",
+      "mode": "100644",
+      "blob": "43b09572fb6da60e95d3a9a5a3e69d526b97b5e6"
+    },
+    {
+      "old": "results/takeover_20261120/model_chain.log",
+      "archived": "results/_legacy/takeover_20261120/model_chain.log",
+      "mode": "100644",
+      "blob": "3b033d8ff60a74024e58433e6dd11eef2ebed62c"
+    },
+    {
+      "old": "results/takeover_20261120/model_chain.pdf",
+      "archived": "results/_legacy/takeover_20261120/model_chain.pdf",
+      "mode": "100644",
+      "blob": "85d188c66df40b7ad4ace55c181002f301e68ae3"
+    },
+    {
+      "old": "results/takeover_20261120/pipeline.log",
+      "archived": "results/_legacy/takeover_20261120/pipeline.log",
+      "mode": "100644",
+      "blob": "f3fa0ab5b297cf5ec9665d4e21f0f499b77cc282"
+    },
+    {
+      "old": "results/takeover_20261120/pipeline/marginal_curve.csv",
+      "archived": "results/_legacy/takeover_20261120/pipeline/marginal_curve.csv",
+      "mode": "100644",
+      "blob": "02431db5d5fb0f7ff1c20bbce27c7de4e2e1eaee"
+    },
+    {
+      "old": "results/takeover_20261120/pipeline/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/pipeline/run_meta.json",
+      "mode": "100644",
+      "blob": "bf99ca7f5fb7e3e1b7843d27e911203e6d6e326c"
+    },
+    {
+      "old": "results/takeover_20261120/pipeline/summary.json",
+      "archived": "results/_legacy/takeover_20261120/pipeline/summary.json",
+      "mode": "100644",
+      "blob": "b82e05f3f2283852f4c646c7d8d63b7a1964b11e"
+    },
+    {
+      "old": "results/takeover_20261120/q3.log",
+      "archived": "results/_legacy/takeover_20261120/q3.log",
+      "mode": "100644",
+      "blob": "5e10b110a1c924323d220ce9c7334527f8c0bc12"
+    },
+    {
+      "old": "results/takeover_20261120/q3/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/q3/run_meta.json",
+      "mode": "100644",
+      "blob": "07c041aa87a542121ee3a8f71df91e2133170a23"
+    },
+    {
+      "old": "results/takeover_20261120/q3/summary.json",
+      "archived": "results/_legacy/takeover_20261120/q3/summary.json",
+      "mode": "100644",
+      "blob": "512f1ff9eb43868c3e6c9a7241d8437610089705"
+    },
+    {
+      "old": "results/takeover_20261120/q3/week.csv",
+      "archived": "results/_legacy/takeover_20261120/q3/week.csv",
+      "mode": "100644",
+      "blob": "ee592a653063eb6d9892703ad6e2dab9761002fc"
+    },
+    {
+      "old": "results/takeover_20261120/q4.log",
+      "archived": "results/_legacy/takeover_20261120/q4.log",
+      "mode": "100644",
+      "blob": "72a3d5b2d5db8d1e4f6f0a174f09fc16fda51115"
+    },
+    {
+      "old": "results/takeover_20261120/q4/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/q4/run_meta.json",
+      "mode": "100644",
+      "blob": "c41482c9a737214b87080b7287add782d2df7cf9"
+    },
+    {
+      "old": "results/takeover_20261120/q4/scenario_details.json",
+      "archived": "results/_legacy/takeover_20261120/q4/scenario_details.json",
+      "mode": "100644",
+      "blob": "13113f29ac0167bfb7c47fc87afa634449f4e1f1"
+    },
+    {
+      "old": "results/takeover_20261120/q4/scenario_table.csv",
+      "archived": "results/_legacy/takeover_20261120/q4/scenario_table.csv",
+      "mode": "100644",
+      "blob": "cafd77222174ce3066c80d3897919c5c208b6d9d"
+    },
+    {
+      "old": "results/takeover_20261120/q4/stress.json",
+      "archived": "results/_legacy/takeover_20261120/q4/stress.json",
+      "mode": "100644",
+      "blob": "b5a5b2f940609391035870b3aa0677742d111457"
+    },
+    {
+      "old": "results/takeover_20261120/q4/stress_draws.json",
+      "archived": "results/_legacy/takeover_20261120/q4/stress_draws.json",
+      "mode": "100644",
+      "blob": "9fd13049b6b13b9bcd1c7178bec4f70408103938"
+    },
+    {
+      "old": "results/takeover_20261120/q4/timeline.csv",
+      "archived": "results/_legacy/takeover_20261120/q4/timeline.csv",
+      "mode": "100644",
+      "blob": "8718b9844a0cfa56db3481226337500976fbb8f5"
+    },
+    {
+      "old": "results/takeover_20261120/q5.log",
+      "archived": "results/_legacy/takeover_20261120/q5.log",
+      "mode": "100644",
+      "blob": "9f59579d2a315b029288c03a386922aa33c25bfc"
+    },
+    {
+      "old": "results/takeover_20261120/q5/baselines.csv",
+      "archived": "results/_legacy/takeover_20261120/q5/baselines.csv",
+      "mode": "100644",
+      "blob": "92f2127f3437b1524ef7bd39548a0ea008be4a4f"
+    },
+    {
+      "old": "results/takeover_20261120/q5/comparison.csv",
+      "archived": "results/_legacy/takeover_20261120/q5/comparison.csv",
+      "mode": "100644",
+      "blob": "846f6233f847513275dd756557288e06e8193a6f"
+    },
+    {
+      "old": "results/takeover_20261120/q5/cost_sensitivity.csv",
+      "archived": "results/_legacy/takeover_20261120/q5/cost_sensitivity.csv",
+      "mode": "100644",
+      "blob": "0e00446d0c54488ab9ac2e9856a261e0509391a3"
+    },
+    {
+      "old": "results/takeover_20261120/q5/plan.csv",
+      "archived": "results/_legacy/takeover_20261120/q5/plan.csv",
+      "mode": "100644",
+      "blob": "71f9e6952028cdb8b2fed3a208945905dd3860b8"
+    },
+    {
+      "old": "results/takeover_20261120/q5/run_meta.json",
+      "archived": "results/_legacy/takeover_20261120/q5/run_meta.json",
+      "mode": "100644",
+      "blob": "5859e82352b1c5b007bc32785e5cea39b5103be4"
+    },
+    {
+      "old": "results/takeover_20261120/q5/summary.json",
+      "archived": "results/_legacy/takeover_20261120/q5/summary.json",
+      "mode": "100644",
+      "blob": "81e1e470834e4f591570ec318186288d91cfa3c0"
+    },
+    {
+      "old": "results/takeover_20261120/release_manifest.json",
+      "archived": "results/_legacy/takeover_20261120/release_manifest.json",
+      "mode": "100644",
+      "blob": "c675af54fbc8e52b708918277a649dca6e6015e1"
+    },
+    {
+      "old": "results/takeover_20261120/tests.log",
+      "archived": "results/_legacy/takeover_20261120/tests.log",
+      "mode": "100644",
+      "blob": "e155105d729558b6563fd7c72c61eea980dd0fcf"
+    },
+    {
+      "old": "results/tex_update_20261121/data_validation/calendar_source_reconstruction.csv",
+      "archived": "results/_legacy/tex_update_20261121/data_validation/calendar_source_reconstruction.csv",
+      "mode": "100644",
+      "blob": "1879b14961d83acd3a316728f82e5a073d6371ab"
+    },
+    {
+      "old": "results/tex_update_20261121/data_validation/summary.json",
+      "archived": "results/_legacy/tex_update_20261121/data_validation/summary.json",
+      "mode": "100644",
+      "blob": "4e3f977432304fe5b881ca23740d0cb7d0847981"
+    }
+  ]
+}

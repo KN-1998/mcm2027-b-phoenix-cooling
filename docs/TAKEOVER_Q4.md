@@ -1,3 +1,5 @@
+> 历史方法/交付记录（2026-11-20），不是当前取数入口。当前统一见[结果索引](../results/README.md)；该日冻结94/7日志保留原样并归档。
+
 # Q4：从故障后的服务缺口到可执行重调度
 
 本轮将事故响应与同一需求—时段容量—分配链相连。输出单位是**未满足的降温服务人次/服务日**，不对应独立人数、死亡人数或恢复概率。服务日为09:00至次日09:00，事故发生于服务日起点；改变事故时刻需要重新切分需求与容量，不能平移现有结果。
@@ -64,7 +66,7 @@ CLI压力测试使用预设seed，逐样本记录车辆/固定站故障、需求
 
 ## 7. 复现与证据位置
 
-命令：`python -m src.exp.run_q4_response --stress-draws 100 --out results/takeover_20261120/q4`。
+命令：`python -m src.exp.run_q4_response --stress-draws 100 --out tmp/reproduce_q4`。
 
 输出`scenario_table.csv`用于汇总，`timeline.csv`用于操作时刻表，`scenario_details.json`包含每种事故的假设、容量和搜索证书，`stress_draws.json`保留逐抽样配对结果，`stress.json`给分位摘要。正式证据须使用冻结代码重跑后的版本和指纹；开发时的dirty运行只作为调试记录。
 

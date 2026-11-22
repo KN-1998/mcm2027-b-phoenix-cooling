@@ -18,7 +18,7 @@
 ```text
 python -m pip install -r requirements.txt
 python -m pip install reportlab
-python tools/run_completion_release.py --out results/completion_20261121
+python tools/run_completion_release.py --out tmp/reproduce_completion
 ```
 
 `--pdf-python`只用于两页核心推导说明的文档运行时，不编译论文。单项入口为`run_empirical_validation`、`run_gtfs_validation`、`run_completion_evidence`。统一五问支持`--real-network --city-operations`，也可显式导入`--gtfs-reference-od`；单一出发时刻重复用于各日/时段只是统一结构情景，不能伪装七日时变实测交通。

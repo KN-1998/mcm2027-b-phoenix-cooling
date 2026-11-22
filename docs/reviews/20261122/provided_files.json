@@ -1,0 +1,17 @@
+{
+  "scope": "User-provided evidence for read-only review; suggestions are not automatic instructions",
+  "files": [
+    {
+      "original_path": "F:\\数模\\2\\2702_English.pdf",
+      "bytes": 315723,
+      "sha256": "e683c1be602e1dd991136fb7d3df5fa8f4760e8a353223387f53ee6a2619c569"
+    },
+    {
+      "original_path": "F:\\数模\\2\\CHECKER_FEEDBACK_2026-11-21(1).md",
+      "bytes": 8750,
+      "sha256": "7f19b607863c981ac77a52ec9965879edb85e9cf4eebc5863e5a17b384fd3385"
+    }
+  ],
+  "pdf_pages": 20,
+  "manuscript_modified": false
+}

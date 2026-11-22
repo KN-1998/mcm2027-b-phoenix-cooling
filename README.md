@@ -1,32 +1,33 @@
 # 2027 MCM Problem B — Keeping Phoenix Cool
 
-**2026-11-21 建模与代码补全入口：** [交付说明](docs/COMPLETION_2026-11-21.md)、
+**2026-11-22 当前取数入口：** [结果与口径索引](results/README.md)、
+[队友文件核对及处理](docs/reviews/20261122/REVIEW.md)。
+旧结果已移入 `results/_legacy/`，只用于历史追溯；请勿按旧目录名引用数字。
+
+**2026-11-21 建模与代码补全：** [交付说明](docs/COMPLETION_2026-11-21.md)、
 [冻结结果/图表](results/completion_20261121/README.md)、
 [给论文手的模型交接](docs/MODELER_HANDOFF_20261121.md)。
 本轮新增官方真实周到访时间留出、发布排班OD、官方运营纠正、资源/费用约束与严格推导。
 按用户要求暂停论文写作/排版；队友2702.tex保持本轮开始时的远程版本。
 真实单站结果检验不等于全市潜在需求或现场部署验证，范围见[核对清单](docs/COMPLETION_CHECKLIST_20261121.md)。
 
-**2026-11-20 建模接手版：** 本轮已经修改模型与主流水线。当前入口为
+**2026-11-20 历史建模接手版：** 历史方法说明为
 [建模交付说明](docs/TAKEOVER_2026-11-20.md)、[核心推导](docs/MODEL_CHAIN.md)、
 [假设卡](docs/ASSUMPTIONS.md)、[验收记录](docs/TAKEOVER_CHECKLIST.md)。
-数值以 `results/takeover_20261120/` 和各自 `run_meta.json` 为准。
-本轮结果：[冻结结果与解释](results/takeover_20261120/RESULTS.md)；
-[结论证据表](results/takeover_20261120/CLAIM_EVIDENCE.csv)；
-[两页推导PDF](results/takeover_20261120/model_chain.pdf)。
+该批数值已归档，不作为当前引用来源。现行数字与测试版本统一见[结果索引](results/README.md)。
 
-这是给定需求、容量、候选集和成本的条件配置模型，尚无独立服务结果留出验证。
+这是给定需求、容量、候选集和成本的条件配置模型；已完成单站周到访的有限回顾性留出，尚无全市潜在需求或现场部署验证。
 MAG 原始站点与时段、官方人口输入核验，不能升级为真实覆盖率、年度客流或健康效果预测。
 本轮交付建模与可复算实验；英文终稿、三位队员现场复核和训练 AI 规则确认仍需队伍完成。
 
 ```text
 python -m pip install -r requirements.txt
 python -m pytest tests -q
-python -m src.exp.run_pipeline --p 3 --out results/reproduce_pipeline
-python -m src.exp.run_takeover_evidence --out results/reproduce_evidence
-python -m src.exp.run_q4_response --out results/reproduce_q4
-python -m src.exp.run_q5_plan --out results/reproduce_q5
-python tools/validate_takeover_data.py --out results/reproduce_data_validation
+python -m src.exp.run_pipeline --p 3 --out tmp/reproduce_pipeline
+python -m src.exp.run_takeover_evidence --out tmp/reproduce_evidence
+python -m src.exp.run_q4_response --out tmp/reproduce_q4
+python -m src.exp.run_q5_plan --out tmp/reproduce_q5
+python tools/validate_takeover_data.py --out tmp/reproduce_data_validation
 ```
 
 Q3 默认全组合与全车辆匹配；`--top-k` 正数才启用并标明受限搜索。
